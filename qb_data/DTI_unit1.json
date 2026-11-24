@@ -1,0 +1,116 @@
+{
+  "subject": "23HS0815",
+  "unit": 1,
+  "unitTitle": "Introduction to Design Thinking",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "q": "1 a) What is Design Thinking?",
+      "a": "Design thinking is a human-centred, iterative problem-solving approach that uses empathy, creativity and experimentation to understand users' needs and develop innovative solutions. It was popularised by IDEO and the Stanford d.school and is commonly described as a five-stage process: empathize, define, ideate, prototype and test. Rather than relying only on logic or past experience, it combines analytical and imaginative thinking to reframe problems and generate user-focused ideas. It is widely applied in product design, services, business and social innovation.",
+      "explanation": "It gives the standard definition, emphasising human-centredness, iteration and the five-stage framework while distinguishing design thinking from purely analytical methods.",
+      "oneShotPreview": "A human-centred, iterative approach that uses empathy and experimentation to create innovative, user-focused solutions."
+    },
+    {
+      "q": "1 b) Name the five stages of the Design Thinking process.",
+      "a": "The five stages of the design thinking process are: (1) Empathize — understand users and their needs through observation and interviews; (2) Define — clearly state the user's problem and needs; (3) Ideate — generate a wide range of ideas; (4) Prototype — build inexpensive, tangible representations of the best ideas; and (5) Test — try the prototypes with real users and gather feedback. These stages are iterative and non-linear, so teams often move back and forth between them rather than following a rigid sequence.",
+      "explanation": "It names and briefly describes the five canonical d.school/IDEO stages, which is exactly what a \"name the stages\" question requires.",
+      "oneShotPreview": "Empathize → Define → Ideate → Prototype → Test."
+    },
+    {
+      "q": "1 c) How is Design Thinking different from traditional problem-solving?",
+      "a": "Traditional problem-solving is typically linear, analytical and solution-focused, relying on past experience, established procedures and logical deduction to reach a single \"correct\" answer quickly. Design thinking is iterative, human-centred and exploratory: it begins by empathising with users, reframes the problem before solving it, generates many alternative ideas, and tests prototypes with real people. It tolerates ambiguity and failure as part of learning, whereas traditional approaches try to eliminate uncertainty and optimise an existing solution. Design thinking therefore produces more innovative, user-validated outcomes, while traditional methods remain efficient for well-defined, routine problems.",
+      "explanation": "It contrasts the linear, logic-driven nature of traditional methods with the iterative, empathetic and experimentation-driven nature of design thinking.",
+      "oneShotPreview": "Traditional = linear, analytical, one answer; design thinking = iterative, empathetic, many ideas tested with users."
+    },
+    {
+      "q": "1 d) Who popularized the concept of Design Thinking?",
+      "a": "Design thinking was popularised as a formal framework by the design consultancy IDEO and by the Stanford University School of Design (the d.school). David Kelley, founder of both IDEO and the d.school, is widely credited with bringing the approach into mainstream business and education, while IDEO's CEO Tim Brown popularised it through his book \"Change by Design\" (2009). Its earlier intellectual roots lie in Herbert Simon's \"The Sciences of the Artificial\" (1969) and in the practice of designers such as Bill Moggridge. Together, IDEO and the Stanford d.school developed and spread the five-stage model used worldwide today.",
+      "explanation": "It credits IDEO and Stanford d.school (with David Kelley and Tim Brown) as asked, while acknowledging the approach's earlier roots.",
+      "oneShotPreview": "IDEO and Stanford's d.school — especially David Kelley and Tim Brown — made design thinking a mainstream framework."
+    },
+    {
+      "q": "1 e) How does Design Thinking help in product development?",
+      "a": "Design thinking helps product development by keeping the user at the centre of every decision, so the final product solves a real, validated need. Empathy and definition uncover genuine user problems; ideation generates a broad set of possible solutions; and prototypes are tested early with real users, reducing the risk of building something nobody wants. This iterative loop catches usability issues early, lowers development cost and encourages creative, differentiated features. It also aligns cross-functional teams around a shared understanding of the customer, speeding decisions and improving the chances of market success.",
+      "explanation": "It links each design-thinking stage to concrete product-development benefits — validated needs, early testing, lower risk and better team alignment.",
+      "oneShotPreview": "It grounds products in real user needs and tests ideas early, cutting risk and producing more usable, innovative products."
+    },
+    {
+      "q": "2 a) Explain the primary focus of traditional thinking.",
+      "a": "Traditional thinking focuses primarily on logic, analysis and past experience to reach a correct, efficient solution to a well-defined problem. It follows a linear, step-by-step process and relies on established rules, data and proven methods in order to minimise risk and uncertainty. In business and product contexts it concentrates on optimising existing solutions, improving efficiency, cutting cost and applying known best practices rather than exploring radically new directions. It values consistency, predictability and accuracy, and treats deviation or failure as something to be avoided.",
+      "explanation": "It captures the defining features of traditional thinking — logic, linearity, reliance on the past, efficiency and risk avoidance.",
+      "oneShotPreview": "Logic, experience and linear analysis aimed at an efficient, low-risk, \"correct\" answer."
+    },
+    {
+      "q": "2 b) How does it differ from the focus of design thinking?",
+      "a": "While traditional thinking concentrates on analysing and optimising a known problem with proven methods, design thinking focuses on understanding people and exploring new possibilities before deciding on a solution. Design thinking is empathetic (it starts from users' feelings and needs), iterative (it cycles through prototyping and testing) and divergent (it generates many ideas before converging), whereas traditional thinking is largely convergent and solution-driven from the start. Design thinking embraces ambiguity, experimentation and even failure as learning opportunities, and seeks desirability together with feasibility and viability. In short, traditional thinking prioritises efficiency and optimisation, while design thinking prioritises innovation and user value.",
+      "explanation": "It contrasts the two mindsets on the key dimensions of user focus, divergence versus convergence, iteration and attitude to failure.",
+      "oneShotPreview": "Traditional optimises the known; design thinking explores user needs and experiments to create something new."
+    },
+    {
+      "q": "3 Explain the fundamental components of design and their role in visual composition.",
+      "a": "The fundamental components (elements) of design are line, shape, form, colour, texture, space and typography. A line directs the eye and defines edges; shape and form give objects structure and mass; colour sets mood, creates contrast and groups information; texture adds visual and tactile interest; space (positive and negative) provides balance and breathing room; and typography communicates content and hierarchy. In visual composition these elements are organised using the principles of design — balance, contrast, emphasis, rhythm or movement, proportion, repetition and unity — to guide the viewer's attention, communicate meaning clearly and create an aesthetically pleasing, coherent whole.",
+      "explanation": "It lists the core elements, explains the role of each and connects them to the principles that govern visual composition, as the question asks.",
+      "oneShotPreview": "Line, shape, form, colour, texture, space and type are arranged by design principles into clear, balanced compositions."
+    },
+    {
+      "q": "4 Demonstrate the principles of design such as balance, contrast, emphasis, and movement, with examples",
+      "a": "Balance is the even distribution of visual weight — symmetrical, as in a centred logo, or asymmetrical, as in a large photograph offset by a block of smaller text. Contrast creates visual difference to highlight elements, for example black text on a white background or a bright call-to-action button on a muted page. Emphasis establishes a focal point that draws the eye first, such as a bold heading, a highlighted price or a red \"Buy Now\" button. Movement (rhythm) leads the viewer's eye through a composition, for example through a repeating pattern, a diagonal line or the ordered steps of an infographic. Together these principles make a design stable, readable, engaging and purposeful.",
+      "explanation": "It demonstrates each named principle with a concrete example and explains its visual purpose, which is exactly what this question requires.",
+      "oneShotPreview": "Balance = even weight; contrast = difference; emphasis = focal point; movement = eye flow — each with an example."
+    },
+    {
+      "q": "5 a) Illustrate the design thinking process and its application in solving complex problems.",
+      "a": "The design thinking process runs through Empathize, Define, Ideate, Prototype and Test, and is iterative rather than strictly linear. To solve a complex (\"wicked\") problem, a team first empathises with the people affected through interviews and observation, then defines the real underlying need instead of the obvious symptom. It ideates broadly to generate many possible solutions, builds low-cost prototypes of the most promising ones, and tests them with real users, using feedback to refine both the solution and the problem definition before repeating the cycle. This approach is applied to complex problems such as reducing hospital waiting times, improving banking access for rural users or redesigning emergency-response services, where human needs are unclear and no single right answer exists. The result is a user-validated solution that addresses the root cause rather than just the symptoms.",
+      "explanation": "It illustrates the five stages and shows how their iterative application turns an ill-defined problem into testable, human-centred solutions.",
+      "oneShotPreview": "Empathize → Define → Ideate → Prototype → Test, repeated iteratively to turn messy problems into user-tested solutions."
+    },
+    {
+      "q": "5 b) Develop a case study of a successful design thinking project.",
+      "a": "A well-documented case study is IDEO's Embrace infant warmer, designed for premature babies in rural India where hospitals lacked expensive incubators. The team empathised with nurses and mothers in villages, defined the core need as keeping a newborn warm continuously even during power cuts, and ideated many concepts before prototyping a low-cost, portable sleeping bag with a phase-change gel pouch that is reheated in hot water. They tested prototypes with caregivers and refined the design for local manufacture and use. The device costs a fraction of an incubator and has helped thousands of infants, showing how empathy, ideation and iterative prototyping can produce a genuinely useful, scalable solution.",
+      "explanation": "It presents a real, widely taught case study that walks through the design-thinking stages, the outcome and the lesson learned, as \"develop a case study\" demands.",
+      "oneShotPreview": "IDEO's Embrace warmer: observe caregivers → redefine the need → prototype → test, yielding an affordable life-saving product."
+    },
+    {
+      "q": "6 a) Explain the importance of empathy in design thinking.",
+      "a": "Empathy is the foundation of design thinking because it lets designers understand the real needs, emotions and context of the people they are designing for instead of relying on assumptions. By observing, listening and engaging with users, designers uncover latent needs that users may not be able to articulate, leading to more relevant and effective solutions. Empathy builds trust with stakeholders and encourages teams to reframe problems from the user's point of view, reducing the risk of building products that fail in the real world. It shifts the question from \"what can we build?\" to \"what do people actually need?\", producing solutions that are desirable as well as feasible and viable.",
+      "explanation": "It explains empathy's role as the first stage, its methods (observation and listening) and its benefits — uncovering real needs and reducing failure risk.",
+      "oneShotPreview": "Empathy grounds solutions in real user needs and emotions instead of assumptions, so designs are relevant and effective."
+    },
+    {
+      "q": "6 b) In what ways can designers utilize empathy to develop effective user-centered solutions?",
+      "a": "Designers can practise empathy through in-depth interviews, contextual observation (shadowing users in their own environment), ethnographic research, surveys, empathy maps and personas. They should listen without judgement, note both what users say and what they actually do, and pay attention to emotions, pain points and workarounds. These insights are then synthesised into explicit user needs and translated into design criteria that guide ideation and evaluation. Designers can also involve users directly in co-creation and prototype testing, iterating on the feedback they receive. Keeping empathy active throughout the process — not only at the start — ensures the solution remains genuinely user-centred and desirable.",
+      "explanation": "It names practical empathy tools and explains how the resulting insights become user-centred design decisions and iterative tests.",
+      "oneShotPreview": "Use interviews, observation, personas and empathy maps; turn insights into needs; co-create and test with users throughout."
+    },
+    {
+      "q": "7 Explain the role of prototyping in design thinking. How can prototyping help designers refine their ideas and create innovative solutions?",
+      "a": "Prototyping is the stage in which designers build quick, inexpensive, tangible versions of their ideas — from paper sketches and wireframes to clickable mock-ups or crude physical models. Its role is to make ideas testable: a prototype lets teams \"fail early and often\", expose flaws and gather concrete user feedback before investing in a full solution. Because prototypes are low-cost, designers can explore multiple alternatives, take creative risks and combine ideas in new ways, which fosters innovation. Testing reveals whether a concept is desirable, feasible and viable, and the feedback loop drives successive refinement until the solution truly meets user needs. In short, prototyping converts abstract ideas into evidence, reducing uncertainty and improving the final design.",
+      "explanation": "It describes what prototyping is, its role in testing and learning, and how low cost plus iteration encourages risk-taking and better, more innovative outcomes.",
+      "oneShotPreview": "Cheap, rapid prototypes make ideas testable, expose flaws early, and let feedback drive refinement and innovation."
+    },
+    {
+      "q": "8 What is Design Thinking, and how does it influence to problem-solving and innovation?",
+      "a": "Design thinking is a human-centred, iterative approach to problem-solving that combines empathy, creative ideation, prototyping and testing (the five stages: empathize, define, ideate, prototype, test). It influences problem-solving by reframing problems from the user's perspective, exploring multiple possible solutions before converging, and validating ideas with real people instead of relying on assumptions. This reduces the risk of solving the wrong problem and yields solutions that are desirable, feasible and viable. It drives innovation by encouraging divergent thinking, experimentation, cross-functional collaboration and a tolerance for failure, enabling breakthrough products, services and business models. Organisations from Apple and IDEO to hospitals and governments use it to tackle complex, ambiguous challenges.",
+      "explanation": "It defines design thinking and then addresses both parts of the question — its effect on problem-solving (reframing, validation) and on innovation (divergence, experimentation).",
+      "oneShotPreview": "A human-centred, iterative method that reframes problems and validates ideas, driving creative, user-validated innovation."
+    },
+    {
+      "q": "9 Interpret IDEO and Stanford d.school played a crucial role in developing the Design Thinking framework.",
+      "a": "IDEO, the global design consultancy, and the Stanford University School of Design (the d.school), founded in 2005, were instrumental in formalising and spreading design thinking as a structured five-stage framework — Empathize, Define, Ideate, Prototype and Test. David Kelley, who founded both IDEO and the d.school, championed the idea that design methods could be applied to any problem, not just physical products. IDEO's projects, such as the Embrace infant warmer and the redesign of everyday products, demonstrated the approach in practice, while the d.school taught it to students and business leaders worldwide through programmes such as the Design Thinking Bootcamp. Tim Brown's book \"Change by Design\" further popularised it. Together they turned an informal designer's practice into a mainstream framework for innovation used in business, education and social change.",
+      "explanation": "It explains the specific contributions of IDEO and the d.school — the five-stage model, teaching, real projects and publications — which is what \"interpret their crucial role\" requires.",
+      "oneShotPreview": "IDEO and Stanford's d.school formalised and taught the five-stage empathy-to-test framework, making design thinking a global method."
+    },
+    {
+      "q": "10 Explain the impact of new materials in industrial design and their role in shaping sustainable practices.",
+      "a": "New materials — such as bioplastics, recycled composites, graphene, nanomaterials and smart or self-healing materials — expand what industrial designers can achieve: lighter, stronger, more durable and more functional products with reduced environmental impact. They enable miniaturisation, energy efficiency, longer product life and easier recycling, supporting sustainable design by cutting resource use, waste and carbon footprints. For example, biodegradable packaging reduces landfill waste, recycled aluminium lowers energy consumption, and smart materials that change shape or colour can replace several separate components. Designers must still weigh the full life-cycle impact, including sourcing, manufacturability, cost and end-of-life disposal, to avoid superficial \"green\" claims. Overall, new materials are a key enabler of eco-design and circular-economy products.",
+      "explanation": "It covers both parts — the design possibilities created by new materials and their contribution to sustainability — while noting responsible life-cycle assessment.",
+      "oneShotPreview": "New materials enable lighter, longer-lasting, recyclable products, driving eco-design and sustainable, circular manufacturing."
+    },
+    {
+      "q": "11 Illustrate the properties and applications of graphene, nanomaterials, and smart materials. How are these materials transforming various industries?",
+      "a": "Graphene is a single layer of carbon atoms with exceptional strength (about 200 times that of steel), high electrical and thermal conductivity, transparency and flexibility; it is used in electronics, batteries, sensors, composites and coatings. Nanomaterials, engineered at the nanoscale (for example nanoparticles, nanotubes and nanofibres), show unique optical, electrical, magnetic and mechanical properties because of their high surface-area-to-volume ratio; they are applied in medicine (drug delivery, imaging), electronics, catalysts, textiles and water purification. Smart materials respond to stimuli such as heat, light, pressure, electricity or magnetic fields — examples include shape-memory alloys, piezoelectric materials, thermochromic materials and self-healing polymers — and are used in actuators, sensors, medical devices and adaptive structures. Together these materials are transforming industries by enabling smaller, faster, lighter and more efficient products: quicker-charging batteries and flexible electronics, targeted drug delivery and better diagnostics, stronger lightweight aircraft and vehicles, and responsive, self-monitoring infrastructure. They also support sustainability through energy-efficient, longer-lasting designs.",
+      "explanation": "It gives the defining property and representative applications of each material class, then explains the cross-industry transformation asked for.",
+      "oneShotPreview": "Graphene = super-strong conductive sheets; nanomaterials = tuned nanoscale properties; smart materials = stimuli-responsive — enabling lighter, faster, smarter products."
+    }
+  ]
+}

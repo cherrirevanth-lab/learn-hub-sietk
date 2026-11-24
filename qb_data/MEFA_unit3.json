@@ -1,0 +1,116 @@
+{
+  "subject": "23HS0848",
+  "unit": 3,
+  "unitTitle": "Business Organizations and Markets",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "q": "a) Define sole trader?",
+      "a": "A sole trader (sole proprietorship) is a business owned, controlled and managed by a single individual who alone enjoys all the profits and bears all the losses and risks. There is no separate legal entity: the owner and the business are one, so the owner has unlimited liability for business debts. It is the simplest and most common form of business organization, typically used for small shops and personal service businesses.",
+      "explanation": "This defines the sole trader form and states its three identifying traits: a single owner, no separate legal personality, and unlimited liability.",
+      "oneShotPreview": "Sole trader = one owner, full control, unlimited liability."
+    },
+    {
+      "q": "a) What are meant Partnership Deed?",
+      "a": "A Partnership Deed is a written legal agreement between the partners that records the terms and conditions governing the partnership. It specifies the profit-and-loss sharing ratio, capital contributions, roles, interest on capital, partner salaries, admission or retirement of partners, and dispute resolution. Although it is not legally compulsory, it is strongly recommended because it prevents misunderstandings and serves as evidence if disputes arise.",
+      "explanation": "The deed is the documentary basis of a partnership; defining rights, duties and profit-sharing is exactly what the question asks for.",
+      "oneShotPreview": "Partnership Deed = written agreement recording partners' terms and profit-sharing ratio."
+    },
+    {
+      "q": "b) Define market structure?",
+      "a": "Market structure refers to the organizational and competitive characteristics of a market — the features that determine how buyers and sellers interact, how prices are set and how firms compete. It is classified mainly by the number of buyers and sellers, the degree of product differentiation and the ease of entry and exit. The main types are perfect competition, monopolistic competition, oligopoly and monopoly.",
+      "explanation": "The answer defines market structure by its determining features and names the standard classification, matching the 2-mark definition.",
+      "oneShotPreview": "Market structure = competitive features of a market; ranges from perfect competition to monopoly."
+    },
+    {
+      "q": "c) Explain about marker Penetration?",
+      "a": "Market penetration (spelt 'marker' in the question paper) is a growth strategy and measure of how deeply a product has captured an existing market — the share of current customers compared with total potential customers. It is achieved by winning competitors' customers, increasing usage among existing customers, and using aggressive pricing, promotion and wider distribution. High penetration means a large share of an established market with little focus on developing new markets.",
+      "explanation": "The question intends market penetration; the answer explains it as growing share in an existing market rather than entering new markets.",
+      "oneShotPreview": "Market penetration = growing share in an existing market through pricing, promotion and distribution."
+    },
+    {
+      "q": "d) What is meant by monopoly?",
+      "a": "Monopoly is a market structure in which there is a single seller of a product that has no close substitutes, so the firm controls the entire market supply and can influence the price. Entry of new firms is blocked by barriers such as patents, licences or high setup costs. Common examples are public utilities and patented products.",
+      "explanation": "Monopoly is correctly defined by a single seller, absence of close substitutes and strong entry barriers, which give the firm price-making power.",
+      "oneShotPreview": "Monopoly = single seller, no close substitutes, price maker."
+    },
+    {
+      "q": "I'm deciding between starting a business as a sole trader or entering a partnership. What are the key advantages and disadvantages of each structure?",
+      "a": "A sole trader is easy and cheap to start, enjoys full control and all profits, keeps affairs private and has minimal legal formalities, but suffers unlimited liability, limited capital, no continuity and bears all risk alone. A partnership combines the skills, capital and resources of two or more partners and shares the risk, and is still easy to form with few legal restrictions, but it brings shared control, joint and unlimited liability, possible disputes between partners and limited growth capital. In short, choose sole trader for a simple one-person venture and a partnership when complementary skills and pooled capital justify sharing control and risk.",
+      "explanation": "The answer compares both forms on formation ease, control, liability, capital, risk and continuity, which is what a 10-mark comparison requires.",
+      "oneShotPreview": "Sole trader = simple, full control, unlimited liability; partnership = pooled skills and capital, shared control and risk."
+    },
+    {
+      "q": "a) What is an oligopoly, and what are its key features?",
+      "a": "Oligopoly is a market structure in which a few large firms dominate the market and each firm's pricing or output decisions affect the others, so firms are highly interdependent. Its key features are: a small number of sellers, high barriers to entry, products that may be identical or differentiated, heavy advertising and brand competition, and a tendency toward price rigidity or collusion through cartels. Firms often follow a price leader instead of competing freely on price.",
+      "explanation": "The answer identifies oligopoly and lists its defining features — few interdependent firms, entry barriers and price rigidity or collusion.",
+      "oneShotPreview": "Oligopoly = few dominant interdependent firms with entry barriers and price rigidity."
+    },
+    {
+      "q": "b) Explain the key features of perfect competition and imperfect competition. How do they differ in terms of market structure and pricing?",
+      "a": "Perfect competition has a very large number of buyers and sellers, homogeneous products, free entry and exit and perfect information, so each firm is a price taker, price equals marginal cost and only normal profit is earned in the long run. Imperfect competition (monopolistic competition, oligopoly and monopoly) has fewer sellers, differentiated or unique products and entry barriers, so firms have some price-making power and can earn supernormal profits. The central difference is that under perfect competition the market sets the price and the firm simply accepts it, while under imperfect competition each firm can influence price through product differentiation, branding or restricted output.",
+      "explanation": "The answer contrasts both structures on number of firms, product nature, entry freedom and pricing power, directly answering both parts of the question.",
+      "oneShotPreview": "Perfect competition = price takers with uniform products; imperfect competition = firms influence price through differentiation."
+    },
+    {
+      "q": "Given a scenario where an individual wants to start a small local shop, how would the sole trader form of business organization benefit this individual?",
+      "a": "For a small local shop, sole tradership is ideal because it can be started with minimal cost and legal formalities, the owner keeps all profits and has complete control over decisions, and the business can be run using personal savings and family labour. The owner can adapt quickly to local customer needs and keep business information private. The main caution is unlimited liability — personal assets are at risk — but for a small, low-risk local shop the simplicity, autonomy and low overhead usually outweigh that drawback.",
+      "explanation": "The answer applies the sole trader advantages of easy formation, low cost, full control and quick decisions to the specific small-local-shop context while noting the liability caveat.",
+      "oneShotPreview": "Sole trader suits a small local shop: cheap, simple, full control and all profits."
+    },
+    {
+      "q": "Explain the concept of a Joint Stock Company. How does it differ from other forms of business organizations such as sole proprietorships or partnerships?",
+      "a": "A Joint Stock Company is a business owned by many shareholders whose capital is divided into transferable shares, and it is registered as a separate legal entity distinct from its members. Unlike a sole proprietorship or partnership, it has perpetual existence, limited liability for shareholders and the ability to raise large capital by issuing shares to the public. Management is handled by a board of directors and ownership can be transferred easily through share transactions. Sole proprietorships and partnerships depend on the personal resources of one or a few owners, carry unlimited liability and lack a separate legal identity and continuity.",
+      "explanation": "The answer explains the company form and contrasts it on legal identity, liability, capital raising, continuity and transferability of ownership.",
+      "oneShotPreview": "Joint Stock Company = separate legal entity, share capital, limited liability and perpetual life."
+    },
+    {
+      "q": "What is a partnership? What are the key characteristics of a partnership form of organization?",
+      "a": "A partnership is a business arrangement in which two or more persons agree to share the profits of a business run by them jointly or by one of them on behalf of all. Its key characteristics are: two or more partners, a written partnership deed, sharing of profits and losses in an agreed ratio, joint and unlimited liability, mutual agency (each partner can bind the firm), no separate legal entity, and dissolution on the death, insolvency or retirement of a partner unless otherwise agreed.",
+      "explanation": "The answer defines partnership and lists its essential features, covering both parts of the 10-mark question.",
+      "oneShotPreview": "Partnership = 2+ partners sharing profits, mutual agency, unlimited joint liability, no separate legal entity."
+    },
+    {
+      "q": "Explain the concept of market structure. How are markets classified based on the degree of competition?",
+      "a": "Market structure is the set of features that determine the competitive environment in which a firm operates — chiefly the number of buyers and sellers, the nature of the product and the freedom of entry and exit. Based on the degree of competition, markets are classified into four types: perfect competition (many sellers, identical products, no barriers), monopolistic competition (many sellers, differentiated products), oligopoly (a few large interdependent sellers) and monopoly (a single seller with no close substitutes). As competition falls from perfect competition to monopoly, an individual firm's control over price increases.",
+      "explanation": "The answer defines market structure and gives the standard four-way classification ordered from most to least competitive.",
+      "oneShotPreview": "Markets classified by competition: perfect, monopolistic, oligopoly, monopoly."
+    },
+    {
+      "q": "a) Define market and explain features of monopoly.",
+      "a": "A market is any arrangement or place where buyers and sellers come together to exchange goods or services at an agreed price. A monopoly is a market with a single seller and no close substitutes for its product. Its main features are: one seller controlling the entire supply, absence of close substitutes, strong barriers to entry (patents, licences, economies of scale), the firm as a price maker, and the likelihood of supernormal profit in the long run; price discrimination may also be present.",
+      "explanation": "The answer first defines a market and then lists the defining features of monopoly, covering both parts of the sub-question.",
+      "oneShotPreview": "Market = exchange venue; monopoly = one seller, no substitutes, price maker, entry barriers."
+    },
+    {
+      "q": "b) What is meant by perfect competition? Explain its features.",
+      "a": "Perfect competition is a market structure with a very large number of buyers and sellers where all firms sell an identical (homogeneous) product and no single firm can influence the market price. Its features are: many buyers and sellers, uniform product, free entry and exit, perfect knowledge and price-taking firms. Since price is determined by industry demand and supply, each firm earns only normal profit in the long run and produces where price equals marginal cost.",
+      "explanation": "The answer defines perfect competition and lists its standard features together with the price-taking and normal-profit implications.",
+      "oneShotPreview": "Perfect competition = many firms, identical product, free entry, price takers."
+    },
+    {
+      "q": "Define a Monopoly market? How the Price-Output determination is made under Monopoly Markets? Explain with a diagram.",
+      "a": "A monopoly is a market in which a single seller controls the entire supply of a product having no close substitutes. The monopolist fixes the profit-maximizing output where marginal revenue equals marginal cost (MR = MC), then reads the corresponding price from the downward-sloping demand (average revenue) curve, so the price is above marginal cost. In the diagram, draw the downward-sloping AR/D curve with a steeper MR curve, plus the MC and AC curves: the MR = MC intersection determines output Qm, and the price Pm is read upward on the demand curve; supernormal profit equals (Pm − AC) × Qm. Unlike perfect competition, the monopolist has no unique supply curve and can earn long-run excess profit.",
+      "explanation": "The answer defines monopoly and explains the MR = MC profit-maximizing rule and demand-curve price reading, which is exactly what the diagram question tests.",
+      "oneShotPreview": "Monopoly price-output: set MR = MC, read price on demand curve; P > MC, possible supernormal profit."
+    },
+    {
+      "q": "If you were to start a new business, which form of business organization would you choose and why?",
+      "a": "For a small new venture I would choose the sole proprietorship because it is the easiest and cheapest to establish, needs minimal legal formalities, gives complete control and all profits to the owner, and allows quick decisions suited to local customers. If the venture needed pooled capital or complementary skills, a partnership would be a good alternative, while a company would be preferable only for a large, high-growth business needing public capital and limited liability. The right choice therefore depends on scale, capital requirement and willingness to bear risk; for a typical small start-up the simplicity and autonomy of a sole proprietorship outweigh its unlimited-liability drawback.",
+      "explanation": "The answer makes a justified choice and explains the reasoning while acknowledging alternatives, as expected of a 10-mark application question.",
+      "oneShotPreview": "Choose sole proprietorship for a small start-up: cheap, simple, full control; scale decides."
+    },
+    {
+      "q": "a) If you were launching a new product in a competitive market, which of the five pricing methods would you choose and why?",
+      "a": "The five pricing methods are cost-plus (mark-up) pricing, target-return pricing, demand/value-based pricing, competition-based pricing and new-product penetration or skimming pricing. For a new product in a competitive market I would choose penetration pricing — a low initial price to capture market share quickly, discourage rivals and build customer loyalty — because buyers can be attracted away from established brands. Once a loyal base is built the price can be raised gradually. For a highly innovative product, skimming or value-based pricing might be better, but for an ordinary competitive launch penetration pricing best balances share gain and risk.",
+      "explanation": "The answer names the five methods and justifies penetration pricing with reasons tied specifically to a competitive market, satisfying both parts of the question.",
+      "oneShotPreview": "Pick penetration pricing for a competitive launch: a low price wins share fast."
+    },
+    {
+      "q": "b) Distinguish between monopoly and perfect competition.",
+      "a": "Under perfect competition there are many buyers and sellers, products are homogeneous, entry and exit are free, and firms are price takers with price equal to marginal cost and only normal profit in the long run. Under monopoly there is a single seller, no close substitutes, strong entry barriers, and the firm is a price maker with price above marginal cost and possible long-run supernormal profit. A perfectly competitive firm faces a horizontal demand curve and has a well-defined supply curve, whereas the monopolist faces the downward-sloping market demand curve and has no unique supply curve; monopolists may also practise price discrimination, which is impossible under perfect competition.",
+      "explanation": "The answer distinguishes the two structures on number of sellers, products, entry barriers, price control, profits and demand curve — the standard comparison points.",
+      "oneShotPreview": "Perfect competition = many price takers; monopoly = one price maker with barriers and supernormal profit."
+    }
+  ]
+}

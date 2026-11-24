@@ -1,0 +1,128 @@
+{
+  "subject": "23CS0511",
+  "unit": 5,
+  "unitTitle": "File System and Protection",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "q": "a) List out the directory support operations on the file.",
+      "a": "A directory is a table that maps symbolic file names to their underlying file control blocks or inodes. The basic directory-management operations are: search for a file (resolve a name to its directory entry), create a file (add a new name-to-entry mapping), delete a file (remove the mapping), list a directory (enumerate names and attributes), rename a file (change the name while keeping the same file), and traverse the file system (navigate the path from the root). These primitives are invoked by higher-level commands such as open, create, delete, and rename.",
+      "explanation": "These six operations are the standard directory-management primitives in the file-system interface and directly support name resolution and file organization.",
+      "oneShotPreview": "Directory ops: search, create, delete, list, rename, traverse - name-to-inode mappings."
+    },
+    {
+      "q": "b) Give the different layers of file system.",
+      "a": "A file system is built as a stack of layers: (1) I/O control - device drivers and interrupt handlers that move data between memory and the storage device; (2) basic file system - issues generic block read/write commands to the driver and manages buffers and caches; (3) file organization module - translates logical block addresses into physical block addresses and manages free space and allocation methods; (4) logical file system - manages directories, file control blocks (inodes), name resolution, and protection/access control. Each layer uses the services of the layer below it and hides those details from the layer above, giving modularity and portability.",
+      "explanation": "This layered design separates low-level device details from user-level naming and protection, a standard OS structuring principle.",
+      "oneShotPreview": "Layers: I/O control -> basic FS -> file-organization module -> logical FS (dirs, FCBs, protection)."
+    },
+    {
+      "q": "c) List the reasons for local file system failures.",
+      "a": "Local file systems fail for several reasons: hardware faults such as head crashes, bad sectors, or worn-out flash memory cells; sudden power loss or system crashes that interrupt writes and leave metadata inconsistent; software bugs in the OS or file-system driver that corrupt structures such as the FAT or inode tables; human error such as accidental deletion or formatting; and malicious software that damages data. Failures may be partial (a few bad blocks) or catastrophic (loss of the whole disk), and they often require consistency checking and recovery.",
+      "explanation": "Distinguishing hardware, power, software, and human causes explains why backups and consistency checkers (fsck) are needed.",
+      "oneShotPreview": "Failures: disk/bad blocks, power loss, software bugs, human error, malware - inconsistent metadata."
+    },
+    {
+      "q": "d) Describe the goals of protection.",
+      "a": "The main goal of protection is to control access to system resources so that only authorized users or processes can use them, preventing both accidental misuse and deliberate attacks. It enforces the three classic security goals: confidentiality (prevent unauthorized reading), integrity (prevent unauthorized modification), and availability (prevent denial of service). Protection mechanisms also define clear access rights through access-control lists or capability lists, enforce the principle of least privilege, and provide a way to detect and recover from violations.",
+      "explanation": "Protection is about mediating access to resources; confidentiality, integrity, and availability are its canonical goals, with least privilege limiting damage.",
+      "oneShotPreview": "Protection goals: authorized access only; confidentiality, integrity, availability; least privilege."
+    },
+    {
+      "q": "e) Analyze the Advantages and disadvantages of Protection Rings",
+      "a": "Protection rings arrange code into concentric privilege levels, with the kernel in ring 0 and user applications in outer rings such as ring 3. Advantages: they provide hardware-enforced isolation, so user programs cannot execute privileged instructions or access kernel memory directly, a faulty application cannot crash or compromise the OS, and ring switches occur only through controlled gates (system calls and traps). Disadvantages: ring crossings add performance overhead, multi-level design and debugging are complex, most hardware supports only a few levels, and rings alone cannot defend against attacks such as buffer overflows within a single level.",
+      "explanation": "Rings implement the kernel/user split with a mode bit and gates; the trade-off is strong protection versus transition cost and limited levels.",
+      "oneShotPreview": "Rings: strong hardware isolation and OS safety, but transition overhead, complexity, few levels."
+    },
+    {
+      "q": "a) What is file? Explain its structure and attributes in detail.",
+      "a": "A file is a named collection of related information stored on secondary storage (disk, SSD, tape) that the OS presents as a single logical unit. Logically, a file may be structured as a stream of bytes, a sequence of fixed- or variable-length records, or a tree of records; physically it is stored as blocks on a device. Common attributes include name (the human-readable identifier), type or extension, size (current and maximum), location (a pointer to where the file resides), protection/access-control information (owner, group, and read/write/execute rights), and timestamps (creation, last modification, last access). The OS keeps these attributes in a file control block (inode), while the directory maps the file name to that control block.",
+      "explanation": "A file is the fundamental storage abstraction; its logical structure defines how applications see it, and attributes are the metadata needed to locate and manage it.",
+      "oneShotPreview": "File = named byte/record stream on disk; attributes: name, type, size, location, protection, timestamps."
+    },
+    {
+      "q": "b) Analyze the different file types available.",
+      "a": "Files are commonly classified by content and use: text files (ASCII/Unicode, e.g., .txt, .doc), source-code files (.c, .java), object files (.o, compiled machine code not yet linked), executable files (.exe, .out, ready to run), library files (.lib, .a, .so), archive files (.zip, .tar, which group other files), and multimedia/binary files (.jpg, .mp3, .pdf). The OS and applications often infer the type from the filename extension and use it to choose default operations, such as opening with the right application or treating a .exe as executable. Internally the OS also distinguishes regular files from directories and special files such as character-device, block-device, FIFO, and socket files.",
+      "explanation": "Extensions let the OS and users select meaningful operations on a file; distinguishing regular, directory, and special files explains the OS internal view.",
+      "oneShotPreview": "Types: text, source, object, executable, library, archive, multimedia; plus regular/dir/special files."
+    },
+    {
+      "q": "Explain about file access methods with Example.",
+      "a": "The three principal file access methods are: (1) Sequential access - information is read in order, one record after another, using an implicit position pointer (read next / write next), e.g., a compiler reading a source file from beginning to end or a text editor reading a document. (2) Direct (random) access - any block or record can be read or written quickly by specifying its relative block/record number, e.g., a database lookup that reads a record by its address. (3) Indexed access - an index block or file maps keys or record numbers to the actual data blocks, so the index is searched first and then the desired block is read directly, e.g., a database index or an ISAM file. Most systems support sequential access, and many also support direct access.",
+      "explanation": "Access methods define how the OS locates data inside a file; sequential, direct, and indexed represent increasing flexibility with different cost and use cases.",
+      "oneShotPreview": "Access: sequential (read next), direct (by block number), indexed (search index then read)."
+    },
+    {
+      "q": "Analyze the different types of directory implementations methodologies with neat diagram.",
+      "a": "The two main directory implementation methods are: (1) Linear list - the directory is a list of file-name/entry pairs searched sequentially; it is simple but search is O(n). A sorted list allows binary search to reduce search time, though insertion and deletion become costlier. (2) Hash table - the file name is hashed to a bucket pointing to the directory entry or to a chain of entries (separate chaining), giving near O(1) lookup, but requiring collision handling and management of table size, especially with dynamic resizing. A typical diagram shows the linear list as consecutive [name | inode] entries, versus a hash table as an array of buckets each pointing to a linked list of entries whose names hash to that bucket.",
+      "explanation": "Directory implementation is a trade-off between simple linear search and fast hashed lookup with collision handling, usually depicted as list versus bucketed hash table.",
+      "oneShotPreview": "Directory impl: linear list (simple, O(n)) vs hash table (fast, needs collision chaining)."
+    },
+    {
+      "q": "a) List and explain the various types of file operations.",
+      "a": "The basic file operations provided by the OS are: create (make a new file by allocating an entry and file control block); write (put data at the current file position); read (get data from the current position); seek/reposition (move the position pointer to a given offset); delete (remove the file from the directory and free its blocks); truncate (erase contents but keep attributes such as name and permissions); append (add data at the end); and rename (change the name). Because most operations need the file attributes and location, open() loads the file control block into memory and returns a handle, and close() writes back modified information and releases the handle. Multi-user systems also provide copy, link, and lock operations.",
+      "explanation": "These operations form the file API; the open/close pair is essential because it avoids repeated name resolution and tracks the file position and state.",
+      "oneShotPreview": "Ops: create, write, read, seek, delete, truncate, append, rename, plus open/close handle."
+    },
+    {
+      "q": "b) Describe different file allocation methods in detail.",
+      "a": "File allocation methods decide how disk blocks are assigned to a file: (1) Contiguous allocation - each file occupies consecutive blocks, giving fast sequential and direct access and simple implementation, but causing external fragmentation and requiring the file size in advance. (2) Linked allocation - each block holds data plus a pointer to the next block, so blocks can be scattered, which eliminates external fragmentation and needs no size declaration, but makes random access slow and a lost pointer destroys the chain (improved by the FAT, which keeps pointers in a separate table). (3) Indexed allocation - a dedicated index block holds pointers to all data blocks, supporting efficient random access with no external fragmentation, but using extra space for the index and potentially overflowing for very large files (handled by linked index blocks, multi-level indexing, or combined schemes as in Unix inodes).",
+      "explanation": "These are the classic alternatives; the comparison turns on access speed, fragmentation, and space overhead, with FAT and Unix inodes as practical refinements.",
+      "oneShotPreview": "Allocation: contiguous (fast, fragmentation), linked (no fragmentation, slow random), indexed (fast random, overhead)."
+    },
+    {
+      "q": "Illustrate the different directory structures in operating system with its advantages and disadvantages.",
+      "a": "Directory structures organize files as follows: (1) Single-level - one flat directory for all files; simple, but name collisions occur and no grouping is possible. (2) Two-level - one directory per user (first level = user, second = files); avoids name clashes between users but cannot form subdirectories. (3) Tree-structured - directories may contain files and subdirectories, forming a hierarchy from the root; supports logical grouping and unique path names, but sharing across branches is awkward. (4) Acyclic graph - allows shared files/subdirectories via links while forbidding cycles; sharing is easy but link maintenance is more complex. (5) General graph - permits cycles and arbitrary links for maximum flexibility but needs cycle detection (e.g., garbage collection) to avoid infinite traversals. Most modern OSes use a tree with links.",
+      "explanation": "The progression from flat to graph directories trades simplicity for organization and sharing; cycle handling distinguishes acyclic from general graphs.",
+      "oneShotPreview": "Structures: single, two-level, tree, acyclic graph, general graph - simplicity vs. organization/sharing."
+    },
+    {
+      "q": "Explain in detail how free space management is performed in operating system.",
+      "a": "Free-space management tracks which disk blocks are available for allocation. Common techniques are: (1) Bit vector (bitmap) - one bit per block (0 = free, 1 = allocated); simple and fast for finding contiguous runs, but the bitmap must be kept in memory and can be large. (2) Linked list (free list) - free blocks are chained together with a pointer to the first free block; it wastes no space but scanning is slow and it cannot easily find contiguous blocks. Variants improve this: grouping stores a block of free-block addresses in each free block, and counting stores a block address plus a count of following free blocks. The OS updates these structures whenever blocks are allocated or freed, balancing memory overhead, speed of finding contiguous space, and reliability.",
+      "explanation": "Free-space lists and bitmaps are the core of allocation; bitmaps give fast contiguous search at memory cost, linked lists save space but are slower.",
+      "oneShotPreview": "Free space: bitmap (fast, memory), free list (compact, slow), plus grouping/counting variants."
+    },
+    {
+      "q": "Describe file system mounting in operating systems with an example and how does it manage access to files across different storage devices and partitions?",
+      "a": "Mounting attaches a file system on a storage device to an existing directory (the mount point) in the root tree so its files become accessible through one namespace. For example, a USB drive formatted as ext4 on /dev/sdb1 can be mounted at /mnt/usb; afterwards /mnt/usb/file.txt reads that file from the device. The OS verifies the file-system type by reading the volume superblock (or boot record), installs its driver through the Virtual File System (VFS) layer, and records the device-to-mount-point mapping in a mount table. The VFS translates operations on pathnames into operations on the correct underlying file system and device, so users see a single unified directory tree spanning multiple disks and partitions. Unmounting detaches the device safely and flushes cached data.",
+      "explanation": "Mounting integrates separate volumes into one namespace via a mount point and VFS; the superblock identifies the FS and the mount table records the mapping.",
+      "oneShotPreview": "Mount = attach FS at a directory (mount point); VFS unifies devices into one tree (e.g., /dev/sdb1 to /mnt/usb)."
+    },
+    {
+      "q": "Discuss how operating systems handle file sharing, protection, and consistency in multi-user and distributed environments, and what are the different semantics used to manage changes to shared files.",
+      "a": "In multi-user systems the OS protects shared files through access-control lists or capability lists attached to each file (owner/group/others with read, write, execute rights) and enforces them on every open/read/write, often using locks to serialize concurrent updates. In distributed systems (e.g., NFS, AFS) a server holds the authoritative copy while clients cache files, so consistency protocols, file locks, and cache-coherence rules maintain a coherent view. The semantics defining when a write becomes visible to other processes are: UNIX semantics (each write is immediately visible to all users); MS-DOS semantics (changes become visible only after the file is closed); session semantics (changes visible only when a session closes, with concurrent sessions seeing separate versions, last closer wins); immutable-files semantics (files cannot be modified after creation); and transactional semantics (updates grouped into all-or-nothing atomic transactions, e.g., copy-on-write). These trade immediacy of sharing against concurrency control and consistency overhead.",
+      "explanation": "Sharing requires protection (ACLs/locks) and consistency (caching/coherence); the listed semantics are the standard classifications of when modifications become visible.",
+      "oneShotPreview": "Sharing: ACLs plus locks; distributed caching/coherence. Semantics: UNIX, MS-DOS, session, immutable, transactional."
+    },
+    {
+      "q": "a) What is meant by Threats? List and describe few.",
+      "a": "A threat is any potential event or action that could violate the security of a system, i.e., harm the confidentiality, integrity, or availability (CIA) of data and resources. Threats may be accidental (human error, software bugs, hardware failure) or intentional/malicious. Common examples include: viruses and worms that self-replicate and damage systems; Trojan horses that hide malicious code inside legitimate-looking software; phishing/social engineering that tricks users into revealing credentials; eavesdropping or sniffing that secretly captures network traffic (loss of confidentiality); denial-of-service attacks that flood resources and make services unavailable; and unauthorized modification or fabrication of data (loss of integrity). A threat is a potential danger, whereas an attack is the actual attempt to exploit it.",
+      "explanation": "Threats map directly to the CIA goals; separating accidental vs. intentional and passive vs. active explains how protection mechanisms are chosen.",
+      "oneShotPreview": "Threat = potential security violation (CIA); e.g., virus, worm, Trojan, phishing, sniffing, DoS."
+    },
+    {
+      "q": "b) Explain about the domain of Protection.",
+      "a": "A protection domain is an abstract environment that specifies the set of resources (objects) a process may access and the operations it may perform on each. Each domain is described using an access matrix, whose rows are domains and columns are objects, and whose cells list allowed rights (read, write, execute, etc.). A process runs inside a domain and can only use objects for which that domain has rights, but it may switch domains - for example, a user process enters the kernel domain through a system call (a domain switch implemented by the mode bit and a controlled gate). Domains can be realized as the user/kernel domains of a CPU, as per-user domains, or as per-process domains, with rights stored as access-control lists (column-wise) or capability lists (row-wise).",
+      "explanation": "The domain is the unit of access control in the access-matrix model, and switching domains (user to kernel) is how controlled privilege escalation happens.",
+      "oneShotPreview": "Domain = set of (object, rights) a process may use; access matrix rows=domains, cols=objects; switch via syscalls."
+    },
+    {
+      "q": "i) Uses of Protection rings",
+      "a": "Protection rings are used to enforce privilege separation between the operating system kernel and user applications. Ring 0 (kernel mode) runs trusted code that can execute privileged instructions and access all memory and devices, while outer rings such as ring 3 (user mode) stop applications from directly manipulating hardware or kernel data. Rings also provide controlled transitions: a user program enters a more privileged ring only through gates such as system calls, traps, and interrupts, which protects the OS from accidental or malicious misuse. They support different levels of trust, allowing drivers or system services to run at intermediate privilege, and form the hardware basis for policies such as least privilege.",
+      "explanation": "Rings use hardware privilege levels and gates to isolate the kernel and control how user code requests privileged services.",
+      "oneShotPreview": "Uses: isolate kernel from user apps, guard privileged instructions/memory, gate via syscalls and traps."
+    },
+    {
+      "q": "ii) Levels of Protection rings",
+      "a": "Protection rings are numbered concentric privilege levels, with ring 0 the most privileged and outer rings progressively less privileged. The x86 architecture, for example, defines four rings: ring 0 for the kernel, rings 1 and 2 for system services and device drivers (rarely used), and ring 3 for user applications. Each level can access resources allocated to it or to less-privileged rings, and moving inward requires passing through a controlled gate. Most general-purpose operating systems (Windows, Linux) use only two levels - ring 0 for kernel mode and ring 3 for user mode - to keep design and transitions simple, while the extra rings remain for specialized or virtualized systems.",
+      "explanation": "The ring number indicates privilege (lower is more privileged), and practical OSes typically collapse the four hardware rings into just kernel and user modes.",
+      "oneShotPreview": "Levels: ring 0 kernel (highest) then 1/2 services then 3 user (lowest); common OSes use only 0 and 3."
+    },
+    {
+      "q": "iii) Modes of Protection Ring",
+      "a": "The modes associated with protection rings are kernel (supervisor/system) mode and user mode, indicated by a mode bit in the CPU. In kernel mode (ring 0) all instructions, including privileged ones, can execute and all memory and devices are accessible; in user mode (outer rings) only a subset of instructions is allowed and access to protected memory or hardware causes a trap. A process normally runs in user mode and switches to kernel mode only through controlled events - system calls (software traps), hardware interrupts, and exceptions/faults - returning to user mode when the kernel service completes. This dual-mode operation is the practical implementation of ring protection in most operating systems.",
+      "explanation": "Modes are the CPU-visible realization of rings; the mode bit plus trap/interrupt gates ensure privileged operations happen only in kernel mode.",
+      "oneShotPreview": "Modes: kernel (privileged, ring 0) vs. user (restricted); switch via syscalls/interrupts/traps (mode bit)."
+    }
+  ]
+}

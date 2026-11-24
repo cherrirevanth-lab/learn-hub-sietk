@@ -1,0 +1,116 @@
+{
+  "subject": "23HS0848",
+  "unit": 1,
+  "unitTitle": "Introduction to Managerial Economics",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "q": "1 a) Definition of Managerial Economics.",
+      "a": "Managerial economics is the application of economic theory, concepts and analytical methods to the problems of business management. It bridges economics and business practice to help managers allocate scarce resources, analyse demand, cost, production, pricing and investment, and take rational decisions. It is also called business economics or applied economics. In short, it uses economic reasoning to facilitate decision-making and forward planning by management.",
+      "explanation": "This is the standard textbook definition of managerial economics, describing it as applied economics that links theory to business decision-making.",
+      "oneShotPreview": "Application of economic theory and tools to solve practical business management and planning problems."
+    },
+    {
+      "q": "1 b) What is law of demand?",
+      "a": "The law of demand states that, other things being equal (ceteris paribus), the quantity demanded of a commodity rises when its price falls and falls when its price rises. Price and quantity demanded are therefore inversely related, which is shown by a downward-sloping demand curve. The law holds only when non-price factors such as income, tastes and prices of related goods remain unchanged.",
+      "explanation": "It states the inverse price-quantity relationship and the ceteris paribus condition, the core of the law of demand.",
+      "oneShotPreview": "Higher price, lower quantity demanded (and vice versa), other things constant."
+    },
+    {
+      "q": "1 c) What is Elastic Demand and inelastic demand?",
+      "a": "Elastic demand (Ed > 1) exists when a small percentage change in price causes a larger percentage change in quantity demanded, so consumers are highly responsive to price; luxuries and non-essential goods usually show this. Inelastic demand (Ed < 1) exists when a price change causes a smaller percentage change in quantity demanded, as with necessities like salt, medicines and petrol. The extreme cases are perfectly elastic (Ed = infinite, horizontal curve) and perfectly inelastic (Ed = 0, vertical curve).",
+      "explanation": "It distinguishes the two cases by the size of the responsiveness (Ed greater or less than one) and gives typical examples.",
+      "oneShotPreview": "Elastic: big demand response to price (Ed>1); inelastic: small response (Ed<1)."
+    },
+    {
+      "q": "1 d) List out the interdisciplinary of managerial economics.",
+      "a": "Managerial economics draws on several disciplines. The main ones are microeconomics (demand, production, cost, market structure), macroeconomics (national income, inflation, business cycles, monetary and fiscal policy), accounting (financial statements and cost data), finance (capital budgeting, cost of capital, working capital), marketing (demand forecasting, pricing, promotion), statistics and econometrics (data analysis and forecasting models), mathematics (calculus and optimisation), and operations research (linear programming and decision theory). Law, psychology and sociology also contribute through the business environment and consumer behaviour.",
+      "explanation": "It names the contributing disciplines and briefly links each to a managerial-economics topic, which is what a listing question requires.",
+      "oneShotPreview": "Micro/macroeconomics, accounting, finance, marketing, statistics, maths, operations research, law and psychology."
+    },
+    {
+      "q": "1 e) What are the advantages of managerial economics?",
+      "a": "Managerial economics provides a systematic, analytical framework for decision-making and forward planning. It helps in demand forecasting, pricing, product-mix and production decisions, cost control and profit planning, capital budgeting and investment appraisal. It enables optimal allocation of scarce resources, reduces guesswork and risk by using data and theory, and helps the firm respond to competition, inflation and government policy. Overall it improves the quality, consistency and profitability of managerial decisions.",
+      "explanation": "It lists the practical benefits of the subject — better analysis, resource allocation, planning and risk reduction — matching an advantages question.",
+      "oneShotPreview": "Better decisions, optimal resource use, accurate forecasting, cost control, profit planning and risk reduction."
+    },
+    {
+      "q": "2 a) Identify nature of managerial economics through its definitions.",
+      "a": "The nature of managerial economics is clear from the definitions given by various authors: Spencer and Siegelman call it \"the application of economic theory and methodology to business administration practice\", while Evans describes it as a \"marriage of economics and business\". It is essentially applied and pragmatic, being problem-solving and decision-oriented rather than pure theory. It is both positive (factual analysis) and normative (prescriptive), mainly microeconomic but making use of macro inputs, and interdisciplinary in character. It is also regarded as both a science, because it uses systematic theories and analytical tools, and an art, because applying those tools requires judgement and experience.",
+      "explanation": "It uses well-known definitions to bring out the applied, decision-oriented, interdisciplinary and science-plus-art nature of the subject.",
+      "oneShotPreview": "Applied, decision-oriented, interdisciplinary, positive + normative, and a science as well as an art."
+    },
+    {
+      "q": "2 b) Analyze the significance of managerial economics in decision-making?",
+      "a": "Managerial economics is significant because it supplies the analytical tools needed for rational business decisions. It guides demand analysis and forecasting, pricing, production and cost optimisation, profit planning, break-even analysis and capital investment appraisal. It also helps the firm assess its external environment — competition, inflation, business cycles and government policy — and choose the best among alternative courses of action. By converting abstract theory into practical decision rules, it reduces uncertainty and guesswork, improving the quality, consistency and profitability of decisions and supporting long-run forward planning.",
+      "explanation": "It analyses importance by linking the tools of the subject to concrete managerial decisions and to reduced risk and better planning.",
+      "oneShotPreview": "Turns economic theory into practical rules for pricing, output, investment and planning under uncertainty."
+    },
+    {
+      "q": "3 a) What is Managerial Economics? Briefly explain the role of managerial economics in business decision making.",
+      "a": "Managerial economics is the application of economic principles, concepts and analytical techniques to business decision-making. Its role is to help management decide what to produce, how much to produce, at what price to sell and how to allocate scarce resources. It aids demand analysis and forecasting, cost and production decisions, pricing, profit planning, break-even analysis and capital investment decisions. It provides concepts such as opportunity cost, marginal analysis and elasticity that make decisions logical and consistent. Thus it helps the manager maximise profit or shareholder value while recognising constraints, competition, government policy and risk.",
+      "explanation": "It defines the subject and then explains its role across the major business decision areas, as the question asks.",
+      "oneShotPreview": "Uses economic concepts to guide decisions on demand, pricing, output, cost, profit and investment."
+    },
+    {
+      "q": "3 b) Define Elasticity of demand? Explain various measures of Elasticity of Demand?",
+      "a": "Elasticity of demand is the degree of responsiveness of quantity demanded to a change in its price or another determinant; numerically it is the percentage change in quantity demanded divided by the percentage change in the factor. The main measures are: (1) Price elasticity — point elasticity at a point on the curve (using calculus, Ed = (dQ/dP) x (P/Q)) or arc elasticity over a range using the midpoint formula. (2) Income elasticity — percentage change in demand divided by percentage change in income (positive for normal goods, negative for inferior goods). (3) Cross elasticity — percentage change in demand of one good divided by percentage change in price of another (positive for substitutes, negative for complements). (4) Promotional or advertising elasticity — percentage change in demand divided by percentage change in advertising expenditure.",
+      "explanation": "It defines elasticity as a responsiveness ratio and explains the four standard measures with their formulas and signs.",
+      "oneShotPreview": "Price, income, cross and advertising elasticity — each = % change in demand / % change in the determinant."
+    },
+    {
+      "q": "4 \"Managerial economics is the integration of economic theory with business practice for the purpose of facilitating decision making and forward planning by Management\". Comment.",
+      "a": "This statement, given by Spencer and Siegelman, correctly captures the essence of managerial economics. Economic theory supplies the concepts and tools — demand, elasticity, production, cost, market structure, national income and policy — while business practice supplies real problems and data. Integrating the two enables managers to take rational, evidence-based decisions on pricing, output and investment and to plan ahead under uncertainty. The discipline is therefore applied, interdisciplinary, forward-looking and both positive and normative, with the ultimate objective of efficient resource use and profit maximisation. The comment is fully justified because managerial economics is not pure theory but theory directed at practical managerial action.",
+      "explanation": "It explains both halves of the quoted definition — theory plus practice, decision-making plus forward planning — and agrees with the statement with reasons.",
+      "oneShotPreview": "Correct: it is applied economics that joins theory to practice for better decisions and future planning."
+    },
+    {
+      "q": "5 a) What is demand analysis and its types in detail.",
+      "a": "Demand analysis is the study of the relationship between the demand for a product and the factors influencing it, used to estimate sales and guide business decisions. Its main types are: price demand (quantity at different prices), income demand (demand at different income levels) and cross demand (demand for one good in relation to another's price). Other important types are individual and market demand, short-run and long-run demand, derived demand (for factors of production), joint demand (for complementary goods), competitive demand (for substitutes), composite demand (a good with several uses), direct and indirect demand, and demand for durable versus non-durable goods. Demand analysis uses demand schedules and curves, elasticity concepts and forecasting techniques.",
+      "explanation": "It defines demand analysis and systematically lists its principal types with a brief explanation of each, as the question demands.",
+      "oneShotPreview": "Study of demand and its determinants; types include price, income, cross, derived, joint, competitive and composite demand."
+    },
+    {
+      "q": "5 b) The demand for a particular product depends on several factors –Discuss.",
+      "a": "The demand for a product depends on many factors. The most important is its own price, with demand varying inversely with price. Other determinants are consumers' income (normal goods rise with income, inferior goods fall), prices of related goods (substitutes and complements), tastes and fashion, population size and composition, expectations about future prices and income, advertising and promotional effort, government policy such as taxes and subsidies, seasonal and climatic conditions, the distribution of income, availability of credit, and habits, customs and social attitudes. Of these, the firm can usually control price, product quality and promotion, while the rest form the external environment it must adapt to.",
+      "explanation": "It discusses the full set of standard demand determinants and distinguishes the firm's controllable factors from external ones.",
+      "oneShotPreview": "Demand depends on price, income, related-good prices, tastes, population, expectations, advertising, policy, season and habits."
+    },
+    {
+      "q": "6 Describe the \"Law of Demand\" and its exceptions with diagram.",
+      "a": "The law of demand states that, other things being equal, when the price of a good falls its quantity demanded rises and when price rises quantity demanded falls. With price on the vertical axis and quantity on the horizontal axis this is shown by a downward-sloping demand curve DD: at the high-price point A the quantity is small, and at the lower-price point B the quantity is larger, so the movement is down and along the curve. Important exceptions are: (1) Giffen goods — inferior staples where the income effect outweighs the substitution effect, so a price rise increases demand; (2) Veblen or status goods — high price adds prestige and raises demand; (3) speculative goods — buyers expect prices to keep rising and buy more at higher prices; (4) ignorance or habit — consumers judge quality by price or buy out of habit; and (5) panic buying of necessities in emergencies. Changes in income, tastes or related prices shift the whole curve and only appear to violate the law because ceteris paribus no longer holds.",
+      "explanation": "It states the law, describes the downward-sloping demand curve as the diagram, and lists the recognised exceptions with reasons.",
+      "oneShotPreview": "Inverse price-demand relation (downward DD curve); exceptions: Giffen goods, Veblen goods, speculation, habit, panic buying."
+    },
+    {
+      "q": "7 What do you mean by elasticity of demand? State the different types of elasticity of demand.",
+      "a": "Elasticity of demand measures how responsive quantity demanded is to a change in price (or another determinant); it is the percentage change in quantity demanded divided by the percentage change in price. The types are: (1) perfectly elastic demand (Ed = infinite) — a horizontal curve where a tiny price change causes an unlimited change in demand; (2) perfectly inelastic demand (Ed = 0) — a vertical curve where demand is unchanged whatever the price; (3) unitary elastic demand (Ed = 1) — proportionate change in price and quantity; (4) relatively elastic demand (Ed > 1) — demand changes more than price, typical of luxuries; and (5) relatively inelastic demand (Ed < 1) — demand changes less than price, typical of necessities. Classified by determinant, demand may also have price, income, cross and promotional elasticity.",
+      "explanation": "It defines elasticity as a responsiveness measure and states all five standard types with their Ed values.",
+      "oneShotPreview": "Five types: perfectly elastic, perfectly inelastic, unitary, relatively elastic and relatively inelastic demand."
+    },
+    {
+      "q": "8 Define the elasticity of demand? List out the factors governing elasticity of demand.",
+      "a": "Elasticity of demand is the degree of responsiveness of quantity demanded to a change in price, measured as the percentage change in quantity demanded divided by the percentage change in price. The factors governing it are: the nature of the commodity (necessities inelastic, luxuries elastic), the availability of close substitutes (more substitutes make demand more elastic), the proportion of income spent on the good (a larger share makes it more elastic), the time period (demand is more elastic in the long run), durability (durable goods are more elastic), the number of uses of the commodity, habit and addiction (addictive goods are inelastic), the price range, consumer income and social status, government taxes and policy, and how widely the market is defined (broad markets inelastic, a single brand elastic).",
+      "explanation": "It defines elasticity and lists the standard determinants that make demand elastic or inelastic, which is exactly what the question asks for.",
+      "oneShotPreview": "Governed by necessity vs luxury, substitutes, income share, time, durability, uses, habits and market definition."
+    },
+    {
+      "q": "9 How do you measure elasticity of demand? Illustrate How you interpret the different Type of elasticity.",
+      "a": "Elasticity of demand can be measured in four main ways. (1) The percentage or ratio method: Ed = percentage change in quantity demanded / percentage change in price. (2) The total expenditure (outlay) method: if price and total expenditure move in opposite directions demand is elastic (Ed>1); if they move in the same direction it is inelastic (Ed<1); if expenditure is unchanged it is unitary (Ed=1). (3) The point elasticity method: at a point on the curve, Ed = (dQ/dP) x (P/Q), or for a straight-line demand curve the ratio of the lower segment to the upper segment. (4) The arc elasticity method using the midpoint formula over a range. Interpretation: Ed>1 means a price cut raises total revenue, Ed<1 means a price cut lowers revenue, Ed=1 leaves revenue unchanged, Ed=0 is perfectly inelastic and Ed=infinite is perfectly elastic; similarly income elasticity is positive for normal and negative for inferior goods, and cross elasticity is positive for substitutes and negative for complements.",
+      "explanation": "It explains all four measurement methods and then interprets each elasticity value, covering both parts of the question.",
+      "oneShotPreview": "Measure by percentage, total outlay, point or arc method; Ed>1 elastic, <1 inelastic, =1 unitary."
+    },
+    {
+      "q": "10 What do you mean by demand forecasting? Explain various demand forecasting techniques.",
+      "a": "Demand forecasting is the process of estimating the future demand for a product or service using past data, present trends and relevant factors. It supports production planning, inventory control, pricing, budgeting and capacity decisions. Its techniques fall into two broad groups. Qualitative methods include consumer surveys, sales-force opinion, executive opinion, the Delphi method of experts and market tests. Quantitative methods include time-series analysis — trend projection by least squares, moving averages, exponential smoothing and seasonal analysis — and causal or econometric methods such as regression analysis relating demand to price, income and advertising, and input-output analysis. Other simple approaches are the naive method (last period's demand) and barometric methods using leading indicators. The choice depends on data availability, the time horizon and the accuracy required.",
+      "explanation": "It defines demand forecasting, states its uses and explains the main qualitative, time-series and causal techniques.",
+      "oneShotPreview": "Estimating future demand; techniques: surveys/Delphi, moving averages, trend projection, exponential smoothing and regression."
+    },
+    {
+      "q": "11 Define demand forecasting and explain factors governing demand forecasting.",
+      "a": "Demand forecasting is the estimation of the future demand for a product or service based on past data, current trends and relevant influencing factors, so that the firm can plan production, inventory, pricing and capacity. The factors governing it are: the time horizon (longer-range forecasts are less reliable), the availability and quality of past data, the nature of the product (durable, perishable, industrial or consumer), market conditions such as competition and business cycles, changes in consumer income, tastes and population, price changes and competitors' strategies, government policy, taxation and regulation, seasonal and climatic variation, advertising and promotional effort, technological change and substitutes, and the accuracy required versus the cost of forecasting. The expertise of the forecaster and the techniques available also affect the result.",
+      "explanation": "It defines forecasting and lists the main factors that determine the choice and accuracy of a demand forecast.",
+      "oneShotPreview": "Future-demand estimation governed by horizon, data quality, product type, market conditions, competition, policy and season."
+    }
+  ]
+}

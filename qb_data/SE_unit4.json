@@ -1,0 +1,122 @@
+{
+  "subject": "23CS0513",
+  "unit": 4,
+  "unitTitle": "Coding and Testing and Software Reliability",
+  "totalQuestions": 19,
+  "questions": [
+    {
+      "q": "What do you mean by black-box testing?",
+      "a": "Black-box testing (also called behavioral or functional testing) examines the software's functionality without any knowledge of its internal code structure. The tester treats the program as an opaque 'black box', supplies inputs, and verifies that the outputs conform to the specification. Test cases are derived from requirements and expected behavior rather than from program logic, using techniques such as equivalence partitioning, boundary value analysis, decision tables and cause-effect graphing.",
+      "explanation": "It is correct because the tester validates 'what' the system does against its requirements without needing to know 'how' it is implemented internally.",
+      "oneShotPreview": "Testing functionality against specifications without viewing internal code."
+    },
+    {
+      "q": "Give two advantages of integration testing.",
+      "a": "First, it detects interface and interaction defects early — such as mismatched parameters, incorrect data formats and wrong call sequences — which unit testing of isolated modules cannot catch. Second, it verifies that individually tested modules work together correctly as a group, giving confidence that the assembled system satisfies its functional requirements before system testing begins.",
+      "explanation": "Integration testing focuses on inter-module interfaces, so it exposes faults that appear only when components are combined, which is the key reason for performing it.",
+      "oneShotPreview": "Finds interface defects early and confirms modules work together correctly."
+    },
+    {
+      "q": "Define smoke testing.",
+      "a": "Smoke testing is a shallow, quick preliminary test run on a new software build to verify that the most critical functions work and that the build is stable enough for deeper testing. It is often called 'build verification testing' because it checks that the basic build has not broken in a catastrophic way. A build that fails the smoke test is rejected immediately, avoiding wasted effort on expensive further testing. The name originates in hardware testing, where a device was powered on simply to check that it did not emit smoke.",
+      "explanation": "This is correct because smoke testing is intentionally broad but shallow, acting as an early gate that filters out unstable builds before rigorous testing.",
+      "oneShotPreview": "Quick build-verification check of critical functions before deeper testing."
+    },
+    {
+      "q": "Define the terms software reliability and software quality.",
+      "a": "Software reliability is the probability that a software system will operate without failure for a specified period of time under specified conditions. Software quality is the degree to which software conforms to stated requirements, implicit user needs and established standards, covering attributes such as correctness, maintainability, usability, efficiency and portability. Reliability is therefore one measurable facet of the broader concept of software quality.",
+      "explanation": "Reliability quantifies failure-free operation over time, whereas quality is a wider, multi-attribute notion of fitness for purpose and conformance to standards.",
+      "oneShotPreview": "Reliability = failure-free probability over time; quality = overall conformance to requirements."
+    },
+    {
+      "q": "What is statistical testing?",
+      "a": "Statistical testing is a black-box testing approach in which test cases are generated randomly according to a probability distribution that reflects how the software is expected to be used in practice. Its goal is to estimate the software's reliability by observing how often failures occur under realistic usage conditions. It treats testing as a statistical sampling process, allowing reliability measures such as mean time between failures to be estimated from the observed results.",
+      "explanation": "It is correct because statistical testing models the operational usage profile so that reliability can be inferred from sampled failures rather than from exhaustive testing.",
+      "oneShotPreview": "Random, usage-profile-based testing used to estimate software reliability statistically."
+    },
+    {
+      "q": "Discuss different types of code reviews.",
+      "a": "Code reviews are static quality-assurance techniques in which source code is examined by people other than its author to find defects early. Formal inspections (Fagan inspections) are highly structured, with defined roles (moderator, author, inspector, recorder), individual preparation, a review meeting and a rework/follow-up phase. Walkthroughs are less formal and are led by the author, who explains the code to peers while they raise questions and comments. Peer reviews or informal reviews are casual discussions between colleagues, and modern practice also includes tool-assisted reviews through version-control pull requests. All types aim to detect errors, improve code quality and share knowledge, but they differ in structure and rigor.",
+      "explanation": "These are the standard review types taught in software engineering — inspections, walkthroughs and peer reviews — each balancing defect-finding rigor against process overhead.",
+      "oneShotPreview": "Inspections, walkthroughs and peer/tool-assisted reviews for finding defects early."
+    },
+    {
+      "q": "What is the difference between internal and external documentation?",
+      "a": "Internal documentation is embedded within the source code itself — comments, headers, meaningful identifier names and a clear code layout — and is intended mainly for programmers who maintain or modify the code. External documentation is produced separately, such as user manuals, design specifications, SRS documents and help files, aimed at users, managers, testers and other stakeholders. Internal documentation explains 'how' the code works, while external documentation describes 'what' the system does and 'how' to use or manage it. Both are essential: internal documentation supports maintenance, while external documentation supports communication with non-developers.",
+      "explanation": "The distinction lies in location and audience: internal documentation lives in the code for developers, while external documentation lives outside it for a broader audience.",
+      "oneShotPreview": "Internal = in-code comments for maintainers; external = separate manuals and specs for stakeholders."
+    },
+    {
+      "q": "Classify the different types of program analysis tools used during program development.",
+      "a": "Program analysis tools are broadly classified as static or dynamic analysis tools. Static analysis tools examine source code without executing it — examples are cross-reference generators, pretty-printers/formatters, linters and static analyzers, complexity analyzers and code-metrics tools that reveal style violations, structure and potential defects. Dynamic analysis tools analyze the program while it runs — examples are profilers, test coverage analyzers, debuggers, memory analyzers and execution tracers. A further category includes program transformation and reverse-engineering tools that restructure or visualize code. Together these tools support code review, debugging, testing and maintenance by automatically exposing defects, complexity and performance problems.",
+      "explanation": "The standard classification is by whether the code is executed (static versus dynamic), with each family of tools serving different development and quality needs.",
+      "oneShotPreview": "Static tools analyze code without running it; dynamic tools analyze it during execution."
+    },
+    {
+      "q": "Distinguish between software verification and software validation.",
+      "a": "Verification asks 'Are we building the product right?' — it checks that the software conforms to its specifications and design documents through reviews, inspections and static analysis. Validation asks 'Are we building the right product?' — it checks that the finished software actually meets the user's real needs and intended use, typically through testing and user evaluation. Verification is concerned with internal consistency and correctness against documents, while validation is concerned with fitness for purpose from the user's perspective. Both are complementary quality-assurance activities performed throughout the software lifecycle.",
+      "explanation": "This is the classic distinction: verification checks conformance to specifications, while validation checks conformance to actual user needs.",
+      "oneShotPreview": "Verification = conforms to specifications; validation = meets real user needs."
+    },
+    {
+      "q": "What is the difference between black-box testing and white-box testing?",
+      "a": "Black-box testing derives test cases from requirements and external behavior without knowledge of internal code, using techniques such as equivalence partitioning and boundary value analysis. White-box testing (glass-box or structural testing) uses knowledge of the internal logic to design tests that exercise specific statements, branches, conditions and paths. Black-box testing validates functional correctness from a user's viewpoint, while white-box testing verifies completeness of the internal logic. The two are complementary: black-box testing finds missing or incorrect functions, whereas white-box testing finds logic and path errors.",
+      "explanation": "The key difference is whether the tester knows and uses the program's internal structure when designing the test cases.",
+      "oneShotPreview": "Black-box tests behavior from specs; white-box tests internal code paths and logic."
+    },
+    {
+      "q": "What do you understand by the term integration testing? Briefly explain the important strategies used for integration testing of procedural programs.",
+      "a": "Integration testing is the phase in which individual, already unit-tested modules are combined and tested as a group to verify that they interact correctly and that their interfaces work as intended. Important strategies for procedural programs include the big-bang approach, where all modules are combined and tested at once; top-down integration, which starts with the main module and uses stubs for lower-level modules, adding modules in depth-first or breadth-first order; bottom-up integration, which starts with the leaf modules using drivers to invoke them and builds upward; and the sandwich (mixed) approach, which combines top-down and bottom-up. Incremental strategies make fault isolation easier than the big-bang method.",
+      "explanation": "These are the canonical integration testing strategies — big-bang, top-down, bottom-up and sandwich — which determine the order and manner in which modules are combined.",
+      "oneShotPreview": "Combining unit-tested modules; strategies are big-bang, top-down, bottom-up and sandwich."
+    },
+    {
+      "q": "What are the activities carried out during testing a software?",
+      "a": "Testing activities normally proceed through unit testing of individual modules, integration testing of module interfaces and groups, system testing of the complete product against requirements, and acceptance testing for user validation before delivery. Supporting activities include test planning and test-case design, executing the tests, recording and reporting defects, retesting after fixes (confirmation testing and regression testing), and test closure and reporting. Test cases are derived both from specifications (black-box) and from code (white-box), and actual results are compared with expected outcomes. Verification activities such as reviews and static analysis accompany these dynamic testing steps.",
+      "explanation": "These are the standard testing levels and associated tasks in the software testing life cycle, progressing from small units to the full delivered system.",
+      "oneShotPreview": "Unit to integration to system to acceptance testing, plus planning, defect tracking and regression."
+    },
+    {
+      "q": "What do you understand by a reliability growth model?",
+      "a": "A reliability growth model is a mathematical model that describes how software reliability improves over time as defects are discovered and removed during testing. It relates the failure rate or mean time between failures to testing time or the number of faults fixed, so that managers can predict when a target reliability level will be achieved. Well-known examples include the Jelinski-Moranda model, the Goel-Okumoto model and Musa's basic execution-time model. Such models help decide when testing can stop and help estimate the number of defects remaining in the software.",
+      "explanation": "It is correct because reliability growth models mathematically capture the observed decline in failure intensity as faults are progressively removed.",
+      "oneShotPreview": "Mathematical model predicting reliability improvement as defects are found and fixed."
+    },
+    {
+      "q": "Why is regression testing important? Explain in detail.",
+      "a": "Regression testing is important because a change made to fix a defect, add a feature or refactor code can unintentionally introduce new faults in parts of the software that previously worked correctly. It involves re-running a carefully selected subset of existing test cases to confirm that the modifications have not degraded existing functionality. This is essential in iterative development and maintenance-heavy projects where the code changes frequently. By catching unintended side effects early, regression testing preserves the stability and trustworthiness of the product across releases; because the tests must be repeated often, automated regression suites are commonly used.",
+      "explanation": "It is correct because the primary purpose of regression testing is to detect new defects introduced into already-tested code by subsequent changes.",
+      "oneShotPreview": "Re-running existing tests after changes to catch newly introduced defects."
+    },
+    {
+      "q": "Define three metrics to measure software reliability.",
+      "a": "Mean Time Between Failures (MTBF) is the average elapsed time between one failure and the next during operation. Failure rate or failure intensity is the number of failures observed per unit of time or per execution, essentially the reciprocal of MTBF. Reliability R(t) is the probability that the software will operate without failure for a specified time interval t under stated conditions. Closely related metrics include Mean Time To Failure (MTTF) and Mean Time To Repair (MTTR). These quantitative measures allow reliability to be specified, measured and predicted.",
+      "explanation": "These are standard quantitative reliability measures that express failure-free operation over time and allow reliability goals to be tracked objectively.",
+      "oneShotPreview": "MTBF, failure rate and reliability R(t) quantify failure-free operation over time."
+    },
+    {
+      "q": "Define the term total quality management (TQM). What are the advantages of TQM?",
+      "a": "Total Quality Management (TQM) is a management philosophy in which every member of an organization participates in continuously improving the quality of all processes, products and services in order to achieve long-term customer satisfaction. It emphasizes customer focus, continuous improvement (Kaizen), employee involvement, process-centered thinking and data-driven decision making. Its advantages include higher product quality, greater customer satisfaction, reduced waste and rework, lower costs, improved employee morale and teamwork, and a lasting culture of continuous improvement. In software engineering, TQM means building quality into every phase of the development lifecycle rather than inspecting for defects only at the end.",
+      "explanation": "This captures TQM's core principles — organization-wide, continuous, customer-focused quality improvement — and its well-documented business benefits.",
+      "oneShotPreview": "Organization-wide continuous quality improvement focused on customer satisfaction."
+    },
+    {
+      "q": "What is the Six Sigma quality initiative?",
+      "a": "Six Sigma is a disciplined, data-driven quality improvement methodology whose goal is to reduce defects and process variation to no more than 3.4 defects per million opportunities. It uses the DMAIC cycle — Define, Measure, Analyze, Improve, Control — to improve existing processes, and DMADV for designing new ones. The approach relies on statistical analysis, defined roles such as Green Belts, Black Belts and Master Black Belts, and a strong focus on eliminating the root causes of errors. In software engineering, Six Sigma can be applied to reduce defects in development and maintenance processes.",
+      "explanation": "It is correct because Six Sigma's defining features are its stringent defect-reduction target, statistical rigor and the structured DMAIC improvement cycle.",
+      "oneShotPreview": "Data-driven quality method targeting 3.4 defects per million using DMAIC."
+    },
+    {
+      "q": "Explain the significance of ISO 9000 standards in Software Engineering.",
+      "a": "ISO 9000 is a family of international standards for quality management systems, with ISO 9001 specifying the requirements an organization's quality system must satisfy. Applying ISO 9000 in software engineering means defining, documenting and consistently following processes for development, testing, configuration management and project management, so that quality is planned and repeatable rather than accidental. Its significance lies in providing a globally recognized framework for quality assurance, improving customer confidence, supporting audits and certification, and enforcing disciplined documentation and process control. Software-specific guidance is provided by standards such as ISO/IEC 90003.",
+      "explanation": "ISO 9000 matters because it institutionalizes documented, auditable quality processes, giving management and customers confidence in the consistency of the software.",
+      "oneShotPreview": "International quality-system standards enforcing documented, repeatable, auditable software processes."
+    },
+    {
+      "q": "Briefly discuss some general issues associated with testing.",
+      "a": "A fundamental issue is that exhaustive testing is impossible — the input and path space is so large that every case cannot be executed, so tests must be selected strategically. Testing can reveal the presence of defects but can never prove their absence. Other practical issues include the high cost and time required, difficulty in designing effective test cases and determining expected outputs, balancing testing effort against schedule pressure, testing nonfunctional attributes, and dealing with false results. Tests also become outdated as the software changes, so they require ongoing maintenance, and teams must avoid both insufficient testing and wasteful over-testing.",
+      "explanation": "These are the well-known limitations of testing — non-exhaustiveness, inability to prove correctness, cost and test upkeep — that every test effort must manage.",
+      "oneShotPreview": "Testing cannot be exhaustive or prove absence of bugs; it is costly, time-bound and needs upkeep."
+    }
+  ]
+}

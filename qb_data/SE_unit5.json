@@ -1,0 +1,110 @@
+{
+  "subject": "23CS0513",
+  "unit": 5,
+  "unitTitle": "CASE, Software Maintenance and Reuse",
+  "totalQuestions": 17,
+  "questions": [
+    {
+      "q": "1 a) What is programming environment?",
+      "a": "A programming environment is the integrated set of tools, facilities and services that support a programmer in writing, editing, compiling, debugging and managing software. It typically includes an editor, compiler/interpreter, debugger, linker, libraries and a file/system interface, all working within one consistent framework (a modern IDE). By providing these facilities in one place it improves programmer productivity, reduces errors and shortens development time.",
+      "explanation": "Defines the environment as the supporting tool set for all programming activities, the standard software-engineering meaning of the term.",
+      "oneShotPreview": "Programming environment = integrated tools (editor, compiler, debugger, libraries) that support all software development activities."
+    },
+    {
+      "q": "1 b) Mention any two Benefits of CASE.",
+      "a": "Two major benefits of CASE (Computer-Aided Software Engineering) tools are: (1) higher productivity, because routine tasks such as diagram drawing, documentation and code generation are automated, and (2) better software quality and consistency, because the tools enforce standard methods and detect errors and inconsistencies early. Additional benefits include easier maintenance, improved traceability, and reduced development time and cost.",
+      "explanation": "Names the two most widely cited CASE advantages - productivity through automation and quality through standards/early error detection.",
+      "oneShotPreview": "CASE benefits: higher productivity via automation and better quality/consistency via standards and early error detection."
+    },
+    {
+      "q": "1 c) Define about code generation.",
+      "a": "Code generation is the automatic production of source code (or executable code) from a higher-level specification, design model or other abstract representation, using a generator tool. In CASE, a code generator translates design diagrams or specifications into program code in a target language, reducing manual coding effort and coding errors. The generated code is often complete enough to compile, leaving only implementation-specific details to be filled in, which improves consistency between the design and the final code.",
+      "explanation": "Defines code generation as automated translation from an abstract design/specification into source code, a core CASE implementation capability.",
+      "oneShotPreview": "Code generation = automatically producing source code from a design/specification using a CASE generator tool."
+    },
+    {
+      "q": "1 d) Discuss about test case generator.",
+      "a": "A test case generator is a CASE tool that automatically produces test cases - test inputs, expected outputs and test procedures - for a program or specification. It may derive tests from requirements/design specifications (specification-based testing) or from the program's code structure (e.g., path, statement or branch coverage), and can create data for boundary values or particular execution paths. This reduces the manual effort of writing tests and improves test coverage and consistency. The generated cases are then executed by a test harness/runner that compares actual results with expected results to detect defects.",
+      "explanation": "Explains the tool's function of auto-creating test inputs and expected outputs from specs or code, boosting coverage while cutting manual effort.",
+      "oneShotPreview": "Test case generator = CASE tool that auto-creates test inputs/expected outputs from specs or code to improve coverage."
+    },
+    {
+      "q": "1 e) List out the Types of Software Maintenance.",
+      "a": "The four standard types of software maintenance are: (1) Corrective maintenance - fixing defects and bugs discovered after delivery; (2) Adaptive maintenance - modifying the software so it works in a changed environment such as a new operating system, hardware or standard; (3) Perfective maintenance - improving performance, functionality or maintainability in response to user requests; and (4) Preventive maintenance - making changes to prevent future problems, such as refactoring code or updating documentation. Some classifications also treat emergency maintenance as a subtype of corrective maintenance.",
+      "explanation": "Lists the four accepted maintenance categories defined in software engineering standards (ISO/IEC 14764).",
+      "oneShotPreview": "Maintenance types: corrective (fix bugs), adaptive (new environment), perfective (improve), preventive (avoid future faults)."
+    },
+    {
+      "q": "2 Explain about the characteristics of case tools.",
+      "a": "CASE tools are characterized by: (1) integration - tools share a common repository/data dictionary so information flows freely between them; (2) support for all life-cycle phases, from analysis and design through coding, testing and maintenance; (3) automation of routine tasks such as diagram drawing, code and documentation generation; (4) enforcement of standard methods with consistency checks; (5) graphical interfaces and modeling/diagramming facilities such as DFD and UML editors; (6) automatic documentation and report generation; (7) version/configuration management and team coordination; (8) validation facilities that detect errors and inconsistencies early; and (9) code generation and reverse-engineering support. Together these characteristics improve productivity, quality and maintainability of the software being developed.",
+      "explanation": "Enumerates the defining features of CASE tools - a shared repository, full life-cycle coverage, automation, consistency enforcement and documentation - as expected for a detailed answer.",
+      "oneShotPreview": "CASE tool characteristics: integrated repository, life-cycle-wide support, task automation, consistency checks, diagramming, documentation, version control."
+    },
+    {
+      "q": "3 Describe about software reverse engineering with examples.",
+      "a": "Software reverse engineering is the process of analyzing an existing software system to recover its design, architecture, structure and specifications from its source code, documentation or executable form, in order to reconstruct the 'what' and 'how' of the system when original design documents are missing or outdated. It is widely used in legacy-system maintenance, re-engineering and migration. Common techniques include static analysis of code, control-flow and data-flow analysis, and regeneration of design representations such as structure charts, data-flow diagrams or UML diagrams from the code. For example, a legacy COBOL payroll program can be analyzed to extract its module structure and data flow into a design specification that supports understanding or re-engineering; another example is recovering the class model of a Java application from its bytecode.",
+      "explanation": "Defines reverse engineering as recovering higher-level design from existing code and gives concrete legacy/migration examples, matching the descriptive question.",
+      "oneShotPreview": "Reverse engineering = derive design/specs from existing code (e.g., extract DFD/UML from legacy COBOL or Java code) for maintenance and re-engineering."
+    },
+    {
+      "q": "4 Explain in detail about case support in software life cycle.",
+      "a": "CASE tools support every phase of the software life cycle. During requirements analysis they help capture, model and validate requirements using diagrams and a shared repository. During design they support structured and object-oriented design (DFDs, structure charts, UML) with consistency checking. During coding they provide editors, code generators and configuration/version management. During testing they generate test cases, run tests and track defects. During deployment and maintenance they support documentation, change control and reverse engineering of legacy code. Upper CASE tools cover the early phases (analysis and design) while lower CASE tools cover implementation, testing and maintenance. Because all phases share one integrated repository, information produced in one phase is immediately available to all others, improving consistency, traceability and productivity across the entire life cycle.",
+      "explanation": "Maps CASE tools to each life-cycle phase and distinguishes upper from lower CASE, showing repository-based integration throughout.",
+      "oneShotPreview": "CASE supports all phases: analysis/design (upper CASE: DFD/UML), coding/testing/maintenance (lower CASE), all tied by a shared repository."
+    },
+    {
+      "q": "5 Explain detail second generation case tool.",
+      "a": "Second-generation CASE tools are integrated, repository-based environments that overcome the limitations of first-generation tools, which were isolated, single-purpose utilities. Their key characteristics are: a central shared repository/data dictionary that stores all project artifacts and enforces consistency; tight integration so a change in one artifact automatically propagates to related artifacts; support for a broad range of life-cycle activities from analysis through maintenance; graphical front-ends and automatic documentation generation; and often code generation and reverse-engineering capabilities. They typically support structured and object-oriented methods and run on workstations/PCs, often in a client-server architecture. An example is an integrated environment combining a design tool, a code generator and a test tool around one repository. This integration yields better productivity, data consistency and traceability than stand-alone first-generation tools.",
+      "explanation": "Describes second-generation CASE as integrated, repository-centred toolsets and contrasts them with isolated first-generation tools.",
+      "oneShotPreview": "Second-generation CASE = integrated, repository-based tools spanning all phases, replacing isolated first-generation single-purpose tools."
+    },
+    {
+      "q": "6 Illustrate about software maintenance process models.",
+      "a": "Software maintenance process models describe how a change request is handled from identification to release. Common models include: (1) the IEEE 1219 standard maintenance process, with stages of change identification, analysis, design, implementation, testing and release; (2) the spiral maintenance model, which repeats cycles of planning, risk analysis, engineering (change implementation) and evaluation for each change; (3) the iterative or enhancement model, which applies repeated small increments of maintenance; and (4) reuse-oriented or re-engineering models, where changes are made by reusing or restructuring existing components. In general the process begins with a change request, classifies it as corrective, adaptive or perfective, performs impact analysis, designs and implements the change, tests it (including regression testing), updates documentation and deploys the new version. Change/configuration control lies at the core of these models, ensuring maintenance is systematic, traceable and controlled.",
+      "explanation": "Presents the standard maintenance process models and the common change-request workflow, fitting an illustration/description question.",
+      "oneShotPreview": "Maintenance process models = structured change workflows (identify -> analyze -> design -> implement -> test -> release), e.g., IEEE 1219 and spiral maintenance."
+    },
+    {
+      "q": "7 Discuss about estimation of maintenance cost.",
+      "a": "Maintenance cost estimation predicts the effort and resources needed to maintain a system after delivery, and maintenance often accounts for 60-80% of total life-cycle cost. Influencing factors include system size and complexity, programming language, documentation quality, team familiarity, the number and type of change requests, and the maintenance category (corrective, adaptive or perfective). A widely used approach is Boehm's COCOMO maintenance model, which estimates maintenance effort from an annual change traffic (ACT) factor and a maintenance effort adjustment factor, of the form PM = A x (Size)^B x EAF, where the multipliers reflect maintainability factors. Other techniques use the software maturity index, lines of code multiplied by change ratios, or function-point-based estimates, supported by historical data from similar projects. Accurate estimation helps budget staffing and plan future releases.",
+      "explanation": "Covers the importance, influencing factors and standard models (COCOMO maintenance, ACT, maturity index), matching a detailed 10-mark discussion.",
+      "oneShotPreview": "Maintenance cost estimation = predict post-delivery effort (often 60-80% of lifecycle cost) using COCOMO/ACT, size, complexity and change volume."
+    },
+    {
+      "q": "8 a) Explain about case environment in software engineering in detail.",
+      "a": "A CASE environment is the integrated combination of hardware, software tools, a shared repository and methods/standards that supports the entire software engineering process. It brings together upper CASE tools (analysis and design) and lower CASE tools (coding, testing, maintenance) around a common data dictionary, so all artifacts are stored centrally and remain consistent. The environment typically provides a graphical user interface, a repository manager, diagramming and modeling tools, code generators, test tools, documentation generators, and configuration/version management, along with integration mechanisms that let tools interoperate and propagate changes. By standardizing methods and automating tasks, a CASE environment improves productivity, software quality, traceability and communication among team members.",
+      "explanation": "Describes a CASE environment as an integrated tool/repository framework spanning all phases, with its components and benefits.",
+      "oneShotPreview": "CASE environment = integrated tools + shared repository + standards covering analysis-to-maintenance, improving productivity, quality and traceability."
+    },
+    {
+      "q": "8 b) Describe about Evolution of a reuse domain.",
+      "a": "A reuse domain evolves as an organization repeatedly builds similar systems and comes to recognize common, reusable artifacts. It progresses from ad hoc reuse of code fragments, to identifying common components and patterns, to establishing a systematic reuse program with a repository of certified reusable assets such as components, designs, specifications and test cases. Over time the domain matures: domain analysis identifies commonalities and variabilities, domain modeling produces a reference architecture, and the reusable asset base grows and is refined using feedback from new projects. Standards, a reuse library and a supporting organization sustain this growth, eventually leading to product-line engineering where new systems are assembled largely from existing assets. Thus reuse evolves from isolated, opportunistic reuse into a managed, domain-wide discipline.",
+      "explanation": "Traces reuse-domain maturity from ad hoc reuse to systematic, repository-based product-line reuse, matching the 'evolution' framing.",
+      "oneShotPreview": "Reuse domain evolves: ad hoc code reuse -> common components/patterns -> managed repository and reference architecture -> product-line engineering."
+    },
+    {
+      "q": "9 Describe about architecture of a case environment with neat sketch.",
+      "a": "The architecture of a CASE environment is commonly described as layers built around a central repository. At the core is the repository/data dictionary, which stores all artifacts (requirements, designs, code, tests, documents) and enforces consistency. Around it sit the integrated tools: upper CASE tools (requirements analyzers and design/modeling tools such as DFD/UML editors), lower CASE tools (code generators, compilers, debuggers, test generators) and management tools (configuration/version control, project management, documentation generation). These tools communicate through a message/integration service and present a common graphical user interface to users. A typical sketch shows a user-interface layer on top, a tool layer in the middle and the shared repository at the centre, with arrows for data exchange between tools and the repository and a message server enabling tool-to-tool communication; some architectures are drawn as client-server, with tools as clients and the repository as the server. This integrated architecture ensures information produced in one phase is immediately available to all tools, maintaining consistency and traceability.",
+      "explanation": "Describes the layered, repository-centred architecture and the elements of the requested sketch - the core of a 10-mark architecture question.",
+      "oneShotPreview": "CASE architecture = central repository + integrated upper/lower tools + GUI + message/integration layer (client-server), drawn as a layered sketch."
+    },
+    {
+      "q": "10 Evaluate in detail about basic issues in any reuse program.",
+      "a": "Basic issues in a software reuse program include: (1) identifying and classifying reusable assets - deciding what to reuse and how to catalogue it, e.g., Prieto-Diaz's faceted classification; (2) creating and maintaining a repository/library of certified components; (3) quality and reliability of reused components, since a defective component can spread errors widely; (4) adaptation, because components often need modification to fit a new context, which can erode the benefits of reuse; (5) understanding and trust, since developers must understand a component's behaviour and interfaces before reusing it; (6) organizational and cultural resistance, such as the 'not invented here' syndrome and lack of incentives; (7) legal, licensing and intellectual-property concerns; (8) the cost of establishing and running the reuse program, including tooling, training and upkeep of assets; and (9) measuring reuse and its benefits. Addressing these issues through standards, a searchable repository, certification and management support is essential for a successful reuse program.",
+      "explanation": "Enumerates the technical, organizational and economic issues any reuse program must handle, fitting an 'evaluate in detail' question.",
+      "oneShotPreview": "Reuse program issues: asset identification/classification, repository, component quality/trust, adaptation cost, 'not invented here' resistance, licensing, program cost."
+    },
+    {
+      "q": "11 a) Discuss about Characteristics of Software Evolution.",
+      "a": "Software evolution - the continuing change of software after it is deployed - is characterized by Lehman's laws: continuing change (a system must continually adapt to its changing environment), increasing complexity (structure degrades as changes accumulate unless work is done to reduce it), self-regulation (evolution is feedback-driven and statistically regular), conservation of organizational stability (work content and output rate stay roughly invariant), and conservation of familiarity (change is limited by developers' understanding). Other characteristics include continuing growth in functionality, declining quality unless actively maintained, and the need for regular maintenance and re-engineering. These traits imply that evolution is inevitable and must be managed through disciplined maintenance, refactoring and version control.",
+      "explanation": "Presents Lehman's laws and inherent traits (continual change, growing complexity, declining quality) that define software evolution.",
+      "oneShotPreview": "Software evolution traits (Lehman's laws): continual change, increasing complexity, self-regulation, stable organizational rate/familiarity, growing functionality."
+    },
+    {
+      "q": "11 b) Define Prieto-Diaz’s classification scheme.",
+      "a": "Prieto-Diaz's classification scheme is a faceted classification method for organizing reusable software components in a reuse library. Rather than a rigid hierarchical taxonomy, it describes each component with a set of independent facets (attributes or dimensions) such as function/purpose, the object or entity the component operates on, implementation language, environment/platform and domain, each with a controlled vocabulary of terms. A component is indexed by a combination of values across these facets, allowing users to retrieve it by multiple search criteria. A thesaurus handles synonyms and term relationships to improve retrieval precision. Its main advantage is flexibility - facets can be combined freely and extended as the collection grows - making it well suited to classifying reusable components in a software reuse program.",
+      "explanation": "Defines the faceted classification approach with its facets, controlled vocabulary/thesaurus and the benefit of flexible multi-dimensional retrieval.",
+      "oneShotPreview": "Prieto-Diaz scheme = faceted classification of reusable components by independent attributes (function, object, language, domain) with a thesaurus for flexible retrieval."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "subject": "23HS0815",
+  "unit": 3,
+  "unitTitle": "Innovation",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "q": "1 a) What are the key principles of the art of innovation? [L1, CO3] [2M]",
+      "a": "The art of innovation rests on a few core principles: stay customer-centric by observing real users to find unmet needs, generate many ideas before judging them, and turn the best ideas into quick, low-cost prototypes that can be tested. It also values collaboration across diverse, motivated teams, a willingness to take calculated risks and learn from failure, and cross-pollination of ideas from other fields. Innovation is therefore a repeatable process and culture, not a one-off flash of genius.",
+      "explanation": "These principles (empathy, idea fluency, prototyping, teamwork and risk tolerance) are the ones emphasized in Tom Kelley's 'The Art of Innovation' and IDEO's practice, so they directly answer the two-mark list.",
+      "oneShotPreview": "Observe users, generate many ideas, prototype fast, collaborate, and embrace risk."
+    },
+    {
+      "q": "b) How does design thinking contribute to innovation? [L1, CO3] [2M]",
+      "a": "Design thinking supplies a structured, human-centred process - empathize, define, ideate, prototype, test - that turns vague problems into clear, actionable opportunities. Empathy reveals latent user needs, ideation widens the solution space, and rapid prototyping and testing reduce the risk of building the wrong thing. This makes innovation less random and more repeatable while keeping solutions grounded in real customer value.",
+      "explanation": "Design thinking contributes both a mindset (user focus, experimentation) and a step-by-step method that converts insights into viable innovations.",
+      "oneShotPreview": "Human-centred stages turn user insights into tested, viable innovations."
+    },
+    {
+      "q": "c) What role does risk-taking play in innovation? [L1, CO3] [2M]",
+      "a": "Innovation requires risk-taking because every genuinely new idea carries uncertainty about customer acceptance, technical feasibility and returns. Calculated risks - small, reversible experiments and prototypes - let organizations test assumptions cheaply, learn from failure and pivot before committing large resources. Without a tolerance for risk, teams stick to safe incremental changes and miss breakthrough opportunities.",
+      "explanation": "Risk is inherent in trying something new; managed, small-scale risk converts uncertainty into learning while limiting the downside, which is why it is a key innovation principle.",
+      "oneShotPreview": "Calculated risk and fast failure turn uncertainty into learning; no risk, no breakthroughs."
+    },
+    {
+      "q": "d) Why is customer-centric thinking important in innovation? [L1, CO4] [2M]",
+      "a": "Customer-centric thinking keeps innovation focused on solving real problems that people actually have, rather than on interesting technology nobody needs. By observing and empathizing with customers, teams uncover latent needs, validate demand early, and shape features, pricing and delivery around user value. This raises adoption and commercial success while reducing the chance of wasting effort on solutions with no market.",
+      "explanation": "Innovation succeeds only when customers adopt it; centring their needs ensures real demand and makes the two-mark reason explicit.",
+      "oneShotPreview": "Build what customers truly need, so adoption rises and wasted effort falls."
+    },
+    {
+      "q": "e) Compare creativity and innovation. [L2, CO4] [2M]",
+      "a": "Creativity is the ability to generate new, original and useful ideas; innovation is the successful implementation of those ideas into a product, service or process that delivers value. Creativity is about thinking and imagination, while innovation adds execution, commercialization and adoption. In short, creativity is the input and innovation is the outcome - an idea becomes innovation only when it reaches and benefits users.",
+      "explanation": "The comparison hinges on idea generation versus implementation and value delivery, which is the standard textbook distinction.",
+      "oneShotPreview": "Creativity = new ideas; Innovation = ideas implemented and creating value."
+    },
+    {
+      "q": "2 a) Explain the concept of the art of innovation. [L2, CO3] [3M]",
+      "a": "The art of innovation is the practice of consistently turning fresh ideas into valuable outcomes by combining creativity with a disciplined, people-centred process and a supportive culture. Popularized by Tom Kelley and IDEO, it treats innovation as a team activity built on observing customers, brainstorming freely, prototyping rapidly and learning from mistakes. It balances imaginative thinking with practical execution so new solutions are both desirable and feasible, and it can be developed as an organizational capability rather than left to chance.",
+      "explanation": "This defines the term through its process, culture and outcome focus, which matches the three-mark conceptual question.",
+      "oneShotPreview": "Innovation as a repeatable team process: observe, imagine, prototype, learn - not random genius."
+    },
+    {
+      "q": "b) Demonstrate the key principles of art of innovation. [L2, CO3] [7M]",
+      "a": "The key principles are: (1) customer focus - observe users and uncover unmet needs; (2) collaboration - diverse, enthusiastic teams and 'yes, and' thinking; (3) idea generation - produce many ideas and defer judgement; (4) rapid prototyping - make ideas tangible quickly and cheaply; (5) learn from failure - fail fast, iterate and keep what works; (6) cross-pollination - borrow insights from other industries and disciplines; (7) culture and space - give people time, resources and permission to experiment; and (8) persistence and passion to carry an idea through to implementation. Taken together, these make innovation a repeatable organizational capability rather than a lucky accident.",
+      "explanation": "A seven-mark answer needs a broad, enumerated set of principles with a short explanation of each; this list covers the IDEO/Kelley canon.",
+      "oneShotPreview": "Customer focus, teamwork, many ideas, fast prototypes, learning from failure, cross-pollination, supportive culture."
+    },
+    {
+      "q": "3 Evaluate the effectiveness of design thinking in driving innovation across its different stages. [L5, CO3] [10M]",
+      "a": "Design thinking is effective across all five stages. In Empathize, deep observation reveals latent needs that spark relevant ideas; in Define, framing the right problem prevents solving the wrong issue; in Ideate, divergent thinking generates a wide range of options before convergence; in Prototype, cheap tangible models expose flaws early; and in Test, real user feedback validates or redirects the solution. Its main strength is that it reduces uncertainty and risk step by step while keeping innovation anchored to user value. Its limits are that it needs genuine user access, time and organizational support, and it can produce attractive concepts that are hard to scale. Overall it is a highly effective innovation engine when combined with business and technical feasibility checks.",
+      "explanation": "A ten-mark evaluation must cover each stage, judge the benefits and note the limitations before giving a balanced verdict, which this answer does.",
+      "oneShotPreview": "Empathize to Test makes innovation user-validated and low-risk, but it needs time, access and support."
+    },
+    {
+      "q": "4 How do organizations build an innovation-friendly culture? Provide examples. [L3, CO3] [10M]",
+      "a": "Organizations build an innovation-friendly culture by encouraging open communication, cross-functional collaboration and the free flow of ideas across hierarchies. They reward experimentation, treat failures as learning opportunities, and give employees time and resources through innovation labs, hackathons or '20% time'. Leadership must lead by example, flatten decision-making, celebrate small wins and protect teams from premature criticism. Examples include Google's 20% time that produced Gmail, 3M's Post-it Notes born from a 'failed' weak adhesive, and IDEO's multidisciplinary 'hot teams' and prototyping culture. Such practices make experimentation safe and expected rather than exceptional.",
+      "explanation": "The answer names concrete cultural practices and supports them with well-known examples, as the ten-mark question requires.",
+      "oneShotPreview": "Open ideas, reward experiments, tolerate failure, give resources - e.g. Google 20% time, 3M Post-its."
+    },
+    {
+      "q": "5 Assess the impact of digital transformation on innovation strategies in leading organizations. [L5, CO3] [10M]",
+      "a": "Digital transformation has reshaped innovation strategies by making them faster, data-driven and more customer-centric. Cloud computing, AI, big-data analytics and digital platforms let organizations sense market changes in real time, run rapid experiments and co-create with users through digital channels. It enables business-model innovation such as subscription, platform and ecosystem models, automates routine work so people can focus on creative tasks, and shortens time-to-market through agile digital toolchains. Leading firms such as Amazon, Netflix and Tesla use data and platforms to iterate products and services continuously. The main challenges are legacy systems, data privacy, cybersecurity and the need for new skills and a supporting culture.",
+      "explanation": "The answer covers positive impacts, concrete mechanisms, leading-organization examples and caveats - the balance expected in a ten-mark assessment.",
+      "oneShotPreview": "Digital tools make innovation real-time, data-led and platform-based, but they demand skills, governance and security."
+    },
+    {
+      "q": "6 a) Define creativity and innovation with suitable examples. [L2, CO3] [5M]",
+      "a": "Creativity is the capacity to produce original, imaginative and useful ideas - for example, a designer sketching a novel foldable-phone concept or a chef inventing a new fusion dish. Innovation is the implementation of such ideas to create tangible value - for example, the foldable phone actually reaching the market or the dish becoming a successful new product line. Creativity is about generating possibilities; innovation is about delivering them to users. Both are complementary: without creative ideas there is nothing to implement, and without implementation the ideas remain unrealized.",
+      "explanation": "Definitions plus one clear example for each term satisfy the five-mark 'define with examples' requirement.",
+      "oneShotPreview": "Creativity = a novel idea (foldable-phone sketch); Innovation = the idea delivered to market (the phone launched)."
+    },
+    {
+      "q": "b) Distinguish between creativity and innovation. [L4, CO3] [5M]",
+      "a": "Creativity is a mental process of generating new and useful ideas, while innovation is the practical process of converting those ideas into a working, adopted solution. Creativity is concerned with imagination, divergence and 'what could be', whereas innovation adds convergence, execution, risk and 'what works in the market'. Creativity need not involve commercialization or users, but innovation is judged by adoption and value delivered. Creativity may be an individual or team activity, while innovation is an organizational outcome that usually requires resources, collaboration and persistence.",
+      "explanation": "The distinction is drawn along the standard dimensions of idea versus implementation, imagination versus execution, and thinking versus value delivery.",
+      "oneShotPreview": "Creativity imagines; Innovation implements and delivers value to users."
+    },
+    {
+      "q": "7 a) How do organizations transform creative ideas into innovative solutions? [L2, CO3] [5M]",
+      "a": "Organizations transform creative ideas through a pipeline: capture and screen ideas, select the most promising against strategy and customer value, develop them through rapid prototypes, test with real users, and refine the solution from feedback. They provide resources, cross-functional teams and methods such as design thinking, stage-gate reviews or agile development to move from concept to market. Leadership support, clear selection criteria and tolerance for early failure keep the pipeline moving. Finally, the validated solution is launched, measured and scaled across the organization.",
+      "explanation": "The answer gives the practical sequence from idea capture to scaled launch, which is exactly what the question asks.",
+      "oneShotPreview": "Screen, prototype, test, refine, launch and scale, backed by teams, resources and leadership."
+    },
+    {
+      "q": "b) Choose some real world examples of creativity leading to innovation. [L3, CO3] [5M]",
+      "a": "Well-known examples include the Post-it Note, which came from a 'failed' weak adhesive that 3M turned into a reusable sticky note; the iPhone, which combined existing ideas such as a touchscreen, music player and phone into a new product category; Airbnb, which turned the simple idea of sharing spare rooms into a global lodging platform; and Netflix, which moved from DVD rental to online streaming. Each began as a creative insight and became an innovation only after being developed, tested and brought to market. These cases show that creativity supplies the spark while execution turns it into value.",
+      "explanation": "Every example shows a creative idea converted into a widely adopted product or service, matching the request for real-world instances.",
+      "oneShotPreview": "Post-its, iPhone, Airbnb and Netflix: creative ideas that became innovations after execution."
+    },
+    {
+      "q": "8 Explain the importance of creativity and innovation in achieving organizational success, with examples. [L2, CO4] [10M]",
+      "a": "Creativity and innovation are vital because they let organizations differentiate their offerings, enter new markets and respond to changing customer needs and competition. They drive growth through new products and services, improve internal processes, reduce costs and build resilience by creating multiple future options. Innovation also attracts talent and investors and strengthens a company's reputation as forward-looking. Examples include Apple's steady stream of innovative products that sustain premium pricing, Tesla's electric-vehicle innovation that reshaped the auto industry, and Netflix's shift to streaming that saved it from decline. Without continuous innovation, firms stagnate and eventually lose relevance.",
+      "explanation": "The answer links creativity and innovation to concrete success outcomes - growth, differentiation, efficiency and resilience - and proves each with examples, as a ten-mark answer requires.",
+      "oneShotPreview": "Innovation drives growth, differentiation, efficiency and resilience; firms without it stagnate."
+    },
+    {
+      "q": "9 Demonstrate the role of collaboration in the creativity and innovation process. Provide examples. [L2, CO4] [10M]",
+      "a": "Collaboration brings together diverse knowledge, skills and perspectives, generating more and better ideas than individuals working alone. Team members challenge and build on each other's thinking through 'yes, and' behaviour, combine complementary expertise, and catch weaknesses early. Cross-functional collaboration also aligns design, engineering and marketing so ideas become both feasible and marketable. Examples include IDEO's multidisciplinary 'hot teams', Google's cross-functional product teams and open-innovation platforms where customers and partners co-create. Collaboration therefore widens the idea pool and smooths the path from idea to implementation.",
+      "explanation": "The answer explains the mechanism - diversity, idea combination, early critique and feasibility alignment - and gives named examples, fitting a ten-mark question.",
+      "oneShotPreview": "Diverse teams generate more ideas and spot flaws early - IDEO hot teams, Google product teams."
+    },
+    {
+      "q": "10 Assess the effectiveness of different metrics used to measure innovation success within organizations. [L5, CO4] [10M]",
+      "a": "Organizations use a mix of input, process, output and outcome metrics. Input and process metrics include R&D spending as a share of revenue, the number of ideas generated and the number of experiments or prototypes. Output metrics include new products launched, patents filed and time-to-market. Outcome metrics are the most meaningful: share of revenue from new products, customer adoption and satisfaction, market-share gain and return on investment. Effective measurement combines leading and lagging indicators in a balanced scorecard rather than relying on a single figure; counting ideas alone rewards quantity over value and patents alone ignore commercial impact.",
+      "explanation": "An assessment should categorize the metrics, judge their strengths and limits, and give a clear verdict on what makes measurement effective, all of which this answer provides.",
+      "oneShotPreview": "Measure inputs, outputs and outcomes; new-product revenue and ROI matter most, not raw idea counts."
+    },
+    {
+      "q": "11 Evaluate the effectiveness of current practices used by companies to measure creativity and innovation outcomes. [L5, CO4] [10M]",
+      "a": "Companies commonly use stage-gate reviews, innovation dashboards and balanced scorecards, new-product revenue and launch metrics, customer feedback and Net Promoter Score, patent counts, R&D return on investment, and agile measures such as experiment velocity and learning milestones. Many now add design-thinking measures such as assumption validation and prototype-to-launch conversion. These practices are effective when they combine quantitative results with qualitative learning and align with business strategy. Their weaknesses are an overemphasis on easily counted outputs such as patents and ideas, a short-term bias that punishes useful failures, and difficulty attributing revenue to a single creative idea. Overall they are moderately effective and become more useful when they are balanced, longer-term and learning-oriented.",
+      "explanation": "The answer surveys current practices, weighs their strengths and limitations and delivers a reasoned judgment, which is the essence of a ten-mark evaluation.",
+      "oneShotPreview": "Dashboards, stage-gates, patents, NPS and agile metrics help, but output over-counting and short-term bias weaken them."
+    }
+  ]
+}

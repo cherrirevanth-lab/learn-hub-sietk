@@ -1,0 +1,140 @@
+{
+  "subject": "23HS0838",
+  "unit": 4,
+  "unitTitle": "Estimation and Testing of Hypothesis",
+  "totalQuestions": 22,
+  "questions": [
+    {
+      "q": "1 a) What is Point Estimation in Statistics?",
+      "a": "Point estimation is the technique of using a single numerical value, computed from sample data, to estimate an unknown population parameter. That single value is the point estimate, and the statistic used to obtain it (for example the sample mean x̄ for the population mean μ) is the point estimator. Unlike interval estimation it gives one best-guess number rather than a range of plausible values. A good point estimator is unbiased, consistent, efficient and sufficient.",
+      "explanation": "Point estimation is defined by a single-number estimate derived from a sample, in contrast to interval estimation which supplies a confidence interval.",
+      "oneShotPreview": "A single sample-based number used to estimate an unknown population parameter."
+    },
+    {
+      "q": "1 b) Find the value of correction factor if n=10 and N=1000.",
+      "a": "The finite population correction (FPC) factor is √[(N−n)/(N−1)] = √[(1000−10)/(1000−1)] = √(990/999) ≈ √0.99099 ≈ 0.9955. The common approximation √(1−n/N) = √(1−10/1000) = √0.99 ≈ 0.995 gives essentially the same result. Since n/N = 0.01 is small, the correction factor is close to 1 and is often ignored.",
+      "explanation": "The FPC reduces the standard error when sampling without replacement from a finite population; substituting n = 10, N = 1000 gives about 0.995.",
+      "oneShotPreview": "FPC = √[(N−n)/(N−1)] ≈ 0.9955 for n=10, N=1000."
+    },
+    {
+      "q": "1 c) The variance of a population is 2. The size of the sample collected from the population is 169. What is the standard error of mean?",
+      "a": "Population variance σ² = 2, so σ = √2 ≈ 1.4142. With n = 169, √n = 13. The standard error of the mean is σ/√n = √2/13 ≈ 1.4142/13 ≈ 0.1088, i.e. about 0.109.",
+      "explanation": "The standard error of the mean is σ/√n, so dividing √2 by 13 gives approximately 0.109.",
+      "oneShotPreview": "SE = σ/√n = √2/13 ≈ 0.109."
+    },
+    {
+      "q": "1 d) Define Critical region.",
+      "a": "The critical region (or rejection region) is the set of values of a test statistic for which the null hypothesis H0 is rejected. Its boundaries, called critical values, are fixed by the chosen significance level α and by whether the test is one-tailed or two-tailed. If the computed statistic falls inside the region the result is significant and H0 is rejected; otherwise H0 is not rejected.",
+      "explanation": "It is correct because the critical region is precisely the rejection rule of a hypothesis test, determined by α and the tails of the sampling distribution.",
+      "oneShotPreview": "Set of test-statistic values that lead to rejecting H0, fixed by α."
+    },
+    {
+      "q": "1 e) Define i) Null hypothesis ii) Alternative hypothesis.",
+      "a": "The null hypothesis (H0) is a statement about a population parameter assumed true until sample evidence contradicts it; it represents the status quo or \"no difference / no effect\" claim and is the hypothesis actually tested. The alternative hypothesis (H1 or Ha) contradicts H0 and is the statement the investigator seeks to establish, such as μ ≠ μ0, μ > μ0 or μ < μ0. A test either rejects H0 in favour of H1 or fails to reject H0.",
+      "explanation": "This captures the standard roles: H0 is the default assumption being tested, while H1 is the competing claim accepted only when H0 is rejected.",
+      "oneShotPreview": "H0 = default no-effect claim under test; H1 = competing claim we seek to establish."
+    },
+    {
+      "q": "2 a) A population consists of six numbers 4, 8, 12, 16, 20, 24. Find the population mean.",
+      "a": "The population mean is μ = (4 + 8 + 12 + 16 + 20 + 24)/6 = 84/6 = 14.",
+      "explanation": "The population mean is the sum of all population values divided by the population size N = 6, giving 14.",
+      "oneShotPreview": "Population mean = 84/6 = 14."
+    },
+    {
+      "q": "2 b) A population consists of six numbers 4, 8, 12, 16, 20, 24. Find the population standard deviation.",
+      "a": "Deviations from μ = 14 are −10, −6, −2, 2, 6, 10, whose squares are 100, 36, 4, 4, 36, 100 and sum to 280. The population variance is σ² = 280/6 ≈ 46.67, so the population standard deviation is σ = √(280/6) ≈ 6.83.",
+      "explanation": "Population standard deviation is √[Σ(X−μ)²/N]; dividing the sum of squared deviations 280 by N = 6 and taking the square root gives ≈ 6.83.",
+      "oneShotPreview": "σ = √(280/6) ≈ 6.83."
+    },
+    {
+      "q": "2 c) For samples of size two drawn without replacement from the population 4, 8, 12, 16, 20, 24, find the mean of the sampling distribution of means.",
+      "a": "The mean of the sampling distribution of the sample mean equals the population mean, so μ_x̄ = μ = 14. This holds for all samples of size two drawn without replacement from this population.",
+      "explanation": "By a fundamental property of sampling distributions, E(x̄) = μ, so the average of all possible sample means is 14.",
+      "oneShotPreview": "Mean of the sampling distribution of means = population mean = 14."
+    },
+    {
+      "q": "2 d) For samples of size two drawn without replacement from the population 4, 8, 12, 16, 20, 24, find the standard deviation of the sampling distribution of means.",
+      "a": "For n = 2 drawn without replacement from N = 6, σ_x̄ = (σ/√n)·√[(N−n)/(N−1)] = (6.8313/√2)·√(4/5) ≈ 4.8305 × 0.8944 ≈ 4.32. Direct enumeration of all 15 possible samples gives variance 280/15 ≈ 18.67 and standard deviation √18.67 ≈ 4.32, confirming the result.",
+      "explanation": "The without-replacement standard error formula, and direct enumeration of the 15 sample means, both give about 4.32.",
+      "oneShotPreview": "Standard error of the mean ≈ 4.32 (n=2, N=6, without replacement)."
+    },
+    {
+      "q": "3 A random sample of size 100 is taken from an infinite population having the mean μ = 76 and variance σ² = 256. What is the probability that x̄ will be between 75 and 78?",
+      "a": "Here σ = 16, so the standard error of the mean is σ/√n = 16/10 = 1.6. Standardising the limits gives z₁ = (75 − 76)/1.6 = −0.625 and z₂ = (78 − 76)/1.6 = 1.25. Hence P(75 < x̄ < 78) = Φ(1.25) − Φ(−0.625) ≈ 0.8944 − 0.2660 ≈ 0.6284, or about 62.8%.",
+      "explanation": "By the central limit theorem x̄ is approximately normal with mean 76 and SE 1.6; the area between z = −0.625 and z = 1.25 is about 0.628.",
+      "oneShotPreview": "P(75 < x̄ < 78) ≈ 0.6284 using z = −0.625 and z = 1.25."
+    },
+    {
+      "q": "4 a) What is the maximum error one can expect to make with probability 0.9 when using the mean of a random sample of size n=64 to estimate the mean of a population with σ² = 2.56?",
+      "a": "Here σ = √2.56 = 1.6 and the standard error is 1.6/√64 = 1.6/8 = 0.2. For probability 0.9 (90% confidence) the critical value is z = 1.645, so the maximum error is E = z·σ/√n = 1.645 × 0.2 = 0.329, about 0.33. Thus with probability 0.9 the sample mean differs from the population mean by no more than roughly 0.33.",
+      "explanation": "The margin of error is z times the standard error; with z = 1.645 for 90% confidence and SE = 0.2, E ≈ 0.329.",
+      "oneShotPreview": "Maximum error ≈ 0.329 (z = 1.645 × SE = 0.2)."
+    },
+    {
+      "q": "4 b) A random sample of size 100 is taken from a population with σ = 5.1. Given that the sample mean is x̄ = 21.6, construct a 95% confidence interval for the population mean μ.",
+      "a": "The standard error is σ/√n = 5.1/10 = 0.51 and z₀.₀₂₅ = 1.96. The 95% confidence interval is x̄ ± 1.96·SE = 21.6 ± (1.96 × 0.51) = 21.6 ± 0.9996 ≈ (20.60, 22.60). We are 95% confident that the true population mean lies between about 20.6 and 22.6.",
+      "explanation": "A large-sample 95% confidence interval is x̄ ± z₀.₀₂₅·σ/√n; substituting the given values yields 21.6 ± 1.0.",
+      "oneShotPreview": "95% confidence interval for μ ≈ (20.60, 22.60)."
+    },
+    {
+      "q": "5 a) A sample of 400 items is taken from a population whose standard deviation is 10. The mean of the sample is 40. Test whether the sample has come from a population with mean 38.",
+      "a": "Take H0: μ = 38 against H1: μ ≠ 38. The standard error is 10/√400 = 0.5 and z = (40 − 38)/0.5 = 4. Since |z| = 4 exceeds the 5% critical value 1.96 (and the 1% value 2.58), H0 is rejected. The sample has not come from a population with mean 38; its mean is significantly higher.",
+      "explanation": "A large-sample z-test of the population mean gives z = 4, far beyond the rejection threshold, so the claimed mean of 38 is untenable.",
+      "oneShotPreview": "z = 4 > 1.96; reject H0 — sample is not from a mean-38 population."
+    },
+    {
+      "q": "5 b) In a random sample of 125 cool drinkers 68 said they prefer Thumsup to Pepsi. Test the null hypothesis P = 0.5 against the alternative hypothesis P > 0.5.",
+      "a": "H0: P = 0.5, H1: P > 0.5. The sample proportion is p̂ = 68/125 = 0.544 and the standard error under H0 is √(0.5 × 0.5 /125) ≈ 0.0447. Hence z = (0.544 − 0.5)/0.0447 ≈ 0.98. Since 0.98 < 1.645 (one-tailed 5% critical value), H0 is not rejected; the data do not give significant evidence that more than half of cool drinkers prefer Thumsup.",
+      "explanation": "The one-sample proportion z-test gives z ≈ 0.98, below the 1.645 cut-off, so the observed excess is attributable to sampling variation.",
+      "oneShotPreview": "z ≈ 0.98 < 1.645; do not reject P = 0.5."
+    },
+    {
+      "q": "6 a) A sample of 64 students have mean weight of 70 kgs. Can this be regarded as a sample from a population with mean weight 56 kgs and standard deviation 25 kgs?",
+      "a": "H0: μ = 56 against H1: μ ≠ 56. The standard error is 25/√64 = 25/8 = 3.125, so z = (70 − 56)/3.125 = 4.48. Since |z| = 4.48 is far greater than 1.96 (5%) and 2.58 (1%), H0 is rejected. The sample with mean weight 70 kg cannot be regarded as drawn from a population with mean 56 kg and standard deviation 25 kg.",
+      "explanation": "The z-statistic of 4.48 lies deep in the rejection region, showing the observed mean is incompatible with a population mean of 56 kg.",
+      "oneShotPreview": "z = 4.48 → reject; not a sample from the mean-56 population."
+    },
+    {
+      "q": "6 b) In a big city 325 men out of 600 men were found to be smokers. Does this information support the conclusion that the majority of men in this city are smokers?",
+      "a": "H0: P = 0.5, H1: P > 0.5 (a majority). Here p̂ = 325/600 ≈ 0.5417 and the standard error under H0 is √(0.25/600) ≈ 0.0204, so z = (0.5417 − 0.5)/0.0204 ≈ 2.04. Since 2.04 > 1.645, H0 is rejected at the 5% one-tailed level: the data do support the conclusion that a majority of men are smokers (though not at the 1% level).",
+      "explanation": "The one-tailed proportion test yields z ≈ 2.04, exceeding the 5% critical value 1.645, so the majority claim is supported at that level.",
+      "oneShotPreview": "z ≈ 2.04 > 1.645; yes, a majority are smokers at the 5% level."
+    },
+    {
+      "q": "7 The means of two large samples of sizes 1000 and 2000 members are 67.5 inches and 68.0 inches respectively. Can the samples be regarded as drawn from the same population of standard deviation 2.5 inches?",
+      "a": "H0: μ₁ = μ₂. The standard error of the difference is σ√(1/n₁ + 1/n₂) = 2.5√(1/1000 + 1/2000) = 2.5√0.0015 ≈ 0.0968, so z = (68.0 − 67.5)/0.0968 ≈ 5.16. Since |z| = 5.16 > 1.96, H0 is rejected. The samples cannot be regarded as drawn from the same population; the second sample mean is significantly higher.",
+      "explanation": "The two-sample z-test gives z ≈ 5.16, far beyond the 5% critical value, so the 0.5-inch difference is not due to chance.",
+      "oneShotPreview": "z ≈ 5.16 > 1.96; the samples come from different populations."
+    },
+    {
+      "q": "8 Samples of students were drawn from two universities and their weights in kilograms gave: University A — mean 55, S.D. 10, sample size 400; University B — mean 57, S.D. 15, sample size 100. Make a large sample test for the significance of the difference between the means.",
+      "a": "H0: μ_A = μ_B. The standard error of the difference is √(σ_A²/n_A + σ_B²/n_B) = √(100/400 + 225/100) = √(0.25 + 2.25) = √2.5 ≈ 1.581, so z = |57 − 55|/1.581 ≈ 1.26. Since 1.26 < 1.96 (two-tailed 5% critical value), H0 is not rejected. There is no statistically significant difference between the mean weights of the two universities.",
+      "explanation": "The large-sample test for the difference of two means gives z ≈ 1.26, below the 5% critical value, so the 2 kg difference is within sampling error.",
+      "oneShotPreview": "z ≈ 1.26 < 1.96; no significant difference in mean weights."
+    },
+    {
+      "q": "9 In two large populations there are 30% and 25% respectively of fair haired people. Is this difference likely to be hidden in samples of 1200 and 900 respectively from the two populations?",
+      "a": "H0: P₁ = P₂. The pooled proportion is (0.30×1200 + 0.25×900)/2100 = 585/2100 ≈ 0.2786, giving SE = √[p(1−p)(1/1200 + 1/900)] ≈ √0.000391 ≈ 0.0198. Hence z = (0.30 − 0.25)/0.0198 ≈ 2.53. Since 2.53 > 1.96, H0 is rejected at 5%; the difference is significant and is therefore not likely to be hidden — samples of this size would reveal it.",
+      "explanation": "The two-proportion z-test gives z ≈ 2.53, exceeding 1.96, so the observed difference would be detected rather than concealed by these sample sizes.",
+      "oneShotPreview": "z ≈ 2.53 > 1.96; the difference is significant, not hidden."
+    },
+    {
+      "q": "10 a) An ambulance service claims that it takes on the average less than 10 minutes to reach its destination in emergency calls. A sample of 36 calls has a mean of 11 minutes and variance of 16 minutes. Test the significance at 0.05 level.",
+      "a": "H0: μ = 10, H1: μ < 10 (the claim). With s = √16 = 4 and n = 36 the standard error is 4/6 ≈ 0.667, so z = (11 − 10)/0.667 = 1.5. For a left-tailed test at α = 0.05 the critical value is −1.645; the computed z = +1.5 is not in the rejection region, so H0 is not rejected. The sample does not support the claim of an average response time below 10 minutes — it actually indicates 11 minutes.",
+      "explanation": "The claim requires a significantly small mean, but the sample mean of 11 minutes gives a positive z of 1.5, so the claim cannot be accepted.",
+      "oneShotPreview": "z = +1.5 (not < −1.645); claim of mean < 10 minutes not supported."
+    },
+    {
+      "q": "10 b) Experience had shown that 20% of a manufactured product is of top quality. In one day's production of 400 articles only 50 are of top quality. Test the hypothesis at 0.05 level.",
+      "a": "H0: P = 0.20, H1: P ≠ 0.20. The observed proportion is p̂ = 50/400 = 0.125 and SE = √(0.2 × 0.8 /400) = √0.0004 = 0.02, so z = (0.125 − 0.20)/0.02 = −3.75. Since |z| = 3.75 > 1.96, H0 is rejected at 5% (indeed even at 1%). The day's production contains a significantly lower proportion of top-quality articles than the expected 20%.",
+      "explanation": "The one-sample proportion test yields z = −3.75, far beyond the critical value, showing the drop from 20% to 12.5% is not due to chance.",
+      "oneShotPreview": "z = −3.75; reject P = 0.20 — top-quality rate significantly lower."
+    },
+    {
+      "q": "11 A sample of the heights of 6400 Englishmen has a mean of 67.85 inches and a standard deviation of 2.5 inches, while a sample of the heights of 1600 Australians has a mean of 68.55 inches and a standard deviation of 2.52 inches. Do the data indicate that the Australians are on the average taller than the Englishmen?",
+      "a": "H0: μ_E = μ_A, H1: μ_A > μ_E. The standard error of the difference is √(2.5²/6400 + 2.52²/1600) = √(0.0009766 + 0.003969) ≈ √0.004946 ≈ 0.0703, so z = (68.55 − 67.85)/0.0703 ≈ 0.70/0.0703 ≈ 9.95. Since 9.95 far exceeds 1.645 (one-tailed 5%) and 2.33 (1%), H0 is decisively rejected. Yes — Australians are on average significantly taller than Englishmen.",
+      "explanation": "The two-sample z-test gives z ≈ 9.95, an overwhelmingly significant result, so the 0.7-inch difference reflects a real difference rather than sampling variation.",
+      "oneShotPreview": "z ≈ 9.95; yes, Australians are significantly taller."
+    }
+  ]
+}

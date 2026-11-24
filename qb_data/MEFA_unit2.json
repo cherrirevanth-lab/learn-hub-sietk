@@ -1,0 +1,104 @@
+{
+  "subject": "23HS0848",
+  "unit": 2,
+  "unitTitle": "Production & Cost Analysis",
+  "totalQuestions": 16,
+  "questions": [
+    {
+      "q": "1 a) Define production function?",
+      "a": "A production function is the technological relationship that specifies the maximum output obtainable from a given combination of inputs (factors of production such as labour and capital) per period of time, using the best available technology. It is written as Q = f(L, K, ...), where Q is output and L and K are the quantities of labour and capital. It expresses technical/engineering efficiency rather than economic efficiency, since it shows the physical maximum achievable from each input set. In the short run at least one factor is fixed, while in the long run all factors are variable.",
+      "explanation": "The definition captures the input-output relationship, the 'maximum output' condition and the role of technology, which are the essential elements examined in production theory.",
+      "oneShotPreview": "Q = f(L,K): max output from given inputs and technology; technical, not economic, efficiency."
+    },
+    {
+      "q": "1 b) What is Breakeven point?",
+      "a": "The break-even point (BEP) is the level of output or sales at which total revenue exactly equals total cost, so the firm earns zero profit and incurs no loss. At this point total contribution (sales minus variable cost) just covers total fixed cost. It may be expressed in physical units (break-even volume) or in money terms (break-even sales value). It is the central tool of cost-volume-profit analysis used in pricing, production and profit-planning decisions.",
+      "explanation": "Defining BEP as TR = TC (zero profit) and noting its two measurement forms covers what examiners expect for a 2-mark definition.",
+      "oneShotPreview": "BEP = output where Total Revenue = Total Cost, profit = 0; stated in units or sales value."
+    },
+    {
+      "q": "1 c) Define fixed cost with examples?",
+      "a": "Fixed costs are costs that do not change with the level of output in the short run; they remain the same whether the firm produces zero units or its full capacity. Examples include factory/building rent, depreciation of machinery, salaries of permanent staff, insurance premiums, property tax and interest on borrowed capital. Because they are incurred even at zero output, fixed costs must be recovered before a firm begins to earn profit. In the long run, however, all costs become variable as the firm can change its scale of operations.",
+      "explanation": "The answer states the constancy-with-output property, gives standard examples and adds the short-run/long-run qualification that distinguishes fixed cost correctly.",
+      "oneShotPreview": "Fixed cost = cost unchanged by output (rent, depreciation, salaries); incurred even at zero output."
+    },
+    {
+      "q": "1 d) Write formula for BEP?",
+      "a": "Break-even point in units = Total Fixed Cost / Contribution per unit = F / (P - V), where P is selling price per unit and V is variable cost per unit. Break-even sales value = BEP (units) x P, or equivalently Fixed Cost / (P/V ratio), where P/V ratio = Contribution / Sales. The related Margin of Safety = Actual Sales - Break-even Sales. These formulas assume a constant selling price and constant variable cost per unit within the relevant range of output.",
+      "explanation": "Giving both the unit and sales-value formulas plus the P/V-ratio form and the margin-of-safety relation covers the complete expected answer.",
+      "oneShotPreview": "BEP units = Fixed Cost / (Price - Variable cost); BEP sales = Fixed Cost / P-V ratio."
+    },
+    {
+      "q": "1 e) What are isoquants features?",
+      "a": "An isoquant (equal-product curve) shows all combinations of two inputs, such as labour and capital, that produce the same quantity of output. Its main features are: (1) it slopes downward to the right, so reducing one input requires increasing the other to keep output constant; (2) it is convex to the origin because of diminishing marginal rate of technical substitution; (3) higher isoquants represent larger output levels and two isoquants can never intersect; (4) isoquants are continuous and smooth when inputs are divisible. Isoquants are the production-theory counterpart of indifference curves in consumer theory.",
+      "explanation": "Listing the four standard properties - negative slope, convexity, non-intersection/higher-is-better and continuity - is the textbook answer for this definition question.",
+      "oneShotPreview": "Isoquant = equal-output curve; downward sloping, convex to origin, non-intersecting, higher = more output."
+    },
+    {
+      "q": "2 Given a production scenario where labor is the only variable input, apply the production function to determine how changes in the number of workers affect output.",
+      "a": "With labour (L) as the only variable input and capital fixed, the short-run production function is Q = f(L, K-bar). As more workers are employed, total product (TP) first rises at an increasing rate, then at a decreasing rate, and eventually falls. This pattern follows the law of diminishing marginal returns: because the fixed capital must be shared among more workers, the marginal product (MP = change in TP / change in L) declines and may become negative. Average product (AP = TP/L) rises while MP exceeds AP and falls once MP drops below AP. The rational firm stops adding workers where the value of the marginal product equals the wage rate (VMPL = w), which lies in stage II of production.",
+      "explanation": "The answer applies the short-run production function through TP, AP and MP and identifies diminishing returns and the profit-maximising employment rule, which is exactly what the question asks.",
+      "oneShotPreview": "With capital fixed, more workers -> TP up, then MP falls (diminishing returns); hire until VMPL = wage."
+    },
+    {
+      "q": "3 Explain the concept of isoquants and iso-costs. How do they help firms determine the least cost combination of inputs?",
+      "a": "An isoquant shows every combination of two inputs (labour and capital) yielding the same output, while an isocost line shows every combination costing the same total amount, given by C = wL + rK (w = wage, r = rental rate of capital). The least-cost combination for producing a target output occurs where the isoquant is tangent to the lowest attainable isocost line. At that tangency the slopes are equal, giving the producer-equilibrium condition MRTS(L for K) = w/r, or equivalently MPL/MPK = w/r. The same tangency also gives the maximum output for a given cost when the highest attainable isoquant just touches the isocost line.",
+      "explanation": "Defining both curves, locating the optimum at tangency and stating the MRTS = input-price-ratio condition fully answers how the tools yield the least-cost input mix.",
+      "oneShotPreview": "Least-cost mix = tangency of isoquant and isocost, where MRTS(L,K) = w/r (MPL/MPK = price ratio)."
+    },
+    {
+      "q": "4 Explain the assumptions made during Break-even Analysis. How do these assumptions impact the validity of the analysis?",
+      "a": "Break-even analysis assumes: (1) selling price per unit is constant; (2) variable cost per unit is constant and changes linearly with output; (3) fixed costs remain constant over the relevant range; (4) all units produced are sold, so inventory is unchanged; (5) a single product or a constant sales mix; and (6) technology, efficiency and the time value of money are ignored. These assumptions make the model simple and quick to apply, but they restrict its validity because in practice prices change with discounts, costs vary with overtime or bulk buying, fixed costs rise in steps at capacity limits, and inventories fluctuate. Consequently the computed break-even point is only an approximation, reliable within a narrow relevant range and for a short period; it should be treated as an estimate and revised whenever prices or costs change.",
+      "explanation": "The answer lists the standard assumptions and then directly addresses their effect on validity - simplicity gained at the cost of realism - which is the second half of the question.",
+      "oneShotPreview": "Assumes constant price, linear costs, no inventory change -> simple but only an approximation in the relevant range."
+    },
+    {
+      "q": "5 Analyze a graph showing total costs and revenue. At what point do the two lines intersect, and what does this tell you about the business's financial situation?",
+      "a": "On a break-even chart the total cost (TC) line and total revenue (TR) line intersect at the break-even point, the output level where TR equals TC and profit is zero. To the left of this point TC lies above TR, so the business is losing money because sales have not yet covered fixed costs. To the right of it TR lies above TC, and the vertical gap between the two lines measures the profit earned at each output level. The intersection therefore reveals the minimum sales volume needed to avoid losses and how profit grows as output expands beyond it.",
+      "explanation": "It identifies the intersection as the break-even point and interprets the loss region, profit region and gap on both sides, which is precisely what a graph-analysis question requires.",
+      "oneShotPreview": "TR and TC cross at BEP (zero profit); left = loss zone, right = profit zone, gap = profit."
+    },
+    {
+      "q": "6 What is break even analysis? How do you determine breakeven point? Illustrate. [L1] [CO2] [10M]",
+      "a": "Break-even analysis is a cost-volume-profit technique that examines the relationship between costs, sales volume and profit to find the level of output at which total revenue equals total cost, giving zero profit or loss. The break-even point in units is found as Fixed Cost / Contribution per unit = F / (P - V); in sales value it is Fixed Cost / (P/V ratio), and graphically it is where the TR and TC lines cross on a break-even chart. For illustration, with fixed cost Rs 50,000, selling price Rs 50 and variable cost Rs 25, contribution is Rs 25 per unit, so BEP = 50,000 / 25 = 2,000 units, i.e. sales of Rs 1,00,000. Below 2,000 units the firm loses; above it, each extra unit adds Rs 25 to profit. The analysis also gives the margin of safety as actual sales minus break-even sales.",
+      "explanation": "It defines the technique, gives both computational methods with formulas, illustrates with a worked numeric example and notes the margin of safety, matching a 10-mark theory question.",
+      "oneShotPreview": "BEA = cost-volume-profit tool; BEP = F/(P-V); example F=50,000, P=50, V=25 -> 2,000 units."
+    },
+    {
+      "q": "7 A firm has a fixed cost of Rs 50,000/-, selling price per unit Rs 50/- and variable cost per unit Rs 25/-; present level of production is 3,500 units. i) Determine BEP in terms of volume and also sales value. ii) Calculate the margin of safety. iii) What is the change in BEP and margin of safety if fixed cost increases from Rs 50,000/- to Rs 60,000/-? [L4] [CO2] [10M]",
+      "a": "Contribution per unit = P - V = Rs 50 - Rs 25 = Rs 25. (i) BEP (volume) = Fixed Cost / Contribution = 50,000 / 25 = 2,000 units; BEP (sales value) = 2,000 x Rs 50 = Rs 1,00,000. (ii) Actual sales = 3,500 x Rs 50 = Rs 1,75,000, so Margin of Safety = Rs 1,75,000 - Rs 1,00,000 = Rs 75,000 (equivalently 3,500 - 2,000 = 1,500 units). (iii) With fixed cost of Rs 60,000, new BEP = 60,000 / 25 = 2,400 units = Rs 1,20,000 and new MOS = Rs 1,75,000 - Rs 1,20,000 = Rs 55,000 (1,100 units). Thus a Rs 10,000 rise in fixed cost increases BEP by 400 units (Rs 20,000) and reduces the margin of safety by Rs 20,000.",
+      "explanation": "Each subpart is solved with the standard contribution approach, and part (iii) correctly compares the new BEP and MOS with the original values to state the change.",
+      "oneShotPreview": "Contribution 25; BEP 2,000 units / Rs 1,00,000; MOS Rs 75,000; at F=60,000 -> BEP 2,400, MOS Rs 55,000."
+    },
+    {
+      "q": "8 a) A firm has fixed cost of Rs 10,000/-, selling price per unit Rs 5/- and variable cost per unit Rs 3/-. Determine break-even point in terms of volume and also sales value. [L4] [CO2] [10M]",
+      "a": "Contribution per unit = Selling price - Variable cost = Rs 5 - Rs 3 = Rs 2. BEP in volume (units) = Fixed Cost / Contribution per unit = 10,000 / 2 = 5,000 units. BEP in sales value = 5,000 units x Rs 5 = Rs 25,000 (also obtainable as Fixed Cost / (P/V ratio), where the P/V ratio = 2/5 = 40%). At 5,000 units total revenue of Rs 25,000 exactly equals total cost of Rs 10,000 fixed plus Rs 15,000 variable.",
+      "explanation": "The worked solution applies the contribution formula to find both break-even volume and value and verifies the equality of revenue and cost at that point.",
+      "oneShotPreview": "Contribution Rs 2; BEP = 10,000/2 = 5,000 units = Rs 25,000 sales (40% P/V ratio)."
+    },
+    {
+      "q": "8 b) Calculate the margin of safety considering that the actual production is 8,000 units. (Fixed cost Rs 10,000/-, selling price Rs 5/- and variable cost Rs 3/- per unit.) [L4] [CO2] [10M]",
+      "a": "Break-even sales = 5,000 units x Rs 5 = Rs 25,000 (from part a). Actual sales at 8,000 units = 8,000 x Rs 5 = Rs 40,000. Margin of Safety = Actual Sales - Break-even Sales = Rs 40,000 - Rs 25,000 = Rs 15,000. In physical terms it is 8,000 - 5,000 = 3,000 units, meaning the firm can withstand a fall of 3,000 units in sales before it starts making a loss. As a percentage of actual sales the MOS is 15,000/40,000 = 37.5%.",
+      "explanation": "It computes actual sales, subtracts the previously found break-even sales, and expresses the margin of safety in value, units and percentage for completeness.",
+      "oneShotPreview": "Actual sales Rs 40,000 - BEP Rs 25,000 = MOS Rs 15,000 = 3,000 units = 37.5% of sales."
+    },
+    {
+      "q": "9 From the following information relating to Hi-Tech publishers, you are required to find out i) Break-even point and ii) Margin of Safety. Year 1 (Rs.): Sales 50,000; Fixed cost 10,000; Variable cost 30,000. Year 2 (Rs.): Sales 1,20,000; Fixed cost 20,000; Variable cost 60,000. [L5] [CO2] [10M]",
+      "a": "Year 1: Contribution = Sales - Variable cost = 50,000 - 30,000 = Rs 20,000; P/V ratio = 20,000/50,000 = 40%. (i) BEP = Fixed cost / P/V ratio = 10,000 / 0.40 = Rs 25,000. (ii) Margin of Safety = Actual sales - BEP sales = 50,000 - 25,000 = Rs 25,000. Year 2: Contribution = 1,20,000 - 60,000 = Rs 60,000; P/V ratio = 60,000/1,20,000 = 50%. (i) BEP = 20,000 / 0.50 = Rs 40,000. (ii) Margin of Safety = 1,20,000 - 40,000 = Rs 80,000. The higher P/V ratio in Year 2 lowers the break-even sales relative to turnover and raises the margin of safety.",
+      "explanation": "Using the contribution/P-V-ratio method for both years gives each required figure and the closing comparison explains the effect of the improved contribution margin.",
+      "oneShotPreview": "Year 1: P/V 40%, BEP Rs 25,000, MOS Rs 25,000; Year 2: P/V 50%, BEP Rs 40,000, MOS Rs 80,000."
+    },
+    {
+      "q": "10 Explain the concepts of short-run and long-run production in the production function. How does the level of variable and fixed inputs differ between the two? [L2] [CO2] [10M]",
+      "a": "In the short run at least one factor of production is fixed, usually capital/plant, while other factors such as labour and raw materials are variable. Output can change only by applying more or fewer variable inputs to the fixed factor, which gives rise to the law of diminishing marginal returns and the familiar S-shaped total product curve. In the long run all factors are variable: the firm can change plant size, machinery and the entire scale of operations, so there are no fixed costs and it can choose the most efficient scale. The short run is therefore a period too brief to alter fixed inputs, whereas the long run is long enough to adjust every input. This distinction underlies short-run cost curves with a fixed-cost component and the long-run average cost curve exhibiting economies and diseconomies of scale.",
+      "explanation": "The answer contrasts the two periods by the fixity of inputs, links the short run to diminishing returns and the long run to scale adjustments and cost behaviour, covering both parts of the question.",
+      "oneShotPreview": "Short run: some fixed input (capital), only labour varies -> diminishing returns. Long run: all inputs variable, scale can change."
+    },
+    {
+      "q": "11 A high-tech rail can carry a maximum of 36,000 passengers per annum at a fare of Rs 400. The variable cost per passenger is Rs 150 while the fixed costs are Rs 25,00,000 per year. Find the break-even point in terms of number of passengers and also in terms of fare collections. [L5] [CO2] [10M]",
+      "a": "Contribution per passenger = Fare - Variable cost = Rs 400 - Rs 150 = Rs 250. Break-even point in passengers = Fixed cost / Contribution per passenger = 25,00,000 / 250 = 10,000 passengers per year. Break-even in fare collections = 10,000 x Rs 400 = Rs 40,00,000 (Rs 40 lakh). This is about 27.8% of the 36,000-passenger capacity, so the service covers all costs well before running full; at full capacity it would earn a profit of (36,000 x Rs 250) - Rs 25,00,000 = Rs 65,00,000.",
+      "explanation": "It computes the per-passenger contribution, applies the BEP formula in both units and money, and relates the result to capacity to interpret the figure.",
+      "oneShotPreview": "Contribution Rs 250; BEP = 25,00,000/250 = 10,000 passengers = Rs 40 lakh fare collections (~28% capacity)."
+    }
+  ]
+}

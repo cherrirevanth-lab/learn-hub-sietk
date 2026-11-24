@@ -1,0 +1,110 @@
+{
+  "subject": "23HS0838",
+  "unit": 1,
+  "unitTitle": "Descriptive Statistics",
+  "totalQuestions": 17,
+  "questions": [
+    {
+      "q": "a) Define Population and Sample.",
+      "a": "A population is the entire set of items, individuals or observations about which information is desired, for example all students of a college or all bulbs produced in a factory. A sample is a finite subset of the population selected for study, such as 50 students chosen from that college. We compute statistics (such as the sample mean) from the sample and use them to estimate population parameters (such as the population mean). Sampling is preferred when studying the whole population is too costly, time-consuming or impossible.",
+      "explanation": "Population is the complete group under study while a sample is a representative part of it; statistical inference moves from sample statistics to population parameters.",
+      "oneShotPreview": "Population = whole group under study; sample = representative subset used to estimate population parameters."
+    },
+    {
+      "q": "b) What is Primary and Secondary data in statistics?",
+      "a": "Primary data are data collected directly by the investigator for the specific purpose of the study, using methods such as surveys, interviews, experiments or questionnaires. Secondary data are data already collected by someone else for another purpose and then reused, for example census reports, government publications, research journals or company records. Primary data are original, current and tailored to the problem but costly and time-consuming to gather; secondary data are inexpensive and quickly available but may be outdated or not exactly suited to the problem at hand.",
+      "explanation": "The distinction rests on who collected the data and why: first-hand for the current study versus previously collected and reused for a new purpose.",
+      "oneShotPreview": "Primary = first-hand data collected for your study; secondary = already-collected data reused from other sources."
+    },
+    {
+      "q": "c) The weights of 6 competitors in a game are given below 58,62,56,63,55,61 kgs. Find arithmetic mean of weight of competitors.",
+      "a": "The arithmetic mean of ungrouped data is the sum of all observations divided by their number. Sum of weights = 58 + 62 + 56 + 63 + 55 + 61 = 355 kg, and the number of competitors is 6. Hence mean = 355/6 = 59.1667 kg, or approximately 59.17 kg. The average weight of the competitors is therefore about 59.17 kg.",
+      "explanation": "Applying the direct mean formula Σx/n to the six raw weights gives 355/6 = 59.1667 kg.",
+      "oneShotPreview": "Mean weight = 355/6 ≈ 59.17 kg."
+    },
+    {
+      "q": "d) What is skewness in statistics with example?",
+      "a": "Skewness measures the lack of symmetry in a frequency distribution, that is, the extent to which observations are drawn out more on one side of the mode than the other. If the tail is longer on the right (towards higher values), the distribution is positively skewed, with mean > median > mode; income distribution is an example, since a few very rich people pull the mean upward. If the tail is longer on the left, the distribution is negatively skewed, with mean < median < mode; marks on a very easy test, where most students score high and a few score very low, are an example. A perfectly symmetric distribution has zero skewness.",
+      "explanation": "Skewness describes the direction and degree of asymmetry, and the ordering of mean, median and mode reveals its sign.",
+      "oneShotPreview": "Skewness = asymmetry; right tail gives positive skew (mean>median>mode), left tail gives negative skew."
+    },
+    {
+      "q": "e) Define Kurtosis in statistics.",
+      "a": "Kurtosis measures the degree of peakedness or flatness of a frequency distribution relative to a normal distribution. It is measured by the coefficient β2 = μ4/μ2² (fourth central moment divided by the square of the variance), or by excess kurtosis γ2 = β2 − 3. For a normal distribution β2 = 3 (γ2 = 0), which is called mesokurtic. If β2 > 3 the distribution is leptokurtic, having a narrow high peak and heavy tails; if β2 < 3 it is platykurtic, having a flatter peak and light tails.",
+      "explanation": "Kurtosis is based on the fourth standardized moment, and 3 is the benchmark value for a normal (mesokurtic) distribution.",
+      "oneShotPreview": "Kurtosis = peakedness/tail heaviness; β2=μ4/μ2²; >3 leptokurtic, =3 mesokurtic, <3 platykurtic."
+    },
+    {
+      "q": "a) Find arithmetic mean to the following data using step deviation method Marks 10-20 20-30 30-40 40-50 50-60 frequency 5 8 25 22 10",
+      "a": "Take the assumed mean A = 35 and class width h = 10. The class mid-values are 15, 25, 35, 45 and 55, so the step deviations u = (x − A)/h are −2, −1, 0, 1 and 2. Multiplying by frequencies gives fu = −10, −8, 0, 22 and 20, hence Σfu = 24 with N = 5 + 8 + 25 + 22 + 10 = 70. Therefore mean = A + h(Σfu/N) = 35 + 10(24/70) = 35 + 3.43 = 38.43 marks (approximately).",
+      "explanation": "The step-deviation formula A + h(Σfu/N) is algebraically identical to the direct mean but simplifies calculation by scaling deviations by the class width.",
+      "oneShotPreview": "A=35, h=10, Σfu=24, N=70 → mean = 35 + 10(24/70) ≈ 38.43."
+    },
+    {
+      "q": "b) Find the median to the following data; x 5 8 11 14 17 20 23 f 2 8 12 20 10 6 3",
+      "a": "The cumulative frequencies are 2, 10, 22, 42, 52, 58 and 61, so N = 61 and N/2 = 30.5. The cumulative frequency just greater than 30.5 is 42, which corresponds to the value x = 14. Hence the median of the distribution is 14. Equivalently, since N is odd, the median is the (N+1)/2 = 31st observation, which also falls at x = 14.",
+      "explanation": "For a discrete frequency distribution the median is the smallest value whose cumulative frequency is at least N/2, which here is 14.",
+      "oneShotPreview": "N=61, cf ≥ 30.5 is 42 at x=14 → median = 14."
+    },
+    {
+      "q": "a) Find arithmetic mean to the following data; X 1 2 3 4 5 F 5 8 10 12 6",
+      "a": "Using the direct method for a discrete frequency distribution, compute ΣfX = 1×5 + 2×8 + 3×10 + 4×12 + 5×6 = 5 + 16 + 30 + 48 + 30 = 129. Total frequency N = 5 + 8 + 10 + 12 + 6 = 41. Therefore the arithmetic mean = ΣfX/N = 129/41 = 3.146, or about 3.15.",
+      "explanation": "Frequencies act as weights, so the correct mean is the weighted average ΣfX/Σf rather than the simple average of the X values.",
+      "oneShotPreview": "Mean = ΣfX/N = 129/41 ≈ 3.146."
+    },
+    {
+      "q": "b) Find mode to the following data; X 0-5 5-10 10-15 15-20 20-25 25-30 30-35 35-40 F 5 7 10 18 20 12 8 2",
+      "a": "The largest frequency is 20, so the modal class is 20–25. Here L = 20, f = 20, the preceding class frequency f1 = 18, the following class frequency f2 = 12 and class width h = 5. Applying the grouped-data mode formula: Mode = L + h(f − f1)/(2f − f1 − f2) = 20 + 5(20 − 18)/(40 − 18 − 12) = 20 + 5×2/10 = 21. Hence the mode is 21.",
+      "explanation": "The interpolation formula estimates the mode inside the modal class using the neighbouring class frequencies, and the arithmetic gives exactly 21.",
+      "oneShotPreview": "Modal class 20–25 → mode = 20 + 5(2/10) = 21."
+    },
+    {
+      "q": "4 The first four moments of a distribution about the value 5 of the variables are 2, 20, 40 and 50. Calculate mean, Variance, and of the distribution. [L5][CO1] [10M]",
+      "a": "Given moments about A = 5: μ'1 = 2, μ'2 = 20, μ'3 = 40, μ'4 = 50. Mean = A + μ'1 = 5 + 2 = 7. Variance μ2 = μ'2 − μ'1² = 20 − 4 = 16, so S.D. = 4. Central moments: μ3 = μ'3 − 3μ'1μ'2 + 2μ'1³ = 40 − 120 + 16 = −64; μ4 = μ'4 − 4μ'1μ'3 + 6μ'1²μ'2 − 3μ'1⁴ = 50 − 320 + 480 − 48 = 162. Hence β1 = μ3²/μ2³ = 4096/4096 = 1 (γ1 = −1, negatively skewed) and β2 = μ4/μ2² = 162/256 = 0.633 (γ2 = −2.367, platykurtic). The PDF text is truncated after 'and'; the intended missing quantities are the skewness and kurtosis coefficients β1 and β2.",
+      "explanation": "Moments about an arbitrary origin are converted to central moments with the standard transformation formulas, from which mean, variance, β1 and β2 follow directly.",
+      "oneShotPreview": "Mean = 7, variance = 16 (SD = 4), β1 = 1 (γ1 = −1), β2 = 0.633 (γ2 = −2.37)."
+    },
+    {
+      "q": "5 Calculate correlation coefficient to the following data; X 10 15 12 17 13 16 24 14 22 20 Y 30 42 45 46 33 34 40 35 39 38 [L5][CO1] [10M]",
+      "a": "Using Pearson's product-moment formula with deviations from X̄ = 16.3 and Ȳ = 38.2: Σxy = 66.4, Σx² = 182.1 and Σy² = 247.6. Therefore r = Σxy/√(Σx²·Σy²) = 66.4/√(182.1 × 247.6) = 66.4/212.36 = 0.313. The correlation coefficient is about +0.31, indicating only a weak positive linear relationship between X and Y.",
+      "explanation": "Pearson's r is the covariance divided by the product of the standard deviations; the cross-product and square sums give it directly.",
+      "oneShotPreview": "r = 66.4/√(182.1×247.6) ≈ +0.313 (weak positive correlation)."
+    },
+    {
+      "q": "6 Calculate the correlation coefficient for the following heights (in inches) of fathers(X) and their sons(Y) X 65 66 67 67 68 69 70 72 Y 67 68 65 68 72 72 69 71 [L5][CO1] [10M]",
+      "a": "Here X̄ = 68 and Ȳ = 69. The sums of squared and cross-product deviations are Σxy = 24, Σx² = 36 and Σy² = 44. Hence r = Σxy/√(Σx²·Σy²) = 24/√(36 × 44) = 24/39.80 = 0.603. There is a moderate positive correlation of about +0.60 between the heights of fathers and their sons.",
+      "explanation": "Applying Pearson's formula to the eight pairs of heights gives r ≈ 0.60, showing a moderate tendency for taller fathers to have taller sons.",
+      "oneShotPreview": "r = 24/√(36×44) ≈ +0.603 (moderate positive correlation)."
+    },
+    {
+      "q": "7 Compute rank correlation coefficient for the following data; X 20 14 36 29 5 11 Y 19 9 25 10 2 6 [L5][CO1] [10M]",
+      "a": "Assigning ranks in ascending order, X gets ranks 4, 3, 6, 5, 1, 2 and Y gets ranks 5, 3, 6, 4, 1, 2. The rank differences are d = −1, 0, 0, 1, 0, 0, so Σd² = 2 with n = 6 and no ties. Spearman's rank correlation is ρ = 1 − 6Σd²/[n(n²−1)] = 1 − 12/(6×35) = 1 − 0.0571 = 0.943. The rank correlation is about +0.94, a very strong positive association.",
+      "explanation": "With no repeated values Spearman's simple formula applies directly, and Σd² = 2 yields ρ ≈ 0.943.",
+      "oneShotPreview": "Σd² = 2, n = 6 → ρ = 1 − 12/210 ≈ +0.943."
+    },
+    {
+      "q": "8 Ten competitors in a musical test were ranked by the three judges A, B and C in the following order Ranks by A 1 6 5 10 3 2 4 9 7 8 Ranks by B 3 5 8 4 7 10 2 1 6 9 Ranks by C 6 4 9 8 1 2 3 10 5 7 Using rank correlation coefficient method, discuss which pair of judges has the nearest approach to common likings in music. [L3][CO1] [10M]",
+      "a": "Compute Spearman's rho for each pair; with n = 10 the denominator n(n²−1) = 990. For A and B, Σd² = 200, so ρ = 1 − 6(200)/990 = −0.212. For A and C, Σd² = 60, so ρ = 1 − 6(60)/990 = +0.636. For B and C, Σd² = 214, so ρ = 1 − 6(214)/990 = −0.297. The largest and only positive coefficient is that between judges A and C (ρ ≈ +0.64). Hence judges A and C have the nearest approach to common likings in music, while judge B tends to disagree with both.",
+      "explanation": "A higher, more positive rank correlation means closer agreement between two judges, so comparing the three pairwise coefficients identifies the closest pair.",
+      "oneShotPreview": "ρ(A,B) = −0.21, ρ(A,C) = +0.64, ρ(B,C) = −0.30 → judges A and C agree most."
+    },
+    {
+      "q": "9 Obtain the rank correlation coefficient for the following data; X 68 64 75 50 64 80 75 40 55 64 Y 62 58 68 45 81 60 68 48 50 70 [L5][CO1] [10M]",
+      "a": "Repeated values receive average ranks: X ranks are 7, 5, 8.5, 2, 5, 10, 8.5, 1, 3, 5 (64 occurs three times and 75 twice), and Y ranks are 6, 4, 7.5, 1, 10, 5, 7.5, 2, 3, 9 (68 occurs twice). Here Σd² = 72, so the uncorrected coefficient is ρ = 1 − 6(72)/(10×99) = 0.564. With tie corrections, Σ(t³−t) = 30 for X and 6 for Y, giving ρ = [165 − 72 − (30+6)/12]/√[(165 − 15)(165 − 3)] = 90/155.89 = 0.577. Thus the rank correlation is about +0.56, or +0.58 with the tie correction — a moderate positive association.",
+      "explanation": "Tied observations must be given average ranks, and the tie-corrected Spearman formula adjusts the numerator and denominator for those ties to give the more accurate value.",
+      "oneShotPreview": "Average ranks, Σd² = 72 → ρ ≈ +0.564 (+0.577 with tie correction)."
+    },
+    {
+      "q": "10 Find the regression line by the method of least squares for the following data X 10 12 13 16 17 20 25 y 10 22 24 27 29 33 37 [L3][CO1] [10M]",
+      "a": "Here n = 7, X̄ = 113/7 = 16.143 and ȳ = 26, with Σxy = 248 and Σx² = 158.857. The regression coefficient of y on x is b_yx = Σxy/Σx² = 248/158.857 = 1.561. The least-squares line passes through (X̄, ȳ), so y − 26 = 1.561(x − 16.143), which simplifies to y = 0.799 + 1.561x. The corresponding correlation is r ≈ 0.921, confirming a strong positive fit.",
+      "explanation": "The least-squares regression line of y on x passes through the means and has slope b_yx = Σxy/Σx², minimizing the sum of squared vertical errors.",
+      "oneShotPreview": "y − 26 = 1.561(x − 16.143), i.e. y ≈ 0.80 + 1.561x."
+    },
+    {
+      "q": "11 Find two regression equations from the following data; X 10 25 34 42 37 35 36 45 Y 56 64 63 58 73 75 82 77 [L1][CO1] [10M]",
+      "a": "Here n = 8, X̄ = 264/8 = 33 and Ȳ = 548/8 = 68.5, with Σxy = 397, Σx² = 848 and Σy² = 634. Regression of y on x: b_yx = Σxy/Σx² = 397/848 = 0.468, giving y − 68.5 = 0.468(x − 33), i.e. y = 53.05 + 0.468x. Regression of x on y: b_xy = Σxy/Σy² = 397/634 = 0.626, giving x − 33 = 0.626(y − 68.5), i.e. x = −9.89 + 0.626y. Their product b_yx·b_xy ≈ 0.293 = r², consistent with r ≈ 0.54.",
+      "explanation": "Each least-squares regression line passes through (X̄, Ȳ); the two slopes are Σxy/Σx² and Σxy/Σy² respectively.",
+      "oneShotPreview": "y = 53.05 + 0.468x; x = −9.89 + 0.626y."
+    }
+  ]
+}

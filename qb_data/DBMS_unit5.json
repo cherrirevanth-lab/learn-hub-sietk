@@ -1,0 +1,134 @@
+{
+  "subject": "23CS0512",
+  "unit": 5,
+  "unitTitle": "Transaction Concept and Indexing",
+  "totalQuestions": 21,
+  "questions": [
+    {
+      "q": "1 a) What are the different states of a transaction?",
+      "a": "A transaction passes through a sequence of states: active (its read/write operations are executing), partially committed (all operations done but changes not yet written permanently to disk), committed (successfully completed and changes made permanent), failed (an error/abort occurred and normal progress cannot continue), and aborted (the transaction is rolled back and the database is restored to its prior consistent state). From active it may go to failed (then aborted), and from partially committed it goes to committed or failed.",
+      "explanation": "These five states form the standard transaction state diagram and show how a transaction progresses from start to commit or abort.",
+      "oneShotPreview": "Active -> Partially committed -> Committed; failure path -> Failed -> Aborted."
+    },
+    {
+      "q": "1 b) Name two types of serializability.",
+      "a": "The two main types are conflict serializability and view serializability. Conflict serializability tests whether a schedule can be transformed into a serial one by swapping adjacent non-conflicting operations (operations on the same item where at least one is a write). View serializability is a weaker test based on whether the schedule has the same read-from relationships and final writes as some serial schedule. Every conflict-serializable schedule is also view serializable, but not every view-serializable schedule is conflict serializable.",
+      "explanation": "These are the two standard equivalence criteria used to decide whether a concurrent schedule preserves consistency.",
+      "oneShotPreview": "Conflict serializability and view serializability."
+    },
+    {
+      "q": "1 c) What is the Two-Phase Locking (2PL) protocol?",
+      "a": "Two-Phase Locking is a concurrency-control protocol in which a transaction acquires all its locks during a growing phase and releases them during a shrinking phase, never acquiring a new lock after it has released any lock. In the growing phase it may acquire shared or exclusive locks but cannot release locks; in the shrinking phase it may release locks but cannot acquire new ones. This discipline guarantees that the resulting schedule is conflict serializable. A variant, strict 2PL, holds exclusive locks until commit/abort to also ensure recoverability.",
+      "explanation": "The rule that no new locks may be acquired after the first release is what guarantees conflict serializability.",
+      "oneShotPreview": "Growing (acquire locks) then shrinking (release) phase - no new lock after a release; ensures serializability."
+    },
+    {
+      "q": "1 d) What is the purpose of a recovery algorithm?",
+      "a": "A recovery algorithm restores the database to a consistent, correct state after a failure such as a transaction abort, system crash, or disk (media) failure. It uses the log to undo the effects of incomplete or aborted transactions (UNDO) and to redo the effects of committed transactions whose changes were not yet written to disk (REDO). Its purpose is to preserve the atomicity and durability properties of transactions, ensuring no partial results remain and no committed work is lost.",
+      "explanation": "Recovery maintains the A and D of ACID by undoing uncommitted work and redoing committed work after a crash.",
+      "oneShotPreview": "Restore consistency after failure using logs - UNDO incomplete transactions, REDO committed ones."
+    },
+    {
+      "q": "1 e) What is hash-based indexing?",
+      "a": "Hash-based indexing (a hash index) is an index structure that maps a search-key value directly to a bucket or disk address using a hash function, so the desired record can be located with ideally one or two disk accesses. It is very efficient for equality searches such as finding all records where dept = CSE, but it is inefficient for range queries because hashing destroys the natural order of the keys. Collisions, where different keys map to the same bucket, are handled using overflow buckets or chaining.",
+      "explanation": "Hashing gives near-constant-time lookup for equality conditions but cannot support ordered or range retrieval.",
+      "oneShotPreview": "Hash index maps key to bucket via a hash function; fast equality lookups, poor for range queries."
+    },
+    {
+      "q": "2 a) Define a Transaction. Illustrate the properties of transaction.",
+      "a": "A transaction is a logical unit of work: a sequence of database read and write operations that must execute as a single, indivisible unit, bounded by BEGIN TRANSACTION and COMMIT or ROLLBACK. Its defining properties are the ACID properties - Atomicity (all-or-nothing), Consistency (preserves database integrity constraints), Isolation (concurrent transactions do not interfere with each other), and Durability (committed changes survive failures). For example, transferring money between two accounts is a transaction: the debit and the credit must both happen together, or neither should happen.",
+      "explanation": "Defines the unit-of-work concept and its four guarantees, illustrated with the classic banking example.",
+      "oneShotPreview": "Transaction = indivisible sequence of DB operations bounded by BEGIN/COMMIT; properties = ACID."
+    },
+    {
+      "q": "2 b) How do you implement Atomicity and Durability?",
+      "a": "Atomicity and durability are implemented with a log-based recovery scheme using the write-ahead logging (WAL) protocol. Before a database item is modified, a log record describing the change is written to stable storage, and a transaction is considered committed only after its COMMIT record is safely in the log. If a crash occurs, recovery uses the log to UNDO the changes of uncommitted transactions (ensuring atomicity) and REDO the changes of committed transactions whose updates were not yet flushed to disk (ensuring durability). Shadow paging is an alternative implementation technique.",
+      "explanation": "Write-ahead logging plus UNDO/REDO recovery is the standard mechanism guaranteeing all-or-nothing execution and permanence of committed results.",
+      "oneShotPreview": "Use write-ahead log + recovery: UNDO incomplete transactions (atomicity), REDO committed ones (durability)."
+    },
+    {
+      "q": "3 Explain the ACID properties of a transaction with suitable examples.",
+      "a": "ACID stands for Atomicity, Consistency, Isolation, and Durability. Atomicity means a transaction is all-or-nothing: if a funds transfer debits one account but fails before crediting the other, both operations are rolled back. Consistency means a transaction takes the database from one valid state to another while preserving integrity constraints, e.g., the total balance across the two accounts stays the same after a transfer. Isolation means concurrently executing transactions do not see each other's intermediate uncommitted data, so the outcome is as if they ran one at a time. Durability means that once a transaction commits, its changes persist even after a system crash, guaranteed by logging and recovery. Together these four properties ensure reliable transaction processing.",
+      "explanation": "These four guarantees are the foundation of transaction correctness, and the banking scenario makes each one concrete.",
+      "oneShotPreview": "ACID = Atomicity (all-or-nothing), Consistency (valid state), Isolation (no interference), Durability (committed changes persist)."
+    },
+    {
+      "q": "4 a) Describe the different states of a transaction with a state diagram.",
+      "a": "A transaction moves through five states: (1) Active - the initial state while its read/write operations execute; (2) Partially committed - after the final operation, with changes in buffers but not yet on disk; (3) Committed - after a successful COMMIT, when changes are permanent; (4) Failed - when an operation fails or the system detects it cannot continue; (5) Aborted - after ROLLBACK, when changes are undone. The transitions are active -> partially committed -> committed, or active -> failed -> aborted, and a failed transaction may also be restarted. A state diagram draws these as nodes connected by arrows labeled with the triggering event (read/write, commit, abort, etc.).",
+      "explanation": "Describes all five states and their transitions - the content of the standard transaction state diagram.",
+      "oneShotPreview": "Active -> Partially committed -> Committed; failure path -> Failed -> Aborted (with restart option)."
+    },
+    {
+      "q": "4 b) Illustrate Concurrent execution of transaction with examples",
+      "a": "Concurrent execution means multiple transactions run at the same time, interleaving their operations to improve CPU and disk utilization and increase throughput. For example, with two fund-transfer transactions T1 and T2, an interleaving such as T1: read(A), T2: read(B), T1: write(A), T2: write(B) can complete faster than running them strictly one after another. However, uncontrolled interleaving can cause lost updates, dirty reads, or inconsistent results, so concurrency-control mechanisms such as locking and timestamp ordering are used to keep the schedule serializable - equivalent to some serial order. Only serializable interleavings preserve database correctness.",
+      "explanation": "Explains why concurrency is used (performance and throughput) and why it must be controlled (anomalies and serializability).",
+      "oneShotPreview": "Interleaving transactions boosts throughput but can cause anomalies - use concurrency control to keep schedules serializable."
+    },
+    {
+      "q": "5 Develop the TCL and DCL Commands - Commit, Rollback, Savepoint, Grant and Revoke.",
+      "a": "TCL (Transaction Control Language) commands manage the changes made by transactions: COMMIT makes all changes since the last commit permanent; ROLLBACK undoes all changes since the last commit; SAVEPOINT sets a named point within a transaction to which you can roll back partially (ROLLBACK TO savepoint); and SET TRANSACTION sets transaction properties. Example statements are COMMIT; SAVEPOINT sp1; ROLLBACK TO sp1; and ROLLBACK;. DCL (Data Control Language) commands control access rights: GRANT gives privileges to users (e.g., GRANT SELECT, INSERT ON Employee TO user1;) and REVOKE removes them (e.g., REVOKE SELECT ON Employee FROM user1;). Together, TCL manages transaction boundaries while DCL enforces authorization and security.",
+      "explanation": "Distinguishes the two SQL sublanguages, naming the requested commands and giving concrete syntax for each.",
+      "oneShotPreview": "TCL = COMMIT, ROLLBACK, SAVEPOINT (manage transaction changes); DCL = GRANT, REVOKE (access control)."
+    },
+    {
+      "q": "6 What is serializability? Explain conflict serializability and view serializability with examples.",
+      "a": "Serializability is the property that a concurrent schedule produces the same result as some serial (non-interleaved) execution of the same transactions; it is the correctness criterion for concurrency control. A schedule is conflict serializable if it can be transformed into a serial schedule by swapping adjacent non-conflicting operations, where two operations conflict if they access the same data item and at least one is a write (for example, R1(A), W1(A), R2(A), W2(A) can be reduced to the serial order T1 then T2). A schedule is view serializable if it has the same read-from relationships (which transaction's write each read observes) and the same final writes as some serial schedule; blind writes can make a non-conflict-serializable schedule view serializable. Every conflict-serializable schedule is view serializable, but not vice versa.",
+      "explanation": "Defines serializability and distinguishes the conflict (operation-ordering) and view (read-from and final-write) tests with examples.",
+      "oneShotPreview": "Serializability = equivalent to a serial run; conflict (swap non-conflicting ops) vs view (same read-from and final writes)."
+    },
+    {
+      "q": "7 a) Compare and contrast lock-based, timestamp-based, and optimistic concurrency control protocols.",
+      "a": "Lock-based protocols let transactions acquire shared or exclusive locks on data items before accessing them; Two-Phase Locking guarantees serializability but can cause blocking and deadlocks. Timestamp-based protocols assign each transaction a timestamp and order conflicting operations by it, giving priority to older transactions and resolving conflicts by aborting/restarting the younger one; they avoid deadlocks but may cause restarts. Optimistic (validation-based) protocols let transactions run without blocking and validate at commit that no conflicting transaction committed meanwhile, rolling back on failure; they are efficient when conflicts are rare but costly when conflicts are frequent. In short, locking is pessimistic and blocks, timestamp ordering is pessimistic and restarts, and optimistic control defers checking until commit.",
+      "explanation": "Compares the three protocols on mechanism, serializability guarantee, and tradeoffs such as deadlocks, blocking, and restarts.",
+      "oneShotPreview": "Lock-based = block via locks (deadlocks possible); timestamp = order by time (no deadlock, restarts); optimistic = validate at commit."
+    },
+    {
+      "q": "7 b) Compare serializibility and non-serializibility",
+      "a": "A serializable schedule is one whose outcome is equivalent to some serial execution of the transactions, so it preserves database consistency. A non-serializable schedule interleaves operations in a way that cannot be matched to any serial order and can produce incorrect results. For example, a serializable schedule of two balance-update transactions yields the same final balances as running them one at a time, whereas a non-serializable interleaving can cause a lost update in which one transaction's write overwrites the other's. Serializable schedules are accepted by concurrency control, while non-serializable ones must be prevented, detected, and resolved, for example by aborting a transaction. Thus serializability is the correctness standard and non-serializability is an anomaly to be avoided.",
+      "explanation": "Contrasts the two on consistency and uses a lost-update example to show why non-serializable schedules are unsafe.",
+      "oneShotPreview": "Serializable = equivalent to a serial run (correct); non-serializable = no serial equivalent (e.g., lost update), must be prevented."
+    },
+    {
+      "q": "8 a) What is Schedule? Explain the serial schedule with examples.",
+      "a": "A schedule is an ordering of the read and write operations of a set of transactions that preserves the order of operations within each individual transaction. A serial schedule is one in which transactions execute one at a time with no interleaving - all operations of T1 complete before T2 begins. For example, R1(A), W1(A), R1(B), W1(B), R2(A), W2(A) is a serial schedule because T1 runs completely before T2. Serial schedules are always correct (consistent) and serve as the benchmark against which concurrent schedules are judged for serializability, but they allow no concurrency and therefore give poor resource utilization.",
+      "explanation": "Defines a schedule and the serial schedule with an example, noting correctness versus low concurrency.",
+      "oneShotPreview": "Schedule = ordered read/write operations; serial schedule = no interleaving, T1 fully then T2 - always correct but low throughput."
+    },
+    {
+      "q": "8 b) What is a deadlock? Explain deadlock detection, prevention, and recovery in DBMS.",
+      "a": "A deadlock is a condition in which two or more transactions are blocked forever, each waiting for a lock held by another transaction in the cycle - for example, T1 holds a lock on A and waits for B while T2 holds B and waits for A. Deadlock prevention avoids cycles by requiring transactions to lock all items at once or by using ordering/timestamp rules (wait-die, wound-wait), so a deadlock never occurs. Deadlock detection allows deadlocks to happen but periodically builds a wait-for graph and checks for cycles, choosing a victim when one is found. Deadlock recovery breaks the cycle by aborting and rolling back one or more victim transactions, typically the youngest or the one with the least work, releasing its locks so the others can proceed.",
+      "explanation": "Defines deadlock and covers all three strategies: prevent (no cycles), detect (wait-for graph), and recover (abort a victim).",
+      "oneShotPreview": "Deadlock = circular wait for locks; handle by prevention (ordering), detection (wait-for graph), recovery (abort victim)."
+    },
+    {
+      "q": "9 a) Explain recoverability in transaction schedules. Differentiate between Recoverable, cascade less, and strict schedules.",
+      "a": "Recoverability refers to whether a schedule lets the database be restored to a consistent state after a transaction fails, without having to undo committed transactions. A recoverable schedule requires that if Tj reads a value written by Ti, then Ti must commit before Tj commits; otherwise a committed Tj could depend on an uncommitted Ti that later aborts. A cascadeless (no cascading abort) schedule is stricter: a transaction may read a value only after the writing transaction has committed, so a failing transaction never forces others to roll back. A strict schedule is stricter still: no transaction may read or write a data item until the transaction that last wrote it has committed or aborted, simplifying recovery. The containment hierarchy is strict subset of cascadeless subset of recoverable: every strict schedule is cascadeless and every cascadeless schedule is recoverable, but not conversely.",
+      "explanation": "Defines recoverability and distinguishes the three schedule classes by how they constrain reading uncommitted data, noting their containment relationship.",
+      "oneShotPreview": "Recoverable (writer commits before reader) - Cascadeless (read only committed data) - Strict (no access until writer ends)."
+    },
+    {
+      "q": "9 b) Describe the different types of failures in database systems.",
+      "a": "Database failures are classified as: (1) Transaction or logical failures - a transaction aborts due to an error such as bad input, arithmetic overflow, or an integrity violation, requiring only that transaction to be rolled back; (2) System or crash failures - a power loss or OS/DBMS crash that loses main-memory contents but leaves disk intact, requiring recovery of all in-flight transactions from the log; (3) Media or storage failures - a disk crash that destroys stored data, requiring restoration from backups and archived logs; and (4) Catastrophic failures - physical destruction of the facility, handled by remote backups and disaster recovery. Each type is handled by progressively stronger recovery techniques, with logging, checkpointing, and backups as the main tools.",
+      "explanation": "Lists the standard failure categories with their causes and the corresponding recovery scope.",
+      "oneShotPreview": "Failures: transaction-level (rollback), system crash (log recovery), media/disk (restore from backup), catastrophic (disaster recovery)."
+    },
+    {
+      "q": "10 What is a B+ Tree? Explain its structure and operations (search, insert, delete) With diagrams.",
+      "a": "A B+ tree is a balanced, multiway tree index in which all data records (or record pointers) are stored only in the leaf nodes, while internal nodes hold only search-key values and child pointers used for routing. The leaf nodes are linked together in a sorted chain, which makes range queries efficient, and every root-to-leaf path has the same length so the tree stays balanced. Search starts at the root, follows key ranges down to the correct leaf, then scans the leaf chain for the desired key(s). Insertion locates the target leaf and adds the key; if the leaf overflows it splits into two and the middle key is promoted to the parent, possibly cascading up to split the root and grow the tree. Deletion removes the key from the leaf; if the leaf underflows it borrows a key from a sibling or merges with a sibling, with parent adjustments propagating upward. A typical diagram shows a root, internal levels of separator keys, and a bottom level of linked leaves holding the actual data pointers.",
+      "explanation": "Covers the defining structure (internal routing nodes, linked sorted leaves, balance) and all three operations with split/merge details, describing the diagrams in words.",
+      "oneShotPreview": "B+ tree = balanced multiway tree, data in linked leaves; search descend, insert splits, delete borrows/merges; great for range queries."
+    },
+    {
+      "q": "11 a) Compare B+ Tree indexing and hash-based indexing. What are the advantages and disadvantages of each?",
+      "a": "B+ tree indexing stores keys in a sorted, balanced tree with linked leaves, so it supports both equality and range queries (e.g., salary BETWEEN 1000 AND 2000) and ordered retrieval; its disadvantages are more disk accesses proportional to tree height and update overhead from node splits and merges. Hash-based indexing maps keys directly to buckets via a hash function, giving very fast equality lookups (often one or two disk I/Os) and simple insertion and deletion, but it cannot efficiently answer range queries or ordered scans because keys are not stored in order, and performance degrades with many collisions and overflow buckets. In short, choose a B+ tree when range or ordered access matters, and a hash index when equality lookups dominate.",
+      "explanation": "Compares the two on query support, speed, update overhead, and collision behavior, with a clear rule of thumb.",
+      "oneShotPreview": "B+ tree = sorted, supports range queries, O(log n); hash = O(1) equality only, no ranges; pick by query type."
+    },
+    {
+      "q": "11 b) Discuss the importance of indexing in database systems.",
+      "a": "Indexing is important because it dramatically speeds up data retrieval: instead of scanning every row of a table (a full table scan), the DBMS uses an index to locate matching rows quickly, reducing disk I/O from O(n) to roughly O(log n) or better. Indexes accelerate SELECT queries, WHERE-clause filtering, JOIN operations, ORDER BY sorting, and grouping/aggregate operations, and unique indexes enforce uniqueness constraints. They are especially valuable on large tables and for primary-key and foreign-key lookups. The tradeoff is that indexes consume extra storage and slow down INSERT, UPDATE, and DELETE because the index must be maintained. Good indexing therefore balances faster reads against slower writes and extra space.",
+      "explanation": "Explains how indexes improve performance and what they cost, giving a complete picture of their importance.",
+      "oneShotPreview": "Indexes cut query time (no full scan) and speed joins/sorting/uniqueness, at the cost of extra storage and slower writes."
+    }
+  ]
+}

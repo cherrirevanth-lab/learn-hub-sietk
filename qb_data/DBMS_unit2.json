@@ -1,0 +1,134 @@
+{
+  "subject": "23CS0512",
+  "unit": 2,
+  "unitTitle": "Relational Model and Basic SQL",
+  "totalQuestions": 21,
+  "questions": [
+    {
+      "q": "1 a) Differentiate between primary key and candidate key.",
+      "a": "A candidate key is any attribute, or minimal set of attributes, that can uniquely identify every tuple in a relation; a relation may have several candidate keys. The primary key is the single candidate key chosen by the designer as the official unique row identifier, and it can never be NULL or duplicated. Thus every primary key is a candidate key, but only one candidate key is promoted to primary key while the others become alternate keys. For example, in STUDENT(rollno, aadhaar, email) all three could be candidate keys and rollno may be selected as the primary key.",
+      "explanation": "The core distinction is that candidate keys are all the minimal unique identifiers whereas the primary key is the one chosen from them; the example makes the relationship concrete.",
+      "oneShotPreview": "Candidate key = any minimal unique identifier; primary key = the one chosen (rest are alternate keys)."
+    },
+    {
+      "q": "1 b) Define super key with an example.",
+      "a": "A super key is any set of one or more attributes whose combined values uniquely identify each tuple of a relation. It may include extra attributes that are not actually needed for uniqueness, so a super key is not required to be minimal. For example, in EMPLOYEE(empid, name, salary), {empid} is a super key, and so are {empid, name} and {empid, name, salary}. A candidate key is simply a minimal super key with no superfluous attributes.",
+      "explanation": "Defines the term, stresses that extra attributes are allowed, and gives examples that distinguish super keys from minimal candidate keys.",
+      "oneShotPreview": "Any attribute set that uniquely identifies rows, may carry extras; {empid, name} is a super key."
+    },
+    {
+      "q": "1 c) What is the importance of null values in a database?",
+      "a": "A NULL represents a missing, unknown, or not-applicable value and is not the same as zero or a blank string. Nulls allow a database to store incomplete information, such as an employee with no phone number or a task with no assigned manager, without inventing fake values. They are important for optional attributes and for outer joins that must keep unmatched rows, but they need special handling: comparisons use IS NULL / IS NOT NULL, and aggregates such as COUNT ignore nulls. Where a value is mandatory or must be unique, NOT NULL constraints disallow nulls.",
+      "explanation": "Explains what NULL means, why it is useful for optional data, and the special SQL handling it requires.",
+      "oneShotPreview": "NULL = missing/unknown, not zero; supports optional data and outer joins, tested with IS NULL."
+    },
+    {
+      "q": "1 d) What is the purpose of the WHERE clause in SQL?",
+      "a": "The WHERE clause filters rows in a SELECT, UPDATE, or DELETE statement, keeping only rows whose search condition is TRUE. It appears after FROM and before GROUP BY, and its condition can use comparison operators (=, <, >), logical operators (AND, OR, NOT), BETWEEN, IN, LIKE, and IS NULL. For example, SELECT * FROM EMP WHERE salary > 50000 returns only employees earning more than 50,000. Without a WHERE clause the statement applies to every row of the table.",
+      "explanation": "Correctly describes WHERE as a row filter, lists its operators and position, and gives a concrete example.",
+      "oneShotPreview": "WHERE filters rows by a condition before grouping; e.g. SELECT ... WHERE salary > 50000."
+    },
+    {
+      "q": "1 e) Distinguish between CHAR and VARCHAR data types.",
+      "a": "CHAR(n) is a fixed-length character type: a shorter value is padded with trailing spaces so every stored value occupies n characters. VARCHAR(n) is variable length: it stores only the characters actually supplied, up to the maximum n, plus a small length overhead. CHAR is slightly faster and suits values of uniform length such as a two-letter code, while VARCHAR saves storage for values of varying length such as names or addresses. Using VARCHAR avoids wasted space at the cost of minor overhead when a value grows.",
+      "explanation": "Captures the essential fixed-versus-variable distinction, padding behaviour, and when each type is preferred.",
+      "oneShotPreview": "CHAR(n) fixed length and padded; VARCHAR(n) variable length, stores only actual characters — saves space."
+    },
+    {
+      "q": "2 a) Discuss the significance of domain, attribute, tuple, and relation with examples.",
+      "a": "A domain is the set of permitted values for an attribute, such as the positive integers or the valid department names. An attribute is a named column representing one property of an entity, such as name or salary, whose values come from a domain. A tuple is one row, an ordered set of attribute values representing a single record, for example (101, 'Ravi', 50000). A relation is a table: a set of tuples sharing the same attributes, such as the EMPLOYEE relation. Together these terms formalise a table — a relation is a set of tuples, each tuple holds values of attributes, and each attribute draws its values from a domain.",
+      "explanation": "Defines all four fundamental relational-model terms with consistent examples and shows how they combine into a table.",
+      "oneShotPreview": "Domain = allowed values; attribute = column; tuple = row; relation = table of tuples."
+    },
+    {
+      "q": "2 b) What are null values in the relational model? Explain their importance with examples.",
+      "a": "In the relational model NULL is a special marker used when an attribute value is unknown, unavailable, or not applicable; it is distinct from every value in that attribute's domain, including zero and the empty string. For example, an employee with no phone number has NULL in the phone column, and a new hire with no project has NULL in proj_id. Nulls are important because they let a relation represent incomplete or inapplicable information without fabricating dummy values, and they enable outer joins that preserve unmatched rows. However they complicate the model: SQL uses three-valued logic (TRUE/FALSE/UNKNOWN), comparisons require IS NULL, keys and NOT NULL constraints exclude them where required, and aggregate functions ignore them.",
+      "explanation": "Defines NULL as a value outside the domain, supplies examples, and covers both its usefulness and the special logic it demands.",
+      "oneShotPreview": "NULL = unknown/not-applicable, outside the domain; enables missing data and outer joins, needs IS NULL and 3-valued logic."
+    },
+    {
+      "q": "3 Classify various types of constraints in the relational model with suitable examples.",
+      "a": "Relational constraints keep stored data valid and are classified as: Domain constraints — each value must belong to its declared domain, e.g., age an integer between 0 and 120. Key or entity-integrity constraints — the primary key must be unique and non-null, e.g., rollno cannot be NULL or repeated. Referential-integrity constraints — a foreign key must match an existing primary key or be NULL, e.g., EMP.deptno must exist in DEPT. NOT NULL and CHECK constraints — a column is mandatory and a condition limits its values, e.g., CHECK(salary >= 0). UNIQUE constraints — enforce uniqueness on a non-primary column, e.g., email UNIQUE. Together they preserve entity integrity, referential integrity, and user-defined semantic rules.",
+      "explanation": "Lists the main constraint categories with a concrete example for each and ties them to overall data integrity.",
+      "oneShotPreview": "Domain, key/entity integrity, referential integrity, NOT NULL, CHECK and UNIQUE — each restricts legal data."
+    },
+    {
+      "q": "4 a) Identify relational database query language.",
+      "a": "A query language is used to retrieve and manipulate data in a relational database. Relational algebra is a procedural query language: the user states what is wanted and the exact steps to get it using operations such as select, project, and join. Relational calculus is declarative: the user states only the desired result as a logical predicate. SQL (Structured Query Language) is the de facto standard query language for commercial relational DBMSs and is declarative in style, while internally relying on relational-algebra operations for execution. SQL combines data definition, manipulation, and control in one language, so it is the practical answer to what the relational database query language is.",
+      "explanation": "Identifies SQL as the standard language and correctly positions it between procedural algebra and declarative calculus.",
+      "oneShotPreview": "SQL is the standard declarative query language; relational algebra is procedural, relational calculus declarative."
+    },
+    {
+      "q": "4 b) Illustrate different operations in Relational algebra with an example.",
+      "a": "Relational algebra is a procedural language whose operations take relations as input and return new relations. The fundamental unary operations are Selection (sigma), which keeps rows satisfying a predicate, and Projection (pi), which keeps specified columns. Binary set operations require union compatibility: Union, Intersection, Difference, and Cartesian Product. Additional operations include Join, Division, and Rename. For example, on STUDENT(rollno, name, dept, marks), pi_name(sigma_marks>75(STUDENT)) returns the names of toppers, sigma_dept='CSE'(STUDENT) returns CSE students, and STUDENT join ENROLL combines student rows with their enrollment rows on a common attribute.",
+      "explanation": "Covers unary, set, and join operations and demonstrates them with a single consistent STUDENT example.",
+      "oneShotPreview": "σ selects rows, π projects columns, ∪ ∩ − sets, × product, ⋈ join, ÷ division, ρ rename; e.g. π_name(σ_marks>75(S))."
+    },
+    {
+      "q": "5 a) Compare the Selection and Projection in key constraints.",
+      "a": "Although the question mentions key constraints, Selection and Projection are unary relational-algebra operators, not key constraints. Selection (sigma) works horizontally: it returns only the tuples that satisfy a predicate, leaving every column present. Projection (pi) works vertically: it keeps only the named attributes and discards the other columns, also removing duplicate rows. They are usually combined, for example pi_name, salary(sigma_salary>50000(EMP)) first filters rows and then keeps two columns. In short, selection filters rows while projection filters columns.",
+      "explanation": "Clarifies the likely intent and gives the correct row-versus-column comparison with a combined expression.",
+      "oneShotPreview": "Selection σ filters rows by a predicate; Projection π picks columns and removes duplicates; combine as π(σ(R))."
+    },
+    {
+      "q": "5 b) Develop the working on union, intersection and set differences operations.",
+      "a": "Union, intersection, and set difference are binary relational-algebra operations and require the two relations to be union-compatible, meaning the same number of attributes with compatible domains. Union (R union S) returns every tuple present in R or S or both, with duplicates removed. Intersection (R intersection S) returns only tuples present in both relations. Set difference (R minus S) returns tuples present in R but not in S. For example, if R = {1, 2, 3} and S = {3, 4, 5}, then R union S = {1, 2, 3, 4, 5}, R intersection S = {3}, and R minus S = {1, 2}. In SQL these map to UNION, INTERSECT, and EXCEPT (or MINUS).",
+      "explanation": "Defines all three operations, states the union-compatibility requirement, and works through a concrete example with SQL equivalents.",
+      "oneShotPreview": "Union = in R or S; Intersection = in both; Difference = in R not S; SQL UNION/INTERSECT/EXCEPT."
+    },
+    {
+      "q": "6 a) Compare and contrast Relational Algebra and Relational Calculus.",
+      "a": "Relational algebra is procedural: the user specifies both the desired result and the sequence of operations (sigma, pi, join) used to compute it. Relational calculus is declarative, based on first-order logic: the user writes a predicate describing the result without saying how to obtain it. Algebra is closed, since every operator returns a relation so expressions can be nested, whereas calculus uses logical formulas and appears in tuple and domain forms. Algebra is operational and directly implementable as query-execution plans, while calculus is closer to a natural specification and underpins query optimisation theory. Both are equally expressive for relational queries, that is, relationally complete.",
+      "explanation": "Contrasts procedural versus declarative, closure versus logic, and practical roles, while noting equal expressive power.",
+      "oneShotPreview": "Algebra = procedural, step-by-step, closed; Calculus = declarative logic (tuple/domain); both relationally complete."
+    },
+    {
+      "q": "6 b) Discuss about the operators renaming, division with examples.",
+      "a": "Rename (rho) changes the name of a relation and/or its attributes. It is needed because algebra results are otherwise unnamed and when the same relation is used twice, as in a self-join: rho_x(EMPLOYEE) gives the table an alias x so E1 join E2 can compare rows of the same table, while rho_E(empid, ename)(EMPLOYEE) renames both relation and columns. Division (R division S) returns the values from R associated with every tuple of S; R must have more attributes than S and share some of them. If R = {(a,1), (a,2), (a,3), (b,1), (b,3)} and S = {1, 2}, then R division S = {a} because b lacks 2. A typical use is finding students enrolled in ALL courses.",
+      "explanation": "Explains rename as aliasing needed for self-joins and division as an all-values predicate, each with a worked example.",
+      "oneShotPreview": "Rename ρ aliases relations/columns for self-joins; Division R÷S gives R values matching every tuple of S."
+    },
+    {
+      "q": "7 What is Relational Calculus? Differentiate between Tuple Relational Calculus and Domain Relational Calculus with examples.",
+      "a": "Relational calculus is a declarative, non-procedural query language based on first-order logic: a query is a formula describing the properties of the required result, not the steps to fetch it. In Tuple Relational Calculus (TRC) variables range over whole tuples (rows) and a query is written {t | P(t)}; for example {t | EMPLOYEE(t) and t.salary > 50000} returns all highly paid employee rows. In Domain Relational Calculus (DRC) variables range over single domain values and a query is written {<x1, ..., xn> | P(x1, ..., xn)}; for example {<n, s> | exists e (<e, n, s> in EMPLOYEE and s > 50000)} returns name-salary pairs. The key difference is the variable type — tuples versus individual values — while both are declarative and equally expressive.",
+      "explanation": "Defines calculus, gives formal notation and an example for each variant, and states the core tuple-versus-value difference.",
+      "oneShotPreview": "Declarative logic query; TRC uses tuple variables {t | P(t)}, DRC uses value variables {<x> | P(x)}."
+    },
+    {
+      "q": "8 a) List and identify a common data types used in SQL with examples.",
+      "a": "SQL provides several built-in data type families. Numeric types include INT/INTEGER (25), SMALLINT, BIGINT, and DECIMAL(p,s) or NUMERIC (DECIMAL(8,2) holds 12345.67), plus FLOAT/REAL/DOUBLE for approximate values. Character types include CHAR(n), fixed length (CHAR(2) for 'TS'), VARCHAR(n), variable length (VARCHAR(50) for a name), and TEXT/CLOB for long strings. Date/time types include DATE ('2026-11-24'), TIME, and TIMESTAMP ('2026-11-24 10:30:00'). BOOLEAN stores TRUE/FALSE and BLOB stores binary large objects. These types define each column's domain and let the DBMS enforce value validity.",
+      "explanation": "Enumerates the standard SQL type families with an example of each, directly answering 'list and identify with examples'.",
+      "oneShotPreview": "INT, DECIMAL/NUMERIC, FLOAT; CHAR, VARCHAR, TEXT; DATE, TIME, TIMESTAMP; BOOLEAN; BLOB."
+    },
+    {
+      "q": "8 b) Design a table Employee using appropriate SQL data types(like INT,VARCHAR and DATE)",
+      "a": "A suitable definition is: CREATE TABLE Employee (emp_id INT PRIMARY KEY, emp_name VARCHAR(50) NOT NULL, dept VARCHAR(30), salary DECIMAL(10,2) CHECK (salary >= 0), doj DATE, is_active BOOLEAN DEFAULT TRUE). emp_id is an integer primary key uniquely identifying each employee, emp_name and dept use VARCHAR because names vary in length, salary uses DECIMAL(10,2) for exact currency with a non-negative check, doj (date of joining) is a DATE, and is_active is a BOOLEAN with a default. This design matches each attribute to its real domain and adds sensible integrity constraints.",
+      "explanation": "Provides concrete SQL using the requested types and justifies each choice, which is what 'design with appropriate types' requires.",
+      "oneShotPreview": "CREATE TABLE Employee(emp_id INT PK, emp_name VARCHAR(50), dept VARCHAR(30), salary DECIMAL(10,2), doj DATE, is_active BOOLEAN)."
+    },
+    {
+      "q": "9 Design a table student using appropriate SQL data types(like INT, FLOAT, CHAR,VARCHAR , BOOLEAN and DATE)",
+      "a": "A suitable definition is: CREATE TABLE Student (rollno INT PRIMARY KEY, name VARCHAR(50) NOT NULL, gender CHAR(1) CHECK (gender IN ('M','F','O')), percentage FLOAT, dept VARCHAR(30), is_hosteller BOOLEAN DEFAULT FALSE, dob DATE). rollno is an INT primary key, name uses VARCHAR for variable-length text, gender uses CHAR(1) because it is one fixed character, percentage uses FLOAT for a fractional value, dept uses VARCHAR, is_hosteller is a BOOLEAN, and dob is a DATE. This deliberately uses every requested type and reflects each attribute's real domain.",
+      "explanation": "Supplies concrete SQL that uses all six requested types (INT, FLOAT, CHAR, VARCHAR, BOOLEAN, DATE) and explains each choice.",
+      "oneShotPreview": "CREATE TABLE Student(rollno INT PK, name VARCHAR(50), gender CHAR(1), percentage FLOAT, dept VARCHAR(30), is_hosteller BOOLEAN, dob DATE)."
+    },
+    {
+      "q": "10 Classify Database languages with examples.",
+      "a": "Database languages are classified into four groups. Data Definition Language (DDL) defines the schema: CREATE, ALTER, DROP, TRUNCATE, RENAME, e.g., CREATE TABLE Student(...). Data Manipulation Language (DML) changes and retrieves data: SELECT, INSERT, UPDATE, DELETE, e.g., INSERT INTO Student VALUES(101,'Ravi','CSE'). Data Control Language (DCL) manages authorisation: GRANT and REVOKE, e.g., GRANT SELECT ON Student TO user1. Transaction Control Language (TCL) manages transactions: COMMIT, ROLLBACK, SAVEPOINT. Some texts also separate SELECT as Data Query Language (DQL). Together these allow defining, querying, updating, securing, and reliably committing database work.",
+      "explanation": "Gives the standard four-way classification with commands and an example of each, covering 'classify with examples'.",
+      "oneShotPreview": "DDL (CREATE/ALTER/DROP), DML (SELECT/INSERT/UPDATE/DELETE), DCL (GRANT/REVOKE), TCL (COMMIT/ROLLBACK/SAVEPOINT)."
+    },
+    {
+      "q": "11 a) Create the DDL Commands – Table Creation, Altering the table structures, truncating a table and dropping a table.",
+      "a": "DDL commands define and modify database objects. Table creation: CREATE TABLE Student (rollno INT PRIMARY KEY, name VARCHAR(50), dept VARCHAR(30));. Altering the structure: ALTER TABLE Student ADD COLUMN email VARCHAR(50); or ALTER TABLE Student MODIFY name VARCHAR(100);. Truncating removes all rows but keeps the structure: TRUNCATE TABLE Student;. Dropping removes the table entirely: DROP TABLE Student;. These illustrate the CREATE, ALTER, TRUNCATE, and DROP operations used to build and reshape a schema; TRUNCATE is usually not rollback-able whereas DROP deletes the object itself.",
+      "explanation": "Gives correct SQL for all four requested DDL operations and notes the key difference between TRUNCATE and DROP.",
+      "oneShotPreview": "CREATE TABLE ...; ALTER TABLE ... ADD/MODIFY; TRUNCATE TABLE ... (empty, keep structure); DROP TABLE ... (remove table)."
+    },
+    {
+      "q": "11 b) Develop the DML Commands – Insert, Select Commands, update& delete Commands.",
+      "a": "DML commands operate on the data inside tables. Insert adds rows: INSERT INTO Student (rollno, name, dept) VALUES (101, 'Ravi', 'CSE');. Select retrieves rows: SELECT rollno, name FROM Student WHERE dept = 'CSE';. Update modifies existing rows: UPDATE Student SET dept = 'IT' WHERE rollno = 101;. Delete removes rows: DELETE FROM Student WHERE rollno = 101;. Together these cover adding, retrieving, changing, and removing data; the WHERE clause in UPDATE and DELETE limits which rows are affected, and omitting it would affect every row.",
+      "explanation": "Gives correct SQL for all four requested DML commands with WHERE-clause examples and a caution about unrestricted updates and deletes.",
+      "oneShotPreview": "INSERT INTO ... VALUES; SELECT ... FROM ... WHERE; UPDATE ... SET ... WHERE; DELETE FROM ... WHERE."
+    }
+  ]
+}

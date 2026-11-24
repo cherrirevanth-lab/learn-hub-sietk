@@ -1,0 +1,122 @@
+{
+  "subject": "23HS0848",
+  "unit": 5,
+  "unitTitle": "Financial Accounting and Analysis",
+  "totalQuestions": 19,
+  "questions": [
+    {
+      "q": "1 a) Define journal.",
+      "a": "A journal is the book of original entry in which business transactions are recorded first, in chronological order, in a systematic debit-and-credit format. Each entry, called a journal entry, shows the date, the accounts to be debited and credited with their amounts, and a short narration explaining the transaction. It provides a permanent chronological record that serves as the basis for posting to the ledger.",
+      "explanation": "This defines the journal as the primary book of record where transactions are first entered with debit, credit and narration before being posted to the ledger.",
+      "oneShotPreview": "Book of original entry where transactions are first recorded chronologically with debit, credit and narration."
+    },
+    {
+      "q": "1 b) List out the types of Accounts.",
+      "a": "Accounts are commonly classified in two ways. On the modern/element basis they are assets, liabilities, equity (capital), revenue (income) and expenses. On the traditional basis they are personal accounts (individuals, firms, institutions), real accounts (assets and properties such as cash, land and machinery) and nominal accounts (expenses, losses, incomes and gains such as salary, rent and discount).",
+      "explanation": "It lists both accepted classifications of accounts, which is exactly what the question asks for.",
+      "oneShotPreview": "Assets, liabilities, equity, revenue, expenses; traditionally personal, real and nominal accounts."
+    },
+    {
+      "q": "1 c) Format of Ledger Account.",
+      "a": "A ledger account is drawn as a two-sided tabular form headed by the name of the account. The left side is the debit side and the right side is the credit side; each side has columns for Date, Particulars, Voucher/Folio (V/F) reference and Amount (Rs). The balance is worked out after each entry, and a separate page is maintained for every account.",
+      "explanation": "It describes the standard ledger format with separate debit and credit sides and the date, particulars, folio and amount columns, which is the expected answer.",
+      "oneShotPreview": "Two-sided account: Date | Particulars | V/F | Amount on debit (left) and credit (right) sides."
+    },
+    {
+      "q": "1 d) Define Accounting.",
+      "a": "Accounting is the process of identifying, measuring, recording, classifying and summarising financial transactions in a systematic manner, and then interpreting and communicating the resulting information to interested users. It is often called the language of business because it converts day-to-day transactions into meaningful financial statements such as the Trading and Profit and Loss Account and the Balance Sheet.",
+      "explanation": "This is the standard definition covering recording, classifying, summarising, interpreting and communicating financial information.",
+      "oneShotPreview": "Systematic recording, classifying, summarising and interpreting of financial transactions for decision-makers."
+    },
+    {
+      "q": "1 e) Write formula of current Ratio.",
+      "a": "Current Ratio = Current Assets / Current Liabilities. Current assets include stock, debtors, cash, bank, prepaid expenses and marketable securities; current liabilities include creditors, bills payable, outstanding expenses and short-term loans. A ratio of about 2:1 is generally considered satisfactory.",
+      "explanation": "It gives the exact formula and defines its components, which is all the question asks.",
+      "oneShotPreview": "Current Ratio = Current Assets ÷ Current Liabilities (ideal around 2:1)."
+    },
+    {
+      "q": "2 What is meant by Ratio? Explain briefly about various types of ratios.",
+      "a": "A ratio is a simple numerical relationship between two related figures expressed as a quotient, percentage or number of times, used to compare and interpret financial performance. Ratios are classified by purpose: liquidity ratios (current, quick, cash) test short-term solvency; activity or turnover ratios (inventory, debtors, creditors, total asset turnover) measure operating efficiency; profitability ratios (gross profit, net profit, return on capital) measure earnings; and solvency or leverage ratios (debt-equity, interest coverage) measure long-term financial strength. They may also be grouped as balance-sheet ratios and profit-and-loss ratios depending on the statements from which they are drawn.",
+      "explanation": "It defines a ratio and briefly lists the main categories with examples, matching the request for various types of ratios.",
+      "oneShotPreview": "Ratio = comparison of two figures; main types: liquidity, activity, profitability and solvency ratios."
+    },
+    {
+      "q": "3 Define accounting with the significance of accounting and its advantages.",
+      "a": "Accounting is the systematic identification, measurement, recording, classification and summarisation of financial transactions, followed by interpretation and communication of the results. Its significance lies in providing reliable financial information for planning, control and decision-making by management and in reporting stewardship to owners, investors, creditors, employees and the government. Its advantages are: it discloses profit or loss and the true financial position; it helps in budgeting, cost control and performance evaluation; it supplies data for taxation, statutory compliance and audit; it helps in raising finance and in comparing results over time; and it acts as a check against fraud and errors through a systematic record.",
+      "explanation": "It defines accounting and then covers both its significance and its concrete advantages, as the question requires.",
+      "oneShotPreview": "Accounting records and interprets financial data; aids planning, control, reporting, tax compliance and fraud prevention."
+    },
+    {
+      "q": "4 Write short notes on Journal and Ledger with format. Trading account with format",
+      "a": "Journal: the book of original (prime) entry where transactions are recorded first in chronological order; each entry shows date, particulars with debit and credit, amount and narration. Its columns are Date | Particulars | V/F | Debit (Rs) | Credit (Rs). Ledger: the book of final entry containing separate accounts for assets, liabilities, capital, incomes and expenses, posted from the journal; each account has Date | Particulars | V/F | Debit (Rs) | Credit (Rs), with debit on the left and credit on the right. Trading Account: prepared to ascertain gross profit or loss for a period. Its debit side shows Opening Stock, Purchases, Returns Inwards and Direct Expenses, while its credit side shows Sales, Returns Outwards and Closing Stock; the balancing figure is Gross Profit (or Gross Loss), which is transferred to the Profit and Loss Account.",
+      "explanation": "It gives short notes on all three requirements — journal, ledger and trading account — along with their column formats.",
+      "oneShotPreview": "Journal = chronological original entry; Ledger = classified final accounts; Trading A/c finds gross profit."
+    },
+    {
+      "q": "5 a) Elucidate the accounting cycle.",
+      "a": "The accounting cycle is the complete sequence of steps repeated every accounting period: (1) analyse and identify transactions from source documents; (2) record them as journal entries; (3) post the entries to the respective ledger accounts; (4) prepare an unadjusted trial balance to check that total debits equal total credits; (5) record adjusting entries for accruals, provisions, depreciation and closing stock; (6) prepare an adjusted trial balance; (7) prepare the financial statements — Trading and Profit and Loss Account and Balance Sheet; (8) pass closing entries to transfer revenues, expenses and drawings; and (9) prepare a post-closing trial balance to start the next period.",
+      "explanation": "It lists the full accounting cycle in order, from analysing transactions through to the post-closing trial balance, which is what elucidate requires.",
+      "oneShotPreview": "Analyse → Journal → Ledger → Trial Balance → Adjustments → Financial Statements → Closing entries."
+    },
+    {
+      "q": "5 b) State the concept of double entry book keeping.",
+      "a": "Double entry bookkeeping is a system in which every business transaction is recorded in two accounts with equal and opposite effects: one account is debited and another is credited for the same amount. Total debits therefore always equal total credits and the accounting equation Assets = Liabilities + Capital is maintained. For example, when goods are purchased for cash, the Purchases Account is debited and the Cash Account is credited. The system gives a complete record of each transaction and an in-built arithmetic check on the books.",
+      "explanation": "It states the core principle of two-sided equal entries and its self-checking nature, which is the concept asked for.",
+      "oneShotPreview": "Every transaction affects two accounts — equal debit and equal credit; total debits always equal total credits."
+    },
+    {
+      "q": "6 a) Write about various types of accounts and their rules governing each account",
+      "a": "Accounts are classified as personal, real and nominal in the traditional system, or as assets, liabilities, capital, revenue and expenses in the modern system. Traditional (golden) rules: Personal Account — debit the receiver, credit the giver; Real Account — debit what comes in, credit what goes out; Nominal Account — debit all expenses and losses, credit all incomes and gains. Modern rules follow the accounting equation: assets increase by debit and decrease by credit; liabilities and capital increase by credit and decrease by debit; expenses and losses are debited and incomes and gains are credited.",
+      "explanation": "It lists the types of accounts and states both the traditional golden rules and the modern debit/credit rules governing each type.",
+      "oneShotPreview": "Personal: debit receiver, credit giver; Real: debit in, credit out; Nominal: debit expenses, credit incomes."
+    },
+    {
+      "q": "6 b) write short notes of activity ratio.",
+      "a": "Activity ratios, also called turnover or efficiency ratios, measure how efficiently a firm uses its assets and resources to generate sales. Common examples are Inventory Turnover = Cost of Goods Sold / Average Inventory, Debtors Turnover = Credit Sales / Average Debtors, Creditors Turnover, Fixed Asset Turnover and Total Asset Turnover = Sales / Total Assets. Higher turnover generally indicates better utilisation and smoother operations, while a low ratio signals idle stock, slow collections or underused assets. The results are expressed in times or converted into days by dividing 365 by the turnover.",
+      "explanation": "It explains what activity ratios are, gives the main examples with formulas and states their interpretation, which is the expected short note.",
+      "oneShotPreview": "Activity ratios measure asset-use efficiency — inventory, debtors and total asset turnover (higher is better)."
+    },
+    {
+      "q": "7 From the following balance Sheet of XYZ Co. Ltd., Calculate liquidity ratios. Balance Sheet of XYZ Co. Ltd. as on 31.12.2022. Liabilities (Rs): Preference share capital 100; Equity share capital 150; General reserve 250; Debentures 400; Creditors 200; Bills Payable 50; Outstanding Expenses 50; Profit and loss account 100; Bank Loan 200; Total 1500. Assets (Rs): Lands and buildings 225; Plant and Machinery 250; Furniture and Fixtures 100; Stock 250; Debtors 125; Cash at Bank 250; Cash in hand 125; Prepaid expenses 50; Marketable securities 125; Total 1500.",
+      "a": "Current Assets = Stock 250 + Debtors 125 + Cash at Bank 250 + Cash in Hand 125 + Prepaid Expenses 50 + Marketable Securities 125 = Rs 925. Current Liabilities (short-term) = Creditors 200 + Bills Payable 50 + Outstanding Expenses 50 = Rs 300; debentures, share capital, reserves and the bank loan are treated as long-term. Current Ratio = 925 / 300 = 3.08 : 1. Quick Assets = Current Assets − Stock − Prepaid Expenses = 925 − 250 − 50 = Rs 625, so Quick Ratio = 625 / 300 = 2.08 : 1. Cash Ratio = (Cash in hand + Cash at Bank + Marketable Securities) / Current Liabilities = (125 + 250 + 125) / 300 = 1.67 : 1. Both main liquidity ratios exceed the usual norms of 2:1 and 1:1, indicating a very comfortable short-term liquidity position.",
+      "explanation": "It identifies current and quick assets and liabilities from the balance sheet, applies the standard formulas and interprets the results.",
+      "oneShotPreview": "Current ratio = 925/300 = 3.08:1; Quick ratio = 625/300 = 2.08:1 — strong liquidity."
+    },
+    {
+      "q": "8 Write short notes on Inventory Turnover Ratio and Inventory holding periods. And also calculate with following data. A Firm sold goods worth Rs 5,00,000 and its gross profit is 20 percent of sales value. The inventory at the beginning of the year was Rs 16000 and at end of the year was 14000.",
+      "a": "Inventory Turnover Ratio = Cost of Goods Sold / Average Inventory; it shows how many times stock is sold and replaced during a period. Cost of Goods Sold = Sales − Gross Profit = 5,00,000 − (20% of 5,00,000 = 1,00,000) = Rs 4,00,000. Average Inventory = (Opening Stock 16,000 + Closing Stock 14,000) / 2 = Rs 15,000. Inventory Turnover = 4,00,000 / 15,000 = 26.67 times. Inventory Holding Period = 365 / 26.67 = 13.7 days (about 0.45 months), i.e. Average Inventory / Cost of Goods Sold × 365. A high turnover with a short holding period shows that stock is moving quickly and is efficiently managed.",
+      "explanation": "It first derives the cost of goods sold from sales and gross profit, computes average inventory, and then applies both ratio formulas correctly.",
+      "oneShotPreview": "COGS 4,00,000 ÷ average stock 15,000 = 26.67 times; holding period ≈ 13.7 days."
+    },
+    {
+      "q": "9 a) Write a short note on the following Liquidity ratio.",
+      "a": "A liquidity ratio measures a firm's ability to meet its short-term obligations as they fall due. The main liquidity ratios are the Current Ratio (Current Assets / Current Liabilities, ideal about 2:1), the Quick or Acid-Test Ratio ((Current Assets − Stock − Prepaid Expenses) / Current Liabilities, ideal about 1:1) and the Cash Ratio ((Cash + Bank + Marketable Securities) / Current Liabilities). They are computed from the balance sheet and are the primary test of short-term solvency: a higher ratio gives creditors a greater cushion, while a very low ratio warns of possible liquidity distress.",
+      "explanation": "It defines liquidity ratios, lists the main ones with formulas and benchmarks, and states their purpose.",
+      "oneShotPreview": "Liquidity ratios test short-term solvency — current (2:1), quick (1:1) and cash ratio."
+    },
+    {
+      "q": "9 b) A firm's sales during the year were Rs. 4,00,000 of which 60 percent were on credit basis. The balance of debtors at the beginning and end of the year were 25,000 and 15,000 respectively. Calculate debtor's turnover ratio of the firm, also find out Debt collection period.",
+      "a": "Credit Sales = 60% of 4,00,000 = Rs 2,40,000. Average Debtors = (Opening Debtors 25,000 + Closing Debtors 15,000) / 2 = Rs 20,000. Debtors Turnover Ratio = Credit Sales / Average Debtors = 2,40,000 / 20,000 = 12 times. Debt Collection Period = 365 / 12 = 30.4 days (approximately one month). The firm thus collects its receivables about twelve times a year, roughly every 30 days, which indicates reasonably prompt collection.",
+      "explanation": "It correctly uses credit sales rather than total sales, averages opening and closing debtors, and converts the turnover into a collection period.",
+      "oneShotPreview": "Credit sales 2,40,000 ÷ average debtors 20,000 = 12 times; collection period ≈ 30 days."
+    },
+    {
+      "q": "10 a) Write short notes on Liquidity ratios.",
+      "a": "Liquidity ratios judge a company's capacity to pay off its current liabilities out of its current assets. Current Ratio = Current Assets / Current Liabilities (norm 2:1); Quick Ratio = (Current Assets − Stock − Prepaid Expenses) / Current Liabilities (norm 1:1); Cash Ratio = (Cash + Bank + Marketable Securities) / Current Liabilities. Working Capital = Current Assets − Current Liabilities is a related measure. A ratio above the norm indicates safety and a below-norm ratio indicates risk, though an excessively high ratio may mean funds are lying idle.",
+      "explanation": "It provides the short note with definitions, formulas, accepted norms and interpretation of liquidity ratios.",
+      "oneShotPreview": "Current 2:1, Quick 1:1 and Cash ratio — measure ability to pay short-term debts."
+    },
+    {
+      "q": "10 b) Explain Gross profit ratio and Net profit ratio.",
+      "a": "Gross Profit Ratio = Gross Profit / Net Sales × 100, where Gross Profit = Net Sales − Cost of Goods Sold. It shows the margin left after direct costs and reflects pricing policy and production efficiency. Net Profit Ratio = Net Profit (after tax) / Net Sales × 100; it shows what percentage of sales finally remains as profit for shareholders after all expenses, interest and tax. Both are profitability ratios: the gross ratio measures trading efficiency, while the net ratio measures overall operating efficiency and is normally lower.",
+      "explanation": "It gives both formulas, defines the components and distinguishes what each ratio measures.",
+      "oneShotPreview": "GP ratio = Gross Profit / Net Sales × 100; NP ratio = Net Profit / Net Sales × 100."
+    },
+    {
+      "q": "11 Journalize the following transactions in the books of Ms Ambani: 2023 Jan 1 Ambani commenced business with cash Rs.5,00,000; 2 Purchased goods for cash Rs.20,000; 3 Purchased goods from Mohan Rs.6,000; 7 Paid into bank Rs.5,000; 10 Purchased furniture Rs.2000; 20 Sold goods to Suresh on credit Rs.5,000; 25 Cash sales Rs. 3,500; 26 Paid to Mohan on account Rs.3,000, Paid salaries Rs.2,800.",
+      "a": "Journal entries in the books of Ms Ambani: Jan 1 — Cash A/c Dr 5,00,000; To Capital A/c 5,00,000 (business commenced with cash). Jan 2 — Purchases A/c Dr 20,000; To Cash A/c 20,000. Jan 3 — Purchases A/c Dr 6,000; To Mohan A/c 6,000 (credit purchase). Jan 7 — Bank A/c Dr 5,000; To Cash A/c 5,000. Jan 10 — Furniture A/c Dr 2,000; To Cash A/c 2,000. Jan 20 — Suresh A/c Dr 5,000; To Sales A/c 5,000 (credit sale). Jan 25 — Cash A/c Dr 3,500; To Sales A/c 3,500. Jan 26 — Mohan A/c Dr 3,000; To Cash A/c 3,000, and Salaries A/c Dr 2,800; To Cash A/c 2,800.",
+      "explanation": "Each entry follows double-entry rules — the asset, expense or receiver is debited and the source of value (cash, creditor, sales or capital) is credited — so every transaction balances.",
+      "oneShotPreview": "Cash Dr / Capital Cr; Purchases Dr / Cash or Mohan Cr; Suresh Dr / Sales Cr; Mohan and salaries paid in cash."
+    }
+  ]
+}

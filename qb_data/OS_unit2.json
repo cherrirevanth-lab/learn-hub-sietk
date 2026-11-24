@@ -1,0 +1,146 @@
+{
+  "subject": "23CS0511",
+  "unit": 2,
+  "unitTitle": "Processes, Threads and CPU Scheduling",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "q": "1 a) Define Process and give its structure in memory",
+      "a": "A process is a program in execution, with a current state, a program counter, a stack and a data section; it is the basic unit of work in an operating system. Its memory image is laid out as a text (code) segment, a data segment for global/static variables, a heap for dynamically allocated memory that grows upward, and a stack for parameters, return addresses and local variables that grows downward. The kernel also keeps a Process Control Block for the process. The text segment is usually read-only and sharable, while heap and stack grow toward each other within the process address space.",
+      "explanation": "This gives the standard definition of a process and the four classic memory segments, which is exactly what the two-mark question asks for.",
+      "oneShotPreview": "Program in execution; memory = text, data, heap (up), stack (down) plus a PCB."
+    },
+    {
+      "q": "1 b) Interpret the difference between preemptive and non-preemptive scheduling.",
+      "a": "In non-preemptive scheduling, once a process gets the CPU it keeps it until it terminates or voluntarily blocks for I/O. In preemptive scheduling, the OS can forcibly take the CPU away, for example when a time quantum expires, a higher-priority process arrives, or a shorter job arrives (SRTF). Preemption gives better response time and stops one long job from monopolising the CPU, but it costs extra context switches and needs care with shared data. Non-preemptive scheduling is simpler with lower overhead but can cause the convoy effect.",
+      "explanation": "The essential distinction is whether the OS can forcibly reclaim the CPU; the examples and trade-offs demonstrate understanding of both modes.",
+      "oneShotPreview": "Non-preemptive: runs till done or blocked. Preemptive: OS forcibly switches on quantum, priority or shorter job."
+    },
+    {
+      "q": "1 c) List Scheduling Criteria",
+      "a": "The main scheduling criteria are CPU utilisation (keep the CPU busy), throughput (processes completed per unit time), turnaround time (submission to completion), waiting time (time spent in ready queues), response time (request to first response), and fairness or determinism (predictable service with no starvation). Different algorithms optimise different criteria: SJF minimises average waiting time, while FCFS is simple and fair but can make short jobs wait a long time.",
+      "explanation": "These are the standard scheduling criteria listed in operating-system texts, with a brief meaning for each.",
+      "oneShotPreview": "CPU utilisation, throughput, turnaround time, waiting time, response time and fairness."
+    },
+    {
+      "q": "1 d) Describe Gantt chart with an example.",
+      "a": "A Gantt chart is a horizontal timeline used to visualise a CPU schedule: time increases left to right and each process appears as a labelled block covering the interval in which it holds the CPU. For example, under FCFS with P1 (burst 5) and P2 (burst 3) starting at time 0, the chart is [0–5 P1][5–8 P2]; P1 waits 0 and P2 waits 5, giving an average waiting time of 2.5. From the chart we can read completion times directly and then calculate turnaround and waiting times.",
+      "explanation": "The answer defines the chart, supplies a concrete timeline and shows how scheduling metrics are derived from it.",
+      "oneShotPreview": "CPU timeline, e.g. [0-5 P1][5-8 P2]; used to read completion and waiting times."
+    },
+    {
+      "q": "1 e) What is meant by convoy effect?",
+      "a": "The convoy effect occurs with non-preemptive FCFS when one long CPU-bound process holds the CPU while many short I/O-bound processes queue up behind it waiting for the CPU before they can perform their next I/O. Both CPU and I/O device utilisation fall, because the devices are idle while everything waits for the single long job. For instance, a 24 ms job ahead of several 3 ms jobs makes each short job wait more than 20 ms. Preemptive, SJF or SRTF scheduling avoids this effect.",
+      "explanation": "It links the effect to FCFS with a long CPU-bound process and explains the resulting drop in CPU and device utilisation.",
+      "oneShotPreview": "One long CPU job makes short I/O jobs bunch up; FCFS gives poor CPU and I/O utilisation."
+    },
+    {
+      "q": "2 a) With a neat sketch, explain process state diagram.",
+      "a": "A process passes through five basic states: new (being created), ready (in main memory, waiting for the CPU), running (executing), waiting or blocked (waiting for an event such as I/O), and terminated (finished). The transitions are new→ready (admitted), ready→running (dispatch), running→ready (preemption or time slice expiry), running→waiting (I/O request or wait), waiting→ready (event completed), and running→terminated (exit). A sketch draws these five states as boxes with arrows for each transition; adding suspend introduces ready-suspended and blocked-suspended states for swapped-out processes.",
+      "explanation": "The five-state model and its transitions are the standard process state diagram; describing the arrows represents the sketch in text form.",
+      "oneShotPreview": "New→Ready→Running→Waiting→Terminated, with Running↔Ready and Waiting→Ready arrows."
+    },
+    {
+      "q": "2 b) Explain Process Control Block with neat diagram.",
+      "a": "The Process Control Block (PCB), or task control block, is the kernel data structure holding all information needed to manage a process. It stores the process state, PID and parent PID, program counter, CPU registers, CPU-scheduling information such as priority and queue pointers, memory-management information such as page tables or base/limit registers, accounting information such as CPU time used, and I/O status information such as open files and allocated devices. The OS saves the running process state into its PCB on a context switch and reloads it when that process is dispatched again. A diagram shows a box with these fields linked to the ready queue and the various device queues.",
+      "explanation": "Lists all standard PCB fields and explains its role as the saved context of a process, which is the core of the expected answer.",
+      "oneShotPreview": "Kernel record of state, PID, PC, registers, priority, memory, accounting and I/O status; saved on a switch."
+    },
+    {
+      "q": "3 a) What are scheduling queues in operating systems, and how do they manage processes during execution?",
+      "a": "Scheduling queues are the lists that hold processes, represented by their PCBs, while they wait for service. The job queue contains all processes in the system, the ready queue contains processes in main memory that are ready to run, and device queues contain processes waiting for a particular I/O device. Each queue is normally a linked list of PCBs. A process moves from the ready queue to the CPU when dispatched, to a device queue when it requests I/O, and back to the ready queue when the I/O completes, and the scheduler chooses which PCB to run next.",
+      "explanation": "Correctly distinguishes job, ready and device queues and traces how a PCB moves among them during execution.",
+      "oneShotPreview": "Job, ready and device queues of PCBs; processes move between them while waiting for CPU or I/O."
+    },
+    {
+      "q": "3 b) Describe about the different types of Schedulers in operating system.",
+      "a": "There are three schedulers. The long-term or job scheduler selects jobs from the job queue into the ready queue, controls the degree of multiprogramming and runs infrequently. The short-term or CPU scheduler selects which ready process gets the CPU and runs every few milliseconds. The medium-term scheduler swaps processes between main memory and disk to reduce the degree of multiprogramming when memory is pressured. In time-sharing systems the long-term scheduler is often absent or minimal, while the short-term scheduler uses algorithms such as FCFS, SJF, round robin or priority.",
+      "explanation": "Names all three schedulers and distinguishes them by function and frequency of invocation, matching the textbook classification.",
+      "oneShotPreview": "Long-term admits jobs, short-term picks the next CPU job, medium-term swaps processes in and out."
+    },
+    {
+      "q": "4 a) Describe Context Switching and the types of context switching triggers in detail.",
+      "a": "A context switch is the mechanism in which the OS saves the state of the running process into its PCB and loads the saved state of another process so that it can run. Typical triggers are expiry of the time quantum in round robin, preemption by a higher-priority process, arrival of a shorter job under SRTF, a process blocking on I/O or a wait call, an interrupt, and process termination. The steps are to save the old process registers and program counter, update its PCB state, select a new process, load its registers, program counter and memory map, and begin execution. A context switch is pure overhead, so the OS minimises it; its cost depends on how many registers must be saved and whether caches or TLBs must be flushed.",
+      "explanation": "Defines the save-and-restore operation, lists the main triggers and notes the overhead, covering all parts of the question.",
+      "oneShotPreview": "Save old process state into its PCB, load new one; triggered by quantum expiry, preemption, I/O block, interrupt or exit."
+    },
+    {
+      "q": "4 b) Give the difference between Process and Thread",
+      "a": "A process is a program in execution with its own address space and resources, while a thread is a lightweight unit of execution inside a process that shares the process code, data and open files. A thread has its own thread ID, program counter, register set and stack, and switching between threads of the same process avoids changing the memory map, so thread switches are cheaper than process context switches. Processes are isolated, so a crash in one does not directly affect another, whereas threads share memory and need synchronisation to avoid races. Thread creation and communication are faster and easier, but processes give better protection.",
+      "explanation": "Highlights resource ownership versus execution state, isolation and switching cost, which are the standard process-thread distinctions.",
+      "oneShotPreview": "Process owns address space and resources; thread has PC/registers/stack but shares them — cheaper, less isolated."
+    },
+    {
+      "q": "5 Analyze the different types of process operations in operating system.",
+      "a": "The fundamental process operations are creation, termination, wait and exec. fork() creates a child as a copy of the parent, initially sharing the same code, data and stack values, and returns 0 to the child and the child PID to the parent. exec() replaces the current process memory image with a new program. wait() suspends the parent until a child terminates and collects the child exit status, while exit() ends a process, closes its resources and notifies the parent. In addition, processes can block or sleep on an event, be woken up when the event occurs, and in some systems be suspended and later resumed. These primitives let shells and servers spawn and coordinate work.",
+      "explanation": "Covers fork, exec, wait and exit with their effects, plus blocking, wakeup and suspension, which are the classic process operations.",
+      "oneShotPreview": "fork creates a child, exec replaces the image, wait collects child status, exit terminates; plus block, wakeup and suspend."
+    },
+    {
+      "q": "6 a) Examine in detail about Inter Process Communication.",
+      "a": "Interprocess communication (IPC) lets processes exchange data and synchronise their actions. The two basic models are shared memory, where processes map a common memory region and read and write it directly, which is fast but needs explicit synchronisation such as semaphores, and message passing, where the kernel supplies send() and receive() primitives to transfer messages through a queue, which is simpler and safer but slower because of kernel copying. Message passing may be direct, naming the receiver, or indirect, using a mailbox or port, and operations may be blocking or non-blocking. Common IPC mechanisms include pipes, named pipes, message queues, semaphores, shared-memory segments and sockets, with sockets also supporting communication across a network.",
+      "explanation": "Covers both IPC models, direct and indirect and blocking and non-blocking message passing, plus concrete OS mechanisms.",
+      "oneShotPreview": "Shared memory is fast but needs sync; message passing uses send/receive via queues; pipes, semaphores and sockets."
+    },
+    {
+      "q": "6 b) Define thread. Analyze the difference between User-Level & Kernel- Level Thread",
+      "a": "A thread is a lightweight unit of execution within a process, having its own program counter, registers and stack but sharing the process address space, code, data and resources. User-level threads are managed entirely by a user-space library and are invisible to the kernel, so they are cheap to create and switch and can use a custom scheduling policy, but one blocking system call or page fault blocks the whole process and they cannot run on multiple CPUs. Kernel-level threads are managed by the kernel and are individually schedulable, so a blocking thread does not stop its siblings and they can execute in parallel on a multiprocessor, but creation and switching are more expensive. Hybrid many-to-many models combine both approaches.",
+      "explanation": "Defines a thread and contrasts management, blocking behaviour, parallelism and cost, the core differences between ULTs and KLTs.",
+      "oneShotPreview": "ULT: library-managed, cheap, blocks whole process, no parallelism. KLT: kernel-managed, parallel, costlier."
+    },
+    {
+      "q": "7 a) Discuss multithreading models with neat diagrams",
+      "a": "Three multithreading models map user threads to kernel threads. In the many-to-one model many user threads map to a single kernel thread, so it is cheap but a blocking call blocks all of them and there is no parallelism. In the one-to-one model each user thread maps to one kernel thread, giving true parallelism and independent blocking at the cost of expensive kernel thread creation, as in Windows and Linux. In the many-to-many model many user threads are multiplexed onto a smaller or equal pool of kernel threads, balancing cost and parallelism and allowing a blocked thread to be replaced by another kernel thread, as in Solaris and the Java VM. A two-level variant lets a user thread be bound permanently to one kernel thread. The diagrams show n user threads above one kernel thread, one above one, and m above n respectively.",
+      "explanation": "Lists all three models with their trade-offs and examples and describes the corresponding diagrams.",
+      "oneShotPreview": "Many-to-one is cheap but blocks; one-to-one is parallel but costly; many-to-many gives both."
+    },
+    {
+      "q": "7 b) Explain in detail about Thread Libraries and its implementations",
+      "a": "A thread library is a collection of user-space API routines for creating, synchronising and destroying threads, typically providing operations such as thread create, join, yield and mutex or condition-variable functions. It can be implemented entirely in user space with no kernel support, as in the early POSIX Pthreads or GNU Pth, in which case the kernel sees only one thread. It can also be kernel-supported, as in Win32 threads, Java threads and modern Pthreads, where each library thread is backed by a kernel thread created through a system call. POSIX Pthreads is an API standard that may be implemented either way, Win32 is kernel-level, and Java threads are managed by the JVM and usually mapped to kernel threads. The library hides scheduling and context-switch details from the programmer.",
+      "explanation": "Defines thread libraries, lists typical API operations and distinguishes user-space from kernel-supported implementations with examples.",
+      "oneShotPreview": "Thread API for create/join/yield/sync; implemented in user space or backed by kernel threads (Pthreads, Win32, Java)."
+    },
+    {
+      "q": "8 a) What are common threading issues in concurrent programming, and how can they be effectively prevented or managed?",
+      "a": "Common threading issues include race conditions from interleaved updates to shared data, lost updates, deadlock from circular waiting for locks, livelock, starvation, inconsistent data from unsynchronised access, and hard-to-reproduce nondeterministic bugs. They are managed with synchronisation primitives such as mutexes, semaphores, monitors and condition variables that enforce mutual exclusion, and by preventing circular wait through a consistent lock ordering and timeouts. Designing with immutable data, thread-safe structures or message passing instead of shared mutable state removes many races, while race detectors and stress testing catch the rest. The producer-consumer and readers-writers problems are classic settings where these techniques are applied.",
+      "explanation": "Names the main concurrency hazards and pairs each with a concrete prevention or management technique.",
+      "oneShotPreview": "Races, deadlock and starvation are handled with locks, semaphores, lock ordering, immutable data and message passing."
+    },
+    {
+      "q": "8 b) Evaluate FCFS CPU Scheduling algorithm for given Problem: [Process P1 P2 P3 P4; Process Time 24 3 5 6]",
+      "a": "FCFS runs processes in arrival order without preemption. With P1=24, P2=3, P3=5 and P4=6, all arriving at time 0, the Gantt chart is [0–24 P1][24–27 P2][27–32 P3][32–38 P4]. Completion times are 24, 27, 32 and 38; turnaround times are the same because arrivals are at 0; waiting times are 0, 21, 22 and 26. Average waiting time is (0+21+22+26)/4 = 17.25 ms and average turnaround time is (24+27+32+38)/4 = 30.25 ms. The very large waiting times show the convoy effect: short jobs are stuck behind the long first job even though the CPU stays 100 percent busy.",
+      "explanation": "Gives the complete FCFS timeline and metric calculations, and the large waiting times illustrate why FCFS is unfair to short jobs.",
+      "oneShotPreview": "[P1 0-24][P2 24-27][P3 27-32][P4 32-38]; average waiting time 17.25 ms — convoy effect."
+    },
+    {
+      "q": "9 a) Consider 3 processes P1, P2 and P3, which require 5, 7 and 4 time units and arrive at time 0, 1 and 3. Draw the Gant chart calculate averages process completion and average waiting time using SJF scheduling algorithm.",
+      "a": "Non-preemptive SJF selects the shortest available job whenever the CPU becomes free. At time 0 only P1 has arrived, so it runs 0–5; at time 5 both P2 (7, arrived at 1) and P3 (4, arrived at 3) are waiting, so P3 runs 5–9 and then P2 runs 9–16. The Gantt chart is [0–5 P1][5–9 P3][9–16 P2]. Completion times are P1=5, P3=9 and P2=16; turnaround times are P1=5, P2=15 and P3=6; waiting times are P1=0, P2=8 and P3=2. Average waiting time is (0+8+2)/3 = 3.33 time units, average turnaround is 8.67, and average completion time is (5+9+16)/3 = 10.",
+      "explanation": "Correctly applies non-preemptive SJF with arrival times and computes every requested average from the Gantt chart.",
+      "oneShotPreview": "SJF: [P1 0-5][P3 5-9][P2 9-16]; average wait 3.33, average completion 10."
+    },
+    {
+      "q": "9 b) Deploy SRJF CPU Scheduling algorithms for given Problem: [Process P1 P2 P3 P4; Burst Time 8 10 3 4; Arrival Time 0 4 4 10]",
+      "a": "SRJF, or shortest remaining time first, always runs the process with the least remaining burst. P1 runs from 0 to 4; at time 4 P3 arrives with burst 3, shorter than P1 remaining 4, so P3 runs 4–7. P1 then runs 7–11, and although P4 (4) arrives at time 10 it does not preempt because P1 has only 3 left. P4 runs 11–15 and P2 runs 15–25. The Gantt chart is [0–4 P1][4–7 P3][7–11 P1][11–15 P4][15–25 P2]. Completion times are P1=11, P2=25, P3=7 and P4=15; waiting times are P1=3, P2=11, P3=0 and P4=1. Average waiting time is 3.75 ms and average turnaround time is (11+21+3+5)/4 = 10 ms.",
+      "explanation": "Correctly handles the preemption at time 4 and the non-preemption at time 10, then derives the metrics accurately.",
+      "oneShotPreview": "SRTF: [P1 0-4][P3 4-7][P1 7-11][P4 11-15][P2 15-25]; average wait 3.75 ms."
+    },
+    {
+      "q": "10 a) Build Priority CPU Scheduling algorithms for given Problem: [Process P1 P2 P3 P4; Process Time 8 4 9 5; Priority 3 2 4 1]",
+      "a": "Assuming a lower priority number means higher priority and that scheduling is non-preemptive, the execution order is P4 (1), P2 (2), P1 (3) and P3 (4). With all processes arriving at 0 the Gantt chart is [0–5 P4][5–9 P2][9–17 P1][17–26 P3]. Completion times are 5, 9, 17 and 26; waiting times are P4=0, P2=5, P1=9 and P3=17. Average waiting time is (0+5+9+17)/4 = 7.75 ms and average turnaround time is (5+9+17+26)/4 = 14.25 ms. Priority scheduling can starve low-priority processes, which is normally fixed by aging, gradually increasing the priority of a process that has waited a long time.",
+      "explanation": "States the priority convention explicitly, produces the correct schedule and metrics and notes the classic starvation and aging issue.",
+      "oneShotPreview": "Priority (lower is higher): [P4 0-5][P2 5-9][P1 9-17][P3 17-26]; average wait 7.75 ms."
+    },
+    {
+      "q": "10 b) Evaluate Round Robin CPU Scheduling algorithm for given Problem: Time slice =3 ms. [Process P1 P2 P3 P4; Process Time 10 5 18 6; Arrival Time 5 3 0 4]",
+      "a": "Round Robin gives each ready process a 3 ms quantum in FIFO order. The simulation is [0–3 P3][3–6 P3][6–9 P2][9–12 P4][12–15 P3][15–18 P1][18–20 P2][20–23 P4][23–26 P3][26–29 P1][29–32 P3][32–35 P1][35–38 P3][38–39 P1]. Completion times are P1=39, P2=20, P3=38 and P4=23; turnaround times are 34, 17, 38 and 19; waiting times are P1=24, P2=12, P3=20 and P4=13. Average waiting time is 17.25 ms and average turnaround time is 27 ms. Round robin is fair and responsive for time sharing, but a small quantum raises context-switch overhead while a large quantum degenerates toward FCFS.",
+      "explanation": "Shows the complete quantum-by-quantum timeline with correct arrivals, derives all metrics and notes the quantum trade-off.",
+      "oneShotPreview": "RR with q=3: completions P1@39, P2@20, P3@38, P4@23; average wait 17.25 ms."
+    },
+    {
+      "q": "11 Illustrate the scheduling strategy for a modern cloud-based system that effectively handles both CPU-bound and I/O-bound processes using multiple processors.",
+      "a": "A modern cloud scheduler combines a multi-level feedback queue with preemptive round robin inside each queue and SMP load balancing across processors. New jobs enter a high-priority queue with a short quantum; I/O-bound jobs block early and stay in high-priority queues for quick response, while CPU-bound jobs exhaust their quantum and are demoted to lower-priority queues with longer quanta. On a multiprocessor each core has its own ready queue and work stealing or migration balances the load, with CPU affinity used to keep threads on cache-warm cores. Fair-share or credit-based scheduling such as the Completely Fair Scheduler tracks virtual runtime, and aging prevents low-priority jobs from starving. This mix gives low latency to interactive work, high throughput for batch work and good utilisation of all cores.",
+      "explanation": "Combines multi-level feedback queues, SMP load balancing and fair-share scheduling and explains how each class of job is served.",
+      "oneShotPreview": "MLFQ plus SMP load balancing: I/O jobs stay high priority, CPU jobs demote; aging or CFS keeps it fair."
+    }
+  ]
+}

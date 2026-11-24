@@ -1,0 +1,341 @@
+import { useState, useEffect } from "react";
+import { useAuth, ACCENTS } from "../context/AuthContext";
+import { BRANCHES } from "../data/subjects";
+import { APP_NAME } from "../config";
+import {
+  getNotifyPref, saveNotifyPref, notificationSupported, currentPermission,
+  requestPermission, sendNotification, registerSW,
+} from "../utils/notifications";
+import {
+  UserRound,
+  Palette,
+  Save,
+  CheckCircle2,
+  Sun,
+  Moon,
+  Monitor,
+  GraduationCap,
+  Mail,
+  Bell,
+  BellOff,
+  Send,
+  Info,
+} from "lucide-react";
+
+export default function Settings() {
+  const { user, updateProfile, appearance, setTheme, setAccent } = useAuth();
+  const [form, setForm] = useState({
+    name: user.name || "",
+    email: user.email || "",
+    branch: user.branch || "CSE",
+    semester: user.semester || 2,
+  });
+  const [saved, setSaved] = useState(false);
+  const [notifyPref, setNotifyPref] = useState(getNotifyPref());
+  const [notifyStatus, setNotifyStatus] = useState(currentPermission());
+
+  useEffect(() => { registerSW(); }, []);
+
+  const toggleNotifications = async () => {
+    if (!notificationSupported()) {
+      setNotifyStatus("unsupported");
+      return;
+    }
+    if (notifyPref.enabled) {
+      const next = { ...notifyPref, enabled: false };
+      setNotifyPref(next); saveNotifyPref(next);
+      return;
+    }
+    const perm = await requestPermission();
+    setNotifyStatus(perm);
+    if (perm === "granted") {
+      const next = { ...notifyPref, enabled: true };
+      setNotifyPref(next); saveNotifyPref(next);
+      await sendNotification({ title: "Notifications enabled ✅", body: "You'll get study reminders from Learn Hub.", url: "/roadmap" });
+    }
+  };
+
+  const changeReminder = (reminder) => {
+    const next = { ...notifyPref, reminder, lastShown: null };
+    setNotifyPref(next); saveNotifyPref(next);
+  };
+
+  const testNotification = async () => {
+    const ok = await sendNotification({ title: "Learn Hub · Test 🔔", body: "Your notifications are working perfectly!", url: "/roadmap" });
+    setNotifyStatus(ok ? "sent" : currentPermission());
+  };
+
+  const saveProfile = (e) => {
+    e.preventDefault();
+    updateProfile({ ...form, semester: Number(form.semester) });
+    setSaved(true);
+    setTimeout(() => setSaved(false), 2500);
+  };
+
+  const themeOptions = [
+    { key: "light", label: "Light", icon: Sun },
+    { key: "dark", label: "Dark", icon: Moon },
+    { key: "system", label: "System", icon: Monitor },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
+      {/* Header */}
+      <div>
+        <div className="inline-flex items-center gap-2 text-xs font-semibold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full mb-2">
+          <UserRound className="w-3 h-3" /> YOUR ACCOUNT
+        </div>
+        <h1 className="text-3xl font-display font-bold text-slate-900">Settings</h1>
+        <p className="text-sm text-slate-500 mt-1">Set up your profile and personalize how {APP_NAME} looks.</p>
+      </div>
+
+      {!user.profileComplete && (
+        <div className="panel p-4 border-amber-200 bg-amber-50 flex items-start gap-3">
+          <Info className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+          <div>
+            <p className="text-sm font-semibold text-amber-900">Complete your profile</p>
+            <p className="text-xs text-amber-700 mt-0.5">
+              Fill in your name, branch and semester below and click Save Profile. Your subjects and study plan depend on this.
+            </p>
+          </div>
+        </div>
+      )}
+
+      <div className="grid lg:grid-cols-2 gap-6">
+        {/* Profile */}
+        <div className="panel p-6">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center">
+              <UserRound className="w-5 h-5 text-brand-600" />
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-slate-900">Profile</h2>
+              <p className="text-xs text-slate-500">
+                {user.profileComplete ? "Update your details anytime" : "Create your profile to get started"}
+              </p>
+            </div>
+            {user.profileComplete && (
+              <span className="ml-auto chip border-emerald-200 bg-emerald-50 text-emerald-700">
+                <CheckCircle2 className="w-3 h-3" /> Complete
+              </span>
+            )}
+          </div>
+
+          <form onSubmit={saveProfile} className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-slate-700 mb-1.5">Full Name</label>
+              <div className="relative">
+                <GraduationCap className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <input
+                  className="input pl-10"
+                  placeholder="Your name"
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-slate-700 mb-1.5">Email</label>
+              <div className="relative">
+                <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <input
+                  type="email"
+                  className="input pl-10"
+                  placeholder="you@college.edu"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-1.5">Branch</label>
+                <select
+                  className="input"
+                  value={form.branch}
+                  onChange={(e) => setForm({ ...form, branch: e.target.value })}
+                >
+                  {BRANCHES.map((b) => (
+                    <option key={b.key} value={b.key}>{b.key}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-1.5">Semester</label>
+                <select
+                  className="input"
+                  value={form.semester}
+                  onChange={(e) => setForm({ ...form, semester: e.target.value })}
+                >
+                  {[1, 2, 3, 4, 5, 6, 7, 8].map((s) => (
+                    <option key={s} value={s}>Sem {s}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-slate-700 mb-1.5">Account type</label>
+              <div className="input bg-slate-50 capitalize flex items-center text-slate-500">
+                {user.role}
+              </div>
+              <p className="text-xs text-slate-400 mt-1">Role is set at sign-in and cannot be changed here.</p>
+            </div>
+
+            <button type="submit" className="btn-primary w-full">
+              <Save className="w-4 h-4" /> Save Profile
+            </button>
+            {saved && (
+              <p className="text-sm text-emerald-600 text-center flex items-center justify-center gap-1.5">
+                <CheckCircle2 className="w-4 h-4" /> Profile saved successfully!
+              </p>
+            )}
+          </form>
+        </div>
+
+        {/* Appearance */}
+        <div className="space-y-6">
+          <div className="panel p-6">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center">
+                <Palette className="w-5 h-5 text-brand-600" />
+              </div>
+              <div>
+                <h2 className="font-display font-bold text-slate-900">Appearance</h2>
+                <p className="text-xs text-slate-500">Theme and accent color apply instantly</p>
+              </div>
+            </div>
+
+            {/* Theme */}
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-slate-700 mb-2">Theme</label>
+              <div className="grid grid-cols-3 gap-2">
+                {themeOptions.map((t) => {
+                  const active = appearance.theme === t.key;
+                  return (
+                    <button
+                      key={t.key}
+                      onClick={() => setTheme(t.key)}
+                      className={`flex flex-col items-center gap-2 p-3 rounded-xl border-2 transition-all ${
+                        active ? "border-brand-500 bg-brand-50" : "border-slate-200 hover:border-slate-300"
+                      }`}
+                    >
+                      <t.icon className={`w-5 h-5 ${active ? "text-brand-600" : "text-slate-400"}`} />
+                      <span className={`text-xs font-medium ${active ? "text-brand-700" : "text-slate-600"}`}>{t.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              <p className="text-xs text-slate-400 mt-2">
+                Dark mode changes surfaces and text. System follows your device setting.
+              </p>
+            </div>
+
+            {/* Accent */}
+            <div>
+              <label className="block text-sm font-medium text-slate-700 mb-2">Accent Color</label>
+              <div className="grid grid-cols-4 gap-2">
+                {Object.entries(ACCENTS).map(([key, palette]) => {
+                  const active = appearance.accent === key;
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => setAccent(key)}
+                      className={`flex flex-col items-center gap-1.5 p-2.5 rounded-xl border-2 transition-all ${
+                        active ? "border-slate-800 bg-slate-50" : "border-slate-200 hover:border-slate-300"
+                      }`}
+                      title={key}
+                    >
+                      <span
+                        className="w-7 h-7 rounded-full shadow-inner ring-2 ring-white"
+                        style={{ background: palette[500] }}
+                      />
+                      <span className="text-[10px] font-medium capitalize text-slate-600">{key}</span>
+                      {active && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 -mt-1" />}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          {/* Preview */}
+          <div className="panel p-6 bg-gradient-to-r from-brand-50 to-white">
+            <h3 className="text-sm font-semibold text-slate-700 mb-3">Live Preview</h3>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-600/25">
+                <GraduationCap className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <p className="font-display font-bold text-slate-900 text-sm">{user.name || "Your Name"}</p>
+                <p className="text-xs text-slate-500 capitalize">{user.role} · {user.branch} · Sem {user.semester}</p>
+              </div>
+              <span className="px-3 py-1.5 rounded-lg bg-brand-600 text-white text-xs font-semibold">
+                Preview
+              </span>
+            </div>
+            <div className="mt-3 flex gap-2">
+              <span className="chip border-brand-200 bg-brand-100 text-brand-700">Primary</span>
+              <span className="chip border-accent-200 bg-cyan-50 text-cyan-700">Accent</span>
+              <span className="chip border-slate-200 bg-white text-slate-600">Surface</span>
+            </div>
+          </div>
+
+          {/* Notifications */}
+          <div className="panel p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-rose-100 flex items-center justify-center">
+                <Bell className="w-5 h-5 text-rose-600" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-slate-900">Notifications</h3>
+                <p className="text-xs text-slate-500">Study reminders on this device</p>
+              </div>
+            </div>
+
+            <button
+              onClick={toggleNotifications}
+              disabled={notifyStatus === "unsupported" || notifyStatus === "denied"}
+              className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all ${
+                notifyPref.enabled
+                  ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                  : notifyStatus === "denied" || notifyStatus === "unsupported"
+                  ? "bg-slate-100 text-slate-400 cursor-not-allowed"
+                  : "btn-primary"
+              }`}
+            >
+              {notifyPref.enabled ? <><Bell className="w-4 h-4" /> Notifications On</> : <><BellOff className="w-4 h-4" /> Enable Notifications</>}
+            </button>
+
+            {notifyStatus === "denied" && (
+              <p className="text-xs text-rose-600 mt-2">Notifications are blocked in your browser. Allow them in site settings to enable.</p>
+            )}
+
+            {notifyPref.enabled && (
+              <div className="mt-4 space-y-3">
+                <div>
+                  <label className="block text-xs font-medium text-slate-600 mb-1.5">Reminder frequency</label>
+                  <div className="grid grid-cols-3 gap-2">
+                    {[["daily", "Daily"], ["3days", "Every 3d"], ["weekly", "Weekly"]].map(([k, l]) => (
+                      <button key={k} onClick={() => changeReminder(k)} className={`py-2 rounded-lg text-xs font-medium border transition-colors ${notifyPref.reminder === k ? "border-brand-500 bg-brand-50 text-brand-700" : "border-slate-200 text-slate-600 hover:border-slate-300"}`}>{l}</button>
+                    ))}
+                  </div>
+                </div>
+                <button onClick={testNotification} className="btn-outline w-full text-sm">
+                  <Send className="w-4 h-4" /> Send test notification
+                </button>
+                {notifyStatus === "sent" && <p className="text-xs text-emerald-600">Test notification sent ✓</p>}
+              </div>
+            )}
+
+            <p className="text-[11px] text-slate-400 mt-3 leading-relaxed">
+              Notifications are delivered by the installed PWA service worker — they can appear even when the tab is closed (while the device is online).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

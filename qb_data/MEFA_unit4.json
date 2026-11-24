@@ -1,0 +1,128 @@
+{
+  "subject": "23HS0848",
+  "unit": 4,
+  "unitTitle": "Capital Budgeting",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "q": "1 a) Explain types of capital?",
+      "a": "Capital employed in a business can be classified in several ways. By ownership/source: (1) Equity capital - the owners' funds such as ordinary share capital, preference share capital and retained earnings, which carry ownership rights and no fixed repayment; and (2) Debt capital - borrowed funds such as debentures, bonds and term loans, which carry a fixed interest obligation and must be repaid. By purpose: (3) Fixed capital - long-term funds invested in fixed assets like land, building and machinery; and (4) Working capital - short-term funds needed for day-to-day operations such as stock, debtors and cash. By time horizon: long-term capital (over one year) and short-term capital. By origin: internal capital (retained profits, depreciation) and external capital (shares, debentures, bank loans). The right mix of these types determines a firm's cost of capital and financial risk.",
+      "explanation": "It gives the standard classifications of capital - equity vs debt, fixed vs working, long vs short term and internal vs external - which is what a 'types of capital' question expects.",
+      "oneShotPreview": "Equity vs debt; fixed vs working; long-term vs short-term; internal vs external capital."
+    },
+    {
+      "q": "1 b) What are tangible assets?",
+      "a": "Tangible assets are assets that have a physical existence - they can be seen, touched and measured. Examples are land, buildings, plant and machinery, furniture, vehicles, tools and inventories (stock). Because they have physical form, they can be valued, insured, bought and sold, and (except land, which is not depreciated) they are depreciated over their useful life. In the balance sheet they appear at cost less accumulated depreciation. They are contrasted with intangible assets such as goodwill, patents, trademarks and copyrights, which have no physical substance but still carry monetary value.",
+      "explanation": "It defines tangible assets by their physical existence, gives examples, notes depreciation treatment and contrasts them with intangible assets.",
+      "oneShotPreview": "Assets with physical form (land, building, machinery, stock); depreciated over life; opposite of intangibles."
+    },
+    {
+      "q": "1 c) Define Net Present Value.",
+      "a": "Net Present Value (NPV) is the difference between the present value of all future cash inflows from a project and the present value of its cash outflows (initial investment), all discounted at the firm's cost of capital: NPV = Sum of [CFt / (1 + r)^t] - Initial Outlay. Since money received in the future is worth less than money today, each future cash flow is discounted to its present worth. If NPV is positive, the project earns more than the required rate of return and should be accepted; if NPV is negative it should be rejected. NPV directly measures the amount of wealth the project adds to the firm and is therefore considered the most reliable capital-budgeting technique.",
+      "explanation": "It gives the definition, the formula, the discounting logic and the accept/reject rule, which fully answer 'define NPV'.",
+      "oneShotPreview": "NPV = PV of future cash inflows - initial outlay; accept if NPV > 0; measures wealth created."
+    },
+    {
+      "q": "1 d) Example for current assets.",
+      "a": "Current assets are short-term assets that are expected to be converted into cash, sold or used up within one year or one operating cycle. Common examples are: cash in hand and cash at bank; accounts receivable (debtors/sundry debtors) and bills receivable; inventories - raw materials, work-in-progress and finished goods; prepaid expenses such as prepaid rent or insurance; short-term marketable securities; and advances to suppliers and employees. They are listed in the balance sheet in order of liquidity and are essential for meeting the firm's day-to-day working-capital needs.",
+      "explanation": "It defines current assets and lists the standard examples, which is exactly what an 'example' question asks for.",
+      "oneShotPreview": "Cash, bank, debtors, stock, prepaid expenses, short-term securities - assets realised within a year."
+    },
+    {
+      "q": "1 e) Define Payback period.",
+      "a": "The payback period is the length of time required for a project's cumulative cash inflows to recover the original investment. When annual cash inflows are equal, Payback Period = Initial Investment / Annual Cash Inflow; when they are unequal, the inflows are accumulated year by year until the investment is fully recovered (with a fraction of a year for the balance). For example, an outlay of Rs 50,000 yielding Rs 25,000 a year has a payback of 2 years. A shorter payback is preferred because it means faster recovery and lower risk. The method is simple but ignores the time value of money and all cash flows received after the payback date.",
+      "explanation": "It defines the term, gives both the equal-flow formula and the unequal-flow method, an example, the decision rule and the main limitation.",
+      "oneShotPreview": "Time to recover initial outlay from cash inflows; equal flows: outlay / annual inflow; shorter is better."
+    },
+    {
+      "q": "2 a) What is capital, and why is it needed by businesses?",
+      "a": "Capital is the stock of long-term funds and financial resources that a business uses to acquire assets and carry on its operations; it represents the owners' and lenders' stake in the firm. Businesses need capital to purchase fixed assets such as land, buildings, plant and machinery, to provide working capital for raw materials, wages, stock and debtors, to finance expansion and diversification, to replace worn-out or obsolete assets, to repay existing debts and to maintain a cushion against losses and uncertainty. A firm also needs capital simply to begin operations and to meet its day-to-day obligations as they fall due. Without adequate and well-mixed capital a business cannot start, grow, or even survive.",
+      "explanation": "It defines capital and then lists the practical reasons a firm needs it - fixed assets, working capital, growth, replacement, debt repayment and risk cushion.",
+      "oneShotPreview": "Capital = long-term funds for assets and operations; needed for fixed assets, working capital, growth, replacement and risk cover."
+    },
+    {
+      "q": "2 b) If a company is planning to expand its operations, how might the factors determining the requirement of working capital change?",
+      "a": "When a company expands, its working-capital requirement usually rises because a higher level of activity needs more stock, more debtors and more cash. The main factors that determine the requirement are: the scale and growth rate of sales (higher output needs more current assets); the length of the operating/production cycle (a longer cycle locks up funds longer); inventory turnover and the availability of raw materials; the credit policy of the firm - the collection period for debtors and the credit period allowed by suppliers; the turnover of receivables; price levels and inflation; seasonality of demand; and the firm's operating efficiency. During expansion, faster sales growth, larger inventories to support output, more liberal credit to customers and rising prices all increase the funds tied up in working capital, whereas better inventory control, quicker collections and longer supplier credit reduce it.",
+      "explanation": "It identifies the determinants of working capital and explains how expansion changes each of them, which is what the question asks.",
+      "oneShotPreview": "Expansion raises working capital via higher sales, bigger stock, more debtors and inflation; turnover and credit terms modify the need."
+    },
+    {
+      "q": "3 a) What is the importance of capital budgeting, and what are its limitations?",
+      "a": "Capital budgeting is important because it helps a firm choose the most profitable long-term projects, allocate scarce funds efficiently, compare alternative investments on a scientific basis, assess the risk and return of each proposal, maximise shareholder wealth and provide a basis for long-range planning and control. It forces management to forecast cash flows and think carefully about the future. Its limitations are that it depends on uncertain estimates of future cash flows and discount rates, which are difficult to predict; the cost of capital is hard to determine accurately; different techniques may rank projects differently; it often ignores non-financial or qualitative factors; it can be time-consuming and expensive; and its decisions are only as good as the assumptions on which they rest.",
+      "explanation": "It balances the benefits of capital budgeting against its practical weaknesses, covering both halves of the question.",
+      "oneShotPreview": "Importance: best project selection, efficient fund allocation, wealth maximisation; limits: uncertain forecasts, cost of capital, conflicting rankings."
+    },
+    {
+      "q": "3 b) What is capital budgeting? Explain the significance of capital budgeting.",
+      "a": "Capital budgeting is the process of identifying, evaluating, comparing and selecting long-term investment proposals - expenditures on fixed assets whose benefits are spread over several years - in order to allocate the firm's scarce financial resources to the most worthwhile projects. It involves estimating future cash flows, determining an appropriate discount rate (cost of capital) and applying appraisal techniques such as payback period, accounting rate of return, NPV and IRR. Its significance is high because such decisions usually involve large amounts of money, are long-term and often irreversible, directly affect the firm's profitability, growth and risk, and determine its future competitive position. Proper capital budgeting maximises shareholders' wealth by accepting only projects that earn more than the required return and by rejecting unprofitable ones.",
+      "explanation": "It defines capital budgeting, describes the evaluation process and explains why the decision is significant - large, long-term, irreversible and value-determining.",
+      "oneShotPreview": "Evaluating and selecting long-term investments using NPV/IRR/payback; significant because decisions are large, long-lived and value-determining."
+    },
+    {
+      "q": "4 a) Explain the different major sources of finance that a business can use. How do these sources help in funding business operations?",
+      "a": "The major sources of finance are: (1) Equity - owners' capital, ordinary and preference shares and retained earnings, which provide permanent funds without fixed repayment but dilute ownership; (2) Debt - debentures, bonds, term loans from banks and financial institutions and public deposits, which must be repaid with interest but do not dilute control; (3) Short-term sources - trade credit, bills discounting, bank cash credit/overdraft, commercial paper and factoring, which finance day-to-day working capital; (4) Internal sources - retained profits and depreciation provisions; and (5) Other sources - venture capital, leasing, hire purchase and government grants. Together they fund business operations by providing the long-term capital needed to buy fixed assets and the short-term liquidity needed for stock, debtors and routine expenses; the mix chosen affects the firm's cost of capital, risk and control.",
+      "explanation": "It enumerates the main sources grouped by type and explains how each contributes to funding fixed and current assets.",
+      "oneShotPreview": "Equity, debt, short-term credit, internal profits/depreciation, leasing/venture capital - fund fixed assets and working capital."
+    },
+    {
+      "q": "4 b) What are the advantages and disadvantages of the Payback Method in capital budgeting?",
+      "a": "The payback method calculates the time needed to recover the initial investment from project cash inflows. Its advantages are: it is simple to understand and easy to calculate; it gives a quick indication of liquidity and risk because faster recovery means less exposure; it uses cash flows rather than accounting profits; it is useful for screening small projects and for firms facing liquidity constraints; and it helps compare similar projects. Its disadvantages are: it completely ignores the time value of money; it disregards all cash flows generated after the payback period, so it may reject a highly profitable long-term project; its acceptable payback cutoff is arbitrary; it does not measure profitability or wealth creation; and it ignores the salvage value and the pattern of cash flows within the payback period.",
+      "explanation": "It lists the recognised merits and demerits of the payback method, balancing simplicity and liquidity insight against its failure to measure true profitability.",
+      "oneShotPreview": "Pros: simple, shows liquidity/risk, uses cash flows. Cons: ignores time value, post-payback flows and real profitability."
+    },
+    {
+      "q": "5 a) The cost of project-A is Rs 50,000 and cost of project-B is Rs 1,00,000; the annual cash inflow for the next 4 years is Rs 25,000. What is the payback period for project A and B?",
+      "a": "Since the annual cash inflow is equal each year, Payback Period = Initial Investment / Annual Cash Inflow. Project A: 50,000 / 25,000 = 2 years. Project B: 1,00,000 / 25,000 = 4 years. Project A recovers its cost in 2 years and Project B in 4 years, both within the 4-year life. Because a shorter payback means quicker recovery and lower risk, Project A is preferable on this criterion. Note that the method ignores the time value of money and anything that happens after recovery.",
+      "explanation": "With level inflows the simple division formula applies; the computed answers are 2 years for A and 4 years for B, and the shorter one is preferred.",
+      "oneShotPreview": "Payback A = 50,000/25,000 = 2 years; B = 1,00,000/25,000 = 4 years; A is better."
+    },
+    {
+      "q": "5 b) The cost of a project is Rs. 50,000, which has an expected life of 5 years. The cash inflows for the next 5 years are Rs. 24,000; Rs. 26,000; Rs. 20,000; Rs. 17,000 and Rs. 16,000 respectively. Determine the payback period.",
+      "a": "Because the inflows are unequal, cumulative inflows are built up year by year: Year 1 = Rs 24,000; Year 2 = 24,000 + 26,000 = Rs 50,000; Year 3 = Rs 70,000; and so on. The initial outlay of Rs 50,000 is fully recovered exactly at the end of Year 2. Therefore the payback period is exactly 2 years (with no fractional year needed). If part of a year were required, it would be added as (balance still unrecovered / cash inflow of that year).",
+      "explanation": "Cumulative cash inflows reach the Rs 50,000 investment precisely after the second year, so the payback is 2 years.",
+      "oneShotPreview": "Cumulative inflows: 24,000 then 50,000 - investment recovered exactly in 2 years."
+    },
+    {
+      "q": "6 Two projects, costing Rs 2,50,000 each, have the following cash inflows. Which one do you choose and why? Years 1 2 3 4; Machine X: 90,000; 1,60,000; 1,20,000; 70,000; Machine Y: 1,60,000; 1,20,000; 90,000; 50,000. Calculate: i) Payback period ii) Accounting rate of return.",
+      "a": "Payback period (initial outlay Rs 2,50,000): Machine X - cumulative inflows are 90,000; 2,50,000; 3,70,000; 4,40,000, so the cost is recovered exactly at the end of year 2: Payback = 2 years. Machine Y - cumulative inflows are 1,60,000; 2,80,000; 3,70,000; 4,20,000; at the end of year 1, Rs 90,000 remains to be recovered from a year-2 inflow of Rs 1,20,000, so Payback = 1 + 90,000/1,20,000 = 1.75 years. Accounting rate of return: assuming zero salvage, average investment = 2,50,000/2 = Rs 1,25,000 and annual depreciation = 2,50,000/4 = Rs 62,500. Average annual cash inflow = 4,40,000/4 = Rs 1,10,000 for X and 4,20,000/4 = Rs 1,05,000 for Y. Average annual profit = 1,10,000 - 62,500 = Rs 47,500 (X) and 1,05,000 - 62,500 = Rs 42,500 (Y). Hence ARR of X = 47,500/1,25,000 = 38% and ARR of Y = 42,500/1,25,000 = 34%. Machine Y recovers the money faster (1.75 vs 2 years), while Machine X gives the higher return (38% vs 34% ARR) and higher total inflow (Rs 4,40,000 vs Rs 4,20,000). If profitability is the main objective, choose Machine X; if early recovery and liquidity are more important, choose Machine Y.",
+      "explanation": "The step-by-step cumulative inflows give paybacks of 2 and 1.75 years, and average profit over average investment gives ARRs of 38% and 34%; the recommendation follows from the trade-off between them.",
+      "oneShotPreview": "Payback: X=2 yrs, Y=1.75 yrs; ARR: X=38%, Y=34% - X for profit, Y for quick recovery."
+    },
+    {
+      "q": "7 Consider a company with the following two investment alternatives, each costing Rs. 9 lakhs. Details of cash inflows: Year 1 2 3; Project A: 3,00,000; 5,00,000; 6,00,000; Project B: 6,00,000; 4,00,000; 3,00,000. The cost of capital is 10% per year. Determine NPV for the two projects.",
+      "a": "Discount factors at 10% are: Year 1 = 1/1.10 = 0.9091, Year 2 = 1/1.21 = 0.8264, Year 3 = 1/1.331 = 0.7513. Project A: PV = 3,00,000(0.9091) + 5,00,000(0.8264) + 6,00,000(0.7513) = 2,72,727 + 4,13,223 + 4,50,789 = Rs 11,36,739; NPV = 11,36,739 - 9,00,000 = Rs 2,36,739. Project B: PV = 6,00,000(0.9091) + 4,00,000(0.8264) + 3,00,000(0.7513) = 5,45,455 + 3,30,579 + 2,25,394 = Rs 11,01,427; NPV = 11,01,427 - 9,00,000 = Rs 2,01,427. Both projects have positive NPVs, so both are acceptable, but Project A has the higher NPV (Rs 2,36,739 vs Rs 2,01,427) and should be chosen because it adds more wealth, even though Project B receives its cash earlier.",
+      "explanation": "Discounting each inflow at 10% and subtracting the Rs 9 lakh outlay gives NPVs of about Rs 2.37 lakh (A) and Rs 2.01 lakh (B); the higher NPV project is preferred.",
+      "oneShotPreview": "NPV A = Rs 2,36,739; NPV B = Rs 2,01,427; both positive - choose Project A (higher NPV)."
+    },
+    {
+      "q": "8 a) Explain the concept of the payback period and how it is used in capital budgeting decisions.",
+      "a": "The payback period is the number of years required for a project's cumulative cash inflows to equal the original investment; with even inflows it is Initial Investment / Annual Cash Inflow, and with uneven inflows it is found by accumulation plus a fractional year. In capital budgeting it is used as a screening and risk indicator: management sets a maximum acceptable payback (often related to the firm's liquidity or the project's life) and accepts projects that repay within that period, rejecting slower ones. It is especially useful to firms short of cash, for small projects and for ranking projects of similar size and risk, because quicker recovery means less exposure to uncertainty. However, because it ignores the time value of money, cash flows after the payback date and overall profitability, it is normally used together with NPV or IRR rather than as the sole decision rule.",
+      "explanation": "It explains what payback measures, how the cutoff rule is applied as a screening/liquidity device and why it is supplemented by discounted methods.",
+      "oneShotPreview": "Years to recover investment; accept if below a set cutoff - a simple liquidity/risk screen, used with NPV/IRR."
+    },
+    {
+      "q": "8 b) The cost of the project is Rs. 10,00,000, which has an expected life of five years. The cash inflows for the next five years are Rs. 3,20,000; Rs. 3,80,000; Rs. 3,00,000; Rs. 3,00,000 and Rs. 2,60,000 respectively. Determine the payback period.",
+      "a": "Accumulate the unequal cash inflows year by year: end of Year 1 = Rs 3,20,000; end of Year 2 = 3,20,000 + 3,80,000 = Rs 7,00,000; end of Year 3 = 7,00,000 + 3,00,000 = Rs 10,00,000. The cumulative inflows equal the initial cost of Rs 10,00,000 exactly at the end of the third year. Therefore the payback period is exactly 3 years, well within the project's 5-year life.",
+      "explanation": "Cumulative cash inflows reach Rs 10,00,000 precisely at the close of year 3, so no fractional year is required and the payback is 3 years.",
+      "oneShotPreview": "Cumulative: 3.2 lakh, 7 lakh, 10 lakh - cost recovered exactly in 3 years."
+    },
+    {
+      "q": "9 Imagine you are a financial manager in a company. How would you use capital budgeting techniques to assess a new investment project?",
+      "a": "As a financial manager I would follow a structured capital-budgeting process: first define the investment proposal and the strategic objective; then estimate the relevant incremental cash flows (initial outlay, operating inflows, working capital and terminal value) over the project's life; next determine the appropriate discount rate, i.e. the cost of capital adjusted for the project's risk. I would then evaluate the project using several complementary techniques - payback period for liquidity/risk, accounting rate of return for accounting profitability, and above all discounted cash-flow methods such as NPV and IRR (and PI where capital is rationed). A project is accepted if its NPV is positive and its IRR exceeds the cost of capital. I would also test sensitivity and scenarios for key variables, compare mutually exclusive alternatives, consider qualitative factors and risk, and finally recommend the project that maximises shareholder wealth, followed by a post-completion audit to compare actual with forecast results.",
+      "explanation": "It describes the practical decision-making sequence - cash-flow estimation, cost of capital, applying multiple appraisal techniques, risk analysis and wealth-maximising selection.",
+      "oneShotPreview": "Estimate cash flows and cost of capital, apply payback/ARR/NPV/IRR, test risk and choose the wealth-maximising project."
+    },
+    {
+      "q": "10 How would you apply Net Present Value (NPV) to assess the feasibility of a new investment project for your company? What are some advantages and disadvantages you should consider?",
+      "a": "To apply NPV I would: (1) estimate the initial investment (cash outflow) and all expected future net cash inflows over the project's life, including working capital and terminal/salvage value; (2) choose the discount rate, normally the company's cost of capital adjusted for the project's risk; (3) discount each future cash flow to its present value using CFt/(1+r)^t and sum them; and (4) subtract the initial outlay. If NPV is positive the project is feasible and adds value; if negative it should be rejected, and among mutually exclusive projects the one with the highest NPV is preferred. Advantages: NPV recognises the time value of money, uses all cash flows, measures the absolute wealth created, is consistent with the objective of shareholder wealth maximisation and is additive across projects. Disadvantages: it needs reliable forecasts of cash flows and a correct discount rate, which are hard to estimate; it is more complex than payback; it can give misleading rankings for projects of very different sizes or lives; and it does not capture managerial flexibility or real options.",
+      "explanation": "It gives the step-by-step NPV procedure, the decision rule and a balanced list of the method's strengths and weaknesses.",
+      "oneShotPreview": "Discount all cash flows at cost of capital, subtract outlay; accept if NPV>0. Pros: time value, wealth measure; cons: forecast sensitivity."
+    },
+    {
+      "q": "11 A company is considering two investment opportunities (A and B) that cost Rs 4,00,000 and Rs 3,00,000 respectively. The first project generates Rs 1,00,000 each year over a 4-year period. The second generates Rs 60,000, Rs 1,00,000, Rs 80,000, Rs 90,000 and Rs 70,000 over a 5-year period. The company's cost of capital is 8%. Which one do you choose under the NPV method?",
+      "a": "Discounting at 8% (factors: 1/1.08 = 0.9259, 1/1.1664 = 0.8573, 1/1.2597 = 0.7938, 1/1.3605 = 0.7350, 1/1.4693 = 0.6806). Project A: PV of inflows = 1,00,000/1.08 + 1,00,000/1.1664 + 1,00,000/1.259712 + 1,00,000/1.36048896 = 92,593 + 85,734 + 79,383 + 73,503 = Rs 3,31,213; NPV = 3,31,213 - 4,00,000 = -Rs 68,787 (negative). Project B: PV of inflows = 60,000/1.08 + 1,00,000/1.1664 + 80,000/1.259712 + 90,000/1.36048896 + 70,000/1.469328 = 55,556 + 85,734 + 63,507 + 66,153 + 47,640 = Rs 3,18,590; NPV = 3,18,590 - 3,00,000 = +Rs 18,590 (positive). Since Project A has a negative NPV it would destroy value and must be rejected, while Project B has a positive NPV and adds value. Under the NPV method, choose Project B.",
+      "explanation": "At an 8% cost of capital project A's discounted inflows (Rs 3,31,213) fall short of its Rs 4 lakh cost, whereas project B's (Rs 3,18,590) exceed its Rs 3 lakh cost; hence only B is acceptable.",
+      "oneShotPreview": "NPV A = -Rs 68,787 (reject); NPV B = +Rs 18,590 (accept) - choose Project B."
+    }
+  ]
+}

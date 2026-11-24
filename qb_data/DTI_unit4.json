@@ -1,0 +1,116 @@
+{
+  "subject": "23HS0815",
+  "unit": 4,
+  "unitTitle": "Product Design",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "q": "1 a) What is problem formation in product design? [L1, CO5] [2M]",
+      "a": "Problem formation is the opening stage of product design in which the real problem to be solved is identified, framed and stated clearly before any solution is generated. It involves observing users, gathering their needs, studying the context and analysing the gap between the current situation and the desired one. The result is a precise, actionable problem statement that guides ideation and keeps the team focused on user value.",
+      "explanation": "Defining the problem first prevents the common failure of solving the wrong problem and gives the later design stages a clear target.",
+      "oneShotPreview": "Problem formation = identify, frame and state the real user problem before designing any solution."
+    },
+    {
+      "q": "1 b) Define product design and its key components. [L1, CO5] [2M]",
+      "a": "Product design is the process of conceiving, planning and developing a product that satisfies user needs while being feasible to produce and viable in the market. Its key components are user research and problem definition, ideation and concept development, prototyping, testing and refinement, and final production specifications. It blends functionality, usability, aesthetics, materials, cost and sustainability into one coherent offering.",
+      "explanation": "These components cover the full journey from understanding a need to a manufacturable, market-ready product, which is what the definition of product design requires.",
+      "oneShotPreview": "Product design turns a user need into a feasible, viable product via research, concepts, prototypes, tests and specs."
+    },
+    {
+      "q": "1 c) What are the different types of product strategies? [L1, CO5] [2M]",
+      "a": "Common product strategies include differentiation (unique features, quality or design), cost leadership (lowest price through efficiency), focus or niche strategy (serving a narrow segment), product development and line extension (new or improved products for existing markets), market penetration, diversification, and innovation or blue-ocean strategy (creating entirely new demand). Firms often combine these strategies rather than use only one.",
+      "explanation": "Each strategy describes a distinct way of competing and growing, whether by uniqueness, price, segment focus, portfolio expansion or new-market creation.",
+      "oneShotPreview": "Strategies: differentiation, cost leadership, focus/niche, product development, penetration, diversification, innovation."
+    },
+    {
+      "q": "1 d) How does product value impact a company’s success? [L1, CO5] [2M]",
+      "a": "Product value is the benefit customers perceive relative to the price paid and the alternatives available. Higher perceived value drives purchases, repeat business, loyalty and positive word-of-mouth, which increase revenue and market share. It supports premium pricing, lowers the cost of acquiring new customers and ultimately creates sustainable competitive advantage and profit.",
+      "explanation": "Customers buy value rather than features alone, so value directly shapes demand, pricing power and long-term profitability.",
+      "oneShotPreview": "Higher product value means more sales, loyalty, pricing power and long-term company profitability."
+    },
+    {
+      "q": "1 e) What factors influence product planning? [L1, CO5] [2M]",
+      "a": "Product planning is influenced by customer needs and market demand, competitor offerings, company goals and available resources, technology and innovation trends, cost and pricing targets, production capability, legal and regulatory requirements, and sustainability concerns. Timing, distribution channels and expected product lifecycle also shape the plan.",
+      "explanation": "A product plan must balance what customers want with what the organisation can profitably and legally deliver, so both market and internal factors matter.",
+      "oneShotPreview": "Planning is shaped by market needs, competition, resources, technology, cost, regulations and sustainability."
+    },
+    {
+      "q": "2 Describe the steps involved in problem formation and its importance in product design [L2, CO5] [10M]",
+      "a": "Problem formation proceeds through these steps: (1) identify a need or opportunity by observing users and the market; (2) collect evidence through interviews, surveys, observation and data analysis; (3) analyse the findings to find the gap between the current and desired state; (4) segment users and build personas to understand who has the problem; (5) prioritise the most critical needs; (6) write a clear, specific problem statement; and (7) validate and refine it with stakeholders and users. Its importance is that it ensures the team solves the right problem, aligns everyone on a shared goal, saves time and money by avoiding misdirected work, establishes criteria for judging ideas, and creates the foundation for ideation, prototyping and testing.",
+      "explanation": "Because every later design decision depends on the problem statement, a rigorous formation process is what turns a vague need into a solvable, testable design challenge.",
+      "oneShotPreview": "Observe, collect data, find the gap, segment users, prioritise needs, write and validate a problem statement — so the right problem is solved."
+    },
+    {
+      "q": "3 a) State product design and List out the different types of product strategies. [L1, CO5] [3M]",
+      "a": "Product design is the systematic process of identifying a user need and creating a product concept, prototype and final specification that satisfies that need within technical and business constraints. The main types of product strategies are differentiation, cost leadership, focus/niche, product development, market penetration, diversification, and innovation or blue-ocean strategy. Product-line extension and platform strategy are additional common variants.",
+      "explanation": "The statement captures the user-need-to-product journey, while the listed strategies are the standard ways firms position and grow products.",
+      "oneShotPreview": "Product design = need to product; strategies = differentiation, cost leadership, focus, development, penetration, diversification, innovation."
+    },
+    {
+      "q": "3 b) Write the key stages in the product design process. [L3, CO5] [7M]",
+      "a": "The key stages are: (1) research and empathy — understand users and the market; (2) problem definition — frame a clear problem statement; (3) ideation — generate a wide range of concepts; (4) concept selection — evaluate and choose the most promising ideas; (5) prototyping — build low- to high-fidelity models; (6) testing and evaluation — get user feedback and measure performance; (7) refinement — iterate on the design; and (8) specification and launch — finalise drawings, materials and production details and release the product. These stages are iterative, so findings from testing often send the team back to earlier stages.",
+      "explanation": "The sequence moves from understanding to making and validating, and iteration is essential because user feedback repeatedly reshapes the design.",
+      "oneShotPreview": "Research, define, ideate, select, prototype, test, refine, specify and launch — an iterative loop."
+    },
+    {
+      "q": "4 Compare and contrast different product strategies used by companies. [L4, CO5] [10M]",
+      "a": "Differentiation competes on unique features, quality, design or brand and earns higher margins but needs heavy R&D and marketing; cost leadership competes on low price through scale and efficiency and accepts thinner margins with high volume. A focus or niche strategy targets a narrow customer group deeply, while product development and line extension grow the portfolio for existing markets with moderate risk. Diversification enters new markets with new products and offers high growth but high risk, and innovation or blue-ocean strategy creates new demand instead of fighting rivals, offering big rewards but high uncertainty. In short, they differ in competitive basis, target market, investment, risk and expected return, yet all aim to create customer value and a sustainable advantage, and most companies blend several of them.",
+      "explanation": "A comparison must show both the distinguishing dimensions (how each competes, its risk and investment) and the shared goal, giving a balanced contrast.",
+      "oneShotPreview": "Differentiation = uniqueness, cost leadership = low price, focus = niche, diversification = new markets; each has different risk and return."
+    },
+    {
+      "q": "5 Analyze the role of perceived product value in shaping customer perception and market success. [L4, CO5] [10M]",
+      "a": "Perceived product value is the customer's subjective judgement of the benefits received — functional, emotional and social — against the costs incurred, such as price, effort and risk. It shapes perception by forming expectations of quality and trust before purchase, and it determines willingness to pay, choice among alternatives, satisfaction after use and the likelihood of recommending the product. High perceived value leads to stronger purchase intent, brand loyalty, repeat sales, positive reviews and the ability to charge a premium, all of which drive market share and revenue. Companies influence it through design, branding, packaging, service and the overall customer experience, so two objectively similar products can succeed very differently.",
+      "explanation": "Because buying decisions are based on what customers believe they receive rather than on objective specifications alone, perceived value is a direct driver of both perception and commercial results.",
+      "oneShotPreview": "Perceived value (benefits vs costs) drives choice, loyalty, premium pricing and market success, not specifications alone."
+    },
+    {
+      "q": "6 Discuss the significance of product planning in ensuring business success. [L2, CO5] [10M]",
+      "a": "Product planning is the forward-looking process of deciding which products to develop, for whom, when and with what resources. It aligns new products with corporate objectives and market opportunities, sets priorities and a realistic roadmap, and allocates budget, people and technology efficiently. It reduces the risk of failure by testing demand and feasibility before heavy investment, coordinates design, production, marketing and finance, and manages the product portfolio and lifecycle so that old and new products are balanced. Effective planning also shortens time to market, supports timely launches, anticipates competition and regulation, and builds a pipeline of innovations that sustains growth and competitive advantage.",
+      "explanation": "Planning converts strategy into an executable, coordinated sequence of decisions, which is why it links product ideas to lasting business success.",
+      "oneShotPreview": "Product planning aligns products with goals and demand, allocates resources, cuts risk and keeps a healthy innovation pipeline."
+    },
+    {
+      "q": "7 a) Define product specifications and describe their key components. [L2, CO5] [5M]",
+      "a": "Product specifications are formal documents that state exactly what a product must be and do, including its required characteristics, performance levels and acceptance criteria. Key components are functional requirements, physical and technical attributes such as size, weight and materials, performance targets, safety and regulatory compliance, appearance and finishing standards, cost or target price, and testing and quality-control criteria. They may also include packaging, labelling, warranty and environmental requirements.",
+      "explanation": "Specifications remove ambiguity by recording measurable requirements, which is exactly what a design-to-production document must do.",
+      "oneShotPreview": "Specs state the required functions, dimensions, materials, performance, compliance, cost and test criteria."
+    },
+    {
+      "q": "7 b) Explain the importance of product specifications in guiding the design and development process. [L2, CO5] [5M]",
+      "a": "Specifications give designers, engineers, suppliers and manufacturers one unambiguous reference, so everyone works toward the same targets. They convert user needs into measurable criteria, help evaluate concepts, guide material and process choices, and form the basis of testing and quality assurance. They also support accurate costing and scheduling, reduce errors, rework and disputes, and provide the benchmark for verifying that the final product actually meets customer requirements.",
+      "explanation": "Without a clear specification, teams interpret needs differently and cannot objectively judge whether the product is correct or ready.",
+      "oneShotPreview": "Specs align teams, enable objective testing, control cost and quality, and verify the product meets user needs."
+    },
+    {
+      "q": "8 a) Describe innovation drive product design. [L2, CO5] [5M]",
+      "a": "Innovation drives product design by introducing new ideas, technologies, materials, processes and business models that let designers solve user problems in better or entirely new ways. It pushes design beyond incremental improvements toward breakthrough concepts, improving usability, performance, aesthetics and sustainability while opening new markets. Innovation can be technological, aesthetic, process-based or value-proposition based, and it gives a company a competitive edge and stronger product value.",
+      "explanation": "New possibilities from innovation expand the solution space, so design can deliver products that were not feasible or imagined before.",
+      "oneShotPreview": "Innovation supplies new ideas and technologies that let design create better, novel and more competitive products."
+    },
+    {
+      "q": "8 b) Identify the key challenges in implementing innovation. [L3, CO5] [5M]",
+      "a": "Key challenges include resistance to change and risk-averse culture, uncertainty and high risk of failure, limited budget and skills, poor cross-functional collaboration, and difficulty converting a prototype into a manufacturable, scalable product. Market acceptance, intellectual-property protection, regulatory approval, integration with existing systems and measuring the return on innovation also create obstacles.",
+      "explanation": "These challenges span people, resources, processes and the market, which is why many promising ideas fail to reach successful implementation.",
+      "oneShotPreview": "Barriers: resistance, risk, scarce resources, scaling problems, market acceptance, IP rules and hard-to-measure returns."
+    },
+    {
+      "q": "9 Analyze a case study where innovation transformed a product or industry. [L4, CO5] [10M]",
+      "a": "A clear example is Apple's iPhone, launched in 2007. Instead of adding another keypad phone, Apple combined a multi-touch full-screen interface, a music player, a web browser and a phone in one device, and later added the App Store to create an ecosystem of third-party applications. This innovation reshaped customer expectations, made physical keyboards and small screens obsolete, forced competitors to copy the touch-screen model and created the modern mobile-app economy. The case shows that transformation comes from rethinking the whole user experience and business ecosystem, not merely from adding features, and that early user-centred design plus continuous iteration can redefine an industry.",
+      "explanation": "The iPhone case demonstrates a product-level innovation that changed both the product category and the surrounding market, matching the demand for an analysed transformation.",
+      "oneShotPreview": "iPhone: multi-touch plus app ecosystem replaced keypad phones and reshaped the entire mobile industry."
+    },
+    {
+      "q": "10 Describe how sustainability principles can be applied to the design of a common consumer product. [L3, CO5] [10M]",
+      "a": "Sustainability can be applied by using recycled, renewable, non-toxic and biodegradable materials, designing for durability, repairability, easy disassembly and recycling, and reducing energy, water and waste during manufacture and transport. Packaging should be minimal or reusable, and a life-cycle perspective should guide decisions from raw material extraction to disposal, for example through take-back or refill systems. As an illustration, a reusable stainless-steel or recycled-plastic water bottle can replace single-use plastic bottles: it is long-lasting, washable, recyclable at end of life and backed by refill stations, cutting waste and carbon footprint while still meeting the user's need for safe, portable hydration.",
+      "explanation": "A life-cycle view ensures improvements at one stage are not offset by harm at another, making the product genuinely rather than superficially sustainable.",
+      "oneShotPreview": "Use eco-materials, durability, repair/recycle design, lean packaging and life-cycle thinking — e.g. a refillable reusable bottle."
+    },
+    {
+      "q": "11 Assess the effectiveness of various methods used to measure post-launch product success. [L5, CO5] [10M]",
+      "a": "Post-launch success can be measured through sales volume, revenue, profit and market share; customer satisfaction scores, Net Promoter Score and reviews; usage and engagement analytics; retention, repeat-purchase and churn rates; return and warranty rates; and financial measures such as ROI and payback period. Sales data show commercial uptake but not why customers behave as they do, while surveys and reviews explain satisfaction and loyalty but can be biased and slow. Usage analytics and retention reveal real behaviour, and returns signal quality problems; therefore no single metric is sufficient. The most effective approach combines quantitative and qualitative measures, compares them with pre-set targets and baselines, and tracks them over time to distinguish a lasting success from an initial spike.",
+      "explanation": "Assessment requires weighing each method's strengths and limits and recognising that a balanced, time-based set of metrics gives a more reliable verdict than any one number.",
+      "oneShotPreview": "Combine sales, satisfaction, usage, retention, returns and ROI; compare with targets over time for a valid verdict."
+    }
+  ]
+}

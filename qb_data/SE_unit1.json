@@ -1,0 +1,146 @@
+{
+  "subject": "23CS0513",
+  "unit": 1,
+  "unitTitle": "Introduction and Software Life Cycle Models",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "q": "a) Define software engineering.",
+      "a": "Software engineering is the systematic application of engineering approaches, methods and techniques to the development of software. IEEE defines it as the application of a systematic, disciplined and quantifiable approach to the development, operation and maintenance of software. It means using well-defined scientific principles and procedures to produce software that is reliable, efficient, maintainable, delivered on time and within budget.",
+      "explanation": "This is the standard IEEE definition; it captures the three key ideas of being systematic, disciplined and measurable, plus the goal of quality software.",
+      "oneShotPreview": "Software engineering = systematic, disciplined, quantifiable engineering of software development and maintenance."
+    },
+    {
+      "q": "b) What is software crisis.",
+      "a": "Software crisis is the situation in which software projects fail to meet their objectives: they are delivered late, exceed their budget, have poor quality, or do not satisfy the users actual requirements. It became prominent in the 1960s as programs grew larger and more complex while development remained ad hoc. This crisis gave rise to the term software engineering and to the search for disciplined development processes.",
+      "explanation": "The answer gives the classic symptoms (late, over-budget, low quality, unmet needs) and the historical reason, which is why the discipline was created.",
+      "oneShotPreview": "Software crisis = late, over-budget, poor-quality software failing requirements, caused by growing complexity and ad-hoc methods."
+    },
+    {
+      "q": "c) List out the phases of Software life development models?",
+      "a": "The usual phases are: (1) feasibility study or problem definition, (2) requirements gathering and analysis, (3) specification/SRS, (4) design (architectural and detailed), (5) coding or implementation, (6) testing at unit, integration, system and acceptance levels, (7) deployment/delivery, and (8) operation and maintenance. Different models such as waterfall, prototyping, spiral and RAD order and iterate these phases differently, but all of them cover specification, design, implementation, testing and maintenance.",
+      "explanation": "These are the core activities every life cycle model must perform; models differ only in how they sequence and repeat them.",
+      "oneShotPreview": "Phases: feasibility → requirements → specification → design → coding → testing → deployment → maintenance."
+    },
+    {
+      "q": "d) What is Exploratory style of software development.",
+      "a": "The exploratory style is an informal, ad-hoc way of developing software in which a programmer starts coding immediately with only a vague idea of the requirement, then writes code, runs it, examines the output, and modifies the code again until the result looks correct. It involves no systematic requirements analysis, design or documentation, and testing is done casually by the programmer. It may work for small, throwaway programs but becomes unmanageable for large software.",
+      "explanation": "It captures the informal code-run-modify cycle and the absence of planning and documentation, which is the defining contrast with disciplined development.",
+      "oneShotPreview": "Exploratory style = informal code → run → inspect → fix loop with no planning, design or documentation."
+    },
+    {
+      "q": "e) Name three popular Agile development models.",
+      "a": "Three popular Agile development models are Scrum, Extreme Programming (XP) and Kanban. Other well-known Agile methods include Feature Driven Development (FDD), Adaptive Software Development (ASD) and DSDM. All of them emphasise iterative and incremental delivery, working software, close customer collaboration and quick response to change, as stated in the Agile Manifesto.",
+      "explanation": "Scrum, XP and Kanban are the most widely used Agile frameworks, and the final sentence links them to the defining Agile values.",
+      "oneShotPreview": "Scrum, Extreme Programming (XP) and Kanban — iterative, customer-focused Agile methods."
+    },
+    {
+      "q": "a) Explain About software engineering? Is software engineering a science or an art?",
+      "a": "Software engineering is the application of engineering principles, methods and tools to build software systematically, covering requirements, design, coding, testing, deployment and maintenance. It has a scientific side because it relies on established theories, algorithms, formal specification, measurable processes and software metrics. It also has an artistic side because design requires creativity, judgement and the skill to choose the best trade-offs for a particular problem. Therefore software engineering is best seen as a blend of the two: a disciplined science applied with human creativity, an engineering art rather than pure science or pure art.",
+      "explanation": "The answer defines the field and addresses both halves of the question, giving concrete reasons for the scientific and the artistic character before concluding it is a blend.",
+      "oneShotPreview": "Software engineering = disciplined engineering of software; a blend of science (methods, metrics) and art (creative design judgement)."
+    },
+    {
+      "q": "b) Evaluate the exploratory style of software development? Graphically depict the activities that a programmer typically carries out while developing a programming solution using the exploratory style.",
+      "a": "In the exploratory style the programmer starts with a vague idea and repeatedly performs: write or modify code → compile and run → examine the output → if wrong, modify code and repeat → if correct, stop. Graphically: [Vague need] → Code → Compile/Run → Inspect output → (No, incorrect) → back to Code; (Yes, correct) → [Working program]. Evaluation: it is quick, needs no documentation and is useful for small programs, prototypes and learning. But it is unplanned: requirements, design and documentation are skipped, testing is unsystematic, defects are found late and the resulting code is hard to maintain. Hence it is unsuitable for large, professionally developed software, which needs a disciplined life cycle model.",
+      "explanation": "It describes the iterative loop with a simple diagram and evaluates the style fairly, listing both its speed advantage and its serious weaknesses for large projects.",
+      "oneShotPreview": "Exploratory = code → run → inspect → fix loop; fast for small programs but no design, docs or systematic testing."
+    },
+    {
+      "q": "a) Explain in detail software development projects.",
+      "a": "A software development project is a temporary, planned effort to produce a software product that satisfies a stated need. It moves through feasibility study, requirements gathering and specification, design, coding, testing, delivery/deployment and maintenance. It is managed by defining scope, schedule, cost and quality goals; estimating size and effort with metrics such as LOC, function points or COCOMO; planning and tracking progress; managing risks; ensuring quality through reviews and testing; and controlling changes. A successful project balances time, cost and quality while keeping the customer involved throughout.",
+      "explanation": "A detailed answer needs both the life cycle phases and the management dimensions of estimation, planning, risk, quality and change control.",
+      "oneShotPreview": "Software project = planned effort through feasibility → requirements → design → code → test → deploy → maintain, controlled for time, cost and quality."
+    },
+    {
+      "q": "b) Distinguish between a program and a professionally developed software.",
+      "a": "A program is a relatively small, self-contained set of instructions written by an individual, often for personal or one-time use, with little or no documentation and no real concern for maintenance. Professionally developed software is a large, complex product built by a team for many users: it is based on systematic requirements analysis and design, is thoroughly documented and tested, is portable and maintainable, and is delivered with manuals, support and planned releases. In short, a program is something you write for yourself, whereas software is a product engineered for others and evolved over time.",
+      "explanation": "The distinction rests on size, individual versus team, documentation, testing, maintenance and use by others, which is the classic program-versus-software-product comparison.",
+      "oneShotPreview": "Program = small, personal, ad-hoc code; software = large, team-built, documented, tested and maintained product."
+    },
+    {
+      "q": "a) Explain Waterfall model with a neat diagram and list out the merits and demerits of waterfall model.",
+      "a": "The waterfall model is a linear sequential life cycle model in which each phase must finish before the next one starts and phases do not overlap. Diagram: Requirements → Design → Coding → Testing → Deployment → Maintenance, shown as successive downward steps with a feedback arrow from maintenance to earlier phases. Merits: simple to understand and manage, clear milestones and documentation, works well when requirements are stable and well understood. Demerits: no feedback from later phases to earlier ones, changes are difficult and costly, errors are detected late because working software appears only near the end, it is unsuitable for complex or changing projects, and integration and testing can become a bottleneck.",
+      "explanation": "This gives the sequential phase order, a text diagram and the standard advantages and limitations of the classical waterfall model.",
+      "oneShotPreview": "Waterfall = strict sequence Requirements → Design → Code → Test → Deploy → Maintain; simple but rigid with late error detection."
+    },
+    {
+      "q": "b) List and explain the major differences between the exploratory and modern software development practices.",
+      "a": "In the exploratory practice, coding starts immediately from a vague need and the code is repeatedly modified until it works; requirements analysis, design, documentation and systematic testing are skipped. Modern disciplined practice starts with requirements gathering and specification, followed by planning, design, implementation, systematic testing, deployment and maintenance, with reviews and documents at every step. Major differences: (1) planning is absent versus explicit; (2) requirements are assumed versus analysed and documented in an SRS; (3) design is ad hoc versus architectural and detailed; (4) documentation is absent versus deliberate; (5) testing is casual versus planned unit, integration and acceptance testing; (6) work is individual versus team-based with standards; (7) outcome is unpredictable versus estimated and tracked. Modern practice costs more effort upfront but is essential for large, reliable software.",
+      "explanation": "A point-by-point contrast on planning, requirements, design, documentation, testing and quality is exactly what a question asking for major differences expects.",
+      "oneShotPreview": "Exploratory = ad-hoc code-and-fix with no records; modern = planned requirements → design → code → test → maintain with reviews."
+    },
+    {
+      "q": "a) Define software crisis? Identify the reasons for software crisis.",
+      "a": "Software crisis is the difficulty of producing large, reliable software on time and within budget: projects run late, costs overrun, quality is poor and the delivered system often fails to meet user needs. Its main reasons are: (1) requirements are incomplete, ambiguous or constantly changing; (2) software is intangible and complex, so progress is hard to measure; (3) lack of planning, estimation methods and disciplined processes; (4) rapid growth in hardware capability and user expectations while development methods lag behind; (5) poor communication between users and developers; (6) inadequate testing, documentation and quality control; and (7) the heavy burden of repeatedly modifying and maintaining software. These problems motivated the discipline of software engineering.",
+      "explanation": "The answer defines the crisis through its symptoms and lists the standard causes: complexity, changing requirements, weak methods, communication gaps and maintenance burden.",
+      "oneShotPreview": "Software crisis = late, over-budget, low-quality software; causes include changing requirements, complexity, weak methods and poor communication."
+    },
+    {
+      "q": "b) Elaborate on the key phases of the RAD life cycle. Describe the primary objectives, key activities involved, and the expected deliverables.",
+      "a": "RAD (Rapid Application Development) is an iterative, prototype-based model that aims to deliver a system quickly, typically in 60 to 90 days, through heavy user involvement and reuse of components. Its key phases are: (1) Requirements planning — management and users agree on objectives, scope, schedule and constraints; deliverables are a project plan and requirement list. (2) User design — users and developers jointly define the design in JAD workshops using prototypes that are refined until users approve; deliverables are design specifications and approved prototypes. (3) Rapid construction — the design is converted into a working system using code generators, CASE tools and reusable components with continuous user feedback; deliverable is working software. (4) Cutover — testing, data conversion, user training and installation; deliverables are the deployed system and user documentation. The primary objectives are faster delivery, better requirement clarity and easier accommodation of change.",
+      "explanation": "It lists the four canonical RAD phases with the objective, activities and deliverables of each, matching the three parts asked in the question.",
+      "oneShotPreview": "RAD phases: requirements planning → user design workshops → rapid construction → cutover; goal is fast delivery with heavy user involvement."
+    },
+    {
+      "q": "a) Infer the different stages involved in the computer system engineering lifecycle, highlighting the key activities in each stage.",
+      "a": "The computer system engineering life cycle treats software as one part of a larger system. Its stages are: (1) system engineering/feasibility — define the problem, objectives, scope and constraints and study technical, economic and operational feasibility; (2) requirements analysis — gather and analyse the needs of users, hardware, software and procedures and specify functional and non-functional requirements; (3) system design — allocate requirements to hardware, software, people and procedures and design the architecture and interfaces; (4) software design — design modules, data structures and algorithms for the software part; (5) implementation — code and integrate the components; (6) testing — verify and validate the whole system through unit, integration, system and acceptance testing; (7) deployment and operation — install, train users and operate the system; (8) maintenance — correct defects, adapt to change and improve the system. Each stage produces documents that feed the next.",
+      "explanation": "It covers the system-level stages and names the key activity of each, from feasibility and requirements through design, implementation, testing, operation and maintenance.",
+      "oneShotPreview": "System lifecycle: feasibility → requirements → system design → software design → code → test → deploy → maintain."
+    },
+    {
+      "q": "b) Build the Rapid Application Development model. Discuss each phase in detail.",
+      "a": "RAD is a compressed, time-boxed development model built on prototyping, reuse and close user participation, usually finishing in 60 to 90 days. Phase 1, requirements planning: users and managers agree on business needs, scope, schedule and constraints, producing a project plan. Phase 2, user design: users take part in Joint Application Development workshops, prototypes are built and iteratively refined until the users approve, producing the design specification. Phase 3, construction: developers rapidly generate and integrate code using fourth-generation languages, CASE tools and reusable components while users review the growing system, producing a working product. Phase 4, cutover: data conversion, testing, training and installation hand over the operational system with documentation. Because it depends on user availability and reusable tools, RAD suits moderately sized, well-scoped projects rather than large complex ones.",
+      "explanation": "It describes how RAD is constructed from time boxes, JAD workshops, prototyping and code generation, discusses all four phases and notes its limitation.",
+      "oneShotPreview": "RAD = time-boxed requirements planning → JAD user design → rapid construction with 4GL/CASE tools → cutover."
+    },
+    {
+      "q": "a) Express what do you understand by the term software development life cycle? Why is it important while developing a software product?",
+      "a": "The software development life cycle (SDLC) is the framework of phases used to build software: requirements analysis, specification, design, coding, testing, deployment and maintenance. It is important because it provides a disciplined, structured path from an idea to a working product. Each phase has defined inputs, activities and deliverables, so progress can be planned and measured; errors and missing requirements are found early instead of after delivery; quality is built in through reviews and testing at each stage; and cost, schedule and risk stay under control. Without an SDLC, development is ad hoc, unpredictable and likely to produce unreliable software.",
+      "explanation": "It defines SDLC as the structured set of phases and clearly explains its value: planning, early defect detection, quality assurance and management control.",
+      "oneShotPreview": "SDLC = structured phases from requirements to maintenance; it enables planning, early defect detection, quality and cost/schedule control."
+    },
+    {
+      "q": "b) Explain notable changes in software development.",
+      "a": "Notable changes include the shift from ad-hoc individual programming to disciplined team-based engineering with documented life cycle models, and from a code-only focus to requirement- and customer-focused processes. Development has moved from big sequential waterfall releases to iterative, incremental and Agile methods such as Scrum and XP with frequent working software. There is far greater reuse of components, libraries, frameworks and open-source code, along with automated testing, continuous integration and DevOps. Applications have moved from standalone desktop programs to web, mobile and cloud services, and because software now lives for many years, continuous maintenance and evolution receive much more attention. Quality, security, usability and globally distributed teams are also far more important than before.",
+      "explanation": "It summarises the main evolution in methods, tools, delivery style and deployment platforms, which is what the broad question asks for.",
+      "oneShotPreview": "Changes: ad-hoc → disciplined, waterfall → Agile/DevOps, reuse and automation, cloud/mobile apps, continuous maintenance and quality focus."
+    },
+    {
+      "q": "a) Discuss the prototyping model. What is the effect of designing a prototype on the overall cost of the software project?",
+      "a": "In the prototyping model a quick, partial version of the system, often just the user interface, is built so that users and developers can understand the requirements. The steps are: identify the vague requirements, build a prototype, let users experiment with it, collect feedback, revise the prototype until requirements are clear, and then design and implement the real product, usually discarding the prototype. Effect on cost: a prototype adds some initial expense, but it clarifies requirements early and therefore avoids expensive changes after implementation; the saved rework and fewer misunderstandings usually reduce the total project cost when requirements are unclear. If a prototype is over-engineered or continuously polished instead of being discarded, however, it can increase cost and blur the line between prototype and final product.",
+      "explanation": "It describes the build-evaluate-refine cycle and gives a balanced cost analysis: small upfront cost versus savings from fewer late changes.",
+      "oneShotPreview": "Prototyping = quick partial system refined from user feedback; small upfront cost, but less rework and lower overall cost."
+    },
+    {
+      "q": "b) Explain the spiral model of software development. What are the Limitations of such model?",
+      "a": "The spiral model, proposed by Barry Boehm, combines the systematic phases of the waterfall with iterative prototyping and explicit risk analysis. Development proceeds through repeated loops, each with four sectors: (1) determine objectives, alternatives and constraints; (2) evaluate alternatives and identify and analyse risks, often using prototypes; (3) develop and verify the next level of the product; (4) plan the next iteration. Each loop ends with a customer review and produces a more complete version, making the model suitable for large, complex, high-risk projects. Limitations: it is complex to manage, expensive and time consuming, requires skilled risk analysts, its success depends heavily on that expertise, and it is not appropriate for small or low-risk projects or for fixed-price contracts where the number of cycles is uncertain.",
+      "explanation": "It presents the four spiral quadrants and Boehm's risk-driven idea, then lists the standard limitations of complexity, cost and dependence on risk expertise.",
+      "oneShotPreview": "Spiral = repeated objectives → risk analysis → build/verify → plan cycles; ideal for high-risk projects but complex and costly."
+    },
+    {
+      "q": "9 Explain in detail the following Waterfall Model and its Extensions. i) V-Model ii) Prototyping Model. [L2][CO1] 10M",
+      "a": "The V-Model is a verification-oriented extension of the waterfall in which each development phase on the left arm of a V has a matching test phase on the right arm: requirements ↔ acceptance testing, system design ↔ system testing, architectural design ↔ integration testing, detailed design ↔ unit testing, with coding at the bottom. Test plans are prepared as early as the corresponding design activity, so defects are found earlier and quality improves; however it is as rigid as the waterfall and copes poorly with changing requirements. The prototyping model adds an iterative loop to the waterfall: a rapid partial system is built, users try it and give feedback, and it is refined until requirements are clear before the full product is developed. This improves requirement clarity and user involvement but can increase cost if the prototype is never discarded and may create unrealistic expectations. Both are extensions that fix waterfall weaknesses: the V-Model strengthens verification, while prototyping clarifies requirements.",
+      "explanation": "The answer explains both named extensions in detail with their structure, benefits and drawbacks, and relates each to the specific waterfall weakness it addresses.",
+      "oneShotPreview": "V-Model pairs each design phase with a test phase; prototyping adds user-driven quick builds to clarify requirements."
+    },
+    {
+      "q": "10 Explain in detail the following Waterfall Model and its Extensions. i) Classical Waterfall Model ii) Incremental Development Model. [L1][CO1] 10M",
+      "a": "The classical waterfall model is a strictly sequential life cycle with phases of feasibility, requirements analysis and specification, design, coding and unit testing, integration and system testing, deployment, and maintenance. Each phase must be completed and documented before the next begins and no phases overlap. It is simple, easy to manage and suitable for stable, well-understood requirements, but it is rigid: changes are costly, errors are discovered late and working software appears only near the end. The incremental development model instead splits the product into a series of smaller builds: the core features are delivered first and each later increment adds more functionality until the system is complete. Every increment passes through its own mini life cycle of requirements, design, coding, testing and delivery, so users receive working software early, feedback is incorporated, risk is spread and changes are easier. It does require a good modular architecture and careful planning of increment boundaries.",
+      "explanation": "It describes both models with their phases, merits and demerits, and shows how incremental development softens the rigidity of the classical waterfall.",
+      "oneShotPreview": "Classical waterfall = one strict sequential pass; incremental = repeated small working builds, each adding new features."
+    },
+    {
+      "q": "a) Examine the concept of iterative and incremental development within the context of Agile methodologies.",
+      "a": "Iterative development means repeating the development cycle of plan, design, code, test and review in short time-boxed rounds, each producing a refined version of the product. Incremental development means building the product in small functional pieces and adding them one at a time, so the working system grows with each release. Agile combines the two: short iterations such as one-to-four-week Scrum sprints each deliver an increment of potentially shippable software, and feedback from the customer and team is used to reprioritise the next iteration. The result is early and continuous delivery of working software, fast response to changing requirements, frequent inspection and adaptation, and lower risk compared with a single big-bang waterfall delivery.",
+      "explanation": "It defines each concept separately, explains how Agile merges them in short iterations and lists the resulting benefits.",
+      "oneShotPreview": "Iterative = repeated plan-build-test cycles; incremental = add small working pieces; Agile combines both in short sprints."
+    },
+    {
+      "q": "b) Explain evolutionary process model in software engineering.",
+      "a": "An evolutionary process model develops software by growing it through repeated cycles instead of delivering it in one attempt. Since requirements are only partly known at the start, each cycle refines the requirements, design and implementation into a more complete version of the product. Examples are the prototyping model, the spiral model and the incremental model. Two common forms are evolutionary prototyping, where a rough prototype is continuously refined into the final system, and throwaway prototyping, where the prototype is used only to clarify requirements and then discarded. The model suits projects with changing or uncertain requirements because user feedback is incorporated continuously and risk is reduced, but it needs close user involvement and careful version control and is harder to plan and estimate than a sequential process.",
+      "explanation": "It defines the evolutionary idea, gives examples and the two prototyping variants, then states its suitability and trade-offs.",
+      "oneShotPreview": "Evolutionary model = software grows through repeated feedback-driven refinement (prototype, spiral, incremental); suits changing requirements."
+    }
+  ]
+}

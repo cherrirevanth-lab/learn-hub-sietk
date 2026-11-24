@@ -1,0 +1,116 @@
+{
+  "subject": "23HS0815",
+  "unit": 2,
+  "unitTitle": "Design Thinking Process",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "q": "1 a) What are the five stages of the Design Thinking process?",
+      "a": "The five stages are Empathize, Define, Ideate, Prototype and Test. In Empathize the team understands users through observation and interviews; in Define it frames a clear problem statement; in Ideate it generates many possible solutions; in Prototype it builds quick tangible versions of the best ideas; and in Test it checks those versions with real users. The stages form an iterative, non-linear loop rather than a rigid one-way sequence, as popularised by the Stanford d.school and IDEO.",
+      "explanation": "This is the standard five-stage d.school/IDEO design-thinking model, and naming the stages in order is exactly what a 2-mark recall question asks.",
+      "oneShotPreview": "Empathize → Define → Ideate → Prototype → Test."
+    },
+    {
+      "q": "1 b) Define the Empathize stage in Design Thinking.",
+      "a": "Empathize is the first stage of design thinking, in which designers set aside their own assumptions and try to understand users deeply by observing, listening to and interacting with them in their real context. Common methods are interviews, field observation, immersion and empathy maps. The aim is to discover users' needs, emotions, behaviours and pain points so that the solution is built around real people rather than guessed requirements.",
+      "explanation": "It identifies Empathize as the user-research stage and names its methods and goal, which is the required definition.",
+      "oneShotPreview": "Deeply understand users' needs and feelings through observation and interviews."
+    },
+    {
+      "q": "1 c) Why Define stage is important in problem-solving?",
+      "a": "The Define stage converts the broad findings of the Empathize stage into a clear, specific and actionable problem statement, often expressed as a point of view or a 'How might we...?' question. It is important because it prevents the team from solving the wrong problem or merely treating symptoms, and focuses attention on the underlying user need. A well-defined problem also gives direction and evaluation criteria for judging ideas later in the process.",
+      "explanation": "It explains the reframing role of Define and why a precise problem statement improves the quality of subsequent solutions.",
+      "oneShotPreview": "Turns research into a clear problem statement so teams solve the right problem."
+    },
+    {
+      "q": "1 d) What is the purpose of the Ideate phase?",
+      "a": "The purpose of the Ideate phase is to generate a wide and diverse range of possible solutions to the defined problem before judging any of them. Techniques such as brainstorming, mind mapping, 'How might we' prompts and SCAMPER encourage quantity, creativity and even wild ideas that can be combined or improved. Once the options are on the table, the team clusters and selects the most promising ones for prototyping.",
+      "explanation": "It captures the core rule of ideation — defer judgement while expanding the solution space — and its link to prototyping.",
+      "oneShotPreview": "Generate many creative solutions before choosing which ones to prototype."
+    },
+    {
+      "q": "1 e) How does prototyping help in refining an idea?",
+      "a": "Prototyping turns an abstract idea into a quick, low-cost tangible artefact such as a sketch, paper mock-up, cardboard model or clickable wireframe that can actually be seen and tried. This exposes weaknesses and wrong assumptions early, while changes are still cheap, and invites concrete feedback from users and teammates. Each revised prototype refines the concept, so the final product is less likely to fail because of an unnoticed flaw.",
+      "explanation": "It explains the value of low-fidelity, early testing and iteration, which is precisely how a prototype refines an idea.",
+      "oneShotPreview": "Cheap tangible models expose flaws early and let ideas improve through feedback."
+    },
+    {
+      "q": "2 a) List and Construct Five stages of Design Thinking process.",
+      "a": "The five stages are: (1) Empathize — observe and interview users to understand their needs and emotions; (2) Define — synthesise the findings into a clear, focused problem statement; (3) Ideate — brainstorm a broad set of possible solutions; (4) Prototype — build inexpensive, tangible versions of the best ideas; and (5) Test — give the prototypes to real users and collect feedback. Constructed in this order, the stages form an iterative loop: what is learned in testing can send the team back to redefine the problem, generate new ideas or build another prototype. This human-centred structure keeps decisions grounded in evidence rather than assumptions.",
+      "explanation": "It both lists all five stages and briefly constructs/describes each one, including the iterative relationship between them, as the question demands.",
+      "oneShotPreview": "Empathize, Define, Ideate, Prototype, Test — a repeating, user-centred loop."
+    },
+    {
+      "q": "2 b) Explain five stages of Design Thinking process with suitable examples.",
+      "a": "In a project to improve hospital registration, the Empathize stage has the team interview patients and staff and observe the waiting area to find where frustration occurs. In Define they state the problem as 'How might we reduce the perceived waiting time and anxiety of patients at the counter?' In Ideate they brainstorm mobile tokens, self-check-in kiosks and a better queue display. In Prototype they make a paper mock-up of the kiosk screen and a simple clickable app flow. In Test they watch a few patients use the prototype, learn that large readable fonts matter most, and revise the design before building the real system. Since findings from testing can loop back to any earlier stage, the final solution stays grounded in actual user needs.",
+      "explanation": "It explains every stage and carries one consistent example through all five, which is what a 5-mark 'explain with examples' answer requires.",
+      "oneShotPreview": "Each of the five stages shown through a hospital queue redesign example."
+    },
+    {
+      "q": "3 Why is the Empathize stage crucial in Design Thinking, and how does it impact the final solution?",
+      "a": "Empathize is crucial because it grounds the entire process in the real needs, emotions and context of the people the solution is for, instead of the design team's assumptions. By observing and interviewing users, designers uncover latent needs and pain points that users may not even be able to state directly. This insight produces a meaningful problem definition and ideas that genuinely resonate with the users. Consequently the final solution is more usable, relevant and readily accepted because it has been shaped around real behaviour; skipping empathy often leads to technically sound products that nobody wants.",
+      "explanation": "It links empathy directly to problem framing and to the fit and acceptance of the end product, answering both parts of the question.",
+      "oneShotPreview": "It replaces assumptions with real user insight, so the final solution actually fits users."
+    },
+    {
+      "q": "4 Discuss the role of prototyping and testing in refining an idea during the Design Thinking process.",
+      "a": "Prototyping converts ideas into quick, low-fidelity tangible artefacts — sketches, paper mock-ups, cardboard models or clickable screens — so that abstract concepts can be examined and tried. Testing puts these prototypes in front of real users to observe behaviour, gather feedback and reveal usability problems early, when mistakes are still cheap to fix. Together they create a rapid build–test–learn cycle in which each round of feedback produces an improved prototype, progressively reducing risk and uncertainty. They also let teams compare alternatives and give stakeholders something concrete to discuss. Insights from testing may even send the team back to redefine the problem or brainstorm again, which is why design thinking is iterative rather than strictly linear.",
+      "explanation": "It covers the distinct roles of both activities and their combined iterative effect on refining an idea, matching the 10-mark discussion question.",
+      "oneShotPreview": "Build cheap prototypes, test with users, learn, and iterate until the idea works."
+    },
+    {
+      "q": "5 a) List and explain the Design Thinking drive new inventions?",
+      "a": "Design thinking drives invention through its five stages: Empathize reveals unmet human needs that become invention opportunities; Define sharpens them into a clear challenge; Ideate generates a large pool of novel concepts; Prototype turns the promising ones into tangible, testable forms; and Test validates and improves them with real users. Its habits of experimentation, willingness to fail fast and cross-disciplinary collaboration help unexpected combinations of ideas emerge. Because every concept is checked against user feedback, the resulting invention is both creative and practical. This approach has contributed to user-friendly medical devices, assistive products and app-based services built around real behaviours.",
+      "explanation": "It explains stage by stage how the method and its mindset generate and validate inventions, rather than merely listing the stages.",
+      "oneShotPreview": "Needs → ideas → prototypes → feedback turns creativity into usable inventions."
+    },
+    {
+      "q": "5 b) Choose some examples of innovative products developed using this approach.",
+      "a": "Examples include Airbnb, whose founders redesigned their listings after observing that poor photos and trust concerns were hurting bookings, and Apple's iPod and iPhone, whose interfaces were shaped by studying how people actually use music and communication devices. IDEO's OXO Good Grips kitchen tools were created after watching people with arthritis struggle with ordinary handles. In healthcare, the Embrace infant warmer was designed after observing the lack of affordable, electricity-free incubators in rural Nepal. User-centred banking apps and airport or hospital self-check-in kiosks are further examples. All of them share the same pattern of deep user observation followed by iterative prototyping and testing.",
+      "explanation": "It supplies several concrete, well-known products and identifies the common design-thinking pattern behind them.",
+      "oneShotPreview": "Airbnb, Apple devices, Embrace warmer, OXO Good Grips — all user-driven."
+    },
+    {
+      "q": "6 Demonstrate the essential steps involved in implementing a structured innovation process within an organization?",
+      "a": "Implementation starts with leadership commitment and an innovation goal aligned to the organisation's strategy, followed by cross-functional teams trained in design-thinking methods. The team then identifies and prioritises opportunities using customer research, market data and employee insight. Next it runs iterative Empathize–Define–Ideate–Prototype–Test cycles with time boxes and clear checkpoints for selecting and funding the best concepts. Enablers such as an idea-management system, protected time and budget, prototyping space and metrics like validated learnings keep the process disciplined. Finally the winning solution is piloted, its results measured, and what works is scaled while lessons feed into the next cycle, making innovation repeatable instead of accidental.",
+      "explanation": "It demonstrates the full implementation chain from strategy and people through structured cycles to pilot, scaling and feedback.",
+      "oneShotPreview": "Strategy → team → opportunities → design-thinking cycles → pilot → scale and review."
+    },
+    {
+      "q": "7 Apply the Design Thinking process to solve social innovation. Provide examples.",
+      "a": "To address a social problem such as unsafe sanitation, poor school attendance or lack of clean water, the team first empathises by living with or interviewing the affected community to understand the real root of the problem. It then defines a specific need, ideates together with community members rather than for them, builds low-cost prototypes of a product or service, and tests them in the field while revising from feedback. For instance, a clean-water project might prototype a simple low-cost filter and a new collection routine and measure actual use before scaling. The Embrace infant warmer likewise emerged from observing rural Nepal's neonatal-care constraints, and IDEO's school-lunch redesign from studying students' experience of lunch. Because the community helps shape the solution, it is affordable, locally accepted and more sustainable.",
+      "explanation": "It applies all five stages to social challenges and gives relevant examples with an explanation of why the approach succeeds.",
+      "oneShotPreview": "Use the five stages with communities to build affordable, accepted social solutions."
+    },
+    {
+      "q": "8 Discuss a real-world case study where Design Thinking was used for a social innovation.",
+      "a": "A well-documented case is the Embrace infant warmer, developed by a Stanford design team working with health workers in rural Nepal. Empathising with families and nurses showed that conventional incubators were expensive, needed reliable electricity and were unavailable in villages, so low-birth-weight babies were often warmed with unsafe methods. The team defined the need as an affordable, portable, electricity-free warmer, then ideated and prototyped a lightweight sleeping bag with a phase-change material pouch heated in warm water that retains heat for hours. They tested successive prototypes with caregivers and clinicians, simplifying the design until it was usable and culturally acceptable. The resulting low-cost warmer has helped thousands of infants and led to the nonprofit Embrace Global, showing how user-centred iteration produces scalable social impact.",
+      "explanation": "It presents a genuine case study with the empathy findings, problem definition, prototype, testing and outcome required for a full discussion.",
+      "oneShotPreview": "Embrace infant warmer: empathy in Nepal led to a low-cost, portable warmer."
+    },
+    {
+      "q": "9 a) Illustrate about Personas in design thinking.",
+      "a": "A persona is a fictional but research-based archetype representing a key user group, built from patterns in interviews and observations. It usually includes a name, picture, demographics, goals, behaviours, frustrations and a short narrative, and may be labelled primary, secondary or anti-persona. Personas make the target user concrete and memorable, so the team discusses real needs rather than stereotypes or its own preferences. They guide the Define and Ideate stages and help decide whose needs matter most. For example, a banking app might use 'Riya, a busy working mother who checks her balance on a low-end phone between tasks', pushing the team to design for speed and low data usage.",
+      "explanation": "It defines personas, describes their contents and purpose, and illustrates one, covering all parts of the question.",
+      "oneShotPreview": "Research-based fictional user profiles that keep the team focused on real needs."
+    },
+    {
+      "q": "9 b) Survey the importance of customer journey maps in understanding user experience.",
+      "a": "A customer journey map is a visual timeline of every step a user takes with a product or service, from first awareness through purchase, use and after-sales support. It records the actions, touchpoints, thoughts, emotions and pain points at each stage, often as an emotional curve. This makes hidden experiences visible and shows exactly where users struggle or abandon the process, such as a confusing sign-up step or poor delivery updates. It also aligns cross-functional teams around one end-to-end view and highlights the moments that matter most. Designers use it to prioritise improvements, generate ideas and later check whether changes actually improved the experience.",
+      "explanation": "It explains what the map shows and why it is valuable for spotting pain points and aligning teams, which is the importance being surveyed.",
+      "oneShotPreview": "Visual timeline of user steps and emotions that reveals pain points to fix."
+    },
+    {
+      "q": "10 Explain the role of brainstorming in the design thinking process.",
+      "a": "Brainstorming is the central idea-generation technique of the Ideate stage, used to produce many varied solutions to the defined problem. Its rules — defer judgement, welcome wild ideas, build on others' ideas and aim for quantity — reduce the fear of criticism and allow creative connections to form. Facilitators use prompts such as 'How might we...?', silent idea writing, mind maps or SCAMPER to include quieter members and avoid groupthink. Afterwards the ideas are clustered, voted on and selected for prototyping, so brainstorming feeds directly into the following stages. Its role is therefore to expand the solution space before the team converges, increasing the chance of a genuinely innovative answer.",
+      "explanation": "It covers the rules, techniques and position of brainstorming between Define and Prototype, explaining its role in the process.",
+      "oneShotPreview": "Judgement-free group idea generation that expands options before convergence."
+    },
+    {
+      "q": "11 Assess the effectiveness of design thinking in product development with case studies.",
+      "a": "Design thinking is effective in product development because it combines creative ideation with continuous validation by real users, lowering the risk of launching products nobody wants. Airbnb is a cited case: its founders redid listing photos and trust features after observing problems, which substantially improved bookings. Apple's intuitive devices and OXO Good Grips utensils, designed after observing people with arthritis, show the same user-centred pattern. In each case the team empathised, reframed the problem, prototyped quickly and tested before scaling, improving usability, satisfaction and market fit while avoiding late, expensive rework. The limitations are that it needs genuine user access, time to iterate and management support; as a one-off workshop it produces little benefit.",
+      "explanation": "It assesses effectiveness using concrete case studies, names the benefits and adds balanced limitations, as a 10-mark evaluation question expects.",
+      "oneShotPreview": "User-validated iteration improves fit and cuts rework — when genuinely applied."
+    }
+  ]
+}

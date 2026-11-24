@@ -1,0 +1,122 @@
+{
+  "subject": "23HS0838",
+  "unit": 2,
+  "unitTitle": "Probability",
+  "totalQuestions": 19,
+  "questions": [
+    {
+      "q": "1 a) Define Probability. [L1][CO2] [2M]",
+      "a": "Probability is a numerical measure of the likelihood that an event will occur, and it always lies between 0 and 1. For an experiment with equally likely outcomes it is defined as P(E) = (number of outcomes favourable to E)/(total number of equally likely outcomes). Axiomatically, P is a set function with 0 <= P(E) <= 1, P(S) = 1, and P(E1 union E2) = P(E1) + P(E2) for mutually exclusive events. P(E) = 0 means the event is impossible and P(E) = 1 means it is certain.",
+      "explanation": "This is the classical and axiomatic definition that underlies every probability calculation; the simple ratio formula is valid only when outcomes are equally likely.",
+      "oneShotPreview": "Probability = favourable outcomes / total equally likely outcomes; a number in [0,1]."
+    },
+    {
+      "q": "1 b) Evaluate P(A/B), if P(A) = 7/13, P(B) = 9/13 and P(A ∩ B) = 4/13. [L5][CO2] [2M]",
+      "a": "Using the conditional probability formula, P(A/B) = P(A ∩ B)/P(B). Substituting the given values, P(A/B) = (4/13)/(9/13) = 4/9. The value P(A) = 7/13 is extra information and is not needed here.",
+      "explanation": "Conditioning on B restricts the sample space to B, so the chance of A inside it is the joint probability divided by P(B).",
+      "oneShotPreview": "P(A/B) = (4/13)/(9/13) = 4/9."
+    },
+    {
+      "q": "1 c) State Baye's theorem. [L1][CO2] [2M]",
+      "a": "If B1, B2, ..., Bn form a partition of the sample space S with P(Bi) > 0, and A is any event with P(A) > 0, then P(Bi/A) = P(Bi) P(A/Bi) / sum over j of [P(Bj) P(A/Bj)]. The denominator is the total probability of A. In words: posterior probability = (prior probability x likelihood) / evidence.",
+      "explanation": "Bayes' theorem converts a known conditional probability P(A/Bi) into the unknown reverse probability P(Bi/A) using the partition and the law of total probability.",
+      "oneShotPreview": "P(Bi|A) = P(Bi)P(A|Bi) / Σ P(Bj)P(A|Bj) — prior x likelihood / evidence."
+    },
+    {
+      "q": "1 d) Explain types of random variables. [L2][CO2] [2M]",
+      "a": "A discrete random variable takes a finite or countably infinite set of values (for example, the number of heads in three tosses) and is described by a probability mass function p(x) = P(X=x) with sum p(x) = 1. A continuous random variable takes any value in an interval (for example, height or time) and is described by a probability density function f(x) >= 0 with integral of f(x) equal to 1, where P(a < X < b) is the integral of f from a to b. Mixed variables have both discrete and continuous parts. Binomial and Poisson are discrete; uniform, exponential and normal are continuous.",
+      "explanation": "The distinction decides whether probabilities are found by summing a PMF (discrete) or integrating a PDF (continuous).",
+      "oneShotPreview": "Discrete = countable values with a PMF; continuous = interval values with a PDF."
+    },
+    {
+      "q": "1 e) Define expected value of a discrete random variable. [L1][CO2] [2M]",
+      "a": "The expected value (mean) of a discrete random variable X with probability mass function p(x) is E(X) = sum over all x of x*p(x), the probability-weighted average of all possible values. More generally, E[g(X)] = sum g(x)*p(x). It represents the long-run average value observed when the experiment is repeated a very large number of times.",
+      "explanation": "Weighting each possible value by its probability gives the centre of the distribution, the quantity that remains stable across repeated trials.",
+      "oneShotPreview": "E(X) = Σ x·p(x); the probability-weighted long-run average."
+    },
+    {
+      "q": "2 a) A class consists of 6 girls and 10 boys. If a committee of 3 is chosen at random from the class, find the Probability that (i) 3 boys are selected (ii) Exactly 2 girls are selected. [L1][CO2] [5M]",
+      "a": "The total number of ways to choose 3 of the 16 students is C(16,3) = 560. (i) Choosing 3 boys from 10 gives C(10,3) = 120, so P = 120/560 = 3/14. (ii) Exactly 2 girls means 2 of 6 girls and 1 of 10 boys: C(6,2)*C(10,1) = 15*10 = 150, so P = 150/560 = 15/56.",
+      "explanation": "Every committee of 3 is equally likely, so each probability is the number of favourable combinations divided by the total number of combinations.",
+      "oneShotPreview": "C(10,3)/C(16,3) = 3/14; C(6,2)C(10,1)/C(16,3) = 15/56."
+    },
+    {
+      "q": "2 b) If three coins are tossed. Find the probability of getting i) 3 heads ii) 2 heads only iii) no heads. [L1][CO2] [5M]",
+      "a": "Three fair coins produce 2^3 = 8 equally likely outcomes. (i) 3 heads: only HHH, so P = 1/8. (ii) exactly 2 heads: HHT, HTH, THH (3 outcomes), so P = 3/8. (iii) no heads: only TTT, so P = 1/8.",
+      "explanation": "This uses the classical definition: count the outcomes matching each event and divide by the 8 equally likely outcomes.",
+      "oneShotPreview": "3 heads = 1/8, exactly 2 heads = 3/8, no heads = 1/8."
+    },
+    {
+      "q": "3 a) Two cards are selected at random from 10 cards numbered 1 to 10. Find the probability that the sum is even if (i) The two cards are drawn together. (ii) The two cards drawn one after other with replacement. [L5][CO2] [5M]",
+      "a": "Among 1 to 10 there are 5 odd and 5 even numbers, and the sum is even when both cards are odd or both are even. (i) Drawn together (without replacement): [C(5,2)+C(5,2)]/C(10,2) = (10+10)/45 = 20/45 = 4/9. (ii) With replacement: (5/10)(5/10) + (5/10)(5/10) = 1/4 + 1/4 = 1/2.",
+      "explanation": "Odd+odd and even+even are the only ways to obtain an even sum; with replacement the chance of each draw being odd or even stays at 1/2.",
+      "oneShotPreview": "Even sum: 4/9 without replacement, 1/2 with replacement."
+    },
+    {
+      "q": "3 b) Determine (i) P(B/A) (ii) P(A/B^c) if A and B are events with P(A) = 1/3, P(B) = 1/4, P(A ∪ B) = 1/2. [L5][CO2] [5M]",
+      "a": "First obtain the intersection from the addition rule: P(A ∩ B) = P(A) + P(B) - P(A ∪ B) = 1/3 + 1/4 - 1/2 = 1/12. (i) P(B/A) = P(A ∩ B)/P(A) = (1/12)/(1/3) = 1/4. (ii) P(A ∩ B^c) = P(A) - P(A ∩ B) = 1/3 - 1/12 = 1/4, and P(B^c) = 1 - 1/4 = 3/4, so P(A/B^c) = (1/4)/(3/4) = 1/3.",
+      "explanation": "The addition rule supplies the missing joint probability, and each conditional probability is the appropriate joint probability divided by the probability of the given event.",
+      "oneShotPreview": "P(A∩B) = 1/12; P(B|A) = 1/4; P(A|B^c) = 1/3."
+    },
+    {
+      "q": "4 a) In a certain town 40% have brown hair, 25% have brown eyes and 15% have both brown hair and brown eyes. A person is selected at random from the town. i) If he has brown hair, what is the probability that he has brown eyes also? ii) If he has brown eyes, determine the probability that he does not have brown hair? [L1][CO2] [5M]",
+      "a": "Let H be brown hair and E be brown eyes, with P(H)=0.40, P(E)=0.25 and P(H ∩ E)=0.15. (i) P(E/H) = P(H ∩ E)/P(H) = 0.15/0.40 = 3/8 = 0.375. (ii) P(H^c ∩ E) = P(E) - P(H ∩ E) = 0.25 - 0.15 = 0.10, so P(H^c/E) = 0.10/0.25 = 2/5 = 0.4.",
+      "explanation": "A conditional probability restricts the sample space to the given characteristic, so only the part of the joint event lying inside that characteristic is counted.",
+      "oneShotPreview": "P(eyes|hair) = 0.15/0.40 = 0.375; P(no hair|eyes) = 0.10/0.25 = 0.4."
+    },
+    {
+      "q": "4 b) The probability that students A,B,C,D solve the problem are 1/3, 2/5, 1/5 and 1/4 respectively If all of them try to solve the problem, What is the probability that the problem is solved? [L3][CO2] [5M]",
+      "a": "Assuming the students work independently, the problem is solved if at least one of them succeeds. P(none solves) = (1-1/3)(1-2/5)(1-1/5)(1-1/4) = (2/3)(3/5)(4/5)(3/4) = 6/25 = 0.24. Therefore P(problem is solved) = 1 - 6/25 = 19/25 = 0.76.",
+      "explanation": "It is easier to use the complement: the problem stays unsolved only when all four fail, and independence lets their failure probabilities multiply.",
+      "oneShotPreview": "1 - (2/3)(3/5)(4/5)(3/4) = 1 - 6/25 = 19/25 = 0.76."
+    },
+    {
+      "q": "5 Two dice are thrown. Let A be the event that the sum of the point on the faces is 9. Let B be the event that at least one number is 6. Find (i) P(A ∩ B) (ii) P(A ∪ B) (iii) P(A^c ∪ B^c) (iv) P(A^c ∩ B^c) (v) P(A ∩ B^c) [L1][CO2] [10M]",
+      "a": "There are 36 equally likely outcomes. A = {(3,6),(4,5),(5,4),(6,3)} so P(A)=4/36; B (at least one 6) has 11 outcomes so P(B)=11/36; A ∩ B = {(3,6),(6,3)} so P(A ∩ B)=2/36=1/18. Hence (i) P(A ∩ B)=1/18; (ii) P(A ∪ B)=4/36+11/36-2/36=13/36; (iii) P(A^c ∪ B^c)=1-P(A ∩ B)=17/18 by De Morgan's law; (iv) P(A^c ∩ B^c)=1-P(A ∪ B)=23/36; (v) P(A ∩ B^c)=P(A)-P(A ∩ B)=2/36=1/18.",
+      "explanation": "Counting the outcomes in A, B and A ∩ B and then applying the addition rule, complement rule and De Morgan's laws yields all five requested probabilities.",
+      "oneShotPreview": "A∩B=1/18; A∪B=13/36; A^c∪B^c=17/18; A^c∩B^c=23/36; A∩B^c=1/18."
+    },
+    {
+      "q": "6 In a certain college 25% of boys and 10% of girls are studying mathematics. The girls Constitute 60% of the student body. (a) What is the probability that mathematics is being studied? (b) If a student is selected at random and is found to be studying mathematics, find the probability that the student is a girl? (c) a boy [L1][CO2] [10M]",
+      "a": "Let G be girl, B be boy and M be studying mathematics. P(G)=0.6, P(B)=0.4, P(M/G)=0.10, P(M/B)=0.25. (a) By the law of total probability, P(M)=0.6(0.10)+0.4(0.25)=0.06+0.10=0.16. (b) By Bayes' theorem, P(G/M)=0.06/0.16=3/8=0.375. (c) P(B/M)=0.10/0.16=5/8=0.625.",
+      "explanation": "Total probability gives the overall rate of studying mathematics, and Bayes' theorem reverses it to identify which group a randomly selected mathematics student belongs to.",
+      "oneShotPreview": "P(M)=0.16; P(girl|M)=3/8; P(boy|M)=5/8."
+    },
+    {
+      "q": "7 Two dice are thrown. Let X assign to each point (a, b) in S the maximum of its numbers i.e, X(a,b)= max (a,b). Find the probability distribution. X is a random variable with X(s)={1,2,3,4,5,6}. Also find the mean and variance of the distribution. [L5][CO2] [10M]",
+      "a": "For X = k the pairs with maximum k are (k,1)...(k,k) and (1,k)...(k-1,k), i.e. 2k-1 outcomes, so P(X=k)=(2k-1)/36 for k=1..6: 1/36, 3/36, 5/36, 7/36, 9/36, 11/36. E(X)=[1(1)+2(3)+3(5)+4(7)+5(9)+6(11)]/36=161/36≈4.472. E(X^2)=[1(1)+4(3)+9(5)+16(7)+25(9)+36(11)]/36=791/36≈21.972. Var(X)=791/36-(161/36)^2=2555/1296≈1.971.",
+      "explanation": "Counting the 2k-1 pairs whose maximum is k builds the PMF, and the formulas E(X)=sum x p(x) and Var(X)=E(X^2)-[E(X)]^2 give the mean and variance.",
+      "oneShotPreview": "P(X=k)=(2k-1)/36; mean=161/36≈4.47; variance=2555/1296≈1.97."
+    },
+    {
+      "q": "8 A random variable X has the following probability function: X = 0,1,2,3,4,5,6,7 with P(x) = 0, K, 2K, 2K, 3K, K^2, 2K^2, 7K^2+K. Determine (i) K (ii) Evaluate P(X>=6) and P(0<X<5) (iii) if P(X<=K)>1/2, find the minimum value of K (iv) variance. [L5][CO2] [10M]",
+      "a": "Summing all probabilities gives 9K+10K^2=1, i.e. 10K^2+9K-1=0, so the positive root is K=1/10. (ii) P(X>=6)=2K^2+(7K^2+K)=9K^2+K=0.19; P(0<X<5)=K+2K+2K+3K=8K=0.8. (iii) Reading K here as the value k of X, the cumulative probabilities are P(X<=3)=0.5 and P(X<=4)=0.8, so the minimum integer k with P(X<=k)>1/2 is 4. (iv) With probabilities 0, 0.1, 0.2, 0.2, 0.3, 0.01, 0.02, 0.17: E(X)=3.66 and E(X^2)=16.8, hence Var(X)=16.8-(3.66)^2=3.4044.",
+      "explanation": "Normalising the PMF fixes K; every other quantity is then found by summing the appropriate probabilities and applying Var(X)=E(X^2)-[E(X)]^2.",
+      "oneShotPreview": "K=1/10; P(X>=6)=0.19; P(0<X<5)=0.8; minimum k=4; Var=3.4044."
+    },
+    {
+      "q": "9 a) Find the mean and variance of the uniform probability distribution given by f(x) = 1/n for x = 1,2,...,n. [L1][CO2] [5M]",
+      "a": "For the discrete uniform distribution on 1,...,n, E(X)=(1/n) times the sum of x from 1 to n = (1/n)*n(n+1)/2 = (n+1)/2. Also E(X^2)=(1/n) times the sum of x^2 = (n+1)(2n+1)/6. Therefore Var(X)=(n+1)(2n+1)/6 - (n+1)^2/4 = (n^2-1)/12.",
+      "explanation": "Substituting the standard sums of the first n integers and their squares into the moment formulas gives closed-form mean and variance.",
+      "oneShotPreview": "Mean = (n+1)/2; Variance = (n^2-1)/12."
+    },
+    {
+      "q": "a) If a random variable has a Probability density f(x) as f(x) = {2e^{-2x}, for x > 0; 0, for x <= 0}. Find the Probabilities that it will take on a value (i) Between 1&3 (ii) Greater than 0.5 [L1][CO2] [5M]",
+      "a": "This is the exponential distribution with rate 2. (i) P(1<X<3) = integral from 1 to 3 of 2e^{-2x} dx = e^{-2} - e^{-6} ≈ 0.1353 - 0.0025 = 0.1329. (ii) P(X>0.5) = integral from 0.5 to infinity of 2e^{-2x} dx = e^{-1} ≈ 0.3679.",
+      "explanation": "Integrating the density over the required interval gives the probability, and for an exponential density the tail integral from a to infinity simplifies to e^{-2a}.",
+      "oneShotPreview": "P(1<X<3)=e^-2-e^-6≈0.133; P(X>0.5)=e^-1≈0.368."
+    },
+    {
+      "q": "10 A continuous random variable has the probability density function. f(x) = {k(1 - x^2); 0 < x < 1; 0; Otherwise}. Determine i) Constant 'k' ii) Mean and iii) Variance. [L5][CO2] [10M]",
+      "a": "Normalising the density: integral from 0 to 1 of k(1-x^2) dx = k[x - x^3/3]_0^1 = 2k/3 = 1, so k = 3/2. Mean E(X) = (3/2) integral from 0 to 1 of x(1-x^2) dx = (3/2)(1/4) = 3/8 = 0.375. E(X^2) = (3/2) integral from 0 to 1 of x^2(1-x^2) dx = (3/2)(2/15) = 1/5. Variance = 1/5 - (3/8)^2 = 19/320 ≈ 0.0594.",
+      "explanation": "The normalisation condition fixes k, and integrating x f(x) and x^2 f(x) gives the mean and second moment required for the variance.",
+      "oneShotPreview": "k=3/2; mean=3/8; variance=19/320≈0.0594."
+    },
+    {
+      "q": "11 Probability density function of a random variable X is f(x) = {(1/2) sin x, for 0 <= x <= pi; 0, elsewhere}. Find the mean, mode and median of the distribution and also find the probability between 0 and pi/2. [L1][CO2] [10M]",
+      "a": "The density is symmetric about pi/2. Mean E(X) = (1/2) integral from 0 to pi of x sin x dx = (1/2)[-x cos x + sin x]_0^pi = pi/2. The density is greatest where sin x = 1, i.e. at x = pi/2, so the mode is pi/2; by symmetry the median is also pi/2. P(0<X<pi/2) = (1/2) integral from 0 to pi/2 of sin x dx = (1/2)[-cos x]_0^{pi/2} = 1/2.",
+      "explanation": "The symmetric sine density is centred at pi/2 so the mean, mode and median coincide there, and the integral over half the support is exactly half the total probability.",
+      "oneShotPreview": "Mean = mode = median = pi/2; P(0<X<pi/2) = 1/2."
+    }
+  ]
+}

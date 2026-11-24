@@ -1,0 +1,116 @@
+{
+  "subject": "23CS0513",
+  "unit": 3,
+  "unitTitle": "Software Design and Agility",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "q": "1 a) Write the difference between Coupling and Cohesion. [L3] [CO3] [2M]",
+      "a": "Coupling is the degree of interdependence between modules - how much one module depends on the internal details of another. Cohesion is how closely related the elements within a single module are, i.e., how well the functions inside one module belong together. Good design aims for low coupling (independent modules) and high cohesion (each module focused on one task). This makes the system easier to understand, test, maintain, and reuse.",
+      "explanation": "Coupling and cohesion are the two core measures of module independence; minimizing dependencies between modules while maximizing internal relatedness reduces ripple effects and complexity.",
+      "oneShotPreview": "Coupling = inter-module dependency (keep low); Cohesion = intra-module relatedness (keep high)."
+    },
+    {
+      "q": "1 b) Define Data Flow Diagram [L3] [CO3] [2M]",
+      "a": "A Data Flow Diagram (DFD) is a graphical representation of how data flows through an information system, showing data moving from external sources into processes, being transformed, stored in data stores, and delivered to destinations (sinks). It uses bubbles/circles for processes, arrows for data flows, rectangles for external entities, and parallel lines or open rectangles for data stores. DFDs are built at multiple levels (context, level 0, level 1, ...) to show increasing detail. They are a core tool of structured analysis for modeling system functionality independently of implementation.",
+      "explanation": "A DFD captures what a system does with data rather than how it does it, giving an implementation-independent view useful to both technical and non-technical stakeholders.",
+      "oneShotPreview": "DFD = diagram of data moving through processes, stores, sources and sinks."
+    },
+    {
+      "q": "1 c) Define Design Review. [L3] [CO3] [2M]",
+      "a": "A design review is a formal, systematic evaluation of a software design document or model by a group of developers or stakeholders before implementation begins. Its purpose is to find defects, ambiguities, inconsistencies, and omissions early, and to verify the design meets requirements and standards. Reviews are conducted as walkthroughs, inspections, or technical reviews. They improve quality, reduce rework, and confirm the design is complete and feasible.",
+      "explanation": "Reviewing the design before coding catches errors at the cheapest stage and verifies the design actually satisfies the specified requirements.",
+      "oneShotPreview": "Design review = formal group evaluation of a design before coding to catch defects early."
+    },
+    {
+      "q": "1 d) Define LOC. [L3] [CO3] [2M]",
+      "a": "LOC stands for Lines of Code, a software metric that counts the number of lines in a program's source code. It is used as a simple measure of program size and, indirectly, of complexity, effort, and productivity. It may count physical lines or logical source statements, often excluding comments and blank lines. Because it is easy to collect, LOC feeds estimation models such as COCOMO, though it should not be the sole measure of quality.",
+      "explanation": "LOC gives an objective, easily measured size figure that supports effort estimation and productivity comparison, but it reflects quantity rather than quality or functionality.",
+      "oneShotPreview": "LOC = Lines of Code; a size/complexity metric used for estimation and productivity."
+    },
+    {
+      "q": "1 e) What are the types of User-Interfaces [L3] [CO3] [2M]",
+      "a": "The main types of user interfaces are: (1) command-line interfaces (CLI) where users type text commands, (2) graphical user interfaces (GUI) using windows, icons, menus, and a pointer, (3) menu-driven interfaces where users select from displayed options, (4) form-based interfaces for data entry, and (5) natural interfaces such as touchscreens, voice user interfaces (VUI), and gesture-based interaction. They can also be classified as batch versus interactive, or as direct-manipulation interfaces. The choice depends on the users, the task, and the device.",
+      "explanation": "Classifying interfaces by interaction style helps designers choose the medium best suited to the users and tasks at hand.",
+      "oneShotPreview": "UI types: CLI, GUI, menu-driven, form-based, and touch/voice natural interfaces."
+    },
+    {
+      "q": "2 a) Compose and Explain briefly about Design Processes. [L6] [CO3] [5M]",
+      "a": "Software design is the process of transforming a specification or requirements model into a detailed plan (blueprint) for implementation. It typically includes understanding the requirements, designing the system architecture, identifying modules and their interfaces (high-level or architectural design), and specifying algorithms and data structures for each module (detailed design). Design also covers data design and user-interface design, evaluation of quality attributes, followed by design review and documentation. The output is a design document that guides coding and testing.",
+      "explanation": "Design bridges analysis and coding by converting what the system must do into how it will be structured, addressing architecture, data, interfaces, and detail at each step.",
+      "oneShotPreview": "Design process = architecture + data + interface + detailed design, turning requirements into a buildable blueprint."
+    },
+    {
+      "q": "2 b) Discuss Layered Arrangements of modules [L2] [CO3] [5M]",
+      "a": "A layered arrangement organizes modules into hierarchical levels (layers), where each layer provides services to the layer above and uses services of the layer below. Lower layers hold primitive, general-purpose functions such as device drivers or data access, while higher layers implement application logic and the user interface. Modules interact mainly with adjacent layers, which limits complexity and dependency. This supports separation of concerns, modularity, easier maintenance, and reuse of lower layers. Layering is common in operating systems, networks (the OSI model), and enterprise applications.",
+      "explanation": "Layering controls complexity by restricting communication to nearby layers, so a change in one layer has limited impact on the others.",
+      "oneShotPreview": "Layered modules = hierarchy where each layer serves the one above and uses the one below."
+    },
+    {
+      "q": "3 Classify and explain types of Cohesion and Coupling with neat sketch [L2] [CO3] [10M]",
+      "a": "Cohesion measures how strongly the elements within a module belong together; from weakest to strongest its levels are coincidental, logical, temporal, procedural, communicational, sequential, and functional (functional being best). Coupling measures dependence between modules; from strongest (worst) to weakest (best) its levels are content, common/global, control, stamp, data, and no coupling (data/message coupling being ideal). The design goal is high cohesion and low coupling. A typical sketch shows two spectra: cohesion increasing from weak to strong and coupling decreasing from tight to loose, with arrows pointing toward the ideal state. High cohesion and low coupling produce independent, reusable, and easily maintained modules.",
+      "explanation": "Classifying these levels gives designers a concrete scale for evaluating module independence and guides refactoring toward functional cohesion with data coupling.",
+      "oneShotPreview": "Cohesion: coincidental -> functional (aim high); Coupling: content -> data (aim low); sketch as a spectrum."
+    },
+    {
+      "q": "4 a) Explain approaches of software design [L2] [CO3] [5M]",
+      "a": "The main approaches to software design are: (1) function-oriented (structured/procedural) design, which decomposes the system into functions or modules arranged hierarchically using DFDs and structure charts; (2) object-oriented design, which models the system as interacting objects with encapsulated data and behavior using classes, inheritance, and polymorphism; and (3) component-based design, which assembles the system from reusable self-contained components with well-defined interfaces. Supporting approaches include data-centered and model-driven design. Function-oriented design focuses on what the system does, while object-oriented design focuses on what objects exist and how they collaborate.",
+      "explanation": "These approaches represent different ways of decomposing a system - by function, by object, or by reusable component - each with strengths suited to different problem domains.",
+      "oneShotPreview": "Design approaches: function-oriented, object-oriented, and component-based decomposition."
+    },
+    {
+      "q": "4 b) Demonstrate on Agile Process Models [L2] [CO3] [5M]",
+      "a": "Agile process models are iterative and incremental approaches emphasizing customer collaboration, working software, responding to change, and frequent delivery. Well-known agile models include Scrum (time-boxed sprints, roles such as Scrum Master and Product Owner, ceremonies like daily stand-ups and reviews), Extreme Programming or XP (pair programming, test-driven development, continuous integration, frequent releases), Feature-Driven Development, DSDM, and Crystal. All are founded on the Agile Manifesto values: individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. They deliver small increments quickly and adapt to changing requirements.",
+      "explanation": "Agile models replace heavyweight plan-driven development with short feedback loops and adaptive planning, improving responsiveness to changing customer needs.",
+      "oneShotPreview": "Agile models = iterative, people-focused delivery (Scrum, XP, FDD, DSDM) guided by the Agile Manifesto."
+    },
+    {
+      "q": "5 Explain briefly about the concept of the following. i) Structured Analysis ii) Structured Design [L2] [CO3] [5M]",
+      "a": "(i) Structured Analysis is a requirements-analysis technique that models a system functionally using graphical tools such as Data Flow Diagrams, a data dictionary, and structured English or decision tables. It breaks the system into processes and data flows to show what the system does, independent of implementation. (ii) Structured Design is the complementary technique that converts the analysis model into a modular design using structure charts, emphasizing high cohesion, low coupling, top-down decomposition, and module independence. Together they form the structured analysis and design method, progressing from a logical model of requirements to a physical, implementable design.",
+      "explanation": "Structured analysis defines what the system must do in a clear graphical form, and structured design turns that specification into a modular how, ensuring traceability from requirements to code.",
+      "oneShotPreview": "Structured analysis models 'what' with DFDs; structured design models 'how' with structure charts."
+    },
+    {
+      "q": "6 a) Explain Developing the DFD model of a system [L3] [CO3] [5M]",
+      "a": "Developing a DFD model begins with a context diagram (level 0) showing the whole system as a single process interacting with external entities. The system is then decomposed into subprocesses at level 1 and refined further at level 2 and lower levels, each showing more detail. The model uses four symbols: external entities (sources and sinks of data), processes (transformations), data flows (arrows), and data stores. Each process is numbered and a data dictionary documents all data elements and flows. Balancing is maintained so input and output flows stay consistent between levels, producing a complete hierarchical set of DFDs.",
+      "explanation": "Building DFDs top-down from a context diagram to detailed levels keeps the model understandable while progressively revealing functional detail and preserving consistency through balancing.",
+      "oneShotPreview": "DFD development = context diagram -> level 1 -> level 2, decomposing processes with balanced flows."
+    },
+    {
+      "q": "6 b) Discuss about Structured design & detailed design [L3] [CO3] [5M]",
+      "a": "Structured design (high-level or architectural design) defines the overall structure of the system: its modules, their hierarchy, interfaces, and the flow of control and data between them, typically shown with structure charts. It applies top-down decomposition, modularity, high cohesion, and low coupling. Detailed design (low-level design) specifies each module's internals: algorithms, data structures, logic, and precise processing steps, described with pseudocode, flowcharts, or program design language. Structured design answers what modules exist and how they connect, while detailed design answers how each module works internally. Both are documented in the design document and guide implementation and testing.",
+      "explanation": "Separating architectural design from detailed design lets designers first get the overall structure right and then specify each module precisely, improving clarity and maintainability.",
+      "oneShotPreview": "Structured design = module architecture/structure charts; detailed design = per-module algorithms and data."
+    },
+    {
+      "q": "7 What are the characteristics of a good user interface? Explain in detail. [L3] [CO3] [10M]",
+      "a": "A good user interface is easy to learn, with clear, consistent terminology, layout, and behavior. It is efficient, letting experienced users accomplish tasks quickly through shortcuts and sensible defaults. It gives helpful feedback and clear error messages that guide recovery from mistakes, and treats errors gracefully. Consistency in menus, commands, and colors reduces the learning curve. It supports user control and flexibility, offers good visual hierarchy and uncluttered aesthetics, and is accessible to users with disabilities. It also provides documentation or help and is responsive. Overall, a good UI minimizes user effort and errors while maximizing satisfaction and productivity.",
+      "explanation": "These characteristics directly determine usability - they reduce learning time and errors while improving efficiency and satisfaction, the core goals of interface design.",
+      "oneShotPreview": "Good UI = learnable, efficient, consistent, forgiving, accessible, and visually clear."
+    },
+    {
+      "q": "8 a) Discuss User interface design basic concepts [L3] [CO3] [5M]",
+      "a": "User interface design rests on several basic concepts. User-centered design puts the users' needs, goals, and characteristics at the center of the process. Key concepts include visibility (making options apparent), affordance (showing how an object can be used), feedback (informing the user of results), and consistency (uniform behavior). Designers build user, task, and system models, reduce cognitive load, provide clear navigation, and support error prevention and recovery. Usability goals - learnability, efficiency, memorability, low error rate, and satisfaction - guide evaluation, and iterative prototyping with user feedback is essential.",
+      "explanation": "These concepts give designers the vocabulary and principles to create interfaces that match users' mental models and support efficient, error-free interaction.",
+      "oneShotPreview": "UI basics = user-centered design, visibility, affordance, feedback, consistency, and usability goals."
+    },
+    {
+      "q": "8 b) What are the types of user interface [L3] [CO3] [5M]",
+      "a": "The principal types of user interface are command-line interfaces (CLI) where users type commands, graphical user interfaces (GUI) using windows, icons, menus, and pointing devices, menu-driven interfaces where users choose from displayed options, form-based interfaces for structured data entry, and natural interfaces such as touchscreens, voice (VUI), and gesture-based interaction. Interfaces may also be described as batch versus interactive, or as direct-manipulation interfaces. GUIs suit general users, CLIs suit technical users, and voice or touch suit mobile and hands-free contexts.",
+      "explanation": "Distinguishing interface types by interaction style helps select the design most suitable for the users, tasks, and devices involved.",
+      "oneShotPreview": "UI types: CLI, GUI, menu-driven, form-based, and touch/voice natural interfaces."
+    },
+    {
+      "q": "10 a) Discuss about fundamentals of Component based GUI development. [L2] [CO3] [5M]",
+      "a": "Component-based GUI development builds an interface by assembling reusable, self-contained software components such as buttons, menus, text boxes, and panels. Each component encapsulates its own data and behavior and exposes well-defined interfaces through properties, methods, and events, so it can be plugged into different applications. Components are placed in containers with layout managers controlling placement, and they communicate through events (event-driven programming). This approach promotes reuse, faster development, easier maintenance, and consistency. Frameworks such as Java Swing/AWT, .NET Windows Forms/WPF, and web component libraries supply ready-made GUI components.",
+      "explanation": "Treating GUI elements as reusable components with standard interfaces reduces development effort and promotes consistent, maintainable interfaces.",
+      "oneShotPreview": "Component-based GUI = assemble reusable widgets with properties/methods/events in containers."
+    },
+    {
+      "q": "10 b) Explain a UI design methodology [L2] [CO3] [5M]",
+      "a": "A UI design methodology is a structured, iterative process for creating an effective interface. It begins with user and task analysis to understand who will use the system and what they need to do, then defines usability goals and produces interface prototypes (paper or software mockups). These prototypes are evaluated with users through usability testing, and feedback drives refinement; the cycle repeats until the interface meets its goals. Common methodologies include user-centered design, participatory design, and iterative prototyping, guided by principles such as consistency, visibility, and feedback. The result is an interface that is usable, efficient, and aligned with user needs.",
+      "explanation": "A methodology makes design systematic and evidence-based, using repeated user feedback to converge on an interface that genuinely satisfies user needs.",
+      "oneShotPreview": "UI methodology = analyze users/tasks -> prototype -> evaluate with users -> refine iteratively."
+    }
+  ]
+}

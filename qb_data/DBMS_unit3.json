@@ -1,0 +1,146 @@
+{
+  "subject": "23CS0512",
+  "unit": 3,
+  "unitTitle": "SQL",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "q": "1 a) What is the purpose of the SELECT statement in SQL?",
+      "a": "The SELECT statement retrieves data from one or more tables in a database. It is the primary Data Query Language (DQL) command: it chooses specific columns (projection), filters rows with WHERE, sorts with ORDER BY, and can combine with joins, grouping and aggregate functions. A basic form is SELECT column1, column2 FROM table_name WHERE condition; or SELECT * FROM table_name; to fetch every column. SELECT does not modify data; it only returns a result set, which is itself a new relation.",
+      "explanation": "SELECT is the fundamental command for reading data, so naming its column-selection, filtering and sorting roles captures its purpose exactly as the two-mark question asks.",
+      "oneShotPreview": "Retrieves rows/columns from tables; the core DQL command (SELECT ... FROM ... WHERE ...)."
+    },
+    {
+      "q": "1 b) What is the difference between AND and OR logical operators in SQL?",
+      "a": "AND and OR combine multiple conditions in a WHERE clause. AND returns a row only when all combined conditions are true, e.g., WHERE salary > 5000 AND dept = 20; OR returns a row when at least one condition is true, e.g., WHERE dept = 20 OR dept = 30. AND has higher precedence than OR, so parentheses should be used to force the intended grouping. AND narrows the result set (intersection of conditions), while OR widens it (union of conditions).",
+      "explanation": "The essential distinction is all-conditions-true versus any-condition-true, and precedence plus parentheses are important practical details for writing correct conditions.",
+      "oneShotPreview": "AND = all conditions true (narrows); OR = any condition true (widens); AND binds tighter than OR."
+    },
+    {
+      "q": "1 c) Name any two SQL functions used to work with date and time.",
+      "a": "Common SQL date and time functions include SYSDATE() / NOW() (current date and time), EXTRACT(YEAR FROM date_col) and EXTRACT(MONTH FROM date_col) (parts of a date), YEAR() and MONTH(), DATEDIFF(d1, d2) (difference between dates), ADD_MONTHS() / DATE_ADD() (add an interval), and TO_CHAR() / DATE_FORMAT() (format a date). For example, SELECT EXTRACT(YEAR FROM order_date) FROM orders; returns the year part of each order date. Any two of these functions are acceptable for the two marks.",
+      "explanation": "These are standard built-in date/time functions in dialects such as MySQL and Oracle; naming two with a usage example satisfies the question.",
+      "oneShotPreview": "Any two of: EXTRACT(YEAR FROM d), MONTH(d), NOW()/SYSDATE(), DATEDIFF(), DATE_ADD(), TO_CHAR()."
+    },
+    {
+      "q": "1 d) Explain the purpose of the CHECK constraint with an example.",
+      "a": "The CHECK constraint enforces domain integrity by restricting the values that may be stored in a column: an INSERT or UPDATE succeeds only if the specified Boolean condition evaluates to TRUE (or UNKNOWN). For example, CREATE TABLE Employees (age INT CHECK (age >= 18), salary INT CHECK (salary > 0)); prevents under-age employees and negative salaries. CHECK can be declared at column level (inline) or table level and can reference multiple columns. It keeps invalid data out of the table at write time.",
+      "explanation": "CHECK validates column values against a condition, so a definition plus a concrete CREATE TABLE example is exactly what the question requires.",
+      "oneShotPreview": "Restricts column values to a condition, e.g., CHECK (age >= 18); rejects invalid INSERT/UPDATE."
+    },
+    {
+      "q": "1 e) What is a view in SQL?",
+      "a": "A view is a virtual table whose contents are defined by a stored SELECT query rather than being physically stored as data. It is created with CREATE VIEW view_name AS SELECT ...; and can be queried like an ordinary table, presenting a tailored, simplified or restricted perspective of the underlying base tables. Views give data independence, hide complex queries, and improve security by exposing only permitted columns. Changes in the base tables are reflected in the view; some views are updatable, while views involving aggregation, DISTINCT or joins are read-only.",
+      "explanation": "A view is a stored query presented as a table, so this definition together with its benefits and updatability covers the two-mark answer.",
+      "oneShotPreview": "A virtual table defined by a stored SELECT; queryable like a table, gives security and simplicity."
+    },
+    {
+      "q": "2 a) Illustrate about Basic SQL Querying (SELECT & WHERE) with examples.",
+      "a": "Basic SQL querying uses SELECT to choose columns and FROM to name the table, with WHERE to filter rows by a condition. The general form is SELECT column_list FROM table_name WHERE condition;. For an Employee table, SELECT name, salary FROM Employee WHERE salary > 50000; lists the names and salaries of highly paid staff, and SELECT * FROM Employee WHERE dept = 'CS' AND salary > 50000; combines two conditions. Without a WHERE clause, SELECT returns all rows. WHERE supports comparison operators (=, <>, >, <), logical operators (AND, OR, NOT), and the BETWEEN, IN, LIKE and IS NULL predicates, and is evaluated before grouping and sorting.",
+      "explanation": "Showing the SELECT ... FROM ... WHERE structure with concrete filtering examples is what 'illustrate with examples' requires.",
+      "oneShotPreview": "SELECT columns FROM table WHERE condition; e.g., SELECT name, salary FROM Employee WHERE salary > 50000."
+    },
+    {
+      "q": "2 b) Develop a query to display the names and salaries of employees earning more than 50,000.",
+      "a": "SELECT name, salary FROM employees WHERE salary > 50000; This query selects only the name and salary columns from the employees table and filters the rows to those whose salary exceeds 50000 using a WHERE clause with the greater-than operator.",
+      "explanation": "The query uses the required columns and table together with a '>' comparison for the 'more than 50,000' condition, matching the four-mark requirement exactly.",
+      "oneShotPreview": "SELECT name, salary FROM employees WHERE salary > 50000;"
+    },
+    {
+      "q": "3 a) What are the different types of operators explain with examples.",
+      "a": "SQL operators are grouped into several types: (1) Arithmetic operators +, -, *, /, % used in expressions, e.g., salary * 1.15; (2) Comparison or relational operators =, <> or !=, >, <, >=, <=, e.g., WHERE marks > 75; (3) Logical operators AND, OR, NOT, e.g., WHERE dept = 'CS' AND marks > 75; (4) Range, membership and pattern operators BETWEEN, IN, LIKE and IS NULL, e.g., WHERE marks BETWEEN 60 AND 80, WHERE dept IN ('CS', 'IT'), WHERE name LIKE 'A%'; (5) Set operators UNION, INTERSECT and EXCEPT/MINUS. Each type serves a distinct purpose in forming query conditions and expressions.",
+      "explanation": "Listing the operator categories with an example of each demonstrates the different operator types the question asks for.",
+      "oneShotPreview": "Arithmetic (+ - * / %), comparison (= <> > <), logical (AND OR NOT), BETWEEN/IN/LIKE/IS NULL, and set operators."
+    },
+    {
+      "q": "3 b) Given a table STUDENTS(student_id, name, age, department, marks), develop SQL queries to: i) Display the names and departments of all students. ii) Display the details of students with marks greater than 75. iii) Display students from the 'Computer Science' department.",
+      "a": "i) SELECT name, department FROM STUDENTS; ii) SELECT * FROM STUDENTS WHERE marks > 75; iii) SELECT * FROM STUDENTS WHERE department = 'Computer Science'; Each query selects the columns asked for and uses the appropriate filter: none for (i), marks > 75 for (ii), and department = 'Computer Science' for (iii), all on the given STUDENTS schema.",
+      "explanation": "Each of the three queries uses the correct columns and WHERE condition for its sub-task, which is what the five-mark question requires.",
+      "oneShotPreview": "i) SELECT name, department FROM STUDENTS; ii) ... WHERE marks > 75; iii) ... WHERE department = 'Computer Science';"
+    },
+    {
+      "q": "4 a) Compare an Arithmetic and Logical Operations with examples.",
+      "a": "Arithmetic operations perform numeric calculations using +, -, *, / and % and return a numeric value, e.g., SELECT salary * 1.15 AS new_salary FROM employees;. Logical operations combine Boolean conditions with AND, OR and NOT and return a truth value used to decide which rows pass a filter, e.g., SELECT * FROM employees WHERE salary > 5000 AND department_id = 20;. The key difference is purpose: arithmetic computes new numeric values and may appear in expressions or the SELECT list, while logical operators combine predicates and appear in WHERE or HAVING to filter rows.",
+      "explanation": "Comparing purpose, operators and examples directly addresses the 'compare with examples' requirement for arithmetic versus logical operations.",
+      "oneShotPreview": "Arithmetic (+ - * / %) computes numbers; logical (AND OR NOT) combines conditions to filter rows."
+    },
+    {
+      "q": "4 b) Using a table EMPLOYEES(emp_id, name, salary, department_id), develop SQL queries to: i) Increase each employee's salary by 15% and display the new salary. ii) Display employees who earn more than 5000 and belong to department 20. iii) Display employees whose salary is not equal to 6000 and department is not 30.",
+      "a": "i) SELECT name, salary * 1.15 AS new_salary FROM EMPLOYEES; ii) SELECT * FROM EMPLOYEES WHERE salary > 5000 AND department_id = 20; iii) SELECT * FROM EMPLOYEES WHERE salary <> 6000 AND department_id <> 30; Query (i) uses an arithmetic expression with an alias to compute the 15% increase; (ii) uses AND to require both conditions; (iii) uses the not-equal operator (<>, or !=) with AND to exclude both specified values.",
+      "explanation": "Each query correctly implements its sub-requirement on the given EMPLOYEES schema: a computed column, a two-condition AND, and a pair of not-equal conditions.",
+      "oneShotPreview": "i) salary * 1.15 AS new_salary; ii) WHERE salary > 5000 AND department_id = 20; iii) WHERE salary <> 6000 AND department_id <> 30."
+    },
+    {
+      "q": "5 a) List and Identify the SQL Functions like (Date, Numeric, String) with examples.",
+      "a": "SQL provides built-in functions in categories. Numeric functions: ABS(x), ROUND(x, d), CEIL(x), FLOOR(x), MOD(x, y), POWER(x, y), SQRT(x), e.g., ROUND(1234.56, 1) gives 1234.6. String functions: UPPER(s), LOWER(s), LENGTH(s), SUBSTRING(s, start, len), CONCAT(s1, s2), TRIM(s), REPLACE(s, old, new), e.g., UPPER('hello') gives 'HELLO'. Date/Time functions: SYSDATE()/NOW(), EXTRACT(YEAR FROM d), MONTH(d), YEAR(d), DATEDIFF(d1, d2), ADD_MONTHS(d, n), TO_CHAR()/DATE_FORMAT(), e.g., YEAR(order_date) returns the year. Aggregate functions such as COUNT, SUM and AVG form another category. These functions are used in SELECT lists and in WHERE/HAVING clauses to transform and format data.",
+      "explanation": "Grouping the functions into Date, Numeric and String categories with a concrete example for each satisfies 'list and identify' for the five marks.",
+      "oneShotPreview": "Numeric: ROUND, ABS; String: UPPER, LOWER, LENGTH, SUBSTRING; Date: NOW, EXTRACT, DATEDIFF — each with an example."
+    },
+    {
+      "q": "5 b) Given a table ORDERS(order_id, customer_name, order_date, amount), develop queries to: i) Extract the year and month from the order date. ii) Display amount rounded off to the nearest 100. iii) Display customer names in UPPERCASE and lowercase formats.",
+      "a": "i) SELECT order_id, EXTRACT(YEAR FROM order_date) AS yr, EXTRACT(MONTH FROM order_date) AS mon FROM ORDERS; (in MySQL: YEAR(order_date), MONTH(order_date)). ii) SELECT order_id, ROUND(amount, -2) AS rounded_amount FROM ORDERS; a negative precision of -2 rounds to the nearest hundred (equivalently ROUND(amount / 100) * 100). iii) SELECT UPPER(customer_name) AS upper_name, LOWER(customer_name) AS lower_name FROM ORDERS;",
+      "explanation": "These use EXTRACT (or YEAR/MONTH) for date parts, ROUND with precision -2 for rounding to the nearest 100, and UPPER/LOWER for case conversion, all on the given ORDERS schema.",
+      "oneShotPreview": "i) EXTRACT(YEAR/MONTH FROM order_date); ii) ROUND(amount, -2); iii) UPPER(customer_name), LOWER(customer_name)."
+    },
+    {
+      "q": "6 Discuss the super key, candidate key, primary key, alternate key, composite key, and Foreign key.",
+      "a": "A super key is any set of attributes that uniquely identifies every tuple in a relation, though it may contain extra attributes. A candidate key is a minimal super key: no proper subset of it is a super key, and a relation may have several candidate keys. The primary key is the candidate key chosen by the designer to identify rows; it is unique and cannot be NULL. An alternate key is a candidate key not selected as the primary key. A composite key is a key consisting of two or more columns used together, e.g., (student_id, course_id). A foreign key is a column or set of columns in one table that references the primary key of another table, enforcing referential integrity. For example, in Employee(emp_id, dept_id), emp_id is the primary key and dept_id is a foreign key referencing Department(dept_id).",
+      "explanation": "Defining all six key types and relating them with a concrete example covers the full ten-mark discussion.",
+      "oneShotPreview": "super = unique set; candidate = minimal super; primary = chosen candidate; alternate = other candidate; composite = multi-column; foreign = references another table's PK."
+    },
+    {
+      "q": "7 a) Discuss about Complex integrity constraints in SQL.",
+      "a": "Beyond simple constraints such as NOT NULL, UNIQUE, PRIMARY KEY, CHECK and FOREIGN KEY, SQL supports complex integrity constraints. An ASSERTION (CREATE ASSERTION) states a Boolean condition that must always hold for the whole database, e.g., that total enrollment never exceeds a room's capacity; the DBMS checks it whenever relevant tables change. A TRIGGER (CREATE TRIGGER) is a procedural constraint that automatically fires a block of SQL on an INSERT, UPDATE or DELETE, allowing business rules that span multiple tables, such as keeping a derived total in sync. CREATE DOMAIN defines a reusable value domain, and referential actions such as ON DELETE CASCADE or SET NULL specify behaviour on referenced-row deletion. These mechanisms enforce semantic integrity that simple column constraints cannot express.",
+      "explanation": "Naming assertions, triggers, domains and referential actions and explaining what each enforces answers what makes an integrity constraint 'complex'.",
+      "oneShotPreview": "ASSERTIONs and TRIGGERs enforce database-wide/business rules that simple column constraints cannot, plus domains and referential actions."
+    },
+    {
+      "q": "7 b) Create a sub query to establish the WHERE, ANY, AS and ALL sub queries with example.",
+      "a": "A subquery is a SELECT nested inside another SQL statement. Using Employees(emp_id, name, salary, dept_id): WHERE with a scalar subquery: SELECT name FROM Employees WHERE salary > (SELECT AVG(salary) FROM Employees); returns employees earning above average. ANY: SELECT name FROM Employees WHERE salary > ANY (SELECT salary FROM Employees WHERE dept_id = 10); means greater than at least one department-10 salary. ALL: SELECT name FROM Employees WHERE salary > ALL (SELECT salary FROM Employees WHERE dept_id = 10); means greater than every department-10 salary. AS aliases a subquery used as a derived table in the FROM clause: SELECT E.name, D.avg_sal FROM Employees E, (SELECT dept_id, AVG(salary) AS avg_sal FROM Employees GROUP BY dept_id) AS D WHERE E.dept_id = D.dept_id;",
+      "explanation": "The examples show a subquery in a WHERE condition, quantified comparisons with ANY and ALL, and an alias (AS) for a derived table, covering every construct requested.",
+      "oneShotPreview": "WHERE salary > (subquery); > ANY; > ALL; and (SELECT ...) AS alias in FROM — each with an example."
+    },
+    {
+      "q": "8 a) Differentiate between Nested Queries & Sub queries with examples.",
+      "a": "A subquery is any SELECT statement embedded inside another SQL statement (in its WHERE, HAVING, FROM or SELECT clause); the containing statement is the outer query and the embedded one is the inner query. A nested query is a more specific case in which a subquery is itself nested inside another subquery, giving multiple levels of nesting. Thus every nested query is a subquery, but 'nested' emphasises several levels, and the two terms are often used interchangeably. Simple subquery example: SELECT name FROM Employee WHERE salary > (SELECT AVG(salary) FROM Employee); Nested query example: SELECT name FROM Employee WHERE dept_id IN (SELECT dept_id FROM Department WHERE location IN (SELECT location FROM Branch WHERE city = 'Chennai')); A correlated subquery refers to columns of the outer query, while a non-correlated subquery does not.",
+      "explanation": "Clarifying that subquery is the general term while nested query means subqueries within subqueries, with an example of each, satisfies the differentiation.",
+      "oneShotPreview": "Subquery = SELECT inside another statement; nested query = subquery inside another subquery (multi-level); the terms often overlap."
+    },
+    {
+      "q": "8 b) Evaluate Order by, Group by and Having Clauses with example.",
+      "a": "GROUP BY groups rows sharing a common value into summary rows, normally with aggregate functions. HAVING filters those groups after grouping and may use aggregate functions, whereas WHERE filters individual rows before grouping. ORDER BY sorts the final result in ascending (default) or descending order. The logical evaluation order is FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY. Example: SELECT dept_id, COUNT(*) AS emp_count, AVG(salary) AS avg_sal FROM Employees WHERE salary > 3000 GROUP BY dept_id HAVING COUNT(*) > 2 ORDER BY avg_sal DESC; this filters rows, groups by department, keeps groups with more than two employees, and sorts by average salary descending.",
+      "explanation": "Defining all three clauses, stating their evaluation order and showing one query that uses them together is what 'evaluate with example' requires.",
+      "oneShotPreview": "GROUP BY groups rows, HAVING filters groups, ORDER BY sorts results; order: WHERE → GROUP BY → HAVING → ORDER BY."
+    },
+    {
+      "q": "9 Distinguish different types of aggregate operators with examples in SQL.",
+      "a": "Aggregate operators summarise many rows into a single value. COUNT(*) counts all rows, COUNT(column) counts non-NULL values, and COUNT(DISTINCT column) counts distinct values; SUM(column) gives the total, AVG(column) the arithmetic mean, and MAX(column) and MIN(column) the largest and smallest values. For example, SELECT COUNT(*), SUM(salary), AVG(salary), MAX(salary), MIN(salary) FROM Employee; returns five summary figures in one row. They can be combined with GROUP BY for per-group summaries and filtered with HAVING. Except for COUNT(*), aggregates ignore NULL values. Unlike scalar functions that act on a single value, aggregates operate on an entire set of rows.",
+      "explanation": "Listing and illustrating COUNT, SUM, AVG, MAX and MIN with a query distinguishes the aggregate operators as the ten-mark question asks.",
+      "oneShotPreview": "COUNT, SUM, AVG, MAX, MIN — summarise row sets into one value; ignore NULLs (except COUNT(*)); used with GROUP BY/HAVING."
+    },
+    {
+      "q": "10 a) Classify different join operations and explain with example SQL Joins (INNER, LEFT, RIGHT, FULL)",
+      "a": "Joins combine rows from two or more tables using a related column. An INNER JOIN returns only rows with matching values in both tables. A LEFT (OUTER) JOIN returns every row from the left table plus matched rows from the right, placing NULLs where no match exists. A RIGHT (OUTER) JOIN returns every row from the right table plus matched rows from the left. A FULL (OUTER) JOIN returns all rows from both tables, with NULLs on whichever side lacks a match. For Employee(emp_id, dept_id, name) and Department(dept_id, dept_name): SELECT E.name, D.dept_name FROM Employee E INNER JOIN Department D ON E.dept_id = D.dept_id; shows matched pairs, and replacing INNER with LEFT keeps employees who have no department. A CROSS JOIN gives the Cartesian product and a SELF JOIN joins a table to itself.",
+      "explanation": "Classifying the four join types by which unmatched rows they retain, with a concrete ON-clause example, answers the five-mark question.",
+      "oneShotPreview": "INNER = matches only; LEFT = all left; RIGHT = all right; FULL = all both; e.g., ... ON E.dept_id = D.dept_id."
+    },
+    {
+      "q": "10 b) Illustrate about different Views like (Updatable and Non-updatable) with examples.",
+      "a": "An updatable view is one through which INSERT, UPDATE and DELETE can be applied, with the changes propagating to the underlying base table; it is typically a simple view on a single table without DISTINCT, GROUP BY, HAVING, aggregate functions or computed expressions. Example: CREATE VIEW Emp_View AS SELECT emp_id, name, salary FROM Employee; then UPDATE Emp_View SET salary = 60000 WHERE emp_id = 101; succeeds. A non-updatable (read-only) view has derived or computed rows that cannot be modified; example: CREATE VIEW Dept_Salary AS SELECT dept_id, AVG(salary) AS avg_sal FROM Employee GROUP BY dept_id; an UPDATE of avg_sal fails because it is an aggregate. Views also improve security by hiding columns, and WITH CHECK OPTION can restrict updates to rows satisfying the view's condition.",
+      "explanation": "Distinguishing updatable from non-updatable views by their structure, with an example of each, covers the illustration requested.",
+      "oneShotPreview": "Updatable view (simple, one table) allows DML; non-updatable (aggregate/DISTINCT/join) is read-only — e.g., AVG(salary) GROUP BY."
+    },
+    {
+      "q": "11 a) Explain about Relational Set Operations with examples",
+      "a": "Relational set operations treat relations as sets of tuples and require union compatibility, meaning the two relations have the same number of attributes with compatible domains. UNION returns every tuple present in either relation without duplicates (SELECT ... FROM A UNION SELECT ... FROM B;). INTERSECT returns tuples present in both relations. EXCEPT (or MINUS) returns tuples present in the first relation but not the second. CARTESIAN PRODUCT combines every tuple of one relation with every tuple of the other, while a JOIN combines related tuples. UNION ALL is like UNION but keeps duplicates. For example, listing student IDs in either the CS or IT branch uses UNION, and students enrolled in both uses INTERSECT.",
+      "explanation": "Defining the set operations, noting the union-compatibility requirement and giving SQL-style examples covers the relational set operations question.",
+      "oneShotPreview": "UNION (distinct in either), INTERSECT (in both), EXCEPT/MINUS (in first only), CARTESIAN PRODUCT; require union compatibility."
+    },
+    {
+      "q": "11 b) Given two tables OLD_CUSTOMERS(customer_id) and NEW_CUSTOMERS(customer_id) develop queries to: i) Display customer IDs present in both tables (INTERSECT). ii) Display customers present in OLD_CUSTOMERS but not in NEW_CUSTOMERS. iii) Display all unique customer IDs from both tables (UNION).",
+      "a": "i) SELECT customer_id FROM OLD_CUSTOMERS INTERSECT SELECT customer_id FROM NEW_CUSTOMERS; ii) SELECT customer_id FROM OLD_CUSTOMERS EXCEPT SELECT customer_id FROM NEW_CUSTOMERS; (in Oracle use MINUS, or use NOT IN / NOT EXISTS). iii) SELECT customer_id FROM OLD_CUSTOMERS UNION SELECT customer_id FROM NEW_CUSTOMERS; Each query applies the set operator that matches the requirement to the two given single-column tables: INTERSECT for customers in both, EXCEPT for old-but-not-new, and UNION for all distinct IDs.",
+      "explanation": "Each query uses the correct set operator on the two given tables, so the three sub-requirements are each satisfied exactly.",
+      "oneShotPreview": "i) INTERSECT; ii) EXCEPT (or MINUS / NOT IN); iii) UNION — applied to the two customer_id tables."
+    }
+  ]
+}

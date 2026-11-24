@@ -1,0 +1,134 @@
+{
+  "subject": "23CS0512",
+  "unit": 4,
+  "unitTitle": "Schema Refinement (Normalization)",
+  "totalQuestions": 21,
+  "questions": [
+    {
+      "q": "1 a) Give an example of a functional dependency.",
+      "a": "A functional dependency X → Y means that the value of X uniquely determines the value of Y: any two tuples agreeing on X must also agree on Y. For example, in EMPLOYEE(emp_id, name, salary), emp_id → name and emp_id → salary, because each employee id identifies exactly one name and one salary. Here emp_id is the determinant.",
+      "explanation": "This is the standard definition of a functional dependency from the relational model; the example shows a key attribute determining non-key attributes.",
+      "oneShotPreview": "FD X→Y: X determines Y; e.g. emp_id → name, salary."
+    },
+    {
+      "q": "1 b) What is the main purpose of normalization in database design?",
+      "a": "The main purpose of normalization is to organize data into well-structured tables so as to minimize redundancy and eliminate insertion, update, and deletion anomalies. It applies a sequence of normal forms using keys and functional dependencies to produce a consistent, easy-to-maintain design. The goal is a lossless, dependency-preserving decomposition that protects data integrity.",
+      "explanation": "Normalization is defined as reducing redundancy and anomalies while preserving dependencies and information, which is the core objective of schema refinement.",
+      "oneShotPreview": "Normalization removes redundancy and anomalies via normal forms and lossless, dependency-preserving decomposition."
+    },
+    {
+      "q": "1 c) Why do we convert tables to 1NF?",
+      "a": "First Normal Form requires that every column contain a single, atomic (indivisible) value and that there be no repeating groups or nested/multivalued attributes. Converting a table to 1NF removes repeating groups so each row-column intersection holds one value and every row can be identified by a key. This is the minimum requirement for a relation and is the necessary first step before applying 2NF, 3NF, and higher normal forms.",
+      "explanation": "1NF eliminates repeating groups and multivalued attributes, making the table a proper relation and enabling further normalization.",
+      "oneShotPreview": "1NF enforces atomic values and no repeating groups — the base step before higher normal forms."
+    },
+    {
+      "q": "1 d) What is a transitive dependency?",
+      "a": "A transitive dependency is an indirect dependency: if A → B and B → C hold (and B does not determine A), then A → C, so C depends on A through B. For example, emp_id → dept_id and dept_id → dept_name implies emp_id → dept_name. Transitive dependencies of non-key attributes cause redundancy and update anomalies and are removed in Third Normal Form.",
+      "explanation": "It follows by the transitivity rule of Armstrong's axioms and is exactly the kind of dependency 3NF eliminates.",
+      "oneShotPreview": "A→B and B→C ⇒ A→C indirectly; removed in 3NF (e.g. emp_id→dept_id→dept_name)."
+    },
+    {
+      "q": "1 e) What is a lossless join decomposition?",
+      "a": "A decomposition of a relation R into R1, R2, ..., Rn is lossless (lossless-join) if the natural join of the decomposed relations reproduces exactly the original relation, with no spurious or missing tuples. It guarantees that decomposing does not lose any information. A decomposition R1, R2 is lossless with respect to F if F+ contains a dependency R1 ∩ R2 → R1 or R1 ∩ R2 → R2.",
+      "explanation": "Lossless join means the decomposition is reversible and adds no fake tuples — a required property for any valid decomposition.",
+      "oneShotPreview": "Lossless join: joining the decomposed tables reproduces the original exactly, no spurious tuples."
+    },
+    {
+      "q": "2 a) Explain about Purpose of Normalization or schema refinement.",
+      "a": "Schema refinement (normalization) is the process of decomposing a relation into smaller, well-structured relations using keys and functional dependencies. Its purpose is to reduce data redundancy, avoid insertion, update, and deletion anomalies, and enforce data integrity and consistency. It also makes the database easier to query and maintain, and aims for decompositions that are lossless and dependency-preserving. The outcome is a schema in a desired normal form (typically 3NF or BCNF).",
+      "explanation": "This states the goals of schema refinement — remove redundancy/anomalies while keeping information and dependencies intact.",
+      "oneShotPreview": "Schema refinement reduces redundancy/anomalies, ensures integrity, and yields lossless, dependency-preserving tables."
+    },
+    {
+      "q": "2 b) Illustrate about Functional Dependency.",
+      "a": "A functional dependency, written X → Y, holds if for every pair of tuples in a relation, equal values of X imply equal values of Y; X is the determinant and Y is determined. For example, in STUDENT(roll_no, name, dept, hod), roll_no → name and roll_no → dept, and dept → hod. FDs are constraints derived from the semantics of the data and are reasoned about using Armstrong's axioms (reflexivity, augmentation, transitivity, plus union, decomposition, and pseudotransitivity). They form the basis for keys and for normal forms up to BCNF.",
+      "explanation": "The answer defines an FD, illustrates it with a concrete relation, and connects it to the axioms and normalization.",
+      "oneShotPreview": "FD X→Y: equal X ⇒ equal Y (e.g. roll_no→name, dept→hod); reasoned via Armstrong axioms."
+    },
+    {
+      "q": "3 a) Explain the following with suitable example. (i) Full functional dependency. (ii) Partial dependency.",
+      "a": "(i) A full functional dependency X → Y holds when Y depends on the entire set X and not on any proper subset of X; removing any attribute from X breaks the dependency. Example: in ENROLL(roll_no, course_id, grade), grade depends on the whole composite key {roll_no, course_id}. (ii) A partial dependency occurs when a non-key attribute depends on only part of a composite candidate key. Example: in the same relation, if course_id → course_name, then course_name is partially dependent on the key because it depends only on course_id. Partial dependencies are eliminated in Second Normal Form.",
+      "explanation": "Both concepts are defined relative to a composite key; full dependence uses the whole key while partial dependence uses a proper subset, which 2NF removes.",
+      "oneShotPreview": "Full FD: depends on whole key; Partial FD: depends on part of composite key — removed in 2NF."
+    },
+    {
+      "q": "4 b) Compare Trivial and Non – Trivial Functional Dependencies with example.",
+      "a": "A functional dependency X → Y is trivial if Y is a subset of X (Y ⊆ X); it always holds and imposes no real constraint, e.g., A → A or {A, B} → A. It is non-trivial if Y is not a subset of X (Y ⊄ X), e.g., roll_no → name, which expresses a genuine relationship. A completely non-trivial FD has X ∩ Y = ∅. Only non-trivial dependencies are meaningful for schema design and normalization, because trivial ones are automatically satisfied.",
+      "explanation": "The distinction is based on set containment of Y in X; trivial FDs are self-evident while non-trivial FDs constrain data.",
+      "oneShotPreview": "Trivial FD: Y ⊆ X (A→A, always true); Non-trivial: Y ⊄ X (roll_no→name), constrains data."
+    },
+    {
+      "q": "5 Outline the terminologies: Partial Dependency, Transitive Dependency, Determinant, MVD, Join Dependency.",
+      "a": "Partial dependency: a non-key attribute depends on only a proper subset of a composite candidate key (removed in 2NF). Transitive dependency: an indirect dependency where A → B and B → C imply A → C (removed in 3NF). Determinant: the attribute or set of attributes on the left-hand side of a functional dependency (X in X → Y). MVD (multivalued dependency): X →→ Y, meaning for each X value there is a set of Y values independent of the remaining attributes Z; handled by 4NF. Join dependency: a constraint that a relation equals the natural join of several of its projections; handled by 5NF/PJNF.",
+      "explanation": "These are the core dependency concepts that motivate the successive normal forms 2NF, 3NF, 4NF and 5NF.",
+      "oneShotPreview": "Partial (2NF), Transitive (3NF), Determinant (LHS of FD), MVD (4NF), Join dependency (5NF)."
+    },
+    {
+      "q": "6 a) Consider the schema: R (A, B, C, G, H, I) and the set of FDs (A → B, A → C, CG → H, CG → I, B → H). Prove the members of F+: A → H, CG → HI, AG → I with axioms is true.",
+      "a": "Proof using Armstrong's axioms: (1) A → H: A → B is given and B → H is given, so by transitivity A → H. (2) CG → HI: CG → H and CG → I are both given, so by the union rule CG → HI. (3) AG → I: from A → C, augment both sides with G to get AG → CG; since CG → I is given, by transitivity AG → I. Hence all three dependencies belong to F+.",
+      "explanation": "Each inference is justified by a specific Armstrong axiom (transitivity, union, augmentation), which is how closure F+ is derived.",
+      "oneShotPreview": "A→H (transitivity via B), CG→HI (union), AG→I (augment A→C with G then transitivity)."
+    },
+    {
+      "q": "6 b) Consider the relation scheme R = {E, F, G, H, I, J, K, L, M, N} and the set of functional dependencies {E, F} → {G}, {F} → {I, J}, {E, H} → {K, L}, K → {M}, L → {N} on R. What is the key for R?",
+      "a": "Attributes E, F, and H never appear on the right-hand side of any FD, so they must be part of every key. Compute the closure of {E, F, H}: {E,F,H}+ = {E,F,H, G (from E,F→G), I,J (from F→I,J), K,L (from E,H→K,L), M (from K→M), N (from L→N)} = all attributes of R. No proper subset works ({E,F}+ lacks H,K,L,M,N; {E,H}+ lacks F,G,I,J; {F,H}+ lacks E,G,K,L,M,N). Therefore the candidate key (and the only key) is {E, F, H}.",
+      "explanation": "The key is found by attribute closure using the FDs; only {E,F,H} determines all attributes and is minimal.",
+      "oneShotPreview": "Key = {E, F, H}, since {E,F,H}+ covers every attribute and no smaller set does."
+    },
+    {
+      "q": "7 a) Discuss about preserving Decomposition.",
+      "a": "A decomposition of R into R1, ..., Rn is dependency-preserving if the set of functional dependencies that can be enforced on the individual relations (the union of the projections of F onto each Ri) is equivalent to F — that is, (F1 ∪ ... ∪ Fn)+ = F+. This means every original FD can be checked on a single decomposed relation without computing a natural join, which makes updates efficient and validates data locally. Dependency preservation is a desirable property alongside lossless join; some BCNF decompositions sacrifice it, whereas a 3NF synthesis guarantees both lossless join and dependency preservation.",
+      "explanation": "Dependency preservation lets constraints be checked locally; it is a key quality criterion that can conflict with BCNF but is guaranteed by 3NF synthesis.",
+      "oneShotPreview": "Dependency-preserving: all FDs checkable on individual relations without joining; 3NF synthesis guarantees it."
+    },
+    {
+      "q": "7 b) Define Decomposition. Identify the properties of decomposition.",
+      "a": "Decomposition is the replacement of a relation R by a collection of relations R1, ..., Rn whose combined attributes cover R, done to remove redundancy and anomalies. The key properties of a good decomposition are: (1) attribute preservation — the union of the attributes of Ri equals the attributes of R; (2) lossless-join — the natural join of the Ri reconstructs exactly the original relation with no spurious tuples; (3) dependency preservation — all functional dependencies of F can be checked on the individual Ri; and (4) each Ri should be in a desirable normal form (e.g., 3NF or BCNF) to minimize redundancy.",
+      "explanation": "These are the standard criteria used to judge any decomposition before it is accepted as a valid schema refinement.",
+      "oneShotPreview": "Decomposition = split R into Ri with attribute preservation, lossless join, dependency preservation, good NF."
+    },
+    {
+      "q": "8 a) Illustrate the types of anomalies with example.",
+      "a": "In a redundant relation such as EMP_DEPT(emp_id, emp_name, dept_id, dept_name, dept_loc), three anomalies occur: (1) Insertion anomaly — a new department with no employees cannot be recorded without a dummy employee. (2) Update/modification anomaly — changing a department's location requires updating every employee row of that department, and missing one leaves the data inconsistent. (3) Deletion anomaly — deleting the last employee of a department also loses the department's details. Normalization removes these by separating EMPLOYEE and DEPARTMENT.",
+      "explanation": "These three anomaly types are the classic motivation for normalization, illustrated with redundant department data.",
+      "oneShotPreview": "Anomalies: insertion (can't add dept), update (many rows), deletion (lose dept data) — fixed by decomposition."
+    },
+    {
+      "q": "8 b) What is Normalization? Describe the importance of normalization.",
+      "a": "Normalization is the process of structuring a relational database into tables and normal forms according to functional dependencies and keys so that data redundancy is minimized. Its importance lies in eliminating insertion, update, and deletion anomalies, guaranteeing data consistency and integrity, reducing storage, and making queries and maintenance simpler. It provides a systematic, theoretically grounded method (via 1NF through BCNF and beyond) for evaluating and improving a schema design.",
+      "explanation": "Normalization's importance is defined by anomaly removal, integrity, and a principled design process.",
+      "oneShotPreview": "Normalization organizes tables into normal forms to cut redundancy, remove anomalies, and ensure integrity."
+    },
+    {
+      "q": "9 Explain in detail about 1NF, 2NF, 3NF and BCNF with example.",
+      "a": "1NF: all attribute values are atomic with no repeating groups or multivalued attributes. 2NF: the relation is in 1NF and every non-prime attribute is fully functionally dependent on the whole candidate key, so there are no partial dependencies. 3NF: the relation is in 2NF and has no transitive dependency of non-prime attributes on the key; formally for every nontrivial X → Y, X is a superkey or Y is prime. BCNF: stronger than 3NF, for every nontrivial X → Y, X is a superkey, eliminating anomalies even when the determined attribute is prime. Example: R(roll, course, grade, instructor, instructor_dept) with roll,course → grade and course → instructor and instructor → instructor_dept; decomposing stepwise removes partial and transitive dependencies until each relation satisfies BCNF.",
+      "explanation": "Each normal form adds a stricter condition over the previous one, targeting a specific dependency type (atomicity, partial, transitive, then all determinants as superkeys).",
+      "oneShotPreview": "1NF atomic; 2NF no partial dep; 3NF no transitive dep; BCNF every determinant is a superkey."
+    },
+    {
+      "q": "10 a) What is the use of Fourth normal form? Explain by listing some of its major advantages.",
+      "a": "Fourth Normal Form (4NF) is used to eliminate redundancy caused by multivalued dependencies (MVDs). A relation is in 4NF if for every nontrivial MVD X →→ Y, X is a superkey. It is applied when two or more independent multivalued facts about the same entity are mixed in one table. Major advantages: it removes redundancy due to MVDs, avoids the update anomalies that BCNF alone cannot fix in such cases, preserves more semantic meaning than blindly applying BCNF, and produces cleaner, independently maintainable relations.",
+      "explanation": "4NF extends normalization to multivalued dependencies, removing redundancy that remains even in BCNF.",
+      "oneShotPreview": "4NF removes redundancy from multivalued dependencies (X→→Y ⇒ X superkey), fixing anomalies BCNF can't."
+    },
+    {
+      "q": "10 b) Differentiate between about 4NF/MVD with example.",
+      "a": "An MVD (multivalued dependency) is a constraint of the form X →→ Y: for a given X there is a set of Y values independent of the remaining attributes Z. 4NF is the normal form built on MVDs: a relation is in 4NF if every nontrivial MVD has a superkey as its determinant. Thus the MVD is the dependency type, while 4NF is the rule that removes the redundancy it causes. Example: in COURSE(course, teacher, book), a course has several teachers and several books independently, giving course →→ teacher and course →→ book; decomposing into (course, teacher) and (course, book) yields 4NF.",
+      "explanation": "The distinction is between a dependency (MVD) and the normal form (4NF) that enforces it, illustrated with a course-teacher-book example.",
+      "oneShotPreview": "MVD X→→Y (independent multi-values); 4NF requires X be a superkey — e.g. split (course,teacher),(course,book)."
+    },
+    {
+      "q": "11 a) What is the use of Fifth normal form? Explain by listing some of its major advantages.",
+      "a": "Fifth Normal Form (5NF), also called Project-Join Normal Form (PJNF), is used to eliminate redundancy arising from join dependencies that are not implied by candidate keys. A relation is in 5NF if every join dependency it satisfies is a consequence of its candidate keys. It handles complex cyclic constraints involving three or more attributes that 4NF cannot address. Major advantages: it removes all FD-, MVD-, and JD-based redundancy, guarantees that any decomposition into projections is lossless, ensures no update anomalies from join dependencies, and represents the highest practical level of normalization.",
+      "explanation": "5NF/PJNF addresses join dependencies beyond FDs and MVDs, completing the normalization hierarchy.",
+      "oneShotPreview": "5NF/PJNF removes redundancy from join dependencies not implied by keys — the highest normal form."
+    },
+    {
+      "q": "11 b) Discover about 5NF/PJNF with example.",
+      "a": "Fifth Normal Form (5NF), or Project-Join Normal Form (PJNF), requires that a relation be in 4NF and that every join dependency it satisfies be implied by its candidate keys; such a relation cannot be losslessly decomposed further. Example: a relation SUPPLIER_PART_PROJECT(supplier, part, project) with the constraint that whenever (s,p), (p,j) and (s,j) pairs exist, the triple (s,p,j) must exist — a join dependency not implied by any key. If this JD is not implied by the keys, the table is not in 5NF and must be decomposed into the three binary projections to avoid redundancy. In practice, most relations already in 4NF are also in 5NF, so it is needed only in rare cases.",
+      "explanation": "5NF/PJNF is defined via join dependencies implied by keys; the supplier-part-project example shows a genuine cyclic JD case.",
+      "oneShotPreview": "5NF=PJNF: JDs implied by keys; decompose SUPPLIER-PART-PROJECT into binary projections when a cyclic JD exists."
+    }
+  ]
+}

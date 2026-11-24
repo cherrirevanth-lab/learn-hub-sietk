@@ -1,0 +1,152 @@
+{
+  "subject": "23CS0512",
+  "unit": 1,
+  "unitTitle": "Introduction and ER Model",
+  "totalQuestions": 24,
+  "questions": [
+    {
+      "q": "a) Define DBMS. List two differences between a file system and a database system.",
+      "a": "A Database Management System (DBMS) is a collection of interrelated data together with a set of programs that store, manage, retrieve and update that data efficiently and securely. In a traditional file system, data is kept in separate independent files, which causes duplication, inconsistency and difficulty in accessing related data, whereas a DBMS keeps an integrated, centralized repository with controlled redundancy. A file system provides little sharing, security, concurrency control or recovery support, while a DBMS offers controlled sharing, authorization, transaction management, backup/recovery and data independence through a query language such as SQL.",
+      "explanation": "These are the standard distinctions between file processing and database systems: redundancy/inconsistency, access convenience, sharing, security, concurrency and recovery.",
+      "oneShotPreview": "DBMS = managed data + access programs; file systems duplicate data, DBMS adds sharing, security, concurrency and recovery."
+    },
+    {
+      "q": "b) What is data abstraction?",
+      "a": "Data abstraction is the technique of hiding low-level details of how data is physically stored and maintained, and presenting users with only the information they need. It is implemented through three levels of schema: the internal/physical level, the conceptual/logical level and the external/view level. Because users interact only with their view, the internal storage structures can be changed without changing user programs, which is the essence of data independence.",
+      "explanation": "Abstraction simplifies the user's view by suppressing storage details and is realized by the three-level ANSI/SPARC architecture.",
+      "oneShotPreview": "Hiding storage details and showing users only what they need through three schema levels."
+    },
+    {
+      "q": "c) What is an entity? Give an example.",
+      "a": "An entity is a distinguishable real-world object or concept about which data is stored; it may be a person, place, thing or event. In the ER model an entity is represented as a rectangle and belongs to an entity type. For example, in a university database a particular student (roll number 101, name Arun) is an entity, as are a course and a teacher; each entity has attributes that describe it.",
+      "explanation": "An entity is the basic 'thing' of the ER model, distinguishable from other objects and described by attribute values.",
+      "oneShotPreview": "Entity = a distinguishable real-world object (e.g., one student) about which data is stored."
+    },
+    {
+      "q": "d) What are composite attributes? Give an example.",
+      "a": "Composite attributes are attributes that can be subdivided into smaller sub-attributes, each having an independent meaning. For example, the attribute Address can be split into street, city, state and pin code, and Name can be split into first, middle and last name. In an ER diagram they are drawn as an oval connected to further ovals for the component attributes, and they are useful when an individual component must be queried separately.",
+      "explanation": "Composite attributes differ from simple (atomic) attributes precisely because they have meaningful sub-parts.",
+      "oneShotPreview": "Attributes with sub-parts, e.g., Address = street + city + state + pin code."
+    },
+    {
+      "q": "e) What is a super class and subclass in ER diagrams?",
+      "a": "A superclass is a general entity type that contains the attributes and relationships common to a group of related entity types, while a subclass is a more specific entity type that inherits those attributes and relationships and may add its own. For example, PERSON can be a superclass with STUDENT and TEACHER as subclasses; both inherit name and date of birth but add roll number or employee id respectively. The 'is a' (ISA) relationship, drawn as a triangle, connects subclasses to their superclass and supports specialization and generalization.",
+      "explanation": "The superclass/subclass (ISA) hierarchy allows shared properties to be defined once and inherited by specialized types.",
+      "oneShotPreview": "Superclass = general entity type (Person); subclass = specific type (Student) linked by an ISA relationship."
+    },
+    {
+      "q": "a) Define Database. Discuss about applications of Database Systems.",
+      "a": "A database is an organized, shared collection of logically related data and its metadata, managed by a DBMS so that it can be efficiently stored, queried and updated. Database systems are used in banking for accounts and transactions, in airline and railway reservation systems, in universities for student and course records, in healthcare for patient records, and in e-commerce for customers, products and orders. They are also the foundation of inventory control, payroll/accounting, social networks, library systems and government record keeping, wherever large amounts of structured data must be shared reliably by many users.",
+      "explanation": "A database is a persistent, integrated collection of related data, and these examples are the classic application domains where shared, reliable data management is essential.",
+      "oneShotPreview": "Database = organized related data; used in banking, reservations, universities, healthcare and e-commerce."
+    },
+    {
+      "q": "b) Identify the purpose of Database Systems.",
+      "a": "The purpose of a database system is to provide a convenient, efficient, reliable and safe way to store and retrieve large volumes of information. It overcomes the problems of file-processing systems: data redundancy and inconsistency, difficulty accessing data, data isolation, integrity and security violations. A DBMS also supports concurrent access by many users, atomic transactions and recovery from failures, authorization, and data independence so that applications remain unaffected by changes in storage structure.",
+      "explanation": "These purposes directly address the well-known limitations of traditional file processing systems described in standard DBMS texts.",
+      "oneShotPreview": "Manage data with less redundancy, easy access, integrity, security, concurrency and recovery."
+    },
+    {
+      "q": "a) Outline the Data Abstraction and discuss levels of Abstraction.",
+      "a": "Data abstraction hides implementation details and presents simplified views of the database to different users. The three levels are: (1) the physical or internal level, which describes how data is actually stored, including file structures and indexes; (2) the logical or conceptual level, which describes what data is stored and the relationships and constraints among all users' data; and (3) the view or external level, which describes only the portion of the database visible to a particular user or application. Mappings between external-conceptual and conceptual-internal levels translate requests between them, providing logical and physical data independence.",
+      "explanation": "The three-level ANSI/SPARC architecture is the standard answer; mappings between adjacent levels are what make data independence possible.",
+      "oneShotPreview": "Three levels: physical (how stored), logical (what stored), view (what user sees); mappings give independence."
+    },
+    {
+      "q": "b) Differentiate between Database users and administrators.",
+      "a": "Database users are people who interact with the database to retrieve, insert, update or delete data and produce reports; they include naive/end users using application interfaces, application programmers who write programs using DML, and sophisticated users who write SQL queries directly. A Database Administrator (DBA) is responsible for managing and controlling the database system: defining the schema, granting authorizations and access rights, monitoring performance and tuning, ensuring security and integrity, and performing backup and recovery. Thus users consume or manipulate data, whereas the DBA manages, protects and maintains the whole system.",
+      "explanation": "The distinction is between consumers of data and the central authority responsible for schema, security, performance and recovery.",
+      "oneShotPreview": "Users query/update data; DBA defines schema, controls access, tunes performance and handles backups."
+    },
+    {
+      "q": "a) Discuss about various data models.",
+      "a": "A data model is a set of concepts and notation for describing data, relationships, semantics and constraints. The main models are: the relational model, which organizes data into tables of rows and columns and is the most widely used; the Entity-Relationship (ER) model, a high-level conceptual model using entities, attributes and relationships, commonly used for database design; the hierarchical model, which organizes data as a tree of parent-child records; the network model, which allows a record to have multiple parents in a graph structure; and the object-oriented model, which stores objects with methods, identity and inheritance. Other models include object-relational, semi-structured (XML/JSON) and various NoSQL models.",
+      "explanation": "These are the standard data models taught in DBMS, classified by how they structure data and relationships; ER is conceptual while relational is the implementation model.",
+      "oneShotPreview": "Main data models: relational, ER, hierarchical, network, object-oriented and NoSQL."
+    },
+    {
+      "q": "b) Explain the following terms: I. Schema II. Instance III. Data independence",
+      "a": "A schema is the overall logical structure or blueprint of the database, including tables, attributes, data types and constraints; it is defined at design time and changes rarely. An instance is the actual content of the database at a particular moment in time, which changes whenever rows are inserted, deleted or updated. Data independence is the ability to modify a schema at one level without affecting the level above it: logical data independence protects external views from conceptual schema changes, and physical data independence protects the conceptual schema from changes in storage structures and access methods.",
+      "explanation": "Schema is the stable type-level description, instance is the time-varying data, and data independence is the insulation provided by the three-schema architecture.",
+      "oneShotPreview": "Schema = blueprint; instance = data at an instant; data independence = insulation between schema levels."
+    },
+    {
+      "q": "a) Design a Three tier schema Architecture of Database with a neat diagram.",
+      "a": "The three-tier (three-schema) architecture has three levels: the external or view level, consisting of the individual views seen by different users; the conceptual or logical level, describing the entire database structure and constraints for all users; and the internal or physical level, describing how data is actually stored on disk. Mappings between the external and conceptual levels and between the conceptual and internal levels translate requests and results between adjacent levels. This design gives logical data independence (changing the conceptual schema need not change user views) and physical data independence (changing storage structures need not change the conceptual schema). Diagram: User Views -> external/conceptual mapping -> Conceptual Schema -> conceptual/internal mapping -> Internal Schema -> Physical Storage.",
+      "explanation": "The ANSI/SPARC three-schema architecture with two mappings is the canonical design that delivers both forms of data independence.",
+      "oneShotPreview": "External -> Conceptual -> Internal schemas linked by mappings; yields logical and physical independence."
+    },
+    {
+      "q": "b) Illustrate about Database system structure.",
+      "a": "A database system is built from two main subsystems: the storage manager and the query processor. The storage manager interacts with the operating system and contains the transaction manager, buffer manager, file manager and authorization manager, which handle storage, in-memory buffers, transaction atomicity, concurrency and access control. The query processor contains the DDL interpreter, DML compiler and query evaluation engine, which translate user commands into low-level instructions and execute them. Together they provide a consistent interface for defining, storing, retrieving and updating data while guaranteeing integrity, security and recovery.",
+      "explanation": "The standard DBMS component diagram splits responsibilities between the storage manager (data side) and query processor (query side).",
+      "oneShotPreview": "Storage manager (files, buffers, transactions, authorization) + query processor (DDL/DML, evaluation engine)."
+    },
+    {
+      "q": "a) Define Environment in DBMS. Explain its components.",
+      "a": "The DBMS environment is the complete setting in which a database system operates, consisting of hardware, software, data, people and procedures. Hardware includes the servers, disks and network used to run the system; software includes the DBMS, the operating system and application programs; data includes the database itself and the catalog/metadata that describes it. People include end users, application programmers and the database administrator, while procedures are the documented rules for designing, using, securing and maintaining the database. All these components interact so data can be defined, stored, retrieved and managed reliably.",
+      "explanation": "This is the standard five-component framework (hardware, software, data, people, procedures) used to describe any information system, applied to a DBMS.",
+      "oneShotPreview": "DBMS environment = hardware, software, data, people (users/DBA) and procedures."
+    },
+    {
+      "q": "b) Construct a Centralized and Client Server architecture for the database",
+      "a": "In a centralized architecture, the database, DBMS and all application programs reside on one central computer; users interact through terminals and all processing happens at that single site. In a client-server architecture, the work is divided between client machines, which run front-end application programs and send requests over a network, and a database server, which runs the DBMS, stores the data, processes queries and returns results. The client-server model scales to many concurrent users, distributes processing load and supports remote access, whereas a centralized system is simpler to manage but has a single point of failure and limited scalability and flexibility.",
+      "explanation": "The two architectures differ in where data and processing reside; the client-server split is the basis of modern distributed database access.",
+      "oneShotPreview": "Centralized = one machine holds and processes everything; client-server = clients request, server stores and processes."
+    },
+    {
+      "q": "a) Explain the Entity-Relationship (ER) Model in detail.",
+      "a": "The Entity-Relationship (ER) model is a high-level conceptual data model that describes a database in terms of entities, their attributes and the relationships between them, usually expressed as an ER diagram. Entities (real-world objects) are drawn as rectangles, attributes (properties) as ellipses, and relationships (associations) as diamonds; key attributes are underlined and multi-valued attributes are drawn with double ovals. The model captures cardinality constraints (one-to-one, one-to-many, many-to-many), participation constraints, weak entities and keys. Enhanced ER features add specialization/generalization (ISA hierarchies) and aggregation, making the ER model the standard tool for conceptual database design before mapping to the relational model.",
+      "explanation": "This covers the defining constructs and notation of the ER model and its role as a conceptual design tool, which is what 'in detail' requires.",
+      "oneShotPreview": "Conceptual model: entities (rectangles), attributes (ovals), relationships (diamonds), keys and cardinality constraints."
+    },
+    {
+      "q": "b) Define and explain Entity and Entity Set in DBMS with examples.",
+      "a": "An entity is a distinguishable real-world object or concept about which data is stored, such as one particular student or one particular course. An entity set is a collection of entities of the same type that share the same properties, such as the set of all students enrolled in a university. An entity type is described by its attributes, and an entity has a specific value for each attribute. For example, the STUDENT entity set may have attributes rollno, name and branch, and the tuple (101, Arun, CSE) represents one entity in that set; in an ER diagram the entity set is shown as a rectangle with its attributes as ovals.",
+      "explanation": "An entity is a single instance while an entity set is the collection of all such instances of that type, analogous to a tuple and a relation in the relational model.",
+      "oneShotPreview": "Entity = one object (a student); entity set = all objects of that type (all students)."
+    },
+    {
+      "q": "a) What are attributes in the ER Model? Illustrate different types with examples.",
+      "a": "Attributes are the properties or characteristics that describe an entity or a relationship and are drawn as ellipses in an ER diagram. Simple (atomic) attributes cannot be divided further, e.g., age; composite attributes have sub-parts, e.g., Address = street + city + pin code. Single-valued attributes hold one value (date of birth) while multi-valued attributes hold several values (multiple phone numbers, shown as a double oval). Derived attributes are computed from others (age derived from date of birth), and a key attribute uniquely identifies an entity (roll number, underlined). Attributes may describe entities or, when appropriate, relationships such as the date on which a student borrows a book.",
+      "explanation": "These are the standard classifications of attributes in the ER model, each with distinct notation and examples.",
+      "oneShotPreview": "Properties of entities: simple, composite, single/multi-valued, derived and key attributes."
+    },
+    {
+      "q": "b) Distinguish between Relationship and Relationship set.",
+      "a": "A relationship is a single association among two or more entities, for example the specific student Ravi enrolled in the DBMS course. A relationship set is the collection of all relationships of the same type and is a set of tuples drawn from the participating entity sets, for example every (student, course) enrollment pair in the university. A relationship is to a relationship set as an entity is to an entity set: the former is one instance, the latter is the whole collection. In an ER diagram the relationship type is represented by a diamond, while the relationship set is the corresponding set of entity tuples at a point in time.",
+      "explanation": "The distinction is instance versus collection, exactly parallel to entity versus entity set.",
+      "oneShotPreview": "Relationship = one association instance; relationship set = all associations of that type."
+    },
+    {
+      "q": "a) What are Superclass and Subclass in DBMS? Illustrate with an ER diagram.",
+      "a": "A superclass is a generic entity type containing attributes common to several related types, while subclasses are specialized entity types that inherit those attributes and add their own. For example, PERSON (attributes name, date of birth) is a superclass of the subclasses STUDENT (roll number, department) and TEACHER (employee id, salary). In an ER diagram the superclass rectangle is connected downward through an ISA triangle to the subclass rectangles; the circle 'o' denotes overlapping subclasses and 'd' denotes disjoint subclasses, and total or partial participation can be shown. Attributes specific to a subclass are attached to it, while inherited attributes are attached to the superclass.",
+      "explanation": "This describes the enhanced ER 'is-a' hierarchy with its standard notation (ISA triangle, disjoint/overlapping, participation).",
+      "oneShotPreview": "PERSON superclass with STUDENT and TEACHER subclasses in an ISA hierarchy (disjoint/overlapping)."
+    },
+    {
+      "q": "b) Illustrate the Inheritance in the ER Model with an example.",
+      "a": "Inheritance in the ER model is the property by which a subclass automatically receives all the attributes and relationships of its superclass in addition to its own specific ones. For example, if EMPLOYEE is a superclass with attributes emp_id, name and salary, and MANAGER is a subclass with an additional attribute department, then every MANAGER entity has emp_id, name, salary and department. This 'is-a' property inheritance avoids storing the common attributes repeatedly in each subclass and accurately models real-world hierarchies. It is represented in the ER diagram by an ISA triangle connecting the subclasses to the superclass.",
+      "explanation": "Inheritance is the defining benefit of ISA hierarchies: shared properties are defined once at the superclass and reused by all subclasses.",
+      "oneShotPreview": "Subclass inherits all superclass attributes plus its own (MANAGER inherits EMPLOYEE's attributes)."
+    },
+    {
+      "q": "a) Define and explain Specialization in ER Model with examples.",
+      "a": "Specialization is a top-down design process in which subclasses are defined from an existing superclass by identifying subgroups of entities that have distinguishing attributes or relationships. Starting with the superclass PERSON (name, address), we can specialize it into STUDENT (roll number, department) and TEACHER (employee id, salary); each subclass inherits the superclass attributes and adds its own. Specialization is represented by an ISA triangle, with subclasses marked disjoint (d) or overlapping (o) and having total or partial participation. It models real-world hierarchies and avoids storing redundant attributes on every subtype.",
+      "explanation": "Specialization is the top-down direction of the ISA hierarchy, identified by the distinguishing features of subgroups.",
+      "oneShotPreview": "Top-down creation of subclasses from a superclass (PERSON to STUDENT/TEACHER) via ISA."
+    },
+    {
+      "q": "b) Define Generalization in ER Model. How is it different from Specialization?",
+      "a": "Generalization is a bottom-up design process in which common features of several entity types are extracted to form a single higher-level superclass. For example, from STUDENT and TEACHER we generalize the common attributes name and address into the superclass PERSON. The difference is direction and emphasis: specialization begins with one superclass and derives subclasses (top-down), whereas generalization begins with several entity types and combines their common features into a superclass (bottom-up). The resulting ISA hierarchy and ER notation are identical, so the two terms are often used interchangeably in practice.",
+      "explanation": "Both produce the same ISA structure; the only real difference is whether the design process is bottom-up (generalization) or top-down (specialization).",
+      "oneShotPreview": "Generalization = bottom-up merging into a superclass; specialization = top-down splitting into subclasses."
+    },
+    {
+      "q": "11 Construct ER Diagram for any two with neat explanation (i.e. Banking system, Hospital management system, Railway Reservation system, Online Shopping)",
+      "a": "Banking system: entities CUSTOMER (cust_id, name, address) and ACCOUNT (acc_no, type, balance) are connected by a many-to-many 'owns' relationship (a customer may hold several accounts and an account may have several joint holders), with attributes such as access_date on the relationship. Online Shopping: entities CUSTOMER, PRODUCT, ORDER and ORDER_ITEM, where a customer 'places' orders (one-to-many), an order 'contains' products through ORDER_ITEM (many-to-many with quantity and price as relationship attributes), and each product 'belongs to' a category. Hospital management uses DOCTOR, PATIENT and APPOINTMENT, while Railway Reservation uses PASSENGER, TICKET and TRAIN with 'books' and 'reserved_on' relationships. In every case the ER diagram uses rectangles for entities, ovals for attributes (key attributes underlined) and diamonds for relationships, annotated with cardinality ratios such as 1:M or M:N.",
+      "explanation": "These are complete, standard ER designs for two of the listed domains with clearly identified entities, key attributes, relationships and cardinalities, plus the correct diagram notation.",
+      "oneShotPreview": "Banking: CUSTOMER-ACCOUNT (M:N owns); Shopping: CUSTOMER-ORDER-PRODUCT (places/contains) with 1:M and M:N."
+    }
+  ]
+}
