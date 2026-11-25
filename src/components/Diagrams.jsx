@@ -1,4 +1,8 @@
 import React from "react";
+import { ExtraOS } from "./diagrams/ExtraOS";
+import { ExtraDBMS } from "./diagrams/ExtraDBMS";
+import { ExtraSE } from "./diagrams/ExtraSE";
+import { ExtraMisc } from "./diagrams/ExtraMisc";
 
 /**
  * Reusable diagram library for SIETK question-bank answers.
@@ -391,6 +395,7 @@ const DIAGRAMS = {
   waterfall, spiral, vmodel, dfd, caseEnv,
   demandCurve, elasticity, breakeven, monopoly,
   doubleDiamond, businessModel, sampling,
+  ...ExtraOS, ...ExtraDBMS, ...ExtraSE, ...ExtraMisc,
 };
 
 // Map keywords in a question → which diagram to render
@@ -419,6 +424,44 @@ const RULES = [
   [/business model/i, "businessModel"],
   [/sampling distribution/i, "sampling"],
   [/virtual memory with neat diagram/i, "processState"],
+  // --- Extended diagram set ---
+  [/common services provided by an operating system/i, "osServices"],
+  [/boot sequence|booting an operating system/i, "bootSequence"],
+  [/operating system structures|os structures/i, "osStructures"],
+  [/multithreading models/i, "multithreading"],
+  [/page fault in demand paging/i, "pageFault"],
+  [/bounded buffer/i, "boundedBuffer"],
+  [/mutex locks\? list its components|mutex lock/i, "mutex"],
+  [/deadlock.*system model|system model.*deadlock/i, "deadlockModel"],
+  [/various data models|data models/i, "dataModels"],
+  [/database system structure|dbms.*structure/i, "dbSystemStructure"],
+  [/environment in dbms|components.*environment/i, "dbEnvironment"],
+  [/attributes in the er model/i, "erAttributes"],
+  [/inheritance in the er model|specialization in er model|generalization/i, "erInheritance"],
+  [/operations in relational algebra|relational algebra/i, "relationalAlgebra"],
+  [/functional dependency/i, "functionalDependency"],
+  [/types of anomalies/i, "anomalies"],
+  [/concurrent execution of transaction/i, "concurrentExec"],
+  [/rapid application development|rad life cycle|rad model/i, "radModel"],
+  [/prototyping model/i, "prototypingModel"],
+  [/evolutionary process model/i, "evolutionaryModel"],
+  [/cocomo/i, "cocomo"],
+  [/design process|design processes/i, "designProcess"],
+  [/layered arrangement/i, "layeredModules"],
+  [/cohesion and coupling/i, "cohesionCoupling"],
+  [/agile process models|agile process/i, "agileProcess"],
+  [/structured analysis|data flow.*level/i, "structuredAnalysis"],
+  [/ui design methodology|user interface design.*methodology/i, "uiMethodology"],
+  [/software maintenance process model/i, "maintenanceModels"],
+  [/case support in software life cycle/i, "caseSupport"],
+  [/accounting cycle/i, "accountingCycle"],
+  [/double entry book keeping/i, "doubleEntry"],
+  [/principles of design/i, "designPrinciples"],
+  [/personas in design thinking/i, "personas"],
+  [/steps.*product design|product design process/i, "productDesignProcess"],
+  [/normal probability density/i, "normalCurve"],
+  [/binomial distribution/i, "binomialDist"],
+  [/bayes.? theorem/i, "bayesFlow"],
 ];
 
 export function getDiagramForQuestion(q) {
