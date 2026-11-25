@@ -6,117 +6,265 @@
   "questions": [
     {
       "q": "1 a) State the formula for Binomial distribution. [L1][CO3] [2M]",
-      "a": "If X is the number of successes in n independent Bernoulli trials, each with success probability p and failure probability q = 1 - p, then X follows a binomial distribution. Its probability mass function is P(X = x) = nCx * p^x * q^(n-x), for x = 0, 1, 2, ..., n. The mean is np and the variance is npq. It is a discrete distribution used when there are a fixed number of independent trials with only two possible outcomes per trial.",
-      "explanation": "Each of the x successes contributes p and the remaining n-x trials contribute q; the factor nCx counts the number of ways to choose which trials are successes. Independence of trials allows the probabilities to be multiplied.",
-      "oneShotPreview": "Binomial: P(X=x) = nCx p^x q^(n-x); mean = np, variance = npq."
+      "a": "A discrete random variable X follows a binomial distribution when it counts the number of successes in n independent and identical Bernoulli trials, each having success probability p and failure probability q = 1 - p. Its probability mass function is P(X = x) = C(n,x) p^x q^(n-x), for x = 0, 1, 2, ..., n, and zero otherwise. The factor C(n,x) = n!/(x!(n-x)!) counts the number of ways of arranging the x successes among the n trials, while p^x q^(n-x) is the probability of any one such arrangement. Because the trials are independent, the constituent probabilities multiply. The distribution has mean E[X] = np and variance Var(X) = npq.",
+      "steps": [
+        "Identify the setting: n independent Bernoulli trials, each with success probability p and failure probability q = 1 - p.",
+        "Write the probability mass function: P(X = x) = C(n,x) p^x q^(n-x), for x = 0, 1, ..., n.",
+        "Interpret C(n,x) as the number of favourable arrangements and p^x q^(n-x) as the probability of one arrangement.",
+        "State the moments of the distribution: mean = np and variance = npq."
+      ],
+      "formula": "Binomial: P(X=r)=C(n,r) p^r q^(n-r), q=1-p; mean=np, variance=npq",
+      "explanation": "Each of the x successes contributes a factor p and each of the remaining n-x trials contributes a factor q; independence allows these to be multiplied. The combinatorial coefficient C(n,x) counts how many different positions the successes can occupy, giving the complete pmf.",
+      "oneShotPreview": "Binomial: P(X=x)=C(n,x)p^x q^(n-x); mean=np, variance=npq."
     },
     {
       "q": "1 b) A coin is tossed 9 times. Find the probability of getting 5 heads? [L1][CO3] [2M]",
-      "a": "Here n = 9 trials, p = 1/2 (head) and q = 1/2 (tail), so X ~ Binomial(9, 1/2). P(X = 5) = 9C5 * (1/2)^5 * (1/2)^4 = 126 / 2^9 = 126/512 = 63/256. Therefore the probability of getting exactly 5 heads is about 0.2461 (24.61%).",
-      "explanation": "A fair coin gives equal success/failure probability, so the answer reduces to the number of favourable arrangements (9C5 = 126) divided by the total 2^9 = 4096 equally likely outcomes.",
-      "oneShotPreview": "P(5 heads in 9 tosses) = 126/512 = 0.2461."
+      "a": "Here the number of trials is n = 9 and, for a fair coin, the probability of a head is p = 1/2 and of a tail is q = 1/2, so X ~ Binomial(9, 1/2). The binomial pmf is P(X = x) = C(9,x)(1/2)^x(1/2)^(9-x) = C(9,x)/2^9. Substituting x = 5 gives C(9,5) = 9!/(5!4!) = 126 and 2^9 = 512. Hence P(X = 5) = 126/512 = 63/256. Therefore the probability of getting exactly 5 heads is 63/256 ≈ 0.2461, or about 24.61%.",
+      "steps": [
+        "Identify parameters: n = 9 tosses, p = 1/2 (head), q = 1/2 (tail), so X ~ Binomial(9, 1/2).",
+        "Write the pmf: P(X = x) = C(9,x)(1/2)^x(1/2)^(9-x) = C(9,x)/2^9.",
+        "Substitute x = 5: C(9,5) = 126 and 2^9 = 512.",
+        "Compute: P(X = 5) = 126/512 = 63/256 ≈ 0.2461."
+      ],
+      "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r)",
+      "explanation": "A fair coin gives equal success and failure probabilities, so p + q = 1 and the answer reduces to the number of favourable arrangements, C(9,5) = 126, divided by the total number of equally likely sequences, 2^9 = 512.",
+      "oneShotPreview": "P(5 heads in 9 tosses) = 126/512 = 63/256 ≈ 0.2461."
     },
     {
       "q": "1 c) Define Poisson distribution. [L1][CO3] [2M]",
-      "a": "The Poisson distribution is a discrete probability distribution that gives the probability of a given number of events occurring in a fixed interval of time, space, or volume when the events occur independently and at a constant average rate λ. Its probability mass function is P(X = x) = e^(-λ) * λ^x / x!, for x = 0, 1, 2, ... . Both the mean and the variance of the distribution equal λ. It is often used as an approximation to the binomial distribution when n is large and p is small.",
-      "explanation": "It models rare, random, independent occurrences such as the number of defective items or incoming calls, where only the average rate λ is known. The single parameter λ completely determines the distribution.",
-      "oneShotPreview": "Poisson: P(X=x)=e^-λ λ^x/x!, modelling random events; mean = variance = λ."
+      "a": "The Poisson distribution is a discrete probability distribution that gives the probability of a specified number of events occurring in a fixed interval of time, space, area, or volume, when the events occur independently and at a constant average rate λ. Its probability mass function is P(X = x) = e^(-λ) λ^x / x!, for x = 0, 1, 2, ..., with e the base of natural logarithms. The distribution has a single parameter λ, and both its mean and its variance equal λ. It is commonly used to model rare, random occurrences such as the number of defective items in a batch or the number of calls arriving at a switchboard, and it approximates the binomial distribution when n is large and p is small with λ = np.",
+      "steps": [
+        "Identify the conditions: independent events occurring at a constant average rate λ in a fixed interval.",
+        "Write the probability mass function: P(X = x) = e^-λ λ^x / x!, for x = 0, 1, 2, ....",
+        "State the moments: mean = variance = λ, so a single parameter λ determines the whole distribution.",
+        "Note the binomial limit: for large n and small p, Binomial(n,p) is approximated by Poisson(λ = np)."
+      ],
+      "formula": "Poisson: P(X=r)=e^-λ λ^r / r!; mean=variance=λ",
+      "explanation": "The Poisson model applies to events that happen randomly and independently with a known average rate λ but no fixed upper limit on the count. Because λ alone fixes both the centre and the spread, it is the only parameter needed.",
+      "oneShotPreview": "Poisson: P(X=x)=e^-λ λ^x/x!, modelling random events; mean=variance=λ."
     },
     {
       "q": "1 d) If the variance of a Poisson variate is 3. Find P(1 ≤ X < 4) ? [L1][CO4] [2M]",
-      "a": "For a Poisson distribution, variance = mean = λ, so λ = 3. We need P(1 ≤ X < 4) = P(X=1) + P(X=2) + P(X=3). Using P(X=x) = e^-3 * 3^x / x!, this is e^-3 (3 + 9/2 + 27/6) = e^-3 (3 + 4.5 + 4.5) = 12 e^-3. Since e^-3 ≈ 0.049787, the probability is 12 * 0.049787 ≈ 0.5974.",
-      "explanation": "The Poisson variance equals its parameter, fixing λ = 3; summing the three integer probabilities in the interval gives the required range probability.",
+      "a": "For a Poisson distribution the mean and the variance are both equal to the parameter λ, so Var(X) = 3 implies λ = 3. The pmf is therefore P(X = x) = e^-3 · 3^x / x!. The strict upper bound means P(1 ≤ X < 4) = P(X=1) + P(X=2) + P(X=3). Factoring out e^-3 gives e^-3(3^1/1! + 3^2/2! + 3^3/3!) = e^-3(3 + 9/2 + 27/6) = e^-3(3 + 4.5 + 4.5) = 12e^-3. Since e^-3 ≈ 0.049787, the required probability is 12 × 0.049787 ≈ 0.5974.",
+      "steps": [
+        "Identify the parameter: for Poisson, variance = λ, so λ = 3.",
+        "Write the pmf: P(X = x) = e^-3 · 3^x / x!.",
+        "Expand the required range: P(1 ≤ X < 4) = P(1) + P(2) + P(3).",
+        "Substitute: e^-3(3/1! + 9/2! + 27/3!) = e^-3(3 + 4.5 + 4.5) = 12e^-3.",
+        "Compute: 12 × 0.049787 ≈ 0.5974."
+      ],
+      "formula": "Poisson: P(X=r)=e^-λ λ^r / r!",
+      "explanation": "The equality variance = mean = λ fixes λ = 3 immediately. Summing the three integer probabilities inside the interval and factoring out e^-3 leaves the simple expression 12e^-3.",
       "oneShotPreview": "λ = 3; P(1≤X<4) = 12e^-3 ≈ 0.5974."
     },
     {
       "q": "1 e) State Normal probability density formula. [L1][CO4] [2M]",
-      "a": "A continuous random variable X with mean μ and standard deviation σ is normally distributed, written X ~ N(μ, σ²), with probability density function f(x) = (1 / (σ sqrt(2π))) * exp[ -(x - μ)² / (2σ²) ], for -∞ < x < ∞. The curve is bell-shaped and symmetric about x = μ. The standard normal distribution has μ = 0 and σ = 1, with z = (x - μ)/σ.",
-      "explanation": "The density integrates to 1 over the real line; the exponent measures the squared distance from the mean, giving the characteristic symmetric bell shape controlled by σ.",
+      "a": "A continuous random variable X with mean μ and standard deviation σ is said to be normally distributed, written X ~ N(μ, σ²), if its probability density function is f(x) = (1/(σ√(2π))) · exp[-(x-μ)²/(2σ²)], for -∞ < x < ∞. The constant 1/(σ√(2π)) normalizes the curve so that the total area under it equals 1. The exponent measures the squared deviation of x from the mean, producing the characteristic bell-shaped curve that is symmetric about x = μ. The spread is controlled entirely by σ: larger σ gives a flatter, wider curve. The special case μ = 0 and σ = 1 is the standard normal distribution, and any normal variable is converted to it using z = (x - μ)/σ.",
+      "steps": [
+        "Identify the parameters: mean μ and standard deviation σ, written X ~ N(μ, σ²).",
+        "Write the density: f(x) = (1/(σ√(2π))) · exp[-(x-μ)²/(2σ²)], -∞ < x < ∞.",
+        "Interpret the factors: the constant normalizes the total area to 1 and the exponent gives symmetry about μ.",
+        "State the standardization: Z = (x-μ)/σ follows the standard normal N(0,1)."
+      ],
+      "formula": "Normal: f(x)=(1/(σ√(2π)))e^{-(x-μ)²/(2σ²)}; Z=(x-μ)/σ",
+      "explanation": "The density is bell-shaped and symmetric about μ, and its total integral over the real line is 1. The exponent penalizes values far from the mean quadratically, which is what gives the normal curve its familiar shape.",
       "oneShotPreview": "Normal pdf: f(x) = (1/(σ√(2π))) e^{-(x-μ)²/(2σ²)}."
     },
     {
       "q": "2 a) Derive mean of Binomial distribution. [L3][CO3] [5M]",
-      "a": "Mean E[X] = Σ_{x=0}^{n} x * nCx * p^x * q^(n-x). The x = 0 term is zero, so E[X] = Σ_{x=1}^{n} x * n!/(x!(n-x)!) * p^x * q^(n-x). Cancelling x with x! gives x * nCx = n * (n-1)C(x-1), hence E[X] = np * Σ_{x=1}^{n} (n-1)C(x-1) * p^(x-1) * q^(n-x). Putting y = x-1, the sum becomes Σ_{y=0}^{n-1} (n-1)Cy * p^y * q^((n-1)-y) = (p + q)^(n-1) = 1 by the binomial theorem. Therefore E[X] = np.",
-      "explanation": "The factor x nCx is rewritten as n(n-1)C(x-1), leaving a complete binomial expansion that sums to 1, so only np remains.",
-      "oneShotPreview": "Mean of Binomial, E[X] = Σ x·nCx p^x q^(n-x) = np."
+      "a": "The mean is E[X] = Σ_(x=0)^n x · C(n,x) p^x q^(n-x). The x = 0 term is zero, so E[X] = Σ_(x=1)^n x · n!/(x!(n-x)!) · p^x q^(n-x). Using the identity x·C(n,x) = n·C(n-1, x-1), obtained by cancelling x with x!, we get E[X] = np Σ_(x=1)^n C(n-1, x-1) p^(x-1) q^(n-x). Setting y = x - 1 changes the sum into Σ_(y=0)^(n-1) C(n-1,y) p^y q^((n-1)-y), which is exactly the binomial expansion of (p + q)^(n-1) = 1^(n-1) = 1. Therefore E[X] = np · 1 = np. This confirms that the mean number of successes equals the number of trials times the success probability.",
+      "steps": [
+        "Start from the definition: E[X] = Σ_(x=0)^n x·C(n,x)p^x q^(n-x); the x=0 term vanishes.",
+        "Apply the identity x·C(n,x) = n·C(n-1,x-1), so E[X] = np Σ_(x=1)^n C(n-1,x-1)p^(x-1)q^(n-x).",
+        "Substitute y = x-1 to obtain E[X] = np Σ_(y=0)^(n-1) C(n-1,y)p^y q^((n-1)-y).",
+        "Recognize the sum as (p+q)^(n-1) = 1 by the binomial theorem.",
+        "Conclude E[X] = np."
+      ],
+      "formula": "E[X] = Σ x·C(n,x)p^x q^(n-x) = np·(p+q)^(n-1) = np",
+      "explanation": "Rewriting x·C(n,x) as n·C(n-1,x-1) leaves a complete binomial expansion that sums to (p+q)^(n-1) = 1, so only the factor np survives.",
+      "oneShotPreview": "Mean of Binomial: E[X] = Σ x·C(n,x)p^x q^(n-x) = np."
     },
     {
       "q": "2 b) 20% of items produced from a factory are defective. Find the probability that in a sample of 5 chosen at random (i) one is defective (ii) P(1 < x < 4) [L1][CO3] [5M]",
-      "a": "Here p = 0.20 (defective), q = 0.80 and n = 5, so X ~ Binomial(5, 0.2). (i) P(X=1) = 5C1 (0.2)(0.8)^4 = 5 * 0.2 * 0.4096 = 0.4096. (ii) P(1 < X < 4) = P(X=2) + P(X=3) = 10(0.2)^2(0.8)^3 + 10(0.2)^3(0.8)^2 = 0.2048 + 0.0512 = 0.2560.",
-      "explanation": "Each item is an independent Bernoulli trial with defect probability 0.2; applying the binomial pmf and summing over the requested values gives the two probabilities.",
+      "a": "Each item is an independent trial with defect probability p = 0.20 and good-item probability q = 0.80, and the sample size is n = 5, so X ~ Binomial(5, 0.2). The pmf is P(X = x) = C(5,x)(0.2)^x(0.8)^(5-x). (i) For exactly one defective, P(X=1) = C(5,1)(0.2)(0.8)^4 = 5 × 0.2 × 0.4096 = 0.4096. (ii) The strict inequality 1 < X < 4 covers X = 2 and X = 3: P(X=2) = 10(0.2)^2(0.8)^3 = 10 × 0.04 × 0.512 = 0.2048, and P(X=3) = 10(0.2)^3(0.8)^2 = 10 × 0.008 × 0.64 = 0.0512. Their sum is 0.2048 + 0.0512 = 0.2560. Hence (i) 0.4096 and (ii) 0.2560.",
+      "steps": [
+        "Identify parameters: n = 5, p = 0.20 (defective), q = 0.80, so X ~ Binomial(5,0.2).",
+        "Write the pmf: P(X = x) = C(5,x)(0.2)^x(0.8)^(5-x).",
+        "Part (i): P(X=1) = C(5,1)(0.2)(0.8)^4 = 5 × 0.2 × 0.4096 = 0.4096.",
+        "Part (ii): 1 < X < 4 means X = 2 or 3; P(2) = 10(0.2)^2(0.8)^3 = 0.2048 and P(3) = 10(0.2)^3(0.8)^2 = 0.0512.",
+        "Sum the two terms: 0.2048 + 0.0512 = 0.2560."
+      ],
+      "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r)",
+      "explanation": "Every item is an independent Bernoulli trial with defect probability 0.2. Applying the binomial pmf gives the single-point probability, and summing over the two integer values inside the strict interval gives the range probability.",
       "oneShotPreview": "n=5, p=0.2: P(X=1)=0.4096; P(1<X<4)=0.2560."
     },
     {
       "q": "3 Fit a Binomial distribution to the following frequency distribution: x: 0, 1, 2, 3, 4, 5; f: 2, 14, 20, 34, 22, 8 [L3][CO3] [10M]",
-      "a": "Total frequency N = 100. Mean = Σfx/N = (14 + 40 + 102 + 88 + 40)/100 = 284/100 = 2.84. Since mean = np with n = 5, p = 2.84/5 = 0.568 and q = 0.432. Expected frequency = N * 5Cx * p^x * q^(5-x). The fitted frequencies are: x=0 → 1.5, x=1 → 9.9, x=2 → 26.0, x=3 → 34.2, x=4 → 22.5, x=5 → 5.9 (total ≈ 100). These are close to the observed frequencies, so the binomial fit with p = 0.568 is reasonable.",
-      "explanation": "Fitting means equating the theoretical mean np to the observed sample mean to estimate p, then using the binomial pmf scaled by N to generate expected counts for comparison.",
+      "a": "The total frequency is N = 2+14+20+34+22+8 = 100. The sample mean is Σfx/N = (0·2 + 1·14 + 2·20 + 3·34 + 4·22 + 5·8)/100 = (14+40+102+88+40)/100 = 284/100 = 2.84. For a binomial fit we equate the theoretical mean np to the observed mean: with n = 5, p = 2.84/5 = 0.568 and q = 0.432. Expected frequencies are N·C(5,x)p^x q^(5-x) = 100·C(5,x)(0.568)^x(0.432)^(5-x). Computing term by term gives expected frequencies of approximately 1.5, 9.9, 26.0, 34.2, 22.5, and 5.9, which total about 100. Comparison table (x : observed / expected): 0: 2/1.5, 1: 14/9.9, 2: 20/26.0, 3: 34/34.2, 4: 22/22.5, 5: 8/5.9. The close agreement shows that Binomial(5, 0.568) is a reasonable fit to the data.",
+      "steps": [
+        "Find total frequency N = 100 and compute the sample mean Σfx/N = 284/100 = 2.84.",
+        "Estimate p from np = mean: p = 2.84/5 = 0.568, so q = 1 - p = 0.432.",
+        "Write the expected frequency formula: f_e(x) = N·C(5,x)(0.568)^x(0.432)^(5-x).",
+        "Substitute x = 0..5 and tabulate: x=0: 1.5/2, x=1: 9.9/14, x=2: 26.0/20, x=3: 34.2/34, x=4: 22.5/22, x=5: 5.9/8 (expected/observed).",
+        "Check the expected frequencies total ≈ 100 and conclude the binomial fit is reasonable."
+      ],
+      "formula": "Fit: p = mean/n; expected f_x = N·C(n,x)p^x q^(n-x)",
+      "explanation": "Fitting a binomial means estimating its single free parameter p by equating the theoretical mean np to the observed sample mean, then scaling the binomial pmf by N to produce expected counts that can be compared with the observed frequencies.",
       "oneShotPreview": "Fit: p = 0.568, q = 0.432 → expected f ≈ 1.5, 9.9, 26.0, 34.2, 22.5, 5.9."
     },
     {
       "q": "4 a) Out of 800 families with 5 children each, how many would you expect to have (i) 3 boys (ii) 5 girls (iii) either 2 or 3 boys. Assume equal probabilities for boys and girls. [L3][CO3] [5M]",
-      "a": "With p = q = 1/2 and n = 5, X ~ Binomial(5, 1/2). (i) P(3 boys) = 5C3 (1/2)^5 = 10/32 = 0.3125, so expected families = 800 * 0.3125 = 250. (ii) P(5 girls) = P(0 boys) = (1/2)^5 = 1/32 = 0.03125, so expected = 800 * 0.03125 = 25. (iii) P(2 or 3 boys) = 10/32 + 10/32 = 0.625, so expected = 800 * 0.625 = 500 families.",
-      "explanation": "Equal boy/girl probabilities make all 2^5 = 32 birth sequences equally likely; multiplying each probability by 800 gives the expected number of families.",
+      "a": "With equal chances, p = q = 1/2 and n = 5 children, so the number of boys X ~ Binomial(5, 1/2) and P(X = x) = C(5,x)/2^5 = C(5,x)/32. (i) P(3 boys) = C(5,3)/32 = 10/32 = 0.3125, so the expected number of families is 800 × 0.3125 = 250. (ii) Five girls means zero boys: P(X=0) = 1/32 = 0.03125, giving 800 × 0.03125 = 25 families. (iii) P(2 or 3 boys) = [C(5,2) + C(5,3)]/32 = (10 + 10)/32 = 0.625, giving 800 × 0.625 = 500 families. Thus the expected counts are 250, 25, and 500 families respectively.",
+      "steps": [
+        "Identify parameters: n = 5, p = q = 1/2, so X (number of boys) ~ Binomial(5,1/2).",
+        "Write the pmf: P(X = x) = C(5,x)(1/2)^5 = C(5,x)/32.",
+        "Part (i): P(3 boys) = 10/32 = 0.3125; expected families = 800 × 0.3125 = 250.",
+        "Part (ii): 5 girls = 0 boys; P(0) = 1/32 = 0.03125; expected families = 800 × 0.03125 = 25.",
+        "Part (iii): P(2 or 3 boys) = (10+10)/32 = 0.625; expected families = 800 × 0.625 = 500."
+      ],
+      "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); expected count = N·P(X=r)",
+      "explanation": "Equal boy/girl probabilities make all 2^5 = 32 birth sequences equally likely, so each probability is a count of favourable sequences over 32. Multiplying each probability by the 800 families converts the proportion into an expected number of families.",
       "oneShotPreview": "Expected families: (i) 250, (ii) 25, (iii) 500."
     },
     {
       "q": "4 b) Two dice are thrown five times. Find the probability of getting 7 as sum i) At least once (ii) P(1 < x < 5) [L1][CO3] [5M]",
-      "a": "For one throw of two dice, P(sum = 7) = 6/36 = 1/6, so with five throws X ~ Binomial(5, 1/6), q = 5/6. (i) P(X ≥ 1) = 1 - P(X=0) = 1 - (5/6)^5 = 1 - 3125/7776 ≈ 0.5981. (ii) P(1 < X < 5) = P(2) + P(3) + P(4) = 1250/7776 + 250/7776 + 25/7776 = 1525/7776 ≈ 0.1961.",
-      "explanation": "Each throw of the dice is an independent trial with success probability 1/6; the complement rule handles 'at least once' and direct summation handles the strict inequality range.",
-      "oneShotPreview": "p=1/6, n=5: P(at least one 7) ≈ 0.5981; P(1<X<5) ≈ 0.1961."
+      "a": "In a single throw of two dice there are 36 equally likely outcomes, of which 6 give a sum of 7, so the success probability is p = 6/36 = 1/6 and q = 5/6. Over five independent throws, X ~ Binomial(5, 1/6) with P(X = x) = C(5,x)(1/6)^x(5/6)^(5-x). (i) 'At least once' is handled by the complement: P(X ≥ 1) = 1 - P(X=0) = 1 - (5/6)^5 = 1 - 3125/7776 ≈ 1 - 0.4019 = 0.5981. (ii) The strict inequality 1 < X < 4 covers X = 2, 3, and 4: P(2) = 1250/7776, P(3) = 250/7776, and P(4) = 25/7776, which sum to 1525/7776 ≈ 0.1961. Thus (i) ≈ 0.5981 and (ii) ≈ 0.1961.",
+      "steps": [
+        "Identify parameters: in one throw P(sum 7) = 6/36 = 1/6, so p = 1/6, q = 5/6, n = 5, X ~ Binomial(5,1/6).",
+        "Write the pmf: P(X = x) = C(5,x)(1/6)^x(5/6)^(5-x).",
+        "Part (i): P(X ≥ 1) = 1 - P(X=0) = 1 - (5/6)^5 = 1 - 3125/7776 ≈ 0.5981.",
+        "Part (ii): 1 < X < 4 means X = 2, 3, 4 with probabilities 1250/7776, 250/7776, 25/7776.",
+        "Sum: (1250+250+25)/7776 = 1525/7776 ≈ 0.1961."
+      ],
+      "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); complement P(X≥1)=1-q^n",
+      "explanation": "Each throw of the dice is an independent trial with success probability 1/6. The complement rule simplifies 'at least once', while direct summation over X = 2, 3, 4 handles the strict inequality range.",
+      "oneShotPreview": "p=1/6, n=5: P(at least one 7)≈0.5981; P(1<X<5)≈0.1961."
     },
     {
       "q": "5 a) Derive mean of Poisson distribution. [L3][CO3] [5M]",
-      "a": "For X ~ Poisson(λ), E[X] = Σ_{x=0}^∞ x * e^-λ * λ^x / x!. The x = 0 term vanishes, so E[X] = e^-λ * Σ_{x=1}^∞ x * λ^x / x! = e^-λ * Σ_{x=1}^∞ λ^x / (x-1)!. Factor out λ: E[X] = λ e^-λ * Σ_{x=1}^∞ λ^(x-1) / (x-1)!. Let y = x-1; then the sum is Σ_{y=0}^∞ λ^y / y! = e^λ. Hence E[X] = λ e^-λ * e^λ = λ. Thus the mean of a Poisson distribution is λ (which also equals its variance).",
-      "explanation": "Cancelling x against x! and shifting the index leaves the exponential series, so the entire sum collapses to the single parameter λ.",
+      "a": "For X ~ Poisson(λ), E[X] = Σ_(x=0)^∞ x·e^-λ λ^x/x!. The x = 0 term is zero, so E[X] = e^-λ Σ_(x=1)^∞ x·λ^x/x!. Cancelling x with x! gives x/x! = 1/(x-1)!, hence E[X] = e^-λ Σ_(x=1)^∞ λ^x/(x-1)!. Factoring out one λ yields E[X] = λ e^-λ Σ_(x=1)^∞ λ^(x-1)/(x-1)!. Putting y = x - 1, the sum becomes Σ_(y=0)^∞ λ^y/y! = e^λ by the exponential series. Therefore E[X] = λ e^-λ · e^λ = λ. Thus the mean of a Poisson variate is λ, which is also equal to its variance.",
+      "steps": [
+        "Start from the definition: E[X] = Σ_(x=0)^∞ x·e^-λ λ^x/x!; the x=0 term vanishes.",
+        "Cancel x with x!: x/x! = 1/(x-1)!, so E[X] = e^-λ Σ_(x=1)^∞ λ^x/(x-1)!.",
+        "Factor out one λ: E[X] = λ e^-λ Σ_(x=1)^∞ λ^(x-1)/(x-1)!.",
+        "Substitute y = x-1: the sum is Σ_(y=0)^∞ λ^y/y! = e^λ.",
+        "Conclude E[X] = λ e^-λ · e^λ = λ."
+      ],
+      "formula": "E[X] = Σ x·e^-λ λ^x/x! = λe^-λ·e^λ = λ",
+      "explanation": "Cancelling x against x! and shifting the summation index leaves exactly the series expansion of e^λ, which cancels the e^-λ factor and collapses the whole expression to λ.",
       "oneShotPreview": "Poisson mean: E[X] = Σ x·e^-λ λ^x/x! = λ."
     },
     {
       "q": "5 b) If 2% of light bulbs are defective. Find the probability that (i) 2 defective items (ii) at least 3 defective items (iii) P(2 < x < 5) in a sample of 100. [L1][CO3] [5M]",
-      "a": "Here n = 100, p = 0.02, so λ = np = 2 and X ~ Poisson(2). (i) P(X=2) = e^-2 * 2^2/2! = 2e^-2 ≈ 0.2707. (ii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 1 - 0.6767 = 0.3233. (iii) P(2 < X < 5) = P(3) + P(4) = e^-2(8/6 + 16/24) = 2e^-2 ≈ 0.2707.",
-      "explanation": "With large n and small p the Poisson approximation is appropriate; the mean λ = 2 drives all three probability calculations.",
+      "a": "Here n = 100 and p = 0.02, so the Poisson parameter is λ = np = 100 × 0.02 = 2, giving X ~ Poisson(2) with P(X = x) = e^-2 · 2^x/x!. Since e^-2 ≈ 0.135335: (i) P(X=2) = e^-2 · 2^2/2! = 2e^-2 ≈ 0.2707. (ii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 1 - 0.6767 = 0.3233. (iii) The strict range 2 < X < 5 covers X = 3 and 4: P(3) + P(4) = e^-2(8/6 + 16/24) = e^-2(4/3 + 2/3) = 2e^-2 ≈ 0.2707. Thus (i) 0.2707, (ii) 0.3233, and (iii) 0.2707.",
+      "steps": [
+        "Identify parameters: n = 100, p = 0.02, so λ = np = 2 and X ~ Poisson(2).",
+        "Write the pmf: P(X = x) = e^-2 · 2^x/x!, with e^-2 ≈ 0.135335.",
+        "Part (i): P(X=2) = e^-2·4/2 = 2e^-2 ≈ 0.2707.",
+        "Part (ii): P(X≥3) = 1 - e^-2(1+2+2) = 1 - 5e^-2 ≈ 0.3233.",
+        "Part (iii): 2<X<5 means X=3,4; P = e^-2(8/6+16/24) = 2e^-2 ≈ 0.2707."
+      ],
+      "formula": "Poisson: P(X=r)=e^-λ λ^r/r!, with λ=np",
+      "explanation": "Because n is large and p is small, the binomial situation is well approximated by a Poisson distribution with mean λ = np = 2. Substituting λ = 2 into the pmf and summing the relevant terms gives all three probabilities.",
       "oneShotPreview": "λ=2: P(X=2)=0.2707; P(X≥3)=0.3233; P(2<X<5)=0.2707."
     },
     {
       "q": "6 Fit a Poisson distribution to the following data: x: 0, 1, 2, 3, 4, 5, Total; f: 142, 156, 69, 27, 5, 1, 400 [L3][CO4] [10M]",
-      "a": "Total N = 400. Mean = Σfx/N = (156 + 138 + 81 + 20 + 5)/400 = 400/400 = 1, so λ = 1. Expected frequency = N * e^-1 * 1^x / x! = 400 * e^-1 / x!. Using e^-1 ≈ 0.3679, the fitted frequencies are: x=0 → 147.2, x=1 → 147.2, x=2 → 73.6, x=3 → 24.5, x=4 → 6.1, x=5 → 1.2 (sum ≈ 400). These closely match the observed frequencies, confirming a good Poisson fit with λ = 1.",
-      "explanation": "For a Poisson fit the sample mean estimates λ; multiplying the pmf by N gives expected counts that can be compared directly with the given frequencies.",
+      "a": "The total frequency is N = 400. The sample mean is Σfx/N = (0·142 + 1·156 + 2·69 + 3·27 + 4·5 + 5·1)/400 = (156 + 138 + 81 + 20 + 5)/400 = 400/400 = 1, so we estimate λ = 1. For a Poisson fit the expected frequency is N·e^-λ λ^x/x! = 400·e^-1/x!. Using e^-1 ≈ 0.3679, the expected frequencies are x=0: 147.2, x=1: 147.2, x=2: 73.6, x=3: 24.5, x=4: 6.1, x=5: 1.2, summing to about 400. Comparison table (x : observed / expected): 0: 142/147.2, 1: 156/147.2, 2: 69/73.6, 3: 27/24.5, 4: 5/6.1, 5: 1/1.2. The expected and observed frequencies agree closely, confirming a good Poisson fit with λ = 1.",
+      "steps": [
+        "Find N = 400 and compute the sample mean Σfx/N = (156+138+81+20+5)/400 = 400/400 = 1.",
+        "Estimate the Poisson parameter: λ = sample mean = 1.",
+        "Write the expected frequency formula: f_e(x) = N·e^-1·1^x/x! = 400·e^-1/x!.",
+        "Substitute x = 0..5 with e^-1 ≈ 0.3679 and tabulate: x=0: 147.2/142, x=1: 147.2/156, x=2: 73.6/69, x=3: 24.5/27, x=4: 6.1/5, x=5: 1.2/1 (expected/observed).",
+        "Verify the expected frequencies total ≈ 400 and conclude the fit is good."
+      ],
+      "formula": "Fit: λ = sample mean; expected f_x = N·e^-λ λ^x/x!",
+      "explanation": "For a Poisson fit the sample mean estimates the single parameter λ. Multiplying the pmf by N produces expected counts that can be compared directly with the observed frequencies; their close agreement supports the model.",
       "oneShotPreview": "Fit with λ=1: expected f ≈ 147.2, 147.2, 73.6, 24.5, 6.1, 1.2."
     },
     {
       "q": "7 a) An insurance agent policy of 5 men all of identical age and good in health. The probability that a man of this age will be alive 30 years is 2/3. Find the probability that in 30 years. (i) At least one-man (ii) Atmost three will be alive [L1][CO4] [5M]",
-      "a": "Let X be the number alive after 30 years; n = 5, p = 2/3, q = 1/3, so X ~ Binomial(5, 2/3). (i) P(X ≥ 1) = 1 - P(X=0) = 1 - (1/3)^5 = 1 - 1/243 = 242/243 ≈ 0.9959. (ii) P(X ≤ 3) = P(0)+P(1)+P(2)+P(3) = (1 + 10 + 40 + 80)/243 = 131/243 ≈ 0.5391.",
-      "explanation": "Each man's survival is an independent Bernoulli trial with p = 2/3; the complement rule gives 'at least one' and direct summation gives 'at most three'.",
-      "oneShotPreview": "n=5, p=2/3: P(at least 1 alive)=0.9959; P(at most 3)=0.5391."
+      "a": "Let X be the number of men alive after 30 years. Each man's survival is an independent Bernoulli trial with p = 2/3 and q = 1/3, and n = 5, so X ~ Binomial(5, 2/3) with P(X = x) = C(5,x)(2/3)^x(1/3)^(5-x). (i) P(X ≥ 1) = 1 - P(X=0) = 1 - (1/3)^5 = 1 - 1/243 = 242/243 ≈ 0.9959. (ii) 'At most three' means X ≤ 3, so P(X ≤ 3) = P(0)+P(1)+P(2)+P(3). Using the common denominator 3^5 = 243, these are 1/243, 10/243, 40/243, and 80/243, giving (1+10+40+80)/243 = 131/243 ≈ 0.5391. Therefore (i) ≈ 0.9959 and (ii) ≈ 0.5391.",
+      "steps": [
+        "Identify parameters: n = 5, p = 2/3 (alive), q = 1/3, so X ~ Binomial(5,2/3).",
+        "Write the pmf: P(X = x) = C(5,x)(2/3)^x(1/3)^(5-x), with denominator 3^5 = 243.",
+        "Part (i): P(X ≥ 1) = 1 - P(X=0) = 1 - (1/3)^5 = 1 - 1/243 = 242/243 ≈ 0.9959.",
+        "Part (ii): P(X ≤ 3) = P(0)+P(1)+P(2)+P(3) = (1+10+40+80)/243.",
+        "Compute: 131/243 ≈ 0.5391."
+      ],
+      "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); P(X≥1)=1-q^n",
+      "explanation": "Each man's survival is an independent trial with success probability 2/3. The complement rule gives 'at least one', while summing the four terms X = 0, 1, 2, 3 gives 'at most three'.",
+      "oneShotPreview": "n=5, p=2/3: P(at least 1 alive)≈0.9959; P(at most 3)≈0.5391."
     },
     {
       "q": "7 b) If X is a Poisson variate such that 2P(X = 0) = P(X = 2) find (i) Mean (ii) P(2 < X ≤ 5) iii) P(X ≥ 3). [L1][CO4] [5M]",
-      "a": "Given 2P(X=0) = P(X=2): 2e^-λ = e^-λ λ²/2!, so 2 = λ²/2 and λ² = 4, giving λ = 2. (i) Mean = λ = 2. (ii) P(2 < X ≤ 5) = P(3)+P(4)+P(5) = e^-2(8/6 + 16/24 + 32/120) = (34/15)e^-2 ≈ 0.3068. (iii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 0.3233.",
-      "explanation": "The given relation determines λ from the Poisson pmf; all requested quantities then follow by substituting λ = 2 into the pmf and summing the relevant terms.",
-      "oneShotPreview": "λ = 2 (mean); P(2<X≤5) ≈ 0.3068; P(X≥3) ≈ 0.3233."
+      "a": "Using the Poisson pmf P(X = x) = e^-λ λ^x/x!, the condition 2P(X=0) = P(X=2) becomes 2e^-λ = e^-λ λ²/2!. Cancelling e^-λ gives 2 = λ²/2, so λ² = 4 and λ = 2 (positive parameter). (i) The mean is λ = 2. (ii) P(2 < X ≤ 5) = P(3)+P(4)+P(5) = e^-2(2^3/3! + 2^4/4! + 2^5/5!) = e^-2(8/6 + 16/24 + 32/120) = (34/15)e^-2 ≈ 2.2667 × 0.135335 ≈ 0.3068. (iii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 1 - 0.6767 = 0.3233. Thus (i) 2, (ii) ≈ 0.3068, (iii) ≈ 0.3233.",
+      "steps": [
+        "Write the Poisson pmf: P(X = x) = e^-λ λ^x/x!.",
+        "Apply the condition: 2e^-λ = e^-λ λ²/2! → 2 = λ²/2 → λ² = 4 → λ = 2.",
+        "Part (i): mean = λ = 2.",
+        "Part (ii): P(2<X≤5) = e^-2(8/6+16/24+32/120) = (34/15)e^-2 ≈ 0.3068.",
+        "Part (iii): P(X≥3) = 1 - e^-2(1+2+2) = 1 - 5e^-2 ≈ 0.3233."
+      ],
+      "formula": "Poisson: P(X=r)=e^-λ λ^r/r!; mean=λ",
+      "explanation": "The given relation between two pmf values determines λ algebraically once e^-λ is cancelled. All requested quantities then follow by substituting λ = 2 into the pmf and summing the relevant integer probabilities.",
+      "oneShotPreview": "λ=2 (mean); P(2<X≤5)≈0.3068; P(X≥3)≈0.3233."
     },
     {
       "q": "8 If X is a normal variate with mean 30 and standard deviation 5. Find i) P(26 ≤ X ≤ 40) and ii) P(X ≥ 45) [L1][CO4] [10M]",
-      "a": "X ~ N(30, 5²), so Z = (X - 30)/5. (i) For X = 26, z = -0.8; for X = 40, z = 2. Hence P(26 ≤ X ≤ 40) = Φ(2) - Φ(-0.8) = 0.9772 - 0.2119 = 0.7654. (ii) For X = 45, z = (45-30)/5 = 3, so P(X ≥ 45) = P(Z ≥ 3) = 1 - Φ(3) = 1 - 0.99865 = 0.00135 (about 0.0014).",
-      "explanation": "Standardizing converts the normal variable to Z ~ N(0,1), and standard normal table areas give the required interval and right-tail probabilities.",
+      "a": "Here X ~ N(30, 5²), with μ = 30 and σ = 5, so we standardize using Z = (X - 30)/5, where Z ~ N(0,1). (i) For X = 26, z = (26-30)/5 = -0.8; for X = 40, z = (40-30)/5 = 2. Hence P(26 ≤ X ≤ 40) = Φ(2) - Φ(-0.8) = 0.9772 - 0.2119 = 0.7654 (using Φ(-0.8) = 1 - 0.7881 = 0.2119). (ii) For X = 45, z = (45-30)/5 = 3, so P(X ≥ 45) = P(Z ≥ 3) = 1 - Φ(3) = 1 - 0.99865 = 0.00135, i.e. about 0.0014. Therefore (i) 0.7654 and (ii) 0.00135.",
+      "steps": [
+        "Identify parameters: μ = 30, σ = 5, X ~ N(30,25); use Z = (X-30)/5.",
+        "Part (i): z(26) = -0.8 and z(40) = 2.",
+        "Look up standard normal areas: Φ(2) = 0.9772, Φ(-0.8) = 0.2119.",
+        "Compute: P(26≤X≤40) = 0.9772 - 0.2119 = 0.7654.",
+        "Part (ii): z(45) = 3; P(X≥45) = 1 - Φ(3) = 1 - 0.99865 = 0.00135."
+      ],
+      "formula": "Normal standardization: Z=(x-μ)/σ; P(a≤X≤b)=Φ(z_b)-Φ(z_a)",
+      "explanation": "Standardizing converts X to the standard normal Z, so standard normal table areas give the required probabilities. The interval probability is a difference of two cumulative areas, and the right tail uses the complement 1 - Φ(z).",
       "oneShotPreview": "μ=30, σ=5: P(26≤X≤40)=0.7654; P(X≥45)=0.00135."
     },
     {
       "q": "9 In a sample of 1000 cases, the mean of certain test is 14 and standard deviation is 2.5. Assuming the distribution to be normal find (i) How many students score between 12 and 15 (ii) How many students score above 18? (iii) How many students score below 8? [L3][CO4] [10M]",
-      "a": "μ = 14, σ = 2.5, N = 1000, with Z = (X - 14)/2.5. (i) z values are (12-14)/2.5 = -0.8 and (15-14)/2.5 = 0.4, so P = Φ(0.4) - Φ(-0.8) = 0.6554 - 0.2119 = 0.4435, giving about 444 students. (ii) z = (18-14)/2.5 = 1.6, P(Z > 1.6) = 1 - 0.9452 = 0.0548, giving about 55 students. (iii) z = (8-14)/2.5 = -2.4, P(Z < -2.4) = 0.0082, giving about 8 students.",
-      "explanation": "After standardizing, each probability is an area under the standard normal curve; multiplying by the sample size converts the proportion into an expected number of students.",
-      "oneShotPreview": "≈444 students between 12-15; ≈55 above 18; ≈8 below 8."
+      "a": "We have μ = 14, σ = 2.5, and N = 1000, with Z = (X - 14)/2.5. (i) For X = 12, z = (12-14)/2.5 = -0.8; for X = 15, z = (15-14)/2.5 = 0.4. Thus P(12 < X < 15) = Φ(0.4) - Φ(-0.8) = 0.6554 - 0.2119 = 0.4435, giving 1000 × 0.4435 ≈ 444 students. (ii) For X = 18, z = (18-14)/2.5 = 1.6, so P(X > 18) = 1 - Φ(1.6) = 1 - 0.9452 = 0.0548, giving 1000 × 0.0548 ≈ 55 students. (iii) For X = 8, z = (8-14)/2.5 = -2.4, so P(X < 8) = Φ(-2.4) = 0.0082, giving 1000 × 0.0082 ≈ 8 students. Hence approximately 444, 55, and 8 students respectively.",
+      "steps": [
+        "Identify parameters: μ = 14, σ = 2.5, N = 1000; Z = (X-14)/2.5.",
+        "Part (i): z(12) = -0.8, z(15) = 0.4; P = Φ(0.4) - Φ(-0.8) = 0.6554 - 0.2119 = 0.4435 → 1000×0.4435 ≈ 444.",
+        "Part (ii): z(18) = 1.6; P = 1 - Φ(1.6) = 1 - 0.9452 = 0.0548 → 1000×0.0548 ≈ 55.",
+        "Part (iii): z(8) = -2.4; P = Φ(-2.4) = 0.0082 → 1000×0.0082 ≈ 8.",
+        "Report the expected counts: 444, 55, and 8 students."
+      ],
+      "formula": "Normal: Z=(x-μ)/σ; expected count = N·P",
+      "explanation": "After standardizing, each required probability is an area under the standard normal curve. Multiplying each proportion by the sample size N converts the area into the expected number of students.",
+      "oneShotPreview": "≈444 between 12-15; ≈55 above 18; ≈8 below 8."
     },
     {
       "q": "10 If the masses of 300 students are normally distributed with mean 68kgs and standard deviation 3kgs. How many students have masses i) Greater than 72kgs ii) Less than or equal to 64kg iii) Between 65 and 71 kgs inclusive. [L3][CO4] [10M]",
-      "a": "μ = 68, σ = 3, N = 300, with Z = (X - 68)/3. (i) z = (72-68)/3 ≈ 1.33, so P(Z > 1.33) = 1 - 0.9082 = 0.0918, giving about 28 students (27-28). (ii) z = (64-68)/3 ≈ -1.33, so P(Z ≤ -1.33) = 0.0918 by symmetry, again about 28 students. (iii) z = -1 and +1 for 65 and 71 kg, so P(-1 ≤ Z ≤ 1) = 2(0.8413) - 1 = 0.6826, giving about 205 students.",
-      "explanation": "Standardizing each mass to a z-score lets us use symmetry and standard normal areas; multiplying by 300 converts each proportion into an expected count.",
+      "a": "Here μ = 68 kg, σ = 3 kg, and N = 300, with Z = (X - 68)/3. (i) For X = 72, z = (72-68)/3 ≈ 1.33, so P(X > 72) = 1 - Φ(1.33) = 1 - 0.9082 = 0.0918, giving 300 × 0.0918 ≈ 28 students. (ii) For X = 64, z = (64-68)/3 ≈ -1.33, so by symmetry P(X ≤ 64) = Φ(-1.33) = 0.0918, again about 28 students. (iii) For X = 65 and X = 71, z = -1 and +1 respectively, so P(65 ≤ X ≤ 71) = Φ(1) - Φ(-1) = 0.8413 - 0.1587 = 0.6826 (equivalently 2(0.8413) - 1), giving 300 × 0.6826 ≈ 205 students. Hence (i) ≈ 28, (ii) ≈ 28, and (iii) ≈ 205 students.",
+      "steps": [
+        "Identify parameters: μ = 68, σ = 3, N = 300; Z = (X-68)/3.",
+        "Part (i): z(72) = 1.33; P = 1 - Φ(1.33) = 0.0918 → 300×0.0918 ≈ 28.",
+        "Part (ii): z(64) = -1.33; by symmetry P = Φ(-1.33) = 0.0918 → ≈ 28.",
+        "Part (iii): z(65) = -1, z(71) = 1; P = Φ(1)-Φ(-1) = 0.6826 → 300×0.6826 ≈ 205.",
+        "Report expected counts: 28, 28, and 205 students."
+      ],
+      "formula": "Normal: Z=(x-μ)/σ; expected count = N·P",
+      "explanation": "Standardizing each mass to a z-score lets us use symmetry and standard normal table areas. Multiplying each resulting proportion by 300 converts it into the expected number of students.",
       "oneShotPreview": ">72kg ≈ 28; ≤64kg ≈ 28; 65-71kg ≈ 205 students."
     },
     {
       "q": "11 If p is probability of getting head in tossing a coin and a coin is tossed 12 times then Find P(3≤X≤6) using i) Binomial distribution ii) Normal distribution. [L3][CO4] [10M]",
-      "a": "Assuming a fair coin, p = 1/2, q = 1/2, n = 12. (i) Binomial: P(3≤X≤6) = (12C3 + 12C4 + 12C5 + 12C6)/2^12 = (220 + 495 + 792 + 924)/4096 = 2431/4096 ≈ 0.5935. (ii) Normal approximation: μ = np = 6, σ = sqrt(npq) = sqrt(3) ≈ 1.732. With continuity correction, P(2.5 < Y < 6.5) gives z = -2.02 and 0.29, so P = Φ(0.29) - Φ(-2.02) ≈ 0.6141 - 0.0217 = 0.5924, which closely agrees with the exact binomial result.",
-      "explanation": "The exact binomial sum is compared with the normal approximation (using the continuity correction); both agree closely because np and nq exceed 5, validating the approximation.",
-      "oneShotPreview": "Fair coin: Binomial P(3≤X≤6)=0.5935; Normal approx ≈0.592."
+      "a": "For a fair coin p = q = 1/2 and n = 12, so X ~ Binomial(12, 1/2). (i) Exact binomial: P(3 ≤ X ≤ 6) = [C(12,3) + C(12,4) + C(12,5) + C(12,6)]/2^12 = (220 + 495 + 792 + 924)/4096 = 2431/4096 ≈ 0.5935. (ii) Normal approximation: μ = np = 6 and σ = √(npq) = √3 ≈ 1.732. Since np = nq = 6 > 5, the approximation is valid. Applying the continuity correction, P(3 ≤ X ≤ 6) becomes P(2.5 < Y < 6.5); the z-scores are (2.5-6)/1.732 ≈ -2.02 and (6.5-6)/1.732 ≈ 0.29. Hence P = Φ(0.29) - Φ(-2.02) = 0.6141 - 0.0217 ≈ 0.5924. The two results, 0.5935 and 0.5924, agree closely, confirming the normal approximation with continuity correction.",
+      "steps": [
+        "Identify parameters: fair coin p = q = 1/2, n = 12, X ~ Binomial(12,1/2).",
+        "Binomial (i): P(3≤X≤6) = (C(12,3)+C(12,4)+C(12,5)+C(12,6))/2^12 = (220+495+792+924)/4096 = 2431/4096 ≈ 0.5935.",
+        "Normal (ii): compute μ = np = 6 and σ = √(npq) = √3 ≈ 1.732; np = nq = 6 > 5 so approximation is valid.",
+        "Apply continuity correction: P(3≤X≤6) ≈ P(2.5<Y<6.5), giving z = -2.02 and z = 0.29.",
+        "Compute: Φ(0.29) - Φ(-2.02) = 0.6141 - 0.0217 ≈ 0.5924, agreeing with the exact value."
+      ],
+      "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); Normal approx: Z=(x-μ)/σ with continuity correction ±0.5",
+      "explanation": "The exact binomial sum is compared with the normal approximation using the continuity correction of ±0.5 at the interval boundaries. Because both np and nq exceed 5, the normal curve closely tracks the binomial probabilities, as shown by the near-identical results.",
+      "oneShotPreview": "Fair coin: Binomial P(3≤X≤6)=0.5935; Normal approx ≈0.5924."
     }
   ]
 }

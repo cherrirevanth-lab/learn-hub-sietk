@@ -13,6 +13,8 @@ import {
   Database,
   ChevronDown,
   Shapes,
+  Sigma,
+  ListOrdered,
 } from "lucide-react";
 import { getDiagramForQuestion } from "./Diagrams";
 import { useState } from "react";
@@ -114,6 +116,32 @@ export default function UnitDetail() {
                         <span className="text-xs font-bold text-emerald-700">Answer:</span>
                         <p className="text-sm text-slate-700 leading-relaxed mt-0.5">{qa.a}</p>
                       </div>
+
+                      {qa.formula && (
+                        <div className="rounded-xl border border-brand-200 bg-brand-50/60 px-3 py-2">
+                          <span className="text-xs font-bold text-brand-700 flex items-center gap-1.5 mb-0.5">
+                            <Sigma className="w-3.5 h-3.5" /> Formula
+                          </span>
+                          <p className="text-sm font-mono text-brand-900">{qa.formula}</p>
+                        </div>
+                      )}
+
+                      {qa.steps && qa.steps.length > 0 && (
+                        <div className="rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2.5">
+                          <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5 mb-2">
+                            <ListOrdered className="w-3.5 h-3.5" /> Step-by-step solution
+                          </span>
+                          <ol className="space-y-1.5">
+                            {qa.steps.map((s, si) => (
+                              <li key={si} className="flex items-start gap-2 text-xs text-slate-700">
+                                <span className="shrink-0 w-4 h-4 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-[9px] font-bold">{si + 1}</span>
+                                <span className="leading-relaxed whitespace-pre-wrap">{s}</span>
+                              </li>
+                            ))}
+                          </ol>
+                        </div>
+                      )}
+
                       {getDiagramForQuestion(qa.q) && (
                         <div>
                           <button

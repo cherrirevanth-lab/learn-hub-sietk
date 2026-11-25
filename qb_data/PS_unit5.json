@@ -6,97 +6,237 @@
   "questions": [
     {
       "q": "a) Define t-test for single mean.",
-      "a": "The t-test for a single mean tests whether the mean of one small sample, drawn from a normal population with unknown variance, differs significantly from a specified (hypothesized) population mean μ0. The test statistic is t = (x̄ − μ0)/(s/√n), where x̄ is the sample mean, s is the sample standard deviation and n is the sample size; under H0 it follows Student's t distribution with n−1 degrees of freedom. The calculated |t| is compared with the table value at the chosen significance level; if |t| exceeds the table value, H0 is rejected and the sample mean is declared significantly different from μ0.",
-      "explanation": "It is a small-sample test used when the population standard deviation is unknown, so the sample S.D. replaces it and the t-distribution, not the normal distribution, is used.",
-      "oneShotPreview": "One-sample t-test: t = (x̄−μ0)/(s/√n), df = n−1; compare |t| with table value."
+      "a": "The one-sample t-test checks whether the mean of a single small sample, drawn from a normal population whose variance is unknown, differs significantly from a specified value μ0. The hypotheses are H0: μ = μ0 against H1: μ ≠ μ0 (or a one-sided inequality). The test statistic is t = (x̄ − μ0)/(s/√n), where n is the sample size, x̄ the sample mean and s the sample standard deviation; under H0 it follows Student's t-distribution with df = n − 1. The standard error of the mean is estimated as s/√n because the population σ is not available. The computed |t| is compared with the table value t(α, n−1), and H0 is rejected when |t| exceeds it. Thus the t statistic replaces the normal deviate z by a quantity whose distribution explicitly accounts for the extra uncertainty from estimating σ from a small sample.",
+      "steps": [
+        "State the hypotheses: H0: μ = μ0 (the sample mean equals the specified value) versus H1: μ ≠ μ0, or μ < μ0 / μ > μ0 for a one-tailed claim.",
+        "Choose the significance level α and note that the population variance is unknown with a small sample (n < 30), so use the t-distribution with df = n − 1.",
+        "Compute the sample mean x̄, the sample standard deviation s = √[Σ(x−x̄)²/(n−1)], and hence the standard error s/√n.",
+        "Form the test statistic t = (x̄ − μ0)/(s/√n).",
+        "Find the table critical value t(α, n−1) and apply the rule: reject H0 if |t| > t(α, n−1), otherwise accept H0.",
+        "Conclude in context whether the sample mean differs significantly from μ0."
+      ],
+      "formula": "t = (x̄ − μ0)/(s/√n), df = n − 1",
+      "explanation": "It is a small-sample test used when the population standard deviation is unknown, so the sample S.D. replaces it and the t-distribution — which has heavier tails than the normal — is used instead of z.",
+      "oneShotPreview": "One-sample t-test: t = (x̄−μ0)/(s/√n), df = n−1; reject H0 if |t| > t(α, n−1)."
     },
     {
       "q": "b) Write the formula for F-test.",
-      "a": "The F-test compares two population variances using the ratio F = s1²/s2², where s1² = Σ(x−x̄)²/(n1−1) and s2² = Σ(y−ȳ)²/(n2−1) are the two sample variances (the larger variance is conventionally placed in the numerator so F ≥ 1). Under H0: σ1² = σ2² the statistic follows the F-distribution with (n1−1, n2−1) degrees of freedom; if the calculated F is less than the table value the variances are accepted as equal. In ANOVA the same F-ratio appears as (variance between samples)/(variance within samples).",
+      "a": "The F-test compares two population variances by forming the ratio of two independent sample variances. The statistic is F = s1²/s2², where s1² = Σ(x−x̄)²/(n1−1) and s2² = Σ(y−ȳ)²/(n2−1). By convention the larger variance is placed in the numerator so that F ≥ 1, and under H0: σ1² = σ2² the statistic follows the F-distribution with df = (n1−1, n2−1). Each sample variance is proportional to a chi-square variate, and the ratio of two independent chi-square variates divided by their degrees of freedom is F-distributed. The decision rule is to reject H0 if Fcalc > F(α, n1−1, n2−1); otherwise the variances are accepted as equal. The same F-ratio appears in ANOVA as variance between samples divided by variance within samples.",
+      "steps": [
+        "Set up H0: σ1² = σ2² against H1: σ1² ≠ σ2².",
+        "Compute each sample variance s1² = Σ(x−x̄)²/(n1−1) and s2² = Σ(y−ȳ)²/(n2−1).",
+        "Place the larger variance in the numerator: F = s1²/s2² so that F ≥ 1; the degrees of freedom are (n1−1, n2−1).",
+        "Look up the table value F(α, n1−1, n2−1) at the chosen significance level.",
+        "Apply the decision rule: reject H0 if Fcalc > Ftable; otherwise accept equal variances.",
+        "Interpret: a significant F means the two populations differ in variability."
+      ],
+      "formula": "F = s1²/s2², where s² = Σ(x−x̄)²/(n−1); df = (n1−1, n2−1)",
       "explanation": "F is a ratio of two independent variance estimates, each proportional to a chi-square variate, so it is the correct statistic for comparing two variances and for testing several means in ANOVA.",
       "oneShotPreview": "F = larger variance / smaller variance; df = (n1−1, n2−1); F < table ⇒ equal variances."
     },
     {
       "q": "c) What is the Null hypothesis and Alternative hypothesis for F-test?",
-      "a": "For the F-test the null hypothesis is H0: σ1² = σ2² — the two samples come from populations having equal variances. The alternative hypothesis is H1: σ1² ≠ σ2² (a two-tailed test of unequal variances); when the direction is known it may be written one-tailed as H1: σ1² > σ2² or σ1² < σ2². Rejection of H0 means the variability of the two populations differs significantly.",
+      "a": "The F-test is a test about population variances, so its hypotheses are statements about σ² rather than about means. The null hypothesis is H0: σ1² = σ2² — the two samples are drawn from populations having the same variance. The two-sided alternative is H1: σ1² ≠ σ2², used when we merely ask whether the variances differ. If prior theory or the direction of the larger variance is known, the one-sided alternatives H1: σ1² > σ2² or H1: σ1² < σ2² may be used instead. Rejection of H0 leads to the conclusion that the variability of the two populations is significantly different. This equality-of-variances hypothesis is also checked before pooling variances in a two-sample t-test.",
+      "steps": [
+        "Identify the parameter of interest: the two population variances σ1² and σ2².",
+        "Write the null hypothesis of no difference: H0: σ1² = σ2².",
+        "Write the two-sided alternative H1: σ1² ≠ σ2² when direction is unspecified.",
+        "If direction is specified, use the one-tailed alternative H1: σ1² > σ2² or H1: σ1² < σ2².",
+        "Use F = s1²/s2² and decide by comparing Fcalc with F(α, n1−1, n2−1)."
+      ],
+      "formula": "H0: σ1² = σ2² vs H1: σ1² ≠ σ2²",
       "explanation": "The F-test is concerned with population variances, so its hypotheses are statements about σ² rather than about means.",
       "oneShotPreview": "H0: σ1² = σ2²; H1: σ1² ≠ σ2² (or a one-sided inequality)."
     },
     {
       "q": "d) What is the difference between F-test and t-tests?",
-      "a": "A t-test compares averages — a sample mean with a hypothesized mean, the means of two independent samples, or paired before/after observations — and uses the t-distribution with one degrees-of-freedom value. An F-test compares variances (or, in ANOVA, several group means through a ratio of variances) and uses the F-distribution with two degrees-of-freedom values. In short, t asks \"are the means different?\" while F asks \"are the variances different?\" (or \"is the between-group variation larger than the within-group variation?\"). The F-test is also used before a two-sample t-test to verify the equal-variance assumption.",
+      "a": "A t-test is concerned with means: it compares one sample mean with a hypothesized value, the means of two independent samples, or paired before-and-after observations. Its statistic is a difference of means divided by a standard error, and it uses Student's t-distribution with a single degrees-of-freedom value. An F-test is concerned with variances: it compares two population variances through the ratio F = s1²/s2², or compares several group means in ANOVA through the ratio of between-group to within-group variance. It uses the F-distribution, which needs two degrees-of-freedom values, one for the numerator and one for the denominator. In short, t asks whether means differ, while F asks whether variances differ. Because the pooled two-sample t-test assumes equal population variances, an F-test is commonly run first to verify that assumption.",
+      "steps": [
+        "Note what each test compares: t compares means, F compares variances (or ANOVA means via a variance ratio).",
+        "Note the statistics: t = (difference of means)/SE; F = larger s² / smaller s².",
+        "Note the distributions: t has one df value (n−1, n1+n2−2, or n−1 for pairs); F has two df values (ν1, ν2).",
+        "Note the critical regions: t-tests may be one- or two-tailed; F uses an upper-tail region when F ≥ 1.",
+        "Note the link: run an F-test of equal variances before a pooled two-sample t-test."
+      ],
+      "formula": "t = (difference of means)/SE (one df) ; F = s1²/s2² (two df)",
       "explanation": "Both are small-sample tests, but t is built from a difference of means divided by a standard error, whereas F is built from a ratio of two variance estimates.",
       "oneShotPreview": "t compares means (t-dist, one df); F compares variances / ANOVA means (F-dist, two df)."
     },
     {
       "q": "e) Write the formula for Chi-square test for goodness of fit.",
-      "a": "The chi-square goodness-of-fit statistic is χ² = Σ (Oi − Ei)²/Ei, summed over all k classes, where Oi is the observed frequency and Ei is the frequency expected under the hypothesized distribution. The degrees of freedom are k − 1 − m, where m is the number of parameters estimated from the data. If the calculated χ² is less than the table value at the desired level, H0 is accepted and the data are said to fit the theoretical distribution; a large χ² indicates a poor fit. Expected frequencies should preferably be at least 5 in each class.",
+      "a": "The chi-square goodness-of-fit test measures how well observed counts agree with counts expected under a hypothesized distribution. Its statistic is χ² = Σ(Oi − Ei)²/Ei, summed over all k classes, where Oi is the observed frequency and Ei is the frequency expected under H0. The expected frequency for a class is Ei = n × pi, where pi is the probability predicted by the hypothesized distribution and n is the total sample size. The degrees of freedom are df = k − 1 − m, where one degree is lost because the expected total equals n and m further degrees are lost for each parameter estimated from the data. A value of χ² near zero indicates a good fit, while a large value indicates a poor fit. Accept H0 if χ²calc < χ²(α, df) and reject it otherwise; expected frequencies should preferably be at least 5 in each class.",
+      "steps": [
+        "State H0: the data follow the hypothesized distribution; H1: they do not.",
+        "Compute the expected frequency for each class: Ei = n × pi, ensuring ΣEi = n and each Ei ≳ 5.",
+        "Compute χ² = Σ(Oi − Ei)²/Ei over all k classes and sum the contributions.",
+        "Determine df = k − 1 − m, where m is the number of estimated parameters, and find χ²(α, df).",
+        "Apply the decision rule: reject H0 if χ²calc > χ²(α, df); otherwise accept the fit.",
+        "Conclude whether the observed data are consistent with the theoretical distribution."
+      ],
+      "formula": "χ² = Σ(Oi − Ei)²/Ei, df = k − 1 − m",
       "explanation": "The statistic measures the total squared discrepancy between observed and expected counts scaled by the expected counts, so a value of zero would mean a perfect fit.",
       "oneShotPreview": "χ² = Σ(O−E)²/E; df = k−1−m; χ² < table ⇒ good fit."
     },
     {
       "q": "a) A sample of 26 bulbs gives a mean life of 990 hours with a S.D of 20 hours. The manufacturer claims that the mean life of bulbs is 1000 hours. Is the sample not up to the standard.",
-      "a": "Here n = 26, x̄ = 990 hrs, s = 20 hrs and the claimed mean is μ0 = 1000 hrs. Take H0: μ = 1000 (up to standard) against H1: μ < 1000 (not up to standard). Then t = (990 − 1000)/(20/√26) = −10/3.922 ≈ −2.55 (the s/√(n−1) convention gives −2.5), with df = 25. Since |t| ≈ 2.55 exceeds t(0.05, 25) = 2.06 (and even the one-tailed 1% value ≈ 2.49), H0 is rejected: the mean life is significantly below 1000 hours, so the sample is not up to the standard.",
-      "explanation": "A single-sample t-test is appropriate because the population S.D. is unknown and the sample is small; the observed mean lies more than two standard errors below the claimed value.",
-      "oneShotPreview": "t ≈ −2.55, df 25 > 2.06 ⇒ reject H0 ⇒ sample below standard."
+      "a": "Let μ denote the true mean life of the manufacturer's bulbs. Test H0: μ = 1000 hours against the one-sided alternative H1: μ < 1000 hours (sample not up to standard). With n = 26, x̄ = 990 hours and s = 20 hours, the standard error is s/√n = 20/√26 = 20/5.099 ≈ 3.922 hours. Hence t = (990 − 1000)/3.922 = −10/3.922 ≈ −2.55, with df = n − 1 = 25. At α = 0.05 the one-tailed critical value is t(0.05, 25) = 1.708, and the two-tailed 5% value is 2.060; |t| = 2.55 exceeds both. H0 is therefore rejected (the result is significant even at the 1% level, where the one-tailed value is 2.485), and the sample mean is significantly below 1000 hours. We conclude that the bulbs are not up to the claimed standard.",
+      "steps": [
+        "H0: μ = 1000 hours (bulbs up to standard); H1: μ < 1000 hours (not up to standard), a left-tailed test.",
+        "α = 0.05, df = n − 1 = 25; one-tailed critical value t(0.05, 25) = 1.708 (two-tailed 5% value 2.060; 1% one-tailed 2.485).",
+        "Test statistic: t = (x̄ − μ0)/(s/√n) = (990 − 1000)/(20/√26) = −10/3.922 ≈ −2.55.",
+        "Decision rule: reject H0 if |t| > tcrit; here 2.55 > 1.708 (and > 2.060), so H0 is rejected.",
+        "Conclusion: the mean life is significantly below 1000 hours, so the sample is not up to the manufacturer's standard."
+      ],
+      "formula": "t = (x̄ − μ0)/(s/√n), df = n − 1",
+      "explanation": "A one-sample t-test is appropriate because the population S.D. is unknown and the sample is small; the observed mean lies about 2.55 standard errors below the claimed value, too far to be sampling fluctuation.",
+      "oneShotPreview": "t ≈ −2.55, df 25; |t| > 1.708 (5% one-tailed) ⇒ reject H0 ⇒ sample below standard."
     },
     {
       "q": "b) Find the maximum difference that we can expect with probability 0.95 between the mean of samples of sizes 10 and 12 from a normal population if their standard deviations are found to be 2 and 3 respectively.",
-      "a": "The standard error of the difference between the two sample means is SE = √(σ1²/n1 + σ2²/n2) = √(4/10 + 9/12) = √1.15 ≈ 1.072. For 95% probability the normal deviate is z = 1.96. Hence the maximum expected difference is 1.96 × 1.072 ≈ 2.10 (in the units of measurement). A difference larger than about 2.1 would be expected by chance in only 5% of such pairs of samples.",
+      "a": "Here the population standard deviations are taken as σ1 = 2 and σ2 = 3, with n1 = 10 and n2 = 12. The difference x̄1 − x̄2 is normally distributed with standard error SE = √(σ1²/n1 + σ2²/n2) = √(4/10 + 9/12) = √(0.4 + 0.75) = √1.15 ≈ 1.072. For a probability of 0.95 the two-sided normal deviate is z = 1.96, so the maximum difference that can be expected is ±1.96 × 1.072 ≈ ±2.10. Thus, in repeated sampling, the absolute difference between the two sample means will be less than about 2.1 units in 95% of cases. A difference larger than about 2.1 would occur by chance only 5% of the time and would be taken as evidence of a real difference. The result is in the same units as the given standard deviations.",
+      "steps": [
+        "Identify the parameters: σ1 = 2, n1 = 10; σ2 = 3, n2 = 12; variances known, so use the normal distribution.",
+        "Compute the standard error of the difference: SE = √(σ1²/n1 + σ2²/n2) = √(4/10 + 9/12) = √1.15 ≈ 1.072.",
+        "For 95% probability use the normal deviate z = 1.96.",
+        "Maximum expected difference = z × SE = 1.96 × 1.072 ≈ 2.10.",
+        "Conclusion: differences within ±2.10 units are expected 95% of the time; a larger difference is unlikely under chance."
+      ],
+      "formula": "Maximum difference = z × √(σ1²/n1 + σ2²/n2)",
       "explanation": "Because the population standard deviations are known, the difference of the sample means is normally distributed, so the 95% limits are ±1.96 standard errors.",
       "oneShotPreview": "SE = √(4/10+9/12) ≈ 1.072; max difference = 1.96 × 1.072 ≈ 2.10."
     },
     {
       "q": "Two independent samples of 8 and 7 items had the following values: Sample-I 11 11 13 11 15 9 12 14; Sample-II 9 11 10 13 9 8 10. Is the difference between the means of samples significant?",
-      "a": "Sample-I: n1 = 8, x̄1 = 96/8 = 12, Σ(x−x̄1)² = 26; Sample-II: n2 = 7, x̄2 = 70/7 = 10, Σ(y−ȳ)² = 16. The pooled variance is sp² = (26 + 16)/(8 + 7 − 2) = 42/13 ≈ 3.23. Then t = (12 − 10)/√[3.23(1/8 + 1/7)] = 2/0.930 ≈ 2.15 with df = 13. Since 2.15 is just below the table value t(0.05, 13) = 2.16, H0 is accepted: the difference between the means is not significant at the 5% level.",
+      "a": "For Sample-I, n1 = 8, Σx = 96 so x̄1 = 12, and Σ(x − x̄1)² = 26. For Sample-II, n2 = 7, Σy = 70 so x̄2 = 10, and Σ(y − x̄2)² = 16. Under H0: μ1 = μ2 the pooled variance is sp² = [Σ(x−x̄1)² + Σ(y−x̄2)²]/(n1+n2−2) = (26 + 16)/13 = 42/13 ≈ 3.23. The standard error of the difference is √[sp²(1/n1 + 1/n2)] = √[3.23(1/8 + 1/7)] = √0.865 ≈ 0.930. Hence t = (12 − 10)/0.930 ≈ 2.15 with df = n1 + n2 − 2 = 13. At α = 0.05 the two-tailed critical value is t(0.05, 13) = 2.160. Since 2.15 < 2.160, H0 is accepted: the difference between the sample means is not significant at the 5% level.",
+      "steps": [
+        "H0: μ1 = μ2 (no difference in population means); H1: μ1 ≠ μ2.",
+        "α = 0.05, df = n1 + n2 − 2 = 8 + 7 − 2 = 13, two-tailed critical value t(0.05, 13) = 2.160.",
+        "Compute means and sums of squares: x̄1 = 96/8 = 12 with Σ(x−x̄1)² = 26; x̄2 = 70/7 = 10 with Σ(y−x̄2)² = 16.",
+        "Pooled variance sp² = (26 + 16)/13 ≈ 3.23; t = (12−10)/√[3.23(1/8+1/7)] = 2/0.930 ≈ 2.15.",
+        "Decision: |t| = 2.15 < 2.160, so H0 is accepted.",
+        "Conclusion: the 2-point difference between the sample means is not statistically significant at 5%."
+      ],
+      "formula": "t = (x̄1 − x̄2)/√[sp²(1/n1 + 1/n2)], sp² = [Σ(x−x̄1)² + Σ(y−x̄2)²]/(n1+n2−2)",
       "explanation": "The two-sample pooled t-test is correct for independent small samples from normal populations with equal variances; the observed 2-point gap is about two standard errors and falls just short of significance.",
       "oneShotPreview": "x̄1 = 12, x̄2 = 10, t ≈ 2.15 (df 13) < 2.16 ⇒ not significant."
     },
     {
       "q": "Samples of two types of electrical light bulbs were tested for length of life and the following data were obtained: Type I — sample number 8, sample mean 1234 hrs, sample S.D 36 hrs; Type II — sample number 7, sample mean 1036 hrs, sample S.D 40 hrs. Is the difference in the means sufficient to warrant that type I is superior to type II regarding length of life?",
-      "a": "n1 = 8, x̄1 = 1234, s1 = 36; n2 = 7, x̄2 = 1036, s2 = 40. The pooled variance is sp² = [7(36²) + 6(40²)]/13 = 18672/13 ≈ 1436.3, so sp ≈ 37.9 and SE = 37.9√(1/8 + 1/7) ≈ 19.6. Hence t = (1234 − 1036)/19.6 ≈ 10.1 with df = 13, far above t(0.05, 13) = 2.16. H0 is rejected: the difference is highly significant and Type I bulbs have a significantly longer life, so Type I is superior to Type II.",
+      "a": "Test H0: μ1 = μ2 against H1: μ1 > μ2, since superiority of Type I is claimed. Given n1 = 8, x̄1 = 1234, s1 = 36 and n2 = 7, x̄2 = 1036, s2 = 40, the pooled variance is sp² = [7(36²) + 6(40²)]/(8+7−2) = (9072 + 9600)/13 = 18672/13 ≈ 1436.3, so sp ≈ 37.90. The standard error is sp√(1/n1 + 1/n2) = 37.90√(1/8 + 1/7) = 37.90 × 0.5175 ≈ 19.6. Therefore t = (1234 − 1036)/19.6 = 198/19.6 ≈ 10.1 with df = 13. The table value t(0.05, 13) = 2.160 (one-tailed 1.771) is far smaller, so H0 is rejected. The difference of 198 hours is highly significant: Type I bulbs have a significantly longer mean life and are superior to Type II.",
+      "steps": [
+        "H0: μ1 = μ2; H1: μ1 > μ2 (Type I superior), one-tailed test.",
+        "α = 0.05, df = n1 + n2 − 2 = 13; critical value t(0.05, 13) = 1.771 one-tailed (2.160 two-tailed).",
+        "sp² = [(n1−1)s1² + (n2−1)s2²]/(n1+n2−2) = [7(1296) + 6(1600)]/13 = 18672/13 ≈ 1436.3, sp ≈ 37.9.",
+        "SE = sp√(1/8 + 1/7) ≈ 19.6; t = (1234 − 1036)/19.6 ≈ 10.1.",
+        "Decision: 10.1 ≫ 1.771, so reject H0.",
+        "Conclusion: Type I bulbs have a significantly longer mean life and are superior to Type II."
+      ],
+      "formula": "t = (x̄1 − x̄2)/√[sp²(1/n1 + 1/n2)], sp² = [(n1−1)s1² + (n2−1)s2²]/(n1+n2−2)",
       "explanation": "A difference of 198 hours is roughly ten standard errors, so it cannot be explained by sampling fluctuation; the two-sample t-test confirms the real superiority of Type I.",
       "oneShotPreview": "t ≈ 10.1 (df 13) ≫ 2.16 ⇒ significant; Type I is superior."
     },
     {
       "q": "To examine the hypothesis that the husbands are more intelligent than the wives, an investigator took a sample of 10 couples and administered them a test which measures the I.Q. The results are as follows: Husbands 117 105 97 105 123 109 86 78 103 107; Wives 106 98 87 104 116 95 90 69 108 85. Test the hypothesis with a reasonable test at the level of significance of 0.05 and also calculate F-test.",
-      "a": "Use the paired differences d = Husband − Wife: 11, 7, 10, 1, 7, 14, −4, 9, −5, 22, giving d̄ = 7.2 and Σ(d−d̄)² = 603.6, so sd = √(603.6/9) ≈ 8.19. Then t = 7.2/(8.19/√10) ≈ 2.78 with df = 9; since 2.78 > t(0.05, 9) = 2.26, H0 is rejected and husbands are significantly more intelligent at the 5% level. For the F-test, sH² ≈ 178.4 and sW² ≈ 186.6, so F = 186.6/178.4 ≈ 1.05 with (9, 9) df, well below the 5% table value ≈ 3.18, showing the two variances do not differ significantly.",
+      "a": "Because husbands and wives form natural pairs, use a paired t-test on the within-couple differences d = Husband − Wife. The differences are 11, 7, 10, 1, 7, 14, −4, 9, −5, 22, giving d̄ = 72/10 = 7.2 and Σ(d − d̄)² = 603.6, so sd = √(603.6/9) ≈ 8.19. Then t = d̄/(sd/√n) = 7.2/(8.19/√10) = 7.2/2.59 ≈ 2.78 with df = n − 1 = 9. Since 2.78 exceeds the one-tailed 5% value t(0.05, 9) = 1.833 (and the two-tailed value 2.262), H0: μd = 0 is rejected and husbands score significantly higher. Separately, sH² ≈ 178.4 and sW² ≈ 186.6, so F = 186.6/178.4 ≈ 1.05 with df (9, 9). This is well below F(0.05, 9, 9) ≈ 3.18, so the two variances do not differ significantly and the equal-variance assumption is supported.",
+      "steps": [
+        "H0: μd = 0 (no mean difference within couples); H1: μd > 0 (husbands more intelligent), paired one-tailed test.",
+        "α = 0.05, df = n − 1 = 9; critical t(0.05, 9) = 1.833 one-tailed (2.262 two-tailed).",
+        "Differences d = 11, 7, 10, 1, 7, 14, −4, 9, −5, 22; d̄ = 7.2, Σ(d−d̄)² = 603.6.",
+        "sd = √(603.6/9) ≈ 8.19; t = 7.2/(8.19/√10) ≈ 2.78.",
+        "Decision: 2.78 > 1.833 ⇒ reject H0; F check: F = 186.6/178.4 ≈ 1.05 < F(0.05, 9, 9) ≈ 3.18 ⇒ variances equal.",
+        "Conclusion: husbands are significantly more intelligent at 5%, and the two sets of scores have equal variances."
+      ],
+      "formula": "Paired t = d̄/(sd/√n), sd = √[Σ(d−d̄)²/(n−1)] ; F = larger s² / smaller s²",
       "explanation": "Husbands and wives form natural pairs, so a paired t-test on within-couple differences removes couple-to-couple variation; the F-test confirms the equal-variance assumption behind the comparison.",
-      "oneShotPreview": "Paired t ≈ 2.78 > 2.26 ⇒ husbands smarter; F ≈ 1.05 ⇒ variances equal."
+      "oneShotPreview": "Paired t ≈ 2.78 > 1.833 ⇒ husbands smarter; F ≈ 1.05 ⇒ variances equal."
     },
     {
       "q": "Scores obtained in a shooting competition by 10 soldiers before and after intensive training are given below: Before 67 24 57 55 63 54 56 68 33 43; After 70 38 58 58 56 67 68 75 42 38. Test whether the intensive training is useful at 0.05 level of significance.",
-      "a": "Take d = After − Before: 3, 14, 1, 3, −7, 13, 12, 7, 9, −5, so d̄ = 5.0 and Σ(d−d̄)² = 482. The paired statistic is t = 5/√(482/9)/√10 = 5/2.31 ≈ 2.16 with df = 9. This is just below the two-tailed 5% critical value t(0.05, 9) = 2.262, so on a two-sided test the gain of 5 points is not quite significant at 5%; with a one-sided test of improvement (t(0.05, 9) = 1.833) the training would be judged useful.",
-      "explanation": "The same soldiers were measured twice, so the paired t-test on before-after differences is the correct test; the result is borderline at the 5% two-tailed level.",
+      "a": "Use the paired t-test on d = After − Before, since the same ten soldiers were measured twice. The differences are 3, 14, 1, 3, −7, 13, 12, 7, 9, −5, giving d̄ = 50/10 = 5.0 and Σ(d − d̄)² = 482, so sd = √(482/9) ≈ 7.32. The statistic is t = d̄/(sd/√n) = 5/(7.32/√10) = 5/2.31 ≈ 2.16 with df = 9. At α = 0.05 the two-tailed critical value is t(0.05, 9) = 2.262, so |t| = 2.16 just fails to reach significance on a two-sided test. For the one-sided claim that training improves scores, the critical value is t(0.05, 9) = 1.833, and 2.16 > 1.833. Hence on a one-tailed test the training is judged useful: the average gain of 5 points is significant at the 5% level, though the result is borderline on a two-tailed test.",
+      "steps": [
+        "H0: μd = 0 (no change); H1: μd > 0 (training improves scores), one-tailed test.",
+        "α = 0.05, df = n − 1 = 9; one-tailed t(0.05, 9) = 1.833, two-tailed t(0.05, 9) = 2.262.",
+        "d = 3, 14, 1, 3, −7, 13, 12, 7, 9, −5; d̄ = 5.0, Σ(d−d̄)² = 482.",
+        "sd = √(482/9) ≈ 7.32; t = 5/(7.32/√10) ≈ 2.16.",
+        "Decision: 2.16 > 1.833 (one-tailed) ⇒ reject H0; 2.16 < 2.262 (two-tailed) ⇒ borderline.",
+        "Conclusion: intensive training is useful at the 5% level on a one-sided test (mean gain 5 points)."
+      ],
+      "formula": "Paired t = d̄/(sd/√n), df = n − 1",
+      "explanation": "The same soldiers were measured twice, so the paired t-test on before-after differences is the correct test; the result is borderline at the 5% two-tailed level but significant one-tailed.",
       "oneShotPreview": "Paired t ≈ 2.16 (df 9), just below 2.26 two-tailed ⇒ borderline; gain +5 points."
     },
     {
       "q": "a) Blood pressure of 5 women before and after intake of a certain drug are given below: Before 110 120 125 132 125; After 120 118 125 136 121. Test whether there is a significant change in blood pressure at 1% level of significance.",
-      "a": "The differences d = After − Before are 10, −2, 0, 4, −4 with d̄ = 1.6 and Σ(d−d̄)² = 123.2. Hence sd = √(123.2/4) ≈ 5.55 and t = 1.6/(5.55/√5) ≈ 0.64 with df = 4. Since 0.64 is far below the 1% table value t(0.01, 4) = 4.604 (and the 5% value 2.776), H0 is accepted: the drug produces no significant change in blood pressure.",
+      "a": "Let d = After − Before for the five women; the paired design calls for a paired t-test. The differences are 10, −2, 0, 4, −4, giving d̄ = 8/5 = 1.6 and Σ(d − d̄)² = 123.2, so sd = √(123.2/4) ≈ 5.55. The statistic is t = d̄/(sd/√n) = 1.6/(5.55/√5) = 1.6/2.48 ≈ 0.64 with df = n − 1 = 4. At the 1% level the two-tailed table value is t(0.01, 4) = 4.604, and even at 5% it is 2.776. Since 0.64 is far below both critical values, H0: μd = 0 is accepted. The drug produces no significant change in blood pressure; the mean change of 1.6 units is small relative to the variability among the changes.",
+      "steps": [
+        "H0: μd = 0 (no change in blood pressure); H1: μd ≠ 0 (a change).",
+        "α = 0.01 (1% level), df = n − 1 = 4, two-tailed critical value t(0.01, 4) = 4.604 (5% value 2.776).",
+        "d = 10, −2, 0, 4, −4; d̄ = 1.6, Σ(d−d̄)² = 123.2.",
+        "sd = √(123.2/4) ≈ 5.55; t = 1.6/(5.55/√5) ≈ 0.64.",
+        "Decision: |t| = 0.64 < 4.604 ⇒ accept H0.",
+        "Conclusion: there is no significant change in blood pressure at the 1% level."
+      ],
+      "formula": "Paired t = d̄/(sd/√n), df = n − 1",
       "explanation": "Paired readings on the same women call for a paired t-test; the average change of 1.6 mm is small relative to the variability among the changes.",
       "oneShotPreview": "Paired t ≈ 0.64 (df 4) ≪ 4.604 ⇒ no significant BP change at 1%."
     },
     {
       "q": "The nicotine in milligrams of two samples of tobacco were found to be as follows. Can it be said that the two samples have come from the same normal population.",
-      "a": "This is a test of equality of two population variances, so the F-test is used: compute F = larger sample variance / smaller sample variance with degrees of freedom (n1−1, n2−1) and compare it with the tabulated F value at 5%. If Fcalc < Ftable, H0: σ1² = σ2² is accepted and the two samples may be regarded as coming from the same normal population; if Fcalc > Ftable, their variances differ significantly. The numerical data table for the two tobacco samples is not legible in the source PDF, so only the correct method and decision rule can be stated.",
-      "explanation": "\"Same normal population\" here means equal variances, and the ratio of two sample variances follows the F-distribution; the source table of nicotine values could not be extracted.",
+      "a": "Whether two samples come from the same normal population is answered here by testing equality of their variances with the F-test. Compute the two sample variances s1² = Σ(x−x̄1)²/(n1−1) and s2² = Σ(y−x̄2)²/(n2−1), then form F = larger s² / smaller s², which under H0: σ1² = σ2² follows the F-distribution with df (n1−1, n2−1). The decision rule is to accept H0 if Fcalc < F(α, n1−1, n2−1) and reject otherwise; rejection would indicate different variances and hence evidence that the samples are not from the same normal population. The numerical nicotine readings are not legible in the supplied source, so the actual values of x̄, s² and F cannot be computed here. The correct procedure and decision rule are therefore stated in place of a numerical verdict. If the data are supplied, substitute them into s1² and s2², take the ratio, and compare with the 5% F table value.",
+      "steps": [
+        "H0: σ1² = σ2² (same normal population, equal variances); H1: σ1² ≠ σ2².",
+        "α = 0.05; degrees of freedom are (n1−1, n2−1) once the sample sizes are read from the table.",
+        "Compute s1² = Σ(x−x̄1)²/(n1−1) and s2² = Σ(y−x̄2)²/(n2−1) from the nicotine readings.",
+        "F = larger s² / smaller s², so that F ≥ 1.",
+        "Decision: accept H0 if Fcalc < F(α, n1−1, n2−1); reject if Fcalc exceeds it.",
+        "Conclusion: the source table of values is illegible, so only the method is given; with data, a non-significant F supports the view that the samples come from the same normal population."
+      ],
+      "formula": "F = larger s² / smaller s², df = (n1−1, n2−1)",
+      "explanation": "The phrase same normal population is tested through equal variances, so the ratio of two sample variances is referred to the F-distribution; the source table of nicotine values could not be extracted.",
       "oneShotPreview": "F-test of variances: F = larger s² / smaller s²; F < table ⇒ same population."
     },
     {
       "q": "A pair of dice are thrown 360 times and the frequency of each sum is indicated below: Sum 2 3 4 5 6 7 8 9 10 11 12; Frequency 8 24 35 37 44 65 51 42 26 14 14. Would you say that the dice are fair on the basis of the chi-square test at 0.05 level of significance?",
-      "a": "For two fair dice the probabilities of sums 2…12 are proportional to 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1 out of 36, so in 360 throws the expected frequencies are 10, 20, 30, 40, 50, 60, 50, 40, 30, 20, 10. Then χ² = Σ(O−E)²/E = 0.4 + 0.8 + 0.833 + 0.225 + 0.72 + 0.417 + 0.02 + 0.1 + 0.533 + 1.8 + 1.6 ≈ 7.45 with df = 11 − 1 = 10. Since 7.45 < χ²(0.05, 10) = 18.31, H0 is accepted: the observed frequencies agree with the theoretical distribution and the dice may be considered fair.",
+      "a": "For two fair dice the eleven possible sums 2 to 12 have probabilities proportional to 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1 out of 36. In 360 throws the expected frequencies are therefore 10, 20, 30, 40, 50, 60, 50, 40, 30, 20, 10. The chi-square statistic is χ² = Σ(O−E)²/E = 0.40 + 0.80 + 0.83 + 0.23 + 0.72 + 0.42 + 0.02 + 0.10 + 0.53 + 1.80 + 1.60 ≈ 7.45. The degrees of freedom are df = k − 1 = 11 − 1 = 10, since no parameters are estimated. At α = 0.05 the table value is χ²(0.05, 10) = 18.31. Because 7.45 < 18.31, H0 of a fair pair of dice is accepted. The observed frequencies agree with the theoretical distribution, so the dice may be considered fair.",
+      "steps": [
+        "H0: the dice are fair (sums follow the 1:2:3:4:5:6:5:4:3:2:1 distribution); H1: they are not.",
+        "α = 0.05, df = k − 1 = 11 − 1 = 10, table value χ²(0.05, 10) = 18.31.",
+        "Observed vs expected by sum: 2 (8,10), 3 (24,20), 4 (35,30), 5 (37,40), 6 (44,50), 7 (65,60), 8 (51,50), 9 (42,40), 10 (26,30), 11 (14,20), 12 (14,10).",
+        "χ² = Σ(O−E)²/E = 0.40+0.80+0.83+0.23+0.72+0.42+0.02+0.10+0.53+1.80+1.60 ≈ 7.45.",
+        "Decision: 7.45 < 18.31 ⇒ accept H0.",
+        "Conclusion: the dice are fair; the deviations are within sampling error."
+      ],
+      "formula": "χ² = Σ(O−E)²/E, df = k − 1",
       "explanation": "The chi-square goodness-of-fit test compares observed counts with the known distribution of the sum of two dice; the total discrepancy is well within sampling error.",
       "oneShotPreview": "χ² ≈ 7.45 (df 10) < 18.31 ⇒ dice are fair."
     },
     {
       "q": "a) A die is thrown 264 times with the following results. Show that the die is biased. (χ² = 11.07 at 5 d.f. & 5% L.S). Number on the die 1 2 3 4 5 6; Frequency 40 32 28 58 54 52.",
-      "a": "For a fair die the expected frequency of each face in 264 throws is 264/6 = 44. Then χ² = Σ(O−E)²/E = (16 + 144 + 256 + 196 + 100 + 64)/44 = 776/44 ≈ 17.64 with df = 6 − 1 = 5. Since 17.64 exceeds the given table value χ²(0.05, 5) = 11.07, H0 of a fair die is rejected: the die is biased.",
+      "a": "Under H0 the die is fair, so each of the six faces has probability 1/6 and the expected frequency in 264 throws is E = 264/6 = 44 for every face. Compute χ² = Σ(O−E)²/E: the squared deviations for faces 1 to 6 are (40−44)² = 16, (32−44)² = 144, (28−44)² = 256, (58−44)² = 196, (54−44)² = 100 and (52−44)² = 64, which sum to 776. Hence χ² = 776/44 ≈ 17.64. The degrees of freedom are df = k − 1 = 6 − 1 = 5. The given table value is χ²(0.05, 5) = 11.07. Since 17.64 > 11.07, H0 is rejected and the die is declared biased. The large discrepancy is driven mainly by faces 3 and 6, which deviate most from the expected count of 44.",
+      "steps": [
+        "H0: the die is fair (uniform probabilities 1/6); H1: it is biased.",
+        "α = 0.05, df = k − 1 = 6 − 1 = 5, given table value χ²(0.05, 5) = 11.07.",
+        "Expected frequency for each face: E = 264/6 = 44.",
+        "Observed vs expected: 40/44, 32/44, 28/44, 58/44, 54/44, 52/44; Σ(O−E)² = 16+144+256+196+100+64 = 776.",
+        "χ² = 776/44 ≈ 17.64; decision: 17.64 > 11.07 ⇒ reject H0.",
+        "Conclusion: the die is biased."
+      ],
+      "formula": "χ² = Σ(O−E)²/E, df = k − 1",
       "explanation": "A chi-square this large means the observed face counts deviate from the uniform expectation of 44 each by more than chance can explain.",
       "oneShotPreview": "E = 44 each; χ² ≈ 17.64 (df 5) > 11.07 ⇒ die is biased."
     },
     {
       "q": "The following table gives the classification of 100 workers according to gender and nature of work. Test whether the nature of work is independent of the gender of the worker (χ² = 3.84 at 1 d.f): Stable — Males 40, Females 10, Total 50; Unstable — Males 20, Females 30, Total 50; Grand total 100.",
-      "a": "Under the hypothesis of independence the expected counts are Males-Stable = 60×50/100 = 30, Males-Unstable = 30, Females-Stable = 40×50/100 = 20 and Females-Unstable = 20. Then χ² = (40−30)²/30 + (20−30)²/30 + (10−20)²/20 + (30−20)²/20 = 3.33 + 3.33 + 5 + 5 = 16.67 with df = (2−1)(2−1) = 1. Since 16.67 exceeds the given χ²(0.05, 1) = 3.84, H0 is rejected: nature of work is not independent of gender (males are more often in stable work and females more often in unstable work).",
+      "a": "Test H0: nature of work is independent of gender against H1: the two attributes are associated. Under independence the expected count in a cell is E = (row total × column total)/grand total. The column totals are Males 60 and Females 40 and each row totals 50, so the expected counts are Males-Stable = 60×50/100 = 30, Males-Unstable = 30, Females-Stable = 40×50/100 = 20 and Females-Unstable = 20. Then χ² = Σ(O−E)²/E = 100/30 + 100/30 + 100/20 + 100/20 = 3.33 + 3.33 + 5 + 5 = 16.67. The degrees of freedom are df = (r−1)(c−1) = (2−1)(2−1) = 1. The given table value is χ²(0.05, 1) = 3.84. Since 16.67 > 3.84, H0 is rejected: nature of work is not independent of gender, males being more often in stable work and females more often in unstable work.",
+      "steps": [
+        "H0: nature of work is independent of gender; H1: the two attributes are associated.",
+        "α = 0.05, df = (r−1)(c−1) = (2−1)(2−1) = 1, given χ²(0.05, 1) = 3.84.",
+        "Column totals: Males 60, Females 40; row totals 50 each; E = (row total × column total)/100.",
+        "Observed vs expected: (40,30) Male-Stable, (20,30) Male-Unstable, (10,20) Female-Stable, (30,20) Female-Unstable.",
+        "χ² = 100/30 + 100/30 + 100/20 + 100/20 = 16.67; 16.67 > 3.84 ⇒ reject H0.",
+        "Conclusion: gender and nature of work are related, males being more often in stable work."
+      ],
+      "formula": "χ² = Σ(O−E)²/E, E = (row total × column total)/grand total, df = (r−1)(c−1)",
       "explanation": "The chi-square test of independence compares observed cell counts with the counts expected under independence; here the discrepancy is far beyond the 5% threshold.",
       "oneShotPreview": "Expected 30/30/20/20; χ² = 16.67 (df 1) > 3.84 ⇒ gender and work are related."
     }

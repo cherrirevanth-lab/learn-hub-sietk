@@ -6,105 +6,243 @@
   "questions": [
     {
       "q": "a) Define Population and Sample.",
-      "a": "A population is the entire set of items, individuals or observations about which information is desired, for example all students of a college or all bulbs produced in a factory. A sample is a finite subset of the population selected for study, such as 50 students chosen from that college. We compute statistics (such as the sample mean) from the sample and use them to estimate population parameters (such as the population mean). Sampling is preferred when studying the whole population is too costly, time-consuming or impossible.",
-      "explanation": "Population is the complete group under study while a sample is a representative part of it; statistical inference moves from sample statistics to population parameters.",
+      "a": "A population is the complete set of individuals, items or measurements about which a conclusion is required, for example all 900 students enrolled in a college. A sample is a finite subset drawn from that population, such as 50 students selected for a survey, so the sample size is n = 50. A quantity computed from the sample (a statistic, e.g. the sample mean x-bar) is used to estimate the corresponding population quantity (a parameter, e.g. the population mean mu). Because a census of the whole population is usually too costly, slow or impossible, we sample and attach a sampling error to the estimate. Example: to estimate the mean weight mu of all students we weigh n = 50 of them and use x-bar = SUM(x)/n as the estimate.",
+      "steps": [
+        "Define population: the entire group under study (all students of the college)",
+        "Define sample: a representative subset selected for study (50 students, n = 50)",
+        "Distinguish parameter (mu, population) from statistic (x-bar, sample)",
+        "State the inference link: x-bar = SUM(x)/n estimates mu",
+        "Example: weigh 50 students, compute x-bar, infer mu with a sampling error"
+      ],
+      "formula": "Sample mean x-bar = SUM(x)/n estimates population mean mu",
+      "explanation": "Population is the complete group under study while a sample is a representative part of it; statistical inference moves from sample statistics to population parameters. Working with a subset is cheaper and faster, but the estimate carries sampling error, which is why the sample must be representative.",
       "oneShotPreview": "Population = whole group under study; sample = representative subset used to estimate population parameters."
     },
     {
       "q": "b) What is Primary and Secondary data in statistics?",
-      "a": "Primary data are data collected directly by the investigator for the specific purpose of the study, using methods such as surveys, interviews, experiments or questionnaires. Secondary data are data already collected by someone else for another purpose and then reused, for example census reports, government publications, research journals or company records. Primary data are original, current and tailored to the problem but costly and time-consuming to gather; secondary data are inexpensive and quickly available but may be outdated or not exactly suited to the problem at hand.",
-      "explanation": "The distinction rests on who collected the data and why: first-hand for the current study versus previously collected and reused for a new purpose.",
+      "a": "Primary data are collected first-hand by the investigator specifically for the problem in hand, using questionnaires, interviews, experiments or direct observation, for example weighing the competitors yourself. Secondary data have already been collected by someone else for a different purpose and are then reused, for example census reports, government publications, research journals or company records. The distinction depends on who collected the data and why, not on the physical form in which the data appear. Primary data are original, current and tailored to the problem but costly and time-consuming to gather; secondary data are inexpensive and quickly available but may be outdated or not exactly suited to the problem. Example: a researcher who mails a questionnaire gathers primary data, while one who analyses last year's sales report uses secondary data.",
+      "steps": [
+        "Define primary data: first-hand collection for the current study",
+        "List primary methods: survey, interview, experiment, observation",
+        "Define secondary data: already collected by another party for another purpose",
+        "Compare properties: primary = original/current/costly; secondary = cheap/quick/may be outdated",
+        "Example: own questionnaire = primary; census report = secondary"
+      ],
+      "formula": "Classification by source: primary = first-hand; secondary = reused (no numeric formula)",
+      "explanation": "The distinction rests on who collected the data and why: first-hand for the current study versus previously collected and reused for a new purpose. This matters because it determines data reliability, cost, timeliness and fitness for the analysis.",
       "oneShotPreview": "Primary = first-hand data collected for your study; secondary = already-collected data reused from other sources."
     },
     {
       "q": "c) The weights of 6 competitors in a game are given below 58,62,56,63,55,61 kgs. Find arithmetic mean of weight of competitors.",
-      "a": "The arithmetic mean of ungrouped data is the sum of all observations divided by their number. Sum of weights = 58 + 62 + 56 + 63 + 55 + 61 = 355 kg, and the number of competitors is 6. Hence mean = 355/6 = 59.1667 kg, or approximately 59.17 kg. The average weight of the competitors is therefore about 59.17 kg.",
-      "explanation": "Applying the direct mean formula Σx/n to the six raw weights gives 355/6 = 59.1667 kg.",
-      "oneShotPreview": "Mean weight = 355/6 ≈ 59.17 kg."
+      "a": "For ungrouped data the arithmetic mean is x-bar = SUM(x)/n, the sum of all observations divided by the number of observations. Listing the weights gives 58, 62, 56, 63, 55, 61 kg, so SUM(x) = 58 + 62 + 56 + 63 + 55 + 61 = 355 kg and n = 6. Substituting into the formula: x-bar = 355/6 = 59.1667 kg. Rounded to two decimal places the average weight is 59.17 kg. As a check, the answer lies inside the range 55-63 kg, as every arithmetic mean must.",
+      "steps": [
+        "List values: 58, 62, 56, 63, 55, 61 kg",
+        "Compute SUM(x) = 355 kg",
+        "Count observations: n = 6",
+        "Apply x-bar = SUM(x)/n = 355/6 = 59.1667 kg",
+        "Round: mean weight = 59.17 kg (within the data range 55-63 kg)"
+      ],
+      "formula": "Mean (ungrouped) = SUM(x) / n",
+      "explanation": "Applying the direct mean formula SUM(x)/n to the six raw weights gives 355/6 = 59.1667 kg. The mean is the balancing point of the data, so it must lie between the smallest and largest observations, which confirms the result.",
+      "oneShotPreview": "Mean weight = 355/6 is approximately 59.17 kg."
     },
     {
       "q": "d) What is skewness in statistics with example?",
-      "a": "Skewness measures the lack of symmetry in a frequency distribution, that is, the extent to which observations are drawn out more on one side of the mode than the other. If the tail is longer on the right (towards higher values), the distribution is positively skewed, with mean > median > mode; income distribution is an example, since a few very rich people pull the mean upward. If the tail is longer on the left, the distribution is negatively skewed, with mean < median < mode; marks on a very easy test, where most students score high and a few score very low, are an example. A perfectly symmetric distribution has zero skewness.",
-      "explanation": "Skewness describes the direction and degree of asymmetry, and the ordering of mean, median and mode reveals its sign.",
+      "a": "Skewness measures the lack of symmetry of a frequency distribution about its mode, that is, the extent to which observations are drawn out more on one side than the other. A common measure is gamma1 = mu3/mu2^(3/2) (equivalently Pearson's coefficient (mean - mode)/sigma). If the tail is longer on the right, towards higher values, the distribution is positively skewed and mean > median > mode; income distribution is an example because a few very rich people pull the mean upward. If the tail is longer on the left, the distribution is negatively skewed and mean < median < mode; marks on a very easy test, where most score high and a few score very low, are an example. A perfectly symmetric distribution has mu3 = 0 and therefore zero skewness.",
+      "steps": [
+        "Definition: skewness = degree of asymmetry about the mode",
+        "Measure: gamma1 = mu3 / mu2^(3/2) (or (mean - mode)/sigma)",
+        "Positive skew: right tail, mean > median > mode; example = income",
+        "Negative skew: left tail, mean < median < mode; example = easy test marks",
+        "Symmetric case: mu3 = 0, so skewness = 0"
+      ],
+      "formula": "gamma1 = mu3 / mu2^(3/2) (Pearson: (mean - mode)/sigma)",
+      "explanation": "Skewness describes the direction and degree of asymmetry, and the ordering of mean, median and mode reveals its sign. The sign of the third central moment mu3 determines the direction because cubing preserves the sign of each deviation.",
       "oneShotPreview": "Skewness = asymmetry; right tail gives positive skew (mean>median>mode), left tail gives negative skew."
     },
     {
       "q": "e) Define Kurtosis in statistics.",
-      "a": "Kurtosis measures the degree of peakedness or flatness of a frequency distribution relative to a normal distribution. It is measured by the coefficient β2 = μ4/μ2² (fourth central moment divided by the square of the variance), or by excess kurtosis γ2 = β2 − 3. For a normal distribution β2 = 3 (γ2 = 0), which is called mesokurtic. If β2 > 3 the distribution is leptokurtic, having a narrow high peak and heavy tails; if β2 < 3 it is platykurtic, having a flatter peak and light tails.",
-      "explanation": "Kurtosis is based on the fourth standardized moment, and 3 is the benchmark value for a normal (mesokurtic) distribution.",
-      "oneShotPreview": "Kurtosis = peakedness/tail heaviness; β2=μ4/μ2²; >3 leptokurtic, =3 mesokurtic, <3 platykurtic."
+      "a": "Kurtosis measures the degree of peakedness or flatness of a frequency distribution relative to the normal distribution. It is measured by the coefficient beta2 = mu4/mu2^2, the fourth central moment divided by the square of the variance, or by the excess kurtosis gamma2 = beta2 - 3. For a normal distribution mu4 = 3*mu2^2, so beta2 = 3 and gamma2 = 0, which is called mesokurtic. If beta2 > 3 the distribution is leptokurtic, with a narrow high peak and heavy tails; if beta2 < 3 it is platykurtic, with a flatter peak and light tails. For example, a t-distribution with small degrees of freedom is leptokurtic, while a uniform distribution is platykurtic.",
+      "steps": [
+        "Definition: kurtosis = peakedness and tail weight relative to the normal curve",
+        "Measure: beta2 = mu4 / mu2^2; excess gamma2 = beta2 - 3",
+        "Benchmark: normal distribution has beta2 = 3 (mesokurtic)",
+        "beta2 > 3: leptokurtic (high peak, heavy tails), e.g. t with small df",
+        "beta2 < 3: platykurtic (flat peak, light tails), e.g. uniform distribution"
+      ],
+      "formula": "beta2 = mu4 / mu2^2 ; gamma2 = beta2 - 3",
+      "explanation": "Kurtosis is based on the fourth standardized moment, and 3 is the benchmark value for a normal (mesokurtic) distribution. The fourth power makes kurtosis sensitive mainly to extreme deviations, which is why it describes tail heaviness.",
+      "oneShotPreview": "Kurtosis = peakedness/tail heaviness; beta2=mu4/mu2^2; >3 leptokurtic, =3 mesokurtic, <3 platykurtic."
     },
     {
       "q": "a) Find arithmetic mean to the following data using step deviation method Marks 10-20 20-30 30-40 40-50 50-60 frequency 5 8 25 22 10",
-      "a": "Take the assumed mean A = 35 and class width h = 10. The class mid-values are 15, 25, 35, 45 and 55, so the step deviations u = (x − A)/h are −2, −1, 0, 1 and 2. Multiplying by frequencies gives fu = −10, −8, 0, 22 and 20, hence Σfu = 24 with N = 5 + 8 + 25 + 22 + 10 = 70. Therefore mean = A + h(Σfu/N) = 35 + 10(24/70) = 35 + 3.43 = 38.43 marks (approximately).",
-      "explanation": "The step-deviation formula A + h(Σfu/N) is algebraically identical to the direct mean but simplifies calculation by scaling deviations by the class width.",
-      "oneShotPreview": "A=35, h=10, Σfu=24, N=70 → mean = 35 + 10(24/70) ≈ 38.43."
+      "a": "For grouped data the step-deviation method uses x-bar = A + h(SUM(fu)/N), where u = (x - A)/h, A is an assumed mean and h is the class width. Take A = 35 and h = 10; the class mid-values x are 15, 25, 35, 45, 55, so u = -2, -1, 0, 1, 2. Multiplying by the frequencies f = 5, 8, 25, 22, 10 gives fu = -10, -8, 0, 22, 20, hence SUM(fu) = 24 while N = 5 + 8 + 25 + 22 + 10 = 70. Therefore x-bar = 35 + 10(24/70) = 35 + 3.4286 = 38.43 marks. The result lies close to the 30-40 class, as expected since that class carries the largest frequency.",
+      "steps": [
+        "Table: class | f | mid-value x | u=(x-35)/10 | fu -> 10-20 | 5 | 15 | -2 | -10; 20-30 | 8 | 25 | -1 | -8; 30-40 | 25 | 35 | 0 | 0; 40-50 | 22 | 45 | 1 | 22; 50-60 | 10 | 55 | 2 | 20",
+        "Sum the product column: SUM(fu) = -10 - 8 + 0 + 22 + 20 = 24",
+        "Total frequency: N = 5 + 8 + 25 + 22 + 10 = 70",
+        "Choose A = 35, h = 10 and apply x-bar = A + h(SUM(fu)/N)",
+        "x-bar = 35 + 10(24/70) = 35 + 3.4286 = 38.43 marks"
+      ],
+      "formula": "Step deviation: x-bar = A + h(SUM(fu)/N), u = (x - A)/h",
+      "explanation": "The step-deviation formula A + h(SUM(fu)/N) is algebraically identical to the direct mean SUM(fx)/N, but scaling deviations by the class width h reduces the arithmetic to small integers. It is especially convenient when classes are equally spaced and the mid-values are large.",
+      "oneShotPreview": "A=35, h=10, SUM(fu)=24, N=70 -> mean = 35 + 10(24/70) is approximately 38.43."
     },
     {
       "q": "b) Find the median to the following data; x 5 8 11 14 17 20 23 f 2 8 12 20 10 6 3",
-      "a": "The cumulative frequencies are 2, 10, 22, 42, 52, 58 and 61, so N = 61 and N/2 = 30.5. The cumulative frequency just greater than 30.5 is 42, which corresponds to the value x = 14. Hence the median of the distribution is 14. Equivalently, since N is odd, the median is the (N+1)/2 = 31st observation, which also falls at x = 14.",
-      "explanation": "For a discrete frequency distribution the median is the smallest value whose cumulative frequency is at least N/2, which here is 14.",
-      "oneShotPreview": "N=61, cf ≥ 30.5 is 42 at x=14 → median = 14."
+      "a": "For a discrete frequency distribution the median is the smallest value x whose cumulative frequency is at least N/2. Building the cumulative frequencies from the frequencies 2, 8, 12, 20, 10, 6, 3 gives 2, 10, 22, 42, 52, 58, 61, so N = 61 and N/2 = 30.5. The cumulative frequency just greater than 30.5 is 42, which is attached to x = 14. Hence the median of the distribution is 14. Since N is odd, the same result follows from the (N+1)/2 = 31st observation, which also falls at x = 14.",
+      "steps": [
+        "Table: x | f | cumulative f -> 5|2|2; 8|8|10; 11|12|22; 14|20|42; 17|10|52; 20|6|58; 23|3|61",
+        "Total frequency N = 61, so N/2 = 30.5",
+        "Find the first cumulative frequency >= 30.5: it is 42, at x = 14",
+        "Cross-check: N odd, median is the (N+1)/2 = 31st observation, also x = 14",
+        "Median = 14"
+      ],
+      "formula": "Discrete median = smallest x with cumulative frequency >= N/2",
+      "explanation": "The median is the value that splits the ordered observations into two halves, so locating the first cumulative frequency reaching N/2 identifies it directly. Here 21 observations lie below 14 and 21 above it, confirming that 14 is the middle value.",
+      "oneShotPreview": "N=61, cf >= 30.5 is 42 at x=14 -> median = 14."
     },
     {
       "q": "a) Find arithmetic mean to the following data; X 1 2 3 4 5 F 5 8 10 12 6",
-      "a": "Using the direct method for a discrete frequency distribution, compute ΣfX = 1×5 + 2×8 + 3×10 + 4×12 + 5×6 = 5 + 16 + 30 + 48 + 30 = 129. Total frequency N = 5 + 8 + 10 + 12 + 6 = 41. Therefore the arithmetic mean = ΣfX/N = 129/41 = 3.146, or about 3.15.",
-      "explanation": "Frequencies act as weights, so the correct mean is the weighted average ΣfX/Σf rather than the simple average of the X values.",
-      "oneShotPreview": "Mean = ΣfX/N = 129/41 ≈ 3.146."
+      "a": "For a discrete frequency distribution the mean is the weighted average x-bar = SUM(fX)/N, where N = SUM(f). Compute the products: 1*5 + 2*8 + 3*10 + 4*12 + 5*6 = 5 + 16 + 30 + 48 + 30 = 129. The total frequency is N = 5 + 8 + 10 + 12 + 6 = 41. Substituting gives x-bar = 129/41 = 3.1463, or about 3.15. The answer lies between the smallest and largest X values, 1 and 5, as a weighted mean must.",
+      "steps": [
+        "Table: X | f | fX -> 1|5|5; 2|8|16; 3|10|30; 4|12|48; 5|6|30",
+        "Sum the products: SUM(fX) = 5 + 16 + 30 + 48 + 30 = 129",
+        "Total frequency: N = 5 + 8 + 10 + 12 + 6 = 41",
+        "Apply x-bar = SUM(fX)/N = 129/41",
+        "Mean = 3.1463, approximately 3.15"
+      ],
+      "formula": "Discrete mean = SUM(fX) / SUM(f)",
+      "explanation": "Frequencies act as weights, so the correct mean is the weighted average SUM(fX)/SUM(f) rather than the simple average of the X values. Using the unweighted average (3) would ignore that the value 4 occurs 12 times while 1 occurs only 5 times.",
+      "oneShotPreview": "Mean = SUM(fX)/N = 129/41 is approximately 3.146."
     },
     {
       "q": "b) Find mode to the following data; X 0-5 5-10 10-15 15-20 20-25 25-30 30-35 35-40 F 5 7 10 18 20 12 8 2",
-      "a": "The largest frequency is 20, so the modal class is 20–25. Here L = 20, f = 20, the preceding class frequency f1 = 18, the following class frequency f2 = 12 and class width h = 5. Applying the grouped-data mode formula: Mode = L + h(f − f1)/(2f − f1 − f2) = 20 + 5(20 − 18)/(40 − 18 − 12) = 20 + 5×2/10 = 21. Hence the mode is 21.",
-      "explanation": "The interpolation formula estimates the mode inside the modal class using the neighbouring class frequencies, and the arithmetic gives exactly 21.",
-      "oneShotPreview": "Modal class 20–25 → mode = 20 + 5(2/10) = 21."
+      "a": "The mode for grouped data is found by locating the modal class and then interpolating within it: Mode = L + h(f - f1)/(2f - f1 - f2). The largest frequency is 20, so the modal class is 20-25, giving L = 20, f = 20, preceding frequency f1 = 18, following frequency f2 = 12 and class width h = 5. Substituting: Mode = 20 + 5(20 - 18)/(2*20 - 18 - 12) = 20 + 5*2/10 = 20 + 1 = 21. Hence the mode of the distribution is 21. It lies inside the modal class 20-25 and is pulled towards the neighbouring class with the larger frequency (18 on the left).",
+      "steps": [
+        "Identify the largest frequency: 20, so the modal class is 20-25",
+        "Set L = 20, f = 20, f1 = 18, f2 = 12, h = 5",
+        "Apply Mode = L + h(f - f1)/(2f - f1 - f2)",
+        "Compute denominator: 2f - f1 - f2 = 40 - 18 - 12 = 10",
+        "Mode = 20 + 5(2)/10 = 20 + 1 = 21"
+      ],
+      "formula": "Mode = L + h(f - f1)/(2f - f1 - f2)",
+      "explanation": "The interpolation formula estimates the mode inside the modal class using the neighbouring class frequencies; it shifts the mode towards the side with the taller neighbouring frequency. The arithmetic here gives exactly 21, which is consistent with the modal class being 20-25.",
+      "oneShotPreview": "Modal class 20-25 -> mode = 20 + 5(2/10) = 21."
     },
     {
       "q": "4 The first four moments of a distribution about the value 5 of the variables are 2, 20, 40 and 50. Calculate mean, Variance, and of the distribution. [L5][CO1] [10M]",
-      "a": "Given moments about A = 5: μ'1 = 2, μ'2 = 20, μ'3 = 40, μ'4 = 50. Mean = A + μ'1 = 5 + 2 = 7. Variance μ2 = μ'2 − μ'1² = 20 − 4 = 16, so S.D. = 4. Central moments: μ3 = μ'3 − 3μ'1μ'2 + 2μ'1³ = 40 − 120 + 16 = −64; μ4 = μ'4 − 4μ'1μ'3 + 6μ'1²μ'2 − 3μ'1⁴ = 50 − 320 + 480 − 48 = 162. Hence β1 = μ3²/μ2³ = 4096/4096 = 1 (γ1 = −1, negatively skewed) and β2 = μ4/μ2² = 162/256 = 0.633 (γ2 = −2.367, platykurtic). The PDF text is truncated after 'and'; the intended missing quantities are the skewness and kurtosis coefficients β1 and β2.",
-      "explanation": "Moments about an arbitrary origin are converted to central moments with the standard transformation formulas, from which mean, variance, β1 and β2 follow directly.",
-      "oneShotPreview": "Mean = 7, variance = 16 (SD = 4), β1 = 1 (γ1 = −1), β2 = 0.633 (γ2 = −2.37)."
+      "a": "Moments about the arbitrary origin A = 5 are given as mu'1 = 2, mu'2 = 20, mu'3 = 40 and mu'4 = 50. The mean is A + mu'1 = 5 + 2 = 7. The variance is the second central moment mu2 = mu'2 - (mu'1)^2 = 20 - 4 = 16, so the standard deviation is sigma = 4. Converting the remaining moments: mu3 = mu'3 - 3*mu'1*mu'2 + 2*(mu'1)^3 = 40 - 120 + 16 = -64, and mu4 = mu'4 - 4*mu'1*mu'3 + 6*(mu'1)^2*mu'2 - 3*(mu'1)^4 = 50 - 320 + 480 - 48 = 162. Hence beta1 = mu3^2/mu2^3 = 4096/4096 = 1 (gamma1 = -sqrt(beta1) = -1, negatively skewed) and beta2 = mu4/mu2^2 = 162/256 = 0.633 (gamma2 = -2.367, platykurtic). The printed question is truncated after 'and', so the intended missing quantities are the skewness and kurtosis coefficients beta1 and beta2.",
+      "steps": [
+        "List moments about A = 5: mu'1 = 2, mu'2 = 20, mu'3 = 40, mu'4 = 50",
+        "Mean = A + mu'1 = 5 + 2 = 7",
+        "Variance mu2 = mu'2 - (mu'1)^2 = 20 - 4 = 16, so sigma = 4",
+        "mu3 = mu'3 - 3*mu'1*mu'2 + 2*(mu'1)^3 = 40 - 120 + 16 = -64",
+        "mu4 = mu'4 - 4*mu'1*mu'3 + 6*(mu'1)^2*mu'2 - 3*(mu'1)^4 = 50 - 320 + 480 - 48 = 162",
+        "beta1 = mu3^2/mu2^3 = 4096/4096 = 1 (gamma1 = -1); beta2 = mu4/mu2^2 = 162/256 = 0.633 (gamma2 = -2.367)"
+      ],
+      "formula": "Mean = A + mu'1 ; mu2 = mu'2 - mu'1^2 ; beta1 = mu3^2/mu2^3 ; beta2 = mu4/mu2^2",
+      "explanation": "Moments about an arbitrary origin are converted to central moments with the standard transformation formulas, from which the mean, variance, beta1 and beta2 follow directly. Since mu3 is negative, the distribution has a long left tail even though beta1 = 1.",
+      "oneShotPreview": "Mean = 7, variance = 16 (SD = 4), beta1 = 1 (gamma1 = -1), beta2 = 0.633 (gamma2 = -2.37)."
     },
     {
       "q": "5 Calculate correlation coefficient to the following data; X 10 15 12 17 13 16 24 14 22 20 Y 30 42 45 46 33 34 40 35 39 38 [L5][CO1] [10M]",
-      "a": "Using Pearson's product-moment formula with deviations from X̄ = 16.3 and Ȳ = 38.2: Σxy = 66.4, Σx² = 182.1 and Σy² = 247.6. Therefore r = Σxy/√(Σx²·Σy²) = 66.4/√(182.1 × 247.6) = 66.4/212.36 = 0.313. The correlation coefficient is about +0.31, indicating only a weak positive linear relationship between X and Y.",
-      "explanation": "Pearson's r is the covariance divided by the product of the standard deviations; the cross-product and square sums give it directly.",
-      "oneShotPreview": "r = 66.4/√(182.1×247.6) ≈ +0.313 (weak positive correlation)."
+      "a": "Pearson's product-moment coefficient is r = SUM(dx*dy)/sqrt(SUM(dx^2)*SUM(dy^2)), where dx = X - x-bar and dy = Y - y-bar. The means are x-bar = 163/10 = 16.3 and y-bar = 382/10 = 38.2. Summing the columns of the deviation table gives SUM(dx*dy) = 66.4, SUM(dx^2) = 182.1 and SUM(dy^2) = 247.6. Substituting: r = 66.4/sqrt(182.1 * 247.6) = 66.4/212.36 = 0.313. Thus r is approximately +0.31, indicating only a weak positive linear relationship between X and Y.",
+      "steps": [
+        "Compute means: x-bar = 163/10 = 16.3, y-bar = 382/10 = 38.2",
+        "Table (X|Y|dx|dy|dx^2|dy^2|dxdy): 10|30|-6.3|-8.2|39.69|67.24|51.66; 15|42|-1.3|3.8|1.69|14.44|-4.94; 12|45|-4.3|6.8|18.49|46.24|-29.24; 17|46|0.7|7.8|0.49|60.84|5.46; 13|33|-3.3|-5.2|10.89|27.04|17.16; 16|34|-0.3|-4.2|0.09|17.64|1.26; 24|40|7.7|1.8|59.29|3.24|13.86; 14|35|-2.3|-3.2|5.29|10.24|7.36; 22|39|5.7|0.8|32.49|0.64|4.56; 20|38|3.7|-0.2|13.69|0.04|-0.74",
+        "Column totals: SUM(dxdy) = 66.4, SUM(dx^2) = 182.1, SUM(dy^2) = 247.6",
+        "r = SUM(dxdy)/sqrt(SUM(dx^2)*SUM(dy^2)) = 66.4/sqrt(182.1*247.6)",
+        "r = 66.4/212.36 = 0.313, a weak positive correlation"
+      ],
+      "formula": "Pearson r = SUM(dxdy) / sqrt(SUM(dx^2) * SUM(dy^2))",
+      "explanation": "Pearson's r is the covariance divided by the product of the standard deviations; the common factor n cancels when deviations are used, so the cross-product and square sums give it directly. The small positive value shows the points follow only a faint upward trend.",
+      "oneShotPreview": "r = 66.4/sqrt(182.1*247.6) is approximately +0.313 (weak positive correlation)."
     },
     {
       "q": "6 Calculate the correlation coefficient for the following heights (in inches) of fathers(X) and their sons(Y) X 65 66 67 67 68 69 70 72 Y 67 68 65 68 72 72 69 71 [L5][CO1] [10M]",
-      "a": "Here X̄ = 68 and Ȳ = 69. The sums of squared and cross-product deviations are Σxy = 24, Σx² = 36 and Σy² = 44. Hence r = Σxy/√(Σx²·Σy²) = 24/√(36 × 44) = 24/39.80 = 0.603. There is a moderate positive correlation of about +0.60 between the heights of fathers and their sons.",
-      "explanation": "Applying Pearson's formula to the eight pairs of heights gives r ≈ 0.60, showing a moderate tendency for taller fathers to have taller sons.",
-      "oneShotPreview": "r = 24/√(36×44) ≈ +0.603 (moderate positive correlation)."
+      "a": "Using Pearson's formula r = SUM(dx*dy)/sqrt(SUM(dx^2)*SUM(dy^2)), first find the means: x-bar = 544/8 = 68 inches and y-bar = 552/8 = 69 inches. The deviation table gives SUM(dx*dy) = 24, SUM(dx^2) = 36 and SUM(dy^2) = 44. Hence r = 24/sqrt(36 * 44) = 24/39.80 = 0.603. There is a moderate positive correlation of about +0.60 between the heights of fathers and their sons, consistent with the known tendency for taller fathers to have taller sons.",
+      "steps": [
+        "Compute means: x-bar = 544/8 = 68 in, y-bar = 552/8 = 69 in",
+        "Table (X|Y|dx|dy|dx^2|dy^2|dxdy): 65|67|-3|-2|9|4|6; 66|68|-2|-1|4|1|2; 67|65|-1|-4|1|16|4; 67|68|-1|-1|1|1|1; 68|72|0|3|0|9|0; 69|72|1|3|1|9|3; 70|69|2|0|4|0|0; 72|71|4|2|16|4|8",
+        "Column totals: SUM(dxdy) = 24, SUM(dx^2) = 36, SUM(dy^2) = 44",
+        "r = 24/sqrt(36*44) = 24/39.80",
+        "r = 0.603, a moderate positive correlation"
+      ],
+      "formula": "Pearson r = SUM(dxdy) / sqrt(SUM(dx^2) * SUM(dy^2))",
+      "explanation": "Applying Pearson's formula to the eight pairs of heights gives r approximately 0.60, showing a moderate tendency for taller fathers to have taller sons. Because both variables are in inches, r is dimensionless and directly comparable across studies.",
+      "oneShotPreview": "r = 24/sqrt(36*44) is approximately +0.603 (moderate positive correlation)."
     },
     {
       "q": "7 Compute rank correlation coefficient for the following data; X 20 14 36 29 5 11 Y 19 9 25 10 2 6 [L5][CO1] [10M]",
-      "a": "Assigning ranks in ascending order, X gets ranks 4, 3, 6, 5, 1, 2 and Y gets ranks 5, 3, 6, 4, 1, 2. The rank differences are d = −1, 0, 0, 1, 0, 0, so Σd² = 2 with n = 6 and no ties. Spearman's rank correlation is ρ = 1 − 6Σd²/[n(n²−1)] = 1 − 12/(6×35) = 1 − 0.0571 = 0.943. The rank correlation is about +0.94, a very strong positive association.",
-      "explanation": "With no repeated values Spearman's simple formula applies directly, and Σd² = 2 yields ρ ≈ 0.943.",
-      "oneShotPreview": "Σd² = 2, n = 6 → ρ = 1 − 12/210 ≈ +0.943."
+      "a": "Since no value is repeated, Spearman's rank correlation rho = 1 - 6*SUM(d^2)/[n(n^2-1)] applies directly. Ranking X in ascending order (5 -> 1, 11 -> 2, 14 -> 3, 20 -> 4, 29 -> 5, 36 -> 6) gives ranks 4, 3, 6, 5, 1, 2. Ranking Y similarly (2 -> 1, 6 -> 2, 9 -> 3, 10 -> 4, 19 -> 5, 25 -> 6) gives ranks 5, 3, 6, 4, 1, 2. The rank differences are d = -1, 0, 0, 1, 0, 0, so SUM(d^2) = 2 with n = 6. Therefore rho = 1 - 6*2/(6*35) = 1 - 12/210 = 0.943. The rank correlation is about +0.94, a very strong positive association.",
+      "steps": [
+        "Table: X|Y|RX|RY|d|d^2 -> 20|19|4|5|-1|1; 14|9|3|3|0|0; 36|25|6|6|0|0; 29|10|5|4|1|1; 5|2|1|1|0|0; 11|6|2|2|0|0",
+        "Check no ties exist, so the simple Spearman formula is valid",
+        "Sum squared rank differences: SUM(d^2) = 1 + 0 + 0 + 1 + 0 + 0 = 2",
+        "n = 6, so n(n^2-1) = 6*35 = 210",
+        "rho = 1 - 6*2/210 = 1 - 0.0571 = 0.943, very strong positive association"
+      ],
+      "formula": "Spearman rho = 1 - 6*SUM(d^2) / [n(n^2 - 1)] (no ties)",
+      "explanation": "With no repeated values Spearman's simple formula applies directly, and SUM(d^2) = 2 yields rho approximately 0.943. The near-agreement of the two rank orders is reflected in a coefficient close to +1.",
+      "oneShotPreview": "SUM(d^2) = 2, n = 6 -> rho = 1 - 12/210 is approximately +0.943."
     },
     {
       "q": "8 Ten competitors in a musical test were ranked by the three judges A, B and C in the following order Ranks by A 1 6 5 10 3 2 4 9 7 8 Ranks by B 3 5 8 4 7 10 2 1 6 9 Ranks by C 6 4 9 8 1 2 3 10 5 7 Using rank correlation coefficient method, discuss which pair of judges has the nearest approach to common likings in music. [L3][CO1] [10M]",
-      "a": "Compute Spearman's rho for each pair; with n = 10 the denominator n(n²−1) = 990. For A and B, Σd² = 200, so ρ = 1 − 6(200)/990 = −0.212. For A and C, Σd² = 60, so ρ = 1 − 6(60)/990 = +0.636. For B and C, Σd² = 214, so ρ = 1 − 6(214)/990 = −0.297. The largest and only positive coefficient is that between judges A and C (ρ ≈ +0.64). Hence judges A and C have the nearest approach to common likings in music, while judge B tends to disagree with both.",
-      "explanation": "A higher, more positive rank correlation means closer agreement between two judges, so comparing the three pairwise coefficients identifies the closest pair.",
-      "oneShotPreview": "ρ(A,B) = −0.21, ρ(A,C) = +0.64, ρ(B,C) = −0.30 → judges A and C agree most."
+      "a": "For each pair of judges take d as the difference between their ranks and apply Spearman's rho = 1 - 6*SUM(d^2)/[n(n^2-1)], with n = 10 so n(n^2-1) = 990. For A and B, SUM(d^2) = 200, giving rho = 1 - 1200/990 = -0.212. For A and C, SUM(d^2) = 60, giving rho = 1 - 360/990 = +0.636. For B and C, SUM(d^2) = 214, giving rho = 1 - 1284/990 = -0.297. The largest and only positive coefficient is that between judges A and C (rho approximately +0.64). Hence judges A and C have the nearest approach to common likings in music, while judge B tends to disagree with both panels.",
+      "steps": [
+        "n = 10, so n(n^2-1) = 10*99 = 990 and rho = 1 - 6*SUM(d^2)/990",
+        "Table: pair | SUM(d^2) | rho -> A-B | 200 | 1 - 1200/990 = -0.212; A-C | 60 | 1 - 360/990 = +0.636; B-C | 214 | 1 - 1284/990 = -0.297",
+        "Compare the three coefficients: rho(A,C) = +0.636 is the largest and only positive value",
+        "Conclude that judges A and C share the nearest approach to common liking"
+      ],
+      "formula": "Spearman rho = 1 - 6*SUM(d^2) / [n(n^2 - 1)]",
+      "explanation": "A higher, more positive rank correlation means closer agreement between two judges, so comparing the three pairwise coefficients identifies the closest pair. The negative values for the pairs involving B show B's ordering is close to the reverse of the others.",
+      "oneShotPreview": "rho(A,B) = -0.21, rho(A,C) = +0.64, rho(B,C) = -0.30 -> judges A and C agree most."
     },
     {
       "q": "9 Obtain the rank correlation coefficient for the following data; X 68 64 75 50 64 80 75 40 55 64 Y 62 58 68 45 81 60 68 48 50 70 [L5][CO1] [10M]",
-      "a": "Repeated values receive average ranks: X ranks are 7, 5, 8.5, 2, 5, 10, 8.5, 1, 3, 5 (64 occurs three times and 75 twice), and Y ranks are 6, 4, 7.5, 1, 10, 5, 7.5, 2, 3, 9 (68 occurs twice). Here Σd² = 72, so the uncorrected coefficient is ρ = 1 − 6(72)/(10×99) = 0.564. With tie corrections, Σ(t³−t) = 30 for X and 6 for Y, giving ρ = [165 − 72 − (30+6)/12]/√[(165 − 15)(165 − 3)] = 90/155.89 = 0.577. Thus the rank correlation is about +0.56, or +0.58 with the tie correction — a moderate positive association.",
-      "explanation": "Tied observations must be given average ranks, and the tie-corrected Spearman formula adjusts the numerator and denominator for those ties to give the more accurate value.",
-      "oneShotPreview": "Average ranks, Σd² = 72 → ρ ≈ +0.564 (+0.577 with tie correction)."
+      "a": "Repeated values receive average ranks: in X the value 64 (three times) gets rank 5 and 75 (twice) gets 8.5; in Y the value 68 (twice) gets 7.5. Thus RX = 7, 5, 8.5, 2, 5, 10, 8.5, 1, 3, 5 and RY = 6, 4, 7.5, 1, 10, 5, 7.5, 2, 3, 9, with SUM(d^2) = 72. Ignoring ties, rho = 1 - 6*72/(10*99) = 0.564. Because ties are present, the exact coefficient is Pearson's r computed on the average ranks: r = SUM(dx*dy)/sqrt(SUM(dx^2)*SUM(dy^2)) = 45/sqrt(80*82) = 45/81.00 = 0.556, which is also what the tie-corrected Spearman formula gives. The association is therefore moderate and positive, about +0.56.",
+      "steps": [
+        "Table: X|Y|RX|RY|d|d^2 -> 68|62|7|6|1|1; 64|58|5|4|1|1; 75|68|8.5|7.5|1|1; 50|45|2|1|1|1; 64|81|5|10|-5|25; 80|60|10|5|5|25; 75|68|8.5|7.5|1|1; 40|48|1|2|-1|1; 55|50|3|3|0|0; 64|70|5|9|-4|16 -> SUM(d^2) = 72",
+        "Note ties: X has 64 three times and 75 twice; Y has 68 twice; use average ranks",
+        "Untied approximation: rho = 1 - 6*72/(10*99) = 1 - 432/990 = 0.564",
+        "Tie sums: SUM(t^3 - t) = 24 + 6 = 30 for X, and 6 for Y; K = n(n^2-1)/6 = 165",
+        "Tie-corrected rho = [165 - 72 - (30+6)/12]/sqrt[(165 - 30/6)(165 - 6/6)] = 90/sqrt(160*164) = 90/161.99 = 0.556",
+        "Equivalent check: Pearson r on average ranks = 45/sqrt(80*82) = 0.556"
+      ],
+      "formula": "Spearman with ties: rho = Pearson r on average ranks = SUM(dxdy)/sqrt(SUM(dx^2)*SUM(dy^2))",
+      "explanation": "Tied observations must be given average ranks, and the tie-corrected Spearman formula adjusts the numerator and denominator for those ties; it is exactly Pearson's r on the rank vectors. The original value 0.577 used an inconsistent denominator and has been corrected to 0.556, which agrees with the direct rank-correlation computation.",
+      "oneShotPreview": "Average ranks, SUM(d^2) = 72 -> rho is approximately +0.56 (+0.556 with tie correction)."
     },
     {
       "q": "10 Find the regression line by the method of least squares for the following data X 10 12 13 16 17 20 25 y 10 22 24 27 29 33 37 [L3][CO1] [10M]",
-      "a": "Here n = 7, X̄ = 113/7 = 16.143 and ȳ = 26, with Σxy = 248 and Σx² = 158.857. The regression coefficient of y on x is b_yx = Σxy/Σx² = 248/158.857 = 1.561. The least-squares line passes through (X̄, ȳ), so y − 26 = 1.561(x − 16.143), which simplifies to y = 0.799 + 1.561x. The corresponding correlation is r ≈ 0.921, confirming a strong positive fit.",
-      "explanation": "The least-squares regression line of y on x passes through the means and has slope b_yx = Σxy/Σx², minimizing the sum of squared vertical errors.",
-      "oneShotPreview": "y − 26 = 1.561(x − 16.143), i.e. y ≈ 0.80 + 1.561x."
+      "a": "The least-squares regression line of y on x is y - y-bar = b_yx(x - x-bar), where the slope is b_yx = SUM(dx*dy)/SUM(dx^2) with deviations taken from the means. Here n = 7, x-bar = 113/7 = 16.143 and y-bar = 182/7 = 26, and the deviation sums are SUM(dx*dy) = 248 and SUM(dx^2) = 158.857. Hence b_yx = 248/158.857 = 1.561. The line passes through the mean point (16.143, 26), so y - 26 = 1.561(x - 16.143), which simplifies to y = 0.799 + 1.561x. The correlation r = 248/sqrt(158.857 * 456) = 0.921 confirms a strong positive linear fit.",
+      "steps": [
+        "Compute means: x-bar = 113/7 = 16.143, y-bar = 182/7 = 26",
+        "Table (X|y|dx=X-16.143|dy=y-26|dxdy|dx^2|dy^2): 10|10|-6.143|-16|98.29|37.73|256; 12|22|-4.143|-4|16.57|17.16|16; 13|24|-3.143|-2|6.29|9.88|4; 16|27|-0.143|1|-0.14|0.02|1; 17|29|0.857|3|2.57|0.73|9; 20|33|3.857|7|27.00|14.88|49; 25|37|8.857|11|97.43|78.45|121",
+        "Column totals: SUM(dxdy) = 248, SUM(dx^2) = 158.857, SUM(dy^2) = 456",
+        "Slope b_yx = SUM(dxdy)/SUM(dx^2) = 248/158.857 = 1.561",
+        "Line through (x-bar, y-bar): y - 26 = 1.561(x - 16.143), i.e. y = 0.799 + 1.561x"
+      ],
+      "formula": "b_yx = SUM(dxdy)/SUM(dx^2) ; line: y - y-bar = b_yx(x - x-bar)",
+      "explanation": "The least-squares regression line of y on x passes through the means and has slope b_yx = SUM(dxdy)/SUM(dx^2), minimising the sum of squared vertical errors. Since r is close to +1, the fitted line represents the data well.",
+      "oneShotPreview": "y - 26 = 1.561(x - 16.143), i.e. y is approximately 0.80 + 1.561x."
     },
     {
       "q": "11 Find two regression equations from the following data; X 10 25 34 42 37 35 36 45 Y 56 64 63 58 73 75 82 77 [L1][CO1] [10M]",
-      "a": "Here n = 8, X̄ = 264/8 = 33 and Ȳ = 548/8 = 68.5, with Σxy = 397, Σx² = 848 and Σy² = 634. Regression of y on x: b_yx = Σxy/Σx² = 397/848 = 0.468, giving y − 68.5 = 0.468(x − 33), i.e. y = 53.05 + 0.468x. Regression of x on y: b_xy = Σxy/Σy² = 397/634 = 0.626, giving x − 33 = 0.626(y − 68.5), i.e. x = −9.89 + 0.626y. Their product b_yx·b_xy ≈ 0.293 = r², consistent with r ≈ 0.54.",
-      "explanation": "Each least-squares regression line passes through (X̄, Ȳ); the two slopes are Σxy/Σx² and Σxy/Σy² respectively.",
-      "oneShotPreview": "y = 53.05 + 0.468x; x = −9.89 + 0.626y."
+      "a": "Both least-squares regression lines pass through the mean point (x-bar, y-bar), where x-bar = 264/8 = 33 and y-bar = 548/8 = 68.5. The deviation sums are SUM(dx*dy) = 397, SUM(dx^2) = 848 and SUM(dy^2) = 634. Regression of y on x: b_yx = 397/848 = 0.468, so y - 68.5 = 0.468(x - 33), which gives y = 53.05 + 0.468x. Regression of x on y: b_xy = 397/634 = 0.626, so x - 33 = 0.626(y - 68.5), which gives x = -9.89 + 0.626y. Their product b_yx*b_xy = 0.293 equals r^2, so r = 0.541, a moderate positive correlation.",
+      "steps": [
+        "Compute means: x-bar = 264/8 = 33, y-bar = 548/8 = 68.5",
+        "Table (X|Y|dx=X-33|dy=Y-68.5|dxdy|dx^2|dy^2): 10|56|-23|-12.5|287.5|529|156.25; 25|64|-8|-4.5|36.0|64|20.25; 34|63|1|-5.5|-5.5|1|30.25; 42|58|9|-10.5|-94.5|81|110.25; 37|73|4|4.5|18.0|16|20.25; 35|75|2|6.5|13.0|4|42.25; 36|82|3|13.5|40.5|9|182.25; 45|77|12|8.5|102.0|144|72.25",
+        "Column totals: SUM(dxdy) = 397, SUM(dx^2) = 848, SUM(dy^2) = 634",
+        "y on x: b_yx = 397/848 = 0.468, so y - 68.5 = 0.468(x - 33) -> y = 53.05 + 0.468x",
+        "x on y: b_xy = 397/634 = 0.626, so x - 33 = 0.626(y - 68.5) -> x = -9.89 + 0.626y",
+        "Check: b_yx*b_xy = 0.293 = r^2, hence r = 0.541"
+      ],
+      "formula": "b_yx = SUM(dxdy)/SUM(dx^2), b_xy = SUM(dxdy)/SUM(dy^2) ; both lines pass through (x-bar, y-bar)",
+      "explanation": "Each least-squares regression line passes through (x-bar, y-bar); the two slopes are SUM(dxdy)/SUM(dx^2) and SUM(dxdy)/SUM(dy^2). Their product must equal r^2, which provides a useful arithmetic check on both equations.",
+      "oneShotPreview": "y = 53.05 + 0.468x; x = -9.89 + 0.626y."
     }
   ]
 }

@@ -1,9 +1,7 @@
 /**
- * SIETK Study App — Real Question Bank Questions
- *
- * Auto-generated from SIETK R23 question bank PDFs by 30 parallel agents.
- * Contains every question (including a/b/c subparts) with clear answers,
- * explanations and one-shot previews. 586 questions across 30 units.
+ * Learn Hub — Real Question Bank Questions
+ * 586 questions extracted from SIETK R23 question bank PDFs.
+ * P&S questions include lecturer-grade step-by-step solutions (steps + formula).
  */
 
 export const QB_QUESTIONS = {
@@ -2506,105 +2504,243 @@ export const QB_QUESTIONS = {
       "questions": [
         {
           "q": "a) Define Population and Sample.",
-          "a": "A population is the entire set of items, individuals or observations about which information is desired, for example all students of a college or all bulbs produced in a factory. A sample is a finite subset of the population selected for study, such as 50 students chosen from that college. We compute statistics (such as the sample mean) from the sample and use them to estimate population parameters (such as the population mean). Sampling is preferred when studying the whole population is too costly, time-consuming or impossible.",
-          "explanation": "Population is the complete group under study while a sample is a representative part of it; statistical inference moves from sample statistics to population parameters.",
+          "a": "A population is the complete set of individuals, items or measurements about which a conclusion is required, for example all 900 students enrolled in a college. A sample is a finite subset drawn from that population, such as 50 students selected for a survey, so the sample size is n = 50. A quantity computed from the sample (a statistic, e.g. the sample mean x-bar) is used to estimate the corresponding population quantity (a parameter, e.g. the population mean mu). Because a census of the whole population is usually too costly, slow or impossible, we sample and attach a sampling error to the estimate. Example: to estimate the mean weight mu of all students we weigh n = 50 of them and use x-bar = SUM(x)/n as the estimate.",
+          "steps": [
+            "Define population: the entire group under study (all students of the college)",
+            "Define sample: a representative subset selected for study (50 students, n = 50)",
+            "Distinguish parameter (mu, population) from statistic (x-bar, sample)",
+            "State the inference link: x-bar = SUM(x)/n estimates mu",
+            "Example: weigh 50 students, compute x-bar, infer mu with a sampling error"
+          ],
+          "formula": "Sample mean x-bar = SUM(x)/n estimates population mean mu",
+          "explanation": "Population is the complete group under study while a sample is a representative part of it; statistical inference moves from sample statistics to population parameters. Working with a subset is cheaper and faster, but the estimate carries sampling error, which is why the sample must be representative.",
           "oneShotPreview": "Population = whole group under study; sample = representative subset used to estimate population parameters."
         },
         {
           "q": "b) What is Primary and Secondary data in statistics?",
-          "a": "Primary data are data collected directly by the investigator for the specific purpose of the study, using methods such as surveys, interviews, experiments or questionnaires. Secondary data are data already collected by someone else for another purpose and then reused, for example census reports, government publications, research journals or company records. Primary data are original, current and tailored to the problem but costly and time-consuming to gather; secondary data are inexpensive and quickly available but may be outdated or not exactly suited to the problem at hand.",
-          "explanation": "The distinction rests on who collected the data and why: first-hand for the current study versus previously collected and reused for a new purpose.",
+          "a": "Primary data are collected first-hand by the investigator specifically for the problem in hand, using questionnaires, interviews, experiments or direct observation, for example weighing the competitors yourself. Secondary data have already been collected by someone else for a different purpose and are then reused, for example census reports, government publications, research journals or company records. The distinction depends on who collected the data and why, not on the physical form in which the data appear. Primary data are original, current and tailored to the problem but costly and time-consuming to gather; secondary data are inexpensive and quickly available but may be outdated or not exactly suited to the problem. Example: a researcher who mails a questionnaire gathers primary data, while one who analyses last year's sales report uses secondary data.",
+          "steps": [
+            "Define primary data: first-hand collection for the current study",
+            "List primary methods: survey, interview, experiment, observation",
+            "Define secondary data: already collected by another party for another purpose",
+            "Compare properties: primary = original/current/costly; secondary = cheap/quick/may be outdated",
+            "Example: own questionnaire = primary; census report = secondary"
+          ],
+          "formula": "Classification by source: primary = first-hand; secondary = reused (no numeric formula)",
+          "explanation": "The distinction rests on who collected the data and why: first-hand for the current study versus previously collected and reused for a new purpose. This matters because it determines data reliability, cost, timeliness and fitness for the analysis.",
           "oneShotPreview": "Primary = first-hand data collected for your study; secondary = already-collected data reused from other sources."
         },
         {
           "q": "c) The weights of 6 competitors in a game are given below 58,62,56,63,55,61 kgs. Find arithmetic mean of weight of competitors.",
-          "a": "The arithmetic mean of ungrouped data is the sum of all observations divided by their number. Sum of weights = 58 + 62 + 56 + 63 + 55 + 61 = 355 kg, and the number of competitors is 6. Hence mean = 355/6 = 59.1667 kg, or approximately 59.17 kg. The average weight of the competitors is therefore about 59.17 kg.",
-          "explanation": "Applying the direct mean formula Σx/n to the six raw weights gives 355/6 = 59.1667 kg.",
-          "oneShotPreview": "Mean weight = 355/6 ≈ 59.17 kg."
+          "a": "For ungrouped data the arithmetic mean is x-bar = SUM(x)/n, the sum of all observations divided by the number of observations. Listing the weights gives 58, 62, 56, 63, 55, 61 kg, so SUM(x) = 58 + 62 + 56 + 63 + 55 + 61 = 355 kg and n = 6. Substituting into the formula: x-bar = 355/6 = 59.1667 kg. Rounded to two decimal places the average weight is 59.17 kg. As a check, the answer lies inside the range 55-63 kg, as every arithmetic mean must.",
+          "steps": [
+            "List values: 58, 62, 56, 63, 55, 61 kg",
+            "Compute SUM(x) = 355 kg",
+            "Count observations: n = 6",
+            "Apply x-bar = SUM(x)/n = 355/6 = 59.1667 kg",
+            "Round: mean weight = 59.17 kg (within the data range 55-63 kg)"
+          ],
+          "formula": "Mean (ungrouped) = SUM(x) / n",
+          "explanation": "Applying the direct mean formula SUM(x)/n to the six raw weights gives 355/6 = 59.1667 kg. The mean is the balancing point of the data, so it must lie between the smallest and largest observations, which confirms the result.",
+          "oneShotPreview": "Mean weight = 355/6 is approximately 59.17 kg."
         },
         {
           "q": "d) What is skewness in statistics with example?",
-          "a": "Skewness measures the lack of symmetry in a frequency distribution, that is, the extent to which observations are drawn out more on one side of the mode than the other. If the tail is longer on the right (towards higher values), the distribution is positively skewed, with mean > median > mode; income distribution is an example, since a few very rich people pull the mean upward. If the tail is longer on the left, the distribution is negatively skewed, with mean < median < mode; marks on a very easy test, where most students score high and a few score very low, are an example. A perfectly symmetric distribution has zero skewness.",
-          "explanation": "Skewness describes the direction and degree of asymmetry, and the ordering of mean, median and mode reveals its sign.",
+          "a": "Skewness measures the lack of symmetry of a frequency distribution about its mode, that is, the extent to which observations are drawn out more on one side than the other. A common measure is gamma1 = mu3/mu2^(3/2) (equivalently Pearson's coefficient (mean - mode)/sigma). If the tail is longer on the right, towards higher values, the distribution is positively skewed and mean > median > mode; income distribution is an example because a few very rich people pull the mean upward. If the tail is longer on the left, the distribution is negatively skewed and mean < median < mode; marks on a very easy test, where most score high and a few score very low, are an example. A perfectly symmetric distribution has mu3 = 0 and therefore zero skewness.",
+          "steps": [
+            "Definition: skewness = degree of asymmetry about the mode",
+            "Measure: gamma1 = mu3 / mu2^(3/2) (or (mean - mode)/sigma)",
+            "Positive skew: right tail, mean > median > mode; example = income",
+            "Negative skew: left tail, mean < median < mode; example = easy test marks",
+            "Symmetric case: mu3 = 0, so skewness = 0"
+          ],
+          "formula": "gamma1 = mu3 / mu2^(3/2) (Pearson: (mean - mode)/sigma)",
+          "explanation": "Skewness describes the direction and degree of asymmetry, and the ordering of mean, median and mode reveals its sign. The sign of the third central moment mu3 determines the direction because cubing preserves the sign of each deviation.",
           "oneShotPreview": "Skewness = asymmetry; right tail gives positive skew (mean>median>mode), left tail gives negative skew."
         },
         {
           "q": "e) Define Kurtosis in statistics.",
-          "a": "Kurtosis measures the degree of peakedness or flatness of a frequency distribution relative to a normal distribution. It is measured by the coefficient β2 = μ4/μ2² (fourth central moment divided by the square of the variance), or by excess kurtosis γ2 = β2 − 3. For a normal distribution β2 = 3 (γ2 = 0), which is called mesokurtic. If β2 > 3 the distribution is leptokurtic, having a narrow high peak and heavy tails; if β2 < 3 it is platykurtic, having a flatter peak and light tails.",
-          "explanation": "Kurtosis is based on the fourth standardized moment, and 3 is the benchmark value for a normal (mesokurtic) distribution.",
-          "oneShotPreview": "Kurtosis = peakedness/tail heaviness; β2=μ4/μ2²; >3 leptokurtic, =3 mesokurtic, <3 platykurtic."
+          "a": "Kurtosis measures the degree of peakedness or flatness of a frequency distribution relative to the normal distribution. It is measured by the coefficient beta2 = mu4/mu2^2, the fourth central moment divided by the square of the variance, or by the excess kurtosis gamma2 = beta2 - 3. For a normal distribution mu4 = 3*mu2^2, so beta2 = 3 and gamma2 = 0, which is called mesokurtic. If beta2 > 3 the distribution is leptokurtic, with a narrow high peak and heavy tails; if beta2 < 3 it is platykurtic, with a flatter peak and light tails. For example, a t-distribution with small degrees of freedom is leptokurtic, while a uniform distribution is platykurtic.",
+          "steps": [
+            "Definition: kurtosis = peakedness and tail weight relative to the normal curve",
+            "Measure: beta2 = mu4 / mu2^2; excess gamma2 = beta2 - 3",
+            "Benchmark: normal distribution has beta2 = 3 (mesokurtic)",
+            "beta2 > 3: leptokurtic (high peak, heavy tails), e.g. t with small df",
+            "beta2 < 3: platykurtic (flat peak, light tails), e.g. uniform distribution"
+          ],
+          "formula": "beta2 = mu4 / mu2^2 ; gamma2 = beta2 - 3",
+          "explanation": "Kurtosis is based on the fourth standardized moment, and 3 is the benchmark value for a normal (mesokurtic) distribution. The fourth power makes kurtosis sensitive mainly to extreme deviations, which is why it describes tail heaviness.",
+          "oneShotPreview": "Kurtosis = peakedness/tail heaviness; beta2=mu4/mu2^2; >3 leptokurtic, =3 mesokurtic, <3 platykurtic."
         },
         {
           "q": "a) Find arithmetic mean to the following data using step deviation method Marks 10-20 20-30 30-40 40-50 50-60 frequency 5 8 25 22 10",
-          "a": "Take the assumed mean A = 35 and class width h = 10. The class mid-values are 15, 25, 35, 45 and 55, so the step deviations u = (x − A)/h are −2, −1, 0, 1 and 2. Multiplying by frequencies gives fu = −10, −8, 0, 22 and 20, hence Σfu = 24 with N = 5 + 8 + 25 + 22 + 10 = 70. Therefore mean = A + h(Σfu/N) = 35 + 10(24/70) = 35 + 3.43 = 38.43 marks (approximately).",
-          "explanation": "The step-deviation formula A + h(Σfu/N) is algebraically identical to the direct mean but simplifies calculation by scaling deviations by the class width.",
-          "oneShotPreview": "A=35, h=10, Σfu=24, N=70 → mean = 35 + 10(24/70) ≈ 38.43."
+          "a": "For grouped data the step-deviation method uses x-bar = A + h(SUM(fu)/N), where u = (x - A)/h, A is an assumed mean and h is the class width. Take A = 35 and h = 10; the class mid-values x are 15, 25, 35, 45, 55, so u = -2, -1, 0, 1, 2. Multiplying by the frequencies f = 5, 8, 25, 22, 10 gives fu = -10, -8, 0, 22, 20, hence SUM(fu) = 24 while N = 5 + 8 + 25 + 22 + 10 = 70. Therefore x-bar = 35 + 10(24/70) = 35 + 3.4286 = 38.43 marks. The result lies close to the 30-40 class, as expected since that class carries the largest frequency.",
+          "steps": [
+            "Table: class | f | mid-value x | u=(x-35)/10 | fu -> 10-20 | 5 | 15 | -2 | -10; 20-30 | 8 | 25 | -1 | -8; 30-40 | 25 | 35 | 0 | 0; 40-50 | 22 | 45 | 1 | 22; 50-60 | 10 | 55 | 2 | 20",
+            "Sum the product column: SUM(fu) = -10 - 8 + 0 + 22 + 20 = 24",
+            "Total frequency: N = 5 + 8 + 25 + 22 + 10 = 70",
+            "Choose A = 35, h = 10 and apply x-bar = A + h(SUM(fu)/N)",
+            "x-bar = 35 + 10(24/70) = 35 + 3.4286 = 38.43 marks"
+          ],
+          "formula": "Step deviation: x-bar = A + h(SUM(fu)/N), u = (x - A)/h",
+          "explanation": "The step-deviation formula A + h(SUM(fu)/N) is algebraically identical to the direct mean SUM(fx)/N, but scaling deviations by the class width h reduces the arithmetic to small integers. It is especially convenient when classes are equally spaced and the mid-values are large.",
+          "oneShotPreview": "A=35, h=10, SUM(fu)=24, N=70 -> mean = 35 + 10(24/70) is approximately 38.43."
         },
         {
           "q": "b) Find the median to the following data; x 5 8 11 14 17 20 23 f 2 8 12 20 10 6 3",
-          "a": "The cumulative frequencies are 2, 10, 22, 42, 52, 58 and 61, so N = 61 and N/2 = 30.5. The cumulative frequency just greater than 30.5 is 42, which corresponds to the value x = 14. Hence the median of the distribution is 14. Equivalently, since N is odd, the median is the (N+1)/2 = 31st observation, which also falls at x = 14.",
-          "explanation": "For a discrete frequency distribution the median is the smallest value whose cumulative frequency is at least N/2, which here is 14.",
-          "oneShotPreview": "N=61, cf ≥ 30.5 is 42 at x=14 → median = 14."
+          "a": "For a discrete frequency distribution the median is the smallest value x whose cumulative frequency is at least N/2. Building the cumulative frequencies from the frequencies 2, 8, 12, 20, 10, 6, 3 gives 2, 10, 22, 42, 52, 58, 61, so N = 61 and N/2 = 30.5. The cumulative frequency just greater than 30.5 is 42, which is attached to x = 14. Hence the median of the distribution is 14. Since N is odd, the same result follows from the (N+1)/2 = 31st observation, which also falls at x = 14.",
+          "steps": [
+            "Table: x | f | cumulative f -> 5|2|2; 8|8|10; 11|12|22; 14|20|42; 17|10|52; 20|6|58; 23|3|61",
+            "Total frequency N = 61, so N/2 = 30.5",
+            "Find the first cumulative frequency >= 30.5: it is 42, at x = 14",
+            "Cross-check: N odd, median is the (N+1)/2 = 31st observation, also x = 14",
+            "Median = 14"
+          ],
+          "formula": "Discrete median = smallest x with cumulative frequency >= N/2",
+          "explanation": "The median is the value that splits the ordered observations into two halves, so locating the first cumulative frequency reaching N/2 identifies it directly. Here 21 observations lie below 14 and 21 above it, confirming that 14 is the middle value.",
+          "oneShotPreview": "N=61, cf >= 30.5 is 42 at x=14 -> median = 14."
         },
         {
           "q": "a) Find arithmetic mean to the following data; X 1 2 3 4 5 F 5 8 10 12 6",
-          "a": "Using the direct method for a discrete frequency distribution, compute ΣfX = 1×5 + 2×8 + 3×10 + 4×12 + 5×6 = 5 + 16 + 30 + 48 + 30 = 129. Total frequency N = 5 + 8 + 10 + 12 + 6 = 41. Therefore the arithmetic mean = ΣfX/N = 129/41 = 3.146, or about 3.15.",
-          "explanation": "Frequencies act as weights, so the correct mean is the weighted average ΣfX/Σf rather than the simple average of the X values.",
-          "oneShotPreview": "Mean = ΣfX/N = 129/41 ≈ 3.146."
+          "a": "For a discrete frequency distribution the mean is the weighted average x-bar = SUM(fX)/N, where N = SUM(f). Compute the products: 1*5 + 2*8 + 3*10 + 4*12 + 5*6 = 5 + 16 + 30 + 48 + 30 = 129. The total frequency is N = 5 + 8 + 10 + 12 + 6 = 41. Substituting gives x-bar = 129/41 = 3.1463, or about 3.15. The answer lies between the smallest and largest X values, 1 and 5, as a weighted mean must.",
+          "steps": [
+            "Table: X | f | fX -> 1|5|5; 2|8|16; 3|10|30; 4|12|48; 5|6|30",
+            "Sum the products: SUM(fX) = 5 + 16 + 30 + 48 + 30 = 129",
+            "Total frequency: N = 5 + 8 + 10 + 12 + 6 = 41",
+            "Apply x-bar = SUM(fX)/N = 129/41",
+            "Mean = 3.1463, approximately 3.15"
+          ],
+          "formula": "Discrete mean = SUM(fX) / SUM(f)",
+          "explanation": "Frequencies act as weights, so the correct mean is the weighted average SUM(fX)/SUM(f) rather than the simple average of the X values. Using the unweighted average (3) would ignore that the value 4 occurs 12 times while 1 occurs only 5 times.",
+          "oneShotPreview": "Mean = SUM(fX)/N = 129/41 is approximately 3.146."
         },
         {
           "q": "b) Find mode to the following data; X 0-5 5-10 10-15 15-20 20-25 25-30 30-35 35-40 F 5 7 10 18 20 12 8 2",
-          "a": "The largest frequency is 20, so the modal class is 20–25. Here L = 20, f = 20, the preceding class frequency f1 = 18, the following class frequency f2 = 12 and class width h = 5. Applying the grouped-data mode formula: Mode = L + h(f − f1)/(2f − f1 − f2) = 20 + 5(20 − 18)/(40 − 18 − 12) = 20 + 5×2/10 = 21. Hence the mode is 21.",
-          "explanation": "The interpolation formula estimates the mode inside the modal class using the neighbouring class frequencies, and the arithmetic gives exactly 21.",
-          "oneShotPreview": "Modal class 20–25 → mode = 20 + 5(2/10) = 21."
+          "a": "The mode for grouped data is found by locating the modal class and then interpolating within it: Mode = L + h(f - f1)/(2f - f1 - f2). The largest frequency is 20, so the modal class is 20-25, giving L = 20, f = 20, preceding frequency f1 = 18, following frequency f2 = 12 and class width h = 5. Substituting: Mode = 20 + 5(20 - 18)/(2*20 - 18 - 12) = 20 + 5*2/10 = 20 + 1 = 21. Hence the mode of the distribution is 21. It lies inside the modal class 20-25 and is pulled towards the neighbouring class with the larger frequency (18 on the left).",
+          "steps": [
+            "Identify the largest frequency: 20, so the modal class is 20-25",
+            "Set L = 20, f = 20, f1 = 18, f2 = 12, h = 5",
+            "Apply Mode = L + h(f - f1)/(2f - f1 - f2)",
+            "Compute denominator: 2f - f1 - f2 = 40 - 18 - 12 = 10",
+            "Mode = 20 + 5(2)/10 = 20 + 1 = 21"
+          ],
+          "formula": "Mode = L + h(f - f1)/(2f - f1 - f2)",
+          "explanation": "The interpolation formula estimates the mode inside the modal class using the neighbouring class frequencies; it shifts the mode towards the side with the taller neighbouring frequency. The arithmetic here gives exactly 21, which is consistent with the modal class being 20-25.",
+          "oneShotPreview": "Modal class 20-25 -> mode = 20 + 5(2/10) = 21."
         },
         {
           "q": "4 The first four moments of a distribution about the value 5 of the variables are 2, 20, 40 and 50. Calculate mean, Variance, and of the distribution. [L5][CO1] [10M]",
-          "a": "Given moments about A = 5: μ'1 = 2, μ'2 = 20, μ'3 = 40, μ'4 = 50. Mean = A + μ'1 = 5 + 2 = 7. Variance μ2 = μ'2 − μ'1² = 20 − 4 = 16, so S.D. = 4. Central moments: μ3 = μ'3 − 3μ'1μ'2 + 2μ'1³ = 40 − 120 + 16 = −64; μ4 = μ'4 − 4μ'1μ'3 + 6μ'1²μ'2 − 3μ'1⁴ = 50 − 320 + 480 − 48 = 162. Hence β1 = μ3²/μ2³ = 4096/4096 = 1 (γ1 = −1, negatively skewed) and β2 = μ4/μ2² = 162/256 = 0.633 (γ2 = −2.367, platykurtic). The PDF text is truncated after 'and'; the intended missing quantities are the skewness and kurtosis coefficients β1 and β2.",
-          "explanation": "Moments about an arbitrary origin are converted to central moments with the standard transformation formulas, from which mean, variance, β1 and β2 follow directly.",
-          "oneShotPreview": "Mean = 7, variance = 16 (SD = 4), β1 = 1 (γ1 = −1), β2 = 0.633 (γ2 = −2.37)."
+          "a": "Moments about the arbitrary origin A = 5 are given as mu'1 = 2, mu'2 = 20, mu'3 = 40 and mu'4 = 50. The mean is A + mu'1 = 5 + 2 = 7. The variance is the second central moment mu2 = mu'2 - (mu'1)^2 = 20 - 4 = 16, so the standard deviation is sigma = 4. Converting the remaining moments: mu3 = mu'3 - 3*mu'1*mu'2 + 2*(mu'1)^3 = 40 - 120 + 16 = -64, and mu4 = mu'4 - 4*mu'1*mu'3 + 6*(mu'1)^2*mu'2 - 3*(mu'1)^4 = 50 - 320 + 480 - 48 = 162. Hence beta1 = mu3^2/mu2^3 = 4096/4096 = 1 (gamma1 = -sqrt(beta1) = -1, negatively skewed) and beta2 = mu4/mu2^2 = 162/256 = 0.633 (gamma2 = -2.367, platykurtic). The printed question is truncated after 'and', so the intended missing quantities are the skewness and kurtosis coefficients beta1 and beta2.",
+          "steps": [
+            "List moments about A = 5: mu'1 = 2, mu'2 = 20, mu'3 = 40, mu'4 = 50",
+            "Mean = A + mu'1 = 5 + 2 = 7",
+            "Variance mu2 = mu'2 - (mu'1)^2 = 20 - 4 = 16, so sigma = 4",
+            "mu3 = mu'3 - 3*mu'1*mu'2 + 2*(mu'1)^3 = 40 - 120 + 16 = -64",
+            "mu4 = mu'4 - 4*mu'1*mu'3 + 6*(mu'1)^2*mu'2 - 3*(mu'1)^4 = 50 - 320 + 480 - 48 = 162",
+            "beta1 = mu3^2/mu2^3 = 4096/4096 = 1 (gamma1 = -1); beta2 = mu4/mu2^2 = 162/256 = 0.633 (gamma2 = -2.367)"
+          ],
+          "formula": "Mean = A + mu'1 ; mu2 = mu'2 - mu'1^2 ; beta1 = mu3^2/mu2^3 ; beta2 = mu4/mu2^2",
+          "explanation": "Moments about an arbitrary origin are converted to central moments with the standard transformation formulas, from which the mean, variance, beta1 and beta2 follow directly. Since mu3 is negative, the distribution has a long left tail even though beta1 = 1.",
+          "oneShotPreview": "Mean = 7, variance = 16 (SD = 4), beta1 = 1 (gamma1 = -1), beta2 = 0.633 (gamma2 = -2.37)."
         },
         {
           "q": "5 Calculate correlation coefficient to the following data; X 10 15 12 17 13 16 24 14 22 20 Y 30 42 45 46 33 34 40 35 39 38 [L5][CO1] [10M]",
-          "a": "Using Pearson's product-moment formula with deviations from X̄ = 16.3 and Ȳ = 38.2: Σxy = 66.4, Σx² = 182.1 and Σy² = 247.6. Therefore r = Σxy/√(Σx²·Σy²) = 66.4/√(182.1 × 247.6) = 66.4/212.36 = 0.313. The correlation coefficient is about +0.31, indicating only a weak positive linear relationship between X and Y.",
-          "explanation": "Pearson's r is the covariance divided by the product of the standard deviations; the cross-product and square sums give it directly.",
-          "oneShotPreview": "r = 66.4/√(182.1×247.6) ≈ +0.313 (weak positive correlation)."
+          "a": "Pearson's product-moment coefficient is r = SUM(dx*dy)/sqrt(SUM(dx^2)*SUM(dy^2)), where dx = X - x-bar and dy = Y - y-bar. The means are x-bar = 163/10 = 16.3 and y-bar = 382/10 = 38.2. Summing the columns of the deviation table gives SUM(dx*dy) = 66.4, SUM(dx^2) = 182.1 and SUM(dy^2) = 247.6. Substituting: r = 66.4/sqrt(182.1 * 247.6) = 66.4/212.36 = 0.313. Thus r is approximately +0.31, indicating only a weak positive linear relationship between X and Y.",
+          "steps": [
+            "Compute means: x-bar = 163/10 = 16.3, y-bar = 382/10 = 38.2",
+            "Table (X|Y|dx|dy|dx^2|dy^2|dxdy): 10|30|-6.3|-8.2|39.69|67.24|51.66; 15|42|-1.3|3.8|1.69|14.44|-4.94; 12|45|-4.3|6.8|18.49|46.24|-29.24; 17|46|0.7|7.8|0.49|60.84|5.46; 13|33|-3.3|-5.2|10.89|27.04|17.16; 16|34|-0.3|-4.2|0.09|17.64|1.26; 24|40|7.7|1.8|59.29|3.24|13.86; 14|35|-2.3|-3.2|5.29|10.24|7.36; 22|39|5.7|0.8|32.49|0.64|4.56; 20|38|3.7|-0.2|13.69|0.04|-0.74",
+            "Column totals: SUM(dxdy) = 66.4, SUM(dx^2) = 182.1, SUM(dy^2) = 247.6",
+            "r = SUM(dxdy)/sqrt(SUM(dx^2)*SUM(dy^2)) = 66.4/sqrt(182.1*247.6)",
+            "r = 66.4/212.36 = 0.313, a weak positive correlation"
+          ],
+          "formula": "Pearson r = SUM(dxdy) / sqrt(SUM(dx^2) * SUM(dy^2))",
+          "explanation": "Pearson's r is the covariance divided by the product of the standard deviations; the common factor n cancels when deviations are used, so the cross-product and square sums give it directly. The small positive value shows the points follow only a faint upward trend.",
+          "oneShotPreview": "r = 66.4/sqrt(182.1*247.6) is approximately +0.313 (weak positive correlation)."
         },
         {
           "q": "6 Calculate the correlation coefficient for the following heights (in inches) of fathers(X) and their sons(Y) X 65 66 67 67 68 69 70 72 Y 67 68 65 68 72 72 69 71 [L5][CO1] [10M]",
-          "a": "Here X̄ = 68 and Ȳ = 69. The sums of squared and cross-product deviations are Σxy = 24, Σx² = 36 and Σy² = 44. Hence r = Σxy/√(Σx²·Σy²) = 24/√(36 × 44) = 24/39.80 = 0.603. There is a moderate positive correlation of about +0.60 between the heights of fathers and their sons.",
-          "explanation": "Applying Pearson's formula to the eight pairs of heights gives r ≈ 0.60, showing a moderate tendency for taller fathers to have taller sons.",
-          "oneShotPreview": "r = 24/√(36×44) ≈ +0.603 (moderate positive correlation)."
+          "a": "Using Pearson's formula r = SUM(dx*dy)/sqrt(SUM(dx^2)*SUM(dy^2)), first find the means: x-bar = 544/8 = 68 inches and y-bar = 552/8 = 69 inches. The deviation table gives SUM(dx*dy) = 24, SUM(dx^2) = 36 and SUM(dy^2) = 44. Hence r = 24/sqrt(36 * 44) = 24/39.80 = 0.603. There is a moderate positive correlation of about +0.60 between the heights of fathers and their sons, consistent with the known tendency for taller fathers to have taller sons.",
+          "steps": [
+            "Compute means: x-bar = 544/8 = 68 in, y-bar = 552/8 = 69 in",
+            "Table (X|Y|dx|dy|dx^2|dy^2|dxdy): 65|67|-3|-2|9|4|6; 66|68|-2|-1|4|1|2; 67|65|-1|-4|1|16|4; 67|68|-1|-1|1|1|1; 68|72|0|3|0|9|0; 69|72|1|3|1|9|3; 70|69|2|0|4|0|0; 72|71|4|2|16|4|8",
+            "Column totals: SUM(dxdy) = 24, SUM(dx^2) = 36, SUM(dy^2) = 44",
+            "r = 24/sqrt(36*44) = 24/39.80",
+            "r = 0.603, a moderate positive correlation"
+          ],
+          "formula": "Pearson r = SUM(dxdy) / sqrt(SUM(dx^2) * SUM(dy^2))",
+          "explanation": "Applying Pearson's formula to the eight pairs of heights gives r approximately 0.60, showing a moderate tendency for taller fathers to have taller sons. Because both variables are in inches, r is dimensionless and directly comparable across studies.",
+          "oneShotPreview": "r = 24/sqrt(36*44) is approximately +0.603 (moderate positive correlation)."
         },
         {
           "q": "7 Compute rank correlation coefficient for the following data; X 20 14 36 29 5 11 Y 19 9 25 10 2 6 [L5][CO1] [10M]",
-          "a": "Assigning ranks in ascending order, X gets ranks 4, 3, 6, 5, 1, 2 and Y gets ranks 5, 3, 6, 4, 1, 2. The rank differences are d = −1, 0, 0, 1, 0, 0, so Σd² = 2 with n = 6 and no ties. Spearman's rank correlation is ρ = 1 − 6Σd²/[n(n²−1)] = 1 − 12/(6×35) = 1 − 0.0571 = 0.943. The rank correlation is about +0.94, a very strong positive association.",
-          "explanation": "With no repeated values Spearman's simple formula applies directly, and Σd² = 2 yields ρ ≈ 0.943.",
-          "oneShotPreview": "Σd² = 2, n = 6 → ρ = 1 − 12/210 ≈ +0.943."
+          "a": "Since no value is repeated, Spearman's rank correlation rho = 1 - 6*SUM(d^2)/[n(n^2-1)] applies directly. Ranking X in ascending order (5 -> 1, 11 -> 2, 14 -> 3, 20 -> 4, 29 -> 5, 36 -> 6) gives ranks 4, 3, 6, 5, 1, 2. Ranking Y similarly (2 -> 1, 6 -> 2, 9 -> 3, 10 -> 4, 19 -> 5, 25 -> 6) gives ranks 5, 3, 6, 4, 1, 2. The rank differences are d = -1, 0, 0, 1, 0, 0, so SUM(d^2) = 2 with n = 6. Therefore rho = 1 - 6*2/(6*35) = 1 - 12/210 = 0.943. The rank correlation is about +0.94, a very strong positive association.",
+          "steps": [
+            "Table: X|Y|RX|RY|d|d^2 -> 20|19|4|5|-1|1; 14|9|3|3|0|0; 36|25|6|6|0|0; 29|10|5|4|1|1; 5|2|1|1|0|0; 11|6|2|2|0|0",
+            "Check no ties exist, so the simple Spearman formula is valid",
+            "Sum squared rank differences: SUM(d^2) = 1 + 0 + 0 + 1 + 0 + 0 = 2",
+            "n = 6, so n(n^2-1) = 6*35 = 210",
+            "rho = 1 - 6*2/210 = 1 - 0.0571 = 0.943, very strong positive association"
+          ],
+          "formula": "Spearman rho = 1 - 6*SUM(d^2) / [n(n^2 - 1)] (no ties)",
+          "explanation": "With no repeated values Spearman's simple formula applies directly, and SUM(d^2) = 2 yields rho approximately 0.943. The near-agreement of the two rank orders is reflected in a coefficient close to +1.",
+          "oneShotPreview": "SUM(d^2) = 2, n = 6 -> rho = 1 - 12/210 is approximately +0.943."
         },
         {
           "q": "8 Ten competitors in a musical test were ranked by the three judges A, B and C in the following order Ranks by A 1 6 5 10 3 2 4 9 7 8 Ranks by B 3 5 8 4 7 10 2 1 6 9 Ranks by C 6 4 9 8 1 2 3 10 5 7 Using rank correlation coefficient method, discuss which pair of judges has the nearest approach to common likings in music. [L3][CO1] [10M]",
-          "a": "Compute Spearman's rho for each pair; with n = 10 the denominator n(n²−1) = 990. For A and B, Σd² = 200, so ρ = 1 − 6(200)/990 = −0.212. For A and C, Σd² = 60, so ρ = 1 − 6(60)/990 = +0.636. For B and C, Σd² = 214, so ρ = 1 − 6(214)/990 = −0.297. The largest and only positive coefficient is that between judges A and C (ρ ≈ +0.64). Hence judges A and C have the nearest approach to common likings in music, while judge B tends to disagree with both.",
-          "explanation": "A higher, more positive rank correlation means closer agreement between two judges, so comparing the three pairwise coefficients identifies the closest pair.",
-          "oneShotPreview": "ρ(A,B) = −0.21, ρ(A,C) = +0.64, ρ(B,C) = −0.30 → judges A and C agree most."
+          "a": "For each pair of judges take d as the difference between their ranks and apply Spearman's rho = 1 - 6*SUM(d^2)/[n(n^2-1)], with n = 10 so n(n^2-1) = 990. For A and B, SUM(d^2) = 200, giving rho = 1 - 1200/990 = -0.212. For A and C, SUM(d^2) = 60, giving rho = 1 - 360/990 = +0.636. For B and C, SUM(d^2) = 214, giving rho = 1 - 1284/990 = -0.297. The largest and only positive coefficient is that between judges A and C (rho approximately +0.64). Hence judges A and C have the nearest approach to common likings in music, while judge B tends to disagree with both panels.",
+          "steps": [
+            "n = 10, so n(n^2-1) = 10*99 = 990 and rho = 1 - 6*SUM(d^2)/990",
+            "Table: pair | SUM(d^2) | rho -> A-B | 200 | 1 - 1200/990 = -0.212; A-C | 60 | 1 - 360/990 = +0.636; B-C | 214 | 1 - 1284/990 = -0.297",
+            "Compare the three coefficients: rho(A,C) = +0.636 is the largest and only positive value",
+            "Conclude that judges A and C share the nearest approach to common liking"
+          ],
+          "formula": "Spearman rho = 1 - 6*SUM(d^2) / [n(n^2 - 1)]",
+          "explanation": "A higher, more positive rank correlation means closer agreement between two judges, so comparing the three pairwise coefficients identifies the closest pair. The negative values for the pairs involving B show B's ordering is close to the reverse of the others.",
+          "oneShotPreview": "rho(A,B) = -0.21, rho(A,C) = +0.64, rho(B,C) = -0.30 -> judges A and C agree most."
         },
         {
           "q": "9 Obtain the rank correlation coefficient for the following data; X 68 64 75 50 64 80 75 40 55 64 Y 62 58 68 45 81 60 68 48 50 70 [L5][CO1] [10M]",
-          "a": "Repeated values receive average ranks: X ranks are 7, 5, 8.5, 2, 5, 10, 8.5, 1, 3, 5 (64 occurs three times and 75 twice), and Y ranks are 6, 4, 7.5, 1, 10, 5, 7.5, 2, 3, 9 (68 occurs twice). Here Σd² = 72, so the uncorrected coefficient is ρ = 1 − 6(72)/(10×99) = 0.564. With tie corrections, Σ(t³−t) = 30 for X and 6 for Y, giving ρ = [165 − 72 − (30+6)/12]/√[(165 − 15)(165 − 3)] = 90/155.89 = 0.577. Thus the rank correlation is about +0.56, or +0.58 with the tie correction — a moderate positive association.",
-          "explanation": "Tied observations must be given average ranks, and the tie-corrected Spearman formula adjusts the numerator and denominator for those ties to give the more accurate value.",
-          "oneShotPreview": "Average ranks, Σd² = 72 → ρ ≈ +0.564 (+0.577 with tie correction)."
+          "a": "Repeated values receive average ranks: in X the value 64 (three times) gets rank 5 and 75 (twice) gets 8.5; in Y the value 68 (twice) gets 7.5. Thus RX = 7, 5, 8.5, 2, 5, 10, 8.5, 1, 3, 5 and RY = 6, 4, 7.5, 1, 10, 5, 7.5, 2, 3, 9, with SUM(d^2) = 72. Ignoring ties, rho = 1 - 6*72/(10*99) = 0.564. Because ties are present, the exact coefficient is Pearson's r computed on the average ranks: r = SUM(dx*dy)/sqrt(SUM(dx^2)*SUM(dy^2)) = 45/sqrt(80*82) = 45/81.00 = 0.556, which is also what the tie-corrected Spearman formula gives. The association is therefore moderate and positive, about +0.56.",
+          "steps": [
+            "Table: X|Y|RX|RY|d|d^2 -> 68|62|7|6|1|1; 64|58|5|4|1|1; 75|68|8.5|7.5|1|1; 50|45|2|1|1|1; 64|81|5|10|-5|25; 80|60|10|5|5|25; 75|68|8.5|7.5|1|1; 40|48|1|2|-1|1; 55|50|3|3|0|0; 64|70|5|9|-4|16 -> SUM(d^2) = 72",
+            "Note ties: X has 64 three times and 75 twice; Y has 68 twice; use average ranks",
+            "Untied approximation: rho = 1 - 6*72/(10*99) = 1 - 432/990 = 0.564",
+            "Tie sums: SUM(t^3 - t) = 24 + 6 = 30 for X, and 6 for Y; K = n(n^2-1)/6 = 165",
+            "Tie-corrected rho = [165 - 72 - (30+6)/12]/sqrt[(165 - 30/6)(165 - 6/6)] = 90/sqrt(160*164) = 90/161.99 = 0.556",
+            "Equivalent check: Pearson r on average ranks = 45/sqrt(80*82) = 0.556"
+          ],
+          "formula": "Spearman with ties: rho = Pearson r on average ranks = SUM(dxdy)/sqrt(SUM(dx^2)*SUM(dy^2))",
+          "explanation": "Tied observations must be given average ranks, and the tie-corrected Spearman formula adjusts the numerator and denominator for those ties; it is exactly Pearson's r on the rank vectors. The original value 0.577 used an inconsistent denominator and has been corrected to 0.556, which agrees with the direct rank-correlation computation.",
+          "oneShotPreview": "Average ranks, SUM(d^2) = 72 -> rho is approximately +0.56 (+0.556 with tie correction)."
         },
         {
           "q": "10 Find the regression line by the method of least squares for the following data X 10 12 13 16 17 20 25 y 10 22 24 27 29 33 37 [L3][CO1] [10M]",
-          "a": "Here n = 7, X̄ = 113/7 = 16.143 and ȳ = 26, with Σxy = 248 and Σx² = 158.857. The regression coefficient of y on x is b_yx = Σxy/Σx² = 248/158.857 = 1.561. The least-squares line passes through (X̄, ȳ), so y − 26 = 1.561(x − 16.143), which simplifies to y = 0.799 + 1.561x. The corresponding correlation is r ≈ 0.921, confirming a strong positive fit.",
-          "explanation": "The least-squares regression line of y on x passes through the means and has slope b_yx = Σxy/Σx², minimizing the sum of squared vertical errors.",
-          "oneShotPreview": "y − 26 = 1.561(x − 16.143), i.e. y ≈ 0.80 + 1.561x."
+          "a": "The least-squares regression line of y on x is y - y-bar = b_yx(x - x-bar), where the slope is b_yx = SUM(dx*dy)/SUM(dx^2) with deviations taken from the means. Here n = 7, x-bar = 113/7 = 16.143 and y-bar = 182/7 = 26, and the deviation sums are SUM(dx*dy) = 248 and SUM(dx^2) = 158.857. Hence b_yx = 248/158.857 = 1.561. The line passes through the mean point (16.143, 26), so y - 26 = 1.561(x - 16.143), which simplifies to y = 0.799 + 1.561x. The correlation r = 248/sqrt(158.857 * 456) = 0.921 confirms a strong positive linear fit.",
+          "steps": [
+            "Compute means: x-bar = 113/7 = 16.143, y-bar = 182/7 = 26",
+            "Table (X|y|dx=X-16.143|dy=y-26|dxdy|dx^2|dy^2): 10|10|-6.143|-16|98.29|37.73|256; 12|22|-4.143|-4|16.57|17.16|16; 13|24|-3.143|-2|6.29|9.88|4; 16|27|-0.143|1|-0.14|0.02|1; 17|29|0.857|3|2.57|0.73|9; 20|33|3.857|7|27.00|14.88|49; 25|37|8.857|11|97.43|78.45|121",
+            "Column totals: SUM(dxdy) = 248, SUM(dx^2) = 158.857, SUM(dy^2) = 456",
+            "Slope b_yx = SUM(dxdy)/SUM(dx^2) = 248/158.857 = 1.561",
+            "Line through (x-bar, y-bar): y - 26 = 1.561(x - 16.143), i.e. y = 0.799 + 1.561x"
+          ],
+          "formula": "b_yx = SUM(dxdy)/SUM(dx^2) ; line: y - y-bar = b_yx(x - x-bar)",
+          "explanation": "The least-squares regression line of y on x passes through the means and has slope b_yx = SUM(dxdy)/SUM(dx^2), minimising the sum of squared vertical errors. Since r is close to +1, the fitted line represents the data well.",
+          "oneShotPreview": "y - 26 = 1.561(x - 16.143), i.e. y is approximately 0.80 + 1.561x."
         },
         {
           "q": "11 Find two regression equations from the following data; X 10 25 34 42 37 35 36 45 Y 56 64 63 58 73 75 82 77 [L1][CO1] [10M]",
-          "a": "Here n = 8, X̄ = 264/8 = 33 and Ȳ = 548/8 = 68.5, with Σxy = 397, Σx² = 848 and Σy² = 634. Regression of y on x: b_yx = Σxy/Σx² = 397/848 = 0.468, giving y − 68.5 = 0.468(x − 33), i.e. y = 53.05 + 0.468x. Regression of x on y: b_xy = Σxy/Σy² = 397/634 = 0.626, giving x − 33 = 0.626(y − 68.5), i.e. x = −9.89 + 0.626y. Their product b_yx·b_xy ≈ 0.293 = r², consistent with r ≈ 0.54.",
-          "explanation": "Each least-squares regression line passes through (X̄, Ȳ); the two slopes are Σxy/Σx² and Σxy/Σy² respectively.",
-          "oneShotPreview": "y = 53.05 + 0.468x; x = −9.89 + 0.626y."
+          "a": "Both least-squares regression lines pass through the mean point (x-bar, y-bar), where x-bar = 264/8 = 33 and y-bar = 548/8 = 68.5. The deviation sums are SUM(dx*dy) = 397, SUM(dx^2) = 848 and SUM(dy^2) = 634. Regression of y on x: b_yx = 397/848 = 0.468, so y - 68.5 = 0.468(x - 33), which gives y = 53.05 + 0.468x. Regression of x on y: b_xy = 397/634 = 0.626, so x - 33 = 0.626(y - 68.5), which gives x = -9.89 + 0.626y. Their product b_yx*b_xy = 0.293 equals r^2, so r = 0.541, a moderate positive correlation.",
+          "steps": [
+            "Compute means: x-bar = 264/8 = 33, y-bar = 548/8 = 68.5",
+            "Table (X|Y|dx=X-33|dy=Y-68.5|dxdy|dx^2|dy^2): 10|56|-23|-12.5|287.5|529|156.25; 25|64|-8|-4.5|36.0|64|20.25; 34|63|1|-5.5|-5.5|1|30.25; 42|58|9|-10.5|-94.5|81|110.25; 37|73|4|4.5|18.0|16|20.25; 35|75|2|6.5|13.0|4|42.25; 36|82|3|13.5|40.5|9|182.25; 45|77|12|8.5|102.0|144|72.25",
+            "Column totals: SUM(dxdy) = 397, SUM(dx^2) = 848, SUM(dy^2) = 634",
+            "y on x: b_yx = 397/848 = 0.468, so y - 68.5 = 0.468(x - 33) -> y = 53.05 + 0.468x",
+            "x on y: b_xy = 397/634 = 0.626, so x - 33 = 0.626(y - 68.5) -> x = -9.89 + 0.626y",
+            "Check: b_yx*b_xy = 0.293 = r^2, hence r = 0.541"
+          ],
+          "formula": "b_yx = SUM(dxdy)/SUM(dx^2), b_xy = SUM(dxdy)/SUM(dy^2) ; both lines pass through (x-bar, y-bar)",
+          "explanation": "Each least-squares regression line passes through (x-bar, y-bar); the two slopes are SUM(dxdy)/SUM(dx^2) and SUM(dxdy)/SUM(dy^2). Their product must equal r^2, which provides a useful arithmetic check on both equations.",
+          "oneShotPreview": "y = 53.05 + 0.468x; x = -9.89 + 0.626y."
         }
       ]
     },
@@ -2614,115 +2750,253 @@ export const QB_QUESTIONS = {
       "questions": [
         {
           "q": "1 a) Define Probability. [L1][CO2] [2M]",
-          "a": "Probability is a numerical measure of the likelihood that an event will occur, and it always lies between 0 and 1. For an experiment with equally likely outcomes it is defined as P(E) = (number of outcomes favourable to E)/(total number of equally likely outcomes). Axiomatically, P is a set function with 0 <= P(E) <= 1, P(S) = 1, and P(E1 union E2) = P(E1) + P(E2) for mutually exclusive events. P(E) = 0 means the event is impossible and P(E) = 1 means it is certain.",
+          "a": "Probability is a numerical measure, lying between 0 and 1, of how likely an event is to occur. For a finite sample space S with equally likely outcomes, the classical definition is P(E) = n(E)/n(S), the number of outcomes favourable to E divided by the total number of outcomes. Axiomatically, P is a set function satisfying 0 ≤ P(E) ≤ 1 for every event, P(S) = 1, and P(E₁ ∪ E₂) = P(E₁) + P(E₂) whenever E₁ and E₂ are mutually exclusive. P(E) = 0 means E is impossible, while P(E) = 1 means E is certain. The ratio formula is valid only when all outcomes are equally likely, whereas the axioms hold for every probability model.",
+          "steps": [
+            "Identify the sample space S of all possible outcomes of the experiment",
+            "Count the favourable outcomes n(E) and the total outcomes n(S)",
+            "For equally likely outcomes apply P(E) = n(E)/n(S)",
+            "Verify the axioms: 0 ≤ P(E) ≤ 1, P(S) = 1, additivity for disjoint events"
+          ],
+          "formula": "Classical: P(E) = n(E)/n(S), with 0 ≤ P(E) ≤ 1 and P(S) = 1",
           "explanation": "This is the classical and axiomatic definition that underlies every probability calculation; the simple ratio formula is valid only when outcomes are equally likely.",
           "oneShotPreview": "Probability = favourable outcomes / total equally likely outcomes; a number in [0,1]."
         },
         {
           "q": "1 b) Evaluate P(A/B), if P(A) = 7/13, P(B) = 9/13 and P(A ∩ B) = 4/13. [L5][CO2] [2M]",
-          "a": "Using the conditional probability formula, P(A/B) = P(A ∩ B)/P(B). Substituting the given values, P(A/B) = (4/13)/(9/13) = 4/9. The value P(A) = 7/13 is extra information and is not needed here.",
+          "a": "The conditional probability of A given B is defined as P(A/B) = P(A ∩ B)/P(B), provided P(B) > 0; here P(B) = 9/13 ≠ 0. Substituting the joint probability gives P(A/B) = (4/13)/(9/13). Since the common denominator 13 cancels, this becomes (4/13) × (13/9) = 4/9. The given value P(A) = 7/13 is not needed for this calculation; it would only be used to test consistency or to find the reverse probability P(B/A). Hence P(A/B) = 4/9.",
+          "steps": [
+            "Write the conditional formula P(A/B) = P(A∩B)/P(B)",
+            "Identify P(A∩B) = 4/13 and P(B) = 9/13",
+            "Divide: (4/13)/(9/13) = (4/13) × (13/9)",
+            "Cancel the common factor 13 to obtain 4/9"
+          ],
+          "formula": "Conditional: P(A|B) = P(A∩B)/P(B)",
           "explanation": "Conditioning on B restricts the sample space to B, so the chance of A inside it is the joint probability divided by P(B).",
           "oneShotPreview": "P(A/B) = (4/13)/(9/13) = 4/9."
         },
         {
           "q": "1 c) State Baye's theorem. [L1][CO2] [2M]",
-          "a": "If B1, B2, ..., Bn form a partition of the sample space S with P(Bi) > 0, and A is any event with P(A) > 0, then P(Bi/A) = P(Bi) P(A/Bi) / sum over j of [P(Bj) P(A/Bj)]. The denominator is the total probability of A. In words: posterior probability = (prior probability x likelihood) / evidence.",
+          "a": "Bayes' theorem converts a known forward conditional probability into the required reverse conditional probability. Let B₁, B₂, ..., Bₙ form a partition of the sample space S (mutually exclusive and exhaustive) with P(Bᵢ) > 0, and let A be any event with P(A) > 0. Then P(Bᵢ/A) = P(Bᵢ)P(A/Bᵢ) / Σⱼ P(Bⱼ)P(A/Bⱼ). The denominator is precisely P(A) by the law of total probability. In words, posterior probability = (prior probability × likelihood) / evidence, where each Bᵢ is a hypothesis and P(Bᵢ/A) is its updated probability after observing A.",
+          "steps": [
+            "Assume B₁, ..., Bₙ partition S with every P(Bᵢ) > 0 and P(A) > 0",
+            "Express the joint probability two ways: P(Bᵢ∩A) = P(Bᵢ)P(A/Bᵢ) = P(A)P(Bᵢ/A)",
+            "Solve for the reverse probability: P(Bᵢ/A) = P(Bᵢ)P(A/Bᵢ)/P(A)",
+            "Replace P(A) with Σⱼ P(Bⱼ)P(A/Bⱼ) from the law of total probability"
+          ],
+          "formula": "Bayes: P(Bᵢ|A) = P(Bᵢ)P(A|Bᵢ) / Σⱼ P(Bⱼ)P(A|Bⱼ)",
           "explanation": "Bayes' theorem converts a known conditional probability P(A/Bi) into the unknown reverse probability P(Bi/A) using the partition and the law of total probability.",
-          "oneShotPreview": "P(Bi|A) = P(Bi)P(A|Bi) / Σ P(Bj)P(A|Bj) — prior x likelihood / evidence."
+          "oneShotPreview": "P(Bi|A) = P(Bi)P(A|Bi) / Σ P(Bj)P(A|Bj) — prior × likelihood / evidence."
         },
         {
           "q": "1 d) Explain types of random variables. [L2][CO2] [2M]",
-          "a": "A discrete random variable takes a finite or countably infinite set of values (for example, the number of heads in three tosses) and is described by a probability mass function p(x) = P(X=x) with sum p(x) = 1. A continuous random variable takes any value in an interval (for example, height or time) and is described by a probability density function f(x) >= 0 with integral of f(x) equal to 1, where P(a < X < b) is the integral of f from a to b. Mixed variables have both discrete and continuous parts. Binomial and Poisson are discrete; uniform, exponential and normal are continuous.",
+          "a": "A random variable X is a real-valued function on the sample space, and its type determines how probabilities are computed. A discrete random variable takes a finite or countably infinite set of values (for example, the number of heads in three tosses) and is described by a probability mass function p(x) = P(X = x) with Σ p(x) = 1. A continuous random variable takes any value in an interval (for example, height or time) and is described by a probability density function f(x) ≥ 0 with ∫f(x)dx = 1, where P(a < X < b) = ∫ₐᵇ f(x)dx. Mixed variables possess both a discrete and a continuous component. Binomial and Poisson are discrete; uniform, exponential and normal are continuous.",
+          "steps": [
+            "Classify X according to the nature of its set of possible values",
+            "Discrete case: countable values, use a PMF p(x) with Σp(x) = 1",
+            "Continuous case: interval of values, use a PDF f(x) with ∫f(x)dx = 1",
+            "Note that mixed variables combine both cases, then cite examples of each type"
+          ],
+          "formula": "Discrete: p(x)=P(X=x), Σp(x)=1; Continuous: P(a<X<b)=∫ₐᵇ f(x)dx",
           "explanation": "The distinction decides whether probabilities are found by summing a PMF (discrete) or integrating a PDF (continuous).",
           "oneShotPreview": "Discrete = countable values with a PMF; continuous = interval values with a PDF."
         },
         {
           "q": "1 e) Define expected value of a discrete random variable. [L1][CO2] [2M]",
-          "a": "The expected value (mean) of a discrete random variable X with probability mass function p(x) is E(X) = sum over all x of x*p(x), the probability-weighted average of all possible values. More generally, E[g(X)] = sum g(x)*p(x). It represents the long-run average value observed when the experiment is repeated a very large number of times.",
+          "a": "The expected value (mean) of a discrete random variable X with probability mass function p(x) is E(X) = Σ x·p(x), summed over all possible values of X. It is the probability-weighted average of those values, and more generally E[g(X)] = Σ g(x)·p(x). The expectation is the long-run average value observed when the experiment is repeated a very large number of times, even though it need not itself be a possible value of X. When the distribution is symmetric, the mean equals the centre of symmetry.",
+          "steps": [
+            "List all possible values x of the discrete variable X",
+            "Write the PMF p(x) = P(X=x) for each value",
+            "Multiply each value by its probability and sum: E(X) = Σ x·p(x)",
+            "Interpret the result as the long-run average over repeated trials"
+          ],
+          "formula": "E(X) = Σ x·p(x)   (more generally E[g(X)] = Σ g(x)·p(x))",
           "explanation": "Weighting each possible value by its probability gives the centre of the distribution, the quantity that remains stable across repeated trials.",
           "oneShotPreview": "E(X) = Σ x·p(x); the probability-weighted long-run average."
         },
         {
           "q": "2 a) A class consists of 6 girls and 10 boys. If a committee of 3 is chosen at random from the class, find the Probability that (i) 3 boys are selected (ii) Exactly 2 girls are selected. [L1][CO2] [5M]",
-          "a": "The total number of ways to choose 3 of the 16 students is C(16,3) = 560. (i) Choosing 3 boys from 10 gives C(10,3) = 120, so P = 120/560 = 3/14. (ii) Exactly 2 girls means 2 of 6 girls and 1 of 10 boys: C(6,2)*C(10,1) = 15*10 = 150, so P = 150/560 = 15/56.",
+          "a": "There are 6 + 10 = 16 students, and since every committee of 3 is equally likely we count combinations. The total number of committees is C(16,3) = (16·15·14)/(3·2·1) = 560. (i) Choosing all 3 members from the 10 boys gives C(10,3) = (10·9·8)/(3·2·1) = 120, so P = 120/560 = 3/14. (ii) Exactly 2 girls means 2 of the 6 girls and 1 of the 10 boys, so the favourable count is C(6,2)·C(10,1) = 15·10 = 150 and P = 150/560 = 15/56.",
+          "steps": [
+            "Total students = 6 girls + 10 boys = 16",
+            "Total committees = C(16,3) = (16·15·14)/6 = 560",
+            "(i) Favourable = C(10,3) = 120; P = 120/560 = 3/14",
+            "(ii) Favourable = C(6,2)·C(10,1) = 15·10 = 150; P = 150/560 = 15/56"
+          ],
+          "formula": "Classical: P(E) = favourable combinations / C(16,3) = favourable / 560",
           "explanation": "Every committee of 3 is equally likely, so each probability is the number of favourable combinations divided by the total number of combinations.",
           "oneShotPreview": "C(10,3)/C(16,3) = 3/14; C(6,2)C(10,1)/C(16,3) = 15/56."
         },
         {
           "q": "2 b) If three coins are tossed. Find the probability of getting i) 3 heads ii) 2 heads only iii) no heads. [L1][CO2] [5M]",
-          "a": "Three fair coins produce 2^3 = 8 equally likely outcomes. (i) 3 heads: only HHH, so P = 1/8. (ii) exactly 2 heads: HHT, HTH, THH (3 outcomes), so P = 3/8. (iii) no heads: only TTT, so P = 1/8.",
+          "a": "Three fair coins give 2³ = 8 equally likely ordered outcomes, so each outcome has probability 1/8. (i) Three heads occurs only for HHH, so P = 1/8. (ii) Exactly two heads occurs for HHT, HTH and THH, i.e. C(3,2) = 3 outcomes, so P = 3/8. (iii) No heads occurs only for TTT, so P = 1/8. Equivalently, the number of heads is Binomial(n = 3, p = 1/2) with P(X = k) = C(3,k)/8.",
+          "steps": [
+            "Total outcomes = 2³ = 8, all equally likely",
+            "(i) 3 heads: HHH only → 1 outcome, P = 1/8",
+            "(ii) 2 heads: C(3,2) = 3 outcomes (HHT, HTH, THH), P = 3/8",
+            "(iii) 0 heads: TTT only → 1 outcome, P = 1/8"
+          ],
+          "formula": "Classical/binomial: P(k heads) = C(3,k)/2³ = C(3,k)/8",
           "explanation": "This uses the classical definition: count the outcomes matching each event and divide by the 8 equally likely outcomes.",
           "oneShotPreview": "3 heads = 1/8, exactly 2 heads = 3/8, no heads = 1/8."
         },
         {
           "q": "3 a) Two cards are selected at random from 10 cards numbered 1 to 10. Find the probability that the sum is even if (i) The two cards are drawn together. (ii) The two cards drawn one after other with replacement. [L5][CO2] [5M]",
-          "a": "Among 1 to 10 there are 5 odd and 5 even numbers, and the sum is even when both cards are odd or both are even. (i) Drawn together (without replacement): [C(5,2)+C(5,2)]/C(10,2) = (10+10)/45 = 20/45 = 4/9. (ii) With replacement: (5/10)(5/10) + (5/10)(5/10) = 1/4 + 1/4 = 1/2.",
+          "a": "Among the cards numbered 1 to 10 there are 5 odd and 5 even numbers, and the sum is even exactly when both cards have the same parity (odd + odd or even + even). (i) Drawn together (without replacement), the total pairs are C(10,2) = 45 and the favourable pairs are C(5,2) + C(5,2) = 10 + 10 = 20, so P = 20/45 = 4/9. (ii) With replacement the draws are independent and P(odd) = P(even) = 5/10 = 1/2 on each draw, so P(even sum) = (1/2)(1/2) + (1/2)(1/2) = 1/4 + 1/4 = 1/2.",
+          "steps": [
+            "Classify the cards: 5 odd, 5 even; an even sum needs both odd or both even",
+            "(i) Without replacement: total = C(10,2) = 45; favourable = C(5,2)+C(5,2) = 20; P = 20/45 = 4/9",
+            "(ii) With replacement: P(odd) = P(even) = 5/10 = 1/2 on each draw",
+            "P(even sum) = (1/2)(1/2) + (1/2)(1/2) = 1/4 + 1/4 = 1/2"
+          ],
+          "formula": "Without replacement: P = [C(5,2)+C(5,2)]/C(10,2); with replacement: P = p² + p²",
           "explanation": "Odd+odd and even+even are the only ways to obtain an even sum; with replacement the chance of each draw being odd or even stays at 1/2.",
           "oneShotPreview": "Even sum: 4/9 without replacement, 1/2 with replacement."
         },
         {
           "q": "3 b) Determine (i) P(B/A) (ii) P(A/B^c) if A and B are events with P(A) = 1/3, P(B) = 1/4, P(A ∪ B) = 1/2. [L5][CO2] [5M]",
-          "a": "First obtain the intersection from the addition rule: P(A ∩ B) = P(A) + P(B) - P(A ∪ B) = 1/3 + 1/4 - 1/2 = 1/12. (i) P(B/A) = P(A ∩ B)/P(A) = (1/12)/(1/3) = 1/4. (ii) P(A ∩ B^c) = P(A) - P(A ∩ B) = 1/3 - 1/12 = 1/4, and P(B^c) = 1 - 1/4 = 3/4, so P(A/B^c) = (1/4)/(3/4) = 1/3.",
+          "a": "The addition rule P(A ∪ B) = P(A) + P(B) − P(A ∩ B) supplies the missing joint probability. Rearranging, P(A ∩ B) = P(A) + P(B) − P(A ∪ B) = 1/3 + 1/4 − 1/2 = 4/12 + 3/12 − 6/12 = 1/12. (i) P(B/A) = P(A ∩ B)/P(A) = (1/12)/(1/3) = 1/4. (ii) The part of A outside B has probability P(A ∩ Bᶜ) = P(A) − P(A ∩ B) = 1/3 − 1/12 = 1/4, while P(Bᶜ) = 1 − 1/4 = 3/4, so P(A/Bᶜ) = (1/4)/(3/4) = 1/3.",
+          "steps": [
+            "From the addition rule, P(A∩B) = P(A)+P(B)−P(A∪B)",
+            "P(A∩B) = 1/3 + 1/4 − 1/2 = 4/12 + 3/12 − 6/12 = 1/12",
+            "(i) P(B|A) = (1/12)/(1/3) = 1/4",
+            "(ii) P(A∩Bᶜ) = 1/3 − 1/12 = 1/4; P(Bᶜ) = 3/4; P(A|Bᶜ) = (1/4)/(3/4) = 1/3"
+          ],
+          "formula": "Addition: P(A∪B)=P(A)+P(B)−P(A∩B); Conditional: P(X|Y)=P(X∩Y)/P(Y)",
           "explanation": "The addition rule supplies the missing joint probability, and each conditional probability is the appropriate joint probability divided by the probability of the given event.",
           "oneShotPreview": "P(A∩B) = 1/12; P(B|A) = 1/4; P(A|B^c) = 1/3."
         },
         {
           "q": "4 a) In a certain town 40% have brown hair, 25% have brown eyes and 15% have both brown hair and brown eyes. A person is selected at random from the town. i) If he has brown hair, what is the probability that he has brown eyes also? ii) If he has brown eyes, determine the probability that he does not have brown hair? [L1][CO2] [5M]",
-          "a": "Let H be brown hair and E be brown eyes, with P(H)=0.40, P(E)=0.25 and P(H ∩ E)=0.15. (i) P(E/H) = P(H ∩ E)/P(H) = 0.15/0.40 = 3/8 = 0.375. (ii) P(H^c ∩ E) = P(E) - P(H ∩ E) = 0.25 - 0.15 = 0.10, so P(H^c/E) = 0.10/0.25 = 2/5 = 0.4.",
+          "a": "Let H denote brown hair and E denote brown eyes, so P(H) = 0.40, P(E) = 0.25 and P(H ∩ E) = 0.15. (i) Conditioning on brown hair restricts the sample space to H, so P(E/H) = P(H ∩ E)/P(H) = 0.15/0.40 = 3/8 = 0.375. (ii) The people with brown eyes but not brown hair have probability P(Hᶜ ∩ E) = P(E) − P(H ∩ E) = 0.25 − 0.15 = 0.10. Since we condition on E, P(Hᶜ/E) = 0.10/0.25 = 2/5 = 0.4.",
+          "steps": [
+            "Define H = brown hair, E = brown eyes: P(H)=0.40, P(E)=0.25, P(H∩E)=0.15",
+            "(i) P(E|H) = P(H∩E)/P(H) = 0.15/0.40 = 3/8 = 0.375",
+            "(ii) P(Hᶜ∩E) = P(E) − P(H∩E) = 0.25 − 0.15 = 0.10",
+            "P(Hᶜ|E) = 0.10/0.25 = 2/5 = 0.4"
+          ],
+          "formula": "Conditional: P(E|H)=P(H∩E)/P(H); P(Hᶜ|E)=[P(E)−P(H∩E)]/P(E)",
           "explanation": "A conditional probability restricts the sample space to the given characteristic, so only the part of the joint event lying inside that characteristic is counted.",
           "oneShotPreview": "P(eyes|hair) = 0.15/0.40 = 0.375; P(no hair|eyes) = 0.10/0.25 = 0.4."
         },
         {
           "q": "4 b) The probability that students A,B,C,D solve the problem are 1/3, 2/5, 1/5 and 1/4 respectively If all of them try to solve the problem, What is the probability that the problem is solved? [L3][CO2] [5M]",
-          "a": "Assuming the students work independently, the problem is solved if at least one of them succeeds. P(none solves) = (1-1/3)(1-2/5)(1-1/5)(1-1/4) = (2/3)(3/5)(4/5)(3/4) = 6/25 = 0.24. Therefore P(problem is solved) = 1 - 6/25 = 19/25 = 0.76.",
+          "a": "Assume the four students work independently. The problem is solved if at least one of them succeeds, so it is easier to use the complement: the problem stays unsolved only when all four fail. Their failure probabilities are 1 − 1/3 = 2/3, 1 − 2/5 = 3/5, 1 − 1/5 = 4/5 and 1 − 1/4 = 3/4. By independence these multiply, giving P(none solves) = (2/3)(3/5)(4/5)(3/4) = (2/5)(3/5) = 6/25 = 0.24. Therefore P(problem is solved) = 1 − 6/25 = 19/25 = 0.76.",
+          "steps": [
+            "P(A)=1/3, P(B)=2/5, P(C)=1/5, P(D)=1/4; assume independence",
+            "Failure probabilities: 2/3, 3/5, 4/5, 3/4",
+            "P(none solves) = (2/3)(3/5)(4/5)(3/4) = (2/5)(3/5) = 6/25 = 0.24",
+            "P(solved) = 1 − 6/25 = 19/25 = 0.76"
+          ],
+          "formula": "Complement + independence: P(at least one solves) = 1 − Π(1 − pᵢ)",
           "explanation": "It is easier to use the complement: the problem stays unsolved only when all four fail, and independence lets their failure probabilities multiply.",
           "oneShotPreview": "1 - (2/3)(3/5)(4/5)(3/4) = 1 - 6/25 = 19/25 = 0.76."
         },
         {
           "q": "5 Two dice are thrown. Let A be the event that the sum of the point on the faces is 9. Let B be the event that at least one number is 6. Find (i) P(A ∩ B) (ii) P(A ∪ B) (iii) P(A^c ∪ B^c) (iv) P(A^c ∩ B^c) (v) P(A ∩ B^c) [L1][CO2] [10M]",
-          "a": "There are 36 equally likely outcomes. A = {(3,6),(4,5),(5,4),(6,3)} so P(A)=4/36; B (at least one 6) has 11 outcomes so P(B)=11/36; A ∩ B = {(3,6),(6,3)} so P(A ∩ B)=2/36=1/18. Hence (i) P(A ∩ B)=1/18; (ii) P(A ∪ B)=4/36+11/36-2/36=13/36; (iii) P(A^c ∪ B^c)=1-P(A ∩ B)=17/18 by De Morgan's law; (iv) P(A^c ∩ B^c)=1-P(A ∪ B)=23/36; (v) P(A ∩ B^c)=P(A)-P(A ∩ B)=2/36=1/18.",
+          "a": "Two dice give 36 equally likely ordered pairs. A (sum 9) = {(3,6),(4,5),(5,4),(6,3)}, so P(A) = 4/36; B (at least one 6) has 11 outcomes, so P(B) = 11/36; and A ∩ B = {(3,6),(6,3)}, so P(A ∩ B) = 2/36 = 1/18. (i) P(A ∩ B) = 1/18. (ii) By the addition rule, P(A ∪ B) = 4/36 + 11/36 − 2/36 = 13/36. (iii) By De Morgan's law, P(Aᶜ ∪ Bᶜ) = 1 − P(A ∩ B) = 1 − 2/36 = 17/18. (iv) P(Aᶜ ∩ Bᶜ) = 1 − P(A ∪ B) = 1 − 13/36 = 23/36. (v) P(A ∩ Bᶜ) = P(A) − P(A ∩ B) = 4/36 − 2/36 = 2/36 = 1/18.",
+          "steps": [
+            "Sample space: 36 ordered pairs",
+            "A = {(3,6),(4,5),(5,4),(6,3)} → P(A)=4/36; B (a 6 appears) → P(B)=11/36; A∩B = {(3,6),(6,3)} → 2/36",
+            "(i) P(A∩B) = 2/36 = 1/18",
+            "(ii) P(A∪B) = 4/36 + 11/36 − 2/36 = 13/36",
+            "(iii) P(Aᶜ∪Bᶜ) = 1 − P(A∩B) = 17/18",
+            "(iv) P(Aᶜ∩Bᶜ) = 1 − P(A∪B) = 23/36",
+            "(v) P(A∩Bᶜ) = P(A) − P(A∩B) = 4/36 − 2/36 = 1/18"
+          ],
+          "formula": "Addition P(A∪B)=P(A)+P(B)−P(A∩B); De Morgan P(Aᶜ∪Bᶜ)=1−P(A∩B)",
           "explanation": "Counting the outcomes in A, B and A ∩ B and then applying the addition rule, complement rule and De Morgan's laws yields all five requested probabilities.",
           "oneShotPreview": "A∩B=1/18; A∪B=13/36; A^c∪B^c=17/18; A^c∩B^c=23/36; A∩B^c=1/18."
         },
         {
           "q": "6 In a certain college 25% of boys and 10% of girls are studying mathematics. The girls Constitute 60% of the student body. (a) What is the probability that mathematics is being studied? (b) If a student is selected at random and is found to be studying mathematics, find the probability that the student is a girl? (c) a boy [L1][CO2] [10M]",
-          "a": "Let G be girl, B be boy and M be studying mathematics. P(G)=0.6, P(B)=0.4, P(M/G)=0.10, P(M/B)=0.25. (a) By the law of total probability, P(M)=0.6(0.10)+0.4(0.25)=0.06+0.10=0.16. (b) By Bayes' theorem, P(G/M)=0.06/0.16=3/8=0.375. (c) P(B/M)=0.10/0.16=5/8=0.625.",
+          "a": "Let G be girl, B be boy and M be studying mathematics, with P(G) = 0.6, P(B) = 0.4, P(M/G) = 0.10 and P(M/B) = 0.25. (a) By the law of total probability, P(M) = P(G)P(M/G) + P(B)P(M/B) = 0.6(0.10) + 0.4(0.25) = 0.06 + 0.10 = 0.16. (b) By Bayes' theorem, P(G/M) = P(G)P(M/G)/P(M) = 0.06/0.16 = 3/8 = 0.375. (c) Similarly P(B/M) = P(B)P(M/B)/P(M) = 0.10/0.16 = 5/8 = 0.625, which also equals 1 − 3/8.",
+          "steps": [
+            "Priors P(G)=0.6, P(B)=0.4; likelihoods P(M|G)=0.10, P(M|B)=0.25",
+            "(a) Evidence P(M) = 0.6(0.10) + 0.4(0.25) = 0.06 + 0.10 = 0.16",
+            "(b) Posterior P(G|M) = 0.06/0.16 = 3/8 = 0.375 (Bayes)",
+            "(c) Posterior P(B|M) = 0.10/0.16 = 5/8 = 0.625"
+          ],
+          "formula": "Total probability P(M)=ΣP(group)P(M|group); Bayes P(G|M)=P(G)P(M|G)/P(M)",
           "explanation": "Total probability gives the overall rate of studying mathematics, and Bayes' theorem reverses it to identify which group a randomly selected mathematics student belongs to.",
           "oneShotPreview": "P(M)=0.16; P(girl|M)=3/8; P(boy|M)=5/8."
         },
         {
           "q": "7 Two dice are thrown. Let X assign to each point (a, b) in S the maximum of its numbers i.e, X(a,b)= max (a,b). Find the probability distribution. X is a random variable with X(s)={1,2,3,4,5,6}. Also find the mean and variance of the distribution. [L5][CO2] [10M]",
-          "a": "For X = k the pairs with maximum k are (k,1)...(k,k) and (1,k)...(k-1,k), i.e. 2k-1 outcomes, so P(X=k)=(2k-1)/36 for k=1..6: 1/36, 3/36, 5/36, 7/36, 9/36, 11/36. E(X)=[1(1)+2(3)+3(5)+4(7)+5(9)+6(11)]/36=161/36≈4.472. E(X^2)=[1(1)+4(3)+9(5)+16(7)+25(9)+36(11)]/36=791/36≈21.972. Var(X)=791/36-(161/36)^2=2555/1296≈1.971.",
+          "a": "For X = max(a, b), the pairs whose maximum equals k are (k,1), ..., (k,k) and (1,k), ..., (k−1,k), that is 2k − 1 outcomes, so P(X = k) = (2k − 1)/36 for k = 1, ..., 6. The probability distribution is therefore 1/36, 3/36, 5/36, 7/36, 9/36, 11/36 for k = 1 to 6, which sums to 36/36 = 1. The mean is E(X) = Σ k·P(X=k) = [1(1) + 2(3) + 3(5) + 4(7) + 5(9) + 6(11)]/36 = [1 + 6 + 15 + 28 + 45 + 66]/36 = 161/36 ≈ 4.472. The second moment is E(X²) = [1²(1) + 2²(3) + 3²(5) + 4²(7) + 5²(9) + 6²(11)]/36 = [1 + 12 + 45 + 112 + 225 + 396]/36 = 791/36. Hence Var(X) = E(X²) − [E(X)]² = 791/36 − (161/36)² = 2555/1296 ≈ 1.971.",
+          "steps": [
+            "For X = k, count the 2k−1 ordered pairs whose maximum is k",
+            "PMF: P(X=k) = (2k−1)/36 → 1, 3, 5, 7, 9, 11 over 36 (sums to 1)",
+            "E(X) = [1+6+15+28+45+66]/36 = 161/36 ≈ 4.472",
+            "E(X²) = [1+12+45+112+225+396]/36 = 791/36",
+            "Var(X) = 791/36 − (161/36)² = 2555/1296 ≈ 1.971"
+          ],
+          "formula": "P(X=k)=(2k−1)/36; E(X)=Σx p(x); Var(X)=E(X²)−[E(X)]²",
           "explanation": "Counting the 2k-1 pairs whose maximum is k builds the PMF, and the formulas E(X)=sum x p(x) and Var(X)=E(X^2)-[E(X)]^2 give the mean and variance.",
           "oneShotPreview": "P(X=k)=(2k-1)/36; mean=161/36≈4.47; variance=2555/1296≈1.97."
         },
         {
           "q": "8 A random variable X has the following probability function: X = 0,1,2,3,4,5,6,7 with P(x) = 0, K, 2K, 2K, 3K, K^2, 2K^2, 7K^2+K. Determine (i) K (ii) Evaluate P(X>=6) and P(0<X<5) (iii) if P(X<=K)>1/2, find the minimum value of K (iv) variance. [L5][CO2] [10M]",
-          "a": "Summing all probabilities gives 9K+10K^2=1, i.e. 10K^2+9K-1=0, so the positive root is K=1/10. (ii) P(X>=6)=2K^2+(7K^2+K)=9K^2+K=0.19; P(0<X<5)=K+2K+2K+3K=8K=0.8. (iii) Reading K here as the value k of X, the cumulative probabilities are P(X<=3)=0.5 and P(X<=4)=0.8, so the minimum integer k with P(X<=k)>1/2 is 4. (iv) With probabilities 0, 0.1, 0.2, 0.2, 0.3, 0.01, 0.02, 0.17: E(X)=3.66 and E(X^2)=16.8, hence Var(X)=16.8-(3.66)^2=3.4044.",
+          "a": "The probabilities must sum to 1, so 0 + K + 2K + 2K + 3K + K² + 2K² + (7K² + K) = 9K + 10K² = 1. (i) Solving 10K² + 9K − 1 = 0 gives K = (−9 ± 11)/20, and the admissible positive root is K = 1/10. (ii) With K = 0.1 the probabilities are 0, 0.1, 0.2, 0.2, 0.3, 0.01, 0.02, 0.17, so P(X ≥ 6) = 2K² + (7K² + K) = 9K² + K = 0.19 and P(0 < X < 5) = K + 2K + 2K + 3K = 8K = 0.8. (iii) Reading K here as the value k of X, the cumulative probabilities are P(X ≤ 3) = 0.5 and P(X ≤ 4) = 0.8, so the minimum k with P(X ≤ k) > 1/2 is 4. (iv) E(X) = 3.66 and E(X²) = 16.8, hence Var(X) = 16.8 − (3.66)² = 3.4044.",
+          "steps": [
+            "Normalise: ΣP(x) = 9K + 10K² = 1 → 10K² + 9K − 1 = 0",
+            "(i) Positive root K = (−9+11)/20 = 1/10 = 0.1",
+            "(ii) P(X≥6) = 9K²+K = 0.19; P(0<X<5) = 8K = 0.8",
+            "(iii) P(X≤3)=0.5, P(X≤4)=0.8 → minimum k = 4",
+            "(iv) E(X)=3.66, E(X²)=16.8 → Var = 16.8 − 13.3956 = 3.4044"
+          ],
+          "formula": "Normalisation Σp(x)=1; Var(X)=E(X²)−[E(X)]²",
           "explanation": "Normalising the PMF fixes K; every other quantity is then found by summing the appropriate probabilities and applying Var(X)=E(X^2)-[E(X)]^2.",
           "oneShotPreview": "K=1/10; P(X>=6)=0.19; P(0<X<5)=0.8; minimum k=4; Var=3.4044."
         },
         {
           "q": "9 a) Find the mean and variance of the uniform probability distribution given by f(x) = 1/n for x = 1,2,...,n. [L1][CO2] [5M]",
-          "a": "For the discrete uniform distribution on 1,...,n, E(X)=(1/n) times the sum of x from 1 to n = (1/n)*n(n+1)/2 = (n+1)/2. Also E(X^2)=(1/n) times the sum of x^2 = (n+1)(2n+1)/6. Therefore Var(X)=(n+1)(2n+1)/6 - (n+1)^2/4 = (n^2-1)/12.",
+          "a": "For the discrete uniform distribution on x = 1, 2, ..., n, each outcome has probability 1/n. The mean is E(X) = (1/n)Σx = (1/n)·n(n+1)/2 = (n+1)/2. The second moment is E(X²) = (1/n)Σx² = (1/n)·n(n+1)(2n+1)/6 = (n+1)(2n+1)/6. Therefore Var(X) = E(X²) − [E(X)]² = (n+1)(2n+1)/6 − (n+1)²/4 = (n²−1)/12 after putting both terms over the common denominator 12.",
+          "steps": [
+            "Each value x = 1,...,n has probability 1/n",
+            "E(X) = (1/n)·n(n+1)/2 = (n+1)/2",
+            "E(X²) = (1/n)·n(n+1)(2n+1)/6 = (n+1)(2n+1)/6",
+            "Var(X) = (n+1)(2n+1)/6 − (n+1)²/4 = (n²−1)/12"
+          ],
+          "formula": "E(X) = (n+1)/2; Var(X) = (n²−1)/12",
           "explanation": "Substituting the standard sums of the first n integers and their squares into the moment formulas gives closed-form mean and variance.",
           "oneShotPreview": "Mean = (n+1)/2; Variance = (n^2-1)/12."
         },
         {
           "q": "a) If a random variable has a Probability density f(x) as f(x) = {2e^{-2x}, for x > 0; 0, for x <= 0}. Find the Probabilities that it will take on a value (i) Between 1&3 (ii) Greater than 0.5 [L1][CO2] [5M]",
-          "a": "This is the exponential distribution with rate 2. (i) P(1<X<3) = integral from 1 to 3 of 2e^{-2x} dx = e^{-2} - e^{-6} ≈ 0.1353 - 0.0025 = 0.1329. (ii) P(X>0.5) = integral from 0.5 to infinity of 2e^{-2x} dx = e^{-1} ≈ 0.3679.",
+          "a": "This is the exponential distribution with rate 2, and ∫₀^∞ 2e^{−2x}dx = 1 confirms it is a valid density. (i) P(1 < X < 3) = ∫₁³ 2e^{−2x}dx = [−e^{−2x}]₁³ = e^{−2} − e^{−6} ≈ 0.1353 − 0.0025 = 0.1329. (ii) P(X > 0.5) = ∫₀.₅^∞ 2e^{−2x}dx = [−e^{−2x}]₀.₅^∞ = e^{−1} ≈ 0.3679. In general, for this density P(X > a) = e^{−2a}, so the tail probability at a = 0.5 is e^{−1} ≈ 0.3679.",
+          "steps": [
+            "Identify f(x) = 2e^{−2x}, x > 0 as exponential with rate 2",
+            "Antiderivative: ∫2e^{−2x}dx = −e^{−2x}",
+            "(i) P(1<X<3) = [−e^{−2x}]₁³ = e^{−2} − e^{−6} ≈ 0.1329",
+            "(ii) P(X>0.5) = [−e^{−2x}]₀.₅^∞ = e^{−1} ≈ 0.3679"
+          ],
+          "formula": "P(a<X<b)=∫ₐᵇ 2e^{−2x}dx = e^{−2a}−e^{−2b}; P(X>a)=e^{−2a}",
           "explanation": "Integrating the density over the required interval gives the probability, and for an exponential density the tail integral from a to infinity simplifies to e^{-2a}.",
           "oneShotPreview": "P(1<X<3)=e^-2-e^-6≈0.133; P(X>0.5)=e^-1≈0.368."
         },
         {
           "q": "10 A continuous random variable has the probability density function. f(x) = {k(1 - x^2); 0 < x < 1; 0; Otherwise}. Determine i) Constant 'k' ii) Mean and iii) Variance. [L5][CO2] [10M]",
-          "a": "Normalising the density: integral from 0 to 1 of k(1-x^2) dx = k[x - x^3/3]_0^1 = 2k/3 = 1, so k = 3/2. Mean E(X) = (3/2) integral from 0 to 1 of x(1-x^2) dx = (3/2)(1/4) = 3/8 = 0.375. E(X^2) = (3/2) integral from 0 to 1 of x^2(1-x^2) dx = (3/2)(2/15) = 1/5. Variance = 1/5 - (3/8)^2 = 19/320 ≈ 0.0594.",
+          "a": "The density is f(x) = k(1 − x²) for 0 < x < 1 and zero otherwise. (i) Normalising gives ∫₀¹ k(1 − x²)dx = k[x − x³/3]₀¹ = k(1 − 1/3) = 2k/3 = 1, so k = 3/2. (ii) The mean is E(X) = (3/2)∫₀¹ x(1 − x²)dx = (3/2)[x²/2 − x⁴/4]₀¹ = (3/2)(1/4) = 3/8 = 0.375. (iii) The second moment is E(X²) = (3/2)∫₀¹ x²(1 − x²)dx = (3/2)[x³/3 − x⁵/5]₀¹ = (3/2)(2/15) = 1/5, hence Var(X) = 1/5 − (3/8)² = 64/320 − 45/320 = 19/320 ≈ 0.0594.",
+          "steps": [
+            "Normalise: ∫₀¹ k(1−x²)dx = 2k/3 = 1 → k = 3/2",
+            "E(X) = (3/2)∫₀¹ x(1−x²)dx = (3/2)(1/4) = 3/8 = 0.375",
+            "E(X²) = (3/2)∫₀¹ x²(1−x²)dx = (3/2)(2/15) = 1/5",
+            "Var(X) = 1/5 − (3/8)² = 64/320 − 45/320 = 19/320 ≈ 0.0594"
+          ],
+          "formula": "∫f(x)dx=1; E(X)=∫x f(x)dx; Var(X)=E(X²)−[E(X)]²",
           "explanation": "The normalisation condition fixes k, and integrating x f(x) and x^2 f(x) gives the mean and second moment required for the variance.",
           "oneShotPreview": "k=3/2; mean=3/8; variance=19/320≈0.0594."
         },
         {
           "q": "11 Probability density function of a random variable X is f(x) = {(1/2) sin x, for 0 <= x <= pi; 0, elsewhere}. Find the mean, mode and median of the distribution and also find the probability between 0 and pi/2. [L1][CO2] [10M]",
-          "a": "The density is symmetric about pi/2. Mean E(X) = (1/2) integral from 0 to pi of x sin x dx = (1/2)[-x cos x + sin x]_0^pi = pi/2. The density is greatest where sin x = 1, i.e. at x = pi/2, so the mode is pi/2; by symmetry the median is also pi/2. P(0<X<pi/2) = (1/2) integral from 0 to pi/2 of sin x dx = (1/2)[-cos x]_0^{pi/2} = 1/2.",
+          "a": "The density f(x) = (1/2)sin x on [0, π] is non-negative and integrates to (1/2)[−cos x]₀^π = 1, and it is symmetric about x = π/2. The mean is E(X) = (1/2)∫₀^π x sin x dx = (1/2)[−x cos x + sin x]₀^π = π/2. The density is largest where sin x = 1, namely at x = π/2, so the mode is π/2; by symmetry the median is also π/2. Finally, P(0 < X < π/2) = (1/2)∫₀^{π/2} sin x dx = (1/2)[−cos x]₀^{π/2} = 1/2.",
+          "steps": [
+            "Verify normalisation: (1/2)[−cos x]₀^π = 1; density is symmetric about π/2",
+            "E(X) = (1/2)∫₀^π x sin x dx = (1/2)[−x cos x + sin x]₀^π = π/2",
+            "Mode: sin x is maximal at x = π/2; median by symmetry = π/2",
+            "P(0<X<π/2) = (1/2)[−cos x]₀^{π/2} = 1/2"
+          ],
+          "formula": "Mean E(X)=∫x f(x)dx; mode = argmax f(x); median from F(m)=1/2",
           "explanation": "The symmetric sine density is centred at pi/2 so the mean, mode and median coincide there, and the integral over half the support is exactly half the total probability.",
           "oneShotPreview": "Mean = mode = median = pi/2; P(0<X<pi/2) = 1/2."
         }
@@ -2734,117 +3008,265 @@ export const QB_QUESTIONS = {
       "questions": [
         {
           "q": "1 a) State the formula for Binomial distribution. [L1][CO3] [2M]",
-          "a": "If X is the number of successes in n independent Bernoulli trials, each with success probability p and failure probability q = 1 - p, then X follows a binomial distribution. Its probability mass function is P(X = x) = nCx * p^x * q^(n-x), for x = 0, 1, 2, ..., n. The mean is np and the variance is npq. It is a discrete distribution used when there are a fixed number of independent trials with only two possible outcomes per trial.",
-          "explanation": "Each of the x successes contributes p and the remaining n-x trials contribute q; the factor nCx counts the number of ways to choose which trials are successes. Independence of trials allows the probabilities to be multiplied.",
-          "oneShotPreview": "Binomial: P(X=x) = nCx p^x q^(n-x); mean = np, variance = npq."
+          "a": "A discrete random variable X follows a binomial distribution when it counts the number of successes in n independent and identical Bernoulli trials, each having success probability p and failure probability q = 1 - p. Its probability mass function is P(X = x) = C(n,x) p^x q^(n-x), for x = 0, 1, 2, ..., n, and zero otherwise. The factor C(n,x) = n!/(x!(n-x)!) counts the number of ways of arranging the x successes among the n trials, while p^x q^(n-x) is the probability of any one such arrangement. Because the trials are independent, the constituent probabilities multiply. The distribution has mean E[X] = np and variance Var(X) = npq.",
+          "steps": [
+            "Identify the setting: n independent Bernoulli trials, each with success probability p and failure probability q = 1 - p.",
+            "Write the probability mass function: P(X = x) = C(n,x) p^x q^(n-x), for x = 0, 1, ..., n.",
+            "Interpret C(n,x) as the number of favourable arrangements and p^x q^(n-x) as the probability of one arrangement.",
+            "State the moments of the distribution: mean = np and variance = npq."
+          ],
+          "formula": "Binomial: P(X=r)=C(n,r) p^r q^(n-r), q=1-p; mean=np, variance=npq",
+          "explanation": "Each of the x successes contributes a factor p and each of the remaining n-x trials contributes a factor q; independence allows these to be multiplied. The combinatorial coefficient C(n,x) counts how many different positions the successes can occupy, giving the complete pmf.",
+          "oneShotPreview": "Binomial: P(X=x)=C(n,x)p^x q^(n-x); mean=np, variance=npq."
         },
         {
           "q": "1 b) A coin is tossed 9 times. Find the probability of getting 5 heads? [L1][CO3] [2M]",
-          "a": "Here n = 9 trials, p = 1/2 (head) and q = 1/2 (tail), so X ~ Binomial(9, 1/2). P(X = 5) = 9C5 * (1/2)^5 * (1/2)^4 = 126 / 2^9 = 126/512 = 63/256. Therefore the probability of getting exactly 5 heads is about 0.2461 (24.61%).",
-          "explanation": "A fair coin gives equal success/failure probability, so the answer reduces to the number of favourable arrangements (9C5 = 126) divided by the total 2^9 = 4096 equally likely outcomes.",
-          "oneShotPreview": "P(5 heads in 9 tosses) = 126/512 = 0.2461."
+          "a": "Here the number of trials is n = 9 and, for a fair coin, the probability of a head is p = 1/2 and of a tail is q = 1/2, so X ~ Binomial(9, 1/2). The binomial pmf is P(X = x) = C(9,x)(1/2)^x(1/2)^(9-x) = C(9,x)/2^9. Substituting x = 5 gives C(9,5) = 9!/(5!4!) = 126 and 2^9 = 512. Hence P(X = 5) = 126/512 = 63/256. Therefore the probability of getting exactly 5 heads is 63/256 ≈ 0.2461, or about 24.61%.",
+          "steps": [
+            "Identify parameters: n = 9 tosses, p = 1/2 (head), q = 1/2 (tail), so X ~ Binomial(9, 1/2).",
+            "Write the pmf: P(X = x) = C(9,x)(1/2)^x(1/2)^(9-x) = C(9,x)/2^9.",
+            "Substitute x = 5: C(9,5) = 126 and 2^9 = 512.",
+            "Compute: P(X = 5) = 126/512 = 63/256 ≈ 0.2461."
+          ],
+          "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r)",
+          "explanation": "A fair coin gives equal success and failure probabilities, so p + q = 1 and the answer reduces to the number of favourable arrangements, C(9,5) = 126, divided by the total number of equally likely sequences, 2^9 = 512.",
+          "oneShotPreview": "P(5 heads in 9 tosses) = 126/512 = 63/256 ≈ 0.2461."
         },
         {
           "q": "1 c) Define Poisson distribution. [L1][CO3] [2M]",
-          "a": "The Poisson distribution is a discrete probability distribution that gives the probability of a given number of events occurring in a fixed interval of time, space, or volume when the events occur independently and at a constant average rate λ. Its probability mass function is P(X = x) = e^(-λ) * λ^x / x!, for x = 0, 1, 2, ... . Both the mean and the variance of the distribution equal λ. It is often used as an approximation to the binomial distribution when n is large and p is small.",
-          "explanation": "It models rare, random, independent occurrences such as the number of defective items or incoming calls, where only the average rate λ is known. The single parameter λ completely determines the distribution.",
-          "oneShotPreview": "Poisson: P(X=x)=e^-λ λ^x/x!, modelling random events; mean = variance = λ."
+          "a": "The Poisson distribution is a discrete probability distribution that gives the probability of a specified number of events occurring in a fixed interval of time, space, area, or volume, when the events occur independently and at a constant average rate λ. Its probability mass function is P(X = x) = e^(-λ) λ^x / x!, for x = 0, 1, 2, ..., with e the base of natural logarithms. The distribution has a single parameter λ, and both its mean and its variance equal λ. It is commonly used to model rare, random occurrences such as the number of defective items in a batch or the number of calls arriving at a switchboard, and it approximates the binomial distribution when n is large and p is small with λ = np.",
+          "steps": [
+            "Identify the conditions: independent events occurring at a constant average rate λ in a fixed interval.",
+            "Write the probability mass function: P(X = x) = e^-λ λ^x / x!, for x = 0, 1, 2, ....",
+            "State the moments: mean = variance = λ, so a single parameter λ determines the whole distribution.",
+            "Note the binomial limit: for large n and small p, Binomial(n,p) is approximated by Poisson(λ = np)."
+          ],
+          "formula": "Poisson: P(X=r)=e^-λ λ^r / r!; mean=variance=λ",
+          "explanation": "The Poisson model applies to events that happen randomly and independently with a known average rate λ but no fixed upper limit on the count. Because λ alone fixes both the centre and the spread, it is the only parameter needed.",
+          "oneShotPreview": "Poisson: P(X=x)=e^-λ λ^x/x!, modelling random events; mean=variance=λ."
         },
         {
           "q": "1 d) If the variance of a Poisson variate is 3. Find P(1 ≤ X < 4) ? [L1][CO4] [2M]",
-          "a": "For a Poisson distribution, variance = mean = λ, so λ = 3. We need P(1 ≤ X < 4) = P(X=1) + P(X=2) + P(X=3). Using P(X=x) = e^-3 * 3^x / x!, this is e^-3 (3 + 9/2 + 27/6) = e^-3 (3 + 4.5 + 4.5) = 12 e^-3. Since e^-3 ≈ 0.049787, the probability is 12 * 0.049787 ≈ 0.5974.",
-          "explanation": "The Poisson variance equals its parameter, fixing λ = 3; summing the three integer probabilities in the interval gives the required range probability.",
+          "a": "For a Poisson distribution the mean and the variance are both equal to the parameter λ, so Var(X) = 3 implies λ = 3. The pmf is therefore P(X = x) = e^-3 · 3^x / x!. The strict upper bound means P(1 ≤ X < 4) = P(X=1) + P(X=2) + P(X=3). Factoring out e^-3 gives e^-3(3^1/1! + 3^2/2! + 3^3/3!) = e^-3(3 + 9/2 + 27/6) = e^-3(3 + 4.5 + 4.5) = 12e^-3. Since e^-3 ≈ 0.049787, the required probability is 12 × 0.049787 ≈ 0.5974.",
+          "steps": [
+            "Identify the parameter: for Poisson, variance = λ, so λ = 3.",
+            "Write the pmf: P(X = x) = e^-3 · 3^x / x!.",
+            "Expand the required range: P(1 ≤ X < 4) = P(1) + P(2) + P(3).",
+            "Substitute: e^-3(3/1! + 9/2! + 27/3!) = e^-3(3 + 4.5 + 4.5) = 12e^-3.",
+            "Compute: 12 × 0.049787 ≈ 0.5974."
+          ],
+          "formula": "Poisson: P(X=r)=e^-λ λ^r / r!",
+          "explanation": "The equality variance = mean = λ fixes λ = 3 immediately. Summing the three integer probabilities inside the interval and factoring out e^-3 leaves the simple expression 12e^-3.",
           "oneShotPreview": "λ = 3; P(1≤X<4) = 12e^-3 ≈ 0.5974."
         },
         {
           "q": "1 e) State Normal probability density formula. [L1][CO4] [2M]",
-          "a": "A continuous random variable X with mean μ and standard deviation σ is normally distributed, written X ~ N(μ, σ²), with probability density function f(x) = (1 / (σ sqrt(2π))) * exp[ -(x - μ)² / (2σ²) ], for -∞ < x < ∞. The curve is bell-shaped and symmetric about x = μ. The standard normal distribution has μ = 0 and σ = 1, with z = (x - μ)/σ.",
-          "explanation": "The density integrates to 1 over the real line; the exponent measures the squared distance from the mean, giving the characteristic symmetric bell shape controlled by σ.",
+          "a": "A continuous random variable X with mean μ and standard deviation σ is said to be normally distributed, written X ~ N(μ, σ²), if its probability density function is f(x) = (1/(σ√(2π))) · exp[-(x-μ)²/(2σ²)], for -∞ < x < ∞. The constant 1/(σ√(2π)) normalizes the curve so that the total area under it equals 1. The exponent measures the squared deviation of x from the mean, producing the characteristic bell-shaped curve that is symmetric about x = μ. The spread is controlled entirely by σ: larger σ gives a flatter, wider curve. The special case μ = 0 and σ = 1 is the standard normal distribution, and any normal variable is converted to it using z = (x - μ)/σ.",
+          "steps": [
+            "Identify the parameters: mean μ and standard deviation σ, written X ~ N(μ, σ²).",
+            "Write the density: f(x) = (1/(σ√(2π))) · exp[-(x-μ)²/(2σ²)], -∞ < x < ∞.",
+            "Interpret the factors: the constant normalizes the total area to 1 and the exponent gives symmetry about μ.",
+            "State the standardization: Z = (x-μ)/σ follows the standard normal N(0,1)."
+          ],
+          "formula": "Normal: f(x)=(1/(σ√(2π)))e^{-(x-μ)²/(2σ²)}; Z=(x-μ)/σ",
+          "explanation": "The density is bell-shaped and symmetric about μ, and its total integral over the real line is 1. The exponent penalizes values far from the mean quadratically, which is what gives the normal curve its familiar shape.",
           "oneShotPreview": "Normal pdf: f(x) = (1/(σ√(2π))) e^{-(x-μ)²/(2σ²)}."
         },
         {
           "q": "2 a) Derive mean of Binomial distribution. [L3][CO3] [5M]",
-          "a": "Mean E[X] = Σ_{x=0}^{n} x * nCx * p^x * q^(n-x). The x = 0 term is zero, so E[X] = Σ_{x=1}^{n} x * n!/(x!(n-x)!) * p^x * q^(n-x). Cancelling x with x! gives x * nCx = n * (n-1)C(x-1), hence E[X] = np * Σ_{x=1}^{n} (n-1)C(x-1) * p^(x-1) * q^(n-x). Putting y = x-1, the sum becomes Σ_{y=0}^{n-1} (n-1)Cy * p^y * q^((n-1)-y) = (p + q)^(n-1) = 1 by the binomial theorem. Therefore E[X] = np.",
-          "explanation": "The factor x nCx is rewritten as n(n-1)C(x-1), leaving a complete binomial expansion that sums to 1, so only np remains.",
-          "oneShotPreview": "Mean of Binomial, E[X] = Σ x·nCx p^x q^(n-x) = np."
+          "a": "The mean is E[X] = Σ_(x=0)^n x · C(n,x) p^x q^(n-x). The x = 0 term is zero, so E[X] = Σ_(x=1)^n x · n!/(x!(n-x)!) · p^x q^(n-x). Using the identity x·C(n,x) = n·C(n-1, x-1), obtained by cancelling x with x!, we get E[X] = np Σ_(x=1)^n C(n-1, x-1) p^(x-1) q^(n-x). Setting y = x - 1 changes the sum into Σ_(y=0)^(n-1) C(n-1,y) p^y q^((n-1)-y), which is exactly the binomial expansion of (p + q)^(n-1) = 1^(n-1) = 1. Therefore E[X] = np · 1 = np. This confirms that the mean number of successes equals the number of trials times the success probability.",
+          "steps": [
+            "Start from the definition: E[X] = Σ_(x=0)^n x·C(n,x)p^x q^(n-x); the x=0 term vanishes.",
+            "Apply the identity x·C(n,x) = n·C(n-1,x-1), so E[X] = np Σ_(x=1)^n C(n-1,x-1)p^(x-1)q^(n-x).",
+            "Substitute y = x-1 to obtain E[X] = np Σ_(y=0)^(n-1) C(n-1,y)p^y q^((n-1)-y).",
+            "Recognize the sum as (p+q)^(n-1) = 1 by the binomial theorem.",
+            "Conclude E[X] = np."
+          ],
+          "formula": "E[X] = Σ x·C(n,x)p^x q^(n-x) = np·(p+q)^(n-1) = np",
+          "explanation": "Rewriting x·C(n,x) as n·C(n-1,x-1) leaves a complete binomial expansion that sums to (p+q)^(n-1) = 1, so only the factor np survives.",
+          "oneShotPreview": "Mean of Binomial: E[X] = Σ x·C(n,x)p^x q^(n-x) = np."
         },
         {
           "q": "2 b) 20% of items produced from a factory are defective. Find the probability that in a sample of 5 chosen at random (i) one is defective (ii) P(1 < x < 4) [L1][CO3] [5M]",
-          "a": "Here p = 0.20 (defective), q = 0.80 and n = 5, so X ~ Binomial(5, 0.2). (i) P(X=1) = 5C1 (0.2)(0.8)^4 = 5 * 0.2 * 0.4096 = 0.4096. (ii) P(1 < X < 4) = P(X=2) + P(X=3) = 10(0.2)^2(0.8)^3 + 10(0.2)^3(0.8)^2 = 0.2048 + 0.0512 = 0.2560.",
-          "explanation": "Each item is an independent Bernoulli trial with defect probability 0.2; applying the binomial pmf and summing over the requested values gives the two probabilities.",
+          "a": "Each item is an independent trial with defect probability p = 0.20 and good-item probability q = 0.80, and the sample size is n = 5, so X ~ Binomial(5, 0.2). The pmf is P(X = x) = C(5,x)(0.2)^x(0.8)^(5-x). (i) For exactly one defective, P(X=1) = C(5,1)(0.2)(0.8)^4 = 5 × 0.2 × 0.4096 = 0.4096. (ii) The strict inequality 1 < X < 4 covers X = 2 and X = 3: P(X=2) = 10(0.2)^2(0.8)^3 = 10 × 0.04 × 0.512 = 0.2048, and P(X=3) = 10(0.2)^3(0.8)^2 = 10 × 0.008 × 0.64 = 0.0512. Their sum is 0.2048 + 0.0512 = 0.2560. Hence (i) 0.4096 and (ii) 0.2560.",
+          "steps": [
+            "Identify parameters: n = 5, p = 0.20 (defective), q = 0.80, so X ~ Binomial(5,0.2).",
+            "Write the pmf: P(X = x) = C(5,x)(0.2)^x(0.8)^(5-x).",
+            "Part (i): P(X=1) = C(5,1)(0.2)(0.8)^4 = 5 × 0.2 × 0.4096 = 0.4096.",
+            "Part (ii): 1 < X < 4 means X = 2 or 3; P(2) = 10(0.2)^2(0.8)^3 = 0.2048 and P(3) = 10(0.2)^3(0.8)^2 = 0.0512.",
+            "Sum the two terms: 0.2048 + 0.0512 = 0.2560."
+          ],
+          "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r)",
+          "explanation": "Every item is an independent Bernoulli trial with defect probability 0.2. Applying the binomial pmf gives the single-point probability, and summing over the two integer values inside the strict interval gives the range probability.",
           "oneShotPreview": "n=5, p=0.2: P(X=1)=0.4096; P(1<X<4)=0.2560."
         },
         {
           "q": "3 Fit a Binomial distribution to the following frequency distribution: x: 0, 1, 2, 3, 4, 5; f: 2, 14, 20, 34, 22, 8 [L3][CO3] [10M]",
-          "a": "Total frequency N = 100. Mean = Σfx/N = (14 + 40 + 102 + 88 + 40)/100 = 284/100 = 2.84. Since mean = np with n = 5, p = 2.84/5 = 0.568 and q = 0.432. Expected frequency = N * 5Cx * p^x * q^(5-x). The fitted frequencies are: x=0 → 1.5, x=1 → 9.9, x=2 → 26.0, x=3 → 34.2, x=4 → 22.5, x=5 → 5.9 (total ≈ 100). These are close to the observed frequencies, so the binomial fit with p = 0.568 is reasonable.",
-          "explanation": "Fitting means equating the theoretical mean np to the observed sample mean to estimate p, then using the binomial pmf scaled by N to generate expected counts for comparison.",
+          "a": "The total frequency is N = 2+14+20+34+22+8 = 100. The sample mean is Σfx/N = (0·2 + 1·14 + 2·20 + 3·34 + 4·22 + 5·8)/100 = (14+40+102+88+40)/100 = 284/100 = 2.84. For a binomial fit we equate the theoretical mean np to the observed mean: with n = 5, p = 2.84/5 = 0.568 and q = 0.432. Expected frequencies are N·C(5,x)p^x q^(5-x) = 100·C(5,x)(0.568)^x(0.432)^(5-x). Computing term by term gives expected frequencies of approximately 1.5, 9.9, 26.0, 34.2, 22.5, and 5.9, which total about 100. Comparison table (x : observed / expected): 0: 2/1.5, 1: 14/9.9, 2: 20/26.0, 3: 34/34.2, 4: 22/22.5, 5: 8/5.9. The close agreement shows that Binomial(5, 0.568) is a reasonable fit to the data.",
+          "steps": [
+            "Find total frequency N = 100 and compute the sample mean Σfx/N = 284/100 = 2.84.",
+            "Estimate p from np = mean: p = 2.84/5 = 0.568, so q = 1 - p = 0.432.",
+            "Write the expected frequency formula: f_e(x) = N·C(5,x)(0.568)^x(0.432)^(5-x).",
+            "Substitute x = 0..5 and tabulate: x=0: 1.5/2, x=1: 9.9/14, x=2: 26.0/20, x=3: 34.2/34, x=4: 22.5/22, x=5: 5.9/8 (expected/observed).",
+            "Check the expected frequencies total ≈ 100 and conclude the binomial fit is reasonable."
+          ],
+          "formula": "Fit: p = mean/n; expected f_x = N·C(n,x)p^x q^(n-x)",
+          "explanation": "Fitting a binomial means estimating its single free parameter p by equating the theoretical mean np to the observed sample mean, then scaling the binomial pmf by N to produce expected counts that can be compared with the observed frequencies.",
           "oneShotPreview": "Fit: p = 0.568, q = 0.432 → expected f ≈ 1.5, 9.9, 26.0, 34.2, 22.5, 5.9."
         },
         {
           "q": "4 a) Out of 800 families with 5 children each, how many would you expect to have (i) 3 boys (ii) 5 girls (iii) either 2 or 3 boys. Assume equal probabilities for boys and girls. [L3][CO3] [5M]",
-          "a": "With p = q = 1/2 and n = 5, X ~ Binomial(5, 1/2). (i) P(3 boys) = 5C3 (1/2)^5 = 10/32 = 0.3125, so expected families = 800 * 0.3125 = 250. (ii) P(5 girls) = P(0 boys) = (1/2)^5 = 1/32 = 0.03125, so expected = 800 * 0.03125 = 25. (iii) P(2 or 3 boys) = 10/32 + 10/32 = 0.625, so expected = 800 * 0.625 = 500 families.",
-          "explanation": "Equal boy/girl probabilities make all 2^5 = 32 birth sequences equally likely; multiplying each probability by 800 gives the expected number of families.",
+          "a": "With equal chances, p = q = 1/2 and n = 5 children, so the number of boys X ~ Binomial(5, 1/2) and P(X = x) = C(5,x)/2^5 = C(5,x)/32. (i) P(3 boys) = C(5,3)/32 = 10/32 = 0.3125, so the expected number of families is 800 × 0.3125 = 250. (ii) Five girls means zero boys: P(X=0) = 1/32 = 0.03125, giving 800 × 0.03125 = 25 families. (iii) P(2 or 3 boys) = [C(5,2) + C(5,3)]/32 = (10 + 10)/32 = 0.625, giving 800 × 0.625 = 500 families. Thus the expected counts are 250, 25, and 500 families respectively.",
+          "steps": [
+            "Identify parameters: n = 5, p = q = 1/2, so X (number of boys) ~ Binomial(5,1/2).",
+            "Write the pmf: P(X = x) = C(5,x)(1/2)^5 = C(5,x)/32.",
+            "Part (i): P(3 boys) = 10/32 = 0.3125; expected families = 800 × 0.3125 = 250.",
+            "Part (ii): 5 girls = 0 boys; P(0) = 1/32 = 0.03125; expected families = 800 × 0.03125 = 25.",
+            "Part (iii): P(2 or 3 boys) = (10+10)/32 = 0.625; expected families = 800 × 0.625 = 500."
+          ],
+          "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); expected count = N·P(X=r)",
+          "explanation": "Equal boy/girl probabilities make all 2^5 = 32 birth sequences equally likely, so each probability is a count of favourable sequences over 32. Multiplying each probability by the 800 families converts the proportion into an expected number of families.",
           "oneShotPreview": "Expected families: (i) 250, (ii) 25, (iii) 500."
         },
         {
           "q": "4 b) Two dice are thrown five times. Find the probability of getting 7 as sum i) At least once (ii) P(1 < x < 5) [L1][CO3] [5M]",
-          "a": "For one throw of two dice, P(sum = 7) = 6/36 = 1/6, so with five throws X ~ Binomial(5, 1/6), q = 5/6. (i) P(X ≥ 1) = 1 - P(X=0) = 1 - (5/6)^5 = 1 - 3125/7776 ≈ 0.5981. (ii) P(1 < X < 5) = P(2) + P(3) + P(4) = 1250/7776 + 250/7776 + 25/7776 = 1525/7776 ≈ 0.1961.",
-          "explanation": "Each throw of the dice is an independent trial with success probability 1/6; the complement rule handles 'at least once' and direct summation handles the strict inequality range.",
-          "oneShotPreview": "p=1/6, n=5: P(at least one 7) ≈ 0.5981; P(1<X<5) ≈ 0.1961."
+          "a": "In a single throw of two dice there are 36 equally likely outcomes, of which 6 give a sum of 7, so the success probability is p = 6/36 = 1/6 and q = 5/6. Over five independent throws, X ~ Binomial(5, 1/6) with P(X = x) = C(5,x)(1/6)^x(5/6)^(5-x). (i) 'At least once' is handled by the complement: P(X ≥ 1) = 1 - P(X=0) = 1 - (5/6)^5 = 1 - 3125/7776 ≈ 1 - 0.4019 = 0.5981. (ii) The strict inequality 1 < X < 4 covers X = 2, 3, and 4: P(2) = 1250/7776, P(3) = 250/7776, and P(4) = 25/7776, which sum to 1525/7776 ≈ 0.1961. Thus (i) ≈ 0.5981 and (ii) ≈ 0.1961.",
+          "steps": [
+            "Identify parameters: in one throw P(sum 7) = 6/36 = 1/6, so p = 1/6, q = 5/6, n = 5, X ~ Binomial(5,1/6).",
+            "Write the pmf: P(X = x) = C(5,x)(1/6)^x(5/6)^(5-x).",
+            "Part (i): P(X ≥ 1) = 1 - P(X=0) = 1 - (5/6)^5 = 1 - 3125/7776 ≈ 0.5981.",
+            "Part (ii): 1 < X < 4 means X = 2, 3, 4 with probabilities 1250/7776, 250/7776, 25/7776.",
+            "Sum: (1250+250+25)/7776 = 1525/7776 ≈ 0.1961."
+          ],
+          "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); complement P(X≥1)=1-q^n",
+          "explanation": "Each throw of the dice is an independent trial with success probability 1/6. The complement rule simplifies 'at least once', while direct summation over X = 2, 3, 4 handles the strict inequality range.",
+          "oneShotPreview": "p=1/6, n=5: P(at least one 7)≈0.5981; P(1<X<5)≈0.1961."
         },
         {
           "q": "5 a) Derive mean of Poisson distribution. [L3][CO3] [5M]",
-          "a": "For X ~ Poisson(λ), E[X] = Σ_{x=0}^∞ x * e^-λ * λ^x / x!. The x = 0 term vanishes, so E[X] = e^-λ * Σ_{x=1}^∞ x * λ^x / x! = e^-λ * Σ_{x=1}^∞ λ^x / (x-1)!. Factor out λ: E[X] = λ e^-λ * Σ_{x=1}^∞ λ^(x-1) / (x-1)!. Let y = x-1; then the sum is Σ_{y=0}^∞ λ^y / y! = e^λ. Hence E[X] = λ e^-λ * e^λ = λ. Thus the mean of a Poisson distribution is λ (which also equals its variance).",
-          "explanation": "Cancelling x against x! and shifting the index leaves the exponential series, so the entire sum collapses to the single parameter λ.",
+          "a": "For X ~ Poisson(λ), E[X] = Σ_(x=0)^∞ x·e^-λ λ^x/x!. The x = 0 term is zero, so E[X] = e^-λ Σ_(x=1)^∞ x·λ^x/x!. Cancelling x with x! gives x/x! = 1/(x-1)!, hence E[X] = e^-λ Σ_(x=1)^∞ λ^x/(x-1)!. Factoring out one λ yields E[X] = λ e^-λ Σ_(x=1)^∞ λ^(x-1)/(x-1)!. Putting y = x - 1, the sum becomes Σ_(y=0)^∞ λ^y/y! = e^λ by the exponential series. Therefore E[X] = λ e^-λ · e^λ = λ. Thus the mean of a Poisson variate is λ, which is also equal to its variance.",
+          "steps": [
+            "Start from the definition: E[X] = Σ_(x=0)^∞ x·e^-λ λ^x/x!; the x=0 term vanishes.",
+            "Cancel x with x!: x/x! = 1/(x-1)!, so E[X] = e^-λ Σ_(x=1)^∞ λ^x/(x-1)!.",
+            "Factor out one λ: E[X] = λ e^-λ Σ_(x=1)^∞ λ^(x-1)/(x-1)!.",
+            "Substitute y = x-1: the sum is Σ_(y=0)^∞ λ^y/y! = e^λ.",
+            "Conclude E[X] = λ e^-λ · e^λ = λ."
+          ],
+          "formula": "E[X] = Σ x·e^-λ λ^x/x! = λe^-λ·e^λ = λ",
+          "explanation": "Cancelling x against x! and shifting the summation index leaves exactly the series expansion of e^λ, which cancels the e^-λ factor and collapses the whole expression to λ.",
           "oneShotPreview": "Poisson mean: E[X] = Σ x·e^-λ λ^x/x! = λ."
         },
         {
           "q": "5 b) If 2% of light bulbs are defective. Find the probability that (i) 2 defective items (ii) at least 3 defective items (iii) P(2 < x < 5) in a sample of 100. [L1][CO3] [5M]",
-          "a": "Here n = 100, p = 0.02, so λ = np = 2 and X ~ Poisson(2). (i) P(X=2) = e^-2 * 2^2/2! = 2e^-2 ≈ 0.2707. (ii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 1 - 0.6767 = 0.3233. (iii) P(2 < X < 5) = P(3) + P(4) = e^-2(8/6 + 16/24) = 2e^-2 ≈ 0.2707.",
-          "explanation": "With large n and small p the Poisson approximation is appropriate; the mean λ = 2 drives all three probability calculations.",
+          "a": "Here n = 100 and p = 0.02, so the Poisson parameter is λ = np = 100 × 0.02 = 2, giving X ~ Poisson(2) with P(X = x) = e^-2 · 2^x/x!. Since e^-2 ≈ 0.135335: (i) P(X=2) = e^-2 · 2^2/2! = 2e^-2 ≈ 0.2707. (ii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 1 - 0.6767 = 0.3233. (iii) The strict range 2 < X < 5 covers X = 3 and 4: P(3) + P(4) = e^-2(8/6 + 16/24) = e^-2(4/3 + 2/3) = 2e^-2 ≈ 0.2707. Thus (i) 0.2707, (ii) 0.3233, and (iii) 0.2707.",
+          "steps": [
+            "Identify parameters: n = 100, p = 0.02, so λ = np = 2 and X ~ Poisson(2).",
+            "Write the pmf: P(X = x) = e^-2 · 2^x/x!, with e^-2 ≈ 0.135335.",
+            "Part (i): P(X=2) = e^-2·4/2 = 2e^-2 ≈ 0.2707.",
+            "Part (ii): P(X≥3) = 1 - e^-2(1+2+2) = 1 - 5e^-2 ≈ 0.3233.",
+            "Part (iii): 2<X<5 means X=3,4; P = e^-2(8/6+16/24) = 2e^-2 ≈ 0.2707."
+          ],
+          "formula": "Poisson: P(X=r)=e^-λ λ^r/r!, with λ=np",
+          "explanation": "Because n is large and p is small, the binomial situation is well approximated by a Poisson distribution with mean λ = np = 2. Substituting λ = 2 into the pmf and summing the relevant terms gives all three probabilities.",
           "oneShotPreview": "λ=2: P(X=2)=0.2707; P(X≥3)=0.3233; P(2<X<5)=0.2707."
         },
         {
           "q": "6 Fit a Poisson distribution to the following data: x: 0, 1, 2, 3, 4, 5, Total; f: 142, 156, 69, 27, 5, 1, 400 [L3][CO4] [10M]",
-          "a": "Total N = 400. Mean = Σfx/N = (156 + 138 + 81 + 20 + 5)/400 = 400/400 = 1, so λ = 1. Expected frequency = N * e^-1 * 1^x / x! = 400 * e^-1 / x!. Using e^-1 ≈ 0.3679, the fitted frequencies are: x=0 → 147.2, x=1 → 147.2, x=2 → 73.6, x=3 → 24.5, x=4 → 6.1, x=5 → 1.2 (sum ≈ 400). These closely match the observed frequencies, confirming a good Poisson fit with λ = 1.",
-          "explanation": "For a Poisson fit the sample mean estimates λ; multiplying the pmf by N gives expected counts that can be compared directly with the given frequencies.",
+          "a": "The total frequency is N = 400. The sample mean is Σfx/N = (0·142 + 1·156 + 2·69 + 3·27 + 4·5 + 5·1)/400 = (156 + 138 + 81 + 20 + 5)/400 = 400/400 = 1, so we estimate λ = 1. For a Poisson fit the expected frequency is N·e^-λ λ^x/x! = 400·e^-1/x!. Using e^-1 ≈ 0.3679, the expected frequencies are x=0: 147.2, x=1: 147.2, x=2: 73.6, x=3: 24.5, x=4: 6.1, x=5: 1.2, summing to about 400. Comparison table (x : observed / expected): 0: 142/147.2, 1: 156/147.2, 2: 69/73.6, 3: 27/24.5, 4: 5/6.1, 5: 1/1.2. The expected and observed frequencies agree closely, confirming a good Poisson fit with λ = 1.",
+          "steps": [
+            "Find N = 400 and compute the sample mean Σfx/N = (156+138+81+20+5)/400 = 400/400 = 1.",
+            "Estimate the Poisson parameter: λ = sample mean = 1.",
+            "Write the expected frequency formula: f_e(x) = N·e^-1·1^x/x! = 400·e^-1/x!.",
+            "Substitute x = 0..5 with e^-1 ≈ 0.3679 and tabulate: x=0: 147.2/142, x=1: 147.2/156, x=2: 73.6/69, x=3: 24.5/27, x=4: 6.1/5, x=5: 1.2/1 (expected/observed).",
+            "Verify the expected frequencies total ≈ 400 and conclude the fit is good."
+          ],
+          "formula": "Fit: λ = sample mean; expected f_x = N·e^-λ λ^x/x!",
+          "explanation": "For a Poisson fit the sample mean estimates the single parameter λ. Multiplying the pmf by N produces expected counts that can be compared directly with the observed frequencies; their close agreement supports the model.",
           "oneShotPreview": "Fit with λ=1: expected f ≈ 147.2, 147.2, 73.6, 24.5, 6.1, 1.2."
         },
         {
           "q": "7 a) An insurance agent policy of 5 men all of identical age and good in health. The probability that a man of this age will be alive 30 years is 2/3. Find the probability that in 30 years. (i) At least one-man (ii) Atmost three will be alive [L1][CO4] [5M]",
-          "a": "Let X be the number alive after 30 years; n = 5, p = 2/3, q = 1/3, so X ~ Binomial(5, 2/3). (i) P(X ≥ 1) = 1 - P(X=0) = 1 - (1/3)^5 = 1 - 1/243 = 242/243 ≈ 0.9959. (ii) P(X ≤ 3) = P(0)+P(1)+P(2)+P(3) = (1 + 10 + 40 + 80)/243 = 131/243 ≈ 0.5391.",
-          "explanation": "Each man's survival is an independent Bernoulli trial with p = 2/3; the complement rule gives 'at least one' and direct summation gives 'at most three'.",
-          "oneShotPreview": "n=5, p=2/3: P(at least 1 alive)=0.9959; P(at most 3)=0.5391."
+          "a": "Let X be the number of men alive after 30 years. Each man's survival is an independent Bernoulli trial with p = 2/3 and q = 1/3, and n = 5, so X ~ Binomial(5, 2/3) with P(X = x) = C(5,x)(2/3)^x(1/3)^(5-x). (i) P(X ≥ 1) = 1 - P(X=0) = 1 - (1/3)^5 = 1 - 1/243 = 242/243 ≈ 0.9959. (ii) 'At most three' means X ≤ 3, so P(X ≤ 3) = P(0)+P(1)+P(2)+P(3). Using the common denominator 3^5 = 243, these are 1/243, 10/243, 40/243, and 80/243, giving (1+10+40+80)/243 = 131/243 ≈ 0.5391. Therefore (i) ≈ 0.9959 and (ii) ≈ 0.5391.",
+          "steps": [
+            "Identify parameters: n = 5, p = 2/3 (alive), q = 1/3, so X ~ Binomial(5,2/3).",
+            "Write the pmf: P(X = x) = C(5,x)(2/3)^x(1/3)^(5-x), with denominator 3^5 = 243.",
+            "Part (i): P(X ≥ 1) = 1 - P(X=0) = 1 - (1/3)^5 = 1 - 1/243 = 242/243 ≈ 0.9959.",
+            "Part (ii): P(X ≤ 3) = P(0)+P(1)+P(2)+P(3) = (1+10+40+80)/243.",
+            "Compute: 131/243 ≈ 0.5391."
+          ],
+          "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); P(X≥1)=1-q^n",
+          "explanation": "Each man's survival is an independent trial with success probability 2/3. The complement rule gives 'at least one', while summing the four terms X = 0, 1, 2, 3 gives 'at most three'.",
+          "oneShotPreview": "n=5, p=2/3: P(at least 1 alive)≈0.9959; P(at most 3)≈0.5391."
         },
         {
           "q": "7 b) If X is a Poisson variate such that 2P(X = 0) = P(X = 2) find (i) Mean (ii) P(2 < X ≤ 5) iii) P(X ≥ 3). [L1][CO4] [5M]",
-          "a": "Given 2P(X=0) = P(X=2): 2e^-λ = e^-λ λ²/2!, so 2 = λ²/2 and λ² = 4, giving λ = 2. (i) Mean = λ = 2. (ii) P(2 < X ≤ 5) = P(3)+P(4)+P(5) = e^-2(8/6 + 16/24 + 32/120) = (34/15)e^-2 ≈ 0.3068. (iii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 0.3233.",
-          "explanation": "The given relation determines λ from the Poisson pmf; all requested quantities then follow by substituting λ = 2 into the pmf and summing the relevant terms.",
-          "oneShotPreview": "λ = 2 (mean); P(2<X≤5) ≈ 0.3068; P(X≥3) ≈ 0.3233."
+          "a": "Using the Poisson pmf P(X = x) = e^-λ λ^x/x!, the condition 2P(X=0) = P(X=2) becomes 2e^-λ = e^-λ λ²/2!. Cancelling e^-λ gives 2 = λ²/2, so λ² = 4 and λ = 2 (positive parameter). (i) The mean is λ = 2. (ii) P(2 < X ≤ 5) = P(3)+P(4)+P(5) = e^-2(2^3/3! + 2^4/4! + 2^5/5!) = e^-2(8/6 + 16/24 + 32/120) = (34/15)e^-2 ≈ 2.2667 × 0.135335 ≈ 0.3068. (iii) P(X ≥ 3) = 1 - P(X ≤ 2) = 1 - e^-2(1 + 2 + 2) = 1 - 5e^-2 ≈ 1 - 0.6767 = 0.3233. Thus (i) 2, (ii) ≈ 0.3068, (iii) ≈ 0.3233.",
+          "steps": [
+            "Write the Poisson pmf: P(X = x) = e^-λ λ^x/x!.",
+            "Apply the condition: 2e^-λ = e^-λ λ²/2! → 2 = λ²/2 → λ² = 4 → λ = 2.",
+            "Part (i): mean = λ = 2.",
+            "Part (ii): P(2<X≤5) = e^-2(8/6+16/24+32/120) = (34/15)e^-2 ≈ 0.3068.",
+            "Part (iii): P(X≥3) = 1 - e^-2(1+2+2) = 1 - 5e^-2 ≈ 0.3233."
+          ],
+          "formula": "Poisson: P(X=r)=e^-λ λ^r/r!; mean=λ",
+          "explanation": "The given relation between two pmf values determines λ algebraically once e^-λ is cancelled. All requested quantities then follow by substituting λ = 2 into the pmf and summing the relevant integer probabilities.",
+          "oneShotPreview": "λ=2 (mean); P(2<X≤5)≈0.3068; P(X≥3)≈0.3233."
         },
         {
           "q": "8 If X is a normal variate with mean 30 and standard deviation 5. Find i) P(26 ≤ X ≤ 40) and ii) P(X ≥ 45) [L1][CO4] [10M]",
-          "a": "X ~ N(30, 5²), so Z = (X - 30)/5. (i) For X = 26, z = -0.8; for X = 40, z = 2. Hence P(26 ≤ X ≤ 40) = Φ(2) - Φ(-0.8) = 0.9772 - 0.2119 = 0.7654. (ii) For X = 45, z = (45-30)/5 = 3, so P(X ≥ 45) = P(Z ≥ 3) = 1 - Φ(3) = 1 - 0.99865 = 0.00135 (about 0.0014).",
-          "explanation": "Standardizing converts the normal variable to Z ~ N(0,1), and standard normal table areas give the required interval and right-tail probabilities.",
+          "a": "Here X ~ N(30, 5²), with μ = 30 and σ = 5, so we standardize using Z = (X - 30)/5, where Z ~ N(0,1). (i) For X = 26, z = (26-30)/5 = -0.8; for X = 40, z = (40-30)/5 = 2. Hence P(26 ≤ X ≤ 40) = Φ(2) - Φ(-0.8) = 0.9772 - 0.2119 = 0.7654 (using Φ(-0.8) = 1 - 0.7881 = 0.2119). (ii) For X = 45, z = (45-30)/5 = 3, so P(X ≥ 45) = P(Z ≥ 3) = 1 - Φ(3) = 1 - 0.99865 = 0.00135, i.e. about 0.0014. Therefore (i) 0.7654 and (ii) 0.00135.",
+          "steps": [
+            "Identify parameters: μ = 30, σ = 5, X ~ N(30,25); use Z = (X-30)/5.",
+            "Part (i): z(26) = -0.8 and z(40) = 2.",
+            "Look up standard normal areas: Φ(2) = 0.9772, Φ(-0.8) = 0.2119.",
+            "Compute: P(26≤X≤40) = 0.9772 - 0.2119 = 0.7654.",
+            "Part (ii): z(45) = 3; P(X≥45) = 1 - Φ(3) = 1 - 0.99865 = 0.00135."
+          ],
+          "formula": "Normal standardization: Z=(x-μ)/σ; P(a≤X≤b)=Φ(z_b)-Φ(z_a)",
+          "explanation": "Standardizing converts X to the standard normal Z, so standard normal table areas give the required probabilities. The interval probability is a difference of two cumulative areas, and the right tail uses the complement 1 - Φ(z).",
           "oneShotPreview": "μ=30, σ=5: P(26≤X≤40)=0.7654; P(X≥45)=0.00135."
         },
         {
           "q": "9 In a sample of 1000 cases, the mean of certain test is 14 and standard deviation is 2.5. Assuming the distribution to be normal find (i) How many students score between 12 and 15 (ii) How many students score above 18? (iii) How many students score below 8? [L3][CO4] [10M]",
-          "a": "μ = 14, σ = 2.5, N = 1000, with Z = (X - 14)/2.5. (i) z values are (12-14)/2.5 = -0.8 and (15-14)/2.5 = 0.4, so P = Φ(0.4) - Φ(-0.8) = 0.6554 - 0.2119 = 0.4435, giving about 444 students. (ii) z = (18-14)/2.5 = 1.6, P(Z > 1.6) = 1 - 0.9452 = 0.0548, giving about 55 students. (iii) z = (8-14)/2.5 = -2.4, P(Z < -2.4) = 0.0082, giving about 8 students.",
-          "explanation": "After standardizing, each probability is an area under the standard normal curve; multiplying by the sample size converts the proportion into an expected number of students.",
-          "oneShotPreview": "≈444 students between 12-15; ≈55 above 18; ≈8 below 8."
+          "a": "We have μ = 14, σ = 2.5, and N = 1000, with Z = (X - 14)/2.5. (i) For X = 12, z = (12-14)/2.5 = -0.8; for X = 15, z = (15-14)/2.5 = 0.4. Thus P(12 < X < 15) = Φ(0.4) - Φ(-0.8) = 0.6554 - 0.2119 = 0.4435, giving 1000 × 0.4435 ≈ 444 students. (ii) For X = 18, z = (18-14)/2.5 = 1.6, so P(X > 18) = 1 - Φ(1.6) = 1 - 0.9452 = 0.0548, giving 1000 × 0.0548 ≈ 55 students. (iii) For X = 8, z = (8-14)/2.5 = -2.4, so P(X < 8) = Φ(-2.4) = 0.0082, giving 1000 × 0.0082 ≈ 8 students. Hence approximately 444, 55, and 8 students respectively.",
+          "steps": [
+            "Identify parameters: μ = 14, σ = 2.5, N = 1000; Z = (X-14)/2.5.",
+            "Part (i): z(12) = -0.8, z(15) = 0.4; P = Φ(0.4) - Φ(-0.8) = 0.6554 - 0.2119 = 0.4435 → 1000×0.4435 ≈ 444.",
+            "Part (ii): z(18) = 1.6; P = 1 - Φ(1.6) = 1 - 0.9452 = 0.0548 → 1000×0.0548 ≈ 55.",
+            "Part (iii): z(8) = -2.4; P = Φ(-2.4) = 0.0082 → 1000×0.0082 ≈ 8.",
+            "Report the expected counts: 444, 55, and 8 students."
+          ],
+          "formula": "Normal: Z=(x-μ)/σ; expected count = N·P",
+          "explanation": "After standardizing, each required probability is an area under the standard normal curve. Multiplying each proportion by the sample size N converts the area into the expected number of students.",
+          "oneShotPreview": "≈444 between 12-15; ≈55 above 18; ≈8 below 8."
         },
         {
           "q": "10 If the masses of 300 students are normally distributed with mean 68kgs and standard deviation 3kgs. How many students have masses i) Greater than 72kgs ii) Less than or equal to 64kg iii) Between 65 and 71 kgs inclusive. [L3][CO4] [10M]",
-          "a": "μ = 68, σ = 3, N = 300, with Z = (X - 68)/3. (i) z = (72-68)/3 ≈ 1.33, so P(Z > 1.33) = 1 - 0.9082 = 0.0918, giving about 28 students (27-28). (ii) z = (64-68)/3 ≈ -1.33, so P(Z ≤ -1.33) = 0.0918 by symmetry, again about 28 students. (iii) z = -1 and +1 for 65 and 71 kg, so P(-1 ≤ Z ≤ 1) = 2(0.8413) - 1 = 0.6826, giving about 205 students.",
-          "explanation": "Standardizing each mass to a z-score lets us use symmetry and standard normal areas; multiplying by 300 converts each proportion into an expected count.",
+          "a": "Here μ = 68 kg, σ = 3 kg, and N = 300, with Z = (X - 68)/3. (i) For X = 72, z = (72-68)/3 ≈ 1.33, so P(X > 72) = 1 - Φ(1.33) = 1 - 0.9082 = 0.0918, giving 300 × 0.0918 ≈ 28 students. (ii) For X = 64, z = (64-68)/3 ≈ -1.33, so by symmetry P(X ≤ 64) = Φ(-1.33) = 0.0918, again about 28 students. (iii) For X = 65 and X = 71, z = -1 and +1 respectively, so P(65 ≤ X ≤ 71) = Φ(1) - Φ(-1) = 0.8413 - 0.1587 = 0.6826 (equivalently 2(0.8413) - 1), giving 300 × 0.6826 ≈ 205 students. Hence (i) ≈ 28, (ii) ≈ 28, and (iii) ≈ 205 students.",
+          "steps": [
+            "Identify parameters: μ = 68, σ = 3, N = 300; Z = (X-68)/3.",
+            "Part (i): z(72) = 1.33; P = 1 - Φ(1.33) = 0.0918 → 300×0.0918 ≈ 28.",
+            "Part (ii): z(64) = -1.33; by symmetry P = Φ(-1.33) = 0.0918 → ≈ 28.",
+            "Part (iii): z(65) = -1, z(71) = 1; P = Φ(1)-Φ(-1) = 0.6826 → 300×0.6826 ≈ 205.",
+            "Report expected counts: 28, 28, and 205 students."
+          ],
+          "formula": "Normal: Z=(x-μ)/σ; expected count = N·P",
+          "explanation": "Standardizing each mass to a z-score lets us use symmetry and standard normal table areas. Multiplying each resulting proportion by 300 converts it into the expected number of students.",
           "oneShotPreview": ">72kg ≈ 28; ≤64kg ≈ 28; 65-71kg ≈ 205 students."
         },
         {
           "q": "11 If p is probability of getting head in tossing a coin and a coin is tossed 12 times then Find P(3≤X≤6) using i) Binomial distribution ii) Normal distribution. [L3][CO4] [10M]",
-          "a": "Assuming a fair coin, p = 1/2, q = 1/2, n = 12. (i) Binomial: P(3≤X≤6) = (12C3 + 12C4 + 12C5 + 12C6)/2^12 = (220 + 495 + 792 + 924)/4096 = 2431/4096 ≈ 0.5935. (ii) Normal approximation: μ = np = 6, σ = sqrt(npq) = sqrt(3) ≈ 1.732. With continuity correction, P(2.5 < Y < 6.5) gives z = -2.02 and 0.29, so P = Φ(0.29) - Φ(-2.02) ≈ 0.6141 - 0.0217 = 0.5924, which closely agrees with the exact binomial result.",
-          "explanation": "The exact binomial sum is compared with the normal approximation (using the continuity correction); both agree closely because np and nq exceed 5, validating the approximation.",
-          "oneShotPreview": "Fair coin: Binomial P(3≤X≤6)=0.5935; Normal approx ≈0.592."
+          "a": "For a fair coin p = q = 1/2 and n = 12, so X ~ Binomial(12, 1/2). (i) Exact binomial: P(3 ≤ X ≤ 6) = [C(12,3) + C(12,4) + C(12,5) + C(12,6)]/2^12 = (220 + 495 + 792 + 924)/4096 = 2431/4096 ≈ 0.5935. (ii) Normal approximation: μ = np = 6 and σ = √(npq) = √3 ≈ 1.732. Since np = nq = 6 > 5, the approximation is valid. Applying the continuity correction, P(3 ≤ X ≤ 6) becomes P(2.5 < Y < 6.5); the z-scores are (2.5-6)/1.732 ≈ -2.02 and (6.5-6)/1.732 ≈ 0.29. Hence P = Φ(0.29) - Φ(-2.02) = 0.6141 - 0.0217 ≈ 0.5924. The two results, 0.5935 and 0.5924, agree closely, confirming the normal approximation with continuity correction.",
+          "steps": [
+            "Identify parameters: fair coin p = q = 1/2, n = 12, X ~ Binomial(12,1/2).",
+            "Binomial (i): P(3≤X≤6) = (C(12,3)+C(12,4)+C(12,5)+C(12,6))/2^12 = (220+495+792+924)/4096 = 2431/4096 ≈ 0.5935.",
+            "Normal (ii): compute μ = np = 6 and σ = √(npq) = √3 ≈ 1.732; np = nq = 6 > 5 so approximation is valid.",
+            "Apply continuity correction: P(3≤X≤6) ≈ P(2.5<Y<6.5), giving z = -2.02 and z = 0.29.",
+            "Compute: Φ(0.29) - Φ(-2.02) = 0.6141 - 0.0217 ≈ 0.5924, agreeing with the exact value."
+          ],
+          "formula": "Binomial: P(X=r)=C(n,r)p^r q^(n-r); Normal approx: Z=(x-μ)/σ with continuity correction ±0.5",
+          "explanation": "The exact binomial sum is compared with the normal approximation using the continuity correction of ±0.5 at the interval boundaries. Because both np and nq exceed 5, the normal curve closely tracks the binomial probabilities, as shown by the near-identical results.",
+          "oneShotPreview": "Fair coin: Binomial P(3≤X≤6)=0.5935; Normal approx ≈0.5924."
         }
       ]
     },
@@ -2854,133 +3276,309 @@ export const QB_QUESTIONS = {
       "questions": [
         {
           "q": "1 a) What is Point Estimation in Statistics?",
-          "a": "Point estimation is the technique of using a single numerical value, computed from sample data, to estimate an unknown population parameter. That single value is the point estimate, and the statistic used to obtain it (for example the sample mean x̄ for the population mean μ) is the point estimator. Unlike interval estimation it gives one best-guess number rather than a range of plausible values. A good point estimator is unbiased, consistent, efficient and sufficient.",
-          "explanation": "Point estimation is defined by a single-number estimate derived from a sample, in contrast to interval estimation which supplies a confidence interval.",
-          "oneShotPreview": "A single sample-based number used to estimate an unknown population parameter."
+          "a": "Point estimation is the technique of using a single numerical value, computed from sample data, to estimate an unknown population parameter. Formally an estimator is a statistic θ̂ = g(X₁, X₂, …, Xₙ), and the number it yields for the observed sample is the point estimate; for example x̄ = (1/n)·ΣXᵢ is the estimator of the population mean μ. Substituting the sample observations into the estimator gives one best-guess number rather than a range of plausible values. This contrasts with interval estimation, which produces a confidence interval. A good point estimator is unbiased (E[θ̂] = θ), consistent, efficient (minimum variance) and sufficient. Because a point estimate carries no built-in measure of uncertainty, it is usually reported together with its standard error.",
+          "steps": [
+            "Identify the unknown population parameter θ to be estimated (for example the population mean μ).",
+            "Choose a sample statistic (the estimator) θ̂ = g(X₁,…,Xₙ), such as x̄ = (1/n)·ΣXᵢ for μ.",
+            "Substitute the observed sample data into the estimator to obtain a single numerical point estimate.",
+            "Assess the estimator using the criteria of unbiasedness E(θ̂) = θ, consistency, efficiency and sufficiency.",
+            "Report the point estimate; unlike a confidence interval it is a single number, so pair it with its standard error."
+          ],
+          "formula": "θ̂ = g(X₁, X₂, …, Xₙ); for a mean, x̄ = (1/n)·ΣXᵢ estimates μ",
+          "explanation": "Point estimation is defined by a single-number estimate derived from a sample, in contrast to interval estimation which supplies a confidence interval. The quality of an estimator is judged by unbiasedness, consistency, efficiency and sufficiency.",
+          "oneShotPreview": "A single sample-based number (estimator θ̂) used to estimate an unknown population parameter θ."
         },
         {
           "q": "1 b) Find the value of correction factor if n=10 and N=1000.",
-          "a": "The finite population correction (FPC) factor is √[(N−n)/(N−1)] = √[(1000−10)/(1000−1)] = √(990/999) ≈ √0.99099 ≈ 0.9955. The common approximation √(1−n/N) = √(1−10/1000) = √0.99 ≈ 0.995 gives essentially the same result. Since n/N = 0.01 is small, the correction factor is close to 1 and is often ignored.",
-          "explanation": "The FPC reduces the standard error when sampling without replacement from a finite population; substituting n = 10, N = 1000 gives about 0.995.",
-          "oneShotPreview": "FPC = √[(N−n)/(N−1)] ≈ 0.9955 for n=10, N=1000."
+          "a": "When sampling without replacement from a finite population, the finite population correction (FPC) factor is √[(N−n)/(N−1)]. Substituting N = 1000 and n = 10 gives √[(1000−10)/(1000−1)] = √(990/999) = √0.99099 ≈ 0.9955. The common approximation √(1−n/N) = √(1−10/1000) = √0.99 ≈ 0.995 gives essentially the same value. Since the sampling fraction n/N = 0.01 is small, the correction factor is close to 1 and is often ignored in large-sample work. Its role is to reduce the standard error relative to sampling with replacement.",
+          "steps": [
+            "Recognise that the finite population correction (FPC) applies when sampling without replacement from a finite population.",
+            "State the formula: FPC = √[(N−n)/(N−1)].",
+            "Substitute N = 1000 and n = 10: √[(1000−10)/(1000−1)] = √(990/999).",
+            "Compute 990/999 ≈ 0.99099 and take the square root to get ≈ 0.9955 (approximation √0.99 ≈ 0.995).",
+            "Conclude that, because n/N = 0.01 is small, the factor is near 1 and is usually ignored."
+          ],
+          "formula": "FPC = √[(N−n)/(N−1)] = √[(1000−10)/(1000−1)] ≈ 0.9955",
+          "explanation": "The FPC reduces the standard error when sampling without replacement from a finite population; substituting n = 10, N = 1000 gives √(990/999) ≈ 0.9955.",
+          "oneShotPreview": "FPC = √[(1000−10)/999] ≈ 0.9955 (≈ 0.995), nearly 1 since n/N = 1%."
         },
         {
           "q": "1 c) The variance of a population is 2. The size of the sample collected from the population is 169. What is the standard error of mean?",
-          "a": "Population variance σ² = 2, so σ = √2 ≈ 1.4142. With n = 169, √n = 13. The standard error of the mean is σ/√n = √2/13 ≈ 1.4142/13 ≈ 0.1088, i.e. about 0.109.",
-          "explanation": "The standard error of the mean is σ/√n, so dividing √2 by 13 gives approximately 0.109.",
+          "a": "The standard error of the sample mean is SE = σ/√n, where σ is the population standard deviation. Given the population variance σ² = 2, we have σ = √2 ≈ 1.4142. With sample size n = 169, √n = 13. Substituting into the formula gives SE = √2/13 ≈ 1.4142/13 ≈ 0.1088. Hence the standard error of the mean is about 0.109.",
+          "steps": [
+            "Identify the required quantity: the standard error of the mean, SE = σ/√n.",
+            "From the given variance σ² = 2, obtain σ = √2 ≈ 1.4142.",
+            "With n = 169, compute √n = 13.",
+            "Substitute into the formula: SE = √2/13 ≈ 1.4142/13 ≈ 0.1088.",
+            "Conclude that the standard error of the mean is approximately 0.109."
+          ],
+          "formula": "SE = σ/√n = √2/√169 = √2/13 ≈ 0.109",
+          "explanation": "The standard error of the mean is σ/√n, so dividing √2 ≈ 1.4142 by 13 gives approximately 0.109.",
           "oneShotPreview": "SE = σ/√n = √2/13 ≈ 0.109."
         },
         {
           "q": "1 d) Define Critical region.",
-          "a": "The critical region (or rejection region) is the set of values of a test statistic for which the null hypothesis H0 is rejected. Its boundaries, called critical values, are fixed by the chosen significance level α and by whether the test is one-tailed or two-tailed. If the computed statistic falls inside the region the result is significant and H0 is rejected; otherwise H0 is not rejected.",
-          "explanation": "It is correct because the critical region is precisely the rejection rule of a hypothesis test, determined by α and the tails of the sampling distribution.",
-          "oneShotPreview": "Set of test-statistic values that lead to rejecting H0, fixed by α."
+          "a": "The critical region (or rejection region) is the set of values of a test statistic for which the null hypothesis H₀ is rejected. Its boundaries, called critical values, are fixed by the chosen significance level α and by whether the test is one-tailed or two-tailed. For a two-tailed test the region occupies area α/2 in each tail, while for a one-tailed test it occupies area α in a single tail. If the computed statistic falls inside the critical region the result is statistically significant and H₀ is rejected; otherwise H₀ is not rejected. Thus the critical region is the formal rejection rule of the test.",
+          "steps": [
+            "A hypothesis test partitions the sample space into a critical (rejection) region and an acceptance region.",
+            "The critical region is defined as the set of test-statistic values for which H₀ is rejected.",
+            "Its boundaries, the critical values, are fixed by the significance level α.",
+            "For a two-tailed test the region lies in both tails (area α/2 each); for a one-tailed test it lies in one tail (area α).",
+            "If the computed statistic lies in the critical region the result is significant and H₀ is rejected; otherwise H₀ is not rejected."
+          ],
+          "formula": "Reject H₀ if |Z| > Z_{α/2} (two-tailed) or Z > Z_α / Z < −Z_α (one-tailed)",
+          "explanation": "The critical region is precisely the rejection rule of a hypothesis test, determined by α and the tails of the sampling distribution.",
+          "oneShotPreview": "Set of test-statistic values that lead to rejecting H₀, fixed by α and the number of tails."
         },
         {
           "q": "1 e) Define i) Null hypothesis ii) Alternative hypothesis.",
-          "a": "The null hypothesis (H0) is a statement about a population parameter assumed true until sample evidence contradicts it; it represents the status quo or \"no difference / no effect\" claim and is the hypothesis actually tested. The alternative hypothesis (H1 or Ha) contradicts H0 and is the statement the investigator seeks to establish, such as μ ≠ μ0, μ > μ0 or μ < μ0. A test either rejects H0 in favour of H1 or fails to reject H0.",
-          "explanation": "This captures the standard roles: H0 is the default assumption being tested, while H1 is the competing claim accepted only when H0 is rejected.",
-          "oneShotPreview": "H0 = default no-effect claim under test; H1 = competing claim we seek to establish."
+          "a": "The null hypothesis (H₀) is a statement about a population parameter that is assumed true until sample evidence contradicts it; it represents the status quo or a no-difference / no-effect claim and is the hypothesis actually tested. It is stated with equality, for example H₀: μ = μ₀ or P = P₀. The alternative hypothesis (H₁ or Hₐ) contradicts H₀ and is the competing statement the investigator seeks to establish, such as μ ≠ μ₀, μ > μ₀ or μ < μ₀. A test either rejects H₀ in favour of H₁, or fails to reject H₀; it never proves H₀. The alternative determines whether the test is two-tailed or one-tailed.",
+          "steps": [
+            "A hypothesis test compares two competing statements about a population parameter θ.",
+            "The null hypothesis H₀ is the default no-effect / no-difference statement, assumed true until contradicted, and is the one tested; it is stated with equality (θ = θ₀).",
+            "The alternative hypothesis H₁ (or Hₐ) contradicts H₀ and is the claim the investigator wants to establish.",
+            "H₁ may be two-sided (θ ≠ θ₀) or one-sided (θ > θ₀ or θ < θ₀), which fixes the tails of the test.",
+            "The test either rejects H₀ in favour of H₁, or fails to reject H₀; it never establishes H₀ as proven."
+          ],
+          "formula": "H₀: θ = θ₀ versus H₁: θ ≠ θ₀ (two-tailed), θ > θ₀ or θ < θ₀ (one-tailed)",
+          "explanation": "H₀ is the default assumption being tested, while H₁ is the competing claim accepted only when H₀ is rejected; H₁ also decides the direction of the test.",
+          "oneShotPreview": "H₀ = default no-effect claim under test (equality); H₁ = competing claim we seek to establish."
         },
         {
           "q": "2 a) A population consists of six numbers 4, 8, 12, 16, 20, 24. Find the population mean.",
-          "a": "The population mean is μ = (4 + 8 + 12 + 16 + 20 + 24)/6 = 84/6 = 14.",
-          "explanation": "The population mean is the sum of all population values divided by the population size N = 6, giving 14.",
+          "a": "The population mean is defined as μ = ΣXᵢ/N, the sum of all population values divided by the population size. Here the population values are 4, 8, 12, 16, 20, 24, so N = 6. Their sum is 4 + 8 + 12 + 16 + 20 + 24 = 84. Substituting gives μ = 84/6 = 14. Therefore the population mean is 14.",
+          "steps": [
+            "Identify the parameter: the population mean μ = ΣXᵢ/N.",
+            "List the population values 4, 8, 12, 16, 20, 24 and note N = 6.",
+            "Sum the values: 4 + 8 + 12 + 16 + 20 + 24 = 84.",
+            "Substitute into the formula: μ = 84/6 = 14.",
+            "Conclude that the population mean is 14."
+          ],
+          "formula": "μ = ΣXᵢ / N = 84/6 = 14",
+          "explanation": "The population mean is the sum of all population values divided by N = 6, giving 84/6 = 14.",
           "oneShotPreview": "Population mean = 84/6 = 14."
         },
         {
           "q": "2 b) A population consists of six numbers 4, 8, 12, 16, 20, 24. Find the population standard deviation.",
-          "a": "Deviations from μ = 14 are −10, −6, −2, 2, 6, 10, whose squares are 100, 36, 4, 4, 36, 100 and sum to 280. The population variance is σ² = 280/6 ≈ 46.67, so the population standard deviation is σ = √(280/6) ≈ 6.83.",
+          "a": "The population variance is σ² = Σ(Xᵢ−μ)²/N and the standard deviation is its square root. Using μ = 14 from part (a), the deviations are −10, −6, −2, 2, 6, 10. Their squares are 100, 36, 4, 4, 36, 100, which sum to 280. Thus σ² = 280/6 ≈ 46.67 and σ = √(280/6) ≈ √46.67 ≈ 6.83. The population standard deviation is therefore about 6.83.",
+          "steps": [
+            "State the parameter formulas: σ² = Σ(Xᵢ−μ)²/N and σ = √σ².",
+            "Use the population mean μ = 14 found earlier.",
+            "Compute deviations −10, −6, −2, 2, 6, 10 and their squares 100, 36, 4, 4, 36, 100.",
+            "Sum the squared deviations to get 280, so σ² = 280/6 ≈ 46.67.",
+            "Take the square root: σ = √(280/6) ≈ 6.83."
+          ],
+          "formula": "σ = √[Σ(Xᵢ−μ)²/N] = √(280/6) ≈ 6.83",
           "explanation": "Population standard deviation is √[Σ(X−μ)²/N]; dividing the sum of squared deviations 280 by N = 6 and taking the square root gives ≈ 6.83.",
           "oneShotPreview": "σ = √(280/6) ≈ 6.83."
         },
         {
           "q": "2 c) For samples of size two drawn without replacement from the population 4, 8, 12, 16, 20, 24, find the mean of the sampling distribution of means.",
-          "a": "The mean of the sampling distribution of the sample mean equals the population mean, so μ_x̄ = μ = 14. This holds for all samples of size two drawn without replacement from this population.",
-          "explanation": "By a fundamental property of sampling distributions, E(x̄) = μ, so the average of all possible sample means is 14.",
+          "a": "The mean of the sampling distribution of the sample mean is E(x̄) = μ_x̄, and a fundamental property of sampling distributions is that E(x̄) equals the population mean μ regardless of sample size or of whether sampling is with or without replacement. From part (a) the population mean of 4, 8, 12, 16, 20, 24 is μ = 14. Therefore the average of all possible sample means of size two is μ_x̄ = 14. This equality holds exactly, so no enumeration is needed.",
+          "steps": [
+            "Identify the parameter of interest: the mean of the sampling distribution of x̄, μ_x̄ = E(x̄).",
+            "Apply the sampling theorem E(x̄) = μ, valid for any sample size and with or without replacement.",
+            "Recall the population mean from part (a): μ = 14.",
+            "Substitute to obtain μ_x̄ = 14."
+          ],
+          "formula": "E(x̄) = μ = 14",
+          "explanation": "By a fundamental property of sampling distributions, E(x̄) = μ, so the average of all possible sample means is 14 regardless of the sampling scheme.",
           "oneShotPreview": "Mean of the sampling distribution of means = population mean = 14."
         },
         {
           "q": "2 d) For samples of size two drawn without replacement from the population 4, 8, 12, 16, 20, 24, find the standard deviation of the sampling distribution of means.",
-          "a": "For n = 2 drawn without replacement from N = 6, σ_x̄ = (σ/√n)·√[(N−n)/(N−1)] = (6.8313/√2)·√(4/5) ≈ 4.8305 × 0.8944 ≈ 4.32. Direct enumeration of all 15 possible samples gives variance 280/15 ≈ 18.67 and standard deviation √18.67 ≈ 4.32, confirming the result.",
-          "explanation": "The without-replacement standard error formula, and direct enumeration of the 15 sample means, both give about 4.32.",
+          "a": "For samples of size n drawn without replacement from a population of size N, the standard deviation of the sampling distribution of the mean is σ_x̄ = (σ/√n)·√[(N−n)/(N−1)]. Here σ = √(280/6) ≈ 6.8313, n = 2 and N = 6. Thus σ/√n = 6.8313/√2 ≈ 4.8305 and the correction factor is √[(6−2)/(6−1)] = √(4/5) ≈ 0.8944, giving σ_x̄ ≈ 4.8305 × 0.8944 ≈ 4.32. Direct enumeration of all C(6,2) = 15 samples confirms this: the variance is (σ²/n)·[(N−n)/(N−1)] = (46.67/2)(0.8) ≈ 18.67, whose square root is ≈ 4.32.",
+          "steps": [
+            "Identify the parameter: the standard error σ_x̄ = (σ/√n)·√[(N−n)/(N−1)] for sampling without replacement.",
+            "Use σ = √(280/6) ≈ 6.8313 with n = 2 and N = 6.",
+            "Compute σ/√n = 6.8313/√2 ≈ 4.8305 and FPC = √[(6−2)/(6−1)] = √(4/5) ≈ 0.8944.",
+            "Multiply: σ_x̄ ≈ 4.8305 × 0.8944 ≈ 4.32.",
+            "Verify by enumeration: variance = (280/6)/2 × 4/5 ≈ 18.67, so σ_x̄ = √18.67 ≈ 4.32."
+          ],
+          "formula": "σ_x̄ = (σ/√n)·√[(N−n)/(N−1)] ≈ 4.32",
+          "explanation": "The without-replacement standard error formula and direct enumeration of the 15 sample means both give a standard deviation of about 4.32.",
           "oneShotPreview": "Standard error of the mean ≈ 4.32 (n=2, N=6, without replacement)."
         },
         {
           "q": "3 A random sample of size 100 is taken from an infinite population having the mean μ = 76 and variance σ² = 256. What is the probability that x̄ will be between 75 and 78?",
-          "a": "Here σ = 16, so the standard error of the mean is σ/√n = 16/10 = 1.6. Standardising the limits gives z₁ = (75 − 76)/1.6 = −0.625 and z₂ = (78 − 76)/1.6 = 1.25. Hence P(75 < x̄ < 78) = Φ(1.25) − Φ(−0.625) ≈ 0.8944 − 0.2660 ≈ 0.6284, or about 62.8%.",
+          "a": "By the central limit theorem the sample mean is approximately normal with mean μ = 76 and standard error σ/√n. Here σ = √256 = 16 and n = 100, so SE = 16/10 = 1.6. Standardising the limits gives z₁ = (75−76)/1.6 = −0.625 and z₂ = (78−76)/1.6 = 1.25. Therefore P(75 < x̄ < 78) = Φ(1.25) − Φ(−0.625) = 0.8944 − 0.2660 = 0.6284. The probability is about 0.628, or 62.8%.",
+          "steps": [
+            "By the CLT, x̄ is approximately N(μ, σ/√n) with μ = 76, σ² = 256 so σ = 16, and n = 100.",
+            "Compute the standard error: SE = σ/√n = 16/√100 = 16/10 = 1.6.",
+            "Standardise the limits: z₁ = (75−76)/1.6 = −0.625 and z₂ = (78−76)/1.6 = 1.25.",
+            "Look up the areas: Φ(1.25) = 0.8944 and Φ(−0.625) = 0.2660, so P = 0.8944 − 0.2660 = 0.6284.",
+            "Conclude that the probability is approximately 0.6284 (62.8%)."
+          ],
+          "formula": "Z = (x̄ − μ)/(σ/√n); P(75 < x̄ < 78) = Φ(1.25) − Φ(−0.625)",
           "explanation": "By the central limit theorem x̄ is approximately normal with mean 76 and SE 1.6; the area between z = −0.625 and z = 1.25 is about 0.628.",
-          "oneShotPreview": "P(75 < x̄ < 78) ≈ 0.6284 using z = −0.625 and z = 1.25."
+          "oneShotPreview": "P(75 < x̄ < 78) ≈ 0.6284 using z₁ = −0.625 and z₂ = 1.25."
         },
         {
           "q": "4 a) What is the maximum error one can expect to make with probability 0.9 when using the mean of a random sample of size n=64 to estimate the mean of a population with σ² = 2.56?",
-          "a": "Here σ = √2.56 = 1.6 and the standard error is 1.6/√64 = 1.6/8 = 0.2. For probability 0.9 (90% confidence) the critical value is z = 1.645, so the maximum error is E = z·σ/√n = 1.645 × 0.2 = 0.329, about 0.33. Thus with probability 0.9 the sample mean differs from the population mean by no more than roughly 0.33.",
-          "explanation": "The margin of error is z times the standard error; with z = 1.645 for 90% confidence and SE = 0.2, E ≈ 0.329.",
-          "oneShotPreview": "Maximum error ≈ 0.329 (z = 1.645 × SE = 0.2)."
+          "a": "The maximum error (margin of error) when estimating μ by x̄ is E = z_{α/2}·σ/√n. Here σ = √2.56 = 1.6 and n = 64, so the standard error is σ/√n = 1.6/8 = 0.2. A probability of 0.9 corresponds to 90% confidence, so α = 0.10 and z_{0.05} = 1.645. Substituting gives E = 1.645 × 0.2 = 0.329. Thus, with probability 0.9, the sample mean differs from the population mean by no more than about 0.33.",
+          "steps": [
+            "Identify the quantity: the maximum error E when x̄ estimates the population mean μ.",
+            "State the formula E = z_{α/2}·σ/√n; for probability 0.90, z_{0.05} = 1.645.",
+            "From σ² = 2.56 obtain σ = 1.6, and with n = 64 compute SE = 1.6/8 = 0.2.",
+            "Substitute: E = 1.645 × 0.2 = 0.329.",
+            "Conclude that with probability 0.9 the estimation error is at most about 0.33."
+          ],
+          "formula": "E = z_{α/2}·σ/√n = 1.645 × (1.6/8) ≈ 0.329",
+          "explanation": "The margin of error is z times the standard error; with z_{0.05} = 1.645 for 90% confidence and SE = 0.2, E ≈ 0.329.",
+          "oneShotPreview": "Maximum error ≈ 0.329 (z_{0.05} = 1.645 × SE = 0.2)."
         },
         {
           "q": "4 b) A random sample of size 100 is taken from a population with σ = 5.1. Given that the sample mean is x̄ = 21.6, construct a 95% confidence interval for the population mean μ.",
-          "a": "The standard error is σ/√n = 5.1/10 = 0.51 and z₀.₀₂₅ = 1.96. The 95% confidence interval is x̄ ± 1.96·SE = 21.6 ± (1.96 × 0.51) = 21.6 ± 0.9996 ≈ (20.60, 22.60). We are 95% confident that the true population mean lies between about 20.6 and 22.6.",
-          "explanation": "A large-sample 95% confidence interval is x̄ ± z₀.₀₂₅·σ/√n; substituting the given values yields 21.6 ± 1.0.",
+          "a": "The large-sample 95% confidence interval for the population mean is x̄ ± z_{α/2}·σ/√n, with z_{0.025} = 1.96. Here n = 100, so the standard error is σ/√n = 5.1/10 = 0.51. The margin of error is 1.96 × 0.51 = 0.9996 ≈ 1.0. Hence the interval is 21.6 ± 0.9996, i.e. (20.6004, 22.5996). We are 95% confident that the true population mean lies between about 20.6 and 22.6.",
+          "steps": [
+            "Identify the parameter to estimate: the population mean μ; the estimator is x̄ = 21.6.",
+            "State the formula CI = x̄ ± z_{α/2}·σ/√n with z_{0.025} = 1.96 for 95% confidence.",
+            "Compute the standard error: SE = σ/√n = 5.1/√100 = 0.51.",
+            "Compute the margin of error: 1.96 × 0.51 = 0.9996.",
+            "Construct the interval: 21.6 ± 0.9996 = (20.6004, 22.5996) ≈ (20.60, 22.60)."
+          ],
+          "formula": "CI = x̄ ± z_{α/2}·σ/√n = 21.6 ± 1.96(5.1/10)",
+          "explanation": "A large-sample 95% confidence interval is x̄ ± z_{0.025}·σ/√n; substituting gives 21.6 ± 1.0, i.e. (20.60, 22.60).",
           "oneShotPreview": "95% confidence interval for μ ≈ (20.60, 22.60)."
         },
         {
           "q": "5 a) A sample of 400 items is taken from a population whose standard deviation is 10. The mean of the sample is 40. Test whether the sample has come from a population with mean 38.",
-          "a": "Take H0: μ = 38 against H1: μ ≠ 38. The standard error is 10/√400 = 0.5 and z = (40 − 38)/0.5 = 4. Since |z| = 4 exceeds the 5% critical value 1.96 (and the 1% value 2.58), H0 is rejected. The sample has not come from a population with mean 38; its mean is significantly higher.",
-          "explanation": "A large-sample z-test of the population mean gives z = 4, far beyond the rejection threshold, so the claimed mean of 38 is untenable.",
-          "oneShotPreview": "z = 4 > 1.96; reject H0 — sample is not from a mean-38 population."
+          "a": "Set H₀: μ = 38 against H₁: μ ≠ 38, a two-tailed test. At α = 0.05 the critical values are Z_{0.025} = ±1.96 (and ±2.58 at 1%). The test statistic is Z = (x̄ − μ₀)/(σ/√n); the standard error is 10/√400 = 10/20 = 0.5, so Z = (40 − 38)/0.5 = 4. Since |Z| = 4 exceeds 1.96 (and also 2.58), H₀ is rejected. The sample mean of 40 is significantly higher than 38, so the sample did not come from a population with mean 38.",
+          "steps": [
+            "H₀: μ = 38 and H₁: μ ≠ 38 (two-tailed).",
+            "Significance level α = 0.05, critical values Z_{0.025} = ±1.96 (also ±2.58 at the 1% level).",
+            "Test statistic Z = (x̄ − μ₀)/(σ/√n); SE = 10/√400 = 0.5, so Z = (40 − 38)/0.5 = 4.",
+            "Decision rule: reject H₀ if |Z| > 1.96; since |Z| = 4 > 1.96, reject H₀.",
+            "Conclusion: the sample mean is significantly different from 38, so the sample is not from a population with mean 38."
+          ],
+          "formula": "Z = (x̄ − μ₀)/(σ/√n)",
+          "explanation": "A large-sample z-test of the population mean gives z = 4, far beyond the 5% (1.96) and 1% (2.58) thresholds, so the claimed mean of 38 is untenable.",
+          "oneShotPreview": "z = 4 > 1.96; reject H₀ — sample is not from a mean-38 population."
         },
         {
           "q": "5 b) In a random sample of 125 cool drinkers 68 said they prefer Thumsup to Pepsi. Test the null hypothesis P = 0.5 against the alternative hypothesis P > 0.5.",
-          "a": "H0: P = 0.5, H1: P > 0.5. The sample proportion is p̂ = 68/125 = 0.544 and the standard error under H0 is √(0.5 × 0.5 /125) ≈ 0.0447. Hence z = (0.544 − 0.5)/0.0447 ≈ 0.98. Since 0.98 < 1.645 (one-tailed 5% critical value), H0 is not rejected; the data do not give significant evidence that more than half of cool drinkers prefer Thumsup.",
-          "explanation": "The one-sample proportion z-test gives z ≈ 0.98, below the 1.645 cut-off, so the observed excess is attributable to sampling variation.",
+          "a": "We test H₀: P = 0.5 against H₁: P > 0.5, a right-tailed test at α = 0.05 with critical value Z_{0.05} = 1.645. The sample proportion is p̂ = 68/125 = 0.544 and the standard error under H₀ is √[P₀(1−P₀)/n] = √(0.5×0.5/125) = √0.002 ≈ 0.0447. Hence Z = (p̂ − P₀)/SE = (0.544 − 0.5)/0.0447 ≈ 0.98. Since 0.98 < 1.645, H₀ is not rejected. The data do not provide significant evidence that more than half of cool drinkers prefer Thumsup; the observed excess is attributable to sampling variation.",
+          "steps": [
+            "H₀: P = 0.5 and H₁: P > 0.5 (right-tailed).",
+            "Significance level α = 0.05, critical value Z_{0.05} = 1.645.",
+            "Test statistic Z = (p̂ − P₀)/√[P₀(1−P₀)/n]; p̂ = 68/125 = 0.544 and SE = √(0.25/125) ≈ 0.0447, so Z ≈ 0.044/0.0447 ≈ 0.98.",
+            "Decision rule: reject H₀ if Z > 1.645; since 0.98 < 1.645, do not reject H₀.",
+            "Conclusion: there is no significant evidence that more than half prefer Thumsup."
+          ],
+          "formula": "Z = (p̂ − P₀)/√[P₀(1−P₀)/n]",
+          "explanation": "The one-sample proportion z-test gives z ≈ 0.98, below the one-tailed 5% cut-off of 1.645, so the observed excess is due to sampling variation.",
           "oneShotPreview": "z ≈ 0.98 < 1.645; do not reject P = 0.5."
         },
         {
           "q": "6 a) A sample of 64 students have mean weight of 70 kgs. Can this be regarded as a sample from a population with mean weight 56 kgs and standard deviation 25 kgs?",
-          "a": "H0: μ = 56 against H1: μ ≠ 56. The standard error is 25/√64 = 25/8 = 3.125, so z = (70 − 56)/3.125 = 4.48. Since |z| = 4.48 is far greater than 1.96 (5%) and 2.58 (1%), H0 is rejected. The sample with mean weight 70 kg cannot be regarded as drawn from a population with mean 56 kg and standard deviation 25 kg.",
+          "a": "Test H₀: μ = 56 against H₁: μ ≠ 56 at α = 0.05, with critical values ±1.96 (±2.58 at 1%). The test statistic is Z = (x̄ − μ₀)/(σ/√n); the standard error is 25/√64 = 25/8 = 3.125, so Z = (70 − 56)/3.125 = 14/3.125 = 4.48. Since |Z| = 4.48 is far greater than 1.96 (indeed greater than 2.58), H₀ is rejected. The observed mean weight of 70 kg is incompatible with a population mean of 56 kg, so the sample cannot be regarded as drawn from that population.",
+          "steps": [
+            "H₀: μ = 56 and H₁: μ ≠ 56 (two-tailed).",
+            "Significance level α = 0.05, critical values ±1.96 (also ±2.58 at 1%).",
+            "Test statistic Z = (x̄ − μ₀)/(σ/√n); SE = 25/√64 = 3.125, so Z = (70 − 56)/3.125 = 4.48.",
+            "Decision rule: reject H₀ if |Z| > 1.96; since 4.48 > 1.96, reject H₀.",
+            "Conclusion: the sample with mean 70 kg cannot be regarded as coming from the population with mean 56 kg and σ = 25 kg."
+          ],
+          "formula": "Z = (x̄ − μ₀)/(σ/√n)",
           "explanation": "The z-statistic of 4.48 lies deep in the rejection region, showing the observed mean is incompatible with a population mean of 56 kg.",
           "oneShotPreview": "z = 4.48 → reject; not a sample from the mean-56 population."
         },
         {
           "q": "6 b) In a big city 325 men out of 600 men were found to be smokers. Does this information support the conclusion that the majority of men in this city are smokers?",
-          "a": "H0: P = 0.5, H1: P > 0.5 (a majority). Here p̂ = 325/600 ≈ 0.5417 and the standard error under H0 is √(0.25/600) ≈ 0.0204, so z = (0.5417 − 0.5)/0.0204 ≈ 2.04. Since 2.04 > 1.645, H0 is rejected at the 5% one-tailed level: the data do support the conclusion that a majority of men are smokers (though not at the 1% level).",
-          "explanation": "The one-tailed proportion test yields z ≈ 2.04, exceeding the 5% critical value 1.645, so the majority claim is supported at that level.",
+          "a": "Test H₀: P = 0.5 against H₁: P > 0.5 (a majority), right-tailed at α = 0.05 with critical value 1.645. The sample proportion is p̂ = 325/600 ≈ 0.5417 and the standard error under H₀ is √[0.5×0.5/600] = √(0.25/600) ≈ 0.0204. Hence Z = (0.5417 − 0.5)/0.0204 ≈ 2.04. Since 2.04 > 1.645, H₀ is rejected at the 5% level, so the data support the majority claim; however 2.04 < 2.33, so the claim is not supported at the 1% level.",
+          "steps": [
+            "H₀: P = 0.5 and H₁: P > 0.5 (a majority, right-tailed).",
+            "Significance level α = 0.05, critical value Z_{0.05} = 1.645 (at 1% it would be 2.33).",
+            "Test statistic Z = (p̂ − P₀)/√[P₀(1−P₀)/n]; p̂ = 325/600 ≈ 0.5417, SE = √(0.25/600) ≈ 0.0204, so Z ≈ 0.0417/0.0204 ≈ 2.04.",
+            "Decision rule: reject H₀ if Z > 1.645; since 2.04 > 1.645, reject at 5%, but 2.04 < 2.33 so not at 1%.",
+            "Conclusion: the information supports the conclusion that a majority of men are smokers at the 5% level."
+          ],
+          "formula": "Z = (p̂ − P₀)/√[P₀(1−P₀)/n]",
+          "explanation": "The one-tailed proportion test yields z ≈ 2.04, exceeding the 5% critical value 1.645 but below the 1% value 2.33, so the majority claim is supported at 5% only.",
           "oneShotPreview": "z ≈ 2.04 > 1.645; yes, a majority are smokers at the 5% level."
         },
         {
           "q": "7 The means of two large samples of sizes 1000 and 2000 members are 67.5 inches and 68.0 inches respectively. Can the samples be regarded as drawn from the same population of standard deviation 2.5 inches?",
-          "a": "H0: μ₁ = μ₂. The standard error of the difference is σ√(1/n₁ + 1/n₂) = 2.5√(1/1000 + 1/2000) = 2.5√0.0015 ≈ 0.0968, so z = (68.0 − 67.5)/0.0968 ≈ 5.16. Since |z| = 5.16 > 1.96, H0 is rejected. The samples cannot be regarded as drawn from the same population; the second sample mean is significantly higher.",
-          "explanation": "The two-sample z-test gives z ≈ 5.16, far beyond the 5% critical value, so the 0.5-inch difference is not due to chance.",
+          "a": "Test H₀: μ₁ = μ₂ against H₁: μ₁ ≠ μ₂ at α = 0.05 (critical values ±1.96). For two large samples with common σ = 2.5, the standard error of the difference is σ√[(1/n₁)+(1/n₂)] = 2.5√[(1/1000)+(1/2000)] = 2.5√0.0015 ≈ 0.0968. Thus Z = (68.0 − 67.5)/0.0968 = 0.5/0.0968 ≈ 5.16. Since |Z| = 5.16 > 1.96, H₀ is rejected. The samples cannot be regarded as drawn from the same population; the second sample mean is significantly higher.",
+          "steps": [
+            "H₀: μ₁ = μ₂ and H₁: μ₁ ≠ μ₂ (two-tailed).",
+            "Significance level α = 0.05, critical values ±1.96.",
+            "Test statistic Z = (x̄₁ − x̄₂)/√[σ²(1/n₁ + 1/n₂)]; SE = 2.5√(1/1000 + 1/2000) = 2.5√0.0015 ≈ 0.0968, so Z = 0.5/0.0968 ≈ 5.16.",
+            "Decision rule: reject H₀ if |Z| > 1.96; since 5.16 > 1.96, reject H₀.",
+            "Conclusion: the samples are not drawn from the same population; the second sample mean is significantly larger."
+          ],
+          "formula": "Z = (x̄₁ − x̄₂)/√[σ²(1/n₁ + 1/n₂)]",
+          "explanation": "The two-sample z-test gives z ≈ 5.16, far beyond the 5% critical value, so the 0.5-inch difference cannot be attributed to chance.",
           "oneShotPreview": "z ≈ 5.16 > 1.96; the samples come from different populations."
         },
         {
           "q": "8 Samples of students were drawn from two universities and their weights in kilograms gave: University A — mean 55, S.D. 10, sample size 400; University B — mean 57, S.D. 15, sample size 100. Make a large sample test for the significance of the difference between the means.",
-          "a": "H0: μ_A = μ_B. The standard error of the difference is √(σ_A²/n_A + σ_B²/n_B) = √(100/400 + 225/100) = √(0.25 + 2.25) = √2.5 ≈ 1.581, so z = |57 − 55|/1.581 ≈ 1.26. Since 1.26 < 1.96 (two-tailed 5% critical value), H0 is not rejected. There is no statistically significant difference between the mean weights of the two universities.",
-          "explanation": "The large-sample test for the difference of two means gives z ≈ 1.26, below the 5% critical value, so the 2 kg difference is within sampling error.",
+          "a": "Test H₀: μ_A = μ_B against H₁: μ_A ≠ μ_B at α = 0.05 (critical values ±1.96). The standard error of the difference is √[(s_A²/n_A)+(s_B²/n_B)] = √(100/400 + 225/100) = √(0.25 + 2.25) = √2.5 ≈ 1.581. Hence Z = |57 − 55|/1.581 = 2/1.581 ≈ 1.26. Since 1.26 < 1.96, H₀ is not rejected. There is no statistically significant difference between the mean weights of the two universities; the 2 kg gap is within sampling error.",
+          "steps": [
+            "H₀: μ_A = μ_B and H₁: μ_A ≠ μ_B (two-tailed).",
+            "Significance level α = 0.05, critical values ±1.96.",
+            "Test statistic Z = (x̄_A − x̄_B)/√(s_A²/n_A + s_B²/n_B); SE = √(100/400 + 225/100) = √2.5 ≈ 1.581, so Z = 2/1.581 ≈ 1.26.",
+            "Decision rule: reject H₀ if |Z| > 1.96; since 1.26 < 1.96, do not reject H₀.",
+            "Conclusion: there is no significant difference between the mean weights of the two universities."
+          ],
+          "formula": "Z = (x̄₁ − x̄₂)/√(s₁²/n₁ + s₂²/n₂)",
+          "explanation": "The large-sample test for the difference of two means gives z ≈ 1.26, below the 5% critical value 1.96, so the 2 kg difference is within sampling error.",
           "oneShotPreview": "z ≈ 1.26 < 1.96; no significant difference in mean weights."
         },
         {
           "q": "9 In two large populations there are 30% and 25% respectively of fair haired people. Is this difference likely to be hidden in samples of 1200 and 900 respectively from the two populations?",
-          "a": "H0: P₁ = P₂. The pooled proportion is (0.30×1200 + 0.25×900)/2100 = 585/2100 ≈ 0.2786, giving SE = √[p(1−p)(1/1200 + 1/900)] ≈ √0.000391 ≈ 0.0198. Hence z = (0.30 − 0.25)/0.0198 ≈ 2.53. Since 2.53 > 1.96, H0 is rejected at 5%; the difference is significant and is therefore not likely to be hidden — samples of this size would reveal it.",
+          "a": "Test H₀: P₁ = P₂ against H₁: P₁ ≠ P₂ at α = 0.05 (critical values ±1.96). The pooled proportion is p = (0.30×1200 + 0.25×900)/(1200+900) = 585/2100 ≈ 0.2786, giving SE = √[p(1−p)(1/n₁ + 1/n₂)] = √[0.2786×0.7214×(1/1200 + 1/900)] ≈ √0.000391 ≈ 0.0198. Hence Z = (0.30 − 0.25)/0.0198 = 0.05/0.0198 ≈ 2.53. Since 2.53 > 1.96, H₀ is rejected at the 5% level. The difference is statistically significant and therefore would not be hidden — samples of these sizes would reveal it.",
+          "steps": [
+            "H₀: P₁ = P₂ and H₁: P₁ ≠ P₂ (two-tailed).",
+            "Significance level α = 0.05, critical values ±1.96.",
+            "Test statistic Z = (p̂₁ − p̂₂)/√[p(1−p)(1/n₁ + 1/n₂)] with pooled p = (360+225)/2100 = 585/2100 ≈ 0.2786.",
+            "SE = √[0.2786×0.7214×(1/1200 + 1/900)] ≈ 0.0198, so Z = 0.05/0.0198 ≈ 2.53.",
+            "Decision rule: reject H₀ if |Z| > 1.96; since 2.53 > 1.96, reject at 5%.",
+            "Conclusion: the difference is significant, so it is not likely to be hidden by samples of 1200 and 900."
+          ],
+          "formula": "Z = (p̂₁ − p̂₂)/√[p(1−p)(1/n₁ + 1/n₂)], p = pooled proportion",
           "explanation": "The two-proportion z-test gives z ≈ 2.53, exceeding 1.96, so the observed difference would be detected rather than concealed by these sample sizes.",
           "oneShotPreview": "z ≈ 2.53 > 1.96; the difference is significant, not hidden."
         },
         {
           "q": "10 a) An ambulance service claims that it takes on the average less than 10 minutes to reach its destination in emergency calls. A sample of 36 calls has a mean of 11 minutes and variance of 16 minutes. Test the significance at 0.05 level.",
-          "a": "H0: μ = 10, H1: μ < 10 (the claim). With s = √16 = 4 and n = 36 the standard error is 4/6 ≈ 0.667, so z = (11 − 10)/0.667 = 1.5. For a left-tailed test at α = 0.05 the critical value is −1.645; the computed z = +1.5 is not in the rejection region, so H0 is not rejected. The sample does not support the claim of an average response time below 10 minutes — it actually indicates 11 minutes.",
-          "explanation": "The claim requires a significantly small mean, but the sample mean of 11 minutes gives a positive z of 1.5, so the claim cannot be accepted.",
+          "a": "The claim μ < 10 gives H₀: μ = 10 and H₁: μ < 10, a left-tailed test. At α = 0.05 the critical value is −1.645. With sample variance 16, s = 4 and the standard error is s/√n = 4/√36 = 4/6 ≈ 0.667. The test statistic is Z = (x̄ − μ₀)/(s/√n) = (11 − 10)/0.667 = +1.5. Since +1.5 is not less than −1.645, it lies outside the rejection region and H₀ is not rejected. The sample does not support the claim of an average response below 10 minutes; the observed average is in fact 11 minutes.",
+          "steps": [
+            "H₀: μ = 10 and H₁: μ < 10 (the claim, left-tailed).",
+            "Significance level α = 0.05, critical value −1.645.",
+            "Test statistic Z = (x̄ − μ₀)/(s/√n); s = √16 = 4, SE = 4/√36 ≈ 0.667, so Z = (11 − 10)/0.667 = +1.5.",
+            "Decision rule: reject H₀ only if Z < −1.645; since +1.5 is not in the rejection region, do not reject H₀.",
+            "Conclusion: the sample does not support the claim that the average response time is below 10 minutes."
+          ],
+          "formula": "Z = (x̄ − μ₀)/(s/√n)",
+          "explanation": "The claim requires a significantly small mean, but the sample mean of 11 minutes gives a positive z of 1.5, far from the left-tail cut-off of −1.645, so the claim cannot be accepted.",
           "oneShotPreview": "z = +1.5 (not < −1.645); claim of mean < 10 minutes not supported."
         },
         {
           "q": "10 b) Experience had shown that 20% of a manufactured product is of top quality. In one day's production of 400 articles only 50 are of top quality. Test the hypothesis at 0.05 level.",
-          "a": "H0: P = 0.20, H1: P ≠ 0.20. The observed proportion is p̂ = 50/400 = 0.125 and SE = √(0.2 × 0.8 /400) = √0.0004 = 0.02, so z = (0.125 − 0.20)/0.02 = −3.75. Since |z| = 3.75 > 1.96, H0 is rejected at 5% (indeed even at 1%). The day's production contains a significantly lower proportion of top-quality articles than the expected 20%.",
+          "a": "Test H₀: P = 0.20 against H₁: P ≠ 0.20 at α = 0.05, with critical values ±1.96 (±2.58 at 1%). The observed proportion is p̂ = 50/400 = 0.125 and the standard error under H₀ is √[P₀(1−P₀)/n] = √(0.2×0.8/400) = √0.0004 = 0.02. Hence Z = (0.125 − 0.20)/0.02 = −0.075/0.02 = −3.75. Since |Z| = 3.75 > 1.96 (and > 2.58), H₀ is rejected. The day's production has a significantly lower proportion of top-quality articles than the expected 20%.",
+          "steps": [
+            "H₀: P = 0.20 and H₁: P ≠ 0.20 (two-tailed).",
+            "Significance level α = 0.05, critical values ±1.96 (also ±2.58 at 1%).",
+            "Test statistic Z = (p̂ − P₀)/√[P₀(1−P₀)/n]; p̂ = 50/400 = 0.125, SE = √(0.2×0.8/400) = 0.02, so Z = (0.125−0.20)/0.02 = −3.75.",
+            "Decision rule: reject H₀ if |Z| > 1.96; since 3.75 > 1.96, reject H₀ (also at 1%).",
+            "Conclusion: the top-quality rate is significantly lower than the expected 20%."
+          ],
+          "formula": "Z = (p̂ − P₀)/√[P₀(1−P₀)/n]",
           "explanation": "The one-sample proportion test yields z = −3.75, far beyond the critical value, showing the drop from 20% to 12.5% is not due to chance.",
           "oneShotPreview": "z = −3.75; reject P = 0.20 — top-quality rate significantly lower."
         },
         {
           "q": "11 A sample of the heights of 6400 Englishmen has a mean of 67.85 inches and a standard deviation of 2.5 inches, while a sample of the heights of 1600 Australians has a mean of 68.55 inches and a standard deviation of 2.52 inches. Do the data indicate that the Australians are on the average taller than the Englishmen?",
-          "a": "H0: μ_E = μ_A, H1: μ_A > μ_E. The standard error of the difference is √(2.5²/6400 + 2.52²/1600) = √(0.0009766 + 0.003969) ≈ √0.004946 ≈ 0.0703, so z = (68.55 − 67.85)/0.0703 ≈ 0.70/0.0703 ≈ 9.95. Since 9.95 far exceeds 1.645 (one-tailed 5%) and 2.33 (1%), H0 is decisively rejected. Yes — Australians are on average significantly taller than Englishmen.",
+          "a": "Test H₀: μ_A = μ_E against H₁: μ_A > μ_E (Australians taller), a right-tailed test with critical value 1.645 at α = 0.05 (2.33 at 1%). The standard error of the difference is √[(2.5²/6400)+(2.52²/1600)] = √(0.0009766 + 0.003969) = √0.004946 ≈ 0.0703. Hence Z = (68.55 − 67.85)/0.0703 = 0.70/0.0703 ≈ 9.95. Since 9.95 far exceeds both 1.645 and 2.33, H₀ is decisively rejected. The data indicate that Australians are on average significantly taller than Englishmen.",
+          "steps": [
+            "H₀: μ_A = μ_E and H₁: μ_A > μ_E (Australians taller, right-tailed).",
+            "Significance level α = 0.05, critical value 1.645 (at 1%, 2.33).",
+            "Test statistic Z = (x̄_A − x̄_E)/√(s_A²/n_A + s_E²/n_E); SE = √(2.5²/6400 + 2.52²/1600) = √(0.0009766 + 0.003969) ≈ 0.0703.",
+            "Z = 0.70/0.0703 ≈ 9.95; decision rule: reject H₀ if Z > 1.645, and 9.95 > 1.645 (also > 2.33).",
+            "Conclusion: H₀ is decisively rejected — Australians are on average significantly taller than Englishmen."
+          ],
+          "formula": "Z = (x̄₁ − x̄₂)/√(s₁²/n₁ + s₂²/n₂)",
           "explanation": "The two-sample z-test gives z ≈ 9.95, an overwhelmingly significant result, so the 0.7-inch difference reflects a real difference rather than sampling variation.",
           "oneShotPreview": "z ≈ 9.95; yes, Australians are significantly taller."
         }
@@ -2992,97 +3590,237 @@ export const QB_QUESTIONS = {
       "questions": [
         {
           "q": "a) Define t-test for single mean.",
-          "a": "The t-test for a single mean tests whether the mean of one small sample, drawn from a normal population with unknown variance, differs significantly from a specified (hypothesized) population mean μ0. The test statistic is t = (x̄ − μ0)/(s/√n), where x̄ is the sample mean, s is the sample standard deviation and n is the sample size; under H0 it follows Student's t distribution with n−1 degrees of freedom. The calculated |t| is compared with the table value at the chosen significance level; if |t| exceeds the table value, H0 is rejected and the sample mean is declared significantly different from μ0.",
-          "explanation": "It is a small-sample test used when the population standard deviation is unknown, so the sample S.D. replaces it and the t-distribution, not the normal distribution, is used.",
-          "oneShotPreview": "One-sample t-test: t = (x̄−μ0)/(s/√n), df = n−1; compare |t| with table value."
+          "a": "The one-sample t-test checks whether the mean of a single small sample, drawn from a normal population whose variance is unknown, differs significantly from a specified value μ0. The hypotheses are H0: μ = μ0 against H1: μ ≠ μ0 (or a one-sided inequality). The test statistic is t = (x̄ − μ0)/(s/√n), where n is the sample size, x̄ the sample mean and s the sample standard deviation; under H0 it follows Student's t-distribution with df = n − 1. The standard error of the mean is estimated as s/√n because the population σ is not available. The computed |t| is compared with the table value t(α, n−1), and H0 is rejected when |t| exceeds it. Thus the t statistic replaces the normal deviate z by a quantity whose distribution explicitly accounts for the extra uncertainty from estimating σ from a small sample.",
+          "steps": [
+            "State the hypotheses: H0: μ = μ0 (the sample mean equals the specified value) versus H1: μ ≠ μ0, or μ < μ0 / μ > μ0 for a one-tailed claim.",
+            "Choose the significance level α and note that the population variance is unknown with a small sample (n < 30), so use the t-distribution with df = n − 1.",
+            "Compute the sample mean x̄, the sample standard deviation s = √[Σ(x−x̄)²/(n−1)], and hence the standard error s/√n.",
+            "Form the test statistic t = (x̄ − μ0)/(s/√n).",
+            "Find the table critical value t(α, n−1) and apply the rule: reject H0 if |t| > t(α, n−1), otherwise accept H0.",
+            "Conclude in context whether the sample mean differs significantly from μ0."
+          ],
+          "formula": "t = (x̄ − μ0)/(s/√n), df = n − 1",
+          "explanation": "It is a small-sample test used when the population standard deviation is unknown, so the sample S.D. replaces it and the t-distribution — which has heavier tails than the normal — is used instead of z.",
+          "oneShotPreview": "One-sample t-test: t = (x̄−μ0)/(s/√n), df = n−1; reject H0 if |t| > t(α, n−1)."
         },
         {
           "q": "b) Write the formula for F-test.",
-          "a": "The F-test compares two population variances using the ratio F = s1²/s2², where s1² = Σ(x−x̄)²/(n1−1) and s2² = Σ(y−ȳ)²/(n2−1) are the two sample variances (the larger variance is conventionally placed in the numerator so F ≥ 1). Under H0: σ1² = σ2² the statistic follows the F-distribution with (n1−1, n2−1) degrees of freedom; if the calculated F is less than the table value the variances are accepted as equal. In ANOVA the same F-ratio appears as (variance between samples)/(variance within samples).",
+          "a": "The F-test compares two population variances by forming the ratio of two independent sample variances. The statistic is F = s1²/s2², where s1² = Σ(x−x̄)²/(n1−1) and s2² = Σ(y−ȳ)²/(n2−1). By convention the larger variance is placed in the numerator so that F ≥ 1, and under H0: σ1² = σ2² the statistic follows the F-distribution with df = (n1−1, n2−1). Each sample variance is proportional to a chi-square variate, and the ratio of two independent chi-square variates divided by their degrees of freedom is F-distributed. The decision rule is to reject H0 if Fcalc > F(α, n1−1, n2−1); otherwise the variances are accepted as equal. The same F-ratio appears in ANOVA as variance between samples divided by variance within samples.",
+          "steps": [
+            "Set up H0: σ1² = σ2² against H1: σ1² ≠ σ2².",
+            "Compute each sample variance s1² = Σ(x−x̄)²/(n1−1) and s2² = Σ(y−ȳ)²/(n2−1).",
+            "Place the larger variance in the numerator: F = s1²/s2² so that F ≥ 1; the degrees of freedom are (n1−1, n2−1).",
+            "Look up the table value F(α, n1−1, n2−1) at the chosen significance level.",
+            "Apply the decision rule: reject H0 if Fcalc > Ftable; otherwise accept equal variances.",
+            "Interpret: a significant F means the two populations differ in variability."
+          ],
+          "formula": "F = s1²/s2², where s² = Σ(x−x̄)²/(n−1); df = (n1−1, n2−1)",
           "explanation": "F is a ratio of two independent variance estimates, each proportional to a chi-square variate, so it is the correct statistic for comparing two variances and for testing several means in ANOVA.",
           "oneShotPreview": "F = larger variance / smaller variance; df = (n1−1, n2−1); F < table ⇒ equal variances."
         },
         {
           "q": "c) What is the Null hypothesis and Alternative hypothesis for F-test?",
-          "a": "For the F-test the null hypothesis is H0: σ1² = σ2² — the two samples come from populations having equal variances. The alternative hypothesis is H1: σ1² ≠ σ2² (a two-tailed test of unequal variances); when the direction is known it may be written one-tailed as H1: σ1² > σ2² or σ1² < σ2². Rejection of H0 means the variability of the two populations differs significantly.",
+          "a": "The F-test is a test about population variances, so its hypotheses are statements about σ² rather than about means. The null hypothesis is H0: σ1² = σ2² — the two samples are drawn from populations having the same variance. The two-sided alternative is H1: σ1² ≠ σ2², used when we merely ask whether the variances differ. If prior theory or the direction of the larger variance is known, the one-sided alternatives H1: σ1² > σ2² or H1: σ1² < σ2² may be used instead. Rejection of H0 leads to the conclusion that the variability of the two populations is significantly different. This equality-of-variances hypothesis is also checked before pooling variances in a two-sample t-test.",
+          "steps": [
+            "Identify the parameter of interest: the two population variances σ1² and σ2².",
+            "Write the null hypothesis of no difference: H0: σ1² = σ2².",
+            "Write the two-sided alternative H1: σ1² ≠ σ2² when direction is unspecified.",
+            "If direction is specified, use the one-tailed alternative H1: σ1² > σ2² or H1: σ1² < σ2².",
+            "Use F = s1²/s2² and decide by comparing Fcalc with F(α, n1−1, n2−1)."
+          ],
+          "formula": "H0: σ1² = σ2² vs H1: σ1² ≠ σ2²",
           "explanation": "The F-test is concerned with population variances, so its hypotheses are statements about σ² rather than about means.",
           "oneShotPreview": "H0: σ1² = σ2²; H1: σ1² ≠ σ2² (or a one-sided inequality)."
         },
         {
           "q": "d) What is the difference between F-test and t-tests?",
-          "a": "A t-test compares averages — a sample mean with a hypothesized mean, the means of two independent samples, or paired before/after observations — and uses the t-distribution with one degrees-of-freedom value. An F-test compares variances (or, in ANOVA, several group means through a ratio of variances) and uses the F-distribution with two degrees-of-freedom values. In short, t asks \"are the means different?\" while F asks \"are the variances different?\" (or \"is the between-group variation larger than the within-group variation?\"). The F-test is also used before a two-sample t-test to verify the equal-variance assumption.",
+          "a": "A t-test is concerned with means: it compares one sample mean with a hypothesized value, the means of two independent samples, or paired before-and-after observations. Its statistic is a difference of means divided by a standard error, and it uses Student's t-distribution with a single degrees-of-freedom value. An F-test is concerned with variances: it compares two population variances through the ratio F = s1²/s2², or compares several group means in ANOVA through the ratio of between-group to within-group variance. It uses the F-distribution, which needs two degrees-of-freedom values, one for the numerator and one for the denominator. In short, t asks whether means differ, while F asks whether variances differ. Because the pooled two-sample t-test assumes equal population variances, an F-test is commonly run first to verify that assumption.",
+          "steps": [
+            "Note what each test compares: t compares means, F compares variances (or ANOVA means via a variance ratio).",
+            "Note the statistics: t = (difference of means)/SE; F = larger s² / smaller s².",
+            "Note the distributions: t has one df value (n−1, n1+n2−2, or n−1 for pairs); F has two df values (ν1, ν2).",
+            "Note the critical regions: t-tests may be one- or two-tailed; F uses an upper-tail region when F ≥ 1.",
+            "Note the link: run an F-test of equal variances before a pooled two-sample t-test."
+          ],
+          "formula": "t = (difference of means)/SE (one df) ; F = s1²/s2² (two df)",
           "explanation": "Both are small-sample tests, but t is built from a difference of means divided by a standard error, whereas F is built from a ratio of two variance estimates.",
           "oneShotPreview": "t compares means (t-dist, one df); F compares variances / ANOVA means (F-dist, two df)."
         },
         {
           "q": "e) Write the formula for Chi-square test for goodness of fit.",
-          "a": "The chi-square goodness-of-fit statistic is χ² = Σ (Oi − Ei)²/Ei, summed over all k classes, where Oi is the observed frequency and Ei is the frequency expected under the hypothesized distribution. The degrees of freedom are k − 1 − m, where m is the number of parameters estimated from the data. If the calculated χ² is less than the table value at the desired level, H0 is accepted and the data are said to fit the theoretical distribution; a large χ² indicates a poor fit. Expected frequencies should preferably be at least 5 in each class.",
+          "a": "The chi-square goodness-of-fit test measures how well observed counts agree with counts expected under a hypothesized distribution. Its statistic is χ² = Σ(Oi − Ei)²/Ei, summed over all k classes, where Oi is the observed frequency and Ei is the frequency expected under H0. The expected frequency for a class is Ei = n × pi, where pi is the probability predicted by the hypothesized distribution and n is the total sample size. The degrees of freedom are df = k − 1 − m, where one degree is lost because the expected total equals n and m further degrees are lost for each parameter estimated from the data. A value of χ² near zero indicates a good fit, while a large value indicates a poor fit. Accept H0 if χ²calc < χ²(α, df) and reject it otherwise; expected frequencies should preferably be at least 5 in each class.",
+          "steps": [
+            "State H0: the data follow the hypothesized distribution; H1: they do not.",
+            "Compute the expected frequency for each class: Ei = n × pi, ensuring ΣEi = n and each Ei ≳ 5.",
+            "Compute χ² = Σ(Oi − Ei)²/Ei over all k classes and sum the contributions.",
+            "Determine df = k − 1 − m, where m is the number of estimated parameters, and find χ²(α, df).",
+            "Apply the decision rule: reject H0 if χ²calc > χ²(α, df); otherwise accept the fit.",
+            "Conclude whether the observed data are consistent with the theoretical distribution."
+          ],
+          "formula": "χ² = Σ(Oi − Ei)²/Ei, df = k − 1 − m",
           "explanation": "The statistic measures the total squared discrepancy between observed and expected counts scaled by the expected counts, so a value of zero would mean a perfect fit.",
           "oneShotPreview": "χ² = Σ(O−E)²/E; df = k−1−m; χ² < table ⇒ good fit."
         },
         {
           "q": "a) A sample of 26 bulbs gives a mean life of 990 hours with a S.D of 20 hours. The manufacturer claims that the mean life of bulbs is 1000 hours. Is the sample not up to the standard.",
-          "a": "Here n = 26, x̄ = 990 hrs, s = 20 hrs and the claimed mean is μ0 = 1000 hrs. Take H0: μ = 1000 (up to standard) against H1: μ < 1000 (not up to standard). Then t = (990 − 1000)/(20/√26) = −10/3.922 ≈ −2.55 (the s/√(n−1) convention gives −2.5), with df = 25. Since |t| ≈ 2.55 exceeds t(0.05, 25) = 2.06 (and even the one-tailed 1% value ≈ 2.49), H0 is rejected: the mean life is significantly below 1000 hours, so the sample is not up to the standard.",
-          "explanation": "A single-sample t-test is appropriate because the population S.D. is unknown and the sample is small; the observed mean lies more than two standard errors below the claimed value.",
-          "oneShotPreview": "t ≈ −2.55, df 25 > 2.06 ⇒ reject H0 ⇒ sample below standard."
+          "a": "Let μ denote the true mean life of the manufacturer's bulbs. Test H0: μ = 1000 hours against the one-sided alternative H1: μ < 1000 hours (sample not up to standard). With n = 26, x̄ = 990 hours and s = 20 hours, the standard error is s/√n = 20/√26 = 20/5.099 ≈ 3.922 hours. Hence t = (990 − 1000)/3.922 = −10/3.922 ≈ −2.55, with df = n − 1 = 25. At α = 0.05 the one-tailed critical value is t(0.05, 25) = 1.708, and the two-tailed 5% value is 2.060; |t| = 2.55 exceeds both. H0 is therefore rejected (the result is significant even at the 1% level, where the one-tailed value is 2.485), and the sample mean is significantly below 1000 hours. We conclude that the bulbs are not up to the claimed standard.",
+          "steps": [
+            "H0: μ = 1000 hours (bulbs up to standard); H1: μ < 1000 hours (not up to standard), a left-tailed test.",
+            "α = 0.05, df = n − 1 = 25; one-tailed critical value t(0.05, 25) = 1.708 (two-tailed 5% value 2.060; 1% one-tailed 2.485).",
+            "Test statistic: t = (x̄ − μ0)/(s/√n) = (990 − 1000)/(20/√26) = −10/3.922 ≈ −2.55.",
+            "Decision rule: reject H0 if |t| > tcrit; here 2.55 > 1.708 (and > 2.060), so H0 is rejected.",
+            "Conclusion: the mean life is significantly below 1000 hours, so the sample is not up to the manufacturer's standard."
+          ],
+          "formula": "t = (x̄ − μ0)/(s/√n), df = n − 1",
+          "explanation": "A one-sample t-test is appropriate because the population S.D. is unknown and the sample is small; the observed mean lies about 2.55 standard errors below the claimed value, too far to be sampling fluctuation.",
+          "oneShotPreview": "t ≈ −2.55, df 25; |t| > 1.708 (5% one-tailed) ⇒ reject H0 ⇒ sample below standard."
         },
         {
           "q": "b) Find the maximum difference that we can expect with probability 0.95 between the mean of samples of sizes 10 and 12 from a normal population if their standard deviations are found to be 2 and 3 respectively.",
-          "a": "The standard error of the difference between the two sample means is SE = √(σ1²/n1 + σ2²/n2) = √(4/10 + 9/12) = √1.15 ≈ 1.072. For 95% probability the normal deviate is z = 1.96. Hence the maximum expected difference is 1.96 × 1.072 ≈ 2.10 (in the units of measurement). A difference larger than about 2.1 would be expected by chance in only 5% of such pairs of samples.",
+          "a": "Here the population standard deviations are taken as σ1 = 2 and σ2 = 3, with n1 = 10 and n2 = 12. The difference x̄1 − x̄2 is normally distributed with standard error SE = √(σ1²/n1 + σ2²/n2) = √(4/10 + 9/12) = √(0.4 + 0.75) = √1.15 ≈ 1.072. For a probability of 0.95 the two-sided normal deviate is z = 1.96, so the maximum difference that can be expected is ±1.96 × 1.072 ≈ ±2.10. Thus, in repeated sampling, the absolute difference between the two sample means will be less than about 2.1 units in 95% of cases. A difference larger than about 2.1 would occur by chance only 5% of the time and would be taken as evidence of a real difference. The result is in the same units as the given standard deviations.",
+          "steps": [
+            "Identify the parameters: σ1 = 2, n1 = 10; σ2 = 3, n2 = 12; variances known, so use the normal distribution.",
+            "Compute the standard error of the difference: SE = √(σ1²/n1 + σ2²/n2) = √(4/10 + 9/12) = √1.15 ≈ 1.072.",
+            "For 95% probability use the normal deviate z = 1.96.",
+            "Maximum expected difference = z × SE = 1.96 × 1.072 ≈ 2.10.",
+            "Conclusion: differences within ±2.10 units are expected 95% of the time; a larger difference is unlikely under chance."
+          ],
+          "formula": "Maximum difference = z × √(σ1²/n1 + σ2²/n2)",
           "explanation": "Because the population standard deviations are known, the difference of the sample means is normally distributed, so the 95% limits are ±1.96 standard errors.",
           "oneShotPreview": "SE = √(4/10+9/12) ≈ 1.072; max difference = 1.96 × 1.072 ≈ 2.10."
         },
         {
           "q": "Two independent samples of 8 and 7 items had the following values: Sample-I 11 11 13 11 15 9 12 14; Sample-II 9 11 10 13 9 8 10. Is the difference between the means of samples significant?",
-          "a": "Sample-I: n1 = 8, x̄1 = 96/8 = 12, Σ(x−x̄1)² = 26; Sample-II: n2 = 7, x̄2 = 70/7 = 10, Σ(y−ȳ)² = 16. The pooled variance is sp² = (26 + 16)/(8 + 7 − 2) = 42/13 ≈ 3.23. Then t = (12 − 10)/√[3.23(1/8 + 1/7)] = 2/0.930 ≈ 2.15 with df = 13. Since 2.15 is just below the table value t(0.05, 13) = 2.16, H0 is accepted: the difference between the means is not significant at the 5% level.",
+          "a": "For Sample-I, n1 = 8, Σx = 96 so x̄1 = 12, and Σ(x − x̄1)² = 26. For Sample-II, n2 = 7, Σy = 70 so x̄2 = 10, and Σ(y − x̄2)² = 16. Under H0: μ1 = μ2 the pooled variance is sp² = [Σ(x−x̄1)² + Σ(y−x̄2)²]/(n1+n2−2) = (26 + 16)/13 = 42/13 ≈ 3.23. The standard error of the difference is √[sp²(1/n1 + 1/n2)] = √[3.23(1/8 + 1/7)] = √0.865 ≈ 0.930. Hence t = (12 − 10)/0.930 ≈ 2.15 with df = n1 + n2 − 2 = 13. At α = 0.05 the two-tailed critical value is t(0.05, 13) = 2.160. Since 2.15 < 2.160, H0 is accepted: the difference between the sample means is not significant at the 5% level.",
+          "steps": [
+            "H0: μ1 = μ2 (no difference in population means); H1: μ1 ≠ μ2.",
+            "α = 0.05, df = n1 + n2 − 2 = 8 + 7 − 2 = 13, two-tailed critical value t(0.05, 13) = 2.160.",
+            "Compute means and sums of squares: x̄1 = 96/8 = 12 with Σ(x−x̄1)² = 26; x̄2 = 70/7 = 10 with Σ(y−x̄2)² = 16.",
+            "Pooled variance sp² = (26 + 16)/13 ≈ 3.23; t = (12−10)/√[3.23(1/8+1/7)] = 2/0.930 ≈ 2.15.",
+            "Decision: |t| = 2.15 < 2.160, so H0 is accepted.",
+            "Conclusion: the 2-point difference between the sample means is not statistically significant at 5%."
+          ],
+          "formula": "t = (x̄1 − x̄2)/√[sp²(1/n1 + 1/n2)], sp² = [Σ(x−x̄1)² + Σ(y−x̄2)²]/(n1+n2−2)",
           "explanation": "The two-sample pooled t-test is correct for independent small samples from normal populations with equal variances; the observed 2-point gap is about two standard errors and falls just short of significance.",
           "oneShotPreview": "x̄1 = 12, x̄2 = 10, t ≈ 2.15 (df 13) < 2.16 ⇒ not significant."
         },
         {
           "q": "Samples of two types of electrical light bulbs were tested for length of life and the following data were obtained: Type I — sample number 8, sample mean 1234 hrs, sample S.D 36 hrs; Type II — sample number 7, sample mean 1036 hrs, sample S.D 40 hrs. Is the difference in the means sufficient to warrant that type I is superior to type II regarding length of life?",
-          "a": "n1 = 8, x̄1 = 1234, s1 = 36; n2 = 7, x̄2 = 1036, s2 = 40. The pooled variance is sp² = [7(36²) + 6(40²)]/13 = 18672/13 ≈ 1436.3, so sp ≈ 37.9 and SE = 37.9√(1/8 + 1/7) ≈ 19.6. Hence t = (1234 − 1036)/19.6 ≈ 10.1 with df = 13, far above t(0.05, 13) = 2.16. H0 is rejected: the difference is highly significant and Type I bulbs have a significantly longer life, so Type I is superior to Type II.",
+          "a": "Test H0: μ1 = μ2 against H1: μ1 > μ2, since superiority of Type I is claimed. Given n1 = 8, x̄1 = 1234, s1 = 36 and n2 = 7, x̄2 = 1036, s2 = 40, the pooled variance is sp² = [7(36²) + 6(40²)]/(8+7−2) = (9072 + 9600)/13 = 18672/13 ≈ 1436.3, so sp ≈ 37.90. The standard error is sp√(1/n1 + 1/n2) = 37.90√(1/8 + 1/7) = 37.90 × 0.5175 ≈ 19.6. Therefore t = (1234 − 1036)/19.6 = 198/19.6 ≈ 10.1 with df = 13. The table value t(0.05, 13) = 2.160 (one-tailed 1.771) is far smaller, so H0 is rejected. The difference of 198 hours is highly significant: Type I bulbs have a significantly longer mean life and are superior to Type II.",
+          "steps": [
+            "H0: μ1 = μ2; H1: μ1 > μ2 (Type I superior), one-tailed test.",
+            "α = 0.05, df = n1 + n2 − 2 = 13; critical value t(0.05, 13) = 1.771 one-tailed (2.160 two-tailed).",
+            "sp² = [(n1−1)s1² + (n2−1)s2²]/(n1+n2−2) = [7(1296) + 6(1600)]/13 = 18672/13 ≈ 1436.3, sp ≈ 37.9.",
+            "SE = sp√(1/8 + 1/7) ≈ 19.6; t = (1234 − 1036)/19.6 ≈ 10.1.",
+            "Decision: 10.1 ≫ 1.771, so reject H0.",
+            "Conclusion: Type I bulbs have a significantly longer mean life and are superior to Type II."
+          ],
+          "formula": "t = (x̄1 − x̄2)/√[sp²(1/n1 + 1/n2)], sp² = [(n1−1)s1² + (n2−1)s2²]/(n1+n2−2)",
           "explanation": "A difference of 198 hours is roughly ten standard errors, so it cannot be explained by sampling fluctuation; the two-sample t-test confirms the real superiority of Type I.",
           "oneShotPreview": "t ≈ 10.1 (df 13) ≫ 2.16 ⇒ significant; Type I is superior."
         },
         {
           "q": "To examine the hypothesis that the husbands are more intelligent than the wives, an investigator took a sample of 10 couples and administered them a test which measures the I.Q. The results are as follows: Husbands 117 105 97 105 123 109 86 78 103 107; Wives 106 98 87 104 116 95 90 69 108 85. Test the hypothesis with a reasonable test at the level of significance of 0.05 and also calculate F-test.",
-          "a": "Use the paired differences d = Husband − Wife: 11, 7, 10, 1, 7, 14, −4, 9, −5, 22, giving d̄ = 7.2 and Σ(d−d̄)² = 603.6, so sd = √(603.6/9) ≈ 8.19. Then t = 7.2/(8.19/√10) ≈ 2.78 with df = 9; since 2.78 > t(0.05, 9) = 2.26, H0 is rejected and husbands are significantly more intelligent at the 5% level. For the F-test, sH² ≈ 178.4 and sW² ≈ 186.6, so F = 186.6/178.4 ≈ 1.05 with (9, 9) df, well below the 5% table value ≈ 3.18, showing the two variances do not differ significantly.",
+          "a": "Because husbands and wives form natural pairs, use a paired t-test on the within-couple differences d = Husband − Wife. The differences are 11, 7, 10, 1, 7, 14, −4, 9, −5, 22, giving d̄ = 72/10 = 7.2 and Σ(d − d̄)² = 603.6, so sd = √(603.6/9) ≈ 8.19. Then t = d̄/(sd/√n) = 7.2/(8.19/√10) = 7.2/2.59 ≈ 2.78 with df = n − 1 = 9. Since 2.78 exceeds the one-tailed 5% value t(0.05, 9) = 1.833 (and the two-tailed value 2.262), H0: μd = 0 is rejected and husbands score significantly higher. Separately, sH² ≈ 178.4 and sW² ≈ 186.6, so F = 186.6/178.4 ≈ 1.05 with df (9, 9). This is well below F(0.05, 9, 9) ≈ 3.18, so the two variances do not differ significantly and the equal-variance assumption is supported.",
+          "steps": [
+            "H0: μd = 0 (no mean difference within couples); H1: μd > 0 (husbands more intelligent), paired one-tailed test.",
+            "α = 0.05, df = n − 1 = 9; critical t(0.05, 9) = 1.833 one-tailed (2.262 two-tailed).",
+            "Differences d = 11, 7, 10, 1, 7, 14, −4, 9, −5, 22; d̄ = 7.2, Σ(d−d̄)² = 603.6.",
+            "sd = √(603.6/9) ≈ 8.19; t = 7.2/(8.19/√10) ≈ 2.78.",
+            "Decision: 2.78 > 1.833 ⇒ reject H0; F check: F = 186.6/178.4 ≈ 1.05 < F(0.05, 9, 9) ≈ 3.18 ⇒ variances equal.",
+            "Conclusion: husbands are significantly more intelligent at 5%, and the two sets of scores have equal variances."
+          ],
+          "formula": "Paired t = d̄/(sd/√n), sd = √[Σ(d−d̄)²/(n−1)] ; F = larger s² / smaller s²",
           "explanation": "Husbands and wives form natural pairs, so a paired t-test on within-couple differences removes couple-to-couple variation; the F-test confirms the equal-variance assumption behind the comparison.",
-          "oneShotPreview": "Paired t ≈ 2.78 > 2.26 ⇒ husbands smarter; F ≈ 1.05 ⇒ variances equal."
+          "oneShotPreview": "Paired t ≈ 2.78 > 1.833 ⇒ husbands smarter; F ≈ 1.05 ⇒ variances equal."
         },
         {
           "q": "Scores obtained in a shooting competition by 10 soldiers before and after intensive training are given below: Before 67 24 57 55 63 54 56 68 33 43; After 70 38 58 58 56 67 68 75 42 38. Test whether the intensive training is useful at 0.05 level of significance.",
-          "a": "Take d = After − Before: 3, 14, 1, 3, −7, 13, 12, 7, 9, −5, so d̄ = 5.0 and Σ(d−d̄)² = 482. The paired statistic is t = 5/√(482/9)/√10 = 5/2.31 ≈ 2.16 with df = 9. This is just below the two-tailed 5% critical value t(0.05, 9) = 2.262, so on a two-sided test the gain of 5 points is not quite significant at 5%; with a one-sided test of improvement (t(0.05, 9) = 1.833) the training would be judged useful.",
-          "explanation": "The same soldiers were measured twice, so the paired t-test on before-after differences is the correct test; the result is borderline at the 5% two-tailed level.",
+          "a": "Use the paired t-test on d = After − Before, since the same ten soldiers were measured twice. The differences are 3, 14, 1, 3, −7, 13, 12, 7, 9, −5, giving d̄ = 50/10 = 5.0 and Σ(d − d̄)² = 482, so sd = √(482/9) ≈ 7.32. The statistic is t = d̄/(sd/√n) = 5/(7.32/√10) = 5/2.31 ≈ 2.16 with df = 9. At α = 0.05 the two-tailed critical value is t(0.05, 9) = 2.262, so |t| = 2.16 just fails to reach significance on a two-sided test. For the one-sided claim that training improves scores, the critical value is t(0.05, 9) = 1.833, and 2.16 > 1.833. Hence on a one-tailed test the training is judged useful: the average gain of 5 points is significant at the 5% level, though the result is borderline on a two-tailed test.",
+          "steps": [
+            "H0: μd = 0 (no change); H1: μd > 0 (training improves scores), one-tailed test.",
+            "α = 0.05, df = n − 1 = 9; one-tailed t(0.05, 9) = 1.833, two-tailed t(0.05, 9) = 2.262.",
+            "d = 3, 14, 1, 3, −7, 13, 12, 7, 9, −5; d̄ = 5.0, Σ(d−d̄)² = 482.",
+            "sd = √(482/9) ≈ 7.32; t = 5/(7.32/√10) ≈ 2.16.",
+            "Decision: 2.16 > 1.833 (one-tailed) ⇒ reject H0; 2.16 < 2.262 (two-tailed) ⇒ borderline.",
+            "Conclusion: intensive training is useful at the 5% level on a one-sided test (mean gain 5 points)."
+          ],
+          "formula": "Paired t = d̄/(sd/√n), df = n − 1",
+          "explanation": "The same soldiers were measured twice, so the paired t-test on before-after differences is the correct test; the result is borderline at the 5% two-tailed level but significant one-tailed.",
           "oneShotPreview": "Paired t ≈ 2.16 (df 9), just below 2.26 two-tailed ⇒ borderline; gain +5 points."
         },
         {
           "q": "a) Blood pressure of 5 women before and after intake of a certain drug are given below: Before 110 120 125 132 125; After 120 118 125 136 121. Test whether there is a significant change in blood pressure at 1% level of significance.",
-          "a": "The differences d = After − Before are 10, −2, 0, 4, −4 with d̄ = 1.6 and Σ(d−d̄)² = 123.2. Hence sd = √(123.2/4) ≈ 5.55 and t = 1.6/(5.55/√5) ≈ 0.64 with df = 4. Since 0.64 is far below the 1% table value t(0.01, 4) = 4.604 (and the 5% value 2.776), H0 is accepted: the drug produces no significant change in blood pressure.",
+          "a": "Let d = After − Before for the five women; the paired design calls for a paired t-test. The differences are 10, −2, 0, 4, −4, giving d̄ = 8/5 = 1.6 and Σ(d − d̄)² = 123.2, so sd = √(123.2/4) ≈ 5.55. The statistic is t = d̄/(sd/√n) = 1.6/(5.55/√5) = 1.6/2.48 ≈ 0.64 with df = n − 1 = 4. At the 1% level the two-tailed table value is t(0.01, 4) = 4.604, and even at 5% it is 2.776. Since 0.64 is far below both critical values, H0: μd = 0 is accepted. The drug produces no significant change in blood pressure; the mean change of 1.6 units is small relative to the variability among the changes.",
+          "steps": [
+            "H0: μd = 0 (no change in blood pressure); H1: μd ≠ 0 (a change).",
+            "α = 0.01 (1% level), df = n − 1 = 4, two-tailed critical value t(0.01, 4) = 4.604 (5% value 2.776).",
+            "d = 10, −2, 0, 4, −4; d̄ = 1.6, Σ(d−d̄)² = 123.2.",
+            "sd = √(123.2/4) ≈ 5.55; t = 1.6/(5.55/√5) ≈ 0.64.",
+            "Decision: |t| = 0.64 < 4.604 ⇒ accept H0.",
+            "Conclusion: there is no significant change in blood pressure at the 1% level."
+          ],
+          "formula": "Paired t = d̄/(sd/√n), df = n − 1",
           "explanation": "Paired readings on the same women call for a paired t-test; the average change of 1.6 mm is small relative to the variability among the changes.",
           "oneShotPreview": "Paired t ≈ 0.64 (df 4) ≪ 4.604 ⇒ no significant BP change at 1%."
         },
         {
           "q": "The nicotine in milligrams of two samples of tobacco were found to be as follows. Can it be said that the two samples have come from the same normal population.",
-          "a": "This is a test of equality of two population variances, so the F-test is used: compute F = larger sample variance / smaller sample variance with degrees of freedom (n1−1, n2−1) and compare it with the tabulated F value at 5%. If Fcalc < Ftable, H0: σ1² = σ2² is accepted and the two samples may be regarded as coming from the same normal population; if Fcalc > Ftable, their variances differ significantly. The numerical data table for the two tobacco samples is not legible in the source PDF, so only the correct method and decision rule can be stated.",
-          "explanation": "\"Same normal population\" here means equal variances, and the ratio of two sample variances follows the F-distribution; the source table of nicotine values could not be extracted.",
+          "a": "Whether two samples come from the same normal population is answered here by testing equality of their variances with the F-test. Compute the two sample variances s1² = Σ(x−x̄1)²/(n1−1) and s2² = Σ(y−x̄2)²/(n2−1), then form F = larger s² / smaller s², which under H0: σ1² = σ2² follows the F-distribution with df (n1−1, n2−1). The decision rule is to accept H0 if Fcalc < F(α, n1−1, n2−1) and reject otherwise; rejection would indicate different variances and hence evidence that the samples are not from the same normal population. The numerical nicotine readings are not legible in the supplied source, so the actual values of x̄, s² and F cannot be computed here. The correct procedure and decision rule are therefore stated in place of a numerical verdict. If the data are supplied, substitute them into s1² and s2², take the ratio, and compare with the 5% F table value.",
+          "steps": [
+            "H0: σ1² = σ2² (same normal population, equal variances); H1: σ1² ≠ σ2².",
+            "α = 0.05; degrees of freedom are (n1−1, n2−1) once the sample sizes are read from the table.",
+            "Compute s1² = Σ(x−x̄1)²/(n1−1) and s2² = Σ(y−x̄2)²/(n2−1) from the nicotine readings.",
+            "F = larger s² / smaller s², so that F ≥ 1.",
+            "Decision: accept H0 if Fcalc < F(α, n1−1, n2−1); reject if Fcalc exceeds it.",
+            "Conclusion: the source table of values is illegible, so only the method is given; with data, a non-significant F supports the view that the samples come from the same normal population."
+          ],
+          "formula": "F = larger s² / smaller s², df = (n1−1, n2−1)",
+          "explanation": "The phrase same normal population is tested through equal variances, so the ratio of two sample variances is referred to the F-distribution; the source table of nicotine values could not be extracted.",
           "oneShotPreview": "F-test of variances: F = larger s² / smaller s²; F < table ⇒ same population."
         },
         {
           "q": "A pair of dice are thrown 360 times and the frequency of each sum is indicated below: Sum 2 3 4 5 6 7 8 9 10 11 12; Frequency 8 24 35 37 44 65 51 42 26 14 14. Would you say that the dice are fair on the basis of the chi-square test at 0.05 level of significance?",
-          "a": "For two fair dice the probabilities of sums 2…12 are proportional to 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1 out of 36, so in 360 throws the expected frequencies are 10, 20, 30, 40, 50, 60, 50, 40, 30, 20, 10. Then χ² = Σ(O−E)²/E = 0.4 + 0.8 + 0.833 + 0.225 + 0.72 + 0.417 + 0.02 + 0.1 + 0.533 + 1.8 + 1.6 ≈ 7.45 with df = 11 − 1 = 10. Since 7.45 < χ²(0.05, 10) = 18.31, H0 is accepted: the observed frequencies agree with the theoretical distribution and the dice may be considered fair.",
+          "a": "For two fair dice the eleven possible sums 2 to 12 have probabilities proportional to 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1 out of 36. In 360 throws the expected frequencies are therefore 10, 20, 30, 40, 50, 60, 50, 40, 30, 20, 10. The chi-square statistic is χ² = Σ(O−E)²/E = 0.40 + 0.80 + 0.83 + 0.23 + 0.72 + 0.42 + 0.02 + 0.10 + 0.53 + 1.80 + 1.60 ≈ 7.45. The degrees of freedom are df = k − 1 = 11 − 1 = 10, since no parameters are estimated. At α = 0.05 the table value is χ²(0.05, 10) = 18.31. Because 7.45 < 18.31, H0 of a fair pair of dice is accepted. The observed frequencies agree with the theoretical distribution, so the dice may be considered fair.",
+          "steps": [
+            "H0: the dice are fair (sums follow the 1:2:3:4:5:6:5:4:3:2:1 distribution); H1: they are not.",
+            "α = 0.05, df = k − 1 = 11 − 1 = 10, table value χ²(0.05, 10) = 18.31.",
+            "Observed vs expected by sum: 2 (8,10), 3 (24,20), 4 (35,30), 5 (37,40), 6 (44,50), 7 (65,60), 8 (51,50), 9 (42,40), 10 (26,30), 11 (14,20), 12 (14,10).",
+            "χ² = Σ(O−E)²/E = 0.40+0.80+0.83+0.23+0.72+0.42+0.02+0.10+0.53+1.80+1.60 ≈ 7.45.",
+            "Decision: 7.45 < 18.31 ⇒ accept H0.",
+            "Conclusion: the dice are fair; the deviations are within sampling error."
+          ],
+          "formula": "χ² = Σ(O−E)²/E, df = k − 1",
           "explanation": "The chi-square goodness-of-fit test compares observed counts with the known distribution of the sum of two dice; the total discrepancy is well within sampling error.",
           "oneShotPreview": "χ² ≈ 7.45 (df 10) < 18.31 ⇒ dice are fair."
         },
         {
           "q": "a) A die is thrown 264 times with the following results. Show that the die is biased. (χ² = 11.07 at 5 d.f. & 5% L.S). Number on the die 1 2 3 4 5 6; Frequency 40 32 28 58 54 52.",
-          "a": "For a fair die the expected frequency of each face in 264 throws is 264/6 = 44. Then χ² = Σ(O−E)²/E = (16 + 144 + 256 + 196 + 100 + 64)/44 = 776/44 ≈ 17.64 with df = 6 − 1 = 5. Since 17.64 exceeds the given table value χ²(0.05, 5) = 11.07, H0 of a fair die is rejected: the die is biased.",
+          "a": "Under H0 the die is fair, so each of the six faces has probability 1/6 and the expected frequency in 264 throws is E = 264/6 = 44 for every face. Compute χ² = Σ(O−E)²/E: the squared deviations for faces 1 to 6 are (40−44)² = 16, (32−44)² = 144, (28−44)² = 256, (58−44)² = 196, (54−44)² = 100 and (52−44)² = 64, which sum to 776. Hence χ² = 776/44 ≈ 17.64. The degrees of freedom are df = k − 1 = 6 − 1 = 5. The given table value is χ²(0.05, 5) = 11.07. Since 17.64 > 11.07, H0 is rejected and the die is declared biased. The large discrepancy is driven mainly by faces 3 and 6, which deviate most from the expected count of 44.",
+          "steps": [
+            "H0: the die is fair (uniform probabilities 1/6); H1: it is biased.",
+            "α = 0.05, df = k − 1 = 6 − 1 = 5, given table value χ²(0.05, 5) = 11.07.",
+            "Expected frequency for each face: E = 264/6 = 44.",
+            "Observed vs expected: 40/44, 32/44, 28/44, 58/44, 54/44, 52/44; Σ(O−E)² = 16+144+256+196+100+64 = 776.",
+            "χ² = 776/44 ≈ 17.64; decision: 17.64 > 11.07 ⇒ reject H0.",
+            "Conclusion: the die is biased."
+          ],
+          "formula": "χ² = Σ(O−E)²/E, df = k − 1",
           "explanation": "A chi-square this large means the observed face counts deviate from the uniform expectation of 44 each by more than chance can explain.",
           "oneShotPreview": "E = 44 each; χ² ≈ 17.64 (df 5) > 11.07 ⇒ die is biased."
         },
         {
           "q": "The following table gives the classification of 100 workers according to gender and nature of work. Test whether the nature of work is independent of the gender of the worker (χ² = 3.84 at 1 d.f): Stable — Males 40, Females 10, Total 50; Unstable — Males 20, Females 30, Total 50; Grand total 100.",
-          "a": "Under the hypothesis of independence the expected counts are Males-Stable = 60×50/100 = 30, Males-Unstable = 30, Females-Stable = 40×50/100 = 20 and Females-Unstable = 20. Then χ² = (40−30)²/30 + (20−30)²/30 + (10−20)²/20 + (30−20)²/20 = 3.33 + 3.33 + 5 + 5 = 16.67 with df = (2−1)(2−1) = 1. Since 16.67 exceeds the given χ²(0.05, 1) = 3.84, H0 is rejected: nature of work is not independent of gender (males are more often in stable work and females more often in unstable work).",
+          "a": "Test H0: nature of work is independent of gender against H1: the two attributes are associated. Under independence the expected count in a cell is E = (row total × column total)/grand total. The column totals are Males 60 and Females 40 and each row totals 50, so the expected counts are Males-Stable = 60×50/100 = 30, Males-Unstable = 30, Females-Stable = 40×50/100 = 20 and Females-Unstable = 20. Then χ² = Σ(O−E)²/E = 100/30 + 100/30 + 100/20 + 100/20 = 3.33 + 3.33 + 5 + 5 = 16.67. The degrees of freedom are df = (r−1)(c−1) = (2−1)(2−1) = 1. The given table value is χ²(0.05, 1) = 3.84. Since 16.67 > 3.84, H0 is rejected: nature of work is not independent of gender, males being more often in stable work and females more often in unstable work.",
+          "steps": [
+            "H0: nature of work is independent of gender; H1: the two attributes are associated.",
+            "α = 0.05, df = (r−1)(c−1) = (2−1)(2−1) = 1, given χ²(0.05, 1) = 3.84.",
+            "Column totals: Males 60, Females 40; row totals 50 each; E = (row total × column total)/100.",
+            "Observed vs expected: (40,30) Male-Stable, (20,30) Male-Unstable, (10,20) Female-Stable, (30,20) Female-Unstable.",
+            "χ² = 100/30 + 100/30 + 100/20 + 100/20 = 16.67; 16.67 > 3.84 ⇒ reject H0.",
+            "Conclusion: gender and nature of work are related, males being more often in stable work."
+          ],
+          "formula": "χ² = Σ(O−E)²/E, E = (row total × column total)/grand total, df = (r−1)(c−1)",
           "explanation": "The chi-square test of independence compares observed cell counts with the counts expected under independence; here the discrepancy is far beyond the 5% threshold.",
           "oneShotPreview": "Expected 30/30/20/20; χ² = 16.67 (df 1) > 3.84 ⇒ gender and work are related."
         }
