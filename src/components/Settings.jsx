@@ -51,7 +51,7 @@ export default function Settings() {
     if (perm === "granted") {
       const next = { ...notifyPref, enabled: true };
       setNotifyPref(next); saveNotifyPref(next);
-      await sendNotification({ title: "Notifications enabled ✅", body: "You'll get study reminders from Learn Hub.", url: "/roadmap" });
+      await sendNotification({ title: "Notifications enabled", body: "You'll get study reminders from Learn Hub.", url: "/roadmap" });
     }
   };
 
@@ -61,7 +61,7 @@ export default function Settings() {
   };
 
   const testNotification = async () => {
-    const ok = await sendNotification({ title: "Learn Hub · Test 🔔", body: "Your notifications are working perfectly!", url: "/roadmap" });
+    const ok = await sendNotification({ title: "Learn Hub · Test", body: "Your study reminders are working.", url: "/roadmap" });
     setNotifyStatus(ok ? "sent" : currentPermission());
   };
 
@@ -79,23 +79,23 @@ export default function Settings() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
+    <div className="max-w-4xl mx-auto space-y-8">
       {/* Header */}
       <div>
-        <div className="inline-flex items-center gap-2 text-xs font-semibold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full mb-2">
-          <UserRound className="w-3 h-3" /> YOUR ACCOUNT
-        </div>
-        <h1 className="text-3xl font-display font-bold text-slate-900">Settings</h1>
-        <p className="text-sm text-slate-500 mt-1">Set up your profile and personalize how {APP_NAME} looks.</p>
+        <h1 className="text-3xl font-display font-semibold text-slate-900">Settings</h1>
+        <div className="rule-line mt-3" />
+        <p className="text-sm text-slate-500 mt-3">
+          Set up your profile and choose how {APP_NAME} looks on this device.
+        </p>
       </div>
 
       {!user.profileComplete && (
-        <div className="panel p-4 border-amber-200 bg-amber-50 flex items-start gap-3">
-          <Info className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+        <div className="panel shadow-none p-4 flex items-start gap-3">
+          <Info className="w-5 h-5 text-slate-500 shrink-0 mt-0.5" />
           <div>
-            <p className="text-sm font-semibold text-amber-900">Complete your profile</p>
-            <p className="text-xs text-amber-700 mt-0.5">
-              Fill in your name, branch and semester below and click Save Profile. Your subjects and study plan depend on this.
+            <p className="text-sm font-semibold text-slate-800">Complete your profile</p>
+            <p className="text-xs text-slate-600 mt-0.5">
+              Add your name, branch and semester below, then save. Your subjects and study plan depend on this.
             </p>
           </div>
         </div>
@@ -103,31 +103,34 @@ export default function Settings() {
 
       <div className="grid lg:grid-cols-2 gap-6">
         {/* Profile */}
-        <div className="panel p-6">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center">
-              <UserRound className="w-5 h-5 text-brand-600" />
+        <div className="panel shadow-none p-6">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center">
+              <UserRound className="w-5 h-5 text-slate-600" />
             </div>
             <div>
-              <h2 className="font-display font-bold text-slate-900">Profile</h2>
+              <h2 className="font-display text-lg font-semibold text-slate-900">Profile</h2>
               <p className="text-xs text-slate-500">
-                {user.profileComplete ? "Update your details anytime" : "Create your profile to get started"}
+                {user.profileComplete ? "Update your details anytime" : "Add your details to get started"}
               </p>
             </div>
             {user.profileComplete && (
-              <span className="ml-auto chip border-emerald-200 bg-emerald-50 text-emerald-700">
+              <span className="ml-auto chip border-slate-200 bg-slate-50 text-slate-600">
                 <CheckCircle2 className="w-3 h-3" /> Complete
               </span>
             )}
           </div>
+          <div className="rule-line mt-4" />
 
-          <form onSubmit={saveProfile} className="space-y-4">
+          <form onSubmit={saveProfile} className="mt-5 space-y-4">
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1.5">Full Name</label>
+              <label className="block text-sm font-medium text-slate-700 mb-1.5">Full name</label>
               <div className="relative">
-                <GraduationCap className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <div className="pointer-events-none absolute inset-y-0 left-3.5 flex items-center">
+                  <GraduationCap className="w-4 h-4 text-slate-400" />
+                </div>
                 <input
-                  className="input pl-10"
+                  className="input pl-10 transition-colors"
                   placeholder="Your name"
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -138,10 +141,12 @@ export default function Settings() {
             <div>
               <label className="block text-sm font-medium text-slate-700 mb-1.5">Email</label>
               <div className="relative">
-                <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <div className="pointer-events-none absolute inset-y-0 left-3.5 flex items-center">
+                  <Mail className="w-4 h-4 text-slate-400" />
+                </div>
                 <input
                   type="email"
-                  className="input pl-10"
+                  className="input pl-10 transition-colors"
                   placeholder="you@college.edu"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -153,7 +158,7 @@ export default function Settings() {
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1.5">Branch</label>
                 <select
-                  className="input"
+                  className="input transition-colors"
                   value={form.branch}
                   onChange={(e) => setForm({ ...form, branch: e.target.value })}
                 >
@@ -165,7 +170,7 @@ export default function Settings() {
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1.5">Semester</label>
                 <select
-                  className="input"
+                  className="input tabular-nums transition-colors"
                   value={form.semester}
                   onChange={(e) => setForm({ ...form, semester: e.target.value })}
                 >
@@ -178,38 +183,42 @@ export default function Settings() {
 
             <div>
               <label className="block text-sm font-medium text-slate-700 mb-1.5">Account type</label>
-              <div className="input bg-slate-50 capitalize flex items-center text-slate-500">
+              <div className="input bg-slate-50 capitalize flex items-center text-slate-500 transition-colors">
                 {user.role}
               </div>
               <p className="text-xs text-slate-400 mt-1">Role is set at sign-in and cannot be changed here.</p>
             </div>
 
-            <button type="submit" className="btn-primary w-full">
-              <Save className="w-4 h-4" /> Save Profile
+            <button
+              type="submit"
+              className="btn-primary w-full"
+            >
+              <Save className="w-4 h-4" /> Save profile
             </button>
             {saved && (
-              <p className="text-sm text-emerald-600 text-center flex items-center justify-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4" /> Profile saved successfully!
+              <p className="text-sm text-emerald-700 text-center flex items-center justify-center gap-1.5">
+                <CheckCircle2 className="w-4 h-4" /> Profile saved.
               </p>
             )}
           </form>
         </div>
 
-        {/* Appearance */}
         <div className="space-y-6">
-          <div className="panel p-6">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center">
-                <Palette className="w-5 h-5 text-brand-600" />
+          {/* Appearance */}
+          <div className="panel shadow-none p-6">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center">
+                <Palette className="w-5 h-5 text-slate-600" />
               </div>
               <div>
-                <h2 className="font-display font-bold text-slate-900">Appearance</h2>
+                <h2 className="font-display text-lg font-semibold text-slate-900">Appearance</h2>
                 <p className="text-xs text-slate-500">Theme and accent color apply instantly</p>
               </div>
             </div>
+            <div className="rule-line mt-4" />
 
             {/* Theme */}
-            <div className="mb-6">
+            <div className="mt-5">
               <label className="block text-sm font-medium text-slate-700 mb-2">Theme</label>
               <div className="grid grid-cols-3 gap-2">
                 {themeOptions.map((t) => {
@@ -218,12 +227,13 @@ export default function Settings() {
                     <button
                       key={t.key}
                       onClick={() => setTheme(t.key)}
-                      className={`flex flex-col items-center gap-2 p-3 rounded-xl border-2 transition-all ${
-                        active ? "border-brand-500 bg-brand-50" : "border-slate-200 hover:border-slate-300"
+                      aria-pressed={active}
+                      className={`flex flex-col items-center gap-2 p-3 rounded-xl border transition-colors ${
+                        active ? "border-accent-500 bg-slate-50" : "border-slate-200 hover:border-slate-400"
                       }`}
                     >
-                      <t.icon className={`w-5 h-5 ${active ? "text-brand-600" : "text-slate-400"}`} />
-                      <span className={`text-xs font-medium ${active ? "text-brand-700" : "text-slate-600"}`}>{t.label}</span>
+                      <t.icon className={`w-5 h-5 ${active ? "text-accent-500" : "text-slate-400"}`} />
+                      <span className={`text-xs font-medium ${active ? "text-accent-600" : "text-slate-600"}`}>{t.label}</span>
                     </button>
                   );
                 })}
@@ -234,26 +244,24 @@ export default function Settings() {
             </div>
 
             {/* Accent */}
-            <div>
-              <label className="block text-sm font-medium text-slate-700 mb-2">Accent Color</label>
-              <div className="grid grid-cols-4 gap-2">
+            <div className="mt-6">
+              <label className="block text-sm font-medium text-slate-700 mb-2">Accent color</label>
+              <div className="grid grid-cols-2 gap-1.5">
                 {Object.entries(ACCENTS).map(([key, palette]) => {
                   const active = appearance.accent === key;
                   return (
                     <button
                       key={key}
                       onClick={() => setAccent(key)}
-                      className={`flex flex-col items-center gap-1.5 p-2.5 rounded-xl border-2 transition-all ${
-                        active ? "border-slate-800 bg-slate-50" : "border-slate-200 hover:border-slate-300"
-                      }`}
+                      aria-pressed={active}
+                      className="flex items-center gap-2 p-2 rounded-lg text-slate-800 transition-colors hover:bg-slate-50"
                       title={key}
                     >
                       <span
-                        className="w-7 h-7 rounded-full shadow-inner ring-2 ring-white"
+                        className={`w-4 h-4 rounded-full shrink-0 ${active ? "ring-1 ring-current ring-offset-2 ring-offset-transparent" : ""}`}
                         style={{ background: palette[500] }}
                       />
-                      <span className="text-[10px] font-medium capitalize text-slate-600">{key}</span>
-                      {active && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 -mt-1" />}
+                      <span className="text-xs capitalize text-slate-600">{key}</span>
                     </button>
                   );
                 })}
@@ -261,52 +269,61 @@ export default function Settings() {
             </div>
           </div>
 
-          {/* Preview */}
-          <div className="panel p-6 bg-gradient-to-r from-brand-50 to-white">
-            <h3 className="text-sm font-semibold text-slate-700 mb-3">Live Preview</h3>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-600/25">
-                <GraduationCap className="w-5 h-5" />
+          {/* Live preview */}
+          <div className="panel shadow-none p-6">
+            <h3 className="font-display text-sm font-semibold text-slate-700">Live preview</h3>
+            <div className="rule-line mt-3" />
+            <div className="mt-4 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center">
+                <GraduationCap className="w-5 h-5 text-slate-600" />
               </div>
-              <div className="flex-1">
-                <p className="font-display font-bold text-slate-900 text-sm">{user.name || "Your Name"}</p>
-                <p className="text-xs text-slate-500 capitalize">{user.role} · {user.branch} · Sem {user.semester}</p>
+              <div className="flex-1 min-w-0">
+                <p className="font-display font-semibold text-slate-900 text-sm truncate">{user.name || "Your name"}</p>
+                <p className="text-xs text-slate-500 capitalize tabular-nums">
+                  {user.role} · {user.branch} · Sem {user.semester}
+                </p>
               </div>
-              <span className="px-3 py-1.5 rounded-lg bg-brand-600 text-white text-xs font-semibold">
+              <span className="px-3 py-1.5 rounded-lg border border-slate-200 text-xs text-slate-600">
                 Preview
               </span>
             </div>
-            <div className="mt-3 flex gap-2">
-              <span className="chip border-brand-200 bg-brand-100 text-brand-700">Primary</span>
-              <span className="chip border-accent-200 bg-cyan-50 text-cyan-700">Accent</span>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="chip border-slate-200 bg-white text-slate-600">Primary</span>
+              <span className="chip border-slate-200 bg-white text-slate-600">
+                <span
+                  className="w-2 h-2 rounded-full"
+                  style={{ background: ACCENTS[appearance.accent]?.[500] }}
+                /> Accent
+              </span>
               <span className="chip border-slate-200 bg-white text-slate-600">Surface</span>
             </div>
           </div>
 
           {/* Notifications */}
-          <div className="panel p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-rose-100 flex items-center justify-center">
-                <Bell className="w-5 h-5 text-rose-600" />
+          <div className="panel shadow-none p-6">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center">
+                <Bell className="w-5 h-5 text-slate-600" />
               </div>
               <div>
-                <h3 className="font-display font-bold text-slate-900">Notifications</h3>
+                <h3 className="font-display text-lg font-semibold text-slate-900">Notifications</h3>
                 <p className="text-xs text-slate-500">Study reminders on this device</p>
               </div>
             </div>
+            <div className="rule-line mt-4" />
 
             <button
               onClick={toggleNotifications}
               disabled={notifyStatus === "unsupported" || notifyStatus === "denied"}
-              className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all ${
+              className={`mt-5 w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors ${
                 notifyPref.enabled
-                  ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                  ? "bg-slate-50 text-slate-700 border border-slate-300"
                   : notifyStatus === "denied" || notifyStatus === "unsupported"
-                  ? "bg-slate-100 text-slate-400 cursor-not-allowed"
+                  ? "bg-slate-100 text-slate-400 cursor-not-allowed border border-slate-200"
                   : "btn-primary"
               }`}
             >
-              {notifyPref.enabled ? <><Bell className="w-4 h-4" /> Notifications On</> : <><BellOff className="w-4 h-4" /> Enable Notifications</>}
+              {notifyPref.enabled ? <><Bell className="w-4 h-4" /> Notifications on</> : <><BellOff className="w-4 h-4" /> Enable notifications</>}
             </button>
 
             {notifyStatus === "denied" && (
@@ -318,20 +335,32 @@ export default function Settings() {
                 <div>
                   <label className="block text-xs font-medium text-slate-600 mb-1.5">Reminder frequency</label>
                   <div className="grid grid-cols-3 gap-2">
-                    {[["daily", "Daily"], ["3days", "Every 3d"], ["weekly", "Weekly"]].map(([k, l]) => (
-                      <button key={k} onClick={() => changeReminder(k)} className={`py-2 rounded-lg text-xs font-medium border transition-colors ${notifyPref.reminder === k ? "border-brand-500 bg-brand-50 text-brand-700" : "border-slate-200 text-slate-600 hover:border-slate-300"}`}>{l}</button>
+                    {[["daily", "Daily"], ["3days", "Every 3 days"], ["weekly", "Weekly"]].map(([k, l]) => (
+                      <button
+                        key={k}
+                        onClick={() => changeReminder(k)}
+                        aria-pressed={notifyPref.reminder === k}
+                        className={`py-2 rounded-lg text-xs font-medium border transition-colors ${
+                          notifyPref.reminder === k
+                            ? "border-accent-500 bg-slate-50 text-accent-600"
+                            : "border-slate-200 text-slate-600 hover:border-slate-400"
+                        }`}
+                      >{l}</button>
                     ))}
                   </div>
                 </div>
-                <button onClick={testNotification} className="btn-outline w-full text-sm">
+                <button
+                  onClick={testNotification}
+                  className="w-full py-2.5 rounded-xl text-sm font-semibold border border-slate-200 bg-white text-slate-700 inline-flex items-center justify-center gap-2 transition-colors hover:bg-slate-50"
+                >
                   <Send className="w-4 h-4" /> Send test notification
                 </button>
-                {notifyStatus === "sent" && <p className="text-xs text-emerald-600">Test notification sent ✓</p>}
+                {notifyStatus === "sent" && <p className="text-xs text-emerald-700">Test notification sent.</p>}
               </div>
             )}
 
             <p className="text-[11px] text-slate-400 mt-3 leading-relaxed">
-              Notifications are delivered by the installed PWA service worker — they can appear even when the tab is closed (while the device is online).
+              Notifications are delivered by the installed PWA service worker — they can appear even when the tab is closed, while the device is online.
             </p>
           </div>
         </div>

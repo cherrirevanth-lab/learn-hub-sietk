@@ -75,7 +75,7 @@ export async function maybeSendReminder(pref) {
   if (now - last < gap) return;
 
   const sent = await sendNotification({
-    title: "Learn Hub · Study reminder 📚",
+    title: "Learn Hub · Study reminder",
     body: "Your SIETK units and question-bank answers are waiting. Open your study plan and keep your streak going!",
     url: "/roadmap",
     tag: "learnhub-reminder",

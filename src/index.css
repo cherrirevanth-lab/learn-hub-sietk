@@ -1,182 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
-  /* Primary palette - deep indigo/navy */
-  --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-300: #a5b4fc;
-  --color-brand-400: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
-  --color-brand-800: #3730a3;
-  --color-brand-900: #312e81;
-  --color-brand-950: #1e1b4b;
+  /* Paper-and-ink neutral ramp — the only surface family */
+  --color-paper-0: #fbfaf7;
+  --color-paper-1: #f4f1ea;
+  --color-paper-2: #e9e5dc;
+  --color-paper-3: #d9d4c8;
+  --color-paper-4: #c3bdaf;
+  --color-paper-5: #a39c8d;
+  --color-ink-500: #777165;
+  --color-ink-700: #4d483f;
+  --color-ink-900: #23211e;
+  --color-ink-950: #141210;
 
-  /* Accent - cyan */
-  --color-accent-400: #22d3ee;
-  --color-accent-500: #06b6d4;
-  --color-accent-600: #0891b2;
+  /* One accent: deep ink blue, used rarely. The user's accent picker overrides brand-*. */
+  --color-accent-400: #6a86a3;
+  --color-accent-500: #3f6284;
+  --color-accent-600: #2f4c69;
 
-  /* Surface */
-  --color-surface: #f8fafc;
-  --color-surface-raised: #ffffff;
-
-  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
+/* Legacy brand variables still used by the accent picker — keep them distinct but quiet by default */
 @layer base {
-  * {
-    -webkit-tap-highlight-color: transparent;
+  :root {
+    --color-brand-50: #f4f1ea;
+    --color-brand-100: #e9e5dc;
+    --color-brand-200: #d9d4c8;
+    --color-brand-300: #c3bdaf;
+    --color-brand-400: #9d9688;
+    --color-brand-500: #777165;
+    --color-brand-600: #4d483f;
+    --color-brand-700: #38342d;
+    --color-brand-800: #2a2722;
+    --color-brand-900: #23211e;
+    --color-brand-950: #141210;
   }
+  * { -webkit-tap-highlight-color: transparent; }
   body {
     @apply antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
-    background-color: #f8fafc;
-    background-image:
-      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.06), transparent),
-      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(6, 182, 212, 0.04), transparent);
-    background-attachment: fixed;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background-color: #f4f1ea;
+    color: #23211e;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    @apply tracking-tight;
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
-  ::selection {
-    @apply bg-brand-200 text-brand-900;
-  }
+  ::selection { background: #d9d4c8; color: #23211e; }
+  /* tabular figures everywhere numbers appear */
+  .tabular-nums { font-variant-numeric: tabular-nums; }
 }
 
 @layer components {
-  /* Glass card */
+  /* Quiet panel: hairline border, no shadow, no glow */
   .panel {
-    @apply bg-white rounded-2xl border border-slate-200/80 shadow-sm;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 8px 24px -12px rgba(15, 23, 42, 0.08);
+    @apply bg-paper-0 rounded-xl border border-paper-3/70;
   }
-  .panel-hover {
-    @apply transition-all duration-300 ease-out;
-  }
-  .panel-hover:hover {
-    @apply -translate-y-1 border-brand-200;
-    box-shadow: 0 12px 32px -12px rgba(79, 70, 229, 0.18);
+  .panel-hover { @apply transition-colors duration-150; }
+  .panel-hover:hover { @apply border-paper-4; }
+
+  /* Signature detail: a single ruled ink line under section headings */
+  .rule-line {
+    height: 1px;
+    background: #c3bdaf;
+    margin: 12px 0 20px;
+    width: 100%;
   }
 
-  /* Gradient button */
+  /* Flat primary action */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-white transition-all duration-200;
-    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
-    box-shadow: 0 4px 14px -4px rgba(79, 70, 229, 0.5);
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-white transition-colors duration-150;
+    background: #2f4c69;
   }
-  .btn-primary:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 20px -4px rgba(79, 70, 229, 0.6);
-  }
-  .btn-primary:active {
-    transform: translateY(0);
-  }
+  .btn-primary:hover { background: #243d55; }
+  .btn-primary:active { background: #1d3348; }
+  .btn-primary:focus-visible { outline: 2px solid #3f6284; outline-offset: 2px; }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold border border-slate-200 bg-white text-slate-700 transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium border transition-colors duration-150;
+    background: transparent;
+    border-color: #d9d4c8;
+    color: #23211e;
   }
-  .btn-outline:hover {
-    @apply border-brand-300 bg-brand-50 text-brand-700;
-  }
+  .btn-outline:hover { background: #f4f1ea; border-color: #c3bdaf; }
+  .btn-outline:focus-visible { outline: 2px solid #3f6284; outline-offset: 2px; }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg font-medium text-slate-600 transition-colors;
+    @apply inline-flex items-center justify-center gap-2 px-2.5 py-2 rounded-lg font-medium transition-colors duration-150;
+    color: #4d483f;
   }
-  .btn-ghost:hover {
-    @apply bg-slate-100 text-slate-900;
-  }
+  .btn-ghost:hover { background: #e9e5dc; color: #23211e; }
+  .btn-ghost:focus-visible { outline: 2px solid #3f6284; outline-offset: 2px; }
 
-  /* Chip */
   .chip {
-    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border;
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium border;
   }
 
-  /* Input */
   .input {
-    @apply w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 outline-none transition-all duration-200;
+    @apply w-full px-3.5 py-2.5 rounded-lg text-sm outline-none transition-colors duration-150;
+    background: #fbfaf7;
+    border: 1px solid #d9d4c8;
+    color: #23211e;
   }
-  .input:focus {
-    @apply border-brand-400 ring-4 ring-brand-100;
-  }
-
-  /* Gradient text */
-  .text-gradient {
-    background: linear-gradient(135deg, #4f46e5, #06b6d4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .input:focus { border-color: #3f6284; box-shadow: 0 0 0 3px rgba(63,98,132,0.10); }
+  input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible {
+    outline: 2px solid #3f6284;
+    outline-offset: 2px;
   }
 
-  /* Sidebar nav item */
   .nav-item {
-    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-slate-600 transition-all duration-200;
+    @apply flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150;
+    color: #4d483f;
   }
-  .nav-item:hover {
-    @apply bg-brand-50 text-brand-700;
-  }
+  .nav-item:hover { background: #e9e5dc; color: #23211e; }
   .nav-item.active {
-    @apply bg-brand-600 text-white shadow-md;
+    background: #e9e5dc;
+    color: #23211e;
+    box-shadow: inset 0 -2px 0 0 #3f6284;
   }
 }
 
 @layer utilities {
   .text-balance { text-wrap: balance; }
-  .glass {
-    @apply bg-white/70 backdrop-blur-xl;
-  }
+  .glass { @apply bg-paper-0/95 backdrop-blur-sm; }
 }
 
-/* ---------- Dark theme ---------- */
-[data-theme="dark"] {
-  color-scheme: dark;
+/* ---------- Neutral overrides (kill leftover slop utilities) ---------- */
+/* Any leftover gradient utilities become a flat surface step. */
+[class*="bg-gradient-to-"] { background-image: none !important; }
+[class*="from-brand-"] { --tw-gradient-from: transparent; --tw-gradient-to: transparent; }
+.text-gradient {
+  background: none !important;
+  color: #23211e !important;
+  -webkit-text-fill-color: #23211e !important;
 }
-[data-theme="dark"] body {
-  background-color: #0b1120 !important;
-  background-image: none !important;
-  color: #e2e8f0 !important;
-}
+/* Colored shadows and glows -> none */
+[class*="shadow-brand-"], [class*="shadow-accent-"] { box-shadow: none !important; }
+.animate-fade-in { animation: none !important; }
+.animate-pulse-soft { animation: none !important; }
+
+/* ---------- Dark theme: surface steps + hairlines, no colored shadows ---------- */
+[data-theme="dark"] { color-scheme: dark; }
+[data-theme="dark"] body { background-color: #141210 !important; color: #e9e5dc !important; }
 [data-theme="dark"] .panel,
-[data-theme="dark"] .bg-white {
-  background-color: #111c2e !important;
-  border-color: #1e293b !important;
-}
-[data-theme="dark"] .bg-surface { background-color: #0b1120 !important; }
+[data-theme="dark"] .bg-paper-0,
+[data-theme="dark"] .bg-white { background-color: #23211e !important; border-color: #38342d !important; }
+[data-theme="dark"] .bg-paper-1,
 [data-theme="dark"] .bg-slate-50,
 [data-theme="dark"] .bg-slate-100,
-[data-theme="dark"] .bg-slate-200 { background-color: #1e293b !important; }
-[data-theme="dark"] .bg-brand-50 { background-color: rgba(99,102,241,0.12) !important; }
-[data-theme="dark"] .bg-emerald-50 { background-color: rgba(16,185,129,0.12) !important; }
-[data-theme="dark"] .bg-amber-50 { background-color: rgba(245,158,11,0.12) !important; }
-[data-theme="dark"] .bg-sky-50,
-[data-theme="dark"] .bg-cyan-50 { background-color: rgba(6,182,212,0.12) !important; }
-[data-theme="dark"] .bg-rose-50 { background-color: rgba(244,63,94,0.12) !important; }
+[data-theme="dark"] .bg-brand-50 { background-color: #2a2722 !important; }
+[data-theme="dark"] .text-ink-900,
 [data-theme="dark"] .text-slate-900,
-[data-theme="dark"] .text-slate-800 { color: #f1f5f9 !important; }
-[data-theme="dark"] .text-slate-700 { color: #cbd5e1 !important; }
+[data-theme="dark"] .text-slate-800 { color: #f4f1ea !important; }
+[data-theme="dark"] .text-slate-700 { color: #d9d4c8 !important; }
 [data-theme="dark"] .text-slate-600,
-[data-theme="dark"] .text-slate-500 { color: #94a3b8 !important; }
-[data-theme="dark"] .text-slate-400 { color: #64748b !important; }
+[data-theme="dark"] .text-slate-500 { color: #a39c8d !important; }
+[data-theme="dark"] .text-slate-400 { color: #777165 !important; }
 [data-theme="dark"] .border-slate-100,
 [data-theme="dark"] .border-slate-200,
-[data-theme="dark"] .border-slate-300 { border-color: #334155 !important; }
+[data-theme="dark"] .border-paper-3 { border-color: #38342d !important; }
 [data-theme="dark"] .input,
-[data-theme="dark"] select {
-  background-color: #0f172a !important;
-  color: #e2e8f0 !important;
-  border-color: #334155 !important;
-}
-[data-theme="dark"] .bg-white\/10 { background-color: rgba(255,255,255,0.06) !important; }
-[data-theme="dark"] .divide-slate-100 > :not([hidden]) ~ :not([hidden]) { border-color: #334155 !important; }
-[data-theme="dark"] header { background-color: rgba(11,17,32,0.9) !important; border-color: #1e293b !important; }
-[data-theme="dark"] .unit-header {
-  background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%) !important;
-}
-[data-theme="dark"] .unit-header h1 { color: #f8fafc !important; }
-[data-theme="dark"] .unit-header .text-brand-600 { color: #a5b4fc !important; }
-
+[data-theme="dark"] select { background-color: #1a1815 !important; color: #e9e5dc !important; border-color: #38342d !important; }
+[data-theme="dark"] header { background-color: rgba(20,18,16,0.95) !important; border-color: #2a2722 !important; }
+[data-theme="dark"] .rule-line { background: #38342d; }
+[data-theme="dark"] .unit-header { background: #23211e !important; }
+[data-theme="dark"] .unit-header h1 { color: #f4f1ea !important; }
