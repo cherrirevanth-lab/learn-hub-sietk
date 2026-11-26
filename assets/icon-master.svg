@@ -1,54 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#312e81"/>
-      <stop offset="45%" stop-color="#4f46e5"/>
-      <stop offset="100%" stop-color="#0e7490"/>
-    </linearGradient>
-    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#c7d2fe"/>
-    </linearGradient>
-    <linearGradient id="book" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#6366f1"/>
-    </linearGradient>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0b1f3a" flood-opacity="0.45"/>
-    </filter>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="9" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
+  <!-- Flat app icon: one solid ink surface, one paper glyph, one ruled line. -->
+  <rect width="512" height="512" rx="96" fill="#23211e"/>
 
-  <!-- Background -->
-  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <rect x="8" y="8" width="496" height="496" rx="104" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="3"/>
-
-  <!-- Decorative orbs -->
-  <circle cx="400" cy="96" r="96" fill="#22d3ee" opacity="0.10"/>
-  <circle cx="96" cy="430" r="120" fill="#ffffff" opacity="0.05"/>
-
-  <!-- Open book -->
-  <g filter="url(#shadow)">
-    <path d="M256 332 C226 306 176 300 132 308 L132 392 C176 384 226 390 256 416 C286 390 336 384 380 392 L380 308 C336 300 286 306 256 332 Z" fill="url(#book)"/>
-    <path d="M256 332 L256 416" stroke="#ffffff" stroke-opacity="0.55" stroke-width="4"/>
-    <path d="M156 330 C196 325 224 332 244 344 M156 358 C196 353 224 360 244 372" stroke="#ffffff" stroke-opacity="0.45" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M268 344 C288 332 316 325 356 330 M268 372 C288 360 316 353 356 358" stroke="#ffffff" stroke-opacity="0.45" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Graduation cap — single solid color, no gradient, no shadow -->
+  <g fill="#f4f1ea">
+    <path d="M256 132 L404 194 L256 256 L108 194 Z"/>
+    <path d="M172 216 L172 288 C172 318 210 340 256 340 C302 340 340 318 340 288 L340 216
+             L340 268 C340 294 302 314 256 314 C210 314 172 294 172 268 Z"/>
   </g>
+  <rect x="404" y="194" width="10" height="76" rx="5" fill="#f4f1ea"/>
+  <circle cx="409" cy="282" r="12" fill="#f4f1ea"/>
 
-  <!-- Graduation cap -->
-  <g filter="url(#shadow)">
-    <path d="M256 118 L392 178 L256 238 L120 178 Z" fill="url(#cap)"/>
-    <path d="M168 200 L168 268 C168 292 208 312 256 312 C304 312 344 292 344 268 L344 200" fill="#e0e7ff"/>
-    <path d="M168 200 L168 262 C168 286 208 306 256 306 C304 306 344 286 344 262 L344 200" fill="none" stroke="#a5b4fc" stroke-width="4"/>
-    <path d="M392 178 L392 246" stroke="#f8fafc" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="392" cy="256" r="9" fill="#22d3ee" filter="url(#glow)"/>
-  </g>
-
-  <!-- Sparkle -->
-  <g transform="translate(386,92)" filter="url(#glow)">
-    <path d="M0 -15 L4 -4 L15 0 L4 4 L0 15 L-4 4 L-15 0 L-4 -4 Z" fill="#67e8f9"/>
-  </g>
+  <!-- Signature detail: the ruled line from the interface -->
+  <rect x="108" y="382" width="296" height="4" rx="2" fill="#777165"/>
 </svg>

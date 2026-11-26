@@ -18,10 +18,8 @@ const sizes = [
 (async () => {
   for (const { name, size } of sizes) {
     await sharp(svg).resize(size, size).png().toFile(path.join(out, name));
-    console.log('generated', name, size);
   }
-  // Also generate root-level icons for compatibility
   await sharp(svg).resize(192, 192).png().toFile(path.join(__dirname, 'public/icon-192.png'));
   await sharp(svg).resize(512, 512).png().toFile(path.join(__dirname, 'public/icon-512.png'));
-  console.log('root icons done');
+  console.log('Generated flat icon set:', sizes.map(s=>s.size).join(', '));
 })();
