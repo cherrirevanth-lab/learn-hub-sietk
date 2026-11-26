@@ -56,6 +56,12 @@ Deployed on Vercel as a Vite static app with SPA rewrites (`vercel.json`).
 
 Built with React + Vite + Tailwind CSS v4.
 
+## Credits
+
+The unslop design pass followed the methodology from
+[unslop](https://github.com/heydamir/unslop) by Damir Sokolovsky
+([@heydamir](https://x.com/heydamir)), licensed CC BY 4.0.
+
 ## Data source
 
 Subject codes, names, faculty, question-bank PDF URLs and all 586 questions are
