@@ -52,7 +52,7 @@ function loadAppearance() {
   try {
     const raw = localStorage.getItem(APPEARANCE_KEY);
     return raw ? { ...defaultAppearance, ...JSON.parse(raw) } : { ...defaultAppearance };
-  } catch (e) {
+  } catch {
     return { ...defaultAppearance };
   }
 }
@@ -66,7 +66,7 @@ export function AuthProvider({ children }) {
       // Backward compatibility: existing users with a name have a complete profile
       if (parsed.name && parsed.profileComplete === undefined) parsed.profileComplete = true;
       return { ...defaultUser, ...parsed };
-    } catch (e) {
+    } catch {
       return { ...defaultUser };
     }
   });
@@ -75,7 +75,7 @@ export function AuthProvider({ children }) {
     try {
       const raw = localStorage.getItem(PROGRESS_KEY);
       return raw ? JSON.parse(raw) : initialProgress;
-    } catch (e) {
+    } catch {
       return initialProgress;
     }
   });
@@ -84,7 +84,7 @@ export function AuthProvider({ children }) {
     try {
       const raw = localStorage.getItem(STUDYPLAN_KEY);
       return raw ? JSON.parse(raw) : initialStudyPlan;
-    } catch (e) {
+    } catch {
       return initialStudyPlan;
     }
   });

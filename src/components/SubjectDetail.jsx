@@ -2,7 +2,6 @@ import { useParams, Link } from "react-router-dom";
 import { SUBJECTS } from "../data/subjects";
 import { useAuth } from "../context/AuthContext";
 import {
-  BookOpen,
   FileText,
   CheckCircle2,
   ChevronRight,

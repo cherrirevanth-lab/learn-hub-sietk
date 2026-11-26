@@ -52,7 +52,7 @@ self.addEventListener("push", (event) => {
   let data = { title: "Learn Hub", body: "You have a new study update!", icon: "/icon-192.png" };
   try {
     if (event.data) data = { ...data, ...event.data.json() };
-  } catch (e) {}
+  } catch {}
   event.waitUntil(
     self.registration.showNotification(data.title, {
       body: data.body,

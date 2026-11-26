@@ -12,7 +12,7 @@ export function getNotifyPref() {
   try {
     const raw = localStorage.getItem(PREF_KEY);
     return raw ? JSON.parse(raw) : { enabled: false, reminder: "daily", lastShown: null };
-  } catch (e) {
+  } catch {
     return { enabled: false, reminder: "daily", lastShown: null };
   }
 }
@@ -25,7 +25,7 @@ export async function registerSW() {
   if (!("serviceWorker" in navigator)) return null;
   try {
     return await navigator.serviceWorker.register("/sw.js");
-  } catch (e) {
+  } catch {
     console.warn("SW registration failed", e);
     return null;
   }
