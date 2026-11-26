@@ -1,0 +1,128 @@
+{
+  "subject": "23HS0850",
+  "unit": 4,
+  "unitTitle": "World Trade Organization",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "q": "1 a) What is WTO?",
+      "a": "The World Trade Organization (WTO) is an international intergovernmental organization that regulates and facilitates international trade among its member nations. Established on 1 January 1995 as the successor to GATT, it is headquartered in Geneva, Switzerland, and provides a framework for negotiating trade agreements, settling disputes, and ensuring a smooth, predictable flow of goods and services. It operates on the principles of non-discrimination, transparency, and fair competition, and currently has over 160 member countries.",
+      "explanation": "This is the standard definition of the WTO as the global body governing trade rules, which replaced GATT in 1995 and is based in Geneva.",
+      "oneShotPreview": "WTO: global body (est. 1995, Geneva) that sets trade rules, negotiates agreements and settles disputes."
+    },
+    {
+      "q": "1 b) What is GATT?",
+      "a": "GATT (General Agreement on Tariffs and Trade) was a multilateral trade agreement signed in 1947 by 23 countries to promote international trade by reducing tariffs, quotas and other trade barriers. It operated as a provisional agreement for nearly five decades through several negotiating rounds, such as the Kennedy Round and the Uruguay Round. Its main objective was to eliminate discrimination and liberalize trade through reciprocal tariff reductions. It was replaced by the WTO in 1995, which absorbed its principles into the GATT 1994 agreement.",
+      "explanation": "GATT is correctly identified as the 1947 tariff-reduction agreement that served as a provisional trade body and was superseded by the WTO.",
+      "oneShotPreview": "GATT: 1947 multilateral agreement to cut tariffs and trade barriers; absorbed into WTO in 1995."
+    },
+    {
+      "q": "1 c) What is TRIPS?",
+      "a": "TRIPS stands for Trade-Related Aspects of Intellectual Property Rights. It is a WTO agreement that sets minimum standards for the protection and enforcement of intellectual property rights such as patents, copyrights, trademarks, geographical indications and trade secrets among member countries. It was negotiated during the Uruguay Round and came into force in 1995. It aims to reduce distortions to international trade by harmonizing national IP laws and ensuring effective, equitable protection of creators and innovators.",
+      "explanation": "TRIPS is correctly defined as the WTO agreement dealing with intellectual property rights and harmonizing IP standards globally.",
+      "oneShotPreview": "TRIPS: WTO agreement setting global minimum standards for IPRs (patents, copyright, trademarks)."
+    },
+    {
+      "q": "1 d) What is dumping?",
+      "a": "Dumping is the practice of exporting a product to another country at a price lower than its normal value, typically below the price charged in the domestic market or below the cost of production. It is often done to capture foreign market share or eliminate competition, and it can injure the importing country's domestic industry. Importing countries may impose anti-dumping duties to offset the injury caused. WTO rules (GATT Article VI and the Anti-Dumping Agreement) permit such measures when material injury is proven.",
+      "explanation": "Dumping is correctly defined as selling abroad below normal or domestic value, with anti-dumping duties as the recognized remedy.",
+      "oneShotPreview": "Dumping: exporting below normal/domestic price; countered by anti-dumping duties."
+    },
+    {
+      "q": "1 e) What is the role of WTO in services trade?",
+      "a": "The WTO regulates international trade in services through the General Agreement on Trade in Services (GATS). GATS provides a multilateral framework of rules that gradually liberalizes services trade, covering sectors such as banking, insurance, telecommunications, transport and tourism. It operates on principles such as most-favoured-nation treatment, national treatment and market access, with members making specific commitments in schedules. It also provides a dispute settlement mechanism for services-related conflicts and allows for progressive negotiation of further liberalization.",
+      "explanation": "The WTO's role in services is defined by GATS, which sets the rules for gradual liberalization of services trade among members.",
+      "oneShotPreview": "WTO governs services via GATS — gradual liberalization, MFN/national treatment and market-access commitments."
+    },
+    {
+      "q": "2 Explain the origin and evolution of the World Trade Organization. Discuss its nature and significance in global trade.",
+      "a": "The WTO originated from GATT, signed in 1947 by 23 countries to reduce tariffs and other trade barriers. A proposed International Trade Organization (ITO) failed to materialize, so GATT served as a provisional trade body for nearly 50 years, conducting eight rounds of negotiations. The Uruguay Round (1986-1994) culminated in the Marrakesh Agreement, which formally created the WTO on 1 January 1995, headquartered in Geneva. The WTO is a permanent international organization with legal personality, a broad agenda covering goods, services and intellectual property, and a binding dispute settlement system. Its significance lies in providing a rule-based, non-discriminatory multilateral trading system that promotes predictability, transparency, and the peaceful resolution of trade conflicts.",
+      "explanation": "This traces the evolution from GATT (1947) through the Uruguay Round to the WTO (1995) and captures its nature and significance as a rule-based global trade body.",
+      "oneShotPreview": "WTO evolved from GATT (1947) via the Uruguay Round (1995); a permanent, rule-based body for goods, services and IP."
+    },
+    {
+      "q": "3 a) Write an essay on the objectives and fundamental principles of the WTO.",
+      "a": "The WTO's main objectives are to promote free and fair international trade, raise living standards, ensure full employment, and create a predictable trading environment for all members. Its fundamental principles include non-discrimination, expressed through most-favoured-nation (MFN) treatment and national treatment; transparency, through the publication of trade regulations; predictability, through bound commitments and schedules; promotion of fair competition; encouragement of development and economic growth, especially for developing countries; and protection of the environment and public health under specified exceptions. These principles are embedded in agreements such as GATT, GATS and TRIPS and are enforced through the WTO's dispute settlement mechanism.",
+      "explanation": "This lists the core objectives and the well-established fundamental principles of the WTO as set out in its founding agreements.",
+      "oneShotPreview": "WTO objectives: free/fair trade, development. Principles: MFN, national treatment, transparency, predictability, fair competition."
+    },
+    {
+      "q": "3 b) Discuss the need for establishing the WTO and its importance for developing countries.",
+      "a": "The WTO was needed because GATT was only a provisional agreement with limited scope, weak enforcement and no authority over services or intellectual property; a permanent, stronger institution was required to manage increasingly complex global trade. The WTO gives developing countries a seat at the table in multilateral negotiations, where they can voice concerns and form coalitions. The principle of special and differential treatment grants them longer transition periods, technical assistance and preferential market access. Its binding dispute settlement mechanism also protects weaker economies from unilateral trade actions by powerful nations. Through the WTO, developing countries can integrate into global value chains, attract investment and pursue export-led growth.",
+      "explanation": "This explains why a permanent WTO was needed to replace GATT and highlights the specific benefits — a voice, special treatment and dispute protection — for developing countries.",
+      "oneShotPreview": "WTO replaced weak GATT; gives developing nations a voice, special and differential treatment, and dispute protection."
+    },
+    {
+      "q": "4 Evaluate the impact of WTO policies on developing economies like India.",
+      "a": "WTO policies have had a mixed impact on developing economies like India. On the positive side, they promoted trade liberalization, reduced tariff and non-tariff barriers, opened export markets, attracted foreign investment, and gave India a platform to participate in global rule-making and settle disputes; exports of services, pharmaceuticals and IT grew significantly. However, the removal of quantitative restrictions and subsidy cuts exposed domestic agriculture and small industries to stiff competition, and the patent regime under TRIPS raised the cost of medicines and seeds. Uruguay Round commitments also forced cuts in import restrictions, creating short-term adjustment pain. Overall, the WTO accelerated India's integration into the global economy while requiring domestic reforms to remain competitive.",
+      "explanation": "This provides a balanced evaluation of both the benefits and the challenges that WTO membership brought to India, matching the 'Evaluate' demand of the question.",
+      "oneShotPreview": "WTO gave India export growth, investment and dispute access, but also tougher competition and TRIPS-related costs."
+    },
+    {
+      "q": "5 Describe the organizational structure of the WTO with its key bodies and functions.",
+      "a": "The WTO's structure is headed by the Ministerial Conference, the highest decision-making body, which meets at least once every two years and comprises all members. Below it is the General Council, which handles day-to-day decisions and meets as the Dispute Settlement Body and the Trade Policy Review Body. The General Council oversees specialized councils — the Goods Council, Services Council and TRIPS Council — each with committees and working parties. A Secretariat, led by the Director-General and based in Geneva, provides administrative and technical support. Additional committees deal with trade and development, the environment and the budget. This structure enables the WTO to negotiate agreements, monitor members' trade policies and resolve disputes.",
+      "explanation": "This accurately describes the WTO hierarchy — Ministerial Conference, General Council, the three councils and the Secretariat — together with their functions.",
+      "oneShotPreview": "WTO structure: Ministerial Conference → General Council (DSB/TPRB) → Goods, Services and TRIPS Councils plus the Secretariat."
+    },
+    {
+      "q": "6 a) Discuss the major functions of the WTO.",
+      "a": "The major functions of the WTO are to administer and implement the multilateral trade agreements; to provide a forum for members to negotiate trade rules and further liberalize trade; to settle trade disputes between members through its binding dispute settlement mechanism; to review the trade policies of members through the Trade Policy Review Mechanism; to provide technical assistance and training to developing countries; and to cooperate with other international organizations such as the IMF and World Bank for coherent global economic policy. It also monitors compliance with agreed rules and publishes trade statistics and data.",
+      "explanation": "These are the functions formally listed in the WTO Agreement (Article III) and widely taught in international trade courses.",
+      "oneShotPreview": "WTO functions: administer agreements, negotiate rules, settle disputes, review policies, aid developing nations."
+    },
+    {
+      "q": "6 b) Explain the advantages of the WTO system for member countries.",
+      "a": "The WTO system offers several advantages to member countries. It provides a rule-based, predictable trading environment that reduces uncertainty for businesses and governments. The non-discrimination principles of MFN and national treatment ensure fair treatment of all members. The dispute settlement mechanism offers an impartial, binding process that prevents powerful countries from acting unilaterally. Membership grants access to larger markets and the benefits of trade liberalization, while transparency and regular policy reviews build confidence. Developing members gain technical assistance, special and differential treatment and a voice in global rule-making, helping them integrate into the world economy.",
+      "explanation": "This enumerates the key benefits — predictability, fairness, binding dispute resolution, market access and support for developing countries — of WTO membership.",
+      "oneShotPreview": "WTO benefits: predictable rules, fair treatment, binding dispute resolution, market access and support for developing nations."
+    },
+    {
+      "q": "7 Explain the decision-making process and organizational hierarchy of the WTO.",
+      "a": "The WTO's highest authority is the Ministerial Conference, which meets at least once every two years and takes decisions on all multilateral trade agreements. Between its meetings, the General Council, composed of all members, conducts day-to-day business and also meets as the Dispute Settlement Body and the Trade Policy Review Body. Below it are the Goods Council, Services Council and TRIPS Council, along with committees on development, the environment and the budget. Decisions are generally taken by consensus — a decision is adopted if no member present objects; if consensus fails, voting may be used, with a simple majority in most cases and special majorities for waivers and amendments. The Secretariat, headed by the Director-General, supports the process administratively.",
+      "explanation": "This covers both the hierarchical structure and the consensus-based decision-making process, including the fallback to voting, as prescribed by the WTO Agreement.",
+      "oneShotPreview": "WTO decisions by consensus (voting fallback); Ministerial Conference → General Council → councils, supported by the Secretariat."
+    },
+    {
+      "q": "8 a) Examine the role of WTO in liberalizing international trade.",
+      "a": "The WTO plays a central role in liberalizing international trade by providing a permanent forum for multilateral negotiations to progressively reduce tariffs, quotas and non-tariff barriers. Agreements such as GATT, GATS and TRIPS lock in market-access commitments and bind members to schedules of concessions. The most-favoured-nation and national treatment principles extend liberalization uniformly across all members. The Trade Policy Review Mechanism monitors members' policies to ensure continued openness, while the dispute settlement system enforces compliance with liberalization commitments. Through successive negotiating rounds, the WTO has opened markets in goods and services and promoted global economic integration.",
+      "explanation": "This describes how the WTO drives trade liberalization through negotiations, binding commitments, monitoring and enforcement.",
+      "oneShotPreview": "WTO liberalizes trade via negotiating rounds, bound commitments, MFN/national treatment, policy review and dispute enforcement."
+    },
+    {
+      "q": "8 b) Discuss the WTO's contribution to reducing tariff and non-tariff barriers.",
+      "a": "The WTO has significantly reduced tariff and non-tariff barriers through successive negotiating rounds and binding commitments. Under GATT, members agreed to substantial tariff cuts, and the Uruguay Round further reduced tariffs and converted many non-tariff measures, such as import quotas, into ordinary tariffs — a process called tariffication, especially in agriculture. The WTO prohibits quantitative restrictions and requires transparency in import licensing, customs valuation and technical regulations. Agreements on Sanitary and Phytosanitary (SPS) measures and Technical Barriers to Trade (TBT) ensure that health and technical standards are not used as disguised protectionism. Dispute settlement and Trade Policy Reviews help discipline any resurgence of barriers.",
+      "explanation": "This correctly identifies tariffication of quotas, the ban on quantitative restrictions and the SPS/TBT disciplines as the WTO's key tools for reducing barriers.",
+      "oneShotPreview": "WTO cut tariffs, tarifficated quotas, banned quantitative restrictions and disciplined SPS/TBT measures."
+    },
+    {
+      "q": "9 Evaluate the impact of the Uruguay Round on international trade policies.",
+      "a": "The Uruguay Round (1986-1994) was the most comprehensive GATT negotiation and profoundly reshaped international trade policy. It created the WTO, extending the trading system beyond goods to services (GATS) and intellectual property (TRIPS). It achieved substantial tariff cuts, agreed to phase out the Multi-Fibre Arrangement's textile quotas, and introduced the Agreement on Agriculture, which required tariffication of agricultural barriers and reductions in export subsidies and domestic support. It strengthened dispute settlement through the Dispute Settlement Understanding and introduced the Trade Policy Review Mechanism, while adding rules on trade-related investment measures (TRIMS) and safeguards. Overall, it made global trade rules more comprehensive, enforceable and market-oriented, though developing countries faced significant adjustment costs.",
+      "explanation": "This evaluates the wide-ranging outcomes — WTO creation, GATS and TRIPS, agriculture reforms and a stronger dispute system — and their significance, matching the 'Evaluate' demand.",
+      "oneShotPreview": "Uruguay Round created the WTO, added GATS/TRIPS, reformed agriculture and strengthened dispute settlement."
+    },
+    {
+      "q": "10 a) Discuss the objectives and principles of GATT.",
+      "a": "GATT's main objectives were to promote international trade liberalization by substantially reducing tariffs and other trade barriers, to eliminate discrimination in international trade, and to promote economic growth and full employment. Its core principles were non-discrimination, embodied in the most-favoured-nation clause (Article I) and national treatment (Article III); transparency and the use of tariffs rather than quantitative restrictions as the principal instrument of protection (Article XI); reciprocity in tariff negotiations; and consultation and settlement of disputes. It operated through periodic rounds of multilateral tariff negotiations and allowed special treatment for developing countries.",
+      "explanation": "This states GATT's objectives and its established principles — MFN, national treatment, tariff-only protection and reciprocity — accurately.",
+      "oneShotPreview": "GATT goals: cut tariffs, end discrimination. Principles: MFN, national treatment, tariffs over quotas, reciprocity."
+    },
+    {
+      "q": "10 b) Explain the differences between GATT and WTO.",
+      "a": "GATT was a provisional multilateral agreement signed in 1947, concerned primarily with trade in goods, whereas the WTO is a permanent international organization established in 1995 with a broad scope covering goods, services and intellectual property. GATT had no formal institutional structure or legal personality, while the WTO has a permanent Secretariat, a General Council and a defined organizational hierarchy. GATT's dispute settlement was weak and easily blocked, whereas the WTO has a binding, quasi-judicial Dispute Settlement Understanding. GATT was a set of rules with limited enforcement and 23 founding contracting parties, while the WTO has over 160 members and a stronger, more enforceable system. The WTO absorbed and continues GATT as the GATT 1994 agreement.",
+      "explanation": "This captures the key distinctions — provisional versus permanent, goods-only versus goods/services/IP, weak versus binding dispute settlement, and institutional structure.",
+      "oneShotPreview": "GATT: provisional, goods-only, weak disputes. WTO: permanent body, goods+services+IP, binding DSU."
+    },
+    {
+      "q": "11 a) What is TRIMS? Discuss its objectives and provisions.",
+      "a": "TRIMS stands for Trade-Related Investment Measures. It is a WTO agreement that prohibits investment measures inconsistent with GATT principles, particularly those that restrict or distort trade. Its objective is to prevent host countries from imposing performance requirements that discriminate against foreign investors or distort trade flows, thereby promoting a more open and predictable environment for foreign direct investment. The agreement includes an illustrative list of prohibited measures, such as local-content requirements (requiring a fixed proportion of local inputs) and trade-balancing requirements (limiting imports to the value of exports). It also incorporates GATT's national treatment and prohibition of quantitative restrictions, and provides for notification, transparency and transition periods for developing countries.",
+      "explanation": "This defines TRIMS, states its objective of preventing trade-distorting investment measures, and lists its key prohibited provisions and developing-country provisions.",
+      "oneShotPreview": "TRIMS: WTO agreement banning trade-distorting investment rules like local-content and trade-balancing requirements."
+    },
+    {
+      "q": "11 b) Explain the concept of dumping in international trade.",
+      "a": "Dumping in international trade is the practice of a firm or country exporting a product at a price below its normal value — usually below the price charged in the home market or below the cost of production. It may be predatory, intended to drive out competitors and capture market share, or sporadic, intended to dispose of surplus stock. Dumping can injure the importing country's domestic industry by undercutting local producers. Under GATT Article VI and the WTO Anti-Dumping Agreement, importing countries may impose anti-dumping duties equal to the dumping margin when material injury to a domestic industry is established. Such measures must follow prescribed investigation procedures and cannot be used as disguised protectionism.",
+      "explanation": "This defines dumping, distinguishes its motives, and explains the GATT/WTO anti-dumping remedy, matching the question asking for the concept in international trade.",
+      "oneShotPreview": "Dumping: selling exports below normal value; remedy is anti-dumping duties when material injury is proven."
+    }
+  ]
+}

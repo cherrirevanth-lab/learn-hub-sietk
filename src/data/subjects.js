@@ -18,8 +18,7 @@ export const BRANCHES = [
   { key: "CSIT", label: "Computer Science & Information Technology" },
   { key: "AIML", label: "CSE (AI & Machine Learning)" },
   { key: "DS", label: "CSE (AI & Data Science)" },
-  { key: "IOT", label: "CSE (IoT & Cybersecurity incl. Blockchain)" },
-];
+  { key: "IOT", label: "CSE (IoT & Cybersecurity incl. Blockchain)" }];
 
 export const ROLES = [
   { key: "student", label: "Student", color: "blue" },
@@ -27,8 +26,7 @@ export const ROLES = [
   { key: "admin", label: "Admin", color: "emerald" },
   { key: "designer", label: "Designer", color: "pink" },
   { key: "engineer", label: "Engineer", color: "orange" },
-  { key: "professor", label: "Professor", color: "purple" },
-];
+  { key: "professor", label: "Professor", color: "purple" }];
 
 export const SUBJECTS = [
   {
@@ -59,8 +57,7 @@ export const SUBJECTS = [
           "System calls, Types of System Calls, system programs",
           "Operating system Design and Implementation",
           "Operating system structure, Building and Booting an Operating System",
-          "Operating system debugging",
-        ],
+          "Operating system debugging"],
         explanation: `
 An Operating System (OS) is the layer of software that sits between the user applications and the computer hardware. It manages the hardware resources (CPU, memory, disk, I/O devices) and provides a convenient interface for users and programs.
 
@@ -119,8 +116,7 @@ System calls are the interface between a running program and the OS. Common cate
               "Modern OSs adapt to different environments: desktop OS (Windows, macOS), mobile OS (Android, iOS), distributed OS (cluster computing), and cloud OS (virtualized resources).",
             oneShotPreview:
               "Computing environment = hardware/software context; desktop, mobile, distributed, cloud.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -131,8 +127,7 @@ System calls are the interface between a running program and the OS. Common cate
           "Threads and Concurrency: Multithreading models",
           "Thread libraries, Threading issues",
           "CPU Scheduling: Basic concepts, Scheduling criteria",
-          "Scheduling algorithms, Multiple processor scheduling",
-        ],
+          "Scheduling algorithms, Multiple processor scheduling"],
         explanation: `
 A **process** is a program in execution. It is more than just the code — it includes the program counter, registers, stack, heap, and the Process Control Block (PCB).
 
@@ -190,8 +185,7 @@ A **process** is a program in execution. It is more than just the code — it in
               "Context switches occur during interrupts, system calls, and scheduling. They involve saving registers, program counter, and updating the PCB. Frequent context switching adds overhead.",
             oneShotPreview:
               "Context switch = save current process state, load next process state.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -203,8 +197,7 @@ A **process** is a program in execution. It is more than just the code — it in
           "Deadlocks: system Model, Deadlock characterization",
           "Methods for handling Deadlocks",
           "Deadlock prevention, Deadlock avoidance",
-          "Deadlock detection, Recovery from Deadlock",
-        ],
+          "Deadlock detection, Recovery from Deadlock"],
         explanation: `
 The **critical section problem**: when multiple processes share data (e.g., a counter), concurrent access can cause inconsistent results. We must ensure mutual exclusion — only one process in its critical section at a time.
 
@@ -264,8 +257,7 @@ Handling strategies: Prevention (break one condition), Avoidance (Banker's algor
               "Prevention is conservative but can reduce resource utilization. Avoidance (Banker's) is more flexible but requires knowing future resource needs.",
             oneShotPreview:
               "Prevent deadlock by breaking one of the 4 necessary conditions.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -278,8 +270,7 @@ Handling strategies: Prevention (break one condition), Avoidance (Banker's algor
           "Demand paging, Copy-on-write, Page replacement",
           "Allocation of frames, Thrashing",
           "Storage Management: Overview of Mass Storage Structure",
-          "HDD Scheduling",
-        ],
+          "HDD Scheduling"],
         explanation: `
 Memory management keeps track of which parts of memory are in use and by whom, decides which processes to load when memory space becomes available, and allocates/deallocates memory.
 
@@ -317,8 +308,7 @@ Memory management keeps track of which parts of memory are in use and by whom, d
               "Thrashing is caused by high page fault rate. Solutions include increasing physical memory, reducing multiprogramming, or using working set model to manage page frames.",
             oneShotPreview:
               "Thrashing = excessive paging; process spends more time swapping than computing.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -332,8 +322,7 @@ Memory management keeps track of which parts of memory are in use and by whom, d
           "File-System Internals: File-System Mounting",
           "Partitions and Mounting, File Sharing",
           "Protection: Goals of protection, Principles of protection",
-          "Protection Rings, Domain of protection, Access matrix",
-        ],
+          "Protection Rings, Domain of protection, Access matrix"],
         explanation: `
 A **file** is a named collection of related information recorded on secondary storage. The OS provides operations: create, write, read, reposition, truncate, open, close, delete.
 
@@ -374,10 +363,8 @@ A **file** is a named collection of related information recorded on secondary st
               "Protection rings (0-3 in x86) provide hardware-enforced privilege levels. Ring 0 is kernel mode, Ring 3 is user mode. Access matrix defines who can access what.",
             oneShotPreview:
               "Protection = access control via rings, domains, and access matrices.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23CS0512",
@@ -409,8 +396,7 @@ A **file** is a named collection of related information recorded on secondary st
           "ER Model: entities, attributes, entity set",
           "Relationship, relationship set, constraints",
           "Sub classes, super class, inheritance",
-          "Specialization, generalization using ER Diagrams",
-        ],
+          "Specialization, generalization using ER Diagrams"],
         explanation: `
 A **Database Management System (DBMS)** is software for creating and managing databases. Compared to traditional file systems, a DBMS reduces data redundancy and inconsistency, provides data sharing, enforces integrity constraints, and offers backup/recovery.
 
@@ -459,8 +445,7 @@ A **Database Management System (DBMS)** is software for creating and managing da
               "Physical: change storage without affecting conceptual schema. Logical: change conceptual schema without affecting external views. This is a key advantage of DBMS over file systems.",
             oneShotPreview:
               "Data independence = change schema at one level without affecting higher levels.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -472,8 +457,7 @@ A **Database Management System (DBMS)** is software for creating and managing da
           "Relational Algebra, Relational Calculus",
           "BASIC SQL: Simple Database schema, data types",
           "Table definitions (create, alter)",
-          "DML operations (insert, delete, update)",
-        ],
+          "DML operations (insert, delete, update)"],
         explanation: `
 The **relational model** represents data as relations (tables) with tuples (rows) and attributes (columns). Each relation has a schema.
 
@@ -527,8 +511,7 @@ The **relational model** represents data as relations (tables) with tuples (rows
               "Super key: any set of attributes that uniquely identifies a tuple. Candidate key: minimal super key. Primary key: chosen candidate key. Foreign key: references another table's primary key.",
             oneShotPreview:
               "Keys: super, candidate, primary, alternate, foreign, composite.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -540,8 +523,7 @@ The **relational model** represents data as relations (tables) with tuples (rows
           "Creating tables with relationship, key and integrity constraints",
           "Nested queries, sub queries, grouping, aggregation, ordering",
           "Different types of joins, view (updatable and non-updatable)",
-          "Relational set operations",
-        ],
+          "Relational set operations"],
         explanation: `
 **Normalization** is the process of organizing tables to reduce redundancy and avoid anomalies.
 
@@ -602,8 +584,7 @@ The **relational model** represents data as relations (tables) with tuples (rows
               "Subqueries can be correlated (reference outer query) or non-correlated. They simplify complex queries but may impact performance.",
             oneShotPreview:
               "Subquery = query inside a query; used in WHERE/FROM/SELECT.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -615,8 +596,7 @@ The **relational model** represents data as relations (tables) with tuples (rows
           "Lossless join and dependency preserving decomposition",
           "1NF, 2NF, 3NF, BCNF",
           "Concept of surrogate key",
-          "MVD, 4NF, 5NF",
-        ],
+          "MVD, 4NF, 5NF"],
         explanation: `
 A **transaction** is a logical unit of work that must be treated as indivisible. **ACID properties**:
 - **Atomicity**: all or nothing.
@@ -666,8 +646,7 @@ A **transaction** is a logical unit of work that must be treated as indivisible.
               "Lossless join ensures no data is lost or added during decomposition. It's verified using common attributes that form a super key of one of the decomposed tables.",
             oneShotPreview:
               "Lossless join = decomposition that can be reversed without data loss.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -680,8 +659,7 @@ A **transaction** is a logical unit of work that must be treated as indivisible.
           "Deadlocks, Failure Classification, Storage, Recovery and Atomicity",
           "Recovery algorithm",
           "Introduction to Indexing Techniques: B+ Trees",
-          "Operations on B+Trees, Hash Based Indexing",
-        ],
+          "Operations on B+Trees, Hash Based Indexing"],
         explanation: `
 **Recovery** restores the database to a consistent state after a failure. The **log** records every transaction's actions (start, updates, commit/abort) so the system can redo committed transactions and undo incomplete ones after a crash.
 
@@ -728,10 +706,8 @@ A **checkpoint** periodically writes all modified buffers to disk and records a 
               "B+ Trees provide O(log n) search, insert, and delete. They are the most common index structure in relational databases because they support both point and range queries.",
             oneShotPreview:
               "B+ Tree = balanced index tree; leaves linked for range queries.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23CS0513",
@@ -756,8 +732,7 @@ A **checkpoint** periodically writes all modified buffers to disk and records a 
           "What is Software Engineering",
           "Software Process Models: Waterfall, Prototyping, Spiral, Agile",
           "Requirement Engineering",
-          "Feasibility Study",
-        ],
+          "Feasibility Study"],
         explanation: `
 **Software Engineering** is the application of engineering principles to software development in a systematic, methodical, quantifiable manner.
 
@@ -791,8 +766,7 @@ A **checkpoint** periodically writes all modified buffers to disk and records a 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -807,8 +781,7 @@ A **checkpoint** periodically writes all modified buffers to disk and records a 
           "Requirements gathering and analysis",
           "Software Requirements Specification (SRS)",
           "Formal system specification, Axiomatic specification",
-          "Algebraic specification, Executable specification and 4GL",
-        ],
+          "Algebraic specification, Executable specification and 4GL"],
         explanation: `
 Good software design manages complexity. Key principles:
 - **Abstraction**: suppress irrelevant details, focus on essentials.
@@ -840,8 +813,7 @@ Good software design manages complexity. Key principles:
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -857,8 +829,7 @@ Good software design manages complexity. Key principles:
           "Tool Set for the Agile Process",
           "Function-Oriented Software Design: SA/SD methodology",
           "Structured analysis, DFD model, Structured design",
-          "User Interface Design: characteristics, types, methodology",
-        ],
+          "User Interface Design: characteristics, types, methodology"],
         explanation: `
 **Testing** is the process of executing a program with the intent of finding errors.
 
@@ -892,8 +863,7 @@ Good software design manages complexity. Key principles:
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -907,8 +877,7 @@ Good software design manages complexity. Key principles:
           "Software reliability, Statistical testing",
           "Software quality, Software quality management system",
           "ISO 9000, SEI Capability maturity model",
-          "Six Sigma",
-        ],
+          "Six Sigma"],
         explanation: `
 **Maintenance** keeps software running after delivery:
 - **Corrective**: fix bugs.
@@ -940,8 +909,7 @@ Good software design manages complexity. Key principles:
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -956,8 +924,7 @@ Good software design manages complexity. Key principles:
           "Software maintenance process models",
           "Estimation of maintenance cost",
           "Software Reuse: definition, issues, reuse approach",
-          "Reuse at organization level",
-        ],
+          "Reuse at organization level"],
         explanation: `
 Modern software engineering emphasizes short feedback loops:
 - **Scrum**: time-boxed iterations (sprints), roles: Product Owner, Scrum Master, Development Team; artifacts: product backlog, sprint backlog, increment.
@@ -986,10 +953,8 @@ Modern software engineering emphasizes short feedback loops:
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23HS0838",
@@ -1017,8 +982,7 @@ Modern software engineering emphasizes short feedback loops:
           "Measures of Variability (spread or variance)",
           "Skewness, Kurtosis",
           "Correlation, correlation coefficient, rank correlation",
-          "Regression coefficients, method of least squares, regression lines",
-        ],
+          "Regression coefficients, method of least squares, regression lines"],
         explanation: `
 **Probability** measures the likelihood of an event, ranging from 0 (impossible) to 1 (certain).
 
@@ -1054,8 +1018,7 @@ Modern software engineering emphasizes short feedback loops:
               "Correlation (r) indicates association; regression (y = a + bx) enables prediction. R² measures the proportion of variance explained.",
             oneShotPreview:
               "Correlation = strength of linear relation; Regression = prediction model.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -1066,8 +1029,7 @@ Modern software engineering emphasizes short feedback loops:
           "Conditional probability, Baye's theorem",
           "Random variables (discrete and continuous)",
           "Probability density functions, properties",
-          "Mathematical expectation",
-        ],
+          "Mathematical expectation"],
         explanation: `
 A **probability distribution** describes how probabilities are distributed over the values of a random variable.
 
@@ -1103,8 +1065,7 @@ A **probability distribution** describes how probabilities are distributed over 
               "These three axioms (Kolmogorov) form the foundation of probability theory. All other probability rules derive from them.",
             oneShotPreview:
               "Axioms: non-negative, total = 1, additive for disjoint events.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -1112,8 +1073,7 @@ A **probability distribution** describes how probabilities are distributed over 
         topics: [
           "Probability distributions: Binomial, Poisson and Normal",
           "Their properties (Chebyshev's inequality)",
-          "Approximation of binomial to normal distribution",
-        ],
+          "Approximation of binomial to normal distribution"],
         explanation: `
 **Sampling** selects a subset of a population to estimate population characteristics. A **point estimate** is a single value estimate; an **interval estimate** (confidence interval) gives a range with a stated confidence level.
         `,
@@ -1139,8 +1099,7 @@ A **probability distribution** describes how probabilities are distributed over 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -1152,8 +1111,7 @@ A **probability distribution** describes how probabilities are distributed over 
           "Level of significance, two types of errors, power of the test",
           "Large Sample Tests: Test for single proportion",
           "Difference of proportions, test for single mean",
-          "Difference of means, Confidence interval for parameters",
-        ],
+          "Difference of means, Confidence interval for parameters"],
         explanation: `
 **Hypothesis testing** decides whether sample evidence supports a claim about a population.
 
@@ -1184,8 +1142,7 @@ A **probability distribution** describes how probabilities are distributed over 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -1195,8 +1152,7 @@ A **probability distribution** describes how probabilities are distributed over 
           "Test for single mean, two means and paired t-test",
           "Testing of equality of variances (F-test)",
           "Chi-square test for goodness of fit",
-          "Chi-square test for independence of attributes",
-        ],
+          "Chi-square test for independence of attributes"],
         explanation: `
 **Correlation** measures the strength and direction of a linear relationship between two variables (−1 to +1). **Regression** models the relationship to predict one variable from another.
 
@@ -1224,10 +1180,8 @@ A **probability distribution** describes how probabilities are distributed over 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23HS0848",
@@ -1254,8 +1208,7 @@ A **probability distribution** describes how probabilities are distributed over 
           "Demand: Concept, Function, Law of Demand",
           "Demand Elasticity: Types, Measurement",
           "Demand Forecasting: Factors, Methods",
-          "Managerial Economics and Financial Accounting and Management",
-        ],
+          "Managerial Economics and Financial Accounting and Management"],
         explanation: `
 **Managerial Economics** applies economic theory and methodology to business decision-making.
 
@@ -1285,8 +1238,7 @@ A **probability distribution** describes how probabilities are distributed over 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -1300,8 +1252,7 @@ A **probability distribution** describes how probabilities are distributed over 
           "Cost & Break-Even Analysis",
           "Cost concepts and Cost behavior",
           "Break-Even Analysis (BEA)",
-          "Determination of Break-Even Point",
-        ],
+          "Determination of Break-Even Point"],
         explanation: `
 A **production function** shows the maximum output from given inputs. In the short run, some inputs are fixed; in the long run, all inputs are variable.
 
@@ -1329,8 +1280,7 @@ A **production function** shows the maximum output from given inputs. In the sho
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -1344,8 +1294,7 @@ A **production function** shows the maximum output from given inputs. In the sho
           "Features of Perfect Competition, Monopoly",
           "Monopolistic Competition, Oligopoly",
           "Price-Output Determination",
-          "Pricing Methods and Strategies",
-        ],
+          "Pricing Methods and Strategies"],
         explanation: `
 Market structure describes the degree of competition:
 - **Perfect competition**: many firms, identical products, price takers.
@@ -1375,8 +1324,7 @@ Market structure describes the degree of competition:
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -1388,8 +1336,7 @@ Market structure describes the degree of competition:
           "Estimating Working capital requirements",
           "Capital Budgeting: Features, Proposals, Methods and Evaluation",
           "Projects: Pay Back Method, Accounting Rate of Return (ARR)",
-          "Net Present Value (NPV), Internal Rate of Return (IRR)",
-        ],
+          "Net Present Value (NPV), Internal Rate of Return (IRR)"],
         explanation: `
 **Financial accounting** records, summarizes, and reports business transactions via financial statements.
 
@@ -1421,8 +1368,7 @@ Market structure describes the degree of competition:
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -1433,8 +1379,7 @@ Market structure describes the degree of competition:
           "Final Accounts: Trading Account, Profit and Loss Account",
           "Balance Sheet with simple adjustments",
           "Financial Analysis: Liquidity Ratios, Activity Ratios",
-          "Capital structure Ratios, Profitability Ratios",
-        ],
+          "Capital structure Ratios, Profitability Ratios"],
         explanation: `
 **Capital budgeting** decides which long-term investments to make.
 
@@ -1466,10 +1411,8 @@ Market structure describes the degree of competition:
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23HS0815",
@@ -1496,8 +1439,7 @@ Market structure describes the degree of competition:
           "Fundamental design components, Principles of design",
           "Introduction to design thinking",
           "History of Design Thinking",
-          "New materials in Industry",
-        ],
+          "New materials in Industry"],
         explanation: `
 **Design thinking** is a human-centered approach to innovation that draws from the designer's toolkit to integrate the needs of people, possibilities of technology, and requirements for business success.
 
@@ -1525,8 +1467,7 @@ Core mindset: start with empathy for the user, embrace ambiguity, and iterate ba
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -1537,8 +1478,7 @@ Core mindset: start with empathy for the user, embrace ambiguity, and iterate ba
           "Design thinking in social innovations",
           "Tools of design thinking: person, customer, journey map",
           "Brainstorming, product development",
-          "Activity: present idea, flow diagram, product development",
-        ],
+          "Activity: present idea, flow diagram, product development"],
         explanation: `
 The **d.school (Stanford) five-stage model**:
 
@@ -1572,8 +1512,7 @@ The stages are not always linear — you may loop back based on what you learn.
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -1584,8 +1523,7 @@ The stages are not always linear — you may loop back based on what you learn.
           "Role of creativity and innovation in organizations",
           "Creativity to Innovation, Teams for innovation",
           "Measuring the impact and value of creativity",
-          "Activity: Debate on innovation and creativity",
-        ],
+          "Activity: Debate on innovation and creativity"],
         explanation: `
 **Ideation** is about quantity and diversity of ideas, not quality (initially). Defer judgment, encourage wild ideas, build on others' ideas.
 
@@ -1613,8 +1551,7 @@ The stages are not always linear — you may loop back based on what you learn.
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -1625,8 +1562,7 @@ The stages are not always linear — you may loop back based on what you learn.
           "Product planning, product specifications",
           "Innovation towards product design",
           "Case studies",
-          "Activity: modelling, specifications, product design",
-        ],
+          "Activity: modelling, specifications, product design"],
         explanation: `
 **Prototypes** range from paper sketches (low-fidelity, fast, cheap) to interactive digital mockups (high-fidelity, closer to final). Test early and cheaply; it's cheaper to change a paper prototype than coded software.
 
@@ -1654,8 +1590,7 @@ The stages are not always linear — you may loop back based on what you learn.
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -1668,8 +1603,7 @@ The stages are not always linear — you may loop back based on what you learn.
           "Design thinking to meet corporate needs",
           "Design thinking for Startups",
           "Defining and testing Business Models and Business Cases",
-          "Developing & testing prototypes",
-        ],
+          "Developing & testing prototypes"],
         explanation: `
 **Incremental innovation** improves existing products; **disruptive innovation** creates new markets/value networks.
 
@@ -1699,10 +1633,8 @@ The stages are not always linear — you may loop back based on what you learn.
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23CS0506",
@@ -1721,8 +1653,7 @@ The stages are not always linear — you may loop back based on what you learn.
           "Binary, Octal, Decimal, Hexadecimal",
           "Boolean Algebra Laws",
           "Logic Gates: AND, OR, NOT, NAND, NOR, XOR",
-          "Karnaugh Map Minimization",
-        ],
+          "Karnaugh Map Minimization"],
         explanation: `
 Digital systems use **binary** (0 and 1). Boolean algebra provides the math for logic circuits. Logic gates (AND, OR, NOT, NAND, NOR, XOR) are the building blocks.
 
@@ -1750,8 +1681,7 @@ Digital systems use **binary** (0 and 1). Boolean algebra provides the math for 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -1760,8 +1690,7 @@ Digital systems use **binary** (0 and 1). Boolean algebra provides the math for 
           "Adders: Half, Full",
           "Multiplexers & Demultiplexers",
           "Encoders & Decoders",
-          "Comparators",
-        ],
+          "Comparators"],
         explanation: `
 **Combinational circuits** produce output purely from current inputs (no memory). Examples: adders, multiplexers, decoders.
 
@@ -1789,8 +1718,7 @@ A **half adder** adds two bits (sum + carry). A **full adder** adds three bits (
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -1799,8 +1727,7 @@ A **half adder** adds two bits (sum + carry). A **full adder** adds three bits (
           "Flip-Flops: SR, JK, D, T",
           "Registers",
           "Counters: Ripple, Synchronous",
-          "State Machines",
-        ],
+          "State Machines"],
         explanation: `
 **Sequential circuits** have memory — output depends on current inputs and past state. **Flip-flops** store one bit.
 
@@ -1828,8 +1755,7 @@ A **half adder** adds two bits (sum + carry). A **full adder** adds three bits (
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -1838,8 +1764,7 @@ A **half adder** adds two bits (sum + carry). A **full adder** adds three bits (
           "CPU: ALU, Control Unit, Registers",
           "Instruction Cycle",
           "Addressing Modes",
-          "Memory Hierarchy",
-        ],
+          "Memory Hierarchy"],
         explanation: `
 The **CPU** consists of the ALU (arithmetic/logic), control unit (decodes instructions), and registers (fast storage).
 
@@ -1869,8 +1794,7 @@ The **instruction cycle**: fetch → decode → execute → (optionally store).
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -1879,8 +1803,7 @@ The **instruction cycle**: fetch → decode → execute → (optionally store).
           "Programmed I/O, Interrupt-Driven I/O, DMA",
           "Bus Structure",
           "Pipelining (Intro)",
-          "RISC vs CISC",
-        ],
+          "RISC vs CISC"],
         explanation: `
 **I/O methods**: programmed I/O (CPU waits), interrupt-driven I/O (device signals CPU), DMA (device transfers directly to memory, CPU freed).
 
@@ -1908,10 +1831,8 @@ The **instruction cycle**: fetch → decode → execute → (optionally store).
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23CS0507",
@@ -1930,8 +1851,7 @@ The **instruction cycle**: fetch → decode → execute → (optionally store).
           "Asymptotic Notation: Big-O, Omega, Theta",
           "Time & Space Complexity",
           "Recurrence Relations",
-          "Master Theorem",
-        ],
+          "Master Theorem"],
         explanation: `
 **Asymptotic notation** describes how running time/space grows with input size n.
 
@@ -1963,8 +1883,7 @@ The **Master Theorem** solves divide-and-conquer recurrences of the form T(n) = 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -1973,8 +1892,7 @@ The **Master Theorem** solves divide-and-conquer recurrences of the form T(n) = 
           "Bubble, Selection, Insertion Sort",
           "Merge Sort, Quick Sort, Heap Sort",
           "Linear & Binary Search",
-          "Comparison & Stability",
-        ],
+          "Comparison & Stability"],
         explanation: `
 **Sorting** arranges data in order. **Merge sort** and **quick sort** are O(n log n) divide-and-conquer sorts. **Binary search** finds an element in a sorted array in O(log n) by repeatedly halving the search range.
 
@@ -2002,8 +1920,7 @@ The **Master Theorem** solves divide-and-conquer recurrences of the form T(n) = 
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -2012,8 +1929,7 @@ The **Master Theorem** solves divide-and-conquer recurrences of the form T(n) = 
           "Binary Trees & Binary Search Trees",
           "Tree Traversals: In, Pre, Post",
           "AVL Trees",
-          "Heaps",
-        ],
+          "Heaps"],
         explanation: `
 A **binary search tree (BST)** keeps keys ordered: left subtree < root < right subtree, enabling O(h) search/insert/delete where h = height.
 
@@ -2043,8 +1959,7 @@ A **heap** is a complete binary tree with the heap property; used for priority q
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -2053,8 +1968,7 @@ A **heap** is a complete binary tree with the heap property; used for priority q
           "Graph Representation: Adjacency List/Matrix",
           "BFS & DFS",
           "Shortest Path: Dijkstra",
-          "Minimum Spanning Tree: Prim, Kruskal",
-        ],
+          "Minimum Spanning Tree: Prim, Kruskal"],
         explanation: `
 A **graph** = vertices (nodes) + edges. Represented as adjacency list (space-efficient for sparse graphs) or adjacency matrix.
 
@@ -2082,8 +1996,7 @@ A **graph** = vertices (nodes) + edges. Represented as adjacency list (space-eff
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -2092,8 +2005,7 @@ A **graph** = vertices (nodes) + edges. Represented as adjacency list (space-eff
           "Hash Tables & Collision Resolution",
           "Greedy Method",
           "Dynamic Programming",
-          "Backtracking",
-        ],
+          "Backtracking"],
         explanation: `
 **Hashing** maps keys to array indices via a hash function; collisions handled by chaining or open addressing. Average O(1) insert/lookup.
 
@@ -2121,10 +2033,8 @@ A **graph** = vertices (nodes) + edges. Represented as adjacency list (space-eff
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23CS0508",
@@ -2143,8 +2053,7 @@ A **graph** = vertices (nodes) + edges. Represented as adjacency list (space-eff
           "Java Features & JVM",
           "Data Types, Variables, Operators",
           "Control Statements",
-          "Arrays",
-        ],
+          "Arrays"],
         explanation: `
 Java is an object-oriented, platform-independent language. Source compiles to **bytecode** which runs on the **JVM** (Write Once, Run Anywhere).
 
@@ -2172,8 +2081,7 @@ Basic structure: a class contains fields (data) and methods (behavior); executio
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -2183,8 +2091,7 @@ Basic structure: a class contains fields (data) and methods (behavior); executio
           "Constructors",
           "this Keyword",
           "Overloading",
-          "Access Modifiers",
-        ],
+          "Access Modifiers"],
         explanation: `
 A **class** is a blueprint; an **object** is an instance of a class. **Constructors** initialize objects. **Method overloading** lets multiple methods share a name with different parameters.
 
@@ -2212,8 +2119,7 @@ A **class** is a blueprint; an **object** is an instance of a class. **Construct
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -2223,8 +2129,7 @@ A **class** is a blueprint; an **object** is an instance of a class. **Construct
           "Types of Inheritance",
           "Method Overriding",
           "Polymorphism: Dynamic Binding",
-          "Abstract Classes",
-        ],
+          "Abstract Classes"],
         explanation: `
 **Inheritance** lets a subclass inherit fields and methods from a superclass (code reuse, 'is-a' relationship).
 
@@ -2252,8 +2157,7 @@ A **class** is a blueprint; an **object** is an instance of a class. **Construct
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -2262,8 +2166,7 @@ A **class** is a blueprint; an **object** is an instance of a class. **Construct
           "Interfaces & Multiple Inheritance",
           "Packages & import",
           "Exception Handling: try-catch-finally, throw, throws",
-          "Checked vs Unchecked Exceptions",
-        ],
+          "Checked vs Unchecked Exceptions"],
         explanation: `
 An **interface** defines a contract (method signatures) a class must implement — Java uses interfaces to achieve multiple inheritance of type.
 
@@ -2291,8 +2194,7 @@ An **interface** defines a contract (method signatures) a class must implement �
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -2301,8 +2203,7 @@ An **interface** defines a contract (method signatures) a class must implement �
           "Threads: Thread class, Runnable",
           "Thread Life Cycle & Synchronization",
           "Collections Framework: List, Set, Map",
-          "ArrayList, HashMap, Iterator",
-        ],
+          "ArrayList, HashMap, Iterator"],
         explanation: `
 **Multithreading** lets multiple threads run concurrently within a program. Java provides the Thread class and Runnable interface. **Synchronization** prevents threads from corrupting shared data.
 
@@ -2330,10 +2231,8 @@ The **Collections Framework** provides reusable data structures: List (ArrayList
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
+          }],
+      }],
   },
   {
     id: "23HS0836",
@@ -2352,8 +2251,7 @@ The **Collections Framework** provides reusable data structures: List (ArrayList
           "Sets & Operations",
           "Relations: Types & Properties",
           "Functions: Injective, Surjective, Bijective",
-          "Composition of Functions",
-        ],
+          "Composition of Functions"],
         explanation: `
 **Sets** are collections of distinct objects. **Relations** are sets of ordered pairs; **functions** are special relations where each input maps to exactly one output.
 
@@ -2381,8 +2279,7 @@ Types of functions: one-to-one (injective), onto (surjective), both (bijective).
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 2,
@@ -2392,8 +2289,7 @@ Types of functions: one-to-one (injective), onto (surjective), both (bijective).
           "Truth Tables, Tautologies",
           "Predicates & Quantifiers",
           "Permutations & Combinations",
-          "Pigeonhole Principle",
-        ],
+          "Pigeonhole Principle"],
         explanation: `
 **Logic** forms the basis of reasoning and digital circuit design. Propositions are statements that are true or false; connectives (AND, OR, NOT, IMPLIES) combine them.
 
@@ -2421,8 +2317,7 @@ Types of functions: one-to-one (injective), onto (surjective), both (bijective).
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 3,
@@ -2432,8 +2327,7 @@ Types of functions: one-to-one (injective), onto (surjective), both (bijective).
           "Paths, Cycles, Connectivity",
           "Euler & Hamiltonian Paths",
           "Trees & Spanning Trees",
-          "Graph Coloring",
-        ],
+          "Graph Coloring"],
         explanation: `
 A **graph** models pairwise relationships between objects. **Trees** are connected graphs with no cycles. A **spanning tree** connects all vertices with minimum edges.
 
@@ -2461,8 +2355,7 @@ A **graph** models pairwise relationships between objects. **Trees** are connect
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 4,
@@ -2471,8 +2364,7 @@ A **graph** models pairwise relationships between objects. **Trees** are connect
           "Groups, Rings, Fields",
           "Semigroups & Monoids",
           "Lattices",
-          "Boolean Algebra",
-        ],
+          "Boolean Algebra"],
         explanation: `
 **Algebraic structures** are sets with one or more operations satisfying axioms. A **group** has closure, associativity, identity, and inverses.
 
@@ -2500,8 +2392,7 @@ A **graph** models pairwise relationships between objects. **Trees** are connect
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
+          }],
       },
       {
         number: 5,
@@ -2510,8 +2401,7 @@ A **graph** models pairwise relationships between objects. **Trees** are connect
           "Recurrence Relations",
           "Solving Recurrences",
           "Generating Functions",
-          "Applications in Algorithm Analysis",
-        ],
+          "Applications in Algorithm Analysis"],
         explanation: `
 A **recurrence relation** defines a sequence in terms of previous terms (e.g., Fibonacci: F(n) = F(n-1) + F(n-2)). **Generating functions** encode sequences as coefficients of a power series and help solve recurrences.
         `,
@@ -2537,12 +2427,9 @@ A **recurrence relation** defines a sequence in terms of previous terms (e.g., F
             a: "The concepts in Operating System Overview & System Structures are fundamental to designing and implementing efficient computer systems and software.",
             explanation: "Understanding these principles is essential for system design, optimization, and passing technical examinations.",
             oneShotPreview: "Application: foundational knowledge for systems and software.",
-          },
-        ],
-      },
-    ],
-  },
-];
+          }],
+      }],
+  }];
 
 // Labs available at SIETK (from timetable & syllabus): flagged as coming soon.
 // Additional II B.Tech - II Semester electives (same slot as MEFA)
@@ -2557,15 +2444,14 @@ SUBJECTS.push({
   isLab: false,
   faculty: "TBD",
   credits: 2,
-  questionBankUrl: null,
+  questionBankUrl: "https://www.sietk.org/downloads/Question%20Bank/II%20B.Tech%20II/23HS0851.pdf",
   description: "Organizational behavior, motivation, leadership, group dynamics, organizational change.",
   units: [
-    { number: 1, title: "Introduction to Organizational Behavior", topics: ["Meaning, definition, nature, scope, functions", "Organizing process", "Understanding individual behaviour", "Attitude, perception, learning, personality"], explanation: "Organizational behavior studies how individuals and groups act within organizations.", keyConcepts: ["OB", "Attitude", "Perception", "Personality"], qa: [{ q: "What is organizational behavior?", a: "The study of how people interact within groups in organizations.", explanation: "It combines psychology, sociology, and management to understand workplace behavior.", oneShotPreview: "OB = study of individual & group behavior in organizations." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 2, title: "Motivation and Leading", topics: ["Theories of motivation", "Maslow, Herzberg, Vroom, McClelland, McGregor, Adams"], explanation: "Motivation theories explain what drives employee behavior.", keyConcepts: ["Motivation theories", "Leadership"], qa: [{ q: "What is Maslow's hierarchy?", a: "A five-tier model of human needs from basic (physiological) to self-actualization.", explanation: "Lower needs must be met before higher needs motivate behavior.", oneShotPreview: "Maslow = 5-tier needs pyramid, bottom-up." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 3, title: "Organizational Culture", topics: ["Culture, climate, leadership", "Traits theory, managerial grid", "Transactional vs transformational leadership"], explanation: "Organizational culture shapes how work gets done.", keyConcepts: ["Culture", "Leadership styles"], qa: [{ q: "Transactional vs transformational leadership?", a: "Transactional focuses on rewards/punishments; transformational inspires and motivates beyond self-interest.", explanation: "Transformational leaders create vision and inspire followers.", oneShotPreview: "Transactional=rewards; Transformational=inspire/vision." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 4, title: "Group Dynamics", topics: ["Types of groups, determinants of group behaviour", "Group process, norms, cohesiveness, team building", "Conflict resolution"], explanation: "Groups influence individual behavior and decision-making.", keyConcepts: ["Group dynamics", "Team building", "Conflict"], qa: [{ q: "What is group cohesiveness?", a: "The degree to which group members are attracted to each other and motivated to stay in the group.", explanation: "High cohesiveness improves performance but can lead to groupthink.", oneShotPreview: "Cohesiveness = member attraction & retention in group." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 5, title: "Organizational Change and Development", topics: ["Change management, organizational culture change", "Work stress management", "Managerial implications"], explanation: "Organizations must adapt to changing environments.", keyConcepts: ["Change management", "Stress management"], qa: [{ q: "What is change management?", a: "The process of guiding organizational change from current to desired state.", explanation: "It involves planning, communication, and stakeholder engagement.", oneShotPreview: "Change management = guided transition to desired state." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-  ],
+    { number: 1, title: "Introduction to Organizational Behavior", topics: ["Meaning, definition, nature, scope, functions", "Organizing process", "Understanding individual behaviour", "Attitude, perception, learning, personality"], explanation: "Organizational behavior studies how individuals and groups act within organizations.", keyConcepts: ["OB", "Attitude", "Perception", "Personality"], qa: [{ q: "What is organizational behavior?", a: "The study of how people interact within groups in organizations.", explanation: "It combines psychology, sociology, and management to understand workplace behavior.", oneShotPreview: "OB = study of individual & group behavior in organizations." }, ] },
+    { number: 2, title: "Motivation and Leading", topics: ["Theories of motivation", "Maslow, Herzberg, Vroom, McClelland, McGregor, Adams"], explanation: "Motivation theories explain what drives employee behavior.", keyConcepts: ["Motivation theories", "Leadership"], qa: [{ q: "What is Maslow's hierarchy?", a: "A five-tier model of human needs from basic (physiological) to self-actualization.", explanation: "Lower needs must be met before higher needs motivate behavior.", oneShotPreview: "Maslow = 5-tier needs pyramid, bottom-up." }, ] },
+    { number: 3, title: "Organizational Culture", topics: ["Culture, climate, leadership", "Traits theory, managerial grid", "Transactional vs transformational leadership"], explanation: "Organizational culture shapes how work gets done.", keyConcepts: ["Culture", "Leadership styles"], qa: [{ q: "Transactional vs transformational leadership?", a: "Transactional focuses on rewards/punishments; transformational inspires and motivates beyond self-interest.", explanation: "Transformational leaders create vision and inspire followers.", oneShotPreview: "Transactional=rewards; Transformational=inspire/vision." }, ] },
+    { number: 4, title: "Group Dynamics", topics: ["Types of groups, determinants of group behaviour", "Group process, norms, cohesiveness, team building", "Conflict resolution"], explanation: "Groups influence individual behavior and decision-making.", keyConcepts: ["Group dynamics", "Team building", "Conflict"], qa: [{ q: "What is group cohesiveness?", a: "The degree to which group members are attracted to each other and motivated to stay in the group.", explanation: "High cohesiveness improves performance but can lead to groupthink.", oneShotPreview: "Cohesiveness = member attraction & retention in group." }, ] },
+    { number: 5, title: "Organizational Change and Development", topics: ["Change management, organizational culture change", "Work stress management", "Managerial implications"], explanation: "Organizations must adapt to changing environments.", keyConcepts: ["Change management", "Stress management"], qa: [{ q: "What is change management?", a: "The process of guiding organizational change from current to desired state.", explanation: "It involves planning, communication, and stakeholder engagement.", oneShotPreview: "Change management = guided transition to desired state." }, ] }],
 });
 
 SUBJECTS.push({
@@ -2579,22 +2465,20 @@ SUBJECTS.push({
   isLab: false,
   faculty: "TBD",
   credits: 2,
-  questionBankUrl: null,
+  questionBankUrl: "https://www.sietk.org/downloads/Question%20Bank/II%20B.Tech%20II/23HS0851.pdf",
   description: "Business environment, fiscal and monetary policy, trade policy, WTO, money and capital markets.",
   units: [
-    { number: 1, title: "Overview of Business Environment", topics: ["Introduction, nature, scope, significance", "Types: internal/external, micro/macro", "Competitive structure, environmental analysis"], explanation: "Business environment includes all factors affecting business operations.", keyConcepts: ["Business environment", "Internal/external factors"], qa: [{ q: "What is business environment?", a: "The sum of all external and internal factors influencing business decisions.", explanation: "Includes economic, social, political, legal, and technological factors.", oneShotPreview: "Business environment = all factors affecting business." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 2, title: "Fiscal & Monetary Policy", topics: ["Public revenues, public expenditure", "Monetary policy, RBI, demand/supply of money", "Recent trends"], explanation: "Fiscal and monetary policies regulate the economy.", keyConcepts: ["Fiscal policy", "Monetary policy", "RBI"], qa: [{ q: "What is fiscal policy?", a: "Government policy on taxation and spending to influence the economy.", explanation: "Expansionary fiscal policy increases spending or cuts taxes.", oneShotPreview: "Fiscal policy = government tax & spending decisions." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 3, title: "India's Trade Policy", topics: ["Magnitude and direction of Indian trade", "Bilateral/multilateral agreements", "EXIM policy, balance of payments"], explanation: "Trade policy governs international commerce.", keyConcepts: ["Trade policy", "EXIM", "Balance of payments"], qa: [{ q: "What is balance of payments?", a: "A record of all economic transactions between a country and the rest of the world.", explanation: "Includes current account and capital account.", oneShotPreview: "BOP = all economic transactions with rest of world." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 4, title: "World Trade Organization", topics: ["Organization and structure of WTO", "Role in promoting world trade", "GATT, TRIPS, TRIMS, dispute settlement"], explanation: "WTO regulates international trade.", keyConcepts: ["WTO", "GATT", "TRIPS", "TRIMS"], qa: [{ q: "What is WTO?", a: "The World Trade Organization regulates international trade between nations.", explanation: "It provides a framework for trade agreements and dispute resolution.", oneShotPreview: "WTO = international trade regulator." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-    { number: 5, title: "Money Markets and Capital Markets", topics: ["Indian financial system", "Money markets and capital markets", "SEBI, stock exchanges, investor protection"], explanation: "Financial markets channel funds from savers to borrowers.", keyConcepts: ["Money market", "Capital market", "SEBI"], qa: [{ q: "Money market vs capital market?", a: "Money market: short-term funds (<1 year). Capital market: long-term funds (>1 year).", explanation: "Money market deals in treasury bills, commercial paper; capital market in stocks, bonds.", oneShotPreview: "Money market=short-term; Capital market=long-term." }, { q: "What are the key concepts in Operating System Overview & System Structures?", a: "Review all topics in this unit: Operating System Overview & System Structures. Focus on understanding definitions and applications.", explanation: "Each concept builds on previous knowledge. Practice with examples for thorough understanding.", oneShotPreview: "Key concepts: master all topics in Operating System Overview & System Structures." }, { q: "How is Operating System Overview & System Structures applied in practice?", a: "The concepts are applied in organizational and business contexts for better decision-making.", explanation: "Understanding these principles is essential for management and business analysis.", oneShotPreview: "Application: practical business and management knowledge." }] },
-  ],
+    { number: 1, title: "Overview of Business Environment", topics: ["Introduction, nature, scope, significance", "Types: internal/external, micro/macro", "Competitive structure, environmental analysis"], explanation: "Business environment includes all factors affecting business operations.", keyConcepts: ["Business environment", "Internal/external factors"], qa: [{ q: "What is business environment?", a: "The sum of all external and internal factors influencing business decisions.", explanation: "Includes economic, social, political, legal, and technological factors.", oneShotPreview: "Business environment = all factors affecting business." }, ] },
+    { number: 2, title: "Fiscal & Monetary Policy", topics: ["Public revenues, public expenditure", "Monetary policy, RBI, demand/supply of money", "Recent trends"], explanation: "Fiscal and monetary policies regulate the economy.", keyConcepts: ["Fiscal policy", "Monetary policy", "RBI"], qa: [{ q: "What is fiscal policy?", a: "Government policy on taxation and spending to influence the economy.", explanation: "Expansionary fiscal policy increases spending or cuts taxes.", oneShotPreview: "Fiscal policy = government tax & spending decisions." }, ] },
+    { number: 3, title: "India's Trade Policy", topics: ["Magnitude and direction of Indian trade", "Bilateral/multilateral agreements", "EXIM policy, balance of payments"], explanation: "Trade policy governs international commerce.", keyConcepts: ["Trade policy", "EXIM", "Balance of payments"], qa: [{ q: "What is balance of payments?", a: "A record of all economic transactions between a country and the rest of the world.", explanation: "Includes current account and capital account.", oneShotPreview: "BOP = all economic transactions with rest of world." }, ] },
+    { number: 4, title: "World Trade Organization", topics: ["Organization and structure of WTO", "Role in promoting world trade", "GATT, TRIPS, TRIMS, dispute settlement"], explanation: "WTO regulates international trade.", keyConcepts: ["WTO", "GATT", "TRIPS", "TRIMS"], qa: [{ q: "What is WTO?", a: "The World Trade Organization regulates international trade between nations.", explanation: "It provides a framework for trade agreements and dispute resolution.", oneShotPreview: "WTO = international trade regulator." }, ] },
+    { number: 5, title: "Money Markets and Capital Markets", topics: ["Indian financial system", "Money markets and capital markets", "SEBI, stock exchanges, investor protection"], explanation: "Financial markets channel funds from savers to borrowers.", keyConcepts: ["Money market", "Capital market", "SEBI"], qa: [{ q: "Money market vs capital market?", a: "Money market: short-term funds (<1 year). Capital market: long-term funds (>1 year).", explanation: "Money market deals in treasury bills, commercial paper; capital market in stocks, bonds.", oneShotPreview: "Money market=short-term; Capital market=long-term." }, ] }],
 });
 
 export const LABS = [
   { code: "23CS0514", name: "Operating Systems Lab", branch: "CSE", semester: 2 },
   { code: "23CS0515", name: "Database Management Systems Lab", branch: "CSE", semester: 2 },
-  { code: "23CS0550", name: "Full Stack Development – I", branch: "CSE", semester: 2 },
-];
+  { code: "23CS0550", name: "Full Stack Development – I", branch: "CSE", semester: 2 }];
 
 // Merge labs into SUBJECTS as lab entries (coming soon)
 // Append labs to SUBJECTS so they appear in subject lists (marked coming soon)

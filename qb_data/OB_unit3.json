@@ -1,0 +1,129 @@
+{
+  "subject": "23HS0851",
+  "unit": 3,
+  "unitTitle": "Organizational Culture",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "q": "1 a) Define Organizational Culture. (2 marks)",
+      "a": "Organizational culture is the set of shared values, beliefs, norms and assumptions held by the members of an organization that shapes the way they think, feel and behave. According to Edgar Schein, it is the shared, taken-for-granted implicit assumptions a group has developed that determine how it perceives, thinks about and reacts to its environment. Culture is learned over time, transmitted to new members and gives the organization its distinct identity. It acts as a social glue that binds people together and guides their day-to-day decisions and actions.",
+      "explanation": "This is the standard academic definition anchored in Schein's widely accepted view; it captures the shared, learned and behaviour-shaping nature of culture.",
+      "oneShotPreview": "Shared values, beliefs and assumptions that shape how members think, feel and behave in an organization."
+    },
+    {
+      "q": "1 b) State any two features (nature) of Organizational Culture. (2 marks)",
+      "a": "Two key features are: (1) It is learned and shared — culture is acquired through experience and socialisation and is common to members rather than belonging to one individual. (2) It is relatively stable yet dynamic — culture endures over time but evolves slowly as the organization and its environment change. Other important features are its multidimensional nature (values, symbols, rituals and language), its pervasive influence across all levels and its power to shape member behaviour. These features make culture a durable but changeable force in organizational life.",
+      "explanation": "It names and briefly explains two genuine, commonly cited features of culture, then notes others for completeness.",
+      "oneShotPreview": "Learned and shared; relatively stable yet slowly changing — plus multidimensional, pervasive and behaviour-shaping."
+    },
+    {
+      "q": "1 c) Explain the scope of Organizational Culture. (3 marks)",
+      "a": "The scope of organizational culture is broad: it covers the shared values, beliefs, norms, symbols, rituals, heroes, language and stories that define an organization's identity. It operates at every level, from visible artifacts to deep underlying assumptions, and influences all functions such as decision-making, communication, leadership, motivation and interpersonal relations. Its scope spans both internal integration (how members work together and relate to one another) and external adaptation (how the organization responds to its environment). Culture therefore pervades the whole organization rather than any single department or activity.",
+      "explanation": "It explains scope by listing what culture includes, where it operates and the two classic functions (internal integration and external adaptation) identified by Schein.",
+      "oneShotPreview": "Covers values to artifacts across all levels and functions, serving internal integration and external adaptation."
+    },
+    {
+      "q": "2 Describe Schein's three-level model of Organizational Culture. (5 marks)",
+      "a": "Edgar Schein proposed that culture operates at three levels. (1) Artifacts: the visible, tangible surface level — office layout, logos, dress, rituals, language, technology and published values — easy to observe but hard to decode. (2) Espoused values: the conscious, stated values, norms and philosophies that members articulate as guiding principles, such as 'customer first' or 'innovation'. (3) Basic underlying assumptions: the unconscious, taken-for-granted beliefs and perceptions that are invisible but are the true essence of culture, silently dictating how members perceive, think and act. The levels range from the obvious outer surface to the deep, hidden core. The deepest assumptions are the hardest to identify and the most resistant to change, so real cultural change must address them rather than only the artifacts.",
+      "explanation": "It correctly names and describes all three of Schein's levels in order and explains the key insight that deeper levels are less visible and harder to change.",
+      "oneShotPreview": "Artifacts (visible) → espoused values (stated) → basic assumptions (unconscious core)."
+    },
+    {
+      "q": "3 Define Organizational Culture and explain its meaning, nature and importance with the help of Schein's model. (10 marks)",
+      "a": "Organizational culture is the set of shared values, beliefs, norms and basic assumptions that members hold and that shape their thinking and behaviour; Schein defines it as the shared, taken-for-granted assumptions a group develops while adapting to its environment. In meaning, culture is the collective mindset or 'personality' of an organization, expressing what it stands for and how things are done. Its nature is learned, shared, multidimensional, relatively stable yet dynamic, and pervasive across all levels. Schein's model shows it at three levels: visible artifacts, conscious espoused values and invisible basic underlying assumptions. Culture is important because it provides identity, guides behaviour, builds cohesion, shapes decisions, supports external adaptation and can be a source of competitive advantage. A strong, positive culture raises commitment, motivation and performance, while a toxic culture encourages misconduct, resistance and high turnover. Managers therefore need to diagnose and intentionally shape culture, focusing on deep assumptions rather than surface symbols alone.",
+      "explanation": "It defines the term, addresses meaning and nature, applies Schein's three levels and then derives concrete importance, matching every part of the essay question.",
+      "oneShotPreview": "Shared values and assumptions (artifacts → values → basic assumptions) give identity, guide behaviour and drive performance."
+    },
+    {
+      "q": "4 a) Define Organizational Climate. (2 marks)",
+      "a": "Organizational climate refers to the prevailing atmosphere or perceived quality of the internal working environment as experienced by employees — their shared perceptions of policies, practices, leadership, reward systems and interpersonal relations. It is often described as the 'mood' or 'feel' of the organization at a given time. Climate is relatively surface-level, measurable and changeable when compared with the deeper, more stable culture. A favourable climate encourages trust, openness, cooperation and high performance.",
+      "explanation": "It defines climate in terms of shared perceptions of the work environment and distinguishes it from deeper culture by noting it is measurable and changeable.",
+      "oneShotPreview": "Employees' shared perception of the work atmosphere — the measurable, changeable 'feel' of the organization."
+    },
+    {
+      "q": "4 b) Distinguish between Organizational Culture and Organizational Climate. (5 marks)",
+      "a": "Organizational culture is the deep, relatively stable set of shared values, beliefs and basic assumptions that gives an organization its enduring identity, whereas organizational climate is the more surface-level, perceptible atmosphere or mood of the workplace at a particular time. Culture is deeper, harder to change and rooted in the organization's history, while climate is relatively temporary, easier to measure and strongly influenced by current policies and leadership. Culture answers 'who we are and what we stand for'; climate answers 'what it feels like to work here now'. Culture consists of values and assumptions, while climate consists of members' perceptions of practices such as support, reward, communication, autonomy and fairness. Climate can be shifted fairly quickly by managerial action, but changing culture requires long-term, deep intervention that addresses underlying assumptions.",
+      "explanation": "It distinguishes the two concepts on depth, stability, measurability, content and speed of change — the standard points of comparison in OB texts.",
+      "oneShotPreview": "Culture = deep, stable shared values; climate = surface, changeable perceptions of the current work atmosphere."
+    },
+    {
+      "q": "5 Explain the importance of a healthy Organizational Climate. (5 marks)",
+      "a": "A healthy organizational climate is important because it directly influences employee morale, motivation, satisfaction and commitment. It encourages open communication, mutual trust, cooperation and teamwork, which reduce interpersonal conflict and improve coordination. A supportive climate fosters creativity, risk-taking and organisational learning, helping the firm adapt to change and innovate. It also improves productivity and performance, supports retention of talented staff and reduces absenteeism and turnover. Since climate is shaped by leadership style and HR policies, managers can deliberately build a positive climate as a practical route to better organizational outcomes.",
+      "explanation": "It links a healthy climate to concrete outcomes — morale, trust, innovation, performance and retention — and notes that managers can shape it.",
+      "oneShotPreview": "A healthy climate lifts morale, trust and innovation, improving performance and cutting turnover."
+    },
+    {
+      "q": "6 a) Define Leadership. (2 marks)",
+      "a": "Leadership is the process of influencing and guiding a group of people towards the achievement of common goals. It involves setting direction, motivating followers, building commitment and coordinating their efforts rather than merely exercising formal authority. A leader creates a vision, inspires others and mobilises their energy to accomplish organizational objectives. Unlike management, which emphasises planning, organising and control, leadership emphasises influence, inspiration and change.",
+      "explanation": "It gives the standard influence-based definition and adds the useful contrast with management, a common exam expectation.",
+      "oneShotPreview": "Influencing and guiding a group toward shared goals through vision, motivation and commitment."
+    },
+    {
+      "q": "6 b) Explain the significance (importance) of leadership in an organization. (5 marks)",
+      "a": "Leadership is significant because it provides direction by setting goals and a vision that give members a sense of purpose. It motivates and inspires employees, raising their commitment and performance beyond what formal authority alone can achieve. Leaders build teams, resolve conflicts and create a positive culture and climate in which people can work effectively. They guide the organization through change, encourage innovation and help it adapt to a shifting environment. Effective leadership therefore improves coordination, decision-making, morale and overall organizational effectiveness, while its absence typically produces confusion, low motivation and poor performance.",
+      "explanation": "It covers direction, motivation, team-building, culture, change and overall effectiveness — the core reasons leadership matters.",
+      "oneShotPreview": "Leadership gives direction, drives motivation, builds teams and culture, and steers change and performance."
+    },
+    {
+      "q": "7 State the qualities of a good leader. (5 marks)",
+      "a": "A good leader possesses a clear vision and the ability to communicate it convincingly to others. Integrity and honesty build trust and credibility, while self-confidence and courage enable decisive action in the face of uncertainty. Empathy, emotional intelligence and good listening skills help the leader understand and motivate followers. Other important qualities include intelligence, sound judgement, accountability, fairness, the ability to inspire and delegate effectively, and resilience in setbacks. Together these qualities earn willing cooperation and commitment from followers rather than mere compliance born of authority.",
+      "explanation": "It lists the widely accepted qualities — vision, integrity, confidence, empathy, communication, judgement and delegation — with brief justification for each.",
+      "oneShotPreview": "Vision, integrity, confidence, empathy, communication, sound judgement, fairness and resilience."
+    },
+    {
+      "q": "8 Explain the Trait Theory of leadership and mention its limitations. (5 marks)",
+      "a": "The Trait Theory, also called the 'Great Man' approach, holds that leaders are born with certain innate personal qualities that distinguish them from non-leaders. Research associated leadership with traits such as intelligence, dominance, self-confidence, integrity, sociability, drive and task-relevant knowledge, suggesting that potential leaders could be identified by measuring these traits. Its main limitation is that no single set of traits consistently predicts who will be an effective leader. It also ignores the situation and the needs of followers, and neglects what leaders actually do, that is, their behaviour. Because it cannot explain why the same person leads well in one context but not another, it gave way to behavioural and contingency theories.",
+      "explanation": "It states the core assumption of trait theory, gives example traits and then lists the standard criticisms that led to behavioural approaches.",
+      "oneShotPreview": "Leaders are born with key traits (intelligence, confidence, integrity), but traits alone cannot predict or explain effectiveness."
+    },
+    {
+      "q": "9 Explain Blake and Mouton's Managerial Grid. (5 marks)",
+      "a": "Blake and Mouton's Managerial Grid is a behavioural leadership model based on two dimensions: concern for production (results) on the horizontal axis and concern for people on the vertical axis, each rated from 1 (low) to 9 (high). It identifies five main styles: 1,1 Impoverished (low concern for both), 9,1 Task or Authority (high production, low people), 1,9 Country Club (high people, low production), 5,5 Middle-of-the-Road (moderate concern for both) and 9,9 Team (high concern for both). The grid shows that leadership is a combination of the two concerns rather than an either-or choice. Blake and Mouton regarded the 9,9 Team style as the most effective because it integrates task achievement with people's needs, producing both high performance and high commitment.",
+      "explanation": "It states both axes and their 1-9 scales, names all five styles correctly and identifies 9,9 Team as the ideal, matching the original model.",
+      "oneShotPreview": "Two axes — concern for production and concern for people (1-9) — yield five styles; 9,9 Team is ideal."
+    },
+    {
+      "q": "10 Describe the five leadership styles of the Managerial Grid and state which style is considered the most effective. (10 marks)",
+      "a": "The Managerial Grid, developed by Robert Blake and Jane Mouton, plots leadership behaviour on two axes — concern for production and concern for people, each scaled from 1 to 9. The five styles are: (1) 1,1 Impoverished — low concern for both, doing only the minimum needed to get by; (2) 9,1 Authority-Compliance or Task — high concern for production but low for people, relying on control, discipline and compliance; (3) 1,9 Country Club — high concern for people but low for production, emphasising comfort and friendly relations at the cost of results; (4) 5,5 Middle-of-the-Road — moderate concern for both, seeking compromise and adequate but not excellent performance; (5) 9,9 Team — high concern for both, integrating organizational goals with people's needs through trust, involvement and commitment. The 9,9 Team style is considered the most effective because it achieves high productivity while sustaining high morale, cooperation and commitment. It converts work into a genuine team effort in which people are motivated and involved rather than merely directed or appeased. The practical value of the grid is that it helps managers identify their dominant style and deliberately move towards a more balanced, high-concern approach.",
+      "explanation": "It describes all five grid positions with their coordinates and characteristics, defends the 9,9 choice and draws out the model's managerial use.",
+      "oneShotPreview": "1,1 Impoverished; 9,1 Task; 1,9 Country Club; 5,5 Middle-road; 9,9 Team — the most effective."
+    },
+    {
+      "q": "11 Distinguish between Transactional and Transformational Leadership. (5 marks)",
+      "a": "Transactional leadership, described by Burns and expanded by Bass, is based on an exchange or bargain between leader and follower: the leader clarifies goals and roles, sets contingent rewards and uses corrective action or management-by-exception to ensure compliance. It focuses on maintaining the status quo, routine tasks and short-term goals, with followers motivated by rewards or penalties. Transformational leadership, by contrast, inspires followers to transcend self-interest and achieve extraordinary outcomes. It involves the four I's — idealized influence (charisma and trust), inspirational motivation (a compelling vision), intellectual stimulation (encouraging creativity and challenging assumptions) and individualized consideration (attending to each follower's needs). While transactional leadership maintains order, transformational leadership creates change, innovation and follower development. The two are complementary rather than mutually exclusive, and effective leaders often combine them.",
+      "explanation": "It contrasts the two styles on basis (exchange vs inspiration), motivation, goals and the four I's, and notes they can be combined — the standard textbook treatment.",
+      "oneShotPreview": "Transactional = contingent rewards and control; transformational = vision, charisma and the four I's."
+    },
+    {
+      "q": "12 Discuss Transactional and Transformational leadership with suitable examples. (10 marks)",
+      "a": "Burns and Bass distinguished two broad styles of leadership. Transactional leadership rests on a social exchange: the leader sets clear targets, monitors performance and offers contingent rewards or corrections — for example, a manager who pays a bonus for meeting a sales quota or warns an employee for missing a deadline. It is task-oriented, maintains the status quo and suits stable, routine situations where clarity and reliability matter. Transformational leadership goes further by transforming followers' values, aspirations and motivation; the leader provides a vision, acts as a role model, stimulates innovative thinking and gives personal attention. For example, a chief executive who articulates a bold sustainability vision, empowers teams to redesign processes and mentors individual employees is transformational. Its core components are the four I's: idealized influence, inspirational motivation, intellectual stimulation and individualized consideration. Transactional leadership ensures goal clarity and dependable performance, while transformational leadership drives change, commitment and extra effort. Research generally finds transformational leadership more effective, especially in dynamic environments, but the two work best when used together — transactionals provide the structure that makes a vision achievable.",
+      "explanation": "It explains both styles, supplies a concrete example of each, names the four I's and gives a balanced comparative verdict, fully answering the essay.",
+      "oneShotPreview": "Bonus-for-target (transactional) vs vision-and-empowerment (transformational); the four I's; both work best combined."
+    },
+    {
+      "q": "13 a) Define conflict and conflict management. (2 marks)",
+      "a": "Conflict is a state of disagreement, opposition or incompatibility between two or more individuals or groups, arising when their goals, interests, values, roles or needs clash. Conflict management is the process of handling such disputes constructively — limiting destructive effects and resolving differences through appropriate strategies so that the outcome supports organizational goals. Its aim is not to eliminate all conflict but to channel it productively, since some task conflict can improve decisions.",
+      "explanation": "It defines both terms accurately and adds the key OB insight that the goal is constructive management, not total elimination of conflict.",
+      "oneShotPreview": "Conflict = clashing goals or needs; conflict management = resolving it constructively toward organizational goals."
+    },
+    {
+      "q": "13 b) Explain the major causes of conflict in organizations. (5 marks)",
+      "a": "Common causes of organizational conflict include goal incompatibility, where different units pursue opposing objectives; competition for scarce resources such as budget, space, time or manpower; task interdependence, where one person's work depends on another's and delays create friction; role ambiguity and conflicting role expectations; poor communication and misunderstanding; personality, attitude and value differences; power and status struggles; and unfair policies or reward systems. Rapid change, work pressure and unclear authority can also heighten tension. Identifying the underlying cause is essential before choosing a resolution strategy, because a style that suits a factual disagreement may be wrong for an interpersonal dispute.",
+      "explanation": "It lists the major recognised sources of conflict and adds the diagnostic point that the cause determines the appropriate handling strategy.",
+      "oneShotPreview": "Clashing goals, scarce resources, interdependence, role ambiguity, poor communication, personality and power struggles."
+    },
+    {
+      "q": "14 What is organizational conflict? Discuss the styles and techniques of conflict management. (10 marks)",
+      "a": "Organizational conflict is a disagreement or incompatibility between people or groups over goals, resources, roles, values or needs. It may be task-related (about the work itself), relationship-related (interpersonal friction) or process-related (how the work is done), and it is not always harmful — moderate task conflict can improve decision quality by surfacing alternative views. The Thomas-Kilmann model identifies five handling styles based on concern for self and concern for others: competing (assertive and uncooperative, a win-lose approach), collaborating (assertive and cooperative, win-win problem-solving), compromising (a middle ground with give-and-take), avoiding (withdrawal or postponement) and accommodating (yielding to the other party). Other practical techniques include negotiation, mediation by a neutral third party, arbitration, conciliation, clarifying roles and responsibilities, and improving communication channels. The best style depends on the situation: collaborating suits important complex issues, avoiding suits trivial matters and competing may be needed in emergencies. Effective conflict management therefore reduces disruption, preserves relationships and turns disagreement into a source of learning and better decisions.",
+      "explanation": "It defines conflict, notes its types and constructive potential, correctly lists all five Thomas-Kilmann styles plus other techniques and gives situational guidance.",
+      "oneShotPreview": "Five styles — competing, collaborating, compromising, avoiding, accommodating — plus negotiation, mediation and arbitration."
+    },
+    {
+      "q": "15 Explain the criteria and methods of evaluating a leader's effectiveness. (10 marks)",
+      "a": "Evaluating a leader means judging how effectively that person influences people to achieve organizational goals. The primary criterion is goal attainment — whether the team meets its targets, productivity standards and quality expectations. Other criteria include follower satisfaction, morale and commitment, team cohesion, low turnover and absenteeism, and the extent to which the leader develops followers' skills and prepares successors. Ethical conduct, fairness, integrity, adaptability to change and the quality of decisions made under uncertainty are also important, since a leader may hit targets through harmful means. Methods of evaluation include objective performance metrics, self-assessment, supervisory appraisal and 360-degree feedback that gathers views from peers, subordinates and superiors. Because leadership is situational, a fair evaluation must consider the context, resources and challenges the leader faced rather than judging on a single trait. Such systematic evaluation identifies development needs, supports fair rewards and ultimately improves the quality of leadership in the organization.",
+      "explanation": "It sets out the main criteria (results, people, ethics, development, adaptability) and the main methods (metrics, self, supervisory and 360-degree feedback), with the key situational caveat.",
+      "oneShotPreview": "Judge results, follower outcomes, ethics and development via metrics, self-review and 360-degree feedback, allowing for context."
+    }
+  ],
+  "source": "syllabus-derived"
+}

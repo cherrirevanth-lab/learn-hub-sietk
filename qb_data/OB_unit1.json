@@ -1,0 +1,129 @@
+{
+  "subject": "23HS0851",
+  "unit": 1,
+  "unitTitle": "Introduction to Organizational Behavior",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "q": "a) Define Organizational Behavior. [2 Marks]",
+      "a": "Organizational behavior (OB) is a field of study that investigates the impact that individuals, groups, and structure have on behavior within organizations, for the purpose of applying such knowledge toward improving an organization's effectiveness (Robbins). It is the systematic study of how people act and interact in work settings and how the organization itself influences that behavior. In essence, it examines human behavior at work and applies behavioral knowledge to make organizations more effective and humane.",
+      "explanation": "This is Robbins' standard definition; it names the three levels of analysis (individual, group, structure) and the applied goal of improving effectiveness.",
+      "oneShotPreview": "OB = study of how individuals, groups and structure affect behavior at work, applied to improve effectiveness."
+    },
+    {
+      "q": "b) Define Attitude. [2 Marks]",
+      "a": "An attitude is an evaluative statement, favorable or unfavorable, concerning objects, people, or events (Robbins). It is a relatively stable learned tendency to respond consistently in a positive or negative way toward a particular target. Attitudes are made up of cognitive, affective, and behavioral components and are formed through experience and learning.",
+      "explanation": "This captures the standard definition and signals the ABC structure that is examined in later questions.",
+      "oneShotPreview": "Attitude = a learned, stable favorable or unfavorable evaluative response tendency toward a target (ABC components)."
+    },
+    {
+      "q": "c) Define Perception. [2 Marks]",
+      "a": "Perception is a process by which individuals organize and interpret their sensory impressions in order to give meaning to their environment (Robbins). It is how people select, receive, organize, and interpret information from the people and events around them. Because people perceive the same situation differently, perception strongly influences their attitudes and behavior at work.",
+      "explanation": "The definition emphasizes that perception is an active process of organizing and interpreting, not merely passive sensing.",
+      "oneShotPreview": "Perception = selecting, organizing and interpreting sensory impressions to give meaning to the environment."
+    },
+    {
+      "q": "d) Define Learning. [2 Marks]",
+      "a": "In OB, learning is defined as a relatively permanent change in behavior or behavior potential that occurs as a result of practice, training, or experience. It does not include temporary changes caused by fatigue, drugs, or maturation. Learning takes place through classical conditioning, operant conditioning, and social or observational learning, and it helps employees acquire new skills and behaviors.",
+      "explanation": "The key elements are relatively permanent change and learning through practice or experience, which distinguish learning from temporary states.",
+      "oneShotPreview": "Learning = relatively permanent behavior change from practice or experience; classical, operant, social learning."
+    },
+    {
+      "q": "e) Define Personality. [2 Marks]",
+      "a": "Personality is the sum total of the ways in which an individual reacts to and interacts with others; it is a relatively stable set of psychological traits and characteristics that shape how a person thinks, feels, and behaves. It is shaped by both heredity and environment and is commonly described using trait models such as the Big Five. In organizations, personality helps predict job performance, leadership, and person-job fit.",
+      "explanation": "The definition highlights stability, individual differences, and the heredity-environment basis used throughout OB.",
+      "oneShotPreview": "Personality = stable traits and patterns of reacting and interacting with others, shaped by nature and nurture."
+    },
+    {
+      "q": "f) Define Organizing. [2 Marks]",
+      "a": "Organizing is the management function of defining and grouping tasks, assigning duties and responsibilities, and establishing authority and reporting relationships so that organizational objectives can be achieved efficiently. It determines what work is to be done, who will do it, how tasks are grouped, who reports to whom, and where decisions are made. It converts plans into a working structure of roles and relationships.",
+      "explanation": "This highlights organizing as structuring work and authority, which is the foundation for the later organizing-process questions.",
+      "oneShotPreview": "Organizing = grouping work, assigning duties and authority, defining reporting relationships to achieve goals."
+    },
+    {
+      "q": "a) Explain the nature of Organizational Behavior. [5 Marks]",
+      "a": "OB is an interdisciplinary applied behavioral science that draws on psychology, sociology, social psychology, anthropology, political science, and economics. It is systematic and scientific because it uses research and general laws to explain behavior, yet it is also humanistic and pragmatic, aiming to improve real workplace outcomes. It is contingent or situational, meaning behavior depends on the individual, the group, and the organizational context, and it operates at multiple levels: individual, group, and organization. It is dynamic, constantly evolving as people and environments change, and it is value-laden in its goal of enhancing both effectiveness and human well-being.",
+      "explanation": "A 5-mark answer should list and briefly explain the defining characteristics: interdisciplinary, applied, systematic, humanistic, contingent, multi-level, and dynamic.",
+      "oneShotPreview": "Nature of OB: interdisciplinary, applied, systematic, humanistic, contingent/situational, multi-level, dynamic."
+    },
+    {
+      "q": "b) Explain the scope of Organizational Behavior. [5 Marks]",
+      "a": "The scope of OB covers the study of three main determinants of behavior in organizations: individuals, groups, and organizational structure. At the individual level it examines personality, perception, attitudes, learning, motivation, job satisfaction, and stress. At the group level it covers group dynamics, communication, leadership, power and politics, conflict, and decision making. At the organizational level it addresses structure, culture, change, and design; it also extends into human resource management, organizational development, and cross-cultural behavior. Thus OB is broad in scope and relevant to nearly every aspect of managing people.",
+      "explanation": "The standard scope is organized around the individual-group-structure framework with representative topics at each level.",
+      "oneShotPreview": "Scope of OB: individuals (personality, perception, attitudes, learning) + groups (leadership, conflict, communication) + structure/culture/change."
+    },
+    {
+      "q": "c) Discuss the functions and importance of studying Organizational Behavior. [5 Marks]",
+      "a": "Studying OB helps managers explain, predict, and control human behavior at work. It improves organizational effectiveness and productivity by showing how to motivate employees, design satisfying jobs, and build effective teams. It enhances leadership, communication, and decision making and helps manage conflict, power, and organizational change. It also promotes job satisfaction, commitment, and well-being, leading to lower turnover and absenteeism, and supports better person-job fit through an understanding of personality and attitudes. Overall, OB bridges theory and practice to create a more humane and high-performing workplace.",
+      "explanation": "The functions follow from the three goals of OB (explain, predict, control) plus concrete benefits to effectiveness and employee well-being.",
+      "oneShotPreview": "OB functions: explain/predict/control behavior; boost motivation, productivity, leadership, teamwork; manage conflict and change; improve satisfaction."
+    },
+    {
+      "q": "a) Explain the three components of attitude with suitable examples (ABC model). [5 Marks]",
+      "a": "According to the ABC model, an attitude has three components. The affective component is the emotional or feeling reaction toward a target, such as liking or disliking one's job. The behavioral component is the intention to behave in a certain way, such as planning to quit or speaking favorably about the organization. The cognitive component is the belief, opinion, or knowledge about the target, such as believing the job offers good career growth. These three components usually operate together and help predict how a person will respond at work.",
+      "explanation": "The ABC (affective, behavioral, cognitive) structure is the standard breakdown of attitudes; each component is defined and illustrated.",
+      "oneShotPreview": "ABC of attitude: Affective (feelings), Behavioral (intention to act), Cognitive (beliefs and opinions)."
+    },
+    {
+      "q": "b) Explain the perception process and the factors that influence perception. [5 Marks]",
+      "a": "Perception involves receiving sensory information, selecting what to attend to, organizing it into meaningful patterns, interpreting it, and then responding. The process is influenced by three sets of factors: perceiver factors (attitudes, motives, interests, expectations, experience, and personality), target factors (novelty, motion, sound, size, background, proximity, and similarity), and situational factors (time, place, and social context). Because these factors differ from person to person, two people can perceive the same event differently. Perceptual shortcuts such as the halo effect, stereotyping, selective perception, and attribution errors further shape what we perceive.",
+      "explanation": "A complete answer covers the stages of the process and the classic three-category framework of perceptual influences.",
+      "oneShotPreview": "Perception: receive, select, organize, interpret, respond; influenced by perceiver, target and situational factors."
+    },
+    {
+      "q": "c) Describe classical conditioning and its relevance to learning. [5 Marks]",
+      "a": "Classical conditioning, associated with Ivan Pavlov, is a form of associative learning in which a neutral stimulus is repeatedly paired with an unconditioned stimulus until it alone produces a conditioned response. For example, a neutral cue such as a bell becomes associated with food and eventually triggers salivation by itself. Key principles include generalization (responding to similar stimuli), discrimination (distinguishing between stimuli), and extinction (the response fading when pairing stops). In organizations, classical conditioning explains how employees develop emotional reactions, such as anxiety or positive feelings, to workplace cues like a manager's tone or a meeting room.",
+      "explanation": "The answer defines classical conditioning, explains the stimulus-response mechanism, notes key principles, and relates it to work behavior.",
+      "oneShotPreview": "Classical conditioning (Pavlov): pair neutral plus unconditioned stimulus to get a conditioned response; generalization, discrimination, extinction."
+    },
+    {
+      "q": "d) Describe operant conditioning and the role of reinforcement. [5 Marks]",
+      "a": "Operant conditioning, developed by B. F. Skinner, holds that behavior is determined by its consequences; people repeat behavior that is rewarded and avoid behavior that is punished. Positive reinforcement strengthens a response by presenting a desirable consequence such as a bonus, while negative reinforcement strengthens it by removing an unpleasant consequence. Punishment weakens behavior by presenting an aversive outcome or removing a pleasant one, and extinction weakens it by withdrawing reinforcement altogether. Reinforcement can be delivered on continuous or intermittent schedules, with variable-ratio schedules producing behavior most resistant to extinction. Managers apply operant principles through rewards, incentives, feedback, and discipline to shape employee behavior.",
+      "explanation": "This covers Skinner's core premise, the four consequence types, reinforcement schedules, and managerial application.",
+      "oneShotPreview": "Operant conditioning (Skinner): behavior shaped by consequences, positive/negative reinforcement, punishment, extinction; schedules matter."
+    },
+    {
+      "q": "e) Explain the organizing process and its main steps. [5 Marks]",
+      "a": "Organizing is the process of arranging work and resources so that plans can be accomplished; it answers what work is done, who does it, how tasks are grouped, who reports to whom, and where decisions are made. Its main steps are recognizing the need to organize, establishing objectives, determining the activities needed to reach those objectives, grouping related activities into departments or units, assigning duties and responsibilities to individuals, establishing authority and reporting relationships through delegation and the chain of command, coordinating the activities, and finally evaluating and redesigning the structure as needed. These steps convert strategy into a functioning organizational structure.",
+      "explanation": "The answer lists the logical sequence of organizing steps, which is what a 5-mark explanation requires.",
+      "oneShotPreview": "Organizing steps: recognize need, set objectives, determine activities, group into units, assign duties, define authority, coordinate, evaluate."
+    },
+    {
+      "q": "f) Suggest measures for making organizing effective. [5 Marks]",
+      "a": "Organizing is effective when it is built on clear objectives and a proper division of work so that each task is assigned to the most suitable person. It requires a clear authority-responsibility relationship, unity of command (one boss per employee), and an appropriate span of control so that managers are neither overloaded nor underutilized. Effective organizing also depends on good coordination, effective delegation, open communication, and flexibility to adapt the structure to changing conditions. Managers should avoid both over-organization, which creates excessive rules and layers, and under-organization, which creates ambiguity and duplication. Attention to human factors such as morale and motivation and to classical principles such as Fayol's division of work and esprit de corps also improves organizing.",
+      "explanation": "The answer gives concrete theory-backed measures, including Fayol's principles, unity of command, span of control, delegation, and flexibility.",
+      "oneShotPreview": "Effective organizing: clear goals and division of work, unity of command, proper span, delegation, coordination, flexibility; avoid over/under-organization."
+    },
+    {
+      "q": "Discuss Organizational Behavior in detail under the following heads: (a) its nature and (b) its scope. [10 Marks]",
+      "a": "Organizational behavior is the systematic study of how individuals, groups, and structure affect behavior within organizations, applied to improve effectiveness (Robbins). Its nature is that of an interdisciplinary, applied behavioral science drawing on psychology, sociology, social psychology, anthropology, political science, and economics; it is systematic, humanistic, pragmatic, contingent, multi-level, and dynamic. Its scope is conventionally organized around three levels: the individual (personality, perception, attitudes, learning, motivation, job satisfaction, stress), the group (group dynamics, communication, leadership, power and politics, conflict, decision making), and the organization (structure, culture, change, organizational development). OB has also expanded into cross-cultural behavior, ethics, and human resource applications. By combining explanation, prediction, and control of behavior, OB helps managers improve productivity, satisfaction, and adaptability. Its nature and scope therefore make it a practical, people-centered discipline central to modern management.",
+      "explanation": "A 10-mark essay must define OB, elaborate its nature characteristics, and detail its scope at individual, group, and organization levels with applications.",
+      "oneShotPreview": "OB nature: interdisciplinary, applied, contingent, multi-level, dynamic; scope: individual, group, organization levels plus HR and cross-cultural applications."
+    },
+    {
+      "q": "Explain the major theories of personality and their relevance to organizations. [10 Marks]",
+      "a": "Personality is the relatively stable pattern of traits and the ways an individual reacts to and interacts with others, shaped by heredity and environment. The Big Five model (OCEAN) identifies Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism; conscientiousness in particular is a strong predictor of job performance across many jobs. Type A personalities are competitive, impatient, and time-urgent and are linked to stress, while Type B personalities are more relaxed and easygoing. Rotter's locus of control distinguishes internalizers, who believe they control outcomes, from externalizers, who attribute outcomes to luck or fate; internals tend to be more motivated and satisfied. Other useful concepts include Machiavellianism, self-monitoring, risk propensity, the Myers-Briggs Type Indicator, and Holland's personality-job fit. In organizations, understanding personality helps in selection, placement, team composition, leadership, and predicting behavior and performance.",
+      "explanation": "A 10-mark essay should define personality, describe the major theories (Big Five, Type A/B, locus of control, and others), and connect them to managerial use.",
+      "oneShotPreview": "Personality theories: Big Five (OCEAN), Type A/B, locus of control, Machiavellianism, self-monitoring, MBTI, person-job fit."
+    },
+    {
+      "q": "Explain attitude formation and attitude change: (a) how attitudes are formed, (b) the attitude-behavior relationship, and (c) cognitive dissonance. [10 Marks]",
+      "a": "Attitudes are favorable or unfavorable evaluative statements about objects, people, or events, composed of affective, behavioral, and cognitive components. They are formed through learning, including classical conditioning, operant conditioning, and observational learning, as well as through direct experience, social influence, and cognition. The attitude-behavior relationship is moderated by factors such as consistency among the components, specificity, relevance, accessibility, and social constraints; attitudes predict behavior best when they are specific and strongly held. Attitudes change through persuasion, which depends on the communicator's credibility, the message, the audience, and the channel, and through cognitive dissonance. Festinger's cognitive dissonance theory states that inconsistency between attitudes or between attitude and behavior creates psychological discomfort that motivates a person to restore consistency by changing the attitude, changing the behavior, or rationalizing the difference. In organizations these ideas are applied to shift employee attitudes toward work, change, and diversity.",
+      "explanation": "A 10-mark essay must cover components, formation, moderators of the attitude-behavior link, persuasion, and cognitive dissonance, with organizational relevance.",
+      "oneShotPreview": "Attitudes (ABC) form via learning and experience; behavior link moderated by specificity and relevance; change via persuasion and cognitive dissonance (Festinger)."
+    },
+    {
+      "q": "Explain the major learning theories and their applications: (a) classical conditioning, (b) operant conditioning, and (c) social learning theory. [10 Marks]",
+      "a": "Learning is a relatively permanent change in behavior resulting from practice or experience, and three major theories explain how it occurs. Classical conditioning (Pavlov) creates associations between stimuli so that a formerly neutral cue comes to elicit a response, with generalization, discrimination, and extinction as key processes. Operant conditioning (Skinner) holds that behavior is controlled by its consequences: positive and negative reinforcement strengthen behavior, while punishment and extinction weaken it, and reinforcement schedules such as variable-ratio affect how resistant behavior is to extinction. Social cognitive or social learning theory (Bandura) emphasizes learning by observing and imitating models, vicarious reinforcement, and self-efficacy, the belief in one's ability to perform a task. Organizations apply these theories in training and development, reward and incentive systems, feedback, coaching, role modeling by leaders, and shaping work habits. Together they explain how employees acquire skills, adopt norms, and change behavior.",
+      "explanation": "A 10-mark essay requires defining learning, explaining each major theory with its key mechanisms, and showing practical applications at work.",
+      "oneShotPreview": "Learning theories: classical (Pavlov), operant (Skinner: reinforcement and punishment), social learning (Bandura: modeling, self-efficacy); applied to training and rewards."
+    },
+    {
+      "q": "Explain the organizing process and the principles of effective organizing: (a) steps in the process and (b) how to make organizing effective. [10 Marks]",
+      "a": "Organizing is the management function that turns plans into a working structure by deciding what tasks are performed, who performs them, how they are grouped, who reports to whom, and where decisions are made. The process typically includes recognizing the need for organizing, setting objectives, identifying and classifying activities, grouping them into departments, assigning duties and responsibilities, establishing authority and reporting relationships through delegation and the chain of command, coordinating activities, and evaluating and redesigning the structure. Effective organizing follows classical principles associated with Fayol, such as division of work, authority with responsibility, unity of command, unity of direction, subordination of individual to general interest, fair remuneration, centralization, the scalar chain, order, equity, stability, initiative, and esprit de corps. In practice managers should also ensure a clear structure, an appropriate span of control, effective delegation, good coordination and communication, and enough flexibility to adapt to change. Both over-organization, which creates rigidity and delay, and under-organization, which creates confusion and duplication, must be avoided. When these conditions are met, resources are used efficiently and members understand their roles, which supports organizational effectiveness.",
+      "explanation": "A 10-mark essay should define organizing, walk through its steps, enumerate Fayol's principles, and add practical guidelines with the over/under-organization caution.",
+      "oneShotPreview": "Organizing process: objectives, activities, grouping, assignment, authority, coordination, evaluation; effective via Fayol's principles, span, delegation, flexibility."
+    }
+  ],
+  "source": "syllabus-derived"
+}

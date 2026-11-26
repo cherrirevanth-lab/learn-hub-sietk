@@ -101,12 +101,16 @@ export default function UnitDetail() {
               <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
                 <h2 className="flex items-center gap-2 font-display font-semibold text-slate-900">
                   <Database className="w-5 h-5 text-slate-500" />
-                  SIETK question bank
+                  {qb?.source === "syllabus-derived" ? "Practice questions" : "SIETK question bank"}
                   <span className="ml-1 text-xs font-semibold px-2 py-0.5 rounded border border-slate-200 bg-slate-50 text-slate-600 tabular-nums">
                     {qbQuestions.length} questions
                   </span>
                 </h2>
-                <span className="text-xs text-slate-400">Real R23 exam questions with answers</span>
+                <span className="text-xs text-slate-400">
+                  {qb?.source === "syllabus-derived"
+                    ? "Syllabus-derived questions with answers (no official bank published)"
+                    : "Real R23 exam questions with answers"}
+                </span>
               </div>
               <div className="rule-line" />
               <div className="space-y-4 mt-5">

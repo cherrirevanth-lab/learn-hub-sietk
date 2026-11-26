@@ -1,10 +1,624 @@
 /**
- * Learn Hub — Real Question Bank Questions
- * 586 questions extracted from SIETK R23 question bank PDFs.
+ * Learn Hub — Question Bank Questions
+ * 783 questions: SIETK official question banks + syllabus-derived sets where no bank exists.
  * P&S questions include lecturer-grade step-by-step solutions (steps + formula).
  */
 
 export const QB_QUESTIONS = {
+  "23HS0850": {
+    "1": {
+      "unitTitle": "Overview of Business Environment",
+      "totalQuestions": 19,
+      "questions": [
+        {
+          "q": "1 a) Define Business Environment.",
+          "a": "Business environment is the sum total of all internal and external forces, conditions and institutions that surround a firm and influence its decisions, operations and performance. It includes factors such as customers, competitors, suppliers, government policies, economic conditions, technology, social trends and laws. Most of these factors lie outside the firm's direct control, so the firm must constantly study and adapt to them. Understanding the environment helps a firm identify opportunities, avoid threats and plan effectively.",
+          "explanation": "This is the standard definition: the aggregate of all forces affecting a business, both controllable (internal) and uncontrollable (external).",
+          "oneShotPreview": "All internal and external forces and conditions that surround and influence a firm's decisions and performance."
+        },
+        {
+          "q": "1 b) State two features of the Business Environment.",
+          "a": "Two key features are: (1) It is dynamic — it changes continuously due to shifts in technology, government policy, consumer preferences and competition. (2) It is complex and uncertain — it comprises many interrelated factors that are difficult to predict and control. Other important features are relativity (it differs across firms, industries and countries) and its far-reaching impact on business decisions.",
+          "explanation": "It names and briefly explains the two most commonly cited features, dynamics and complexity/uncertainty, with relevant examples.",
+          "oneShotPreview": "Dynamic (ever-changing) and complex/uncertain (many interdependent, unpredictable factors)."
+        },
+        {
+          "q": "1 c) List two points of significance (or advantages) of understanding the Business Environment.",
+          "a": "(1) It helps a firm identify opportunities early and exploit them for growth and competitive advantage. (2) It enables the firm to anticipate threats and changes so it can act proactively and reduce risk. It also supports better planning, sound decision-making and efficient allocation of resources.",
+          "explanation": "It lists two genuine advantages — opportunity identification and threat anticipation — which are the core benefits of environmental awareness.",
+          "oneShotPreview": "Spot opportunities early and anticipate threats, enabling proactive, lower-risk decisions."
+        },
+        {
+          "q": "1 d) Differentiate between the Internal and External Environment.",
+          "a": "The internal environment consists of factors within the firm's control — management, employees, organisational structure, culture, finances and technology — that directly affect its working. The external environment lies outside the firm and is largely beyond its control — customers, competitors, suppliers, government, economy, society and technology. The firm can change or manage its internal environment, but it can only adapt to the external environment.",
+          "explanation": "It distinguishes the two on the basis of control (controllable vs uncontrollable) and gives representative factors of each.",
+          "oneShotPreview": "Internal = controllable forces inside the firm; external = largely uncontrollable forces outside it."
+        },
+        {
+          "q": "1 e) Give two examples of factors in the Internal Environment of a business.",
+          "a": "Two examples are: (1) Management and leadership — the vision, style and decisions of top management. (2) Employees and organisational culture — the skills, motivation and shared values of the workforce. Other internal factors include the firm's structure, financial resources, production technology and research-and-development capability.",
+          "explanation": "It gives two valid examples of internal (controllable, within-firm) factors and notes a few more for completeness.",
+          "oneShotPreview": "Management/leadership and employees/organisational culture are key internal factors."
+        },
+        {
+          "q": "2 Define the Business Environment and explain its significance for a firm in achieving competitive success.",
+          "a": "Business environment is the aggregate of all internal and external forces and conditions that affect a firm's operations and performance. It is significant for competitive success because it helps the firm understand customer needs, track competitors and anticipate changes in technology, policy and the economy. By scanning the environment, a firm can spot opportunities before its rivals, avoid threats and align its strategy with market realities. This leads to better decisions, innovation, efficient resource use and a sustainable competitive edge. Firms that adapt to their environment therefore outperform those that ignore it.",
+          "explanation": "It defines the term and then links environmental understanding to concrete sources of competitive advantage, matching the two-part question.",
+          "oneShotPreview": "Understanding the environment lets a firm seize opportunities, avoid threats and build a sustainable competitive edge."
+        },
+        {
+          "q": "3 Critically analyze the dynamic and complex nature of the Business Environment.",
+          "a": "The business environment is dynamic because it is never static — technology, consumer tastes, government policies, competition and economic conditions change continuously. It is complex because it consists of numerous interdependent factors that influence one another, so a change in one factor triggers changes in others. This makes the environment uncertain and hard to predict, and what suits one firm or country may not suit another (relativity). Managers therefore cannot rely on fixed assumptions; they must continuously monitor and analyse the environment and adapt, using tools such as environmental scanning and scenario planning to survive and succeed.",
+          "explanation": "It explains both dimensions — constant change (dynamic) and interdependence of many factors (complex) — and draws out the managerial implications critically.",
+          "oneShotPreview": "Constantly changing and made of interdependent factors, so the environment is uncertain and demands continuous adaptation."
+        },
+        {
+          "q": "4 a) \"The Business Environment is relative and uncertain.\" Elaborate on this statement.",
+          "a": "\"Relative\" means the environment differs from one firm, industry, region or country to another — a policy or trend that benefits one business may harm another, and no single strategy suits all. \"Uncertain\" means future conditions cannot be predicted with certainty because factors such as technology, government policy, consumer behaviour and global events change unexpectedly. Together these qualities mean managers must analyse their own specific environment rather than copy others, and must build flexibility and contingency plans into their decisions. Continuous scanning and adaptation are therefore essential.",
+          "explanation": "It defines both terms in the statement and explains their combined implication for managerial decision-making.",
+          "oneShotPreview": "Environment varies by firm/place (relative) and cannot be predicted exactly (uncertain), so strategies must be flexible."
+        },
+        {
+          "q": "4 b) Explain the key functions and advantages derived from systematically monitoring the external environment.",
+          "a": "Systematically monitoring the external environment means continuously collecting and analysing information about markets, competitors, technology, regulations and the economy. Its key functions are to detect early signals of change, identify opportunities and threats, and supply inputs for strategic planning. The advantages include proactive rather than reactive decisions, reduced risk and uncertainty, better forecasting, faster adaptation and improved competitive positioning. It also helps the firm avoid costly surprises and align its strategy with emerging trends.",
+          "explanation": "It covers both parts of the question — the functions of monitoring and the resulting advantages — with clear examples.",
+          "oneShotPreview": "Continuous scanning detects change early, enabling proactive decisions, lower risk and better strategy."
+        },
+        {
+          "q": "5 Differentiate clearly between the Internal Environment and the External Environment.",
+          "a": "The internal environment comprises factors inside the organisation — management, employees, structure, culture, financial and physical resources, and technology — which the firm largely controls and can change. The external environment comprises factors outside the organisation — customers, competitors, suppliers, government, laws, the economy, society and technology — which are largely beyond its control. Internal factors directly shape the firm's day-to-day operations and capabilities, while external factors create the opportunities and threats it must respond to. In short, the firm can manage the internal environment but must adapt to the external one.",
+          "explanation": "It contrasts the two environments across control, location and impact, giving examples of each, which is what a differentiation question requires.",
+          "oneShotPreview": "Internal factors are controllable and inside the firm; external factors are uncontrollable and outside it."
+        },
+        {
+          "q": "6 a) Analyze the role of the Micro Environment in a firm's success.",
+          "a": "The micro (task or operating) environment consists of the close, direct forces affecting a firm — customers, competitors, suppliers, intermediaries, potential entrants and the public. It is crucial to success because customers determine demand and revenue, competitors shape market share and strategy, and suppliers affect the cost, quality and availability of inputs. By understanding and managing these relationships, a firm can satisfy customers better, differentiate itself, negotiate effectively and build a strong market position. Hence the micro environment has a direct and immediate impact on day-to-day performance and profitability.",
+          "explanation": "It identifies the micro-environment components and analyses how each contributes to firm success, as an 'analyze the role' question asks.",
+          "oneShotPreview": "Customers, competitors and suppliers directly drive demand, costs and market position — key to day-to-day success."
+        },
+        {
+          "q": "6 b) Elaborate on the structure and components of the Macro (General) Environment using the PESTEL framework.",
+          "a": "The macro environment consists of broad, indirect forces that affect all firms in an economy. The PESTEL framework groups them into six components: Political (government stability and policies), Economic (growth, inflation, interest rates and income levels), Social (demographics, culture and lifestyles), Technological (innovation, R&D, automation and digitalisation), Environmental or Ecological (climate, sustainability and pollution norms) and Legal (laws, regulations and consumer protection). By scanning these six dimensions, a firm can anticipate long-term opportunities and threats and shape its strategy accordingly.",
+          "explanation": "It expands the PESTEL acronym into its six dimensions with examples and links it to strategic planning.",
+          "oneShotPreview": "PESTEL = Political, Economic, Social, Technological, Environmental and Legal macro forces."
+        },
+        {
+          "q": "7 Differentiate between Micro Environment and Macro Environment. Discuss their components with suitable examples.",
+          "a": "The micro environment consists of close, direct, task-specific forces that immediately affect a firm — customers, competitors, suppliers, intermediaries, potential entrants and the public (for example, a rival cutting prices or a key supplier's strike). The macro environment consists of broader, indirect forces affecting the whole industry or economy — political, economic, social, technological, environmental and legal factors (for example, an RBI interest-rate change or a new pollution law). The micro environment is firm-specific, largely short-term and partly controllable, whereas the macro environment is general, long-term and uncontrollable. Both must be analysed: the micro environment for day-to-day operations and the macro environment for long-term strategy.",
+          "explanation": "It contrasts the two environments on scope, control and time horizon and lists components with concrete examples for each.",
+          "oneShotPreview": "Micro = direct, firm-specific forces; macro = broad economy-wide PESTEL forces."
+        },
+        {
+          "q": "8 a) Explain how globalization, liberalization and privatization have influenced the business environment in India.",
+          "a": "Liberalisation (since 1991) removed licensing controls, reduced tariffs and opened sectors to private and foreign players, increasing competition and efficiency. Privatisation transferred ownership and management of public-sector enterprises to private hands, improving productivity and bringing in professional management. Globalisation integrated India with the world economy through foreign investment, trade, outsourcing and global supply chains. Together these reforms expanded markets, brought in advanced technology and management practices, increased consumer choice and made Indian firms globally competitive, while also exposing them to intense domestic and international competition and external economic shocks.",
+          "explanation": "It defines each of the three reforms and explains their combined positive and challenging effects on India's business environment.",
+          "oneShotPreview": "The 1991 reforms opened markets, raised competition and globalised Indian business, bringing both opportunities and risks."
+        },
+        {
+          "q": "8 b) Examine the challenges faced by modern businesses due to rapid technological changes and global competition.",
+          "a": "Rapid technological change creates challenges such as short product life cycles, continuous pressure to innovate, high research-and-development and IT spending, the need for constant employee reskilling, cyber-security risks and disruption by technologically agile new entrants. Global competition adds challenges such as price pressure from low-cost international players, the need to meet global quality standards, volatile currencies, complex cross-border regulations and supply-chain risks. Together these forces compel firms to invest heavily, adapt quickly, differentiate their offerings and manage risk across a complex, fast-moving landscape.",
+          "explanation": "It separately and clearly examines the challenges from technology and from global competition, then notes their combined effect.",
+          "oneShotPreview": "Short product cycles and innovation pressure, plus global price competition, regulation and supply-chain risk."
+        },
+        {
+          "q": "9 What is Environmental Analysis? Detail the systematic process a firm should follow to effectively scan and analyze its complex environment for strategic decision-making.",
+          "a": "Environmental analysis is the systematic process of identifying, collecting and evaluating information about the internal and external forces affecting a firm, so as to understand opportunities and threats and support strategic decisions. The process involves: (1) scanning — broadly monitoring the environment to detect early signals and trends; (2) monitoring — tracking specific relevant factors continuously; (3) forecasting — projecting future changes; and (4) assessment — evaluating the impact of those changes on the firm. The findings are used to identify strategic factors (opportunities and threats) and feed into strategy formulation. It should be a continuous, systematic activity linked to decision-making, not a one-time exercise.",
+          "explanation": "It defines environmental analysis and lays out the standard four-step process with a clear link to strategic decision-making.",
+          "oneShotPreview": "Scanning, monitoring, forecasting and assessment convert environmental data into strategic decisions."
+        },
+        {
+          "q": "10 a) Discuss the key advantages of conducting regular and systematic Environmental Analysis.",
+          "a": "Regular and systematic environmental analysis helps a firm detect opportunities early and exploit them, and anticipate threats so they can be neutralised or avoided. It reduces uncertainty and the risk of costly surprises, improves forecasting and planning quality, and enables faster adaptation to change. It also supports better resource allocation, sharper competitive positioning and long-term survival and growth. In short, it converts information about the environment into a source of competitive advantage.",
+          "explanation": "It discusses several concrete advantages and ties them together as a competitive benefit, matching the 'discuss the advantages' requirement.",
+          "oneShotPreview": "Early opportunity detection, threat avoidance, lower risk, better planning and stronger competitive positioning."
+        },
+        {
+          "q": "10 b) Analyze the concept of strategic factors (Opportunities and Threats) identified through environmental analysis.",
+          "a": "Strategic factors are the key environmental elements that significantly influence a firm's future performance and strategy. Opportunities are favourable conditions a firm can exploit for growth — such as a new market, emerging technology, changing customer preferences or a competitor's weakness. Threats are unfavourable conditions that can harm the firm — such as new regulation, a strong rival, rising input costs or an economic downturn. Environmental analysis identifies and ranks these factors so the firm can build strategies that seize opportunities and counter threats. Importantly, the same factor can be an opportunity for one firm and a threat for another, depending on its strengths and weaknesses.",
+          "explanation": "It defines strategic factors, distinguishes opportunities from threats with examples, and explains their strategic use including relativity.",
+          "oneShotPreview": "Opportunities are exploitable favourable forces; threats are harmful forces — both guide strategy."
+        },
+        {
+          "q": "11 As a business manager, how would you mitigate the impact of the key limitations of environmental analysis?",
+          "a": "The main limitations of environmental analysis are uncertain and inaccurate predictions, high cost and time, information overload, bias in interpretation, and rapid change that makes data obsolete quickly. A manager can mitigate these by using multiple reliable data sources and cross-checking information, combining quantitative tools with informed judgement, involving cross-functional teams to reduce individual bias, focusing on the most relevant factors to avoid overload, updating the analysis continuously rather than treating it as a one-off, and preparing flexible contingency plans and scenarios. This makes the analysis more accurate, timely and usable while accepting that the future can never be predicted with certainty.",
+          "explanation": "It first lists the key limitations and then gives a matching, practical mitigation for each, directly answering the managerial 'how' question.",
+          "oneShotPreview": "Cross-check data, use diverse teams, focus on what matters, update often and keep contingency plans ready."
+        }
+      ]
+    },
+    "2": {
+      "unitTitle": "Fiscal & Monetary Policy",
+      "totalQuestions": 19,
+      "questions": [
+        {
+          "q": "a) Distinguish between Revenue Expenditure and Capital Expenditure.",
+          "a": "Revenue expenditure is spending that neither creates a productive asset nor reduces a liability, and its benefit is confined to the current accounting year; common examples are salaries, interest payments, subsidies, pensions and routine maintenance. Capital expenditure creates assets or reduces liabilities and its benefit extends over several future years, for example building roads, buying machinery or repaying public debt. Revenue expenditure is recurring and revenue-generating in nature only in the sense that it is met from revenue receipts, while capital expenditure adds to the government's asset base and is financed partly by borrowing. In India, a high revenue deficit signals that the government is borrowing even for its day-to-day commitments, which is why fiscal consolidation seeks to convert revenue expenditure into productive capital spending.",
+          "explanation": "The distinction rests on asset creation and the period over which benefits accrue, which determines whether the spending is current or productive and how it affects the fiscal deficit.",
+          "oneShotPreview": "Revenue = no asset created, benefit this year (salaries, interest); Capital = creates asset/reduces debt, benefit over years (roads, machinery)."
+        },
+        {
+          "q": "b) Define Fiscal Policy.",
+          "a": "Fiscal policy is the use of the government's taxation, spending and borrowing decisions to influence aggregate demand, output, employment, prices and income distribution in the economy. It is formulated and announced annually through the Union Budget and is anchored in India by the FRBM Act, 2003. Expansionary fiscal policy raising spending or cutting taxes boosts demand and growth, while contractionary policy reduces spending or raises taxes to contain inflation and fiscal deficit. Thus fiscal policy is the chief instrument of the government for stabilizing the economy and promoting long-term development.",
+          "explanation": "Fiscal policy is defined by the government's budgetary instruments — taxes, expenditure and debt — used to achieve macroeconomic stability and growth.",
+          "oneShotPreview": "Fiscal policy = government uses taxes, spending and borrowing to steer growth, employment, prices and equity."
+        },
+        {
+          "q": "c) State the primary objective of the recent Fiscal Policy of the Government of India.",
+          "a": "The primary objective of recent Indian fiscal policy is to sustain high economic growth while restoring fiscal discipline, that is, to follow a credible consolidation path that brings the fiscal deficit down to a sustainable level (the announced glide path of about 4.5 percent of GDP by 2025-26). This is sought to be achieved by raising tax revenues through GST and wider compliance, containing unproductive expenditure and sharply increasing capital expenditure on infrastructure. At the same time, the policy protects welfare and rural spending and keeps borrowing economical so that public debt remains manageable. In short, the emphasis is on growth-friendly fiscal consolidation rather than blunt austerity.",
+          "explanation": "Recent budgets explicitly combine a fiscal-deficit reduction glide path with a large public capital-expenditure push, making growth with consolidation the stated aim.",
+          "oneShotPreview": "Primary goal: grow the economy while consolidating — cut fiscal deficit to about 4.5% of GDP via more capex and better tax compliance."
+        },
+        {
+          "q": "d) What is the core objective of RBI's Monetary Policy?",
+          "a": "The core objective of the Reserve Bank of India's monetary policy is to maintain price stability while keeping in mind the objective of economic growth, as stated in the amended RBI Act, 1934 (2016). Price stability means keeping inflation low and predictable, which the RBI now pursues through the flexible inflation-targeting framework with a consumer-price-inflation target of 4 percent (+/- 2 percent). Price stability is given primacy because durable growth is not possible with high or volatile inflation. The RBI also uses the policy repo rate and liquidity tools to ensure adequate credit flow and financial stability without compromising that inflation mandate.",
+          "explanation": "The 2016 amendment legally mandates price stability as the primary objective with growth as a secondary consideration, operationalized through flexible inflation targeting.",
+          "oneShotPreview": "Core objective: price stability first, with growth in mind — flexible inflation targeting at 4% CPI (+/- 2%)."
+        },
+        {
+          "q": "e) State the primary role of the Finance Commission.",
+          "a": "The primary role of the Finance Commission is to recommend how the net proceeds of central taxes should be shared between the Union and the States (vertical devolution) and among the States themselves (horizontal devolution), and to determine grants-in-aid to states and local bodies. It is a constitutional body set up under Article 280 every five years to settle the financial relations between the Centre and the States. By using objective devolution criteria such as population, area, income distance and fiscal effort, it seeks to correct vertical and horizontal fiscal imbalances. Its recommendations strengthen cooperative federalism and give states financially autonomous resources to discharge their responsibilities.",
+          "explanation": "Article 280 charges the Commission with recommending tax devolution and grants to bridge Centre-State and inter-State fiscal gaps, which is its defining function.",
+          "oneShotPreview": "Finance Commission recommends vertical and horizontal tax devolution and grants-in-aid to correct fiscal imbalances."
+        },
+        {
+          "q": "Analyze the Nature, Scope, and Significance of Public Finance in a developing economy like India.",
+          "a": "Public finance is the branch of economics that studies the role of government in the economy through its revenue, expenditure, borrowing and budgeting. Its nature is both allocative and distributive: the government raises resources, allocates them to priority sectors, redistributes income and stabilizes the economy. Its scope covers public revenue (direct and indirect taxes, non-tax receipts), public expenditure (plan and non-plan, revenue and capital), public debt and debt management, fiscal policy, budgeting and intergovernmental financial relations. In a developing economy like India it is significant because private resources alone cannot finance infrastructure, education, health and poverty alleviation on the required scale. Public finance thus enables planned development, regional balance, price stability and social justice, while fiscal discipline keeps the burden of debt and inflation under control.",
+          "explanation": "Public finance covers the government's revenue and expenditure and is vital in India because the state must mobilize and direct scarce resources for development, equity and stability.",
+          "oneShotPreview": "Public finance = government revenue, spending, debt and budgeting; in India it funds development, redistribution, infrastructure and stability."
+        },
+        {
+          "q": "Critically evaluate the recent Fiscal Policy of the Government of India (GOI).",
+          "a": "Recent fiscal policy has several strengths: a large and sustained increase in capital expenditure, especially on roads, railways and digital infrastructure, has crowded in private investment; GST has broadened the tax base; and the government has followed a stated glide path to reduce the fiscal deficit. Welfare and direct-benefit transfers, agriculture support and health spending have protected vulnerable groups. Critically, however, the fiscal deficit and public debt remain high, so interest payments absorb a large share of revenue and leave less room for productive spending. Heavy borrowing can push up interest rates and crowd out private investment, while inflation and inequality persist and subsidy or tax rationalization is politically difficult. Overall the policy is a balanced, growth-oriented consolidation whose success depends on improving revenue buoyancy and the quality of expenditure rather than merely cutting numbers.",
+          "explanation": "A critical evaluation must weigh the gains of higher capex and tax reform against persistent deficits, debt servicing, crowding-out and inflation risks.",
+          "oneShotPreview": "Recent policy: strong capex push and GST gains, but high deficit/debt, interest burden and crowding-out remain concerns."
+        },
+        {
+          "q": "a) Explain the different types of Budgetary Deficits (Revenue, Fiscal, and Primary) and their economic implications for the Indian economy.",
+          "a": "Revenue deficit is the excess of revenue expenditure over revenue receipts; it shows the government is borrowing even to meet its routine, non-asset-creating commitments and is therefore a sign of fiscal weakness. Fiscal deficit is the excess of total expenditure over total receipts excluding borrowings, equal to revenue deficit plus the capital account gap; it measures the total borrowing requirement of the government in a year and is the headline indicator of fiscal health. Primary deficit is fiscal deficit minus interest payments, showing the current year's borrowing for non-interest purposes; a zero or negative primary deficit means past debt is at least being serviced from current revenues. High revenue and fiscal deficits raise public debt, interest burden and inflation and can crowd out private investment, whereas a declining primary deficit signals genuine consolidation. In India, reducing the revenue deficit while protecting capital spending is a key fiscal objective.",
+          "explanation": "These three measures isolate current-spending weakness, total borrowing need and the underlying deficit before debt-service costs, so together they reveal fiscal sustainability.",
+          "oneShotPreview": "Revenue deficit = current-spending gap; Fiscal deficit = total borrowing need; Primary deficit = fiscal deficit minus interest."
+        },
+        {
+          "q": "b) Suggest effective fiscal tools and measures that the government can employ to achieve the long-term goal of fiscal consolidation.",
+          "a": "Fiscal consolidation requires both raising revenues and improving the quality of spending. On the revenue side, the government can widen the tax base, improve GST and direct-tax compliance, reduce exemptions, rationalize tariffs and strengthen non-tax receipts and disinvestment. On the expenditure side, it can prune unproductive subsidies and outdated schemes, use direct benefit transfers to cut leakage, contain the wage and pension bill, and prioritize capital investment over low-yield current spending. Institutional tools such as the FRBM glide path, a medium-term fiscal framework, independent fiscal councils and transparent off-budget accounting add credibility. Together, higher revenue buoyancy and efficient expenditure reduce the fiscal and revenue deficits without sacrificing growth.",
+          "explanation": "Consolidation works through a mix of revenue mobilization, expenditure rationalization and rule-based discipline rather than spending cuts alone.",
+          "oneShotPreview": "Consolidation = broaden taxes, curb wasteful subsidies and leakage, boost capex efficiency, and follow an FRBM-style glide path."
+        },
+        {
+          "q": "Define Monetary Policy and elaborate on the various objectives of the RBI's Monetary and Credit Policy.",
+          "a": "Monetary policy consists of the measures taken by the central bank to regulate the supply of money, the cost and availability of credit and interest rates in order to achieve macroeconomic goals. The RBI implements it through the policy repo rate, the monetary policy committee, cash reserve ratio, statutory liquidity ratio and open market operations. Its objectives are price stability, which has the highest priority under flexible inflation targeting, along with sustaining economic growth, ensuring financial stability and adequate liquidity in the banking system. It also aims to maintain orderly conditions in the foreign exchange and money markets, ensure credit flow to priority and neglected sectors, and support employment. Thus monetary policy balances inflation control with the need for affordable credit and growth.",
+          "explanation": "Monetary policy is central-bank control of money and credit, and its objectives place price stability first while pursuing growth, liquidity and financial stability.",
+          "oneShotPreview": "Monetary policy = RBI controls money, credit and rates; aims at price stability first, then growth, liquidity and financial stability."
+        },
+        {
+          "q": "a) Explain the concepts of Demand for Money and Supply of Money.",
+          "a": "Demand for money is the desire of the public to hold money rather than other assets, arising from the transactions motive for day-to-day purchases, the precautionary motive for unforeseen needs and the speculative motive to take advantage of bond-price movements. Keynes expressed it as L = f(Y, r): demand rises with income Y and falls with the interest rate r, which is the opportunity cost of holding money. Money supply is the total stock of money available in the economy, measured as currency held by the public plus demand deposits (M1), and broader aggregates M2 and M3 that include savings and time deposits. It is determined by the RBI through currency issuance, reserve requirements and open market operations, and by banks through credit creation. The interaction of money demand and supply determines the rate of interest and thus influences investment and prices.",
+          "explanation": "Money demand reflects why people hold cash while money supply is the stock created by the central bank and banks; their equality fixes the interest rate.",
+          "oneShotPreview": "Demand for money = transactions, precautionary and speculative motives (L = f(Y, r)); supply = currency plus deposits set by RBI and banks."
+        },
+        {
+          "q": "b) Detail the role and functions of the Reserve Bank of India (RBI) as the central bank in regulating the money.",
+          "a": "The Reserve Bank of India, established in 1935, is the country's central bank and the sole authority for regulating money, credit and banking. Its functions include issuing currency, acting as banker and adviser to the government and to commercial banks, and serving as the lender of last resort to banks in difficulty. As the monetary authority it fixes the repo rate through the Monetary Policy Committee and uses the cash reserve ratio, statutory liquidity ratio and open market operations to control liquidity and credit. It supervises and regulates banks, manages foreign exchange reserves and the exchange rate, operates the payment and settlement systems, and promotes financial inclusion. Through these roles the RBI maintains price stability, financial stability and orderly money and credit conditions in the economy.",
+          "explanation": "The RBI's functions — note issue, banking, lender of last resort, credit control and supervision — are the standard instruments by which a central bank regulates money and credit.",
+          "oneShotPreview": "RBI = note issuer, banker to government/banks, lender of last resort, regulator, and monetary-policy authority using repo, CRR, SLR and OMO."
+        },
+        {
+          "q": "Analyze the recent trends and challenges in India's Monetary Policy.",
+          "a": "Recent trends include the shift to flexible inflation targeting in 2016 with the Monetary Policy Committee deciding the repo rate, the repo rate becoming the single policy rate, and greater use of liquidity-management tools. The RBI raised rates sharply in 2022-23 to contain post-pandemic inflation, then held and later eased them as inflation moderated, while increasingly using the standing deposit facility and variable-rate repo to manage liquidity. Challenges remain serious: food and fuel price shocks keep inflation volatile, global tightening by advanced-economy central banks causes capital outflows and rupee pressure, and the RBI must balance inflation control against the need to support growth. Banking-sector non-performing assets, the large unorganized sector, digital currencies and the need for transparent communication further complicate policy. These factors make monetary management in India a continuous balancing act.",
+          "explanation": "India's recent policy is defined by inflation targeting and MPC-based rate decisions, but is constrained by supply-side inflation, global spillovers and the growth-inflation trade-off.",
+          "oneShotPreview": "Recent trend: flexible inflation targeting and MPC rate moves; challenges: food inflation, global spillovers and growth-inflation trade-off."
+        },
+        {
+          "q": "Discuss the Role and Significance of the Finance Commission of India as a constitutional body.",
+          "a": "The Finance Commission is a constitutional body created under Article 280 of the Constitution, appointed by the President every fifth year, consisting of a chairman and four members. Its main role is to recommend the distribution of the net proceeds of central taxes between the Union and the States and among the States, and to prescribe grants-in-aid to states, local bodies and for disaster management. It also reviews the financial position arising from transfers and may suggest measures to strengthen state finances. Its significance lies in institutionalizing cooperative federalism: objective criteria reduce arbitrariness, correct vertical and horizontal fiscal imbalances and give states predictable resources to provide public services. By protecting the fiscal autonomy of states and local governments, it strengthens the federal structure and promotes balanced regional development.",
+          "explanation": "Being a constitutional, quinquennial body with a mandate on tax devolution and grants makes the Commission the key arbiter of Centre-State fiscal relations.",
+          "oneShotPreview": "Article 280 body recommending tax devolution and grants; cornerstone of cooperative federalism and fiscal balance."
+        },
+        {
+          "q": "Explain how the Commission addresses the vertical and horizontal imbalances in the financial resources between the Centre and the States, and examine the key devolution criteria used in recent commissions.",
+          "a": "Vertical imbalance arises because the Centre collects more revenue than it spends while states have larger expenditure responsibilities than their own revenue; the Commission corrects it by assigning a share of central taxes to the states (41 percent in the 15th Finance Commission) and by giving grants-in-aid. Horizontal imbalance refers to differences in fiscal capacity and needs among states; it is corrected by distributing the states' share using objective criteria. Recent commissions use population (15 percent), area (15 percent), income distance (45 percent), forest and ecology (10 percent), demographic performance (12.5 percent) and tax effort (2.5 percent), with grants for local bodies, health and disasters. Income distance gives more to poorer states, forest cover rewards ecological services, and tax effort rewards better collection. These criteria aim to combine equity with efficiency while protecting states' incentives to perform.",
+          "explanation": "Vertical gaps are closed by the tax share and grants, horizontal gaps by need- and capacity-based criteria such as income distance, population and area used in recent commissions.",
+          "oneShotPreview": "Vertical gap = 41% central tax share plus grants; horizontal gap = criteria like income distance (45%), population, area, forest, tax effort."
+        },
+        {
+          "q": "a) Explain recent trends in monetary policy in India with examples.",
+          "a": "India's monetary policy has recently been guided by flexible inflation targeting, with the Monetary Policy Committee deciding the policy repo rate and using it as the single policy signal. For example, the RBI raised the repo rate from 4.0 percent to 6.5 percent during 2022-23 to counter high CPI inflation, held it through 2023-24 and then began cutting it in 2025 as inflation eased. It has also shifted from a scarcity-based liquidity framework to managing surplus liquidity through instruments such as the standing deposit facility and variable-rate repo auctions. Other trends include a focus on transparent forward guidance, digital payment and currency initiatives such as the digital rupee, and greater attention to financial stability. These steps show a move toward rule-based, transparent and market-oriented monetary management.",
+          "explanation": "Recent policy is best illustrated by MPC-based repo-rate changes, the inflation-targeting framework and active liquidity management, all aimed at anchoring inflation expectations.",
+          "oneShotPreview": "Recent trends: MPC-set repo rate (hiked to 6.5% in 2022-23, cut in 2025), inflation targeting and active liquidity tools."
+        },
+        {
+          "q": "b) Explain how Fiscal Policy helps in economic growth and development.",
+          "a": "Fiscal policy promotes growth and development mainly through public expenditure and taxation. Government spending on infrastructure, education, health and research raises productive capacity and productivity, while welfare spending and subsidies reduce poverty and inequality and create human capital. Tax concessions, exemptions and investment allowances encourage private saving, investment and entrepreneurship, and public procurement and demand stimulus generate multiplier effects that raise output and employment. In a developing country like India, fiscal policy also finances regional development and strategic sectors that the market neglects. Thus, well-designed fiscal policy raises both the rate and the inclusiveness of growth, provided it is carried out without undermining fiscal sustainability.",
+          "explanation": "Because government spending and taxes directly affect aggregate demand, productive capacity and incentives, fiscal policy is a central tool for growth and development.",
+          "oneShotPreview": "Fiscal policy drives growth via capex, welfare and human-capital spending plus tax incentives, but must stay fiscally sustainable."
+        },
+        {
+          "q": "a) Define Public Revenue. What are its sources?",
+          "a": "Public revenue consists of the receipts or income of the government that are used to finance its expenditure and development programmes. Its main sources are tax revenue and non-tax revenue. Tax revenue includes direct taxes such as income tax, corporate tax and wealth-related levies, and indirect taxes such as GST, customs duties and excise. Non-tax revenue includes fees, fines and penalties, interest receipts, dividends from public enterprises, royalties, rents, disinvestment proceeds and external grants or borrowings. A sound revenue system should be adequate, equitable, elastic and economical to collect so that the state can fund its functions without excessive borrowing.",
+          "explanation": "Public revenue is the government's income and is classified into tax and non-tax sources, which together determine its capacity to spend.",
+          "oneShotPreview": "Public revenue = government receipts; sources = taxes (direct and indirect) plus non-tax receipts like fees, dividends and royalties."
+        },
+        {
+          "q": "b) Define Public Expenditure. Explain the reasons for the growth of public expenditure in India.",
+          "a": "Public expenditure is the spending by the government on goods, services, transfers and capital projects to fulfil its functions and promote welfare and development. It has grown rapidly in India for several reasons: the state's role expanded from a minimal administrative role to a welfare and developmental one, planning requires large outlays on infrastructure, industry and agriculture, and population growth raises the demand for education, health and employment. Inflation raises the money cost of government purchases and salaries, while subsidies, food and fertilizer support, debt servicing and pay-commission awards add to the burden. Disasters, pandemics and the need for social security and regional equalization have further increased spending, and rising transfers to states and local bodies also push it up. This is why containing unproductive expenditure while protecting productive capital spending is a major fiscal concern.",
+          "explanation": "The growth reflects an expanded welfare and developmental role, planning, population and price rises, subsidies and debt servicing, and unexpected shocks.",
+          "oneShotPreview": "Public expenditure = government spending; it grew due to welfare state, planning, population, inflation, subsidies, debt and emergencies."
+        }
+      ]
+    },
+    "3": {
+      "unitTitle": "India's Trade Policy",
+      "totalQuestions": 20,
+      "questions": [
+        {
+          "q": "a) What is meant by India's Trade Policy?",
+          "a": "India's Trade Policy is the set of government measures, rules and regulations that govern the country's international trade — the inflow of imports and the outflow of exports. It includes tariffs, quotas, export subsidies, import licences and exchange-rate-related measures, and is framed to protect domestic industries, promote exports and manage the balance of payments. In India it is announced through the Export-Import (EXIM) Policy and shapes how the country integrates with the global economy.",
+          "explanation": "The answer defines trade policy as government control over imports and exports and names its core instruments and goals, matching the 2-mark definition.",
+          "oneShotPreview": "India's Trade Policy = government rules regulating imports and exports to protect industry and promote trade."
+        },
+        {
+          "q": "b) State any two benefits of protecting domestic industries.",
+          "a": "Two benefits are: (1) it shields infant and domestic industries from foreign competition, allowing them to grow, achieve economies of scale and eventually become competitive; and (2) it protects domestic employment and saves foreign exchange by reducing imports, which helps improve the balance of payments. Protection can also encourage local manufacturing and reduce dependence on imported essential goods.",
+          "explanation": "The answer gives two clear, standard benefits — nurturing infant industries and protecting jobs and foreign exchange — exactly what 'state any two' requires.",
+          "oneShotPreview": "Protection helps infant industries mature and saves jobs and foreign exchange by cutting imports."
+        },
+        {
+          "q": "c) Mention any two major export items of India.",
+          "a": "Two major Indian exports are (1) computer software and IT/business process services, and (2) textiles and ready-made garments. Other significant export earners include pharmaceuticals, jewellery, tea, spices, rice and engineering goods. These sectors account for a large share of India's foreign exchange earnings.",
+          "explanation": "The answer names two genuine, well-known Indian export earners and adds a few more, directly satisfying the request for two major export items.",
+          "oneShotPreview": "Major Indian exports: IT/software services and textiles/garments."
+        },
+        {
+          "q": "d) What is EXIM Policy?",
+          "a": "EXIM (Export-Import) Policy is India's official trade policy document setting out the government's measures for promoting exports and regulating imports. Announced periodically under the Foreign Trade (Development and Regulation) Act, 1992, it specifies export incentives, import restrictions, procedures and the framework for trade with other countries. It is administered by the Directorate General of Foreign Trade (DGFT).",
+          "explanation": "The answer identifies EXIM Policy as India's formal import-export policy instrument and notes its legal basis and administering body, as the definition asks.",
+          "oneShotPreview": "EXIM Policy = India's official export-import policy promoting exports and regulating imports, run by DGFT."
+        },
+        {
+          "q": "e) What is Balance of Payments?",
+          "a": "The Balance of Payments (BoP) is a systematic record of all economic transactions between a country and the rest of the world during a period, usually a year. It has two main parts: the current account (trade in goods and services, income and transfers) and the capital account (capital flows, investment and borrowings). A deficit means the country spends more foreign exchange abroad than it earns, a surplus means the opposite, and overall the two sides must balance.",
+          "explanation": "The answer defines BoP as the record of a country's international transactions and explains its two components and the meaning of surplus and deficit.",
+          "oneShotPreview": "Balance of Payments = record of all international transactions (current account + capital account)."
+        },
+        {
+          "q": "Explain the meaning and nature of India's Trade Policy. Why is trade policy important for a developing economy like India?",
+          "a": "India's Trade Policy is the framework of tariffs, quotas, licences and incentives through which the government regulates imports and promotes exports; its nature has shifted from import substitution and protection after independence toward liberalization, export orientation and global integration since 1991. Trade policy is essentially an instrument of national economic policy balancing the goals of protecting domestic industry, earning foreign exchange and managing the balance of payments. It is especially important for a developing economy like India because trade drives industrial growth, creates employment, brings in scarce foreign exchange and advanced technology, and gives consumers access to cheaper, better goods. A sound trade policy also helps India join global value chains and improve industrial competitiveness while safeguarding strategic and fragile sectors.",
+          "explanation": "The answer explains the policy's meaning and protective-to-liberal nature and gives several reasons why it matters for a developing economy, covering both parts of the 10-mark question.",
+          "oneShotPreview": "Trade policy regulates imports/exports; for India it drives growth, jobs, foreign exchange and global integration."
+        },
+        {
+          "q": "a) Discuss the major objectives and significance of India's Trade Policy since liberalization.",
+          "a": "Since the 1991 liberalization, the main objectives have been to promote exports, integrate India with the global economy, attract foreign investment, acquire advanced technology and strengthen the balance of payments by reducing import dependence. The policy lowered tariffs, removed quantitative restrictions, simplified procedures and offered export incentives and special economic zones while aligning India with WTO commitments. Its significance lies in accelerating industrial growth, improving the competitiveness of Indian firms, building foreign exchange reserves and raising India's share in world trade. Exposing domestic industry to international competition has also encouraged efficiency and modernization.",
+          "explanation": "The answer lists the post-liberalization objectives and links them to concrete reforms and outcomes, addressing both objectives and significance for the 5-mark question.",
+          "oneShotPreview": "Since 1991: promote exports, cut tariffs, attract investment, boost competitiveness and integrate with world trade."
+        },
+        {
+          "q": "b) Describe the evolution of India's Trade Policy before and after 1991 reforms.",
+          "a": "Before 1991 India followed a protectionist, import-substitution policy with high tariffs, import licensing, quotas and exchange controls, aimed at self-reliance and shielding domestic industry. This closed regime produced low export growth, inefficiency and recurring balance-of-payments crises. After 1991 sweeping reforms dismantled licensing, cut tariffs progressively, removed quantitative restrictions, moved toward rupee convertibility and adopted an export-oriented, outward-looking policy aligned with WTO rules. The result was a rapid expansion of trade, higher growth, greater foreign investment and much deeper integration into the global economy.",
+          "explanation": "The answer contrasts the pre-1991 protectionist regime with the post-1991 liberal regime and notes the outcomes, matching the 5-mark evolution question.",
+          "oneShotPreview": "Pre-1991: protectionist import substitution; post-1991: liberalized, export-oriented, WTO-aligned trade."
+        },
+        {
+          "q": "\"India's Trade Policy acts as a catalyst for industrial development.\" Discuss with examples.",
+          "a": "India's trade policy has acted as a catalyst for industrial development by encouraging exports, attracting investment and exposing domestic firms to competition, which raises efficiency and scale. Export incentives, duty-free import of inputs and special economic zones helped industries such as software and IT services, pharmaceuticals, textiles and engineering goods expand and become globally competitive. Import liberalization brought in modern machinery and technology that upgraded manufacturing, while the entry of foreign firms forced local companies to improve quality and productivity. For example, the software/IT and pharmaceutical sectors grew into major world players after reforms, and the automobile and electronics sectors benefited from imported technology and competition. Thus, through incentives, technology access and competitive pressure, trade policy has accelerated India's industrial growth.",
+          "explanation": "The answer explains the catalytic mechanisms and supports them with concrete industry examples, as the 10-mark 'discuss with examples' question requires.",
+          "oneShotPreview": "Trade policy drives industrial growth via export incentives, imported technology and competition — e.g., IT, pharma, autos."
+        },
+        {
+          "q": "a) Explain the major functions of India's Trade Policy in regulating exports and imports.",
+          "a": "The major functions are: (1) regulating imports through tariffs, quotas and licensing to protect domestic industries and conserve foreign exchange; (2) promoting exports through incentives, subsidies, duty drawback and export-promotion schemes; (3) diversifying the composition and direction of trade to reduce dependence on a few goods or markets; and (4) maintaining a favourable balance of payments and a stable exchange rate. Together these functions aim to expand exports, restrict non-essential imports and achieve orderly, balanced growth of external trade.",
+          "explanation": "The answer enumerates the core regulatory and promotional functions of trade policy, directly covering exports, imports and the balance of payments for the 5-mark question.",
+          "oneShotPreview": "Functions: regulate imports via tariffs/quotas, promote exports via incentives, diversify trade, manage BoP."
+        },
+        {
+          "q": "b) Evaluate how India's Trade Policy helps in strengthening foreign exchange reserves.",
+          "a": "India's trade policy strengthens foreign exchange reserves mainly by promoting exports, which are the largest source of foreign exchange earnings; export incentives, market diversification and export-oriented units boost these inflows. At the same time, regulating imports through tariffs, duties and restrictions on non-essential imports reduces foreign exchange outflow and improves the current account. The policy also encourages foreign direct investment and remittances, and by keeping the balance of payments manageable it supports a stable rupee and comfortable reserves. The 1991 reforms, for instance, were followed by a marked rise in exports and reserves.",
+          "explanation": "The answer evaluates the reserve-building effect through both higher export earnings and lower import spending plus investment inflows, matching the 5-mark evaluation.",
+          "oneShotPreview": "Reserves grow through export promotion, import control and foreign investment inflows."
+        },
+        {
+          "q": "Write an essay on the role of trade policy in enhancing competitiveness of Indian industries.",
+          "a": "Trade policy enhances the competitiveness of Indian industries in several ways. First, lowering tariffs on imported inputs and capital goods reduces costs and gives firms access to better technology and raw materials. Second, exposing domestic firms to international competition forces them to improve quality, efficiency and productivity — the competitive effect of liberalization. Third, export incentives, duty drawback, special economic zones and trade facilitation help firms compete globally and achieve economies of scale. Fourth, trade agreements and integration into global value chains open new markets and attract foreign investment and know-how. Sectors such as IT, pharmaceuticals, textiles and automobiles illustrate these gains: after liberalization they improved productivity, adopted global standards and became major exporters. Competitiveness also depends on complementary domestic factors such as infrastructure, skills, ease of doing business and innovation, so trade policy works best alongside such reforms. Overall, a forward-looking trade policy is central to making Indian industry efficient, export-competitive and globally integrated.",
+          "explanation": "The essay covers the main channels — cheaper inputs, competition, export support, market access and global integration — with examples and a balanced caveat, as expected for a 10-mark essay.",
+          "oneShotPreview": "Trade policy boosts competitiveness via cheaper inputs, competition, export support and global market access."
+        },
+        {
+          "q": "Discuss the changing direction of India's international trade with reference to major trading partners.",
+          "a": "The direction of India's international trade has shifted markedly over time. Before independence and in the early post-independence years, trade was heavily oriented toward the United Kingdom and other Commonwealth countries, reflecting colonial ties. With liberalization and globalization, India's trade diversified: the United States, China, the United Arab Emirates, Saudi Arabia, the European Union and Southeast Asian nations became major partners. China emerged as a leading source of imports, especially machinery and manufactured goods, while the US and EU became key export markets for IT services, textiles, pharmaceuticals and jewellery. India has also strengthened regional trade through SAARC and ASEAN and deepened energy imports from West Asia. Thus the direction has moved from a narrow Commonwealth focus to a broad, diversified pattern across Asia, the Americas, Europe and the Gulf.",
+          "explanation": "The answer traces the shift from UK/Commonwealth dominance to a diversified set of partners and names the major current partners and trade flows, covering the 10-mark question.",
+          "oneShotPreview": "India's trade shifted from UK/Commonwealth to diversified partners — US, China, EU, Gulf and ASEAN."
+        },
+        {
+          "q": "a) Explain the magnitude of India's foreign trade since independence.",
+          "a": "Since independence the magnitude — volume and value — of India's foreign trade has grown enormously, though unevenly. In the early decades it expanded slowly under a restrictive import-substitution regime, with modest exports, a small share of world trade and frequent balance-of-payments crises. After the 1991 liberalization, trade grew rapidly: exports and imports rose many-fold, India's share in global trade increased substantially, and the composition shifted from primary goods toward manufactured products and services. Today India is among the world's largest trading nations, with total merchandise and services trade running into hundreds of billions of dollars, though imports often exceed exports, producing a trade deficit. The magnitude has thus transformed from a small, controlled flow to a large, globally significant volume.",
+          "explanation": "The answer describes the growth trajectory from slow pre-reform expansion to rapid post-1991 growth and notes India's current standing, matching the 5-mark question.",
+          "oneShotPreview": "India's foreign trade grew from a small, controlled flow after independence to a large, globally significant volume post-1991."
+        },
+        {
+          "q": "b) What are the major changes in India's import structure over the last two decades?",
+          "a": "Over the last two decades India's import structure has changed significantly. Crude oil and petroleum products have remained the largest import item, keeping India heavily dependent on external energy. There has been a sharp rise in imports of machinery, electronic goods and high-value components, reflecting industrial growth and integration into global supply chains, especially electronics imports from China and Southeast Asia. Gold and precious metals have also been a major import, while food grains and raw-material imports have fluctuated. The share of capital and intermediate goods has risen relative to consumer goods, and tariff cuts under trade reforms have made imports cheaper and more diverse.",
+          "explanation": "The answer lists the key changes — energy dominance, rising machinery/electronics imports, gold and a shift toward capital and intermediate goods — directly answering the 5-mark question.",
+          "oneShotPreview": "Import structure: oil dominant, electronics/machinery from China and ASEAN surged, more capital and intermediate goods."
+        },
+        {
+          "q": "Define bilateral and multilateral trade agreements. Explain their importance for India.",
+          "a": "A bilateral trade agreement is a pact between two countries granting each other preferential treatment, such as lower tariffs, on specified goods. A multilateral trade agreement involves three or more countries and sets common trade rules for all members, the most important being the WTO agreements. For India such agreements are important because they expand market access for exports, attract foreign investment, secure supplies of raw materials and energy, and integrate Indian industry into global value chains. They also provide a predictable, rules-based trading environment and help diversify partners, reducing dependence on any single market. Agreements with the EU, ASEAN and Japan and participation in the WTO have supported India's export growth and technological upgrading.",
+          "explanation": "The answer defines both types of agreement and explains their benefits — market access, investment, supply security and diversification — for India, covering both parts of the 10-mark question.",
+          "oneShotPreview": "Bilateral = two countries, multilateral = many (WTO); both give India market access, investment and diversification."
+        },
+        {
+          "q": "a) Explain India's participation in multilateral platforms like WTO, SAARC, and ASEAN.",
+          "a": "India is an active participant in several multilateral trade platforms. It is a founding member of the World Trade Organization (and its predecessor GATT), taking part in negotiations on tariffs, subsidies, services and intellectual property and using the WTO dispute-settlement system. In SAARC it works for regional trade liberalization through the South Asian Free Trade Area (SAFTA), though intra-regional trade remains limited. With ASEAN, India has a free trade agreement that has increased trade in goods and services and linked India to Southeast Asian supply chains. Through these platforms India seeks market access, rule-based trading conditions, regional connectivity and a stronger voice in global trade governance.",
+          "explanation": "The answer describes India's role in each named platform and the common goals, directly addressing the 5-mark question.",
+          "oneShotPreview": "India engages WTO (global rules), SAARC/SAFTA (regional), and ASEAN FTA (market access and supply chains)."
+        },
+        {
+          "q": "b) Evaluate the benefits and challenges of bilateral trade agreements for India.",
+          "a": "Bilateral trade agreements benefit India by giving exporters preferential access to partner markets, attracting foreign investment, securing energy and raw-material supplies and integrating Indian firms into global value chains, as seen in agreements with the UAE, Australia and Japan; they also help diversify trade partners. The challenges include a possible flood of cheaper imports hurting domestic industries, especially small producers and agriculture, complex rules-of-origin and compliance requirements, and the risk that preferential deals distort trade or complicate India's WTO commitments. Negotiating power can be uneven, so benefits may not be symmetric. Overall the net gain depends on balanced terms that protect sensitive sectors while exploiting new market opportunities.",
+          "explanation": "The answer weighs both the gains and the risks of bilateral deals, gives examples and ends with a balanced judgement, which is what 'evaluate' requires.",
+          "oneShotPreview": "Benefits: market access, investment, supply security. Challenges: import surges, sensitive sectors, asymmetric terms."
+        },
+        {
+          "q": "a) Explain the objectives and features of India's EXIM Policy.",
+          "a": "The objectives of India's EXIM (Export-Import) Policy are to promote exports, regulate and rationalize imports, conserve and earn foreign exchange, achieve a favourable balance of payments and integrate India with the global economy. Its features include export promotion through incentives such as duty drawback and export-oriented units, gradual tariff reduction and removal of quantitative restrictions, simplified procedures, and provisions for special economic zones and trading houses. Framed under the Foreign Trade (Development and Regulation) Act, 1992 and administered by the DGFT, the policy is announced periodically and revised to reflect changing conditions. Since liberalization it has shifted steadily from protectionism toward an open, outward-oriented trading regime.",
+          "explanation": "The answer states the policy's objectives and lists its main instruments and characteristics, matching the 5-mark question.",
+          "oneShotPreview": "EXIM Policy objectives: promote exports, regulate imports, earn forex; features: incentives, lower tariffs, simplified procedures."
+        },
+        {
+          "q": "b) Elaborate on the role of the EXIM Bank of India in facilitating trade finance.",
+          "a": "The Export-Import Bank of India (EXIM Bank), established in 1982, is the principal specialized institution financing and promoting India's international trade. It provides export credit and term loans to exporters, offers buyer's credit and lines of credit to foreign buyers and governments, and supports project exports, joint ventures and overseas investment by Indian companies. The Bank also extends working-capital support, refinance facilities and credit guarantees, plus advisory and information services on export opportunities, markets and trade risks. By supplying long-term, affordable finance and risk cover, it helps Indian exporters, especially small and medium enterprises, compete internationally and execute large overseas contracts.",
+          "explanation": "The answer describes EXIM Bank's main financing and support functions and explains how they help exporters, covering the 5-mark question.",
+          "oneShotPreview": "EXIM Bank finances exports via buyer's credit, lines of credit, term loans and guarantees, helping Indian firms compete globally."
+        }
+      ]
+    },
+    "4": {
+      "unitTitle": "World Trade Organization",
+      "totalQuestions": 20,
+      "questions": [
+        {
+          "q": "1 a) What is WTO?",
+          "a": "The World Trade Organization (WTO) is an international intergovernmental organization that regulates and facilitates international trade among its member nations. Established on 1 January 1995 as the successor to GATT, it is headquartered in Geneva, Switzerland, and provides a framework for negotiating trade agreements, settling disputes, and ensuring a smooth, predictable flow of goods and services. It operates on the principles of non-discrimination, transparency, and fair competition, and currently has over 160 member countries.",
+          "explanation": "This is the standard definition of the WTO as the global body governing trade rules, which replaced GATT in 1995 and is based in Geneva.",
+          "oneShotPreview": "WTO: global body (est. 1995, Geneva) that sets trade rules, negotiates agreements and settles disputes."
+        },
+        {
+          "q": "1 b) What is GATT?",
+          "a": "GATT (General Agreement on Tariffs and Trade) was a multilateral trade agreement signed in 1947 by 23 countries to promote international trade by reducing tariffs, quotas and other trade barriers. It operated as a provisional agreement for nearly five decades through several negotiating rounds, such as the Kennedy Round and the Uruguay Round. Its main objective was to eliminate discrimination and liberalize trade through reciprocal tariff reductions. It was replaced by the WTO in 1995, which absorbed its principles into the GATT 1994 agreement.",
+          "explanation": "GATT is correctly identified as the 1947 tariff-reduction agreement that served as a provisional trade body and was superseded by the WTO.",
+          "oneShotPreview": "GATT: 1947 multilateral agreement to cut tariffs and trade barriers; absorbed into WTO in 1995."
+        },
+        {
+          "q": "1 c) What is TRIPS?",
+          "a": "TRIPS stands for Trade-Related Aspects of Intellectual Property Rights. It is a WTO agreement that sets minimum standards for the protection and enforcement of intellectual property rights such as patents, copyrights, trademarks, geographical indications and trade secrets among member countries. It was negotiated during the Uruguay Round and came into force in 1995. It aims to reduce distortions to international trade by harmonizing national IP laws and ensuring effective, equitable protection of creators and innovators.",
+          "explanation": "TRIPS is correctly defined as the WTO agreement dealing with intellectual property rights and harmonizing IP standards globally.",
+          "oneShotPreview": "TRIPS: WTO agreement setting global minimum standards for IPRs (patents, copyright, trademarks)."
+        },
+        {
+          "q": "1 d) What is dumping?",
+          "a": "Dumping is the practice of exporting a product to another country at a price lower than its normal value, typically below the price charged in the domestic market or below the cost of production. It is often done to capture foreign market share or eliminate competition, and it can injure the importing country's domestic industry. Importing countries may impose anti-dumping duties to offset the injury caused. WTO rules (GATT Article VI and the Anti-Dumping Agreement) permit such measures when material injury is proven.",
+          "explanation": "Dumping is correctly defined as selling abroad below normal or domestic value, with anti-dumping duties as the recognized remedy.",
+          "oneShotPreview": "Dumping: exporting below normal/domestic price; countered by anti-dumping duties."
+        },
+        {
+          "q": "1 e) What is the role of WTO in services trade?",
+          "a": "The WTO regulates international trade in services through the General Agreement on Trade in Services (GATS). GATS provides a multilateral framework of rules that gradually liberalizes services trade, covering sectors such as banking, insurance, telecommunications, transport and tourism. It operates on principles such as most-favoured-nation treatment, national treatment and market access, with members making specific commitments in schedules. It also provides a dispute settlement mechanism for services-related conflicts and allows for progressive negotiation of further liberalization.",
+          "explanation": "The WTO's role in services is defined by GATS, which sets the rules for gradual liberalization of services trade among members.",
+          "oneShotPreview": "WTO governs services via GATS — gradual liberalization, MFN/national treatment and market-access commitments."
+        },
+        {
+          "q": "2 Explain the origin and evolution of the World Trade Organization. Discuss its nature and significance in global trade.",
+          "a": "The WTO originated from GATT, signed in 1947 by 23 countries to reduce tariffs and other trade barriers. A proposed International Trade Organization (ITO) failed to materialize, so GATT served as a provisional trade body for nearly 50 years, conducting eight rounds of negotiations. The Uruguay Round (1986-1994) culminated in the Marrakesh Agreement, which formally created the WTO on 1 January 1995, headquartered in Geneva. The WTO is a permanent international organization with legal personality, a broad agenda covering goods, services and intellectual property, and a binding dispute settlement system. Its significance lies in providing a rule-based, non-discriminatory multilateral trading system that promotes predictability, transparency, and the peaceful resolution of trade conflicts.",
+          "explanation": "This traces the evolution from GATT (1947) through the Uruguay Round to the WTO (1995) and captures its nature and significance as a rule-based global trade body.",
+          "oneShotPreview": "WTO evolved from GATT (1947) via the Uruguay Round (1995); a permanent, rule-based body for goods, services and IP."
+        },
+        {
+          "q": "3 a) Write an essay on the objectives and fundamental principles of the WTO.",
+          "a": "The WTO's main objectives are to promote free and fair international trade, raise living standards, ensure full employment, and create a predictable trading environment for all members. Its fundamental principles include non-discrimination, expressed through most-favoured-nation (MFN) treatment and national treatment; transparency, through the publication of trade regulations; predictability, through bound commitments and schedules; promotion of fair competition; encouragement of development and economic growth, especially for developing countries; and protection of the environment and public health under specified exceptions. These principles are embedded in agreements such as GATT, GATS and TRIPS and are enforced through the WTO's dispute settlement mechanism.",
+          "explanation": "This lists the core objectives and the well-established fundamental principles of the WTO as set out in its founding agreements.",
+          "oneShotPreview": "WTO objectives: free/fair trade, development. Principles: MFN, national treatment, transparency, predictability, fair competition."
+        },
+        {
+          "q": "3 b) Discuss the need for establishing the WTO and its importance for developing countries.",
+          "a": "The WTO was needed because GATT was only a provisional agreement with limited scope, weak enforcement and no authority over services or intellectual property; a permanent, stronger institution was required to manage increasingly complex global trade. The WTO gives developing countries a seat at the table in multilateral negotiations, where they can voice concerns and form coalitions. The principle of special and differential treatment grants them longer transition periods, technical assistance and preferential market access. Its binding dispute settlement mechanism also protects weaker economies from unilateral trade actions by powerful nations. Through the WTO, developing countries can integrate into global value chains, attract investment and pursue export-led growth.",
+          "explanation": "This explains why a permanent WTO was needed to replace GATT and highlights the specific benefits — a voice, special treatment and dispute protection — for developing countries.",
+          "oneShotPreview": "WTO replaced weak GATT; gives developing nations a voice, special and differential treatment, and dispute protection."
+        },
+        {
+          "q": "4 Evaluate the impact of WTO policies on developing economies like India.",
+          "a": "WTO policies have had a mixed impact on developing economies like India. On the positive side, they promoted trade liberalization, reduced tariff and non-tariff barriers, opened export markets, attracted foreign investment, and gave India a platform to participate in global rule-making and settle disputes; exports of services, pharmaceuticals and IT grew significantly. However, the removal of quantitative restrictions and subsidy cuts exposed domestic agriculture and small industries to stiff competition, and the patent regime under TRIPS raised the cost of medicines and seeds. Uruguay Round commitments also forced cuts in import restrictions, creating short-term adjustment pain. Overall, the WTO accelerated India's integration into the global economy while requiring domestic reforms to remain competitive.",
+          "explanation": "This provides a balanced evaluation of both the benefits and the challenges that WTO membership brought to India, matching the 'Evaluate' demand of the question.",
+          "oneShotPreview": "WTO gave India export growth, investment and dispute access, but also tougher competition and TRIPS-related costs."
+        },
+        {
+          "q": "5 Describe the organizational structure of the WTO with its key bodies and functions.",
+          "a": "The WTO's structure is headed by the Ministerial Conference, the highest decision-making body, which meets at least once every two years and comprises all members. Below it is the General Council, which handles day-to-day decisions and meets as the Dispute Settlement Body and the Trade Policy Review Body. The General Council oversees specialized councils — the Goods Council, Services Council and TRIPS Council — each with committees and working parties. A Secretariat, led by the Director-General and based in Geneva, provides administrative and technical support. Additional committees deal with trade and development, the environment and the budget. This structure enables the WTO to negotiate agreements, monitor members' trade policies and resolve disputes.",
+          "explanation": "This accurately describes the WTO hierarchy — Ministerial Conference, General Council, the three councils and the Secretariat — together with their functions.",
+          "oneShotPreview": "WTO structure: Ministerial Conference → General Council (DSB/TPRB) → Goods, Services and TRIPS Councils plus the Secretariat."
+        },
+        {
+          "q": "6 a) Discuss the major functions of the WTO.",
+          "a": "The major functions of the WTO are to administer and implement the multilateral trade agreements; to provide a forum for members to negotiate trade rules and further liberalize trade; to settle trade disputes between members through its binding dispute settlement mechanism; to review the trade policies of members through the Trade Policy Review Mechanism; to provide technical assistance and training to developing countries; and to cooperate with other international organizations such as the IMF and World Bank for coherent global economic policy. It also monitors compliance with agreed rules and publishes trade statistics and data.",
+          "explanation": "These are the functions formally listed in the WTO Agreement (Article III) and widely taught in international trade courses.",
+          "oneShotPreview": "WTO functions: administer agreements, negotiate rules, settle disputes, review policies, aid developing nations."
+        },
+        {
+          "q": "6 b) Explain the advantages of the WTO system for member countries.",
+          "a": "The WTO system offers several advantages to member countries. It provides a rule-based, predictable trading environment that reduces uncertainty for businesses and governments. The non-discrimination principles of MFN and national treatment ensure fair treatment of all members. The dispute settlement mechanism offers an impartial, binding process that prevents powerful countries from acting unilaterally. Membership grants access to larger markets and the benefits of trade liberalization, while transparency and regular policy reviews build confidence. Developing members gain technical assistance, special and differential treatment and a voice in global rule-making, helping them integrate into the world economy.",
+          "explanation": "This enumerates the key benefits — predictability, fairness, binding dispute resolution, market access and support for developing countries — of WTO membership.",
+          "oneShotPreview": "WTO benefits: predictable rules, fair treatment, binding dispute resolution, market access and support for developing nations."
+        },
+        {
+          "q": "7 Explain the decision-making process and organizational hierarchy of the WTO.",
+          "a": "The WTO's highest authority is the Ministerial Conference, which meets at least once every two years and takes decisions on all multilateral trade agreements. Between its meetings, the General Council, composed of all members, conducts day-to-day business and also meets as the Dispute Settlement Body and the Trade Policy Review Body. Below it are the Goods Council, Services Council and TRIPS Council, along with committees on development, the environment and the budget. Decisions are generally taken by consensus — a decision is adopted if no member present objects; if consensus fails, voting may be used, with a simple majority in most cases and special majorities for waivers and amendments. The Secretariat, headed by the Director-General, supports the process administratively.",
+          "explanation": "This covers both the hierarchical structure and the consensus-based decision-making process, including the fallback to voting, as prescribed by the WTO Agreement.",
+          "oneShotPreview": "WTO decisions by consensus (voting fallback); Ministerial Conference → General Council → councils, supported by the Secretariat."
+        },
+        {
+          "q": "8 a) Examine the role of WTO in liberalizing international trade.",
+          "a": "The WTO plays a central role in liberalizing international trade by providing a permanent forum for multilateral negotiations to progressively reduce tariffs, quotas and non-tariff barriers. Agreements such as GATT, GATS and TRIPS lock in market-access commitments and bind members to schedules of concessions. The most-favoured-nation and national treatment principles extend liberalization uniformly across all members. The Trade Policy Review Mechanism monitors members' policies to ensure continued openness, while the dispute settlement system enforces compliance with liberalization commitments. Through successive negotiating rounds, the WTO has opened markets in goods and services and promoted global economic integration.",
+          "explanation": "This describes how the WTO drives trade liberalization through negotiations, binding commitments, monitoring and enforcement.",
+          "oneShotPreview": "WTO liberalizes trade via negotiating rounds, bound commitments, MFN/national treatment, policy review and dispute enforcement."
+        },
+        {
+          "q": "8 b) Discuss the WTO's contribution to reducing tariff and non-tariff barriers.",
+          "a": "The WTO has significantly reduced tariff and non-tariff barriers through successive negotiating rounds and binding commitments. Under GATT, members agreed to substantial tariff cuts, and the Uruguay Round further reduced tariffs and converted many non-tariff measures, such as import quotas, into ordinary tariffs — a process called tariffication, especially in agriculture. The WTO prohibits quantitative restrictions and requires transparency in import licensing, customs valuation and technical regulations. Agreements on Sanitary and Phytosanitary (SPS) measures and Technical Barriers to Trade (TBT) ensure that health and technical standards are not used as disguised protectionism. Dispute settlement and Trade Policy Reviews help discipline any resurgence of barriers.",
+          "explanation": "This correctly identifies tariffication of quotas, the ban on quantitative restrictions and the SPS/TBT disciplines as the WTO's key tools for reducing barriers.",
+          "oneShotPreview": "WTO cut tariffs, tarifficated quotas, banned quantitative restrictions and disciplined SPS/TBT measures."
+        },
+        {
+          "q": "9 Evaluate the impact of the Uruguay Round on international trade policies.",
+          "a": "The Uruguay Round (1986-1994) was the most comprehensive GATT negotiation and profoundly reshaped international trade policy. It created the WTO, extending the trading system beyond goods to services (GATS) and intellectual property (TRIPS). It achieved substantial tariff cuts, agreed to phase out the Multi-Fibre Arrangement's textile quotas, and introduced the Agreement on Agriculture, which required tariffication of agricultural barriers and reductions in export subsidies and domestic support. It strengthened dispute settlement through the Dispute Settlement Understanding and introduced the Trade Policy Review Mechanism, while adding rules on trade-related investment measures (TRIMS) and safeguards. Overall, it made global trade rules more comprehensive, enforceable and market-oriented, though developing countries faced significant adjustment costs.",
+          "explanation": "This evaluates the wide-ranging outcomes — WTO creation, GATS and TRIPS, agriculture reforms and a stronger dispute system — and their significance, matching the 'Evaluate' demand.",
+          "oneShotPreview": "Uruguay Round created the WTO, added GATS/TRIPS, reformed agriculture and strengthened dispute settlement."
+        },
+        {
+          "q": "10 a) Discuss the objectives and principles of GATT.",
+          "a": "GATT's main objectives were to promote international trade liberalization by substantially reducing tariffs and other trade barriers, to eliminate discrimination in international trade, and to promote economic growth and full employment. Its core principles were non-discrimination, embodied in the most-favoured-nation clause (Article I) and national treatment (Article III); transparency and the use of tariffs rather than quantitative restrictions as the principal instrument of protection (Article XI); reciprocity in tariff negotiations; and consultation and settlement of disputes. It operated through periodic rounds of multilateral tariff negotiations and allowed special treatment for developing countries.",
+          "explanation": "This states GATT's objectives and its established principles — MFN, national treatment, tariff-only protection and reciprocity — accurately.",
+          "oneShotPreview": "GATT goals: cut tariffs, end discrimination. Principles: MFN, national treatment, tariffs over quotas, reciprocity."
+        },
+        {
+          "q": "10 b) Explain the differences between GATT and WTO.",
+          "a": "GATT was a provisional multilateral agreement signed in 1947, concerned primarily with trade in goods, whereas the WTO is a permanent international organization established in 1995 with a broad scope covering goods, services and intellectual property. GATT had no formal institutional structure or legal personality, while the WTO has a permanent Secretariat, a General Council and a defined organizational hierarchy. GATT's dispute settlement was weak and easily blocked, whereas the WTO has a binding, quasi-judicial Dispute Settlement Understanding. GATT was a set of rules with limited enforcement and 23 founding contracting parties, while the WTO has over 160 members and a stronger, more enforceable system. The WTO absorbed and continues GATT as the GATT 1994 agreement.",
+          "explanation": "This captures the key distinctions — provisional versus permanent, goods-only versus goods/services/IP, weak versus binding dispute settlement, and institutional structure.",
+          "oneShotPreview": "GATT: provisional, goods-only, weak disputes. WTO: permanent body, goods+services+IP, binding DSU."
+        },
+        {
+          "q": "11 a) What is TRIMS? Discuss its objectives and provisions.",
+          "a": "TRIMS stands for Trade-Related Investment Measures. It is a WTO agreement that prohibits investment measures inconsistent with GATT principles, particularly those that restrict or distort trade. Its objective is to prevent host countries from imposing performance requirements that discriminate against foreign investors or distort trade flows, thereby promoting a more open and predictable environment for foreign direct investment. The agreement includes an illustrative list of prohibited measures, such as local-content requirements (requiring a fixed proportion of local inputs) and trade-balancing requirements (limiting imports to the value of exports). It also incorporates GATT's national treatment and prohibition of quantitative restrictions, and provides for notification, transparency and transition periods for developing countries.",
+          "explanation": "This defines TRIMS, states its objective of preventing trade-distorting investment measures, and lists its key prohibited provisions and developing-country provisions.",
+          "oneShotPreview": "TRIMS: WTO agreement banning trade-distorting investment rules like local-content and trade-balancing requirements."
+        },
+        {
+          "q": "11 b) Explain the concept of dumping in international trade.",
+          "a": "Dumping in international trade is the practice of a firm or country exporting a product at a price below its normal value — usually below the price charged in the home market or below the cost of production. It may be predatory, intended to drive out competitors and capture market share, or sporadic, intended to dispose of surplus stock. Dumping can injure the importing country's domestic industry by undercutting local producers. Under GATT Article VI and the WTO Anti-Dumping Agreement, importing countries may impose anti-dumping duties equal to the dumping margin when material injury to a domestic industry is established. Such measures must follow prescribed investigation procedures and cannot be used as disguised protectionism.",
+          "explanation": "This defines dumping, distinguishes its motives, and explains the GATT/WTO anti-dumping remedy, matching the question asking for the concept in international trade.",
+          "oneShotPreview": "Dumping: selling exports below normal value; remedy is anti-dumping duties when material injury is proven."
+        }
+      ]
+    },
+    "5": {
+      "unitTitle": "Money Markets and Capital Markets",
+      "totalQuestions": 19,
+      "questions": [
+        {
+          "q": "1 a) What is a Money Market?",
+          "a": "The money market is the segment of the financial market where short-term funds are borrowed and lent for periods up to one year. It deals in highly liquid, low-risk instruments such as Treasury bills, commercial paper, certificates of deposit, repurchase agreements and call money. It is primarily an institutional, wholesale market used by banks, the government and large corporations to manage temporary liquidity and working-capital needs. In India, the money market is regulated and developed by the Reserve Bank of India.",
+          "explanation": "Defines the market by its short tenor (up to one year), high liquidity and representative instruments, which is the standard textbook meaning.",
+          "oneShotPreview": "Market for short-term borrowing and lending (up to one year) in liquid instruments like T-bills and commercial paper."
+        },
+        {
+          "q": "1 b) What is a Capital Market?",
+          "a": "The capital market is the segment of the financial market where long-term funds are raised and invested, typically for periods beyond one year. It channels the savings of households and institutions into long-term investments through instruments such as equity shares, debentures, bonds and mutual funds. It comprises the primary market (new issues) and the secondary market (trading of existing securities) and is regulated in India by SEBI. It enables companies and the government to finance expansion and infrastructure projects.",
+          "explanation": "Correctly identifies the long-term horizon, the instruments, the primary/secondary split and the Indian regulator.",
+          "oneShotPreview": "Market for long-term funds (beyond one year) via shares, bonds and debentures, regulated by SEBI."
+        },
+        {
+          "q": "1 c) Define financial markets.",
+          "a": "A financial market is a mechanism or platform where buyers and sellers come together to create and trade financial assets such as shares, bonds, currencies and other securities. It facilitates the flow of funds from savers (investors) to borrowers (issuers), thereby allocating capital efficiently in the economy. Financial markets may be organised or unorganised and are broadly classified into money markets (short-term) and capital markets (long-term). They provide liquidity, price discovery, risk management and mobilisation of savings.",
+          "explanation": "Gives the standard definition and the core function of channelling savings into investment, plus the basic classification.",
+          "oneShotPreview": "Platform where savers and borrowers meet to trade financial assets and allocate capital efficiently."
+        },
+        {
+          "q": "1 d) What is Call Money Market?",
+          "a": "The call money market is a segment of the Indian money market where banks borrow and lend short-term funds on a call basis, that is, for one day or up to a few days (generally 1 to 14 days). It is operated mainly through the Bombay Stock Exchange and the National Stock Exchange and is confined to scheduled banks and certain financial institutions. The loans are unsecured and repayable on demand, and the interest rate (call rate) moves daily according to the demand and supply of funds. The Reserve Bank of India watches the call rate as a key signal of liquidity in the banking system.",
+          "explanation": "Correctly describes the very short tenor, participants, unsecured nature and the importance of the call rate.",
+          "oneShotPreview": "Overnight/short-term interbank lending market; the call rate signals banking-system liquidity."
+        },
+        {
+          "q": "1 e) What does SEBI stand for?",
+          "a": "SEBI stands for the Securities and Exchange Board of India. It is the statutory regulator of the securities and commodity markets in India, established in 1988 and given statutory powers under the SEBI Act, 1992. Its main objectives are to protect investors, regulate and develop the capital market, and ensure fair, transparent and orderly trading. SEBI regulates stock exchanges, intermediaries, mutual funds and listed companies.",
+          "explanation": "Expands the acronym correctly and adds the essential regulatory context and objectives.",
+          "oneShotPreview": "Securities and Exchange Board of India — India's securities-market regulator, set up 1988, statutory since 1992."
+        },
+        {
+          "q": "2 Explain the Introduction, Nature, Meaning, Significance, Functions and Advantages of Money Markets",
+          "a": "The money market is the market for short-term funds dealing in instruments with maturities of up to one year, such as Treasury bills, commercial paper, certificates of deposit and repurchase agreements. Its nature is that of an institutional, wholesale and highly liquid market dominated by banks, the RBI, the government and large corporations, with low risk and modest returns. It is significant because it provides short-term liquidity to banks and the government, helps the RBI implement monetary policy through rates such as the repo and call rate, and supplies working capital to industry. Its functions include mobilising short-term savings, providing an avenue for temporary surplus funds, enabling banks to manage reserve requirements and creating a benchmark for short-term interest rates. The advantages are high liquidity, safety of principal, quick conversion into cash, low transaction costs and better returns on idle short-term funds for lenders, while borrowers obtain flexible, low-cost short-term finance. In India the money market has been broadened through RBI initiatives and instruments such as T-bills, CP, CDs and repos.",
+          "explanation": "Covers every part asked — meaning and nature, significance, functions and advantages — with correct Indian instruments and regulatory context.",
+          "oneShotPreview": "Short-term (up to one year) wholesale funds market — liquid, low-risk, central to liquidity and monetary policy."
+        },
+        {
+          "q": "3 a) Describe the Features and Components of the Indian Financial System.",
+          "a": "The Indian financial system is the network of institutions, markets, instruments and services that mobilise savings and channel them into productive investment. Its main features are a well-developed banking network, a growing capital market, an active money market, a strong regulatory framework (RBI, SEBI, IRDAI, PFRDA) and increasing digitalisation and financial inclusion. Its key components are: (1) financial institutions — commercial banks, the RBI, development banks, NBFCs and insurance companies; (2) financial markets — the money market and the capital market (primary and secondary); (3) financial instruments — shares, debentures, bonds, T-bills, mutual fund units and derivatives; and (4) financial services — banking, investment banking, asset management, insurance and advisory services. Together these components facilitate capital formation, risk management, liquidity and efficient allocation of resources.",
+          "explanation": "Identifies the four standard components and lists genuine features, matching both parts of the question.",
+          "oneShotPreview": "Institutions + markets + instruments + services that channel savings into investment under RBI/SEBI regulation."
+        },
+        {
+          "q": "3 b) Explain the Structure, Nature and Functions of Capital Markets.",
+          "a": "The capital market is the long-term segment of the financial market and is structured into the primary market, where new securities are issued for the first time through an IPO or FPO, and the secondary market, where existing securities are traded on stock exchanges such as the BSE and NSE. Its nature is that of a formal, regulated, market-driven mechanism dealing in equity and debt instruments with maturities beyond one year, where prices are discovered through demand and supply. Its main functions are to mobilise long-term savings, facilitate capital formation for companies and the government, provide liquidity and an exit route to investors through secondary trading, discover fair prices, allocate capital efficiently and offer risk-return choices to investors. In India, SEBI regulates the capital market to ensure transparency, fairness and investor protection.",
+          "explanation": "Covers structure (primary/secondary), nature (long-term, regulated, price discovery) and functions with correct examples.",
+          "oneShotPreview": "Primary + secondary markets for long-term securities; mobilise savings, provide liquidity and price discovery."
+        },
+        {
+          "q": "4 Discuss the Role, Importance and Advantages of Capital Markets in Economic Development.",
+          "a": "Capital markets play a central role in economic development by channelling household and institutional savings into productive long-term investment. They enable companies to raise equity and debt for expansion, research and infrastructure, and allow the government to fund development projects. This capital formation raises output, creates employment, encourages innovation and lifts the overall growth rate of the economy. The capital market also provides liquidity to investors through secondary trading, discovers prices that guide efficient resource allocation, offers a range of instruments to suit different risk appetites and widens the ownership of industry through shareholder participation. It supports corporate governance and transparency, attracts foreign institutional investment and helps redistribute wealth. A vibrant capital market therefore lowers the cost of capital, spreads risk and accelerates inclusive growth. In India, reforms such as dematerialisation, electronic trading and SEBI's regulatory framework have strengthened this developmental role.",
+          "explanation": "Links capital markets to savings mobilisation, capital formation, growth, liquidity and efficient allocation, covering role, importance and advantages.",
+          "oneShotPreview": "Channels savings into long-term investment, driving capital formation, employment, innovation and economic growth."
+        },
+        {
+          "q": "5 Explain the Various Reforms and Recent Developments in the Indian Capital Market.",
+          "a": "Indian capital market reforms began in earnest in the 1990s after the Harshad Mehta scam and economic liberalisation, with SEBI becoming a statutory regulator under the SEBI Act, 1992. Key reforms include the introduction of electronic, screen-based trading on the NSE in 1994, replacement of the flawed badla system with rolling settlement, and dematerialisation of securities through depositories — NSDL in 1996 and CDSL in 1999. Other measures are shorter settlement cycles (T+1), the introduction of derivatives trading in 2000, takeover and delisting regulations, mandatory book-building for public issues, the ASBA mechanism for online IPO applications, and stricter disclosure and corporate-governance norms for listed companies. Recent developments include rising retail participation through digital platforms, growth of mutual funds and SIPs, foreign portfolio investment, simplified listing norms for SMEs and greater use of technology such as algorithmic trading. These reforms have made the market more transparent, liquid, efficient and globally integrated while improving investor protection.",
+          "explanation": "Lists the landmark reforms with correct dates and the main recent trends, and states their outcomes.",
+          "oneShotPreview": "SEBI Act 1992, NSE screen trading, demat and depositories, rolling settlement, ASBA, derivatives and digital retail growth."
+        },
+        {
+          "q": "6 a) Explain the Nature, Functions and Importance of Stock Exchanges in India.",
+          "a": "A stock exchange is a formal, organised market where securities such as shares and debentures listed on it are bought and sold under regulated rules. Its nature is that of a regulated, transparent, auction-based marketplace — in India the main exchanges are the BSE and NSE, governed by SEBI. Its functions include providing a platform for continuous trading, ensuring liquidity, discovering fair prices through demand and supply, safeguarding transactions through clearing and settlement machinery, enforcing listing and disclosure norms and protecting investors. Stock exchanges are important because they enable companies to raise long-term capital, give investors liquidity and an exit route, provide price benchmarks through indices such as the Sensex and Nifty, promote corporate governance and reflect the overall health of the economy.",
+          "explanation": "Covers nature, functions and importance, naming BSE/NSE and the major indices correctly.",
+          "oneShotPreview": "Regulated platform (BSE/NSE) for trading listed securities; delivers liquidity, price discovery and capital raising."
+        },
+        {
+          "q": "6 b) Describe the Structure, Working and Listing Procedure of Stock Exchanges.",
+          "a": "Structurally, a stock exchange is an association of members or a company with a governing board, a managing director and committees that frame rules, together with trading members, brokers and a clearing house or clearing corporation; the BSE and NSE in India are demutualised, corporatised exchanges. It works through an electronic, screen-based trading system in which buy and sell orders are matched by price and time priority, after which the clearing corporation settles trades on a fixed cycle (now T+1) through demat accounts. The listing procedure requires a company to apply to the exchange with a prospectus and supporting documents, satisfy eligibility norms relating to financials, shareholding and market capitalisation, obtain SEBI approval for the public issue, allot the securities through the primary market, sign a listing agreement and then commence trading. Continuous disclosure and governance norms must be followed after listing.",
+          "explanation": "Addresses all three parts — structure, trading and settlement working, and the stepwise listing procedure — accurately.",
+          "oneShotPreview": "Board, members and clearing house; screen-based order matching with T+1 settlement; listing needs SEBI and exchange approval."
+        },
+        {
+          "q": "7 Explain the Difference Between Money Market and Capital Market with Examples.",
+          "a": "The money market deals in short-term funds with maturities up to one year, while the capital market deals in long-term funds with maturities beyond one year. Money market instruments include Treasury bills, commercial paper, certificates of deposit, repos and call money; capital market instruments include equity shares, debentures, bonds and mutual fund units. The money market is primarily an institutional, wholesale market dominated by banks, the RBI and the government, whereas the capital market serves both institutional and retail investors through stock exchanges. The money market emphasises liquidity and safety of principal with lower returns, while the capital market offers higher returns with greater risk and supports long-term capital formation. For example, a bank borrows overnight in the call money market to meet its reserve requirement, whereas a company raises funds by issuing shares or debentures on the NSE to build a new factory. The money market is regulated mainly by the RBI and the capital market by SEBI.",
+          "explanation": "Contrasts tenor, instruments, participants, purpose, risk and return, and regulator, with a correct example for each.",
+          "oneShotPreview": "Money market = up to one year, liquid T-bills/CP; capital market = long-term shares and bonds traded on exchanges."
+        },
+        {
+          "q": "8 Explain the Role of SEBI in Monitoring Mutual Funds and Collective Investment Schemes.",
+          "a": "SEBI is the statutory regulator of India's securities market and regulates mutual funds and collective investment schemes under the SEBI (Mutual Funds) Regulations, 1996 and the SEBI (Collective Investment Schemes) Regulations, 1999. It registers and authorises mutual funds and asset management companies, approves the launch of new schemes and their offer documents, and prescribes investment norms, exposure limits and risk-management standards. SEBI ensures full and fair disclosure to investors through scheme information documents, standardises performance reporting and advertising, and requires segregated portfolios, independent custodians and periodic audits to safeguard investor assets. It monitors mutual funds through inspections, surveillance and disclosures, enforces the code of conduct for intermediaries and takes action against mis-selling, unfair practices and unauthorised collective investment schemes. For collective investment schemes, SEBI registers scheme managers, regulates the pooling of funds and prescribes disclosure and trustee arrangements while cracking down on fraudulent, unregistered schemes. Overall, SEBI protects investors, ensures transparency and builds confidence in pooled investment vehicles.",
+          "explanation": "Covers registration, scheme approval, disclosure, custody, surveillance and enforcement for both mutual funds and collective investment schemes.",
+          "oneShotPreview": "SEBI registers and monitors mutual funds/CIS, enforcing disclosure, custody, limits and action against fraud."
+        },
+        {
+          "q": "9 a) Describe the Role of Financial Institutions in Indian Financial System.",
+          "a": "Financial institutions are the backbone of the Indian financial system, mobilising savings from the public and channelling them into productive investment. They include commercial banks, the Reserve Bank of India, development financial institutions such as IFCI, IDBI, NABARD and SIDBI, insurance companies, mutual funds and non-banking financial companies. Their roles include accepting deposits and granting credit, providing long-term project finance to industry, agriculture and infrastructure, offering insurance and pension services, underwriting and facilitating capital issues and giving investment advisory services. The RBI regulates and supervises the system, controls money supply and maintains financial stability, while development institutions promote priority sectors and balanced regional growth. In this way financial institutions bridge the gap between savers and borrowers, support capital formation and drive economic development.",
+          "explanation": "Names the main institutions and lists their core functions of mobilising savings, lending, regulation and development.",
+          "oneShotPreview": "Banks, development finance bodies, insurers and mutual funds channel savings into credit and investment."
+        },
+        {
+          "q": "9 b) Explain the Significance of Financial Market Reforms Since 1991.",
+          "a": "Financial market reforms since 1991 were part of India's liberalisation programme and aimed at making the system efficient, competitive and globally integrated. Their significance lies in dismantling controls such as the administered interest-rate regime and restrictive bank licensing, replacing them with market-determined interest rates and greater competition. Reforms strengthened regulation and supervision through bodies such as SEBI, introduced prudential norms covering capital adequacy, income recognition and asset classification, moved to electronic screen-based trading and dematerialisation, and opened the market to foreign portfolio investors. They improved transparency, widened the investor base, lowered transaction costs and raised the quality of service. As a result, Indian financial markets became deeper, more liquid and more stable, better able to mobilise savings and finance economic growth.",
+          "explanation": "Captures the post-1991 liberalisation measures and their outcomes — efficiency, transparency, competition and stability.",
+          "oneShotPreview": "Post-1991 liberalisation decontrolled rates, strengthened regulation, digitised trading and deepened the markets."
+        },
+        {
+          "q": "10 Write an essay on the Importance of Investor Education and Awareness in Financial Markets.",
+          "a": "Investor education and awareness means equipping people with the knowledge and skills to make informed investment decisions and to understand the risks, costs and rights associated with financial products. It is important because it protects investors from mis-selling, fraud and unauthorised or ponzi schemes, and helps them distinguish genuine opportunities from spurious ones. Educated investors can better assess risk and return, read offer documents, diversify portfolios and set realistic expectations, which reduces panic-driven decisions during market volatility. Awareness also widens participation in formal financial markets, increasing savings and channelling them into productive investment, thereby supporting capital formation and economic growth. It strengthens market integrity, since informed investors demand transparency, question unfair practices and enforce corporate governance. In India, SEBI, the BSE, the NSE, mutual funds and the government run investor-awareness programmes, toll-free helplines and grievance-redressal mechanisms such as SCORES. Ultimately, investor education builds confidence, inclusion and stability in the financial system, which is why it is regarded as a cornerstone of investor protection.",
+          "explanation": "Covers protection from fraud, informed decisions, market integrity and the Indian institutional framework, suiting an essay-type answer.",
+          "oneShotPreview": "Educated investors avoid fraud, make informed choices and strengthen market integrity, inclusion and stability."
+        },
+        {
+          "q": "11 a) Describe the Growth, Challenges, and Future Prospects of Indian Stock Exchanges.",
+          "a": "Indian stock exchanges have grown rapidly from the Bombay Stock Exchange, established in 1875, to a modern technology-driven system led by the BSE and the NSE, with demutualisation, electronic screen-based trading, dematerialisation and a large derivatives market. Key challenges include relatively low retail participation compared with the population, concentration in a few large exchanges, risks of market manipulation and volatility, historical delays in settlement, gaps in corporate governance and the need to curb excessive speculation. Future prospects are promising: rising retail and institutional participation through digital platforms and SIPs, growing foreign portfolio flows, shorter settlement cycles, wider use of technology such as algorithmic trading and blockchain-based systems, and product innovation. Continued SEBI oversight, stronger disclosures and investor education will help Indian exchanges deepen further and compete on the global stage.",
+          "explanation": "Traces the growth from BSE to NSE-era reforms, lists real challenges and outlines credible future prospects in the Indian context.",
+          "oneShotPreview": "From BSE in 1875 to NSE, demat and derivatives; challenges are retail depth and volatility, future is digital and global."
+        },
+        {
+          "q": "11 b) Explain the Key Instruments of Money Market and Their Importance in Short-Term Finance.",
+          "a": "The key money market instruments are Treasury bills issued by the government (91, 182 and 364 days), commercial paper issued by corporations as short-term unsecured promissory notes, certificates of deposit issued by banks, repurchase agreements (repo and reverse repo), call and term money, and bankers' acceptances and commercial bills. Each meets a different short-term need: T-bills finance government expenditure and act as a safe benchmark, commercial paper and certificates of deposit give corporations and banks quick access to working capital, and repos provide collateralised overnight liquidity. These instruments are important because they offer highly liquid, low-risk avenues for deploying temporary surplus funds and give borrowers flexible, low-cost short-term finance. They help banks manage reserve requirements and liquidity, enable the RBI to signal and transmit monetary policy through short-term rates, and support the smooth working of trade and industry. They are therefore vital to short-term financial stability and efficient cash management.",
+          "explanation": "Names the main instruments, links each to its use and explains their role in liquidity and monetary-policy transmission.",
+          "oneShotPreview": "T-bills, CP, CDs, repos and call money — liquid, low-risk tools for short-term liquidity and policy rates."
+        }
+      ]
+    }
+  },
   "23CS0512": {
     "1": {
       "unitTitle": "Introduction and ER Model",
@@ -1845,6 +2459,643 @@ export const QB_QUESTIONS = {
           "oneShotPreview": "Cash Dr / Capital Cr; Purchases Dr / Cash or Mohan Cr; Suresh Dr / Sales Cr; Mohan and salaries paid in cash."
         }
       ]
+    }
+  },
+  "23HS0851": {
+    "1": {
+      "unitTitle": "Introduction to Organizational Behavior",
+      "totalQuestions": 20,
+      "questions": [
+        {
+          "q": "a) Define Organizational Behavior. [2 Marks]",
+          "a": "Organizational behavior (OB) is a field of study that investigates the impact that individuals, groups, and structure have on behavior within organizations, for the purpose of applying such knowledge toward improving an organization's effectiveness (Robbins). It is the systematic study of how people act and interact in work settings and how the organization itself influences that behavior. In essence, it examines human behavior at work and applies behavioral knowledge to make organizations more effective and humane.",
+          "explanation": "This is Robbins' standard definition; it names the three levels of analysis (individual, group, structure) and the applied goal of improving effectiveness.",
+          "oneShotPreview": "OB = study of how individuals, groups and structure affect behavior at work, applied to improve effectiveness."
+        },
+        {
+          "q": "b) Define Attitude. [2 Marks]",
+          "a": "An attitude is an evaluative statement, favorable or unfavorable, concerning objects, people, or events (Robbins). It is a relatively stable learned tendency to respond consistently in a positive or negative way toward a particular target. Attitudes are made up of cognitive, affective, and behavioral components and are formed through experience and learning.",
+          "explanation": "This captures the standard definition and signals the ABC structure that is examined in later questions.",
+          "oneShotPreview": "Attitude = a learned, stable favorable or unfavorable evaluative response tendency toward a target (ABC components)."
+        },
+        {
+          "q": "c) Define Perception. [2 Marks]",
+          "a": "Perception is a process by which individuals organize and interpret their sensory impressions in order to give meaning to their environment (Robbins). It is how people select, receive, organize, and interpret information from the people and events around them. Because people perceive the same situation differently, perception strongly influences their attitudes and behavior at work.",
+          "explanation": "The definition emphasizes that perception is an active process of organizing and interpreting, not merely passive sensing.",
+          "oneShotPreview": "Perception = selecting, organizing and interpreting sensory impressions to give meaning to the environment."
+        },
+        {
+          "q": "d) Define Learning. [2 Marks]",
+          "a": "In OB, learning is defined as a relatively permanent change in behavior or behavior potential that occurs as a result of practice, training, or experience. It does not include temporary changes caused by fatigue, drugs, or maturation. Learning takes place through classical conditioning, operant conditioning, and social or observational learning, and it helps employees acquire new skills and behaviors.",
+          "explanation": "The key elements are relatively permanent change and learning through practice or experience, which distinguish learning from temporary states.",
+          "oneShotPreview": "Learning = relatively permanent behavior change from practice or experience; classical, operant, social learning."
+        },
+        {
+          "q": "e) Define Personality. [2 Marks]",
+          "a": "Personality is the sum total of the ways in which an individual reacts to and interacts with others; it is a relatively stable set of psychological traits and characteristics that shape how a person thinks, feels, and behaves. It is shaped by both heredity and environment and is commonly described using trait models such as the Big Five. In organizations, personality helps predict job performance, leadership, and person-job fit.",
+          "explanation": "The definition highlights stability, individual differences, and the heredity-environment basis used throughout OB.",
+          "oneShotPreview": "Personality = stable traits and patterns of reacting and interacting with others, shaped by nature and nurture."
+        },
+        {
+          "q": "f) Define Organizing. [2 Marks]",
+          "a": "Organizing is the management function of defining and grouping tasks, assigning duties and responsibilities, and establishing authority and reporting relationships so that organizational objectives can be achieved efficiently. It determines what work is to be done, who will do it, how tasks are grouped, who reports to whom, and where decisions are made. It converts plans into a working structure of roles and relationships.",
+          "explanation": "This highlights organizing as structuring work and authority, which is the foundation for the later organizing-process questions.",
+          "oneShotPreview": "Organizing = grouping work, assigning duties and authority, defining reporting relationships to achieve goals."
+        },
+        {
+          "q": "a) Explain the nature of Organizational Behavior. [5 Marks]",
+          "a": "OB is an interdisciplinary applied behavioral science that draws on psychology, sociology, social psychology, anthropology, political science, and economics. It is systematic and scientific because it uses research and general laws to explain behavior, yet it is also humanistic and pragmatic, aiming to improve real workplace outcomes. It is contingent or situational, meaning behavior depends on the individual, the group, and the organizational context, and it operates at multiple levels: individual, group, and organization. It is dynamic, constantly evolving as people and environments change, and it is value-laden in its goal of enhancing both effectiveness and human well-being.",
+          "explanation": "A 5-mark answer should list and briefly explain the defining characteristics: interdisciplinary, applied, systematic, humanistic, contingent, multi-level, and dynamic.",
+          "oneShotPreview": "Nature of OB: interdisciplinary, applied, systematic, humanistic, contingent/situational, multi-level, dynamic."
+        },
+        {
+          "q": "b) Explain the scope of Organizational Behavior. [5 Marks]",
+          "a": "The scope of OB covers the study of three main determinants of behavior in organizations: individuals, groups, and organizational structure. At the individual level it examines personality, perception, attitudes, learning, motivation, job satisfaction, and stress. At the group level it covers group dynamics, communication, leadership, power and politics, conflict, and decision making. At the organizational level it addresses structure, culture, change, and design; it also extends into human resource management, organizational development, and cross-cultural behavior. Thus OB is broad in scope and relevant to nearly every aspect of managing people.",
+          "explanation": "The standard scope is organized around the individual-group-structure framework with representative topics at each level.",
+          "oneShotPreview": "Scope of OB: individuals (personality, perception, attitudes, learning) + groups (leadership, conflict, communication) + structure/culture/change."
+        },
+        {
+          "q": "c) Discuss the functions and importance of studying Organizational Behavior. [5 Marks]",
+          "a": "Studying OB helps managers explain, predict, and control human behavior at work. It improves organizational effectiveness and productivity by showing how to motivate employees, design satisfying jobs, and build effective teams. It enhances leadership, communication, and decision making and helps manage conflict, power, and organizational change. It also promotes job satisfaction, commitment, and well-being, leading to lower turnover and absenteeism, and supports better person-job fit through an understanding of personality and attitudes. Overall, OB bridges theory and practice to create a more humane and high-performing workplace.",
+          "explanation": "The functions follow from the three goals of OB (explain, predict, control) plus concrete benefits to effectiveness and employee well-being.",
+          "oneShotPreview": "OB functions: explain/predict/control behavior; boost motivation, productivity, leadership, teamwork; manage conflict and change; improve satisfaction."
+        },
+        {
+          "q": "a) Explain the three components of attitude with suitable examples (ABC model). [5 Marks]",
+          "a": "According to the ABC model, an attitude has three components. The affective component is the emotional or feeling reaction toward a target, such as liking or disliking one's job. The behavioral component is the intention to behave in a certain way, such as planning to quit or speaking favorably about the organization. The cognitive component is the belief, opinion, or knowledge about the target, such as believing the job offers good career growth. These three components usually operate together and help predict how a person will respond at work.",
+          "explanation": "The ABC (affective, behavioral, cognitive) structure is the standard breakdown of attitudes; each component is defined and illustrated.",
+          "oneShotPreview": "ABC of attitude: Affective (feelings), Behavioral (intention to act), Cognitive (beliefs and opinions)."
+        },
+        {
+          "q": "b) Explain the perception process and the factors that influence perception. [5 Marks]",
+          "a": "Perception involves receiving sensory information, selecting what to attend to, organizing it into meaningful patterns, interpreting it, and then responding. The process is influenced by three sets of factors: perceiver factors (attitudes, motives, interests, expectations, experience, and personality), target factors (novelty, motion, sound, size, background, proximity, and similarity), and situational factors (time, place, and social context). Because these factors differ from person to person, two people can perceive the same event differently. Perceptual shortcuts such as the halo effect, stereotyping, selective perception, and attribution errors further shape what we perceive.",
+          "explanation": "A complete answer covers the stages of the process and the classic three-category framework of perceptual influences.",
+          "oneShotPreview": "Perception: receive, select, organize, interpret, respond; influenced by perceiver, target and situational factors."
+        },
+        {
+          "q": "c) Describe classical conditioning and its relevance to learning. [5 Marks]",
+          "a": "Classical conditioning, associated with Ivan Pavlov, is a form of associative learning in which a neutral stimulus is repeatedly paired with an unconditioned stimulus until it alone produces a conditioned response. For example, a neutral cue such as a bell becomes associated with food and eventually triggers salivation by itself. Key principles include generalization (responding to similar stimuli), discrimination (distinguishing between stimuli), and extinction (the response fading when pairing stops). In organizations, classical conditioning explains how employees develop emotional reactions, such as anxiety or positive feelings, to workplace cues like a manager's tone or a meeting room.",
+          "explanation": "The answer defines classical conditioning, explains the stimulus-response mechanism, notes key principles, and relates it to work behavior.",
+          "oneShotPreview": "Classical conditioning (Pavlov): pair neutral plus unconditioned stimulus to get a conditioned response; generalization, discrimination, extinction."
+        },
+        {
+          "q": "d) Describe operant conditioning and the role of reinforcement. [5 Marks]",
+          "a": "Operant conditioning, developed by B. F. Skinner, holds that behavior is determined by its consequences; people repeat behavior that is rewarded and avoid behavior that is punished. Positive reinforcement strengthens a response by presenting a desirable consequence such as a bonus, while negative reinforcement strengthens it by removing an unpleasant consequence. Punishment weakens behavior by presenting an aversive outcome or removing a pleasant one, and extinction weakens it by withdrawing reinforcement altogether. Reinforcement can be delivered on continuous or intermittent schedules, with variable-ratio schedules producing behavior most resistant to extinction. Managers apply operant principles through rewards, incentives, feedback, and discipline to shape employee behavior.",
+          "explanation": "This covers Skinner's core premise, the four consequence types, reinforcement schedules, and managerial application.",
+          "oneShotPreview": "Operant conditioning (Skinner): behavior shaped by consequences, positive/negative reinforcement, punishment, extinction; schedules matter."
+        },
+        {
+          "q": "e) Explain the organizing process and its main steps. [5 Marks]",
+          "a": "Organizing is the process of arranging work and resources so that plans can be accomplished; it answers what work is done, who does it, how tasks are grouped, who reports to whom, and where decisions are made. Its main steps are recognizing the need to organize, establishing objectives, determining the activities needed to reach those objectives, grouping related activities into departments or units, assigning duties and responsibilities to individuals, establishing authority and reporting relationships through delegation and the chain of command, coordinating the activities, and finally evaluating and redesigning the structure as needed. These steps convert strategy into a functioning organizational structure.",
+          "explanation": "The answer lists the logical sequence of organizing steps, which is what a 5-mark explanation requires.",
+          "oneShotPreview": "Organizing steps: recognize need, set objectives, determine activities, group into units, assign duties, define authority, coordinate, evaluate."
+        },
+        {
+          "q": "f) Suggest measures for making organizing effective. [5 Marks]",
+          "a": "Organizing is effective when it is built on clear objectives and a proper division of work so that each task is assigned to the most suitable person. It requires a clear authority-responsibility relationship, unity of command (one boss per employee), and an appropriate span of control so that managers are neither overloaded nor underutilized. Effective organizing also depends on good coordination, effective delegation, open communication, and flexibility to adapt the structure to changing conditions. Managers should avoid both over-organization, which creates excessive rules and layers, and under-organization, which creates ambiguity and duplication. Attention to human factors such as morale and motivation and to classical principles such as Fayol's division of work and esprit de corps also improves organizing.",
+          "explanation": "The answer gives concrete theory-backed measures, including Fayol's principles, unity of command, span of control, delegation, and flexibility.",
+          "oneShotPreview": "Effective organizing: clear goals and division of work, unity of command, proper span, delegation, coordination, flexibility; avoid over/under-organization."
+        },
+        {
+          "q": "Discuss Organizational Behavior in detail under the following heads: (a) its nature and (b) its scope. [10 Marks]",
+          "a": "Organizational behavior is the systematic study of how individuals, groups, and structure affect behavior within organizations, applied to improve effectiveness (Robbins). Its nature is that of an interdisciplinary, applied behavioral science drawing on psychology, sociology, social psychology, anthropology, political science, and economics; it is systematic, humanistic, pragmatic, contingent, multi-level, and dynamic. Its scope is conventionally organized around three levels: the individual (personality, perception, attitudes, learning, motivation, job satisfaction, stress), the group (group dynamics, communication, leadership, power and politics, conflict, decision making), and the organization (structure, culture, change, organizational development). OB has also expanded into cross-cultural behavior, ethics, and human resource applications. By combining explanation, prediction, and control of behavior, OB helps managers improve productivity, satisfaction, and adaptability. Its nature and scope therefore make it a practical, people-centered discipline central to modern management.",
+          "explanation": "A 10-mark essay must define OB, elaborate its nature characteristics, and detail its scope at individual, group, and organization levels with applications.",
+          "oneShotPreview": "OB nature: interdisciplinary, applied, contingent, multi-level, dynamic; scope: individual, group, organization levels plus HR and cross-cultural applications."
+        },
+        {
+          "q": "Explain the major theories of personality and their relevance to organizations. [10 Marks]",
+          "a": "Personality is the relatively stable pattern of traits and the ways an individual reacts to and interacts with others, shaped by heredity and environment. The Big Five model (OCEAN) identifies Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism; conscientiousness in particular is a strong predictor of job performance across many jobs. Type A personalities are competitive, impatient, and time-urgent and are linked to stress, while Type B personalities are more relaxed and easygoing. Rotter's locus of control distinguishes internalizers, who believe they control outcomes, from externalizers, who attribute outcomes to luck or fate; internals tend to be more motivated and satisfied. Other useful concepts include Machiavellianism, self-monitoring, risk propensity, the Myers-Briggs Type Indicator, and Holland's personality-job fit. In organizations, understanding personality helps in selection, placement, team composition, leadership, and predicting behavior and performance.",
+          "explanation": "A 10-mark essay should define personality, describe the major theories (Big Five, Type A/B, locus of control, and others), and connect them to managerial use.",
+          "oneShotPreview": "Personality theories: Big Five (OCEAN), Type A/B, locus of control, Machiavellianism, self-monitoring, MBTI, person-job fit."
+        },
+        {
+          "q": "Explain attitude formation and attitude change: (a) how attitudes are formed, (b) the attitude-behavior relationship, and (c) cognitive dissonance. [10 Marks]",
+          "a": "Attitudes are favorable or unfavorable evaluative statements about objects, people, or events, composed of affective, behavioral, and cognitive components. They are formed through learning, including classical conditioning, operant conditioning, and observational learning, as well as through direct experience, social influence, and cognition. The attitude-behavior relationship is moderated by factors such as consistency among the components, specificity, relevance, accessibility, and social constraints; attitudes predict behavior best when they are specific and strongly held. Attitudes change through persuasion, which depends on the communicator's credibility, the message, the audience, and the channel, and through cognitive dissonance. Festinger's cognitive dissonance theory states that inconsistency between attitudes or between attitude and behavior creates psychological discomfort that motivates a person to restore consistency by changing the attitude, changing the behavior, or rationalizing the difference. In organizations these ideas are applied to shift employee attitudes toward work, change, and diversity.",
+          "explanation": "A 10-mark essay must cover components, formation, moderators of the attitude-behavior link, persuasion, and cognitive dissonance, with organizational relevance.",
+          "oneShotPreview": "Attitudes (ABC) form via learning and experience; behavior link moderated by specificity and relevance; change via persuasion and cognitive dissonance (Festinger)."
+        },
+        {
+          "q": "Explain the major learning theories and their applications: (a) classical conditioning, (b) operant conditioning, and (c) social learning theory. [10 Marks]",
+          "a": "Learning is a relatively permanent change in behavior resulting from practice or experience, and three major theories explain how it occurs. Classical conditioning (Pavlov) creates associations between stimuli so that a formerly neutral cue comes to elicit a response, with generalization, discrimination, and extinction as key processes. Operant conditioning (Skinner) holds that behavior is controlled by its consequences: positive and negative reinforcement strengthen behavior, while punishment and extinction weaken it, and reinforcement schedules such as variable-ratio affect how resistant behavior is to extinction. Social cognitive or social learning theory (Bandura) emphasizes learning by observing and imitating models, vicarious reinforcement, and self-efficacy, the belief in one's ability to perform a task. Organizations apply these theories in training and development, reward and incentive systems, feedback, coaching, role modeling by leaders, and shaping work habits. Together they explain how employees acquire skills, adopt norms, and change behavior.",
+          "explanation": "A 10-mark essay requires defining learning, explaining each major theory with its key mechanisms, and showing practical applications at work.",
+          "oneShotPreview": "Learning theories: classical (Pavlov), operant (Skinner: reinforcement and punishment), social learning (Bandura: modeling, self-efficacy); applied to training and rewards."
+        },
+        {
+          "q": "Explain the organizing process and the principles of effective organizing: (a) steps in the process and (b) how to make organizing effective. [10 Marks]",
+          "a": "Organizing is the management function that turns plans into a working structure by deciding what tasks are performed, who performs them, how they are grouped, who reports to whom, and where decisions are made. The process typically includes recognizing the need for organizing, setting objectives, identifying and classifying activities, grouping them into departments, assigning duties and responsibilities, establishing authority and reporting relationships through delegation and the chain of command, coordinating activities, and evaluating and redesigning the structure. Effective organizing follows classical principles associated with Fayol, such as division of work, authority with responsibility, unity of command, unity of direction, subordination of individual to general interest, fair remuneration, centralization, the scalar chain, order, equity, stability, initiative, and esprit de corps. In practice managers should also ensure a clear structure, an appropriate span of control, effective delegation, good coordination and communication, and enough flexibility to adapt to change. Both over-organization, which creates rigidity and delay, and under-organization, which creates confusion and duplication, must be avoided. When these conditions are met, resources are used efficiently and members understand their roles, which supports organizational effectiveness.",
+          "explanation": "A 10-mark essay should define organizing, walk through its steps, enumerate Fayol's principles, and add practical guidelines with the over/under-organization caution.",
+          "oneShotPreview": "Organizing process: objectives, activities, grouping, assignment, authority, coordination, evaluation; effective via Fayol's principles, span, delegation, flexibility."
+        }
+      ],
+      "source": "syllabus-derived"
+    },
+    "2": {
+      "unitTitle": "Motivation and Leading",
+      "totalQuestions": 20,
+      "questions": [
+        {
+          "q": "1 a) Define the term motivation as used in organizational behaviour.",
+          "a": "Motivation is the internal drive or set of forces that arouses, directs and sustains a person's behaviour towards attaining a goal. It explains why people choose to act, how much effort they put in and how long they persist. In organizations, motivated employees channel their energy toward organizational objectives while also satisfying their personal needs. Motivation is usually described as a need-satisfaction process: an unsatisfied need creates tension that stimulates behaviour aimed at reducing it.",
+          "explanation": "A standard definition naming arousal, direction and persistence, plus the need-satisfaction view, is exactly what a two-mark definition requires.",
+          "oneShotPreview": "Inner drive that arouses, directs and sustains effort toward a goal; unsatisfied need creates tension to act."
+        },
+        {
+          "q": "1 b) State Maslow's hierarchy of needs.",
+          "a": "Maslow arranged human needs in a five-level hierarchy: at the base are physiological needs (food, water, shelter, sleep), then safety and security needs, then belongingness or social needs (friendship, love, group membership), then esteem needs (self-respect, recognition, status), and at the top self-actualization needs (realizing one's full potential). The levels run from the most basic to the most growth-oriented. The two lower levels are often called deficit or lower-order needs and the upper levels growth or higher-order needs.",
+          "explanation": "The answer lists all five levels in the correct bottom-to-top order and notes the lower versus higher order grouping.",
+          "oneShotPreview": "Physiological -> Safety -> Belongingness -> Esteem -> Self-actualization (bottom to top)."
+        },
+        {
+          "q": "2 a) Explain Maslow's hierarchy of needs and its main assumptions.",
+          "a": "Maslow proposed that human behaviour is driven by a hierarchy of needs arranged in order of priority. A need that is substantially satisfied no longer motivates, and a higher-level need emerges only after the lower one is at least partly satisfied; this is the principle of prepotency. The first four levels (physiological, safety, belongingness and esteem) are deficit or D-needs, which arise from a lack and whose satisfaction reduces tension, while self-actualization is a growth or B-need whose satisfaction increases rather than reduces the desire for more. For a manager this means rewards must match the employee's current unsatisfied level: pay and safe conditions for lower needs, recognition and challenging work for higher needs. The theory therefore stresses that people are motivated by many different needs at different times.",
+          "explanation": "It covers the hierarchy, prepotency, the satisfied-need principle and the deficit-versus-growth distinction, which are the core assumptions examiners expect.",
+          "oneShotPreview": "Needs are prepotent; satisfied needs stop motivating; deficit (D) vs growth (B) needs; rewards must fit the current level."
+        },
+        {
+          "q": "2 b) Discuss Maslow's hierarchy of needs as a theory of motivation. What are its managerial implications and limitations?",
+          "a": "Maslow's hierarchy states that people are motivated by a progression of needs from physiological, safety, belongingness and esteem up to self-actualization, with lower needs being prepotent over higher ones. A satisfied need ceases to motivate, so managers must identify where each employee currently sits and design rewards accordingly: fair pay and safe workplaces for basic needs, team belonging and recognition for social and esteem needs, and challenging, meaningful work and growth opportunities for self-actualization. The theory's strength is that it recognizes multiple and changing human needs and links motivation to more than just money. Its limitations are that the fixed order is not always followed (people may sacrifice safety or esteem for self-actualization), it is difficult to test empirically, the categories overlap, and it is criticized as culturally biased toward individualistic, material values. Despite this, it remains a useful framework for understanding that different employees are motivated by different rewards at different career stages.",
+          "explanation": "A full essay states the theory, derives concrete managerial applications, then balances them with the standard criticisms of rigidity, testability and cultural bias.",
+          "oneShotPreview": "Five prepotent needs; match rewards to the employee's level; limited by rigid order, weak testability and cultural bias."
+        },
+        {
+          "q": "3 a) Distinguish between hygiene factors and motivators in Herzberg's theory.",
+          "a": "Herzberg called extrinsic job-context factors 'hygiene factors': company policy, supervision, salary, working conditions, interpersonal relations, status and job security. Their presence prevents dissatisfaction but does not create lasting satisfaction or motivation; their absence causes dissatisfaction. Intrinsic 'motivators' are achievement, recognition, the work itself, responsibility, advancement and growth; their presence produces satisfaction and drives effort, while their absence produces only 'no satisfaction,' not active dissatisfaction. Thus pay and conditions can keep an employee from being unhappy but cannot by themselves make that employee motivated.",
+          "explanation": "The key two-mark point is the asymmetry: hygiene removes dissatisfaction while motivators create satisfaction, with correct examples of each.",
+          "oneShotPreview": "Hygiene (extrinsic) prevents dissatisfaction; motivators (intrinsic) create satisfaction and effort."
+        },
+        {
+          "q": "3 b) Explain Herzberg's two-factor theory of motivation with suitable examples.",
+          "a": "Herzberg interviewed accountants and engineers and found that satisfying experiences at work came from intrinsic factors and dissatisfying experiences from extrinsic ones, leading to the two-factor or motivation-hygiene theory. He argued that satisfaction and dissatisfaction are not opposites: the opposite of satisfaction is 'no satisfaction' and the opposite of dissatisfaction is 'no dissatisfaction.' Hygiene factors such as salary, supervision, working conditions, company policy and relations with peers prevent dissatisfaction when adequate, so improving them only brings an employee from dissatisfied to neutral. Motivators such as achievement, recognition, responsibility, the work itself and advancement create genuine satisfaction and push the employee from neutral to satisfied. A manager who only raises pay will remove complaints but will not energize staff; to motivate, the job must be enriched with responsibility, recognition and interesting work. The theory therefore separates 'keeping people content' from 'actually motivating them.'",
+          "explanation": "The answer gives the research basis, the two-factor continuum distinction, examples from both categories and the practical job-enrichment consequence.",
+          "oneShotPreview": "Extrinsic hygiene prevents dissatisfaction; intrinsic motivators cause satisfaction; enrich jobs rather than just paying more."
+        },
+        {
+          "q": "4 a) Discuss Herzberg's two-factor theory and explain how it can be applied to job design. Also mention its limitations.",
+          "a": "Herzberg's two-factor theory, based on critical incidents from accountants and engineers, holds that job satisfaction and dissatisfaction arise from two separate sets of factors. Hygiene or extrinsic factors (salary, supervision, working conditions, company policy, status, security and interpersonal relations) cause dissatisfaction when absent or inadequate but at best produce only 'no dissatisfaction' when present. Motivators or intrinsic factors (achievement, recognition, the work itself, responsibility, advancement and growth) are the true sources of satisfaction and motivation. The practical application is job enrichment, or vertical loading: redesigning jobs to give workers more responsibility, autonomy, variety, feedback and opportunities for growth, rather than merely improving pay or conditions. This can be done by combining tasks, forming natural work groups, enlarging jobs vertically, opening feedback channels and allowing employees to plan and control their own work. The theory's merits are its emphasis on intrinsic rewards and its influence on job design. Its limitations are a small, specific sample, a method that may bias respondents to blame external factors for dissatisfaction, the possibility that a factor such as salary can act as both hygiene and motivator, and neglect of individual and situational differences.",
+          "explanation": "A complete essay covers the theory, the hygiene/motivator split, concrete job-enrichment applications and the standard methodological and conceptual criticisms.",
+          "oneShotPreview": "Hygiene prevents dissatisfaction; motivators satisfy; apply via job enrichment; limited by method, sample and overlapping factors."
+        },
+        {
+          "q": "5 a) Define expectancy, instrumentality and valence as used in Vroom's theory.",
+          "a": "In Vroom's expectancy theory, expectancy is the person's belief that effort will lead to successful performance (an effort-to-performance link). Instrumentality is the belief that successful performance will lead to a particular outcome or reward (a performance-to-outcome link). Valence is the value or attractiveness that the individual places on that outcome, which may be positive, negative or zero. Together these three perceptions determine how strongly a person is motivated to act.",
+          "explanation": "Each term is defined by its specific link in the effort-performance-reward chain, which is exactly what the two-mark question asks.",
+          "oneShotPreview": "Expectancy: effort->performance. Instrumentality: performance->reward. Valence: value of the reward."
+        },
+        {
+          "q": "5 b) Explain Vroom's expectancy theory of motivation.",
+          "a": "Vroom's expectancy theory is a cognitive process theory stating that people are motivated when they believe effort will produce performance, performance will produce rewards, and those rewards are valuable to them. Motivation is expressed multiplicatively as Motivation = Expectancy x Instrumentality x Valence (M = E x I x V), so if any one of the three is zero, overall motivation is zero. Expectancy is the perceived effort-to-performance probability, instrumentality is the perceived performance-to-outcome link, and valence is the attractiveness of the outcome to that individual. Because it is multiplicative, high pay will not motivate someone who doubts that extra effort can improve performance or who does not trust that rewards are genuinely tied to performance. The theory also recognizes individual differences: the same reward has different valence for different employees. Managers can apply it by training staff to raise expectancy, making reward systems transparent and performance-based to raise instrumentality, and offering rewards employees actually value to raise valence.",
+          "explanation": "The answer states the formula and its multiplicative logic, defines all three components and gives clear managerial applications.",
+          "oneShotPreview": "M = E x I x V; if any term is zero, motivation collapses; raise expectancy, make rewards contingent, match valences."
+        },
+        {
+          "q": "6 a) Discuss Vroom's expectancy theory. How can a manager use it to motivate employees?",
+          "a": "Vroom's expectancy theory is a process theory of motivation built on the idea that people make rational, cognitive choices about how much effort to expend. It proposes that Motivation = Expectancy x Instrumentality x Valence. Expectancy is the belief that effort will lead to performance; instrumentality is the belief that performance will lead to a reward; and valence is the personal value of that reward. Because the three are multiplied, motivation is high only when all three are high and falls to zero if any is absent. The theory is individualistic, since expectancy and valence differ from person to person, unlike the universal hierarchies of content theories. A manager can apply it in three ways: raise expectancy by giving training, clear goals, adequate resources and support so employees believe effort can succeed; raise instrumentality by designing transparent, credible performance-contingent reward systems and explaining them clearly; and raise valence by finding out what individual employees value and tailoring rewards, for example pay, recognition, promotion or flexible working. For example, a salesperson will work hard only if they believe extra calls will raise sales, that higher sales will genuinely earn a bonus, and that the bonus is something they want. The theory's strengths are its precision and its focus on perception and individual differences; its weaknesses are the assumption of rational calculation, difficulty of measuring the variables and the fact that it describes motivation without fully explaining how needs arise.",
+          "explanation": "A strong essay states the model and formula, contrasts it with content theories, gives three concrete managerial levers plus an example, and ends with balanced evaluation.",
+          "oneShotPreview": "M = E x I x V; managers boost expectancy via support, instrumentality via contingent rewards, valence via valued rewards."
+        },
+        {
+          "q": "7 a) State the three needs in McClelland's theory of motivation.",
+          "a": "McClelland's acquired-needs theory identifies three needs: the need for achievement (nAch), the desire to excel and meet standards of excellence; the need for power (nPow), the desire to control resources and influence other people; and the need for affiliation (nAff), the desire for friendly and close interpersonal relationships. These needs are learned from culture and life experience rather than being innate.",
+          "explanation": "Naming and briefly defining nAch, nPow and nAff, and noting that they are learned, satisfies the two-mark requirement.",
+          "oneShotPreview": "Need for achievement (nAch), power (nPow) and affiliation (nAff); all are learned needs."
+        },
+        {
+          "q": "7 b) Explain McClelland's theory of needs (acquired needs theory).",
+          "a": "McClelland proposed that people acquire three dominant needs from their culture and experiences: achievement, power and affiliation, usually measured through a thematic apperception test in which people interpret pictures. People with a high need for achievement want to excel, take calculated risks, assume personal responsibility and receive clear feedback; they prefer tasks of moderate difficulty and are often strong entrepreneurs or technical performers but not necessarily good managers. People with a high need for power want to influence and control others; when this power is socialized and used for organizational goals it supports effective leadership, whereas personalized power is self-serving. People with a high need for affiliation value friendly relationships, belonging and approval, and perform well in roles requiring cooperation, though they may avoid conflict and hard decisions. Because one need usually dominates, managers should identify each employee's dominant need and assign work that satisfies it, and can deliberately arouse achievement motivation through training. Unlike Maslow, the theory holds that these needs are learned and that more than one can be active at a time.",
+          "explanation": "The answer covers the three needs in detail, the measurement method, behaviour associated with each and the managerial matching application.",
+          "oneShotPreview": "Learned nAch, nPow, nAff measured by TAT; identify the dominant need and fit the job to it."
+        },
+        {
+          "q": "8 a) Discuss McClelland's theory of needs and explain its implications for selecting and developing managers.",
+          "a": "McClelland's acquired-needs theory states that behaviour is driven by three needs learned from culture and experience: achievement, power and affiliation. A high need for achievement (nAch) produces people who seek challenging but attainable goals, take calculated risks, want personal responsibility and clear feedback, and prefer to work alone or with experts; such people often excel as entrepreneurs and specialists but may focus on their own performance rather than developing others. A high need for power (nPow) is the drive to influence others; McClelland distinguished personalized power, used for self-interest, from socialized power, used to serve the group and the organization, and found that effective managers tend to have a strong, socialized need for power. A high need for affiliation (nAff) creates a desire for warm relationships and approval, which helps in team and customer roles but may make a person reluctant to make unpopular decisions. The managerial implication is that dominant needs can be assessed, for example with the Thematic Apperception Test, and used for selection, placement and training: place high-nAch people in challenging independent roles, cultivate socialized power in managerial candidates through responsible leadership opportunities, and use training programmes to arouse achievement motivation where a task requires it. The theory's value lies in its emphasis that needs are learned and can be developed, and that different people are driven by different dominant needs. Its limitations are that measurement is subjective, the link between need and performance depends on the situation, and it offers less guidance on needs such as security or recognition.",
+          "explanation": "A complete essay defines all three needs with their behavioural signatures, distinguishes socialized from personalized power, and draws concrete selection, placement and training implications plus criticisms.",
+          "oneShotPreview": "nAch, nPow (socialized for leadership), nAff; assess with TAT and match or train needs for roles."
+        },
+        {
+          "q": "9 a) State the basic assumptions of Theory X and Theory Y.",
+          "a": "Theory X assumes that employees dislike work and will avoid it whenever possible, so they must be coerced, controlled, directed and threatened with punishment to achieve goals; it also assumes they prefer to be directed, avoid responsibility, have little ambition and seek security above all. Theory Y assumes that work is as natural as play or rest, that people will exercise self-control and self-direction when committed to objectives, that commitment depends on rewards such as self-actualization, that people accept and seek responsibility under suitable conditions, and that imagination, ingenuity and creativity are widely distributed in the population.",
+          "explanation": "The answer lists the classic negative assumptions of Theory X and the positive assumptions of Theory Y as set out by McGregor.",
+          "oneShotPreview": "X: people dislike work, avoid responsibility, need control. Y: work is natural, people self-direct and seek responsibility."
+        },
+        {
+          "q": "9 b) Contrast McGregor's Theory X and Theory Y and state their implications for management.",
+          "a": "McGregor's Theory X and Theory Y are two opposing sets of assumptions that managers hold about human nature at work. Theory X is the traditional, negative view: people dislike work, avoid responsibility, need close supervision and direction, and are motivated mainly by money and the threat of punishment. Theory Y is a positive view: work is natural, people can be self-directed and self-controlled when committed to goals, they seek responsibility, and creativity and intellectual potential are widely distributed. These assumptions shape management style: a Theory X manager uses authority, tight controls, close supervision and extrinsic rewards, while a Theory Y manager uses participation, delegation, job enrichment, trust and self-management. McGregor argued that Theory Y releases people's potential because it treats higher-order needs such as esteem and self-actualization as real motivators, linking his ideas to Maslow and Herzberg. Importantly, the assumptions can become a self-fulfilling prophecy: employees treated as irresponsible may behave irresponsibly, while those trusted with autonomy often rise to it. The practical implication is that managers should examine their own assumptions and adopt Theory Y-style practices where the task and people allow.",
+          "explanation": "It contrasts both assumption sets, derives the corresponding leadership styles, connects Theory Y to higher-order needs and notes the self-fulfilling prophecy.",
+          "oneShotPreview": "X -> control and coercion; Y -> participation and trust; assumptions become self-fulfilling, so adopt Theory Y."
+        },
+        {
+          "q": "10 a) Discuss McGregor's Theory X and Theory Y. How do a manager's assumptions about people influence the style of leadership they adopt?",
+          "a": "In 'The Human Side of Enterprise,' Douglas McGregor argued that every manager operates from a set of assumptions about human nature, and he labelled the two extremes Theory X and Theory Y. Theory X assumes that people dislike work and avoid it, must be coerced and closely controlled, prefer direction, shun responsibility, have little ambition and put security first; it leads to an autocratic style with tight supervision, detailed rules and reliance on extrinsic rewards and punishment. Theory Y assumes that work is as natural as play, that people will self-control and self-direct when committed to objectives, that commitment is linked to rewards such as self-actualization, that people accept and seek responsibility, and that creativity is widely distributed; it leads to a participative, delegating style built on trust, job enrichment, team involvement and self-management. Because the manager's assumptions shape how subordinates are treated, they tend to become self-fulfilling prophecies: Theory X treatment can produce dependent, low-initiative employees, whereas Theory Y treatment can draw out commitment and initiative. Theory Y is conceptually linked to Maslow's higher-order needs and Herzberg's motivators and underlies modern practices such as empowerment and participative management. The theory's contribution is to make managers reflect on their own beliefs and to highlight the human potential released by trust. Its limitations are that it offers no firm empirical proof, presents an oversimplified either-or view, and pays too little attention to situational and cultural factors, which later contingency theories addressed.",
+          "explanation": "A full essay states both assumption sets, connects each to a leadership style, explains the self-fulfilling prophecy and the links to Maslow and Herzberg, then evaluates the theory.",
+          "oneShotPreview": "X -> autocratic control; Y -> participative trust; assumptions become self-fulfilling; links to Maslow/Herzberg; limited by weak evidence."
+        },
+        {
+          "q": "11 a) Define equity theory and state what counts as inputs and outcomes.",
+          "a": "Adams' equity theory holds that people are motivated by a desire for fairness in the exchange between what they contribute and what they receive. Inputs are the contributions a person brings to the job, such as effort, time, education, experience, ability, loyalty and seniority. Outcomes are what the person receives in return, such as pay, recognition, benefits, status, promotion and job satisfaction. Employees compare the ratio of their outcomes to their inputs with the ratio of a referent person or system, and perceived unfairness creates tension that motivates action to restore equity.",
+          "explanation": "The answer defines equity as a fairness comparison and correctly lists typical inputs and outcomes.",
+          "oneShotPreview": "People seek fairness by comparing outcomes/inputs with a referent; inputs = effort, skill, time; outcomes = pay, recognition."
+        },
+        {
+          "q": "11 b) Explain Adams' equity theory and describe how employees react to perceived inequity.",
+          "a": "Adams' equity theory proposes that employees evaluate fairness by comparing the ratio of their outcomes to their inputs with the ratio of a referent such as a coworker, a friend, their own past experience or the organization's system. When the ratios are roughly equal the person experiences equity and is satisfied; when they differ, the person experiences inequity and a tension that drives action to restore balance. Inequity can be underpayment, where one's own outcome-to-input ratio is lower than the referent's, or overpayment, where it is higher; both create discomfort, though underpayment usually produces a stronger reaction. Employees restore equity in several ways: they may change inputs by working harder or less hard, change outcomes by seeking a raise or better conditions, distort their own or the referent's perceptions, change to a different referent, or leave the situation by transferring or quitting. Managers should therefore design pay and recognition systems that are seen as fair and explain the reasoning behind decisions. The theory highlights that perceived fairness, not just absolute reward, drives motivation and satisfaction.",
+          "explanation": "The answer covers the outcome/input comparison, referents, both directions of inequity and the main behavioural and psychological responses.",
+          "oneShotPreview": "Compare outcome/input ratio with a referent; inequity creates tension; restore by changing inputs, outcomes, perceptions or leaving."
+        },
+        {
+          "q": "12 a) Discuss Adams' equity theory of motivation. What practical lessons does it hold for managers?",
+          "a": "Adams' equity theory is a process theory stating that motivation is governed by a person's perception of fairness in the social exchange of work. Employees compare their outcome-to-input ratio with that of a referent, who may be another person in a similar job, themselves in an earlier role or situation, or the organization's policies and practices. Inputs include effort, education, experience, ability and seniority; outcomes include pay, recognition, promotion and benefits. If the ratios match, equity exists and the employee is satisfied; if they do not, inequity arises and creates tension that the employee is driven to reduce. Underpayment inequity typically causes anger and reduced effort, while overpayment inequity may cause guilt and attempts to increase inputs or re-evaluate the referent. People restore equity by changing their inputs, changing their outcomes, cognitively distorting the comparison, changing referent or leaving through transfer or resignation. For managers the practical lessons are to build transparent, consistent and equitable reward systems, to communicate clearly how pay and promotions are decided so that procedural justice is visible, to watch for comparison groups and relative pay rather than only absolute levels, and to address perceptions of unfairness early through dialogue. The theory's strengths are its realism about social comparison and its explanation of pay dissatisfaction and turnover. Its limitations are that it ignores individual and cultural differences, does not say which referent a person will choose, and assumes a largely rational calculation of inputs and outcomes.",
+          "explanation": "A complete essay defines the theory, covers referents and both inequity directions, lists restoration behaviours, draws managerial lessons and evaluates strengths and weaknesses.",
+          "oneShotPreview": "Fairness of outcome/input ratios vs referents drives motivation; design transparent rewards; limited by referent ambiguity."
+        },
+        {
+          "q": "13 a) Compare content and process theories of motivation, using Maslow, Herzberg, McClelland, Vroom and Adams as examples.",
+          "a": "Theories of motivation are commonly grouped into content theories, which ask 'what' motivates people, and process theories, which explain 'how' motivation occurs. Content theories include Maslow's hierarchy, Herzberg's two-factor theory and McClelland's acquired-needs theory. Maslow proposes a five-level prepotent hierarchy from physiological needs to self-actualization, Herzberg separates extrinsic hygiene factors that prevent dissatisfaction from intrinsic motivators that create satisfaction, and McClelland describes three learned needs for achievement, power and affiliation. These theories identify specific needs or rewards but are criticized for being static and for assuming the same needs apply to everyone. Process theories include Vroom's expectancy theory and Adams' equity theory. Vroom argues that motivation equals expectancy times instrumentality times valence, so effort depends on believed links from effort to performance and performance to valued rewards. Adams argues that people are motivated by fairness, comparing their outcome-to-input ratio with a referent and acting to reduce perceived inequity. Process theories are more dynamic, recognize individual differences and perceptions, and explain why the same reward motivates one person but not another, but they are more complex and assume rational calculation. Together the two approaches are complementary: content theories tell managers which rewards may matter, while process theories show how to make the link from effort to reward credible and fair.",
+          "explanation": "The essay correctly classifies all five theories, explains each briefly, contrasts the two approaches with strengths and weaknesses, and shows how they complement each other for managers.",
+          "oneShotPreview": "Content (Maslow, Herzberg, McClelland) = what needs motivate; process (Vroom, Adams) = how effort, reward and fairness drive choice."
+        }
+      ],
+      "source": "syllabus-derived"
+    },
+    "3": {
+      "unitTitle": "Organizational Culture",
+      "totalQuestions": 20,
+      "questions": [
+        {
+          "q": "1 a) Define Organizational Culture. (2 marks)",
+          "a": "Organizational culture is the set of shared values, beliefs, norms and assumptions held by the members of an organization that shapes the way they think, feel and behave. According to Edgar Schein, it is the shared, taken-for-granted implicit assumptions a group has developed that determine how it perceives, thinks about and reacts to its environment. Culture is learned over time, transmitted to new members and gives the organization its distinct identity. It acts as a social glue that binds people together and guides their day-to-day decisions and actions.",
+          "explanation": "This is the standard academic definition anchored in Schein's widely accepted view; it captures the shared, learned and behaviour-shaping nature of culture.",
+          "oneShotPreview": "Shared values, beliefs and assumptions that shape how members think, feel and behave in an organization."
+        },
+        {
+          "q": "1 b) State any two features (nature) of Organizational Culture. (2 marks)",
+          "a": "Two key features are: (1) It is learned and shared — culture is acquired through experience and socialisation and is common to members rather than belonging to one individual. (2) It is relatively stable yet dynamic — culture endures over time but evolves slowly as the organization and its environment change. Other important features are its multidimensional nature (values, symbols, rituals and language), its pervasive influence across all levels and its power to shape member behaviour. These features make culture a durable but changeable force in organizational life.",
+          "explanation": "It names and briefly explains two genuine, commonly cited features of culture, then notes others for completeness.",
+          "oneShotPreview": "Learned and shared; relatively stable yet slowly changing — plus multidimensional, pervasive and behaviour-shaping."
+        },
+        {
+          "q": "1 c) Explain the scope of Organizational Culture. (3 marks)",
+          "a": "The scope of organizational culture is broad: it covers the shared values, beliefs, norms, symbols, rituals, heroes, language and stories that define an organization's identity. It operates at every level, from visible artifacts to deep underlying assumptions, and influences all functions such as decision-making, communication, leadership, motivation and interpersonal relations. Its scope spans both internal integration (how members work together and relate to one another) and external adaptation (how the organization responds to its environment). Culture therefore pervades the whole organization rather than any single department or activity.",
+          "explanation": "It explains scope by listing what culture includes, where it operates and the two classic functions (internal integration and external adaptation) identified by Schein.",
+          "oneShotPreview": "Covers values to artifacts across all levels and functions, serving internal integration and external adaptation."
+        },
+        {
+          "q": "2 Describe Schein's three-level model of Organizational Culture. (5 marks)",
+          "a": "Edgar Schein proposed that culture operates at three levels. (1) Artifacts: the visible, tangible surface level — office layout, logos, dress, rituals, language, technology and published values — easy to observe but hard to decode. (2) Espoused values: the conscious, stated values, norms and philosophies that members articulate as guiding principles, such as 'customer first' or 'innovation'. (3) Basic underlying assumptions: the unconscious, taken-for-granted beliefs and perceptions that are invisible but are the true essence of culture, silently dictating how members perceive, think and act. The levels range from the obvious outer surface to the deep, hidden core. The deepest assumptions are the hardest to identify and the most resistant to change, so real cultural change must address them rather than only the artifacts.",
+          "explanation": "It correctly names and describes all three of Schein's levels in order and explains the key insight that deeper levels are less visible and harder to change.",
+          "oneShotPreview": "Artifacts (visible) → espoused values (stated) → basic assumptions (unconscious core)."
+        },
+        {
+          "q": "3 Define Organizational Culture and explain its meaning, nature and importance with the help of Schein's model. (10 marks)",
+          "a": "Organizational culture is the set of shared values, beliefs, norms and basic assumptions that members hold and that shape their thinking and behaviour; Schein defines it as the shared, taken-for-granted assumptions a group develops while adapting to its environment. In meaning, culture is the collective mindset or 'personality' of an organization, expressing what it stands for and how things are done. Its nature is learned, shared, multidimensional, relatively stable yet dynamic, and pervasive across all levels. Schein's model shows it at three levels: visible artifacts, conscious espoused values and invisible basic underlying assumptions. Culture is important because it provides identity, guides behaviour, builds cohesion, shapes decisions, supports external adaptation and can be a source of competitive advantage. A strong, positive culture raises commitment, motivation and performance, while a toxic culture encourages misconduct, resistance and high turnover. Managers therefore need to diagnose and intentionally shape culture, focusing on deep assumptions rather than surface symbols alone.",
+          "explanation": "It defines the term, addresses meaning and nature, applies Schein's three levels and then derives concrete importance, matching every part of the essay question.",
+          "oneShotPreview": "Shared values and assumptions (artifacts → values → basic assumptions) give identity, guide behaviour and drive performance."
+        },
+        {
+          "q": "4 a) Define Organizational Climate. (2 marks)",
+          "a": "Organizational climate refers to the prevailing atmosphere or perceived quality of the internal working environment as experienced by employees — their shared perceptions of policies, practices, leadership, reward systems and interpersonal relations. It is often described as the 'mood' or 'feel' of the organization at a given time. Climate is relatively surface-level, measurable and changeable when compared with the deeper, more stable culture. A favourable climate encourages trust, openness, cooperation and high performance.",
+          "explanation": "It defines climate in terms of shared perceptions of the work environment and distinguishes it from deeper culture by noting it is measurable and changeable.",
+          "oneShotPreview": "Employees' shared perception of the work atmosphere — the measurable, changeable 'feel' of the organization."
+        },
+        {
+          "q": "4 b) Distinguish between Organizational Culture and Organizational Climate. (5 marks)",
+          "a": "Organizational culture is the deep, relatively stable set of shared values, beliefs and basic assumptions that gives an organization its enduring identity, whereas organizational climate is the more surface-level, perceptible atmosphere or mood of the workplace at a particular time. Culture is deeper, harder to change and rooted in the organization's history, while climate is relatively temporary, easier to measure and strongly influenced by current policies and leadership. Culture answers 'who we are and what we stand for'; climate answers 'what it feels like to work here now'. Culture consists of values and assumptions, while climate consists of members' perceptions of practices such as support, reward, communication, autonomy and fairness. Climate can be shifted fairly quickly by managerial action, but changing culture requires long-term, deep intervention that addresses underlying assumptions.",
+          "explanation": "It distinguishes the two concepts on depth, stability, measurability, content and speed of change — the standard points of comparison in OB texts.",
+          "oneShotPreview": "Culture = deep, stable shared values; climate = surface, changeable perceptions of the current work atmosphere."
+        },
+        {
+          "q": "5 Explain the importance of a healthy Organizational Climate. (5 marks)",
+          "a": "A healthy organizational climate is important because it directly influences employee morale, motivation, satisfaction and commitment. It encourages open communication, mutual trust, cooperation and teamwork, which reduce interpersonal conflict and improve coordination. A supportive climate fosters creativity, risk-taking and organisational learning, helping the firm adapt to change and innovate. It also improves productivity and performance, supports retention of talented staff and reduces absenteeism and turnover. Since climate is shaped by leadership style and HR policies, managers can deliberately build a positive climate as a practical route to better organizational outcomes.",
+          "explanation": "It links a healthy climate to concrete outcomes — morale, trust, innovation, performance and retention — and notes that managers can shape it.",
+          "oneShotPreview": "A healthy climate lifts morale, trust and innovation, improving performance and cutting turnover."
+        },
+        {
+          "q": "6 a) Define Leadership. (2 marks)",
+          "a": "Leadership is the process of influencing and guiding a group of people towards the achievement of common goals. It involves setting direction, motivating followers, building commitment and coordinating their efforts rather than merely exercising formal authority. A leader creates a vision, inspires others and mobilises their energy to accomplish organizational objectives. Unlike management, which emphasises planning, organising and control, leadership emphasises influence, inspiration and change.",
+          "explanation": "It gives the standard influence-based definition and adds the useful contrast with management, a common exam expectation.",
+          "oneShotPreview": "Influencing and guiding a group toward shared goals through vision, motivation and commitment."
+        },
+        {
+          "q": "6 b) Explain the significance (importance) of leadership in an organization. (5 marks)",
+          "a": "Leadership is significant because it provides direction by setting goals and a vision that give members a sense of purpose. It motivates and inspires employees, raising their commitment and performance beyond what formal authority alone can achieve. Leaders build teams, resolve conflicts and create a positive culture and climate in which people can work effectively. They guide the organization through change, encourage innovation and help it adapt to a shifting environment. Effective leadership therefore improves coordination, decision-making, morale and overall organizational effectiveness, while its absence typically produces confusion, low motivation and poor performance.",
+          "explanation": "It covers direction, motivation, team-building, culture, change and overall effectiveness — the core reasons leadership matters.",
+          "oneShotPreview": "Leadership gives direction, drives motivation, builds teams and culture, and steers change and performance."
+        },
+        {
+          "q": "7 State the qualities of a good leader. (5 marks)",
+          "a": "A good leader possesses a clear vision and the ability to communicate it convincingly to others. Integrity and honesty build trust and credibility, while self-confidence and courage enable decisive action in the face of uncertainty. Empathy, emotional intelligence and good listening skills help the leader understand and motivate followers. Other important qualities include intelligence, sound judgement, accountability, fairness, the ability to inspire and delegate effectively, and resilience in setbacks. Together these qualities earn willing cooperation and commitment from followers rather than mere compliance born of authority.",
+          "explanation": "It lists the widely accepted qualities — vision, integrity, confidence, empathy, communication, judgement and delegation — with brief justification for each.",
+          "oneShotPreview": "Vision, integrity, confidence, empathy, communication, sound judgement, fairness and resilience."
+        },
+        {
+          "q": "8 Explain the Trait Theory of leadership and mention its limitations. (5 marks)",
+          "a": "The Trait Theory, also called the 'Great Man' approach, holds that leaders are born with certain innate personal qualities that distinguish them from non-leaders. Research associated leadership with traits such as intelligence, dominance, self-confidence, integrity, sociability, drive and task-relevant knowledge, suggesting that potential leaders could be identified by measuring these traits. Its main limitation is that no single set of traits consistently predicts who will be an effective leader. It also ignores the situation and the needs of followers, and neglects what leaders actually do, that is, their behaviour. Because it cannot explain why the same person leads well in one context but not another, it gave way to behavioural and contingency theories.",
+          "explanation": "It states the core assumption of trait theory, gives example traits and then lists the standard criticisms that led to behavioural approaches.",
+          "oneShotPreview": "Leaders are born with key traits (intelligence, confidence, integrity), but traits alone cannot predict or explain effectiveness."
+        },
+        {
+          "q": "9 Explain Blake and Mouton's Managerial Grid. (5 marks)",
+          "a": "Blake and Mouton's Managerial Grid is a behavioural leadership model based on two dimensions: concern for production (results) on the horizontal axis and concern for people on the vertical axis, each rated from 1 (low) to 9 (high). It identifies five main styles: 1,1 Impoverished (low concern for both), 9,1 Task or Authority (high production, low people), 1,9 Country Club (high people, low production), 5,5 Middle-of-the-Road (moderate concern for both) and 9,9 Team (high concern for both). The grid shows that leadership is a combination of the two concerns rather than an either-or choice. Blake and Mouton regarded the 9,9 Team style as the most effective because it integrates task achievement with people's needs, producing both high performance and high commitment.",
+          "explanation": "It states both axes and their 1-9 scales, names all five styles correctly and identifies 9,9 Team as the ideal, matching the original model.",
+          "oneShotPreview": "Two axes — concern for production and concern for people (1-9) — yield five styles; 9,9 Team is ideal."
+        },
+        {
+          "q": "10 Describe the five leadership styles of the Managerial Grid and state which style is considered the most effective. (10 marks)",
+          "a": "The Managerial Grid, developed by Robert Blake and Jane Mouton, plots leadership behaviour on two axes — concern for production and concern for people, each scaled from 1 to 9. The five styles are: (1) 1,1 Impoverished — low concern for both, doing only the minimum needed to get by; (2) 9,1 Authority-Compliance or Task — high concern for production but low for people, relying on control, discipline and compliance; (3) 1,9 Country Club — high concern for people but low for production, emphasising comfort and friendly relations at the cost of results; (4) 5,5 Middle-of-the-Road — moderate concern for both, seeking compromise and adequate but not excellent performance; (5) 9,9 Team — high concern for both, integrating organizational goals with people's needs through trust, involvement and commitment. The 9,9 Team style is considered the most effective because it achieves high productivity while sustaining high morale, cooperation and commitment. It converts work into a genuine team effort in which people are motivated and involved rather than merely directed or appeased. The practical value of the grid is that it helps managers identify their dominant style and deliberately move towards a more balanced, high-concern approach.",
+          "explanation": "It describes all five grid positions with their coordinates and characteristics, defends the 9,9 choice and draws out the model's managerial use.",
+          "oneShotPreview": "1,1 Impoverished; 9,1 Task; 1,9 Country Club; 5,5 Middle-road; 9,9 Team — the most effective."
+        },
+        {
+          "q": "11 Distinguish between Transactional and Transformational Leadership. (5 marks)",
+          "a": "Transactional leadership, described by Burns and expanded by Bass, is based on an exchange or bargain between leader and follower: the leader clarifies goals and roles, sets contingent rewards and uses corrective action or management-by-exception to ensure compliance. It focuses on maintaining the status quo, routine tasks and short-term goals, with followers motivated by rewards or penalties. Transformational leadership, by contrast, inspires followers to transcend self-interest and achieve extraordinary outcomes. It involves the four I's — idealized influence (charisma and trust), inspirational motivation (a compelling vision), intellectual stimulation (encouraging creativity and challenging assumptions) and individualized consideration (attending to each follower's needs). While transactional leadership maintains order, transformational leadership creates change, innovation and follower development. The two are complementary rather than mutually exclusive, and effective leaders often combine them.",
+          "explanation": "It contrasts the two styles on basis (exchange vs inspiration), motivation, goals and the four I's, and notes they can be combined — the standard textbook treatment.",
+          "oneShotPreview": "Transactional = contingent rewards and control; transformational = vision, charisma and the four I's."
+        },
+        {
+          "q": "12 Discuss Transactional and Transformational leadership with suitable examples. (10 marks)",
+          "a": "Burns and Bass distinguished two broad styles of leadership. Transactional leadership rests on a social exchange: the leader sets clear targets, monitors performance and offers contingent rewards or corrections — for example, a manager who pays a bonus for meeting a sales quota or warns an employee for missing a deadline. It is task-oriented, maintains the status quo and suits stable, routine situations where clarity and reliability matter. Transformational leadership goes further by transforming followers' values, aspirations and motivation; the leader provides a vision, acts as a role model, stimulates innovative thinking and gives personal attention. For example, a chief executive who articulates a bold sustainability vision, empowers teams to redesign processes and mentors individual employees is transformational. Its core components are the four I's: idealized influence, inspirational motivation, intellectual stimulation and individualized consideration. Transactional leadership ensures goal clarity and dependable performance, while transformational leadership drives change, commitment and extra effort. Research generally finds transformational leadership more effective, especially in dynamic environments, but the two work best when used together — transactionals provide the structure that makes a vision achievable.",
+          "explanation": "It explains both styles, supplies a concrete example of each, names the four I's and gives a balanced comparative verdict, fully answering the essay.",
+          "oneShotPreview": "Bonus-for-target (transactional) vs vision-and-empowerment (transformational); the four I's; both work best combined."
+        },
+        {
+          "q": "13 a) Define conflict and conflict management. (2 marks)",
+          "a": "Conflict is a state of disagreement, opposition or incompatibility between two or more individuals or groups, arising when their goals, interests, values, roles or needs clash. Conflict management is the process of handling such disputes constructively — limiting destructive effects and resolving differences through appropriate strategies so that the outcome supports organizational goals. Its aim is not to eliminate all conflict but to channel it productively, since some task conflict can improve decisions.",
+          "explanation": "It defines both terms accurately and adds the key OB insight that the goal is constructive management, not total elimination of conflict.",
+          "oneShotPreview": "Conflict = clashing goals or needs; conflict management = resolving it constructively toward organizational goals."
+        },
+        {
+          "q": "13 b) Explain the major causes of conflict in organizations. (5 marks)",
+          "a": "Common causes of organizational conflict include goal incompatibility, where different units pursue opposing objectives; competition for scarce resources such as budget, space, time or manpower; task interdependence, where one person's work depends on another's and delays create friction; role ambiguity and conflicting role expectations; poor communication and misunderstanding; personality, attitude and value differences; power and status struggles; and unfair policies or reward systems. Rapid change, work pressure and unclear authority can also heighten tension. Identifying the underlying cause is essential before choosing a resolution strategy, because a style that suits a factual disagreement may be wrong for an interpersonal dispute.",
+          "explanation": "It lists the major recognised sources of conflict and adds the diagnostic point that the cause determines the appropriate handling strategy.",
+          "oneShotPreview": "Clashing goals, scarce resources, interdependence, role ambiguity, poor communication, personality and power struggles."
+        },
+        {
+          "q": "14 What is organizational conflict? Discuss the styles and techniques of conflict management. (10 marks)",
+          "a": "Organizational conflict is a disagreement or incompatibility between people or groups over goals, resources, roles, values or needs. It may be task-related (about the work itself), relationship-related (interpersonal friction) or process-related (how the work is done), and it is not always harmful — moderate task conflict can improve decision quality by surfacing alternative views. The Thomas-Kilmann model identifies five handling styles based on concern for self and concern for others: competing (assertive and uncooperative, a win-lose approach), collaborating (assertive and cooperative, win-win problem-solving), compromising (a middle ground with give-and-take), avoiding (withdrawal or postponement) and accommodating (yielding to the other party). Other practical techniques include negotiation, mediation by a neutral third party, arbitration, conciliation, clarifying roles and responsibilities, and improving communication channels. The best style depends on the situation: collaborating suits important complex issues, avoiding suits trivial matters and competing may be needed in emergencies. Effective conflict management therefore reduces disruption, preserves relationships and turns disagreement into a source of learning and better decisions.",
+          "explanation": "It defines conflict, notes its types and constructive potential, correctly lists all five Thomas-Kilmann styles plus other techniques and gives situational guidance.",
+          "oneShotPreview": "Five styles — competing, collaborating, compromising, avoiding, accommodating — plus negotiation, mediation and arbitration."
+        },
+        {
+          "q": "15 Explain the criteria and methods of evaluating a leader's effectiveness. (10 marks)",
+          "a": "Evaluating a leader means judging how effectively that person influences people to achieve organizational goals. The primary criterion is goal attainment — whether the team meets its targets, productivity standards and quality expectations. Other criteria include follower satisfaction, morale and commitment, team cohesion, low turnover and absenteeism, and the extent to which the leader develops followers' skills and prepares successors. Ethical conduct, fairness, integrity, adaptability to change and the quality of decisions made under uncertainty are also important, since a leader may hit targets through harmful means. Methods of evaluation include objective performance metrics, self-assessment, supervisory appraisal and 360-degree feedback that gathers views from peers, subordinates and superiors. Because leadership is situational, a fair evaluation must consider the context, resources and challenges the leader faced rather than judging on a single trait. Such systematic evaluation identifies development needs, supports fair rewards and ultimately improves the quality of leadership in the organization.",
+          "explanation": "It sets out the main criteria (results, people, ethics, development, adaptability) and the main methods (metrics, self, supervisory and 360-degree feedback), with the key situational caveat.",
+          "oneShotPreview": "Judge results, follower outcomes, ethics and development via metrics, self-review and 360-degree feedback, allowing for context."
+        }
+      ],
+      "source": "syllabus-derived"
+    },
+    "4": {
+      "unitTitle": "Group Dynamics",
+      "totalQuestions": 20,
+      "questions": [
+        {
+          "q": "a) Define 'Group' in the context of organizational behavior. [2 Marks]",
+          "a": "A group is two or more individuals who interact and are interdependent in order to achieve a common purpose or goal. Members perceive themselves as part of the group, share certain norms and values, and have a stable pattern of interaction over time. In OB, groups are the building blocks of organizations and may be formal (created by management) or informal (formed naturally). The essential features are regular interaction, a shared identity, common goals and some degree of interdependence. A mere collection of people in the same place, such as a crowd at a bus stop, is not a true group because it lacks structure and continuing interaction.",
+          "explanation": "This is the standard Robbins-style definition: it names interaction, interdependence, common goal, shared norms and continued interaction as the defining features, and distinguishes a real group from a simple aggregate of people.",
+          "oneShotPreview": "Group = 2+ people who interact, are interdependent and share a common goal, norms and identity over time."
+        },
+        {
+          "q": "b) Define 'Group Dynamics'. [2 Marks]",
+          "a": "Group dynamics refers to the interactions, forces and processes that operate among members of a group and that shape its behaviour, structure and performance over time. It is the study of how groups form, develop, communicate, make decisions, establish norms, build cohesiveness and handle conflict. The term emphasizes that a group is a living social system in which the behaviour of the whole is more than the sum of the individual members' behaviour. Understanding group dynamics helps managers predict group behaviour, improve teamwork and make groups more effective. It covers both internal processes (roles, norms, cohesion, decision making) and the external conditions that influence the group.",
+          "explanation": "This defines the field as the study of interactional forces and processes, stresses the 'whole greater than the sum of parts' idea, and lists the core processes examined in this unit.",
+          "oneShotPreview": "Group dynamics = study of interactional forces/processes (roles, norms, cohesion, decisions, conflict) shaping group behaviour and performance."
+        },
+        {
+          "q": "c) Define 'Group Behaviour'. [2 Marks]",
+          "a": "Group behaviour is the pattern of conduct and interaction that emerges when two or more people work together as a group, shaped by the group's structure, processes and the influence members exert on one another. It includes how members communicate, conform to norms, exercise leadership, cooperate or compete, make decisions and respond to pressures such as conflict and outside expectations. Group behaviour differs from individual behaviour because of interdependence, social influence and shared identity. It is affected by factors such as group size, composition, leadership, norms and cohesiveness. Managers study group behaviour to predict performance, reduce dysfunctional conflict and design effective teams.",
+          "explanation": "This clarifies how group behaviour differs from individual behaviour and links it to the determinants and outcomes covered in the unit.",
+          "oneShotPreview": "Group behaviour = emergent conduct of members interacting under social influence, shaped by size, composition, leadership, norms and cohesion."
+        },
+        {
+          "q": "Explain the meaning, nature and scope of group dynamics. [5 Marks]",
+          "a": "Group dynamics means the study of the forces and processes that operate within and between groups and that influence how a group forms, functions and performs. Its nature is interdisciplinary, drawing on psychology and sociology, and it views the group as a dynamic social system in which members continuously influence one another; the whole is greater than the sum of its parts. Its scope covers group formation and development, types of groups, roles and status, norms, cohesiveness, communication, leadership, decision making, conflict and team building. It also examines external conditions such as organizational structure, rewards and the physical environment that affect the group. By applying this knowledge, managers can diagnose group problems, improve cooperation, reduce dysfunctional conflict and raise overall effectiveness. In short, group dynamics links the individual, group and organizational levels of behaviour.",
+          "explanation": "A 5-mark answer should give the meaning, describe its nature (dynamic, interdisciplinary, systems view), list the topics in its scope and state its managerial purpose.",
+          "oneShotPreview": "Meaning: forces/processes in groups. Nature: dynamic social system, whole > sum, interdisciplinary. Scope: formation, roles, norms, cohesion, decisions, conflict, team building."
+        },
+        {
+          "q": "a) What is a formal group? [2 Marks]",
+          "a": "A formal group is a group deliberately created by management to accomplish specific organizational tasks and goals. It has a defined structure with assigned roles, a formal hierarchy, designated leadership and established rules and procedures. Examples include a department, a committee, a project team and a quality circle. Formal groups are also called official or command groups, and their activities are directed toward the organization's objectives. Because roles are officially defined, members have clear expectations about who reports to whom and what each position should do.",
+          "explanation": "This captures the deliberate, goal-directed, structured nature of formal groups with examples, distinguishing them from naturally formed groups.",
+          "oneShotPreview": "Formal group = management-created, task-oriented group with defined roles, hierarchy and rules (e.g., department, committee)."
+        },
+        {
+          "q": "b) What is an informal group? [2 Marks]",
+          "a": "An informal group is a group that forms naturally and spontaneously from the social interactions and common interests of employees, without being created or officially recognized by management. It has no formal structure or written rules; instead it develops its own informal norms, roles and a natural leader. Examples include a group of colleagues who lunch together or friends who share a common hobby. Informal groups satisfy members' social needs for friendship, belonging and security and can strongly influence attitudes and work behaviour. They may either support or resist management goals, which is why managers try to understand and work with them.",
+          "explanation": "This highlights natural formation, absence of official structure, satisfaction of social needs and influence on behaviour - the standard contrast with formal groups.",
+          "oneShotPreview": "Informal group = naturally formed, unofficial group based on friendship/common interests; no formal structure; meets social needs, influences behaviour."
+        },
+        {
+          "q": "Discuss the various types of groups found in organizations. [10 Marks]",
+          "a": "Groups in organizations can be classified in several ways. The most basic distinction is between formal groups, created by management to achieve organizational goals (such as departments and task forces), and informal groups, which emerge spontaneously from social interaction to satisfy members' needs for friendship and belonging. Formal groups are further divided into command groups, made up of a manager and the subordinates who report to him or her, and task groups, made up of people working together on a common task, which may cut across normal reporting lines. Robbins also distinguishes task groups (working on tasks) from social groups (formed for fellowship). Another classification is primary groups, characterized by close, face-to-face, lasting relationships and strong emotional ties (such as a family or a small work team), and secondary groups, which are larger, more impersonal and formally organized. Members may also form in-groups, with which a person identifies and feels loyalty, and out-groups, toward which they feel distance or opposition. Other useful categories include friendship groups, interest groups and reference groups, whose norms and values individuals use as a standard for comparing themselves. Each type differs in purpose, structure, durability and influence on the individual and the organization, and managers need to recognize both the formal and the informal side of the group structure in order to work effectively.",
+          "explanation": "A 10-mark essay should enumerate the main classifications, define each with examples and note why the distinctions matter to managers.",
+          "oneShotPreview": "Types: formal vs informal; command vs task; task vs social; primary vs secondary; in-group vs out-group; friendship/interest/reference groups."
+        },
+        {
+          "q": "a) What are the determinants of group behaviour? [2 Marks]",
+          "a": "Determinants of group behaviour are the factors that shape how a group and its members act; they include group size, group composition, leadership, norms, cohesiveness, communication and the external environment. Individual factors such as member personality, ability and attitudes also affect the group, as do organizational factors such as rewards, structure and rules. Together these variables determine the group's interaction patterns, level of cooperation and ultimate performance.",
+          "explanation": "This gives the standard list of internal, member-level and external determinants in compact form.",
+          "oneShotPreview": "Determinants: size, composition, leadership, norms, cohesiveness, communication, member traits and external organizational conditions."
+        },
+        {
+          "q": "Explain the various determinants of group behaviour. [5 Marks]",
+          "a": "Group behaviour is shaped by a combination of internal, member and external factors. Group size matters: small groups allow more interaction and faster agreement, while large groups bring more resources but also more coordination problems, social loafing and subgroup formation. Group composition, especially the diversity of members in ability, personality and background, affects creativity and conflict; heterogeneous groups often generate more ideas but may take longer to cohere. Leadership style strongly influences communication, motivation and decision making. Norms set the standards of acceptable conduct and create conformity pressure, while cohesiveness determines how strongly members are attracted to the group and willing to work together. Communication networks affect the speed and accuracy of information flow, and external conditions such as organizational structure, reward systems, physical layout and task characteristics place further constraints on the group. Individual members bring their own personality, attitudes and abilities, which interact with these group-level forces. Managers can use these determinants to diagnose and improve group functioning.",
+          "explanation": "A 5-mark answer should name each determinant and briefly explain how it influences group behaviour, ending with the managerial implication.",
+          "oneShotPreview": "Key determinants: size, composition/diversity, leadership, norms, cohesion, communication networks, member traits, external structure/rewards/task."
+        },
+        {
+          "q": "a) What is group process? [2 Marks]",
+          "a": "Group process refers to the sequence of interactions and activities through which group members exchange information, coordinate their work and move toward their goals. It includes communication, role differentiation, norm formation, decision making, leadership, conflict management and the stages of group development. Group processes describe how the group works internally rather than what it produces, and they strongly influence the group's effectiveness and member satisfaction.",
+          "explanation": "This distinguishes process (how members interact) from outcome and lists the principal process activities.",
+          "oneShotPreview": "Group process = how members interact to work: communication, roles, norms, decisions, leadership, conflict and development stages."
+        },
+        {
+          "q": "Explain the stages of group development proposed by Tuckman. [10 Marks]",
+          "a": "Bruce Tuckman's model describes five stages that most groups pass through as they develop. In the forming stage, members meet, learn about one another, test relationships and depend heavily on the leader for direction; politeness and uncertainty are common. In the storming stage, conflict and disagreement emerge as members push against authority, compete for roles and express differing ideas; this is a necessary stage for resolving differences. In the norming stage, members develop a shared understanding, establish norms and roles, build cohesiveness and begin to cooperate effectively. In the performing stage, the group is mature and functional: members work interdependently, communicate openly, solve problems and focus on achieving goals, with the leader playing a more delegating role. Tuckman later added a fifth stage, adjourning, for temporary groups, in which members disband after completing the task, with feelings of accomplishment or loss. Groups may regress to earlier stages when membership or tasks change, and the stages vary in length. Understanding the model helps managers recognize that conflict in the storming stage is normal and give the group the right support at each stage.",
+          "explanation": "A 10-mark essay should name and describe all five stages in sequence, note that adjourning was added later, mention regression and state the managerial relevance.",
+          "oneShotPreview": "Tuckman: Forming (polite, dependent) -> Storming (conflict) -> Norming (norms, cohesion) -> Performing (effective work) -> Adjourning (disband)."
+        },
+        {
+          "q": "a) What are group norms? [2 Marks]",
+          "a": "Group norms are the shared standards, rules and expectations of behaviour that group members accept as proper and use to guide and evaluate their own and others' conduct. They define what is acceptable, such as how much effort to put in, how to dress, how to communicate and how to treat the leader. Norms develop informally through interaction, are enforced by group pressure and create conformity among members. They may support organizational goals or, in some cases, restrict output and resist management.",
+          "explanation": "This captures norms as shared standards of acceptable behaviour, how they arise and are enforced, and their double-edged effect on performance.",
+          "oneShotPreview": "Group norms = shared, often unwritten standards of acceptable behaviour enforced by group pressure; guide and evaluate conduct."
+        },
+        {
+          "q": "Explain how group norms develop and discuss their functions. [5 Marks]",
+          "a": "Group norms usually develop gradually as members interact and discover which behaviours are accepted; they often begin with a critical event or a suggestion by a respected member and are reinforced as others conform. Key influences include the behaviour of the leader, the group's history, cultural values and the rewards and punishments the group applies. Norms serve several functions: they regulate and predict member behaviour, reduce uncertainty by setting expectations, coordinate effort, express the group's identity and values, protect the group from outside interference and give members a sense of belonging. At the same time, norms create pressure to conform, and this pressure can become strong enough to suppress dissent and lead to poor decisions such as groupthink. Norms are enforced through sanctions ranging from approval and acceptance to criticism or rejection. Managers should therefore shape norms early, since changing established norms is difficult, and ensure that they support rather than undermine organizational goals.",
+          "explanation": "A 5-mark answer should explain how norms emerge, list their main functions and note both benefits and risks with a managerial implication.",
+          "oneShotPreview": "Norms develop via interaction/leader example; functions: regulate behaviour, reduce uncertainty, coordinate, express identity, enforce via sanctions; risk: conformity/groupthink."
+        },
+        {
+          "q": "a) Define group cohesiveness. [2 Marks]",
+          "a": "Group cohesiveness is the degree to which members are attracted to the group, committed to its goals and motivated to remain in it; it is often described as the 'glue' that holds a group together. It shows itself in members' liking for one another, their willingness to cooperate, their sense of shared identity and their resistance to leaving or to outside criticism. Highly cohesive groups interact more frequently, communicate more openly and show higher member satisfaction. Cohesiveness is a key group variable because it influences both how well members work together and how strongly they conform to group norms.",
+          "explanation": "This defines cohesion as attraction and commitment, names its visible signs and links it to interaction, satisfaction and conformity.",
+          "oneShotPreview": "Cohesiveness = attraction/commitment binding members to the group ('glue'); shown by liking, cooperation, shared identity and reluctance to leave."
+        },
+        {
+          "q": "Discuss the factors affecting group cohesiveness and its consequences. [10 Marks]",
+          "a": "Group cohesiveness is the extent to which members are attracted to one another and committed to the group's goals. Several factors increase it: small group size, since fewer members make interaction and agreement easier; similarity of members in attitudes, values and background; frequent and close interaction and shared time together; a clear common goal and shared successes; effective leadership and democratic participation; and external pressure or competition, which makes members close ranks. Hard-to-join groups and groups with a strong identity also tend to be more cohesive. The consequences of cohesiveness are generally positive for morale: members communicate more, cooperate more, help one another and report higher satisfaction, which often improves performance when the group's norms support high output. However, cohesiveness can have negative effects: a highly cohesive group may pressure members to conform, resist change, develop an 'us versus them' attitude and suppress dissent, which can produce groupthink and poor decisions. Cohesiveness and performance are therefore related but not identical, and the effect depends on whether group norms are aligned with organizational goals. Managers should build cohesion through shared goals, participation and recognition while guarding against excessive conformity.",
+          "explanation": "A 10-mark essay should define cohesiveness, list the factors that build it, discuss both positive and negative consequences and state the managerial implication.",
+          "oneShotPreview": "Cohesiveness rises with small size, similarity, interaction, shared goals/success, good leadership and external threat; boosts cooperation/satisfaction but risks conformity and groupthink."
+        },
+        {
+          "q": "a) What is a small group? [2 Marks]",
+          "a": "A small group is a group of relatively few members, usually two to about a dozen, who interact frequently on a personal, face-to-face basis and are strongly interdependent. Because of its size, every member can participate, communicate directly with all others and have a distinct role, which creates close relationships, strong norms and high cohesiveness. Small groups are common in organizations, for example a work team, a committee or a project group, and they are the setting in which most group dynamics such as role formation, norm setting and decision making are studied. Their advantages are quick decisions, flexibility and high member involvement, while disadvantages include a limited range of skills and vulnerability to personality conflicts.",
+          "explanation": "This gives the size range, the face-to-face and interdependent nature, and notes the advantages and limitations of small groups.",
+          "oneShotPreview": "Small group = few members (2-12) interacting face-to-face; high participation, strong norms/cohesion; quick decisions but limited resources."
+        },
+        {
+          "q": "a) What is group decision making? b) What is groupthink? [2 Marks]",
+          "a": "Group decision making is the process by which two or more members jointly analyze a problem, generate alternatives and choose a course of action, as in a committee or team. Compared with individual decisions, groups bring more information and diverse perspectives and tend to produce higher-quality, more acceptable solutions, though the process takes more time and can be dominated by a few members. Groupthink, a concept developed by Irving Janis, is the tendency of a cohesive group to pressure members toward agreement and to suppress dissenting or unusual viewpoints, so that the group values unanimity over a realistic appraisal of alternatives. Its symptoms include an illusion of invulnerability, self-censorship, pressure on dissenters and a belief in the group's inherent morality. The two terms are linked because groupthink is a pressure that can corrupt an otherwise sound group decision-making process.",
+          "explanation": "This defines both terms clearly and links them: group decision making is the process, while groupthink is a conformity pressure that can distort that process.",
+          "oneShotPreview": "Group decision making = joint problem solving (more info, slower). Groupthink = cohesion-driven conformity suppressing dissent (Janis)."
+        },
+        {
+          "q": "Discuss group decision making, its advantages and limitations, and the techniques that improve it. [10 Marks]",
+          "a": "Group decision making is the process by which a group jointly identifies a problem, generates alternatives and selects a solution. Its main advantages are that groups bring a wider range of information, knowledge and perspectives, produce more complete and creative alternatives, and generate decisions that members are more likely to accept and implement because they took part. Its limitations are that the process is slower and more costly, can be dominated by one or a few vocal members, creates pressure to conform, may result in compromise rather than the best solution, and diffuses responsibility for the outcome. A major danger is groupthink, described by Irving Janis, in which a highly cohesive group, often under stress and with an insistent leader, values unanimity above critical evaluation; members self-censor, dissent is pressured out, and symptoms such as an illusion of invulnerability and a belief in inherent morality lead to poor decisions. A related problem is groupshift, where group discussion moves members toward more extreme positions. To improve decisions, managers can use brainstorming, where members freely generate ideas without criticism; the nominal group technique, where individuals write ideas independently before group discussion and voting; the Delphi technique, which gathers anonymous judgments from experts through repeated questionnaires; and electronic meetings, which allow simultaneous, anonymous input. Good practice also includes encouraging dissent, appointing a 'devil's advocate', using outside experts and having the leader withhold an early position. Used appropriately, these methods retain the benefits of group input while reducing conformity and process losses.",
+          "explanation": "A 10-mark essay should define group decision making, weigh advantages against limitations, explain groupthink (and groupshift) and describe the main techniques and safeguards.",
+          "oneShotPreview": "Group decisions: +info, +acceptance; -slow, conformity, domination. Groupthink = suppressed dissent. Techniques: brainstorming, nominal group, Delphi, electronic meetings, devil's advocate."
+        },
+        {
+          "q": "Explain team building and the different team roles. [5 Marks]",
+          "a": "Team building is the planned effort to help a group of people develop into an effective, cohesive team by improving communication, trust, cooperation and role clarity. It typically involves activities such as goal setting, role clarification, problem-solving exercises, interpersonal training and sometimes outdoor or experiential tasks. A useful framework is Belbin's team roles, which identifies complementary contributions such as the coordinator who leads and clarifies goals, the shaper who drives the team forward, the plant who generates creative ideas, the monitor-evaluator who judges options, the implementer who turns plans into action, the completer-finisher who ensures accuracy and deadlines, the resource investigator who explores outside contacts, the team worker who supports others and the specialist who provides deep expertise. Effective teams contain a balanced mix of these roles, and members often fill more than one. Team building improves cohesion, reduces misunderstanding and conflict, and raises performance by ensuring that the right behaviours are present. Managers should match roles to members' strengths and continually reinforce shared goals and trust.",
+          "explanation": "A 5-mark answer should define team building, mention typical activities, outline Belbin's roles and note the benefits and managerial implication.",
+          "oneShotPreview": "Team building = planned activities to improve trust, roles and cooperation; Belbin roles: coordinator, shaper, plant, monitor, implementer, finisher, investigator, worker, specialist."
+        },
+        {
+          "q": "Discuss conflict in organizations and the styles of conflict resolution. [10 Marks]",
+          "a": "Organizational conflict is the process that begins when one party perceives that another has negatively affected, or is about to negatively affect, something the first party cares about. It is a normal and inevitable feature of organizational life because people with different goals, values, personalities and interests must work interdependently. Its main sources include task interdependence, competition for scarce resources, unclear roles and responsibilities, communication breakdowns, personality clashes, differing values, power and status differences, and poorly designed reward systems. Conflict is commonly classified as task conflict (disagreement about the content or goals of the work), relationship conflict (interpersonal friction, dislike and animosity) and process conflict (disagreement about how the work should be done). Conflict is not always harmful: moderate task conflict can stimulate ideas, improve decisions and prompt constructive change, making it functional; too much conflict, especially relationship conflict, is dysfunctional and damages morale and performance. The Thomas-Kilmann model describes five resolution styles based on two dimensions, assertiveness and cooperativeness: competing (high assertiveness, low cooperativeness) pursues one's own goals at the other's expense; collaborating (high on both) seeks a win-win solution that fully satisfies both parties; compromising (moderate on both) seeks a middle-ground, mutually acceptable settlement; avoiding (low on both) withdraws or postpones the issue; and accommodating (low assertiveness, high cooperativeness) places the other party's concerns above one's own. Other practical techniques include problem solving or confrontation, in which parties face the issue and find a genuine solution, and negotiation. No single style is best: the appropriate choice depends on the importance of the issue, the relationship, the time available and the power balance. Managers should encourage functional task conflict, prevent it from turning into personal hostility, and select the resolution style that fits the situation.",
+          "explanation": "A 10-mark essay should define conflict, give its sources and types (task/relationship/process), distinguish functional from dysfunctional conflict, present all five Thomas-Kilmann styles on the assertiveness-cooperativeness axes and state when each is appropriate.",
+          "oneShotPreview": "Conflict = perceived threat to one's interests; sources: resources, roles, communication, personality. Types: task/relationship/process. T-K styles: competing, collaborating, compromising, avoiding, accommodating."
+        }
+      ],
+      "source": "syllabus-derived"
+    },
+    "5": {
+      "unitTitle": "Organizational Change and Development",
+      "totalQuestions": 20,
+      "questions": [
+        {
+          "q": "1 a) Define organizational change.",
+          "a": "Organizational change is the process by which an organization moves from its present state to a desired future state in response to internal or external pressures, altering its structures, processes, technologies, culture or people's behaviour. It may be planned and deliberate or unplanned and reactive, and it affects individuals, groups and the total system. The purpose of change is to improve effectiveness, adapt to a changing environment and achieve strategic goals.",
+          "explanation": "A complete definition covers the shift from current to desired state, the triggers, and the goal of improved effectiveness, which is exactly what a 2-mark definition requires.",
+          "oneShotPreview": "Planned or unplanned shift from current to desired state to improve effectiveness and adapt."
+        },
+        {
+          "q": "1 b) Define organizational development (OD).",
+          "a": "Organizational development (OD) is a planned, systematic and long-range effort to improve an organization's effectiveness, health and capacity to adapt, by applying behavioural-science knowledge to its structures, processes, culture and people. It is collaborative, involves the whole system and uses interventions such as team building, sensitivity training and survey feedback. OD concentrates on both task performance and human well-being and aims at self-renewal and continuous improvement.",
+          "explanation": "The answer highlights the defining features of OD - planned, systemic, long-term, behavioural-science-based and people-centred - which distinguish it from ordinary change.",
+          "oneShotPreview": "Planned, systemic, behaviour-science effort to improve effectiveness, health and self-renewal."
+        },
+        {
+          "q": "1 c) Define organizational culture.",
+          "a": "Organizational culture is the set of shared values, beliefs, assumptions, norms and symbols held in common by the members of an organization, which shape how they think, feel and behave. Often described as 'the way we do things around here', it is learned, transmitted through socialization and relatively stable over time. Culture gives members a common identity, guides their behaviour and helps the organization adapt externally and integrate internally.",
+          "explanation": "This is the standard OB definition (Schein): shared values and assumptions, learned and transmitted, guiding behaviour and providing identity.",
+          "oneShotPreview": "Shared values, beliefs and norms - 'how we do things here' - learned and guiding behaviour."
+        },
+        {
+          "q": "2. Explain the nature and scope of organizational change and development.",
+          "a": "Organizational change and development is dynamic rather than static and affects the whole system rather than isolated parts. It is planned and deliberate in OD, though change may also be reactive, and it is continuous because environments keep changing. It is multidimensional, involving people, structure, technology and culture, and is goal-directed toward greater effectiveness. Its scope covers the individual (attitudes, skills, motivation, roles), groups and teams (norms, cohesiveness, conflict), intergroup relations, the formal organization (structure, design, policies), the culture and values of the enterprise, and the organization's link with its external environment. It therefore addresses both task performance and human development.",
+          "explanation": "The answer states the accepted nature (dynamic, systemic, planned, continuous, multidimensional, goal-directed) and maps the scope from the individual to the total system and environment.",
+          "oneShotPreview": "Nature: dynamic, systemic, planned, continuous, multidimensional. Scope: individual, group, structure, culture, environment."
+        },
+        {
+          "q": "3. Explain the functions and objectives of organizational development.",
+          "a": "Organizational development performs several functions. It improves organizational effectiveness and productivity and enhances the ability to adapt to environmental change. It develops people and their potential through training, learning and career growth, and improves interpersonal and intergroup relations, teamwork and communication. OD also helps in managing conflict and change, builds a supportive and participative culture, and aligns individual goals with organizational goals. Above all it promotes self-renewal and continuous learning, serving both task (performance) and human (well-being and growth) objectives.",
+          "explanation": "Lists the core OD objectives - effectiveness, adaptability, people development, better relations, conflict and change management, and self-renewal - covering both task and people concerns.",
+          "oneShotPreview": "Functions: effectiveness, adaptability, people growth, teamwork, conflict/change management, self-renewal."
+        },
+        {
+          "q": "4. Distinguish between organizational change and organizational development.",
+          "a": "Organizational change is a broad, neutral term for any movement from the current state; it may be planned or unplanned, incremental or radical, and can be a single event such as a restructuring or a new technology. Organizational development is a specific, planned and systematic approach to change that uses behavioural-science interventions to improve effectiveness and organizational health over the long term. Change refers to what is happening (the transition), whereas OD refers to a deliberate method of bringing about beneficial change. Thus all OD involves change, but not every change is OD.",
+          "explanation": "Captures the key distinction: change is generic and may be reactive, while OD is planned, systemic, long-term and intervention-based.",
+          "oneShotPreview": "Change = any transition, planned or not; OD = planned, systemic, behaviour-science improvement."
+        },
+        {
+          "q": "5 a) Explain Lewin's three-stage model of change.",
+          "a": "Kurt Lewin's model treats change as a process of moving through three stages. (1) Unfreezing: the organization recognizes the need for change, creates dissatisfaction with the status quo and prepares people to give up old behaviour, usually by making driving forces stronger than restraining forces. (2) Moving or changing: the actual transition takes place as new behaviours, attitudes, structures or processes are learned and adopted with the help of a change agent. (3) Refreezing: the new behaviour is stabilized and reinforced so that it becomes the new norm and people do not slip back into old ways. The model is based on force-field analysis and stresses that change is a process, not a single event.",
+          "explanation": "Correctly names and explains unfreeze, move and refreeze, and includes force-field analysis and the process-not-event idea - the essentials of Lewin's classic model.",
+          "oneShotPreview": "Unfreeze -> Move -> Refreeze; force-field analysis; change as a process, not an event."
+        },
+        {
+          "q": "5 b) Explain the role of a change agent in managing change.",
+          "a": "A change agent is the person, an internal manager or an external consultant, who initiates, guides and facilitates the change process. The role includes diagnosing the problem, creating awareness and a sense of urgency, building a guiding coalition, communicating the vision, involving and motivating employees, overcoming resistance, selecting and applying suitable OD interventions, and helping to institutionalize the new behaviour. Change agents may act as initiators, facilitators or catalysts. To be effective they need credibility, interpersonal skill, empathy and knowledge of behavioural science.",
+          "explanation": "Covers the recognized functions of a change agent - diagnosis, facilitation, communication, handling resistance and anchoring the change - plus the qualities needed.",
+          "oneShotPreview": "Change agent diagnoses, guides, communicates, handles resistance and anchors the new behaviour."
+        },
+        {
+          "q": "6. Explain Kotter's eight steps for leading organizational change.",
+          "a": "John Kotter's model of successful change consists of eight sequential steps: (1) create a sense of urgency about the need for change; (2) build a guiding coalition of influential supporters; (3) form a strategic vision and communicate it clearly; (4) enlist and involve as many people as possible in living the vision; (5) remove obstacles and barriers to the change; (6) generate short-term wins to build momentum and credibility; (7) consolidate improvements and build on the wins to drive further change; and (8) anchor the new approaches firmly in the culture so they persist. Skipping the early steps usually creates resistance and superficial results, while the final anchoring step makes the change lasting.",
+          "explanation": "Lists all eight steps in the correct order with the purpose of each, which is precisely what a 10-mark essay on Kotter requires.",
+          "oneShotPreview": "Urgency, coalition, vision, enlist all, remove obstacles, short-term wins, consolidate, anchor in culture."
+        },
+        {
+          "q": "7 a) Explain the main sources of organizational culture and how it is transmitted.",
+          "a": "Organizational culture arises from several sources: the founder's values, personality and the early experiences of the organization; the industry and external environment; the surrounding national culture; the behaviour and example of leaders; and the shared learning of members over time. Once formed, culture is transmitted and sustained through the socialization of new members, stories and myths, symbols and physical artifacts, rituals and ceremonies, language, heroes, and formal policies and reward systems. Cultures may also be described as clannish, entrepreneurial, bureaucratic or market-oriented, and may vary in strength and adaptability.",
+          "explanation": "Identifies the origins of culture (founder, leaders, environment, learning) and its transmission mechanisms (stories, symbols, rituals, rewards), which is the expected answer.",
+          "oneShotPreview": "Sources: founder, leaders, environment, national culture; transmitted via stories, symbols, rituals, rewards."
+        },
+        {
+          "q": "7 b) Explain the functions and importance of organizational culture.",
+          "a": "Organizational culture performs several important functions. It gives members a shared identity and a sense of belonging, and it provides stability and continuity by socializing newcomers into accepted ways of behaving. It acts as a control mechanism, guiding and shaping behaviour without the need for detailed formal rules. It helps the organization adapt to its external environment and integrate its internal processes. A strong, positive culture also motivates employees, improves teamwork and performance, encourages ethical conduct and can become a source of sustainable competitive advantage.",
+          "explanation": "Lists the standard functions of culture - identity, belonging, socialization, behavioural control, stability, adaptation, integration and performance.",
+          "oneShotPreview": "Functions: identity, belonging, socialization, control, stability, adaptation, integration, performance."
+        },
+        {
+          "q": "8. Discuss the steps involved in changing organizational culture.",
+          "a": "Changing culture is a deliberate, long-term process. It begins with diagnosing the existing culture and identifying the values and behaviours that must change, followed by creating a sense of urgency and a clear vision of the desired culture. Leaders must model the new values themselves, communicate them continuously and involve employees in shaping the change. Structures, policies, reward systems, symbols and rituals are then aligned to support the new culture, and members are retrained and socialized into it. Short-term wins are celebrated, progress is monitored, and the new values are finally anchored in selection, promotion and everyday practice so that they become durable rather than temporary.",
+          "explanation": "Provides a complete sequence - diagnose, create urgency, set vision, lead by example, involve people, align systems and symbols, socialize, celebrate wins and anchor - as expected in a 10-mark essay.",
+          "oneShotPreview": "Diagnose, urgency, vision, lead by example, align rewards and symbols, socialize, celebrate wins, anchor."
+        },
+        {
+          "q": "9. Explain why organizational culture change is difficult and how resistance to change can be overcome.",
+          "a": "Culture change is difficult because culture is deeply learned, taken for granted and emotionally charged, so members are reluctant to abandon familiar values and habits. People resist change for reasons such as fear of the unknown, loss of security, status or power, habit and inertia, lack of information or trust, and a perceived threat to their interests. Group norms and a strong existing culture reinforce the old ways, and superficial changes that ignore underlying assumptions tend to fail. Managers can overcome resistance through open communication and education, genuine participation, empathy and support, fair treatment, visible leadership commitment and by involving employees in planning the change.",
+          "explanation": "Explains the roots of resistance (deeply learned habits, fear, loss, inertia, group norms) and gives the standard remedies (communication, participation, education, empathy, leadership).",
+          "oneShotPreview": "Resistance from habit, fear, loss of status, mistrust and group norms; counter with communication and participation."
+        },
+        {
+          "q": "10. What is change management? Explain the process of managing change.",
+          "a": "Change management is the structured process of planning, communicating and guiding an organization and its people from the current state to a desired future state so that the change is adopted smoothly and sustained. The process usually involves: recognizing the need for change and setting clear objectives, diagnosing the situation and planning the change, communicating the vision, building stakeholder support and participation, implementing the change, managing resistance, monitoring progress and giving feedback, and finally institutionalizing or anchoring the new state. Effective change management reduces uncertainty and resistance and greatly improves the chances that the change will succeed.",
+          "explanation": "Defines change management and covers the full process from diagnosing and planning through implementation, resistance handling and anchoring.",
+          "oneShotPreview": "Structured transition: diagnose, plan, communicate, involve, implement, manage resistance, anchor."
+        },
+        {
+          "q": "11. Explain the different types of organizational change.",
+          "a": "Organizational change can be classified in several ways. By intention it is planned (deliberate, as in OD) or unplanned and reactive (forced by events). By magnitude it is incremental (small, continuous improvements) or radical and transformational (major, fundamental restructuring). By focus it may be technological, structural, strategic, cultural or behavioural and personnel-related. Change is also described as first-order (adjustments within the existing system) or second-order (a change of the system itself). In practice organizations experience combinations of these types depending on the situation and the pace of the environment.",
+          "explanation": "Covers the standard classifications - planned/unplanned, incremental/radical, functional areas and first/second order - which is a complete 5-mark answer.",
+          "oneShotPreview": "Types: planned/unplanned, incremental/radical, strategic/structural/technological/cultural, first/second order."
+        },
+        {
+          "q": "12 a) Define work stress and explain its main sources.",
+          "a": "Work stress is the harmful physical and emotional response that occurs when job demands exceed an employee's ability or resources to cope with them. Its main sources, or stressors, include excessive workload and time pressure, unclear or conflicting roles, lack of control or autonomy, job insecurity, poor relationships with supervisors and peers, inadequate rewards or recognition, poor working conditions and work-life conflict. Both the content of the job and the wider organizational context can create stress, and the impact depends on the individual's personality, appraisal of the situation and available social support.",
+          "explanation": "Defines stress as a demand-resource imbalance and lists the well-known job and organization-related stressors, including roles, control, insecurity and relationships.",
+          "oneShotPreview": "Stress = demands exceed coping ability; sources: workload, role conflict, low control, insecurity, poor relations."
+        },
+        {
+          "q": "12 b) Explain the consequences of work stress and the meaning of burnout.",
+          "a": "Unmanaged work stress has negative consequences at individual, behavioural and organizational levels. For the individual it can cause anxiety, depression, fatigue, sleep disturbance and psychosomatic illness such as hypertension, and it lowers job satisfaction and commitment. Behaviourally it leads to absenteeism, turnover, reduced performance, accidents and poor decisions. Burnout is a specific stress syndrome resulting from prolonged workload and lack of resources; it has three dimensions - emotional exhaustion, depersonalization or cynicism, and a reduced sense of personal accomplishment. At the organizational level, stress raises costs and lowers morale and overall effectiveness.",
+          "explanation": "Covers the individual, behavioural and organizational consequences and correctly states the three dimensions of burnout (Maslach's model).",
+          "oneShotPreview": "Stress causes anxiety, illness, absenteeism, turnover, poor performance; burnout = exhaustion, cynicism, low accomplishment."
+        },
+        {
+          "q": "13. Explain the techniques of work stress management at the individual and organizational levels.",
+          "a": "Stress management works at two complementary levels. Individual techniques include time management, relaxation exercises such as deep breathing and meditation, regular physical exercise, adequate sleep and nutrition, cognitive restructuring or positive reframing, seeking social support and maintaining a healthy work-life balance. Organizational techniques include redesigning jobs to increase autonomy and reduce overload, clarifying roles, improving communication and employee participation, offering employee assistance programmes (EAPs) and wellness programmes, providing supportive leadership, ensuring fair rewards and introducing flexible work arrangements. Combining both levels is most effective because it reduces the sources of stress while also improving the employee's ability to cope.",
+          "explanation": "Clearly distinguishes individual coping techniques from organizational source-reduction techniques and names relaxation, job redesign and EAPs - the expected 10-mark answer.",
+          "oneShotPreview": "Individual: time management, relaxation, exercise, support. Organizational: job redesign, role clarity, EAPs, wellness."
+        },
+        {
+          "q": "14. Discuss the managerial implications of organizational change and development.",
+          "a": "Organizational change and development has several important implications for managers. Managers must act as leaders and change agents, creating a clear vision, communicating openly and building commitment rather than simply imposing change. They should diagnose the situation, plan and sequence interventions, and handle resistance through participation, education and empathy instead of coercion. Because people are central to change, managers must address training, motivation, stress and career concerns, and align structure, reward systems and culture with the new direction. They should build a learning culture, monitor progress and anchor the changes so they endure. Ethically, managers must treat employees fairly and transparently during transitions. Managed well, change becomes a source of better performance, adaptability and employee well-being.",
+          "explanation": "Covers the key implications - leadership, communication, participation, managing resistance, people concerns, alignment of systems and culture, learning, ethics and anchoring - as required for a 10-mark essay.",
+          "oneShotPreview": "Managers lead and communicate, involve employees, manage resistance, align systems and culture, support people and anchor change."
+        },
+        {
+          "q": "15. Explain the major organizational development (OD) interventions used in planned change.",
+          "a": "OD interventions are planned activities used to improve organizational functioning and employee well-being. Common interventions include sensitivity training or T-groups, where members learn about themselves and group processes through open interaction; survey feedback, where data from questionnaires is shared with members to diagnose problems and plan action; team building, which improves cohesion, trust and collaboration within work groups; process consultation, where a helper assists the client to perceive and improve its own processes; job enrichment and work redesign, which raise autonomy, variety and meaningfulness; and intergroup development, which improves relations between departments. Other interventions include management and skill training, restructuring and culture-change programmes. The choice of intervention depends on the diagnosed problem and the organization's readiness for change.",
+          "explanation": "Lists the recognized OD interventions with a one-line purpose for each, which is the standard answer for a question on OD techniques in planned change.",
+          "oneShotPreview": "OD interventions: T-groups, survey feedback, team building, process consultation, job enrichment, intergroup development."
+        }
+      ],
+      "source": "syllabus-derived"
     }
   },
   "23CS0511": {

@@ -1,0 +1,129 @@
+{
+  "subject": "23HS0851",
+  "unit": 5,
+  "unitTitle": "Organizational Change and Development",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "q": "1 a) Define organizational change.",
+      "a": "Organizational change is the process by which an organization moves from its present state to a desired future state in response to internal or external pressures, altering its structures, processes, technologies, culture or people's behaviour. It may be planned and deliberate or unplanned and reactive, and it affects individuals, groups and the total system. The purpose of change is to improve effectiveness, adapt to a changing environment and achieve strategic goals.",
+      "explanation": "A complete definition covers the shift from current to desired state, the triggers, and the goal of improved effectiveness, which is exactly what a 2-mark definition requires.",
+      "oneShotPreview": "Planned or unplanned shift from current to desired state to improve effectiveness and adapt."
+    },
+    {
+      "q": "1 b) Define organizational development (OD).",
+      "a": "Organizational development (OD) is a planned, systematic and long-range effort to improve an organization's effectiveness, health and capacity to adapt, by applying behavioural-science knowledge to its structures, processes, culture and people. It is collaborative, involves the whole system and uses interventions such as team building, sensitivity training and survey feedback. OD concentrates on both task performance and human well-being and aims at self-renewal and continuous improvement.",
+      "explanation": "The answer highlights the defining features of OD - planned, systemic, long-term, behavioural-science-based and people-centred - which distinguish it from ordinary change.",
+      "oneShotPreview": "Planned, systemic, behaviour-science effort to improve effectiveness, health and self-renewal."
+    },
+    {
+      "q": "1 c) Define organizational culture.",
+      "a": "Organizational culture is the set of shared values, beliefs, assumptions, norms and symbols held in common by the members of an organization, which shape how they think, feel and behave. Often described as 'the way we do things around here', it is learned, transmitted through socialization and relatively stable over time. Culture gives members a common identity, guides their behaviour and helps the organization adapt externally and integrate internally.",
+      "explanation": "This is the standard OB definition (Schein): shared values and assumptions, learned and transmitted, guiding behaviour and providing identity.",
+      "oneShotPreview": "Shared values, beliefs and norms - 'how we do things here' - learned and guiding behaviour."
+    },
+    {
+      "q": "2. Explain the nature and scope of organizational change and development.",
+      "a": "Organizational change and development is dynamic rather than static and affects the whole system rather than isolated parts. It is planned and deliberate in OD, though change may also be reactive, and it is continuous because environments keep changing. It is multidimensional, involving people, structure, technology and culture, and is goal-directed toward greater effectiveness. Its scope covers the individual (attitudes, skills, motivation, roles), groups and teams (norms, cohesiveness, conflict), intergroup relations, the formal organization (structure, design, policies), the culture and values of the enterprise, and the organization's link with its external environment. It therefore addresses both task performance and human development.",
+      "explanation": "The answer states the accepted nature (dynamic, systemic, planned, continuous, multidimensional, goal-directed) and maps the scope from the individual to the total system and environment.",
+      "oneShotPreview": "Nature: dynamic, systemic, planned, continuous, multidimensional. Scope: individual, group, structure, culture, environment."
+    },
+    {
+      "q": "3. Explain the functions and objectives of organizational development.",
+      "a": "Organizational development performs several functions. It improves organizational effectiveness and productivity and enhances the ability to adapt to environmental change. It develops people and their potential through training, learning and career growth, and improves interpersonal and intergroup relations, teamwork and communication. OD also helps in managing conflict and change, builds a supportive and participative culture, and aligns individual goals with organizational goals. Above all it promotes self-renewal and continuous learning, serving both task (performance) and human (well-being and growth) objectives.",
+      "explanation": "Lists the core OD objectives - effectiveness, adaptability, people development, better relations, conflict and change management, and self-renewal - covering both task and people concerns.",
+      "oneShotPreview": "Functions: effectiveness, adaptability, people growth, teamwork, conflict/change management, self-renewal."
+    },
+    {
+      "q": "4. Distinguish between organizational change and organizational development.",
+      "a": "Organizational change is a broad, neutral term for any movement from the current state; it may be planned or unplanned, incremental or radical, and can be a single event such as a restructuring or a new technology. Organizational development is a specific, planned and systematic approach to change that uses behavioural-science interventions to improve effectiveness and organizational health over the long term. Change refers to what is happening (the transition), whereas OD refers to a deliberate method of bringing about beneficial change. Thus all OD involves change, but not every change is OD.",
+      "explanation": "Captures the key distinction: change is generic and may be reactive, while OD is planned, systemic, long-term and intervention-based.",
+      "oneShotPreview": "Change = any transition, planned or not; OD = planned, systemic, behaviour-science improvement."
+    },
+    {
+      "q": "5 a) Explain Lewin's three-stage model of change.",
+      "a": "Kurt Lewin's model treats change as a process of moving through three stages. (1) Unfreezing: the organization recognizes the need for change, creates dissatisfaction with the status quo and prepares people to give up old behaviour, usually by making driving forces stronger than restraining forces. (2) Moving or changing: the actual transition takes place as new behaviours, attitudes, structures or processes are learned and adopted with the help of a change agent. (3) Refreezing: the new behaviour is stabilized and reinforced so that it becomes the new norm and people do not slip back into old ways. The model is based on force-field analysis and stresses that change is a process, not a single event.",
+      "explanation": "Correctly names and explains unfreeze, move and refreeze, and includes force-field analysis and the process-not-event idea - the essentials of Lewin's classic model.",
+      "oneShotPreview": "Unfreeze -> Move -> Refreeze; force-field analysis; change as a process, not an event."
+    },
+    {
+      "q": "5 b) Explain the role of a change agent in managing change.",
+      "a": "A change agent is the person, an internal manager or an external consultant, who initiates, guides and facilitates the change process. The role includes diagnosing the problem, creating awareness and a sense of urgency, building a guiding coalition, communicating the vision, involving and motivating employees, overcoming resistance, selecting and applying suitable OD interventions, and helping to institutionalize the new behaviour. Change agents may act as initiators, facilitators or catalysts. To be effective they need credibility, interpersonal skill, empathy and knowledge of behavioural science.",
+      "explanation": "Covers the recognized functions of a change agent - diagnosis, facilitation, communication, handling resistance and anchoring the change - plus the qualities needed.",
+      "oneShotPreview": "Change agent diagnoses, guides, communicates, handles resistance and anchors the new behaviour."
+    },
+    {
+      "q": "6. Explain Kotter's eight steps for leading organizational change.",
+      "a": "John Kotter's model of successful change consists of eight sequential steps: (1) create a sense of urgency about the need for change; (2) build a guiding coalition of influential supporters; (3) form a strategic vision and communicate it clearly; (4) enlist and involve as many people as possible in living the vision; (5) remove obstacles and barriers to the change; (6) generate short-term wins to build momentum and credibility; (7) consolidate improvements and build on the wins to drive further change; and (8) anchor the new approaches firmly in the culture so they persist. Skipping the early steps usually creates resistance and superficial results, while the final anchoring step makes the change lasting.",
+      "explanation": "Lists all eight steps in the correct order with the purpose of each, which is precisely what a 10-mark essay on Kotter requires.",
+      "oneShotPreview": "Urgency, coalition, vision, enlist all, remove obstacles, short-term wins, consolidate, anchor in culture."
+    },
+    {
+      "q": "7 a) Explain the main sources of organizational culture and how it is transmitted.",
+      "a": "Organizational culture arises from several sources: the founder's values, personality and the early experiences of the organization; the industry and external environment; the surrounding national culture; the behaviour and example of leaders; and the shared learning of members over time. Once formed, culture is transmitted and sustained through the socialization of new members, stories and myths, symbols and physical artifacts, rituals and ceremonies, language, heroes, and formal policies and reward systems. Cultures may also be described as clannish, entrepreneurial, bureaucratic or market-oriented, and may vary in strength and adaptability.",
+      "explanation": "Identifies the origins of culture (founder, leaders, environment, learning) and its transmission mechanisms (stories, symbols, rituals, rewards), which is the expected answer.",
+      "oneShotPreview": "Sources: founder, leaders, environment, national culture; transmitted via stories, symbols, rituals, rewards."
+    },
+    {
+      "q": "7 b) Explain the functions and importance of organizational culture.",
+      "a": "Organizational culture performs several important functions. It gives members a shared identity and a sense of belonging, and it provides stability and continuity by socializing newcomers into accepted ways of behaving. It acts as a control mechanism, guiding and shaping behaviour without the need for detailed formal rules. It helps the organization adapt to its external environment and integrate its internal processes. A strong, positive culture also motivates employees, improves teamwork and performance, encourages ethical conduct and can become a source of sustainable competitive advantage.",
+      "explanation": "Lists the standard functions of culture - identity, belonging, socialization, behavioural control, stability, adaptation, integration and performance.",
+      "oneShotPreview": "Functions: identity, belonging, socialization, control, stability, adaptation, integration, performance."
+    },
+    {
+      "q": "8. Discuss the steps involved in changing organizational culture.",
+      "a": "Changing culture is a deliberate, long-term process. It begins with diagnosing the existing culture and identifying the values and behaviours that must change, followed by creating a sense of urgency and a clear vision of the desired culture. Leaders must model the new values themselves, communicate them continuously and involve employees in shaping the change. Structures, policies, reward systems, symbols and rituals are then aligned to support the new culture, and members are retrained and socialized into it. Short-term wins are celebrated, progress is monitored, and the new values are finally anchored in selection, promotion and everyday practice so that they become durable rather than temporary.",
+      "explanation": "Provides a complete sequence - diagnose, create urgency, set vision, lead by example, involve people, align systems and symbols, socialize, celebrate wins and anchor - as expected in a 10-mark essay.",
+      "oneShotPreview": "Diagnose, urgency, vision, lead by example, align rewards and symbols, socialize, celebrate wins, anchor."
+    },
+    {
+      "q": "9. Explain why organizational culture change is difficult and how resistance to change can be overcome.",
+      "a": "Culture change is difficult because culture is deeply learned, taken for granted and emotionally charged, so members are reluctant to abandon familiar values and habits. People resist change for reasons such as fear of the unknown, loss of security, status or power, habit and inertia, lack of information or trust, and a perceived threat to their interests. Group norms and a strong existing culture reinforce the old ways, and superficial changes that ignore underlying assumptions tend to fail. Managers can overcome resistance through open communication and education, genuine participation, empathy and support, fair treatment, visible leadership commitment and by involving employees in planning the change.",
+      "explanation": "Explains the roots of resistance (deeply learned habits, fear, loss, inertia, group norms) and gives the standard remedies (communication, participation, education, empathy, leadership).",
+      "oneShotPreview": "Resistance from habit, fear, loss of status, mistrust and group norms; counter with communication and participation."
+    },
+    {
+      "q": "10. What is change management? Explain the process of managing change.",
+      "a": "Change management is the structured process of planning, communicating and guiding an organization and its people from the current state to a desired future state so that the change is adopted smoothly and sustained. The process usually involves: recognizing the need for change and setting clear objectives, diagnosing the situation and planning the change, communicating the vision, building stakeholder support and participation, implementing the change, managing resistance, monitoring progress and giving feedback, and finally institutionalizing or anchoring the new state. Effective change management reduces uncertainty and resistance and greatly improves the chances that the change will succeed.",
+      "explanation": "Defines change management and covers the full process from diagnosing and planning through implementation, resistance handling and anchoring.",
+      "oneShotPreview": "Structured transition: diagnose, plan, communicate, involve, implement, manage resistance, anchor."
+    },
+    {
+      "q": "11. Explain the different types of organizational change.",
+      "a": "Organizational change can be classified in several ways. By intention it is planned (deliberate, as in OD) or unplanned and reactive (forced by events). By magnitude it is incremental (small, continuous improvements) or radical and transformational (major, fundamental restructuring). By focus it may be technological, structural, strategic, cultural or behavioural and personnel-related. Change is also described as first-order (adjustments within the existing system) or second-order (a change of the system itself). In practice organizations experience combinations of these types depending on the situation and the pace of the environment.",
+      "explanation": "Covers the standard classifications - planned/unplanned, incremental/radical, functional areas and first/second order - which is a complete 5-mark answer.",
+      "oneShotPreview": "Types: planned/unplanned, incremental/radical, strategic/structural/technological/cultural, first/second order."
+    },
+    {
+      "q": "12 a) Define work stress and explain its main sources.",
+      "a": "Work stress is the harmful physical and emotional response that occurs when job demands exceed an employee's ability or resources to cope with them. Its main sources, or stressors, include excessive workload and time pressure, unclear or conflicting roles, lack of control or autonomy, job insecurity, poor relationships with supervisors and peers, inadequate rewards or recognition, poor working conditions and work-life conflict. Both the content of the job and the wider organizational context can create stress, and the impact depends on the individual's personality, appraisal of the situation and available social support.",
+      "explanation": "Defines stress as a demand-resource imbalance and lists the well-known job and organization-related stressors, including roles, control, insecurity and relationships.",
+      "oneShotPreview": "Stress = demands exceed coping ability; sources: workload, role conflict, low control, insecurity, poor relations."
+    },
+    {
+      "q": "12 b) Explain the consequences of work stress and the meaning of burnout.",
+      "a": "Unmanaged work stress has negative consequences at individual, behavioural and organizational levels. For the individual it can cause anxiety, depression, fatigue, sleep disturbance and psychosomatic illness such as hypertension, and it lowers job satisfaction and commitment. Behaviourally it leads to absenteeism, turnover, reduced performance, accidents and poor decisions. Burnout is a specific stress syndrome resulting from prolonged workload and lack of resources; it has three dimensions - emotional exhaustion, depersonalization or cynicism, and a reduced sense of personal accomplishment. At the organizational level, stress raises costs and lowers morale and overall effectiveness.",
+      "explanation": "Covers the individual, behavioural and organizational consequences and correctly states the three dimensions of burnout (Maslach's model).",
+      "oneShotPreview": "Stress causes anxiety, illness, absenteeism, turnover, poor performance; burnout = exhaustion, cynicism, low accomplishment."
+    },
+    {
+      "q": "13. Explain the techniques of work stress management at the individual and organizational levels.",
+      "a": "Stress management works at two complementary levels. Individual techniques include time management, relaxation exercises such as deep breathing and meditation, regular physical exercise, adequate sleep and nutrition, cognitive restructuring or positive reframing, seeking social support and maintaining a healthy work-life balance. Organizational techniques include redesigning jobs to increase autonomy and reduce overload, clarifying roles, improving communication and employee participation, offering employee assistance programmes (EAPs) and wellness programmes, providing supportive leadership, ensuring fair rewards and introducing flexible work arrangements. Combining both levels is most effective because it reduces the sources of stress while also improving the employee's ability to cope.",
+      "explanation": "Clearly distinguishes individual coping techniques from organizational source-reduction techniques and names relaxation, job redesign and EAPs - the expected 10-mark answer.",
+      "oneShotPreview": "Individual: time management, relaxation, exercise, support. Organizational: job redesign, role clarity, EAPs, wellness."
+    },
+    {
+      "q": "14. Discuss the managerial implications of organizational change and development.",
+      "a": "Organizational change and development has several important implications for managers. Managers must act as leaders and change agents, creating a clear vision, communicating openly and building commitment rather than simply imposing change. They should diagnose the situation, plan and sequence interventions, and handle resistance through participation, education and empathy instead of coercion. Because people are central to change, managers must address training, motivation, stress and career concerns, and align structure, reward systems and culture with the new direction. They should build a learning culture, monitor progress and anchor the changes so they endure. Ethically, managers must treat employees fairly and transparently during transitions. Managed well, change becomes a source of better performance, adaptability and employee well-being.",
+      "explanation": "Covers the key implications - leadership, communication, participation, managing resistance, people concerns, alignment of systems and culture, learning, ethics and anchoring - as required for a 10-mark essay.",
+      "oneShotPreview": "Managers lead and communicate, involve employees, manage resistance, align systems and culture, support people and anchor change."
+    },
+    {
+      "q": "15. Explain the major organizational development (OD) interventions used in planned change.",
+      "a": "OD interventions are planned activities used to improve organizational functioning and employee well-being. Common interventions include sensitivity training or T-groups, where members learn about themselves and group processes through open interaction; survey feedback, where data from questionnaires is shared with members to diagnose problems and plan action; team building, which improves cohesion, trust and collaboration within work groups; process consultation, where a helper assists the client to perceive and improve its own processes; job enrichment and work redesign, which raise autonomy, variety and meaningfulness; and intergroup development, which improves relations between departments. Other interventions include management and skill training, restructuring and culture-change programmes. The choice of intervention depends on the diagnosed problem and the organization's readiness for change.",
+      "explanation": "Lists the recognized OD interventions with a one-line purpose for each, which is the standard answer for a question on OD techniques in planned change.",
+      "oneShotPreview": "OD interventions: T-groups, survey feedback, team building, process consultation, job enrichment, intergroup development."
+    }
+  ],
+  "source": "syllabus-derived"
+}
